@@ -1,0 +1,478 @@
+{
+  "common": {
+    "save": "Save Changes",
+    "cancel": "Cancel",
+    "close": "Close",
+    "delete": "Delete",
+    "edit": "Edit",
+    "loading": "Processing...",
+    "search": "Search Grid",
+    "filter": "Filter Nodes",
+    "back": "Return",
+    "next": "Proceed",
+    "continue": "Continue",
+    "confirm": "Authorize",
+    "active": "Active",
+    "inactive": "Offline",
+    "verified": "Verified",
+    "unlocked": "Unlocked",
+    "locked": "Locked",
+    "authorized": "Authorized",
+    "error": "Error",
+    "returnToDashboard": "Return to Command Center"
+  },
+  "login": {
+    "title": "Sign In",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "Security Key",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "Sign In",
+    "signingInButton": "Verifying Identity...",
+    "noAccount": "New to the Network?",
+    "signUpLink": "Create Account",
+    "toast": {
+      "successTitle": "Welcome Back",
+      "successDescription": "Your Aetheria session is now active.",
+      "errorTitle": "Login Failed",
+      "genericError": "Unable to verify credentials.",
+      "invalidCredentials": "Invalid email address or security key.",
+      "operationNotAllowed": "Sign-in is currently restricted."
+    }
+  },
+  "signup": {
+    "title": "Create Account",
+    "description": "Join the Aetheria global travel network.",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "Security Key",
+    "createButton": "Initialize Account",
+    "creatingButton": "Synthesizing Profile...",
+    "haveAccount": "Already an Explorer?",
+    "signInLink": "Sign In",
+    "toast": {
+      "successTitle": "Account Created",
+      "successDescription": "Welcome to the Aetheria grid.",
+      "errorTitle": "Signup Failed",
+      "emailInUse": "This email is already registered.",
+      "operationNotAllowed": "Signup is currently restricted.",
+      "genericError": "Something went wrong during synthesis."
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Aetheria Intelligence Node",
+      "subtitle": "Eliminate logistics. Amplify immersion. Experience the first multi-agent AI travel ecosystem.",
+      "scroll": "Scroll to Scan",
+      "cta": {
+        "start": "Initialize Journey",
+        "signin": "Access Node"
+      }
+    },
+    "features": {
+      "chapter": "Protocol Chapter 01",
+      "title": "Intelligence Lenses",
+      "initNode": "Initialize Node",
+      "itinerary": {
+        "badge": "Orchestration",
+        "title": "Aura Itinerary",
+        "desc": "Synthesize a multi-day odyssey based on your psychological DNA."
+      },
+      "postcard": {
+        "badge": "Studio",
+        "title": "Postcard Studio",
+        "desc": "Transform your snapshots into high-fidelity AI-generated art."
+      },
+      "legends": {
+        "badge": "Intelligence",
+        "title": "Local Legends",
+        "desc": "Unlock the hidden folklore of your coordinates via GPS-triggered narration."
+      },
+      "packing": {
+        "badge": "Utility",
+        "title": "Forgot Nothing Agent",
+        "desc": "Proactive packing synthesis tailored to climate and itinerary nodes."
+      }
+    },
+    "workflow": {
+      "badge": "Operational Protocol",
+      "title": "How it Works",
+      "phase": "Phase 0{num}",
+      "step1": {
+        "title": "Define Intent",
+        "desc": "Provide your destination and psychological vibe parameters."
+      },
+      "step2": {
+        "title": "Synthesize Odyssey",
+        "desc": "Aetheria's neural grid architects your custom trajectory."
+      },
+      "step3": {
+        "title": "Execute Journey",
+        "desc": "Launch into the world with real-time intelligence and safety nodes."
+      }
+    },
+    "cta": {
+      "badge": "Join the Network",
+      "title": "READY TO RECODE YOUR WORLD?",
+      "subtitle": "Join the network of modern explorers using infinite intelligence.",
+      "start": "Join Network",
+      "feed": "Global Feed"
+    }
+  },
+  "header": {
+    "aiItinerary": "Aura Itinerary",
+    "pathfinder": "Path Finder",
+    "vibeMarketplace": "Vibe Marketplace",
+    "vibeShopping": "Bespoke Store",
+    "bookingHub": "Booking Hub",
+    "myTrips": "My Journeys",
+    "visionHub": "Vision AI Hub",
+    "intelligenceCenter": "Intel Hub",
+    "arWayfinding": "AR Navigation",
+    "localLegends": "Local Legends",
+    "explorerQuests": "Explorer Quests",
+    "culturalPulse": "Cultural Pulse",
+    "tripOdyssey": "Trip Odyssey",
+    "postcardStudio": "Postcard Studio",
+    "heritageMirror": "Heritage Mirror",
+    "journal": "Explorer Journal",
+    "visaArchitect": "Visa Architect",
+    "carbonSynthesis": "Carbon Tracker",
+    "esim": "Global eSIM",
+    "flightStatus": "Logistics Radar",
+    "layoverOdyssey": "Layover Odyssey",
+    "safety": "Safety Assistant",
+    "hotels": "Stays",
+    "flights": "Aviation",
+    "insurance": "Travel Insurance",
+    "trains": "Trains",
+    "buses": "Buses",
+    "cruises": "Cruises",
+    "cabs": "Cabs",
+    "dining": "Culinary",
+    "profile": "Identity Node",
+    "loyaltyHub": "Loyalty Hub",
+    "wallet": "Smart Wallet",
+    "rentals": "My Rentals",
+    "scanAndPay": "Scan & Pay",
+    "subscription": "Trip Passes",
+    "partners": "Partners",
+    "digitalBrochure": "Aetheria Brochure",
+    "appTrailer": "System Trailer",
+    "sos": "SOS Panic Hub",
+    "events": "Destination Events",
+    "gearArchitect": "Gear Architect",
+    "jetLag": "Jet Lag Logic",
+    "digitalTailor": "Digital Tailor",
+    "translator": "Linguistic Lab",
+    "corporate": "Corporate Mode",
+    "dashboard": "Dashboard",
+    "budgetSynthesis": "Budget Synthesis",
+    "moodSynthesis": "Mood Synthesis",
+    "auraBeats": "Aura Beats",
+    "equilibriumSync": "Equilibrium Sync",
+    "flavorDna": "Flavor DNA",
+    "audioGuide": "Audio Guide",
+    "menuExplorer": "Menu Explorer",
+    "localInsider": "Local Insider",
+    "cultureScout": "Culture Scout",
+    "packingassistant": "Forgot Nothing Agent",
+    "categories": {
+      "orchestration": "Orchestrate",
+      "intelligence": "Intelligence",
+      "studios": "Studios",
+      "utility": "Utilities"
+    },
+    "promo": {
+      "spotlights": "Partner Spotlights",
+      "verified": "Verified Partners"
+    }
+  },
+  "footer": {
+    "terms": "Terms of Service",
+    "privacyProtocol": "Privacy Protocol",
+    "dataSecurity": "Data Security",
+    "legalHub": "Legal Hub",
+    "globalConnect": "Global Connect",
+    "allRightsReserved": "© {year} Aetheria AI Intelligence Systems. All rights reserved.",
+    "supportHub": "Support Hub",
+    "partnerNetwork": "Partner Network"
+  },
+  "profile": {
+    "saveSuccessTitle": "Profile Synchronized",
+    "saveSuccessDescription": "Your identity node has been updated.",
+    "saveButton": "Authorize Changes",
+    "savingButton": "Synchronizing...",
+    "tabs": {
+      "identity": "Identity Node",
+      "travelDna": "Travel DNA",
+      "settings": "System Settings"
+    },
+    "personalInfo": {
+      "title": "Identity Synthesis",
+      "description": "Update your core traveler nodes.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "nationality": "Citizenship Node",
+      "nationalityDesc": "Required for cross-border logic.",
+      "homeBase": "Home Base Node",
+      "email": "Network Address",
+      "emailDesc": "Used for dispatching odyssey kits.",
+      "gender": "Biological Gender Node",
+      "genders": {
+        "male": "Male",
+        "female": "Female",
+        "other": "Other",
+        "preferNotToSay": "Prefer not to say"
+      }
+    },
+    "travelStyle": {
+      "prompt": "Synthesize your movement profile.",
+      "relaxed": {
+        "label": "Relaxed",
+        "description": "Low velocity, high immersion."
+      },
+      "active": {
+        "label": "Active",
+        "description": "High velocity, multi-node daily."
+      },
+      "adventurous": {
+        "label": "Adventurous",
+        "description": "Off-grid, high discovery factor."
+      },
+      "packed": {
+        "label": "Packed",
+        "description": "Maximum efficiency, zero downtime."
+      },
+      "familyFriendly": {
+        "label": "Family Friendly",
+        "description": "Multi-passenger safety focus."
+      }
+    },
+    "interests": {
+      "title": "Interest Nodes",
+      "description": "Select thematic clusters for AI synthesis.",
+      "items": {
+        "history": "History",
+        "food": "Culinary",
+        "hiking": "Trekking",
+        "art": "Arts",
+        "nightlife": "Nightlife",
+        "shopping": "Retail",
+        "nature": "Nature",
+        "wellness": "Wellness"
+      }
+    },
+    "settings": {
+      "title": "System Parameters",
+      "languageLabel": "Linguistic Node",
+      "languageDesc": "Preferred language for AI synthesis.",
+      "themeLabel": "Visual Theme",
+      "themeDesc": "System-wide aesthetic mode.",
+      "themes": {
+        "light": "Light",
+        "dark": "Dark",
+        "system": "Sync"
+      }
+    },
+    "financialDna": {
+      "title": "Financial DNA",
+      "description": "Set your default settlement currency.",
+      "currencyLabel": "Base Currency",
+      "currencyDesc": "Used for standard price synthesis."
+    }
+  },
+  "trips": {
+    "title": "My Journeys",
+    "subtitle": "Your library of synthesized odysseys and confirmed bookings.",
+    "noTrips": "No Journeys Found",
+    "planFirst": "Initialize your first trajectory node to begin exploration.",
+    "viewDetails": "Explore Journey",
+    "travelStyle": "Movement Style",
+    "status": {
+      "draft": "Synthesis",
+      "active": "In-Transit",
+      "completed": "Resolved"
+    },
+    "itineraryTab": "AI Itinerary",
+    "bookingsTab": "Logistics Nodes",
+    "strategyTitle": "Travel Protocol",
+    "vibeIntent": "Target Vibe",
+    "clearAiPlan": "Flush AI Synthesis",
+    "premiumUnlock": "Unlock Immersion",
+    "premiumDesc": "Upgrade this trip to unlock AR Wayfinding, Local Legends, and High-Fidelity video synthesis.",
+    "bookings": {
+      "flights": "Aviation Nodes",
+      "hotels": "Stay Nodes",
+      "dining": "Culinary Nodes",
+      "cabs": "Transport Nodes",
+      "cruises": "Maritime Nodes"
+    }
+  },
+  "dashboard": {
+    "welcomeBack": "Welcome back, {name}!",
+    "odysseyLevel": "Odyssey Level {level}",
+    "premiumRequired": "Premium Pass Required",
+    "explorerStatus": "{tier} Explorer",
+    "points": "Aura Points",
+    "medals": "Achievements",
+    "vibeStreak": "Vibe Streak",
+    "tasksResolved": "Tasks Resolved",
+    "totalMedals": "Total Medals",
+    "progressionToLevel": "Progression to Level {level}",
+    "xpSynthesized": "XP Synthesized",
+    "seasonPass": "Season Pass",
+    "editProfile": "Edit Identity Node",
+    "vibeRadar": {
+      "title": "Social Vibe Radar",
+      "desc": "Found 3 fellow explorers matching the '{vibe}' vibe in {location}."
+    },
+    "shortDesc": {
+      "itinerary": "AI-orchestrated Aura odyssey.",
+      "pathfinder": "Synthesize from visual anchors.",
+      "marketplace": "Viral itinerary templates.",
+      "store": "Bespoke gear and rental hub.",
+      "booking": "Reserve essentials via Aura Hub.",
+      "wallet": "Global currency and Aura payments.",
+      "budget": "Financial Oracle for smart swaps.",
+      "corporate": "Strategic compliance and logistics.",
+      "vision": "Decode menus and environments.",
+      "guide": "Context-aware local intelligence.",
+      "ar": "Street-level navigation overlays.",
+      "legends": "GPS-triggered local folklore.",
+      "quests": "Gamified city scavenger hunts.",
+      "pulse": "Real-time vibe and auditory DNA.",
+      "audio": "Personal guide in your ear.",
+      "mood": "Emotional pulse synthesis.",
+      "odyssey": "Cinematic Trip Teasers.",
+      "postcard": "Transform snaps into Aura art.",
+      "mirror": "Heritage Mirror synthesis.",
+      "journal": "Document explorer legacy.",
+      "safety": "Localized emergency intelligence.",
+      "status": "Live air, rail, and sea board.",
+      "esim": "Instant global connectivity.",
+      "carbon": "Track molecular footprint.",
+      "layover": "High-speed terminal missions.",
+      "tailor": "Zero-luggage wardrobe rentals.",
+      "packing": "Proactive packing synthesis."
+    }
+  },
+  "wallet": {
+    "badge": "Molecular Financial Hub",
+    "title": "Smart Wallet",
+    "subtitle": "Frictionless global currency management.",
+    "scanToPay": "Scan & Pay",
+    "exchangeBtn": "Exchange",
+    "topUpBtn": "Top-up",
+    "overviewTab": "Overview",
+    "statementTab": "Statement",
+    "totalAssets": "Total Balance",
+    "usdEquivalent": "Estimated in {currency}",
+    "proactiveSavings": "Proactive Savings",
+    "savingsDesc": "AI optimized your last swap, saving you {amount}.",
+    "localIntel": "Local Intelligence",
+    "localIntelDesc": "Traveling to {location}? Swapping before you land ensures zero-latency payments.",
+    "autoSwapBtn": "Instant Exchange",
+    "accountsTitle": "Multicurrency Balances",
+    "sortByBalance": "Sort by Balance",
+    "authorized": "Authorized",
+    "noWallets": "No active nodes found.",
+    "addFundsDesc": "Initialize your first currency node to start spending.",
+    "statementTitle": "Audit Ledger",
+    "statementDesc": "Complete history of financial synthesis.",
+    "filter": "Filter Nodes",
+    "export": "Export Ledger",
+    "noHistory": "No records found.",
+    "noHistoryDesc": "Your financial history is currently empty.",
+    "footerNotice": "All transactions are secured by Aetheria's proprietary Guardian Grid."
+  },
+  "sos": {
+    "systemName": "AETHERIA SOS",
+    "hubTitle": "SOS Hub",
+    "panicMode": "PANIC MODE",
+    "holdToTrigger": "HOLD 3S TO TRIGGER",
+    "panicActive": "PANIC ACTIVE",
+    "emergencyActive": "EMERGENCY BROADCAST",
+    "emergencyProtocolActive": "EMERGENCY PROTOCOL"
+  },
+  "flights": {
+    "toast": {
+      "successTitle": "Flight Confirmed",
+      "successDescription": "Safe travels! Your aviation node is resolved."
+    }
+  },
+  "subscription": {
+    "badge": "Odyssey Authorization",
+    "title": "Trip Passes",
+    "subtitle": "Unlock high-fidelity intelligence nodes for your journey.",
+    "itineraryRequired": "Active Itinerary Required",
+    "itineraryRequiredDesc": "You must have an active journey node to apply a pass.",
+    "createItineraryBtn": "Plan New Odyssey",
+    "selectPlan": "Select Protocol Tier",
+    "currentPlan": "Active Node",
+    "upgrade": "Authorize Upgrade",
+    "period": {
+      "monthly": "per trip"
+    },
+    "plans": {
+      "free": {
+        "name": "Explorer",
+        "description": "Standard logistics and discovery.",
+        "price": "Free",
+        "itinerariesValue": "Standard AI Itinerary",
+        "immersiveValue": "Basic Logistics Board",
+        "loyaltyValue": "1x Point Multiplier"
+      },
+      "voyager": {
+        "name": "Voyager",
+        "description": "Enhanced linguistic and packing nodes.",
+        "price": "$9",
+        "itinerariesValue": "AI Itinerary Refinement",
+        "immersiveValue": "Linguistic Lab Survival Kit",
+        "loyaltyValue": "1.2x Point Multiplier",
+        "packingValue": "Forgot Nothing Agent"
+      },
+      "pathfinder": {
+        "name": "Pathfinder",
+        "description": "Full spatial and cultural immersion.",
+        "price": "$19",
+        "itinerariesValue": "Refined Odyssey Synthesis",
+        "immersiveValue": "AR Navigation & Pulse",
+        "loyaltyValue": "1.5x Point Multiplier",
+        "insiderValue": "Local Insider (All Personas)",
+        "packingValue": "Proactive Gear Synthesis"
+      },
+      "sovereign": {
+        "name": "Sovereign",
+        "description": "The creator's cinematic toolkit.",
+        "price": "$49",
+        "itinerariesValue": "High-Fidelity Hour-by-Hour",
+        "immersiveValue": "Cinematic Trip Teaser (1080p)",
+        "loyaltyValue": "2x Point Multiplier",
+        "insiderValue": "Zero-Fee Wallet Swaps",
+        "mirrorValue": "Heritage Mirror Synthesis",
+        "feesValue": "Priority Render Queue"
+      },
+      "legend": {
+        "name": "Legend",
+        "description": "Absolute system priority and biological sync.",
+        "price": "$99",
+        "itinerariesValue": "Unlimited Global Synthesis",
+        "immersiveValue": "Biometric Equilibrium Sync",
+        "loyaltyValue": "5x Point Multiplier",
+        "insiderValue": "Digital Tailor Prime (Free)",
+        "mirrorValue": "Priority Humanoid Triage",
+        "feesValue": "Unlimited Cinema Exports"
+      }
+    },
+    "features": {
+      "itineraries": "Planning Node",
+      "immersive": "Intelligence Node",
+      "loyalty": "Reward Multiplier",
+      "packing": "Utility Node",
+      "insider": "Local Node",
+      "mirror": "Studio Node",
+      "fees": "System Node"
+    }
+  }
+}

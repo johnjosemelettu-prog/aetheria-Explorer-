@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 230 25% 98%;
+    --foreground: 230 25% 2%;
+    --card: 0 0% 100%;
+    --card-foreground: 230 25% 2%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 25% 2%;
+    --primary: 263 90% 55%; /* Electric Indigo */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 190 90% 50%; /* Neon Cyan */
+    --secondary-foreground: 230 25% 2%;
+    --muted: 230 10% 90%;
+    --muted-foreground: 230 10% 40%;
+    --accent: 320 90% 60%; /* Cyber Pink */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 230 10% 90%;
+    --input: 230 10% 90%;
+    --ring: 263 90% 55%;
+    --radius: 2.5rem;
+  }
+  .dark {
+    --background: 230 25% 2%;
+    --foreground: 230 25% 98%;
+    --card: 230 25% 4%;
+    --card-foreground: 230 25% 98%;
+    --popover: 230 25% 4%;
+    --popover-foreground: 230 25% 98%;
+    --primary: 263 90% 65%;
+    --primary-foreground: 230 25% 2%;
+    --secondary: 190 90% 50%;
+    --secondary-foreground: 230 25% 2%;
+    --muted: 230 25% 10%;
+    --muted-foreground: 230 10% 60%;
+    --accent: 320 90% 60%;
+    --accent-foreground: 230 25% 98%;
+    --border: 230 25% 10%;
+    --input: 230 25% 10%;
+    --ring: 263 90% 65%;
+  }
+}
+
+@layer base {
+  html {
+    font-size: 92%; /* Global reduction of font sizes for pro-tier density */
+  }
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body selection:bg-primary selection:text-white overflow-x-hidden;
+    -webkit-tap-highlight-color: transparent;
+    letter-spacing: -0.015em;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline uppercase italic tracking-tight;
+  }
+}
+
+.glass {
+  @apply bg-background/60 backdrop-blur-2xl border border-border shadow-xl;
+}
+
+.glass-dark {
+  @apply bg-slate-950/60 backdrop-blur-3xl border border-white/10 shadow-2xl;
+}
+
+.neo-shadow {
+  box-shadow: 0 20px 80px -20px rgba(0, 0, 0, 0.15);
+}
+
+.glow-primary {
+  box-shadow: 0 0 40px -5px hsl(var(--primary) / 0.5);
+}
+
+.glow-secondary {
+  box-shadow: 0 0 40px -5px hsl(var(--secondary) / 0.5);
+}
+
+.glow-accent {
+  box-shadow: 0 0 40px -5px hsl(var(--accent) / 0.5);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes scan {
+  from { top: 0; }
+  to { top: 100%; }
+}
+
+/* Safe Area Insets for Mobile Devices */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/20 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary/40;
+}
+
+/* Responsive Grid Adjustments */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Platform-specific display helpers */
+.web-only,
+.ios-only,
+.android-only {
+  display: none;
+}
+
+html.web .web-only {
+  display: block;
+}
+
+html.ios .ios-only {
+  display: block;
+}
+
+html.android .android-only {
+  display: block;
+}
+
+html.web .hide-on-web {
+  display: none;
+}
+
+html.ios .hide-on-ios {
+  display: none;
+}
+
+html.android .hide-on-android {
+  display: none;
+}

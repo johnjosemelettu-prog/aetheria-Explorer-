@@ -1,0 +1,54 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "Stores user-specific data and preferences.",
+      "type": "object",
+      "properties": {
+        "displayName": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "photoURL": { "type": "string", "format": "uri" },
+        "role": { "type": "string", "enum": ["user", "admin"] }
+      },
+      "required": ["email"]
+    },
+    "SupportTicket": {
+      "title": "Support Ticket",
+      "description": "User-submitted support requests.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "subject": { "type": "string" },
+        "message": { "type": "string" },
+        "status": { "type": "string", "enum": ["open", "closed"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "subject", "message"]
+    },
+    "Destination": {
+      "title": "Destination",
+      "description": "Travel destinations available in the app.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "imageUrl": { "type": "string", "format": "uri" }
+      },
+      "required": ["name"]
+    }
+  },
+  "firestore": {
+    "/userProfiles/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile documents."
+    },
+    "/supportTickets/{ticketId}": {
+      "schema": "SupportTicket",
+      "description": "Support ticket documents."
+    },
+    "/destinations/{destinationId}": {
+      "schema": "Destination",
+      "description": "Destination documents."
+    }
+  }
+}

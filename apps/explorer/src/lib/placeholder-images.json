@@ -1,0 +1,29 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "home-hero",
+      "description": "A breathtaking mountain landscape at sunrise, symbolizing adventure and exploration.",
+      "imageUrl": "https://images.unsplash.com/photo-1610892415063-d89a504ce049?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb3VudGFpbiUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NzIxMDQ3OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain landscape"
+    },
+    {
+      "id": "feature-itinerary",
+      "description": "A person looking at a map, planning their journey.",
+      "imageUrl": "https://images.unsplash.com/photo-1519500099198-fd81846b8f03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0cmF2ZWwlMjBtYXB8ZW58MHx8fHwxNzcyMTA2NTk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "travel map"
+    },
+    {
+      "id": "feature-ar",
+      "description": "A futuristic city street with glowing data overlays.",
+      "imageUrl": "https://images.unsplash.com/photo-1566262258598-53deb7089bf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwwffHxmdXR1cmlzdGljJTIwY2l0eXxlbnwwfHx8fDE3NzE5ODQ0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "futuristic city"
+    },
+    {
+      "id": "feature-vr",
+      "description": "A tropical beach with crystal clear water.",
+      "imageUrl": "https://images.unsplash.com/photo-1546536582-cdabb1daf509?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0cm9waWNhbCUyMGJlYWNofGVufDB8fHx8MTc3MjAyOTA4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tropical beach"
+    }
+  ]
+}

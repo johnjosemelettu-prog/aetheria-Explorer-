@@ -1,0 +1,144 @@
+
+{
+  "entities": {
+    "UserProfile": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "UserProfile",
+      "type": "object",
+      "description": "Stores user's personal details, travel preferences, and links to their itineraries and bookings.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the UserProfile entity."
+        },
+        "firstName": {
+          "type": "string",
+          "description": "The first name of the user."
+        },
+        "lastName": {
+          "type": "string",
+          "description": "The last name of the user."
+        },
+        "email": {
+          "type": "string",
+          "description": "The email address of the user.",
+          "format": "email"
+        },
+        "nationality": {
+          "type": "string",
+          "description": "The user's country of citizenship."
+        },
+        "homeBase": {
+          "type": "string",
+          "description": "The user's primary residence city."
+        },
+        "role": {
+          "type": "string",
+          "enum": ["user", "admin", "vendor"],
+          "description": "The system role of the user."
+        },
+        "theme": {
+          "type": "string",
+          "enum": ["light", "dark", "system"]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["id", "email", "createdAt", "updatedAt"]
+    },
+    "Itinerary": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Itinerary",
+      "type": "object",
+      "description": "Represents a travel plan.",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "destination": { "type": "string" },
+        "startDate": { "type": "string", "format": "date" },
+        "endDate": { "type": "string", "format": "date" },
+        "status": { "type": "string" },
+        "subscriptionTier": { "type": "string", "enum": ["free", "pro", "elite"] }
+      }
+    },
+    "SupportTicket": {
+      "title": "SupportTicket",
+      "type": "object",
+      "description": "A customer support request.",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "userName": { "type": "string" },
+        "subject": { "type": "string" },
+        "message": { "type": "string" },
+        "status": { "type": "string", "enum": ["open", "in-progress", "resolved", "closed"] },
+        "priority": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+        "category": { "type": "string", "enum": ["booking", "billing", "technical", "other"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "SupportCall": {
+      "title": "SupportCall",
+      "type": "object",
+      "description": "A record of a support phone call.",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "agentId": { "type": "string" },
+        "startTime": { "type": "string", "format": "date-time" },
+        "endTime": { "type": "string", "format": "date-time" },
+        "duration": { "type": "integer" },
+        "status": { "type": "string", "enum": ["active", "completed", "missed"] },
+        "notes": { "type": "string" }
+      }
+    }
+  },
+  "auth": {
+    "providers": ["password", "google.com", "apple.com"]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/userProfiles/{userId}",
+        "definition": {
+          "entityName": "UserProfile",
+          "schema": { "$ref": "#/backend/entities/UserProfile" },
+          "description": "Top-level user profile storage."
+        }
+      },
+      {
+        "path": "/userProfiles/{userId}/itineraries/{itineraryId}",
+        "definition": {
+          "entityName": "Itinerary",
+          "schema": { "$ref": "#/backend/entities/Itinerary" },
+          "description": "User-specific travel plans."
+        }
+      },
+      {
+        "path": "/supportTickets/{ticketId}",
+        "definition": {
+          "entityName": "SupportTicket",
+          "schema": { "$ref": "#/backend/entities/SupportTicket" },
+          "description": "Global support tickets."
+        }
+      },
+      {
+        "path": "/supportCalls/{callId}",
+        "definition": {
+          "entityName": "SupportCall",
+          "schema": { "$ref": "#/backend/entities/SupportCall" },
+          "description": "Global support call logs."
+        }
+      }
+    ]
+  }
+}
