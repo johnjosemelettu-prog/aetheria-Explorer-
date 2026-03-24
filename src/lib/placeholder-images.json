@@ -1,0 +1,184 @@
+{
+  "placeholderImages": [
+    {
+      "id": "home-hero",
+      "description": "A breathtaking mountain landscape at sunrise, symbolizing adventure and exploration.",
+      "imageUrl": "https://images.unsplash.com/photo-1610892415063-d89a504ce049?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb3VudGFpbiUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NzIxMDQ3OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain landscape"
+    },
+    {
+      "id": "feature-itinerary",
+      "description": "A person looking at a map, planning their journey.",
+      "imageUrl": "https://images.unsplash.com/photo-1519500099198-fd81846b8f03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0cmF2ZWwlMjBtYXB8ZW58MHx8fHwxNzcyMTA2NTk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "travel map"
+    },
+    {
+      "id": "feature-translator",
+      "description": "A neon sign with the word 'hello' in multiple languages, representing translation.",
+      "imageUrl": "https://images.unsplash.com/photo-1563509769909-174be967b5df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsYW5ndWFnZSUyMHRyYW5zbGF0aW9ufGVufDB8fHx8MTc3MjEwNjU5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "language translation"
+    },
+    {
+      "id": "feature-ar",
+      "description": "A futuristic city street with glowing data overlays.",
+      "imageUrl": "https://images.unsplash.com/photo-1566262258598-53deb7089bf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwwffHxmdXR1cmlzdGljJTIwY2l0eXxlbnwwfHx8fDE3NzE5ODQ0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "futuristic city"
+    },
+    {
+      "id": "feature-vr",
+      "description": "A tropical beach with crystal clear water.",
+      "imageUrl": "https://images.unsplash.com/photo-1546536582-cdabb1daf509?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0cm9waWNhbCUyMGJlYWNofGVufDB8fHx8MTc3MjAyOTA4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tropical beach"
+    },
+    {
+      "id": "feature-profile",
+      "description": "A close-up of a person's smiling face, representing personalization.",
+      "imageUrl": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc3MjAwNDYyOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person smiling"
+    },
+    {
+      "id": "feature-booking",
+      "description": "A stylish and modern hotel lobby.",
+      "imageUrl": "https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob3RlbCUyMGxvYmJ5fGVufDB8fHx8MTc3MjAyODE4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hotel lobby"
+    },
+    {
+      "id": "ar-map-background",
+      "description": "A satellite view of a dense city grid, used as a background for AR navigation.",
+      "imageUrl": "https://images.unsplash.com/photo-1460186136353-977e9d6085a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzYXRlbGxpdGUlMjB2aWV3fGVufDB8fHx8MTc3MjEwNjU5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "satellite view"
+    },
+    {
+      "id": "vr-preview-1",
+      "description": "A wide panoramic view of a beautiful coastal landscape.",
+      "imageUrl": "https://images.unsplash.com/photo-1683041133509-aab050b20b18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb2FzdGFsJTIwbGFuZHNjYXBlfGVufDB8fHx8MTc3MjEwNjU5OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coastal landscape"
+    },
+    {
+      "id": "hotel-1",
+      "description": "A cozy hotel room with a view.",
+      "imageUrl": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxob3RlbCUyMHJvb218ZW58MHx8fHwxNzcyMDIwOTM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hotel room"
+    },
+    {
+      "id": "hotel-2",
+      "description": "A hotel swimming pool with lounge chairs.",
+      "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxob3RlbCUyMHBvb2x8ZW58MHx8fHwxNzcyMDIxOTY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hotel pool"
+    },
+    {
+      "id": "hotel-3",
+      "description": "A delicious breakfast served at a hotel restaurant.",
+      "imageUrl": "https://images.unsplash.com/photo-1535567465397-7523840f2ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxob3RlbCUyMGJyZWFrZmFzdHxlbnwwfHx8fDE3NzIxMDY1OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hotel breakfast"
+    },
+    {
+      "id": "restaurant-1",
+      "description": "A fine dining restaurant with elegant table settings.",
+      "imageUrl": "https://images.unsplash.com/photo-1694021408920-922ff450c525?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaW5lJTIwZGluaW5nfGVufDB8fHx8MTc3MjEwNjU5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fine dining"
+    },
+    {
+      "id": "restaurant-2",
+      "description": "A cozy cafe with a warm and inviting atmosphere.",
+      "imageUrl": "https://images.unsplash.com/photo-1481833761820-0509d3217039?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3p5JTIwY2FmZXxlbnwwfHx8fDE3NzIwOTY4MDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cozy cafe"
+    },
+    {
+      "id": "restaurant-3",
+      "description": "A modern restaurant with stylish decor.",
+      "imageUrl": "https://images.unsplash.com/photo-1767294275908-22735b245b3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb2Rlcm4lMjByZXN0YXVyYW50fGVufDB8fHx8MTc3MjEwNDQ5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern restaurant"
+    },
+    {
+      "id": "digital-tailor-look-1",
+      "description": "A person in a stylish linen suit relaxing in a scenic coastal town.",
+      "imageUrl": "https://images.unsplash.com/photo-1766113491725-b29c8d6d61df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsaW5lbiUyMHN1aXR8ZW58MHx8fHwxNzcyMTA2NTk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "linen suit"
+    },
+    {
+      "id": "digital-tailor-look-2",
+      "description": "A person wearing fashionable streetwear on a busy street in Tokyo at night.",
+      "imageUrl": "https://images.unsplash.com/photo-1563504516333-62a4d9580c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0b2t5byUyMHN0cmVldHdlYXJ8ZW58MHx8fHwxNzcyMTA2NTk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tokyo streetwear"
+    },
+    {
+      "id": "digital-tailor-look-3",
+      "description": "A person in technical fleece outerwear with a modern city skyline in the background.",
+      "imageUrl": "https://images.unsplash.com/photo-1762575910569-46971cd69df3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWNoJTIwZmxlZWNlfGVufDB8fHx8MTc3MjEwNjU5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tech fleece"
+    },
+    {
+      "id": "clothing-trench-coat",
+      "description": "A classic beige trench coat.",
+      "imageUrl": "https://images.unsplash.com/photo-1601571218346-195a052bd80e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0cmVuY2glMjBjb2F0fGVufDB8fHx8MTc3MjAyODcxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "trench coat"
+    },
+    {
+      "id": "clothing-blazer",
+      "description": "A smart navy blue blazer.",
+      "imageUrl": "https://images.unsplash.com/photo-1617137968427-85924c800a22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxibGF6ZXJ8ZW58MHx8fHwxNzcyMDA5MzA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blazer"
+    },
+    {
+      "id": "clothing-cocktail-dress",
+      "description": "An elegant black cocktail dress.",
+      "imageUrl": "https://images.unsplash.com/photo-1765229279946-f265fa703385?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb2NrdGFpbCUyMGRyZXNzfGVufDB8fHx8MTc3MjA0MDQzNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cocktail dress"
+    },
+    {
+      "id": "clothing-trousers",
+      "description": "Casual chino trousers.",
+      "imageUrl": "https://images.unsplash.com/photo-1668749091738-6b328bc6e758?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dHJvdXNlcnN8ZW58MHx8fHwxNzcyMTA2NTk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "trousers"
+    },
+    {
+      "id": "clothing-white-shirt",
+      "description": "A crisp white button-down shirt.",
+      "imageUrl": "https://images.unsplash.com/photo-1612541122840-bf7071c968a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3aGl0ZSUyMHNoaXJ0fGVufDB8fHx8MTc3MjEwNjU5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "white shirt"
+    },
+    {
+      "id": "cruise-1",
+      "description": "The deck of a cruise ship with a pool and ocean view.",
+      "imageUrl": "https://images.unsplash.com/photo-1562672753-8cccbe9806ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjcnVpc2UlMjBzaGlwJTIwZGVja3xlbnwwfHx8fDE3NzIxMDY1OTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cruise ship deck"
+    },
+    {
+      "id": "gear-adapter",
+      "description": "A universal power adapter for global travel.",
+      "imageUrl": "https://images.unsplash.com/photo-1585333127302-729217465b4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx1bml2ZXJzYWwlMjBhZGFwdGVyfGVufDB8fHx8MTc3MjEwNjU5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "universal adapter"
+    },
+    {
+      "id": "gear-pillow",
+      "description": "A comfortable memory foam travel pillow.",
+      "imageUrl": "https://images.unsplash.com/photo-1520206159162-9f930232ef16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0cmF2ZWwlMjBwaWxsb3d8ZW58MHx8fHwxNzcyMTA2NTk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "travel pillow"
+    },
+    {
+      "id": "gear-cubes",
+      "description": "A set of compression packing cubes for organized luggage.",
+      "imageUrl": "https://images.unsplash.com/photo-1553531384-cc64ac80f931?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwYWNraW5nJTIwY3ViZXN8ZW58MHx8fHwxNzcyMTA2NTk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "packing cubes"
+    },
+    {
+      "id": "gear-powerbank",
+      "description": "A high-capacity portable power bank.",
+      "imageUrl": "https://images.unsplash.com/photo-1609091839697-b23dbc998684?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwb3J0YWJsZSUyMHBvd2VyfGVufDB8fHx8MTc3MjEwNjU5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "power bank"
+    },
+    {
+      "id": "lifestyle-genz-1",
+      "description": "A youth traveler taking a selfie in a colorful urban environment.",
+      "imageUrl": "https://images.unsplash.com/photo-1529139572177-393f923ffbd4?auto=format&fit=crop&q=80&w=1080",
+      "imageHint": "youth traveler"
+    },
+    {
+      "id": "lifestyle-genz-2",
+      "description": "A group of friends looking at a smartphone together in a modern cafe.",
+      "imageUrl": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=1080",
+      "imageHint": "friends cafe"
+    }
+  ]
+}
