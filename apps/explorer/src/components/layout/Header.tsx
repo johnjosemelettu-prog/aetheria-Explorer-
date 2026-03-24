@@ -85,10 +85,12 @@ export function Header() {
           {mounted ? (
             <>
               <div className="flex items-center gap-2">
-                <SidebarTrigger className={cn(
-                  "h-10 w-10 rounded-full transition-all shadow-sm border",
-                  isHome || scrolled ? "border-white/10 hover:bg-white/10 text-white" : "border-slate-100 hover:bg-primary/5 hover:text-primary"
-                )} />
+                {!isHome && (
+                  <SidebarTrigger className={cn(
+                    "h-10 w-10 rounded-full transition-all shadow-sm border",
+                    isHome || scrolled ? "border-white/10 hover:bg-white/10 text-white" : "border-slate-100 hover:bg-primary/5 hover:text-primary"
+                  )} />
+                )}
                 
                 {isNotDashboard && (
                   <Button 

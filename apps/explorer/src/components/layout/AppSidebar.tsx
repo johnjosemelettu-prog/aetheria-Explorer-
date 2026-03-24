@@ -55,6 +55,8 @@ export function AppSidebar() {
   const pathname = usePathname();
   const { t } = useTranslation();
 
+  if (pathname === '/') return null;
+
   const menuGroups = [
     {
       label: t('header.categories.orchestration'),
