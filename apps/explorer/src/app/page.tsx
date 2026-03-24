@@ -40,7 +40,6 @@ import { useUser } from '@/firebase'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Badge } from '@/components/ui/badge'
 
-const Header = dynamic(() => import('@/components/layout/Header').then(m => m.Header), { ssr: false });
 const Footer = dynamic(() => import('@/components/layout/Footer').then(m => m.Footer), { ssr: false });
 
 export default function Home() {
@@ -108,11 +107,10 @@ export default function Home() {
   return (
     <div ref={containerRef} className="flex flex-col bg-slate-950 text-white selection:bg-primary selection:text-white overflow-x-hidden relative">
       <div className="noise" />
-      <Header />
       
       <main className="flex-1">
         {/* HERO SECTION - REDESIGNED FOR GEN Z */}
-        <section className="relative min-h-[60vh] w-full flex items-center justify-center overflow-hidden py-4">
+        <section className="relative min-h-svh w-full flex items-center justify-center overflow-hidden py-20">
           <motion.div style={{ y, scale }} className="absolute inset-0 z-0">
             {heroImage && (
               <Image
@@ -146,7 +144,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="relative z-20 container mx-auto px-4 flex flex-col items-center text-center">
+          <div className="relative z-20 container mx-auto px-4 flex flex-col items-center text-center pt-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -163,7 +161,7 @@ export default function Home() {
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
               className="relative"
             >
-              <h1 className="mb-2 font-headline text-[clamp(5rem,20vw,15rem)] font-black tracking-tighter text-white leading-[0.75] uppercase italic mix-blend-difference">
+              <h1 className="mb-2 font-headline text-[clamp(3rem,15vw,10rem)] font-black tracking-tighter text-white leading-[0.75] uppercase italic mix-blend-difference">
                 AETHERIA<span className="text-primary">.</span>
               </h1>
               <motion.div 
@@ -178,7 +176,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="max-w-3xl text-xl sm:text-3xl text-slate-300 mb-8 font-black tracking-tight leading-none uppercase italic"
+              className="max-w-3xl text-lg sm:text-2xl text-slate-300 mb-8 font-black tracking-tight leading-none uppercase italic"
             >
               The first AI-native travel ecosystem for the digital nomad. <br className="hidden sm:block" />
               <span className="text-white">Synthesize your journey. Recode your reality.</span>
@@ -228,12 +226,12 @@ export default function Home() {
             <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
               <div className="max-w-3xl">
                 <Badge className="bg-primary/10 text-primary border-none font-black px-4 py-1 uppercase tracking-[0.3em] mb-6 text-[10px] rounded-full">Protocol Chapter 01</Badge>
-                <h2 className="font-headline text-7xl md:text-9xl font-black text-white tracking-tighter leading-[0.75] uppercase italic">
+                <h2 className="font-headline text-5xl md:text-7xl font-black text-white tracking-tighter leading-[0.75] uppercase italic">
                   NEURAL <br />
                   <span className="text-primary">MODULES.</span>
                 </h2>
               </div>
-              <p className="text-slate-400 text-2xl max-w-sm font-black italic leading-none uppercase">
+              <p className="text-slate-400 text-xl max-w-sm font-black italic leading-none uppercase">
                 "We don't just plan trips. We synthesize experiences using multi-agent neural grids."
               </p>
             </div>
@@ -266,7 +264,7 @@ export default function Home() {
                     
                     <div>
                       <Badge className="mb-4 bg-white/10 backdrop-blur-md text-white border-none font-black uppercase text-[10px] px-3 py-1">{t(feature.badgeKey)}</Badge>
-                      <h3 className="font-headline text-3xl font-black text-white tracking-tighter uppercase italic leading-none mb-2">
+                      <h3 className="font-headline text-2xl font-black text-white tracking-tighter uppercase italic leading-none mb-2">
                         {t(feature.titleKey)}
                       </h3>
                       <p className="text-slate-300 font-medium text-sm max-w-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -284,12 +282,12 @@ export default function Home() {
         </section>
 
         {/* WORKFLOW SECTION - BRUTALIST STYLE */}
-        <section className="bg-white text-black py-12 overflow-hidden">
+        <section className="bg-white text-black py-24 overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
               <div>
                 <span className="text-[12px] font-black uppercase tracking-[0.5em] text-primary mb-8 block">Operational Flow</span>
-                <h2 className="font-headline text-7xl md:text-9xl font-black tracking-tighter leading-[0.8] uppercase italic mb-12">
+                <h2 className="font-headline text-5xl md:text-7xl font-black tracking-tighter leading-[0.8] uppercase italic mb-12">
                   HOW IT <br />
                   <span className="text-primary">WORKS.</span>
                 </h2>
@@ -302,7 +300,7 @@ export default function Home() {
                     <div key={i} className="flex gap-8 group">
                       <span className="font-headline text-4xl font-black text-primary/20 group-hover:text-primary transition-colors">{step.id}</span>
                       <div>
-                        <h3 className="text-3xl font-black uppercase italic mb-2">{step.title}</h3>
+                        <h3 className="text-2xl font-black uppercase italic mb-2">{step.title}</h3>
                         <p className="text-slate-600 font-medium max-w-md">{step.desc}</p>
                       </div>
                     </div>
@@ -350,7 +348,7 @@ export default function Home() {
         </section>
 
         {/* CTA SECTION - IMMERSIVE */}
-        <section className="relative py-8 overflow-hidden bg-slate-950">
+        <section className="relative py-32 overflow-hidden bg-slate-950 min-h-[60vh] flex items-center">
           <div className="absolute inset-0 opacity-20">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--color-primary)_0%,transparent_70%)]" />
           </div>
@@ -362,11 +360,11 @@ export default function Home() {
               viewport={{ once: true }}
               className="max-w-4xl mx-auto"
             >
-              <h2 className="font-headline text-6xl md:text-9xl font-black text-white tracking-tighter leading-[0.8] uppercase italic mb-4">
+              <h2 className="font-headline text-5xl md:text-7xl font-black text-white tracking-tighter leading-[0.8] uppercase italic mb-4">
                 READY TO <br />
                 <span className="text-primary">RECODE?</span>
               </h2>
-              <p className="text-slate-400 text-2xl mb-6 font-medium italic">
+              <p className="text-slate-400 text-xl mb-6 font-medium italic">
                 Join 50,000+ digital nomads who have already synthesized their reality.
               </p>
               
