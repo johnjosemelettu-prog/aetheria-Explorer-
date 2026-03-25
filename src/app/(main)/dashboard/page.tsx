@@ -43,7 +43,9 @@ import {
   Radio,
   Dna,
   MousePointer2,
-  Tag
+  Tag,
+  Languages,
+  Brain
 } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { useUser, useDoc, useFirestore, useMemoFirebase } from '@/firebase'
@@ -85,6 +87,8 @@ const featureGroups = {
       { titleKey: 'header.localLegends', href: '/local-legends', icon: History, color: 'text-amber-600', isFree: false, descKey: 'dashboard.shortDesc.legends' },
       { titleKey: 'header.culturalPulse', href: '/cultural-pulse', icon: Radio, color: 'text-purple-500', isFree: false, descKey: 'dashboard.shortDesc.pulse' },
       { titleKey: 'header.audioGuide', href: '/audio-guide', icon: Wifi, color: 'text-primary', isFree: false, descKey: 'dashboard.shortDesc.audio' },
+      { titleKey: 'header.moodSynthesis', href: '/mood-synthesis', icon: Brain, color: 'text-purple-500', isFree: false, descKey: 'dashboard.shortDesc.mood' },
+      { titleKey: 'header.translator', href: '/translator', icon: Languages, color: 'text-blue-500', isFree: true, descKey: 'dashboard.shortDesc.translator' },
     ],
   },
   creative: {
@@ -95,6 +99,7 @@ const featureGroups = {
       { titleKey: 'header.postcardStudio', href: '/postcard-studio', icon: Wand2, color: 'text-pink-500', isFree: false, descKey: 'dashboard.shortDesc.postcard' },
       { titleKey: 'header.heritageMirror', href: '/heritage-mirror', icon: History, color: 'text-orange-500', isFree: false, descKey: 'dashboard.shortDesc.mirror' },
       { titleKey: 'header.journal', href: '/journal', icon: BookOpen, color: 'text-slate-500', isFree: true, descKey: 'dashboard.shortDesc.journal' },
+      { titleKey: 'header.digitalTailor', href: '/digital-tailor', icon: Shirt, color: 'text-cyan-500', isFree: false, descKey: 'dashboard.shortDesc.digitalTailor' },
     ]
   },
 }
@@ -357,7 +362,7 @@ export default function DashboardPage() {
                       </div>
                       <Button 
                         size="icon" 
-                        variant="ghost" 
+                        variant="ghost"
                         className="rounded-full h-8 w-8 hover:bg-primary hover:text-white transition-all shadow-sm"
                         onClick={() => handleMissionInvite(viber.name)}
                       >

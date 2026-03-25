@@ -1,4 +1,3 @@
-
 'use client'
 
 import { useState, useEffect, useRef, useCallback } from 'react'
@@ -18,7 +17,7 @@ import {
   ShieldCheck,
 } from 'lucide-react'
 
-import { translateText } from '@/ai/flows/translate-text-flow'
+import { translateTextAction, transcribeAndTranslateAudioAction } from './actions'
 import { textToSpeech } from '@/ai/flows/text-to-speech-flow'
 import { Button } from '@/components/ui/button'
 import {
@@ -27,7 +26,6 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-  CardFooter
 } from '@/components/ui/card'
 import {
   Form,
@@ -47,7 +45,6 @@ import {
 import { Textarea } from '@/components/ui/textarea'
 import { useToast } from '@/hooks/use-toast'
 import { useTranslation } from '@/lib/i18n'
-import { Skeleton } from '@/components/ui/skeleton'
 import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
 
@@ -76,9 +73,11 @@ export default function TranslatorPage() {
   const [translatedText, setTranslatedText] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [isListening, setIsListening] = useState(false)
-  const recognitionRef = useRef<any>(null)
   const [isSpeechRecognitionSupported, setIsSpeechRecognitionSupported] = useState(false)
   const [detectedLanguage, setDetectedLanguage] = useState<string | null>(null)
+
+  const mediaRecorderRef = useRef<MediaRecorder | null>(null)
+  const audioChunksRef = useRef<BlobPart[]>([])
 
   const [audioDataUri, setAudioDataUri] = useState<string | null>(null)
   const [isGeneratingAudio, setIsGeneratingAudio] = useState(false)
@@ -95,6 +94,13 @@ export default function TranslatorPage() {
       targetLanguage: 'Spanish',
     },
   })
+
+  useEffect(() => {
+    setHasMounted(true)
+    if (typeof window !== 'undefined' && navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+      setIsSpeechRecognitionSupported(true)
+    }
+  }, [])
 
   const handleAudioGeneration = useCallback(
     async (text: string) => {
@@ -120,7 +126,7 @@ export default function TranslatorPage() {
       setAudioDataUri(null)
       setDetectedLanguage(null)
       try {
-        const result = await translateText({
+        const result = await translateTextAction({
           text: values.text,
           targetLanguage: values.targetLanguage,
           sourceLanguage: values.sourceLanguage === 'auto' ? undefined : values.sourceLanguage,
@@ -143,38 +149,74 @@ export default function TranslatorPage() {
     [toast, handleAudioGeneration]
   )
 
-  useEffect(() => {
-    setHasMounted(true)
-    if (
-      typeof window !== 'undefined' &&
-      ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window)
-    ) {
-      setIsSpeechRecognitionSupported(true)
-      const SpeechRecognitionClass = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition
-      const recognition = new SpeechRecognitionClass()
-
-      recognition.continuous = false
-      recognition.interimResults = false
-      recognition.lang = 'en-US'
-
-      recognition.onstart = () => setIsListening(true)
-      recognition.onresult = (event: any) => {
-        const transcript = event.results[0][0].transcript
-        form.setValue('text', transcript)
-        onSubmit({ ...form.getValues(), text: transcript })
+  const handleToggleListening = async () => {
+    if (isListening) {
+      if (mediaRecorderRef.current) {
+        mediaRecorderRef.current.stop()
       }
-      recognition.onerror = () => setIsListening(false)
-      recognition.onend = () => setIsListening(false)
-      recognitionRef.current = recognition
-    }
-  }, [form, onSubmit])
+      setIsListening(false)
+    } else {
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true })
+        const mediaRecorder = new MediaRecorder(stream)
+        mediaRecorderRef.current = mediaRecorder
+        audioChunksRef.current = []
 
-  const handleToggleListening = () => {
-    const recognition = recognitionRef.current
-    if (!recognition) return
-    if (isListening) recognition.stop()
-    else {
-      try { recognition.start() } catch (e) { setIsListening(false) }
+        mediaRecorder.ondataavailable = (e) => {
+          if (e.data.size > 0) {
+            audioChunksRef.current.push(e.data)
+          }
+        }
+
+        mediaRecorder.onstop = async () => {
+          stream.getTracks().forEach(track => track.stop())
+          const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' })
+          
+          const reader = new FileReader()
+          reader.readAsDataURL(audioBlob)
+          reader.onloadend = async () => {
+            const base64Audio = reader.result as string
+            
+            setIsLoading(true)
+            setTranslatedText('')
+            setAudioDataUri(null)
+            try {
+              const targetLang = form.getValues('targetLanguage')
+              const sourceLang = form.getValues('sourceLanguage')
+              
+              const result = await transcribeAndTranslateAudioAction(base64Audio, targetLang, sourceLang)
+              
+              if (result) {
+                form.setValue('text', result.transcription)
+                setTranslatedText(result.translatedText)
+                if (result.detectedSourceLanguage) {
+                  setDetectedLanguage(result.detectedSourceLanguage)
+                }
+                handleAudioGeneration(result.translatedText)
+              }
+            } catch (error) {
+              console.error('Error processing audio:', error)
+              toast({
+                title: 'Audio Processing Failed',
+                description: 'Failed to transcribe and translate audio.',
+                variant: 'destructive',
+              })
+            } finally {
+              setIsLoading(false)
+            }
+          }
+        }
+
+        mediaRecorder.start()
+        setIsListening(true)
+      } catch (error) {
+        console.error('Error accessing microphone:', error)
+        toast({
+          title: 'Microphone Error',
+          description: 'Could not access the microphone.',
+          variant: 'destructive',
+        })
+      }
     }
   }
 
@@ -222,7 +264,7 @@ export default function TranslatorPage() {
                         <div className="relative group">
                           <FormControl>
                             <Textarea
-                              placeholder={isListening ? "Listening to neural input..." : "Enter text to synthesize..."}
+                              placeholder={isListening ? "Recording audio input..." : "Enter text to synthesize..."}
                               className={cn(
                                 "resize-none pr-16 h-40 rounded-[2rem] border-slate-100 bg-slate-50 focus:bg-white transition-all text-lg font-medium p-8",
                                 isListening && "ring-4 ring-primary/20 border-primary animate-pulse"
@@ -303,7 +345,9 @@ export default function TranslatorPage() {
                 <CardHeader className="p-10 pb-4">
                   <div className="flex justify-between items-start">
                     <div>
-                      <Badge className="bg-primary text-white border-none font-bold uppercase tracking-widest px-3 mb-4">Synthesis Resolved</Badge>
+                      <Badge className="bg-primary text-white border-none font-bold uppercase tracking-widest px-3 mb-4">
+                        Synthesis Resolved {detectedLanguage && `(from ${detectedLanguage})`}
+                      </Badge>
                       <h3 className="text-3xl font-black font-headline leading-tight italic">{form.getValues('targetLanguage')} Node</h3>
                     </div>
                     <div className="h-14 w-14 rounded-2xl bg-white/5 flex items-center justify-center text-primary shadow-inner">

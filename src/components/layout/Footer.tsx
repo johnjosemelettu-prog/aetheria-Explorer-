@@ -46,7 +46,7 @@ export function Footer() {
                   <span className="font-headline text-3xl font-black tracking-tighter uppercase italic text-foreground leading-none">
                     AETHERIA<span className="text-primary">AI</span>
                   </span>
-                  <span className="text-[8px] font-black uppercase tracking-[0.4em] text-muted-foreground mt-1">Journey Synthesized</span>
+                  <span className="text-xs font-black uppercase tracking-[0.4em] text-muted-foreground mt-1">Journey Synthesized</span> {/* Adjusted font size */}
                 </div>
               </Link>
               
@@ -55,7 +55,7 @@ export function Footer() {
                   <div className="h-10 w-10 rounded-xl bg-muted mx-auto flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
                     <Scale className="h-5 w-5" />
                   </div>
-                  <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground group-hover:text-foreground transition-colors">
+                  <p className="text-xs font-black uppercase tracking-widest text-muted-foreground group-hover:text-foreground transition-colors"> {/* Adjusted font size */}
                     {t('footer.terms')}
                   </p>
                 </Link>
@@ -63,7 +63,7 @@ export function Footer() {
                   <div className="h-10 w-10 rounded-xl bg-muted mx-auto flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
                     <Lock className="h-5 w-5" />
                   </div>
-                  <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground group-hover:text-foreground transition-colors">
+                  <p className="text-xs font-black uppercase tracking-widest text-muted-foreground group-hover:text-foreground transition-colors"> {/* Adjusted font size */}
                     {t('footer.privacyProtocol')}
                   </p>
                 </Link>
@@ -71,7 +71,7 @@ export function Footer() {
                   <div className="h-10 w-10 rounded-xl bg-muted mx-auto flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition-all">
                     <ShieldAlert className="h-5 w-5" />
                   </div>
-                  <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground group-hover:text-foreground transition-colors">
+                  <p className="text-xs font-black uppercase tracking-widest text-muted-foreground group-hover:text-foreground transition-colors"> {/* Adjusted font size */}
                     {t('footer.dataSecurity')}
                   </p>
                 </Link>
@@ -79,7 +79,7 @@ export function Footer() {
                   <div className="h-10 w-10 rounded-xl bg-muted mx-auto flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
                     <FileText className="h-5 w-5" />
                   </div>
-                  <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground group-hover:text-foreground transition-colors">
+                  <p className="text-xs font-black uppercase tracking-widest text-muted-foreground group-hover:text-foreground transition-colors"> {/* Adjusted font size */}
                     {t('footer.legalHub')}
                   </p>
                 </Link>
@@ -87,7 +87,7 @@ export function Footer() {
                   <div className="h-10 w-10 rounded-xl bg-muted mx-auto flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all">
                     <Presentation className="h-5 w-5" />
                   </div>
-                  <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground group-hover:text-foreground transition-colors">
+                  <p className="text-xs font-black uppercase tracking-widest text-muted-foreground group-hover:text-foreground transition-colors"> {/* Adjusted font size */}
                     {t('header.digitalBrochure')}
                   </p>
                 </Link>
@@ -119,10 +119,10 @@ export function Footer() {
                 {t('footer.allRightsReserved', { year: currentYear })}
               </p>
               <div className="flex items-center gap-6">
-                <Link href="/contact" className="text-[10px] font-black text-muted-foreground hover:text-foreground uppercase tracking-widest">
+                <Link href="/contact" className="text-xs font-black text-muted-foreground hover:text-foreground uppercase tracking-widest"> {/* Adjusted font size */}
                   {t('footer.supportHub')}
                 </Link>
-                <Link href="/partners" className="text-[10px] font-black text-muted-foreground hover:text-foreground uppercase tracking-widest">
+                <Link href="/partners" className="text-xs font-black text-muted-foreground hover:text-foreground uppercase tracking-widest"> {/* Adjusted font size */}
                   {t('footer.partnerNetwork')}
                 </Link>
               </div>
