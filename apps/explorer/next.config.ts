@@ -2,8 +2,6 @@ import type { NextConfig } from 'next';
 import path from 'path';
 
 const nextConfig: NextConfig = {
-  /* Critical for Capacitor & Static Deployment */
-  output: 'export',
   images: {
     unoptimized: true,
     formats: ['image/webp'], // Definitively resolve AVIF decoding errors on iOS (err=-39)
@@ -22,7 +20,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  outputFileTracingRoot: path.join(__dirname, '../../'),
+  turbopack: {
+    root: '/Users/apple/dev/aetheria-Explorer-',
+  },
+  // Removed experimental.appDir as it's no longer a valid experimental key
   typescript: {
     ignoreBuildErrors: true,
   },

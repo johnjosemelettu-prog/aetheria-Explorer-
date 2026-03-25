@@ -155,12 +155,12 @@ export default function VibeMarketplacePage() {
     <div className="container mx-auto px-4 py-12 max-w-7xl">
       <header className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8 animate-in fade-in duration-700">
         <div className="space-y-4">
-          <Badge className="bg-primary/10 text-primary border-none font-bold uppercase tracking-widest py-1 px-3 text-[10px]">P2P Economy Node</Badge>
-          <h1 className="font-headline text-5xl font-black tracking-tighter md:text-8xl text-slate-900 leading-[0.85] italic uppercase">
+          <Badge className="bg-primary/10 text-primary border-none font-bold uppercase tracking-widest py-1 px-3 text-xs sm:text-sm">P2P Economy Node</Badge> {/* Adjusted font size */}
+          <h1 className="font-headline text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-slate-900 leading-[0.85] italic uppercase"> {/* Adjusted font size */}
             Vibe <br />
             <span className="text-primary italic">Marketplace.</span>
           </h1>
-          <p className="text-xl text-slate-500 font-medium max-w-xl">
+          <p className="text-lg sm:text-xl text-slate-500 font-medium max-w-xl"> {/* Adjusted font size */}
             Acquire proven odyssey templates from legendary explorers or monetize your own visual DNA.
           </p>
         </div>
@@ -170,11 +170,11 @@ export default function VibeMarketplacePage() {
               <Wallet className="h-6 w-6" />
             </div>
             <div>
-              <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">Available USD</p>
+              <p className="text-xs font-black uppercase tracking-widest text-slate-400">Available USD</p>
               <p className="text-2xl font-black text-slate-900 font-headline">${usdWallet?.balance.toFixed(2) || '0.00'}</p>
             </div>
           </div>
-          <Button asChild className="rounded-2xl h-14 px-8 font-black bg-slate-900 text-white hover:bg-slate-800 shadow-xl w-full">
+          <Button asChild className="rounded-2xl h-12 sm:h-14 px-8 font-black bg-slate-900 text-white hover:bg-slate-800 shadow-xl w-full md:w-auto"> {/* Adjusted height and font size */}
             <Link href="/itinerary-generator">
               <Plus className="mr-2 h-5 w-5" /> Sell Your Vibe
             </Link>
@@ -187,7 +187,7 @@ export default function VibeMarketplacePage() {
           <Search className="absolute left-5 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-300 group-hover:text-primary transition-colors" />
           <Input 
             placeholder="Search vibes, destinations, or authors..." 
-            className="h-16 rounded-[1.5rem] pl-14 border-none shadow-lg bg-white text-lg font-medium focus:ring-4 ring-primary/10 transition-all"
+            className="h-12 sm:h-16 rounded-[1.5rem] pl-14 border-none shadow-lg bg-white text-base sm:text-lg font-medium focus:ring-4 ring-primary/10 transition-all"
             value={searchTerm}
             onChange={e => setSearchQuery(e.target.value)}
           />
@@ -198,7 +198,7 @@ export default function VibeMarketplacePage() {
               key={cat}
               variant={activeCategory === cat ? 'default' : 'outline'}
               className={cn(
-                "rounded-full h-12 px-6 font-black uppercase text-[10px] tracking-widest transition-all",
+                "rounded-full h-10 sm:h-12 px-6 font-black uppercase text-xs sm:text-sm tracking-widest transition-all",
                 activeCategory === cat ? "shadow-lg shadow-primary/20" : "border-2 border-slate-100 bg-white"
               )}
               onClick={() => setActiveCategory(cat)}
@@ -217,14 +217,14 @@ export default function VibeMarketplacePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60" />
               <div className="absolute top-6 left-6 flex flex-wrap gap-2">
                 {vibe.tags.map(tag => (
-                  <Badge key={tag} className="bg-white/90 text-slate-900 border-none font-black text-[8px] px-3 py-1 uppercase tracking-tighter">{tag}</Badge>
+                  <Badge key={tag} className="bg-white/90 text-slate-900 border-none font-black text-xs px-3 py-1 uppercase tracking-tighter">{tag}</Badge>
                 ))}
               </div>
               <div className="absolute bottom-6 left-6 flex items-center gap-3">
-                <div className="flex items-center gap-1.5 bg-black/40 backdrop-blur-md rounded-full px-3 py-1.5 text-white text-[10px] font-black border border-white/10">
+                <div className="flex items-center gap-1.5 bg-black/40 backdrop-blur-md rounded-full px-3 py-1.5 text-white text-xs font-black border border-white/10">
                   <Star className="h-3.5 w-3.5 fill-accent text-accent" /> {vibe.rating}
                 </div>
-                <div className="flex items-center gap-1.5 bg-black/40 backdrop-blur-md rounded-full px-3 py-1.5 text-white text-[10px] font-black border border-white/10">
+                <div className="flex items-center gap-1.5 bg-black/40 backdrop-blur-md rounded-full px-3 py-1.5 text-white text-xs font-black border border-white/10">
                   <Users className="h-3.5 w-3.5" /> {vibe.sales.toLocaleString()}
                 </div>
               </div>
@@ -232,7 +232,7 @@ export default function VibeMarketplacePage() {
             
             <CardContent className="p-8 flex-grow space-y-6">
               <div className="space-y-2">
-                <h3 className="text-2xl font-black font-headline text-slate-900 leading-tight group-hover:text-primary transition-colors uppercase italic tracking-tighter">
+                <h3 className="text-xl sm:text-2xl font-black font-headline text-slate-900 leading-tight group-hover:text-primary transition-colors uppercase italic tracking-tighter"> {/* Adjusted font size */}
                   {vibe.name}
                 </h3>
                 <p className="flex items-center gap-1.5 text-xs font-bold text-slate-400 uppercase tracking-widest">
@@ -242,10 +242,10 @@ export default function VibeMarketplacePage() {
 
               <div className="flex items-center justify-between pt-6 border-t border-slate-50">
                 <div className="flex items-center gap-3">
-                  <div className="h-8 w-8 rounded-full bg-slate-100 flex items-center justify-center text-[10px] font-black text-slate-400">
+                  <div className="h-8 w-8 rounded-full bg-slate-100 flex items-center justify-center text-xs font-black text-slate-400">
                     {vibe.author[0]}
                   </div>
-                  <p className="text-[10px] font-black uppercase text-slate-400 tracking-widest">By {vibe.author}</p>
+                  <p className="text-xs font-black uppercase text-slate-400 tracking-widest">By {vibe.author}</p>
                 </div>
                 <p className="text-2xl font-black font-headline text-primary">$2.99</p>
               </div>
@@ -255,7 +255,7 @@ export default function VibeMarketplacePage() {
               <Button 
                 onClick={() => handlePurchase(vibe)} 
                 disabled={isPurchasing === vibe.id}
-                className="w-full h-14 rounded-2xl font-black text-lg shadow-xl shadow-primary/20 active:scale-95 transition-all group/btn"
+                className="w-full h-12 sm:h-14 rounded-2xl font-black text-base sm:text-lg shadow-xl shadow-primary/20 active:scale-95 transition-all group/btn"
               >
                 {isPurchasing === vibe.id ? (
                   <Loader2 className="animate-spin h-6 w-6" />

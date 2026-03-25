@@ -1,11 +1,11 @@
+"use client"
+
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import { cn } from '@/lib/utils'
-import { FirebaseClientProvider } from '@/firebase'
-import { I18nProvider } from '@/lib/i18n'
-import { ThemeProvider } from '@/components/layout/ThemeProvider'
-import { Toaster } from '@/components/ui/toaster'
-import { PlatformIdentifier } from '@/components/layout/PlatformIdentifier'
+import { LayoutContent } from '@/components/layout/LayoutContent' // Import the new LayoutContent component
+// Assuming ErrorBoundary is located at '@/components/ErrorBoundary'
+import ErrorBoundary from '@/components/ErrorBoundary' // Import ErrorBoundary
 
 export const metadata: Metadata = {
   title: 'Aetheria: Your Smart Travel Companion',
@@ -47,15 +47,11 @@ export default function RootLayout({
         />
       </head>
       <body className={cn('font-body antialiased')}>
-        <FirebaseClientProvider>
-          <ThemeProvider>
-            <I18nProvider>
-              <PlatformIdentifier />
-              {children}
-              <Toaster />
-            </I18nProvider>
-          </ThemeProvider>
-        </FirebaseClientProvider>
+        <ErrorBoundary> {/* Wrap LayoutContent with ErrorBoundary */}
+          <LayoutContent>
+            {children}
+          </LayoutContent>
+        </ErrorBoundary>
       </body>
     </html>
   )

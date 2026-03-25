@@ -46,13 +46,13 @@ export default function UnifiedBookingPage() {
     <div className="container mx-auto px-4 py-12 max-w-6xl">
       <header className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div>
-          <Badge className="bg-primary/10 text-primary border-none font-bold uppercase tracking-widest py-1 px-3 text-[10px] mb-4">
+          <Badge className="bg-primary/10 text-primary border-none font-bold uppercase tracking-widest py-1 px-3 text-xs sm:text-sm mb-4"> {/* Adjusted font size */}
             RESERVATION HUB
           </Badge>
-          <h1 className="font-headline text-4xl font-black tracking-tight md:text-6xl text-slate-900 leading-none uppercase italic">
+          <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-none uppercase italic"> {/* Adjusted font size */}
             Booking Hub
           </h1>
-          <p className="mt-4 text-xl text-slate-500 font-medium max-w-xl">
+          <p className="mt-4 text-lg sm:text-xl text-slate-500 font-medium max-w-xl"> {/* Adjusted font size */}
             Secure high-fidelity logistics for your next odyssey.
           </p>
         </div>
@@ -61,7 +61,7 @@ export default function UnifiedBookingPage() {
             <Wallet className="h-6 w-6" />
           </div>
           <div>
-            <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">Available USD</p>
+            <p className="text-xs font-black uppercase tracking-widest text-slate-400">Available USD</p> {/* Adjusted font size */}
             <p className="text-2xl font-black text-slate-900 font-headline">
               ${usdWallet?.balance.toFixed(2) || '0.00'} <span className="text-xs text-slate-400">USD</span>
             </p>
@@ -70,29 +70,29 @@ export default function UnifiedBookingPage() {
       </header>
 
       <Tabs defaultValue="hotels" className="space-y-10">
-        <TabsList className="bg-slate-100 p-1.5 rounded-[2rem] h-20 w-full shadow-inner overflow-x-auto overflow-y-hidden flex flex-nowrap md:w-fit">
-          <TabsTrigger value="hotels" className="rounded-2xl px-8 h-full font-black text-sm uppercase tracking-tighter data-[state=active]:bg-white data-[state=active]:text-primary transition-all whitespace-nowrap">
+        <TabsList className="bg-slate-100 p-1.5 rounded-[2rem] h-16 sm:h-20 w-full shadow-inner overflow-x-auto overflow-y-hidden flex flex-nowrap md:w-fit"> {/* Adjusted height */}
+          <TabsTrigger value="hotels" className="rounded-2xl px-4 sm:px-8 h-full font-black text-sm uppercase tracking-tighter data-[state=active]:bg-white data-[state=active]:text-primary transition-all whitespace-nowrap"> {/* Adjusted padding */}
             <BedDouble className="mr-2 h-4 w-4" /> {t('header.hotels')}
           </TabsTrigger>
-          <TabsTrigger value="flights" className="rounded-2xl px-8 h-full font-black text-sm uppercase tracking-tighter data-[state=active]:bg-white data-[state=active]:text-primary transition-all whitespace-nowrap">
+          <TabsTrigger value="flights" className="rounded-2xl px-4 sm:px-8 h-full font-black text-sm uppercase tracking-tighter data-[state=active]:bg-white data-[state=active]:text-primary transition-all whitespace-nowrap"> {/* Adjusted padding */}
             <Plane className="mr-2 h-4 w-4" /> {t('header.flights')}
           </TabsTrigger>
-          <TabsTrigger value="insurance" className="rounded-2xl px-8 h-full font-black text-sm uppercase tracking-tighter data-[state=active]:bg-white data-[state=active]:text-primary transition-all whitespace-nowrap">
+          <TabsTrigger value="insurance" className="rounded-2xl px-4 sm:px-8 h-full font-black text-sm uppercase tracking-tighter data-[state=active]:bg-white data-[state=active]:text-primary transition-all whitespace-nowrap"> {/* Adjusted padding */}
             <ShieldAlert className="mr-2 h-4 w-4" /> {t('header.insurance')}
           </TabsTrigger>
-          <TabsTrigger value="trains" className="rounded-2xl px-8 h-full font-black text-sm uppercase tracking-tighter data-[state=active]:bg-white data-[state=active]:text-primary transition-all whitespace-nowrap">
+          <TabsTrigger value="trains" className="rounded-2xl px-4 sm:px-8 h-full font-black text-sm uppercase tracking-tighter data-[state=active]:bg-white data-[state=active]:text-primary transition-all whitespace-nowrap"> {/* Adjusted padding */}
             <Train className="mr-2 h-4 w-4" /> {t('header.trains')}
           </TabsTrigger>
-          <TabsTrigger value="buses" className="rounded-2xl px-8 h-full font-black text-sm uppercase tracking-tighter data-[state=active]:bg-white data-[state=active]:text-primary transition-all whitespace-nowrap">
+          <TabsTrigger value="buses" className="rounded-2xl px-4 sm:px-8 h-full font-black text-sm uppercase tracking-tighter data-[state=active]:bg-white data-[state=active]:text-primary transition-all whitespace-nowrap"> {/* Adjusted padding */}
             <Bus className="mr-2 h-4 w-4" /> {t('header.buses')}
           </TabsTrigger>
-          <TabsTrigger value="cruises" className="rounded-2xl px-8 h-full font-black text-sm uppercase tracking-tighter data-[state=active]:bg-white data-[state=active]:text-primary transition-all whitespace-nowrap">
+          <TabsTrigger value="cruises" className="rounded-2xl px-4 sm:px-8 h-full font-black text-sm uppercase tracking-tighter data-[state=active]:bg-white data-[state=active]:text-primary transition-all whitespace-nowrap"> {/* Adjusted padding */}
             <Ship className="mr-2 h-4 w-4" /> {t('header.cruises')}
           </TabsTrigger>
-          <TabsTrigger value="cabs" className="rounded-2xl px-8 h-full font-black text-sm uppercase tracking-tighter data-[state=active]:bg-white data-[state=active]:text-primary transition-all whitespace-nowrap">
+          <TabsTrigger value="cabs" className="rounded-2xl px-4 sm:px-8 h-full font-black text-sm uppercase tracking-tighter data-[state=active]:bg-white data-[state=active]:text-primary transition-all whitespace-nowrap"> {/* Adjusted padding */}
             <Car className="mr-2 h-4 w-4" /> {t('header.cabs')}
           </TabsTrigger>
-          <TabsTrigger value="dining" className="rounded-2xl px-8 h-full font-black text-sm uppercase tracking-tighter data-[state=active]:bg-white data-[state=active]:text-primary transition-all whitespace-nowrap">
+          <TabsTrigger value="dining" className="rounded-2xl px-4 sm:px-8 h-full font-black text-sm uppercase tracking-tighter data-[state=active]:bg-white data-[state=active]:text-primary transition-all whitespace-nowrap"> {/* Adjusted padding */}
             <UtensilsCrossed className="mr-2 h-4 w-4" /> {t('header.dining')}
           </TabsTrigger>
         </TabsList>
@@ -124,7 +124,7 @@ export default function UnifiedBookingPage() {
       </Tabs>
 
       <footer className="mt-20 pt-10 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between gap-6 opacity-50">
-        <div className="flex items-center gap-2 text-sm font-bold text-slate-400">
+        <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-slate-400"> {/* Adjusted font size */}
           <Sparkles className="h-4 w-4" />
           <span>Reward protocol enabled for all verified bookings.</span>
         </div>

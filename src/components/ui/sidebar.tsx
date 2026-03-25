@@ -3,14 +3,14 @@
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { VariantProps, cva } from "class-variance-authority"
-import { PanelLeft } from "lucide-react"
+import { PanelLeft, ChevronDown } from "lucide-react" // Import ChevronDown
 
 import { useIsMobile } from "@/hooks/use-mobile"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
-import { Sheet, SheetContent } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet"
 import { Skeleton } from "@/components/ui/skeleton"
 import {
   Tooltip,
@@ -18,6 +18,11 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible" // Import Collapsible components
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state"
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7
@@ -205,6 +210,7 @@ const Sidebar = React.forwardRef<
               } as React.CSSProperties
             }
             side={side}
+            title="Sidebar" // Pass a default title for accessibility
           >
             <div className="flex h-full w-full flex-col">{children}</div>
           </SheetContent>
@@ -415,17 +421,46 @@ SidebarContent.displayName = "SidebarContent"
 
 const SidebarGroup = React.forwardRef<
   HTMLDivElement,
-  React.ComponentProps<"div">
->(({ className, ...props }, ref) => {
+  React.ComponentProps<"div"> & {
+    defaultOpen?: boolean; // Add defaultOpen prop for collapsibility
+  }
+>(({ className, children, defaultOpen = true, ...props }, ref) => {
+  const [isOpen, setIsOpen] = React.useState(defaultOpen);
+  const { state: sidebarState } = useSidebar(); // Get sidebar state
+
+  // Determine if the group should be collapsible
+  const isCollapsible = sidebarState !== "collapsed"; // Only collapsible when sidebar is expanded
+
+  // Separate children into label/action and content
+  const labelChildren = React.Children.toArray(children).filter(child =>
+    React.isValidElement(child) && (child.type === SidebarGroupLabel || child.type === SidebarGroupAction)
+  );
+  const contentChildren = React.Children.toArray(children).filter(child =>
+    React.isValidElement(child) && child.type === SidebarGroupContent
+  );
+
   return (
-    <div
-      ref={ref}
-      data-sidebar="group"
-      className={cn("relative flex w-full min-w-0 flex-col p-2", className)}
-      {...props}
-    />
-  )
-})
+    <Collapsible open={isOpen} onOpenChange={setIsOpen} className={cn("relative flex w-full min-w-0 flex-col p-2", className)} {...props} ref={ref}>
+      {isCollapsible ? (
+        <CollapsibleTrigger asChild>
+          <div className="flex items-center justify-between cursor-pointer">
+            {labelChildren}
+            <ChevronDown className={cn("h-4 w-4 transition-transform", isOpen ? "rotate-0" : "-rotate-90")} />
+          </div>
+        </CollapsibleTrigger>
+      ) : (
+        // If not collapsible (sidebar collapsed), just render the label children
+        <div className="flex items-center justify-between">
+          {labelChildren}
+        </div>
+      )}
+      
+      <CollapsibleContent>
+        {contentChildren}
+      </CollapsibleContent>
+    </Collapsible>
+  );
+});
 SidebarGroup.displayName = "SidebarGroup"
 
 const SidebarGroupLabel = React.forwardRef<
