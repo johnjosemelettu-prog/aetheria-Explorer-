@@ -48,24 +48,24 @@ export class ErrorBoundary extends Component<Props, State> {
       }
 
       return (
-        <div className="flex flex-col items-center justify-center min-h-[400px] p-8 text-center bg-slate-900 rounded-[2rem] border border-white/5 shadow-2xl">
-          <div className="h-20 w-20 rounded-full bg-red-500/10 flex items-center justify-center mb-6">
-            <AlertCircle className="h-10 w-10 text-red-500" />
+          <div className="flex flex-col items-center justify-center min-h-[400px] p-8 text-center bg-slate-900 rounded-[2rem] border border-white/5 shadow-2xl">
+            <div className="h-20 w-20 rounded-full bg-red-500/10 flex items-center justify-center mb-6">
+              <AlertCircle className="h-10 w-10 text-red-500" />
+            </div>
+            <h2 className="text-2xl font-black font-headline text-white mb-4 uppercase italic tracking-tighter">System Interruption</h2>
+            <p className="text-slate-400 mb-8 max-w-md font-medium leading-relaxed">
+              {errorMessage}
+            </p>
+            <Button
+                onClick={this.handleReset}
+                className="h-14 px-8 rounded-2xl bg-primary text-white hover:bg-primary/90 shadow-xl font-black text-sm uppercase tracking-widest flex items-center gap-2"
+            >
+              <RefreshCcw className="h-4 w-4" /> Reset Protocol
+            </Button>
           </div>
-          <h2 className="text-2xl font-black font-headline text-white mb-4 uppercase italic tracking-tighter">System Interruption</h2>
-          <p className="text-slate-400 mb-8 max-w-md font-medium leading-relaxed">
-            {errorMessage}
-          </p>
-          <Button 
-            onClick={this.handleReset}
-            className="h-14 px-8 rounded-2xl bg-primary text-white hover:bg-primary/90 shadow-xl font-black text-sm uppercase tracking-widest flex items-center gap-2"
-          >
-            <RefreshCcw className="h-4 w-4" /> Reset Protocol
-          </Button>
-        </div>
       );
     }
 
-    return this.props.children;
+    return <>{this.props.children}</>;
   }
 }
