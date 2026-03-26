@@ -1,4 +1,3 @@
-
 {
   "common": {
     "save": "Save Changes",
@@ -122,6 +121,11 @@
     }
   },
   "header": {
+    "tagline": "Journey Synthesized",
+    "sos": "SOS",
+    "language": "Linguistic Grid",
+    "login": "LOGIN",
+    "signUp": "SIGN UP",
     "aiItinerary": "Aura Itinerary",
     "pathfinder": "Path Finder",
     "vibeMarketplace": "Vibe Marketplace",
@@ -161,7 +165,7 @@
     "partners": "Partners",
     "digitalBrochure": "Aetheria Brochure",
     "appTrailer": "System Trailer",
-    "sos": "SOS Panic Hub",
+    "sosPanicHub": "SOS Panic Hub",
     "events": "Destination Events",
     "gearArchitect": "Gear Architect",
     "jetLag": "Loger Logic",
@@ -255,6 +259,134 @@
         "nature": "Nature",
         "wellness": "Wellness"
       }
+    }
+  },
+  "digitalTailor": {
+    "title": "Digital Tailor",
+    "description": "Zero-luggage wardrobe synthesis for the modern explorer.",
+    "tabs": {
+      "synthesize": "Synthesize",
+      "manage": "Manage"
+    },
+    "step": "Step",
+    "steps": {
+      "scan": {
+        "name": "Scan",
+        "description": "Body Topology"
+      },
+      "vibe": {
+        "name": "Vibe",
+        "description": "Style DNA"
+      },
+      "trip": {
+        "name": "Trip",
+        "description": "Canvas Nodes"
+      },
+      "mirror": {
+        "name": "Mirror",
+        "description": "Synthesis"
+      },
+      "deploy": {
+        "name": "Deploy",
+        "description": "Fulfillment"
+      }
+    },
+    "fitPreferences": {
+      "title": "Fit Preference",
+      "slim": "Slim",
+      "regular": "Regular",
+      "relaxed": "Relaxed",
+      "oversized": "Oversized"
+    },
+    "sensitivities": {
+      "title": "Sensitivities",
+      "woolAllergy": "Wool Allergy",
+      "naturalFibers": "Natural Fibers",
+      "noTurtlenecks": "No Turtlenecks",
+      "syntheticFriendly": "Synthetic Friendly"
+    },
+    "cameraError": {
+      "title": "Camera Error",
+      "description": "Check browser permissions."
+    },
+    "placeInFrame": "Place full body in frame for synthesis",
+    "styleSwipe": "Style Swipe",
+    "vibeResolved": "Vibe Resolved",
+    "styleDNARecorded": "Style DNA preferences recorded.",
+    "resetCalibration": "Reset Calibration",
+    "brandAffinity": "Brand Affinity",
+    "destinationNode": "Destination Node",
+    "whereLanding": "Where are you landing?",
+    "dates": "Dates",
+    "pickDateNode": "Pick a date node",
+    "weatherLogic": "Weather Logic",
+    "rainProb": "Rain Prob.",
+    "avgTemp": "Avg. Temp",
+    "luggageLevel": "Luggage Level",
+    "zeroLuggage": "Zero-Luggage",
+    "zeroLuggageDesc": "Full rental suite deployed at destination.",
+    "hybridNode": "Hybrid Node",
+    "hybridNodeDesc": "Supplementary rentals for specific events.",
+    "itineraryEvents": "Itinerary Events",
+    "noEventNodes": "No Event Nodes Added",
+    "newEventNode": "New Event Node",
+    "dressCode": "Dress Code",
+    "casual": "Casual",
+    "smartCasual": "Smart Casual",
+    "businessCasual": "Business Casual",
+    "cocktail": "Cocktail",
+    "blackTie": "Black Tie",
+    "activewear": "Activewear",
+    "synthesizingLooks": "Synthesizing Looks...",
+    "matchingDNA": "Matching your DNA with destination climate nodes.",
+    "synthesisFailure": "Synthesis Failure",
+    "synthesisError": "Synthesis Error",
+    "reInitializeSynthesis": "Re-Initialize Synthesis",
+    "architectRecommendation": "Architect Recommendation",
+    "outfitNode": "Outfit Node 0{num}",
+    "selectNode": "Select Node",
+    "orderSummary": "Order Summary",
+    "transactionType": "Transaction Type",
+    "rentPackage": "Rent Package",
+    "rentPackageDesc": "Pay for the duration of your odyssey.",
+    "purchaseAll": "Purchase All",
+    "purchaseAllDesc": "Permanent library addition.",
+    "netOrderAmount": "Net Order Amount",
+    "totalDue": "Total Due",
+    "smartWalletVerification": "Smart Wallet Verification",
+    "availableNodeBalance": "Available Node Balance",
+    "insufficientAssets": "Insufficient Assets",
+    "insufficientAssetsDesc": "Please top up your wallet node or exchange other currencies to authorize deployment.",
+    "logisticsProtocol": "Logistics Protocol",
+    "explorerName": "Explorer Name",
+    "destinationHub": "Destination Hub",
+    "directDeliveryDesc": "Direct-to-destination delivery ensures zero-luggage freedom.",
+    "authorizeAndPay": "Authorize & Pay",
+    "authorizationNotice": "By authorizing, you agree to the temporary withholding of security funds for rental nodes. Deposits are automatically returned upon item verification at the end of your odyssey.",
+    "deploymentInitiated": {
+      "title": "Deployment Initiated",
+      "description": "Your wardrobe is scheduled for destination delivery."
+    },
+    "manage": {
+      "title": "My Wardrobe Rentals",
+      "description": "Manage your zero-luggage inventory.",
+      "nodeActive": "Node Active",
+      "package": "Package",
+      "ordered": "Ordered",
+      "recently": "Recently",
+      "securityDeposit": "Security Deposit",
+      "processReturn": "Process Return",
+      "refundCompleted": "Refund Completed",
+      "contents": "Contents",
+      "noRentals": "No active rentals.",
+      "noRentalsDescription": "Initialize a node to begin collection."
+    },
+    "refundCompleted": {
+      "title": "Refund Completed",
+      "description": "Deposit returned to your Smart Wallet Hub."
+    },
+    "returnFailed": {
+      "title": "Return Failed"
     }
   }
 }

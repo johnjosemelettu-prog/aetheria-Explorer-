@@ -28,7 +28,8 @@ import th from '../locales/th.json'
 import { useUser, useFirestore } from '@/firebase'
 import { doc, getDoc, setDoc } from 'firebase/firestore'
 
-const SplashScreen = dynamic(() => import('@/components/layout/SplashScreen').then(m => m.SplashScreen), { ssr: false });
+// Temporarily remove SplashScreen to debug unresponsiveness
+// const SplashScreen = dynamic(() => import('@/components/layout/SplashScreen').then(m => m.SplashScreen), { ssr: false });
 
 const getTranslationValue = (
   translations: Record<string, any>,
@@ -55,7 +56,7 @@ export const availableLanguages: { code: Language; name: string; englishName: st
   { code: 'de', name: 'Deutsch', englishName: 'German' },
   { code: 'hi', name: 'हिन्दी', englishName: 'Hindi' },
   { code: 'it', name: 'Italiano', englishName: 'Italian' },
-  { code: 'ms', name: 'Bahasa Melayu', englishName: 'Malay' },
+  { code: 'ms', name: 'Bahasa Melayu', englishName: 'Malay'},
   { code: 'ml', name: 'മലയാളം', englishName: 'Malayalam' },
   { code: 'pt', name: 'Português', englishName: 'Portuguese' },
   { code: 'ru', name: 'Русский', englishName: 'Russian' },
@@ -79,6 +80,7 @@ export const I18nProvider = ({ children }: { children: ReactNode }) => {
   const firestore = useFirestore()
 
   useEffect(() => {
+    console.log('I18nProvider mounted or dependencies changed. Current language state:', language);
     const fetchUserLanguage = async () => {
       if (user && firestore) {
         const userProfileRef = doc(firestore, 'userProfiles', user.uid)
@@ -88,27 +90,36 @@ export const I18nProvider = ({ children }: { children: ReactNode }) => {
             const userLang = docSnap.data()?.preferredLanguage as Language
             if (userLang && translations[userLang]) {
               setLanguageState(userLang)
+              console.log('User preferred language fetched from Firestore:', userLang);
               return
             }
           }
-        } catch (error) {}
+        } catch (error) {
+          console.error('Error fetching user language from Firestore:', error);
+        }
       }
 
       if (typeof navigator !== 'undefined') {
         const browserLang = navigator.language.split('-')[0] as Language;
         if (translations[browserLang]) {
           setLanguageState(browserLang);
+          console.log('Browser language detected:', browserLang);
+        } else {
+          console.log('Browser language not supported, defaulting to English.');
         }
       }
     }
     fetchUserLanguage()
-  }, [user, firestore])
+  }, [user, firestore, language]) // Added language to dependencies to log changes
 
   const setLanguage = (lang: Language) => {
+    console.log('setLanguage called with:', lang);
     setLanguageState(lang)
     if (user && firestore) {
       const userProfileRef = doc(firestore, 'userProfiles', user.uid)
       setDoc(userProfileRef, { preferredLanguage: lang }, { merge: true })
+        .then(() => console.log('Language preference saved to Firestore:', lang))
+        .catch(error => console.error('Error saving language preference to Firestore:', error));
     }
   }
 
@@ -118,7 +129,10 @@ export const I18nProvider = ({ children }: { children: ReactNode }) => {
       if (translation === undefined && language !== 'en') {
         translation = getTranslationValue(translations.en, key);
       }
-      if (translation === undefined) return key;
+      if (translation === undefined) {
+        console.warn(`Translation key "${key}" not found for language "${language}".`);
+        return key;
+      }
       if (replacements) {
         Object.entries(replacements).forEach(([pKey, value]) => {
           translation = (translation as string).replace(new RegExp(`\\{${pKey}\\}`, 'g'), String(value))
@@ -131,7 +145,7 @@ export const I18nProvider = ({ children }: { children: ReactNode }) => {
 
   return (
     <I18nContext.Provider value={{ language, setLanguage, t }}>
-      <SplashScreen />
+      {/* <SplashScreen /> */}
       {children}
     </I18nContext.Provider>
   )
