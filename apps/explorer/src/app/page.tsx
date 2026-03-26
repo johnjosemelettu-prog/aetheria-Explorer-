@@ -1,4 +1,3 @@
-
 "use client"
 
 import { useState, useEffect, useRef } from 'react'
@@ -105,283 +104,283 @@ export default function Home() {
   ]
 
   return (
-    <div ref={containerRef} className="flex flex-col bg-slate-950 text-white selection:bg-primary selection:text-white overflow-x-hidden relative">
-      <div className="noise" />
-      
-      <main className="flex-1">
-        {/* HERO SECTION - REDESIGNED FOR GEN Z */}
-        <section className="relative min-h-svh w-full flex items-center justify-center overflow-hidden py-20">
-          <motion.div style={{ y, scale }} className="absolute inset-0 z-0">
-            {heroImage && (
-              <Image
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
-                fill
-                className="object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-1000"
-                priority
-              />
-            )}
-            <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/80 to-slate-950 z-10" />
-          </motion.div>
+      <div ref={containerRef} className="flex flex-col bg-slate-950 text-white selection:bg-primary selection:text-white overflow-x-hidden relative">
+        <div className="noise" />
 
-          {/* Floating Elements */}
-          <div className="absolute inset-0 z-10 pointer-events-none">
-            <motion.div 
-              animate={{ 
-                y: [0, -20, 0],
-                rotate: [0, 5, 0]
-              }}
-              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-1/4 left-10 w-32 h-32 bg-primary/20 blur-3xl rounded-full" 
-            />
-            <motion.div 
-              animate={{ 
-                y: [0, 20, 0],
-                rotate: [0, -5, 0]
-              }}
-              transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute bottom-1/4 right-10 w-48 h-48 bg-secondary/20 blur-3xl rounded-full" 
-            />
-          </div>
-
-          <div className="relative z-20 container mx-auto px-4 flex flex-col items-center text-center pt-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <Badge variant="outline" className="mb-2 px-6 py-2 border-white/10 text-white font-black tracking-[0.4em] uppercase bg-white/5 backdrop-blur-2xl rounded-full text-[10px]">
-                <Cpu className="mr-2 h-3 w-3 text-primary animate-pulse" /> NEURAL NETWORK ONLINE
-              </Badge>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="relative"
-            >
-              <h1 className="mb-2 font-headline text-[clamp(3rem,15vw,10rem)] font-black tracking-tighter text-white leading-[0.75] uppercase italic mix-blend-difference">
-                AETHERIA<span className="text-primary">.</span>
-              </h1>
-              <motion.div 
-                initial={{ width: 0 }}
-                animate={{ width: "100%" }}
-                transition={{ delay: 0.1, duration: 0.5 }}
-                className="absolute -bottom-4 left-0 h-4 bg-primary/50 blur-md"
-              />
+        <main className="flex-1">
+          {/* HERO SECTION - REDESIGNED FOR GEN Z */}
+          <section className="relative min-h-svh w-full flex items-center justify-center overflow-hidden py-20">
+            <motion.div style={{ y, scale }} className="absolute inset-0 z-0">
+              {heroImage && (
+                  <Image
+                      src={heroImage.imageUrl}
+                      alt={heroImage.description}
+                      fill
+                      className="object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-1000"
+                      priority
+                  />
+              )}
+              <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/80 to-slate-950 z-10" />
             </motion.div>
 
-            <motion.p 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              className="max-w-3xl text-lg sm:text-2xl text-slate-300 mb-8 font-black tracking-tight leading-none uppercase italic"
+            {/* Floating Elements */}
+            <div className="absolute inset-0 z-10 pointer-events-none">
+              <motion.div
+                  animate={{
+                    y: [0, -20, 0],
+                    rotate: [0, 5, 0]
+                  }}
+                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                  className="absolute top-1/4 left-10 w-32 h-32 bg-primary/20 blur-3xl rounded-full"
+              />
+              <motion.div
+                  animate={{
+                    y: [0, 20, 0],
+                    rotate: [0, -5, 0]
+                  }}
+                  transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+                  className="absolute bottom-1/4 right-10 w-48 h-48 bg-secondary/20 blur-3xl rounded-full"
+              />
+            </div>
+
+            <div className="relative z-20 container mx-auto px-4 flex flex-col items-center text-center pt-12">
+              <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+              >
+                <Badge variant="outline" className="mb-2 px-6 py-2 border-white/10 text-white font-black tracking-[0.4em] uppercase bg-white/5 backdrop-blur-2xl rounded-full text-[10px]">
+                  <Cpu className="mr-2 h-3 w-3 text-primary animate-pulse" /> NEURAL NETWORK ONLINE
+                </Badge>
+              </motion.div>
+
+              <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                  className="relative"
+              >
+                <h1 className="mb-2 font-headline text-[clamp(3rem,15vw,10rem)] font-black tracking-tighter text-white leading-[0.75] uppercase italic mix-blend-difference">
+                  AETHERIA<span className="text-primary">.</span>
+                </h1>
+                <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: "100%" }}
+                    transition={{ delay: 0.1, duration: 0.5 }}
+                    className="absolute -bottom-4 left-0 h-4 bg-primary/50 blur-md"
+                />
+              </motion.div>
+
+              <motion.p
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.2, duration: 0.5 }}
+                  className="max-w-3xl text-lg sm:text-2xl text-slate-300 mb-8 font-black tracking-tight leading-none uppercase italic"
+              >
+                The first AI-native travel ecosystem for the digital nomad. <br className="hidden sm:block" />
+                <span className="text-white">Synthesize your journey. Recode your reality.</span>
+              </motion.p>
+
+              <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
+                  className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto relative z-30"
+              >
+                {user ? (
+                    <Button asChild size="lg" className="h-16 sm:h-24 px-8 sm:px-16 rounded-full bg-white text-black hover:bg-slate-200 shadow-2xl font-black text-lg sm:text-2xl group active:scale-95 transition-all w-full sm:w-auto uppercase italic">
+                      <Link href="/dashboard" className="flex items-center gap-3">
+                        ENTER GRID <ArrowUpRight className="h-6 w-6 sm:h-8 sm:w-8 group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform" />
+                      </Link>
+                    </Button>
+                ) : (
+                    <>
+                      <Button asChild size="lg" className="h-16 sm:h-24 px-8 sm:px-16 rounded-full bg-primary text-white hover:bg-primary/90 shadow-2xl animate-glow-pulse font-black text-lg sm:text-2xl transition-all hover:scale-105 active:scale-95 w-full sm:w-auto uppercase italic">
+                        <Link href="/signup">SIGN UP</Link>
+                      </Button>
+                      <Button asChild size="lg" variant="outline" className="h-16 sm:h-24 px-8 sm:px-16 rounded-full border-white/60 bg-white/20 hover:bg-white/30 text-white font-black text-lg sm:text-2xl backdrop-blur-3xl transition-all hover:scale-105 active:scale-95 w-full sm:w-auto uppercase italic shadow-lg">
+                        <Link href="/login">LOGIN</Link>
+                      </Button>
+                    </>
+                )}
+              </motion.div>
+            </div>
+
+            <motion.div
+                style={{ opacity }}
+                className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4"
             >
-              The first AI-native travel ecosystem for the digital nomad. <br className="hidden sm:block" />
-              <span className="text-white">Synthesize your journey. Recode your reality.</span>
-            </motion.p>
-            
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.5 }}
-              className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto relative z-30"
-            >
-              {user ? (
-                <Button asChild size="lg" className="h-24 px-16 rounded-full bg-white text-black hover:bg-slate-200 shadow-2xl font-black text-2xl group active:scale-95 transition-all w-full sm:w-auto uppercase italic">
-                  <Link href="/dashboard" className="flex items-center gap-3">
-                    ENTER GRID <ArrowUpRight className="h-8 w-8 group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform" />
-                  </Link>
-                </Button>
-              ) : (
-                <>
-                  <Button asChild size="lg" className="h-24 px-16 rounded-full bg-primary text-white hover:bg-primary/90 shadow-2xl animate-glow-pulse font-black text-2xl transition-all hover:scale-105 active:scale-95 w-full sm:w-auto uppercase italic">
-                    <Link href="/signup">SIGN UP</Link>
+              <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white/40">Scroll to Recode</span>
+              <motion.div
+                  animate={{ y: [0, 10, 0] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                  className="w-px h-16 bg-gradient-to-b from-primary to-transparent"
+              />
+            </motion.div>
+          </section>
+
+          {/* BENTO GRID FEATURES - NEURAL MODULES */}
+          <section className="py-24 bg-slate-950 relative overflow-hidden">
+            <div className="container mx-auto px-4">
+              <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
+                <div className="max-w-3xl">
+                  <Badge className="bg-primary/10 text-primary border-none font-black px-4 py-1 uppercase tracking-[0.3em] mb-6 text-[10px] rounded-full">Protocol Chapter 01</Badge>
+                  <h2 className="font-headline text-5xl md:text-7xl font-black text-white tracking-tighter leading-[0.75] uppercase italic">
+                    NEURAL <br />
+                    <span className="text-primary">MODULES.</span>
+                  </h2>
+                </div>
+                <p className="text-slate-400 text-xl max-w-sm font-black italic leading-none uppercase">
+                  "We don't just plan trips. We synthesize experiences using multi-agent neural grids."
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[300px]">
+                {features.map((feature, index) => (
+                    <motion.div
+                        key={index}
+                        whileHover={{ scale: 0.98 }}
+                        className={cn(
+                            "relative rounded-[2.5rem] overflow-hidden group cursor-pointer border border-white/5",
+                            feature.size === "large" ? "md:col-span-2 md:row-span-2" :
+                                feature.size === "medium" ? "md:col-span-2" : "md:col-span-1"
+                        )}
+                    >
+                      {feature.image && (
+                          <Image
+                              src={feature.image.imageUrl}
+                              alt="Feature"
+                              fill
+                              className="object-cover transition-transform duration-1000 group-hover:scale-110 grayscale opacity-40 group-hover:opacity-100 group-hover:grayscale-0"
+                          />
+                      )}
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10" />
+
+                      <div className="absolute inset-0 p-8 flex flex-col justify-between z-20">
+                        <div className={cn("h-12 w-12 rounded-2xl flex items-center justify-center text-white shadow-2xl", feature.color)}>
+                          <feature.icon className="h-6 w-6" />
+                        </div>
+
+                        <div>
+                          <Badge className="mb-4 bg-white/10 backdrop-blur-md text-white border-none font-black uppercase text-[10px] px-3 py-1">{t(feature.badgeKey)}</Badge>
+                          <h3 className="font-headline text-2xl font-black text-white tracking-tighter uppercase italic leading-none mb-2">
+                            {t(feature.titleKey)}
+                          </h3>
+                          <p className="text-slate-300 font-medium text-sm max-w-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            {t(feature.descKey)}
+                          </p>
+                          <Link href={feature.link} className="mt-4 flex items-center gap-2 text-primary font-black uppercase text-[10px] tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
+                            Initialize <ArrowUpRight className="h-4 w-4" />
+                          </Link>
+                        </div>
+                      </div>
+                    </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* WORKFLOW SECTION - BRUTALIST STYLE */}
+          <section className="bg-white text-black py-24 overflow-hidden">
+            <div className="container mx-auto px-4">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div>
+                  <span className="text-[12px] font-black uppercase tracking-[0.5em] text-primary mb-8 block">Operational Flow</span>
+                  <h2 className="font-headline text-5xl md:text-7xl font-black tracking-tighter leading-[0.8] uppercase italic mb-12">
+                    HOW IT <br />
+                    <span className="text-primary">WORKS.</span>
+                  </h2>
+                  <div className="space-y-8">
+                    {[
+                      { id: "01", title: "SCAN", desc: "Input your neural preferences and travel constraints." },
+                      { id: "02", title: "SYNTHESIZE", desc: "Our multi-agent grid generates thousands of permutations." },
+                      { id: "03", title: "EXECUTE", desc: "Deploy your itinerary with real-time AR/VR support." }
+                    ].map((step, i) => (
+                        <div key={i} className="flex gap-8 group">
+                          <span className="font-headline text-4xl font-black text-primary/20 group-hover:text-primary transition-colors">{step.id}</span>
+                          <div>
+                            <h3 className="text-2xl font-black uppercase italic mb-2">{step.title}</h3>
+                            <p className="text-slate-600 font-medium max-w-md">{step.desc}</p>
+                          </div>
+                        </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="relative">
+                  <div className="aspect-square bg-slate-100 rounded-[3rem] overflow-hidden relative group">
+                    <Image
+                        src="https://picsum.photos/seed/cyberpunk/1000/1000"
+                        alt="Process"
+                        fill
+                        className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
+                    />
+                    <div className="absolute inset-0 bg-primary/10 mix-blend-overlay" />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <motion.div
+                          animate={{ rotate: 360 }}
+                          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                          className="w-64 h-64 border-2 border-dashed border-white/50 rounded-full flex items-center justify-center"
+                      >
+                        <Navigation className="h-12 w-12 text-white" />
+                      </motion.div>
+                    </div>
+                  </div>
+
+                  {/* Floating Card */}
+                  <motion.div
+                      animate={{ y: [0, -20, 0] }}
+                      transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                      className="absolute -bottom-10 -left-10 bg-black text-white p-8 rounded-[2rem] shadow-2xl max-w-xs hidden md:block"
+                  >
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center">
+                        <Zap className="h-5 w-5" />
+                      </div>
+                      <span className="font-black uppercase text-[10px] tracking-widest">Real-time Optimization</span>
+                    </div>
+                    <p className="text-slate-400 text-sm font-medium">"Grid adjusted for weather patterns in Tokyo. Recalculating route..."</p>
+                  </motion.div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* CTA SECTION - IMMERSIVE */}
+          <section className="relative py-32 overflow-hidden bg-slate-950 min-h-[60vh] flex items-center">
+            <div className="absolute inset-0 opacity-20">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--color-primary)_0%,transparent_70%)]" />
+            </div>
+
+            <div className="container mx-auto px-4 relative z-10 text-center">
+              <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="max-w-4xl mx-auto"
+              >
+                <h2 className="font-headline text-5xl md:text-7xl font-black text-white tracking-tighter leading-[0.8] uppercase italic mb-4">
+                  READY TO <br />
+                  <span className="text-primary">RECODE?</span>
+                </h2>
+                <p className="text-slate-400 text-xl mb-6 font-medium italic">
+                  Join 50,000+ digital nomads who have already synthesized their reality.
+                </p>
+
+                <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
+                  <Button asChild size="lg" className="h-16 sm:h-24 px-8 sm:px-16 rounded-full bg-primary text-white hover:bg-primary/90 shadow-2xl animate-glow-pulse font-black text-lg sm:text-2xl transition-all hover:scale-105 active:scale-95">
+                    <Link href="/signup">SIGN UP NOW</Link>
                   </Button>
-                  <Button asChild size="lg" variant="outline" className="h-24 px-16 rounded-full border-white/60 bg-white/20 hover:bg-white/30 text-white font-black text-2xl backdrop-blur-3xl transition-all hover:scale-105 active:scale-95 w-full sm:w-auto uppercase italic shadow-lg">
+                  <Button asChild size="lg" variant="outline" className="h-16 sm:h-24 px-8 sm:px-16 rounded-full border-white/20 bg-white/10 hover:bg-white/20 text-white font-black text-lg sm:text-2xl backdrop-blur-xl transition-all hover:scale-105 active:scale-95 shadow-lg">
                     <Link href="/login">LOGIN</Link>
                   </Button>
-                </>
-              )}
-            </motion.div>
-          </div>
-
-          <motion.div 
-            style={{ opacity }}
-            className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4"
-          >
-            <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white/40">Scroll to Recode</span>
-            <motion.div 
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="w-px h-16 bg-gradient-to-b from-primary to-transparent" 
-            />
-          </motion.div>
-        </section>
-
-        {/* BENTO GRID FEATURES - NEURAL MODULES */}
-        <section className="py-24 bg-slate-950 relative overflow-hidden">
-          <div className="container mx-auto px-4">
-            <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
-              <div className="max-w-3xl">
-                <Badge className="bg-primary/10 text-primary border-none font-black px-4 py-1 uppercase tracking-[0.3em] mb-6 text-[10px] rounded-full">Protocol Chapter 01</Badge>
-                <h2 className="font-headline text-5xl md:text-7xl font-black text-white tracking-tighter leading-[0.75] uppercase italic">
-                  NEURAL <br />
-                  <span className="text-primary">MODULES.</span>
-                </h2>
-              </div>
-              <p className="text-slate-400 text-xl max-w-sm font-black italic leading-none uppercase">
-                "We don't just plan trips. We synthesize experiences using multi-agent neural grids."
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[300px]">
-              {features.map((feature, index) => (
-                <motion.div
-                  key={index}
-                  whileHover={{ scale: 0.98 }}
-                  className={cn(
-                    "relative rounded-[2.5rem] overflow-hidden group cursor-pointer border border-white/5",
-                    feature.size === "large" ? "md:col-span-2 md:row-span-2" : 
-                    feature.size === "medium" ? "md:col-span-2" : "md:col-span-1"
-                  )}
-                >
-                  {feature.image && (
-                    <Image 
-                      src={feature.image.imageUrl} 
-                      alt="Feature" 
-                      fill 
-                      className="object-cover transition-transform duration-1000 group-hover:scale-110 grayscale opacity-40 group-hover:opacity-100 group-hover:grayscale-0"
-                    />
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10" />
-                  
-                  <div className="absolute inset-0 p-8 flex flex-col justify-between z-20">
-                    <div className={cn("h-12 w-12 rounded-2xl flex items-center justify-center text-white shadow-2xl", feature.color)}>
-                      <feature.icon className="h-6 w-6" />
-                    </div>
-                    
-                    <div>
-                      <Badge className="mb-4 bg-white/10 backdrop-blur-md text-white border-none font-black uppercase text-[10px] px-3 py-1">{t(feature.badgeKey)}</Badge>
-                      <h3 className="font-headline text-2xl font-black text-white tracking-tighter uppercase italic leading-none mb-2">
-                        {t(feature.titleKey)}
-                      </h3>
-                      <p className="text-slate-300 font-medium text-sm max-w-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                        {t(feature.descKey)}
-                      </p>
-                      <Link href={feature.link} className="mt-4 flex items-center gap-2 text-primary font-black uppercase text-[10px] tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                        Initialize <ArrowUpRight className="h-4 w-4" />
-                      </Link>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* WORKFLOW SECTION - BRUTALIST STYLE */}
-        <section className="bg-white text-black py-24 overflow-hidden">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-              <div>
-                <span className="text-[12px] font-black uppercase tracking-[0.5em] text-primary mb-8 block">Operational Flow</span>
-                <h2 className="font-headline text-5xl md:text-7xl font-black tracking-tighter leading-[0.8] uppercase italic mb-12">
-                  HOW IT <br />
-                  <span className="text-primary">WORKS.</span>
-                </h2>
-                <div className="space-y-8">
-                  {[
-                    { id: "01", title: "SCAN", desc: "Input your neural preferences and travel constraints." },
-                    { id: "02", title: "SYNTHESIZE", desc: "Our multi-agent grid generates thousands of permutations." },
-                    { id: "03", title: "EXECUTE", desc: "Deploy your itinerary with real-time AR/VR support." }
-                  ].map((step, i) => (
-                    <div key={i} className="flex gap-8 group">
-                      <span className="font-headline text-4xl font-black text-primary/20 group-hover:text-primary transition-colors">{step.id}</span>
-                      <div>
-                        <h3 className="text-2xl font-black uppercase italic mb-2">{step.title}</h3>
-                        <p className="text-slate-600 font-medium max-w-md">{step.desc}</p>
-                      </div>
-                    </div>
-                  ))}
                 </div>
-              </div>
-              
-              <div className="relative">
-                <div className="aspect-square bg-slate-100 rounded-[3rem] overflow-hidden relative group">
-                  <Image 
-                    src="https://picsum.photos/seed/cyberpunk/1000/1000" 
-                    alt="Process" 
-                    fill 
-                    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
-                  />
-                  <div className="absolute inset-0 bg-primary/10 mix-blend-overlay" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <motion.div 
-                      animate={{ rotate: 360 }}
-                      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                      className="w-64 h-64 border-2 border-dashed border-white/50 rounded-full flex items-center justify-center"
-                    >
-                      <Navigation className="h-12 w-12 text-white" />
-                    </motion.div>
-                  </div>
-                </div>
-                
-                {/* Floating Card */}
-                <motion.div 
-                  animate={{ y: [0, -20, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute -bottom-10 -left-10 bg-black text-white p-8 rounded-[2rem] shadow-2xl max-w-xs hidden md:block"
-                >
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center">
-                      <Zap className="h-5 w-5" />
-                    </div>
-                    <span className="font-black uppercase text-[10px] tracking-widest">Real-time Optimization</span>
-                  </div>
-                  <p className="text-slate-400 text-sm font-medium">"Grid adjusted for weather patterns in Tokyo. Recalculating route..."</p>
-                </motion.div>
-              </div>
+              </motion.div>
             </div>
-          </div>
-        </section>
+          </section>
+        </main>
 
-        {/* CTA SECTION - IMMERSIVE */}
-        <section className="relative py-32 overflow-hidden bg-slate-950 min-h-[60vh] flex items-center">
-          <div className="absolute inset-0 opacity-20">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--color-primary)_0%,transparent_70%)]" />
-          </div>
-          
-          <div className="container mx-auto px-4 relative z-10 text-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="max-w-4xl mx-auto"
-            >
-              <h2 className="font-headline text-5xl md:text-7xl font-black text-white tracking-tighter leading-[0.8] uppercase italic mb-4">
-                READY TO <br />
-                <span className="text-primary">RECODE?</span>
-              </h2>
-              <p className="text-slate-400 text-xl mb-6 font-medium italic">
-                Join 50,000+ digital nomads who have already synthesized their reality.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <Button asChild size="lg" className="h-24 px-16 rounded-full bg-primary text-white hover:bg-primary/90 shadow-2xl animate-glow-pulse font-black text-2xl transition-all hover:scale-105 active:scale-95">
-                  <Link href="/signup">SIGN UP NOW</Link>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="h-24 px-16 rounded-full border-white/20 bg-white/10 hover:bg-white/20 text-white font-black text-2xl backdrop-blur-xl transition-all hover:scale-105 active:scale-95 shadow-lg">
-                  <Link href="/login">LOGIN</Link>
-                </Button>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-      </main>
-      
-      <Footer />
-    </div>
+        <Footer />
+      </div>
   )
 }

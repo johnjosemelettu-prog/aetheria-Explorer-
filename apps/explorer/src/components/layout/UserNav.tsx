@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useRouter, usePathname } from 'next/navigation'
 import { getAuth, signOut } from 'firebase/auth'
 import { doc } from 'firebase/firestore'
-import { LogOut, User as UserIcon, Shield, Store, CreditCard, Crown, LayoutDashboard, Backpack } from 'lucide-react'
+import { LogOut, User as UserIcon, Shield, Store, CreditCard, Crown, LayoutDashboard, Backpack, Calendar, ArrowUpCircle } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
 import {
@@ -41,15 +41,15 @@ export function UserNav() {
   }, [])
 
   const userProfileRef = useMemoFirebase(
-    () => (user && firestore ? doc(firestore, 'userProfiles', user.uid) : null),
-    [user, firestore]
+      () => (user && firestore ? doc(firestore, 'userProfiles', user.uid) : null),
+      [user, firestore]
   )
   const { data: userProfile } = useDoc(userProfileRef)
 
   const handleLogout = async () => {
     const auth = getAuth();
     if (!auth) return;
-    
+
     try {
       await signOut(auth)
       toast({
@@ -83,76 +83,90 @@ export function UserNav() {
   const isVendorPortal = pathname.startsWith('/vendor');
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="ghost" className="relative h-10 w-10 rounded-full p-0 border-2 border-transparent hover:border-primary/20 transition-all">
-          <Avatar className="h-9 w-9">
-            <AvatarImage src={userProfile?.photoURL || user.photoURL || ''} alt={user.email ?? ''} />
-            <AvatarFallback className="bg-slate-900 text-white font-black">{getInitials(user.email)}</AvatarFallback>
-          </Avatar>
-          {subscriptionTier !== 'free' && (
-            <div className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-primary flex items-center justify-center border-2 border-white shadow-sm">
-              <Crown className="h-2 w-2 text-white fill-white" />
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button variant="ghost" className="relative h-10 w-10 rounded-full p-0 border-2 border-transparent hover:border-primary/20 transition-all">
+            <Avatar className="h-9 w-9">
+              <AvatarImage src={userProfile?.photoURL || user.photoURL || ''} alt={user.email ?? ''} />
+              <AvatarFallback className="bg-slate-900 text-white font-black">{getInitials(user.email)}</AvatarFallback>
+            </Avatar>
+            {subscriptionTier !== 'free' && (
+                <div className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-primary flex items-center justify-center border-2 border-white shadow-sm">
+                  <Crown className="h-2 w-2 text-white fill-white" />
+                </div>
+            )}
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent className="w-64 p-2 rounded-[2rem] shadow-2xl border-none glass" align="end" forceMount>
+          <DropdownMenuLabel className="font-normal p-4">
+            <div className="flex flex-col space-y-2">
+              <div className="flex items-center justify-between">
+                <p className="text-sm font-black leading-none uppercase tracking-tighter italic">{userProfile?.firstName} {userProfile?.lastName}</p>
+                <Badge variant="outline" className="text-[8px] font-black uppercase tracking-widest border-primary/20 text-primary">{role}</Badge>
+              </div>
+              <p className="text-[10px] font-bold text-muted-foreground truncate">
+                {user.email}
+              </p>
             </div>
-          )}
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-64 p-2 rounded-[2rem] shadow-2xl border-none glass" align="end" forceMount>
-        <DropdownMenuLabel className="font-normal p-4">
-          <div className="flex flex-col space-y-2">
-            <div className="flex items-center justify-between">
-              <p className="text-sm font-black leading-none uppercase tracking-tighter italic">{userProfile?.firstName} {userProfile?.lastName}</p>
-              <Badge variant="outline" className="text-[8px] font-black uppercase tracking-widest border-primary/20 text-primary">{role}</Badge>
-            </div>
-            <p className="text-[10px] font-bold text-muted-foreground truncate">
-              {user.email}
-            </p>
-          </div>
-        </DropdownMenuLabel>
-        
-        <DropdownMenuSeparator className="bg-border/50 mx-2" />
-        
-        <DropdownMenuGroup className="p-1">
-          <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-primary/5">
-            <Link href="/dashboard" className="flex items-center gap-3">
-              <LayoutDashboard className="h-4 w-4 text-primary" />
-              <span className="text-[10px] font-black uppercase tracking-widest">Explorer Hub</span>
-            </Link>
-          </DropdownMenuItem>
+          </DropdownMenuLabel>
 
-          {role === 'admin' && !isAdminPortal && (
+          <DropdownMenuSeparator className="bg-border/50 mx-2" />
+
+          <DropdownMenuGroup className="p-1">
             <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-primary/5">
-              <Link href="/admin" className="flex items-center gap-3">
-                <Shield className="h-4 w-4 text-primary" />
-                <span className="text-[10px] font-black uppercase tracking-widest">Admin Console</span>
+              <Link href="/dashboard" className="flex items-center gap-3">
+                <LayoutDashboard className="h-4 w-4 text-primary" />
+                <span className="text-[10px] font-black uppercase tracking-widest">Explorer Hub</span>
               </Link>
             </DropdownMenuItem>
-          )}
 
-          {role === 'vendor' && !isVendorPortal && (
-            <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-emerald-500/5">
-              <Link href="/vendor/dashboard" className="flex items-center gap-3">
-                <Store className="h-4 w-4 text-emerald-600" />
-                <span className="text-[10px] font-black uppercase tracking-widest">Partner Hub</span>
+            <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-primary/5">
+              <Link href="/trips" className="flex items-center gap-3">
+                <Calendar className="h-4 w-4 text-primary" />
+                <span className="text-[10px] font-black uppercase tracking-widest">Manage Bookings</span>
               </Link>
             </DropdownMenuItem>
-          )}
 
-          <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-primary/5">
-            <Link href="/profile" className="flex items-center gap-3">
-              <UserIcon className="h-4 w-4 text-muted-foreground" />
-              <span className="text-[10px] font-black uppercase tracking-widest">Identity Node</span>
-            </Link>
+            <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-primary/5">
+              <Link href="/subscription" className="flex items-center gap-3">
+                <ArrowUpCircle className="h-4 w-4 text-primary" />
+                <span className="text-[10px] font-black uppercase tracking-widest">Upgrade Subscription</span>
+              </Link>
+            </DropdownMenuItem>
+
+            {role === 'admin' && !isAdminPortal && (
+                <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-primary/5">
+                  <Link href="/admin" className="flex items-center gap-3">
+                    <Shield className="h-4 w-4 text-primary" />
+                    <span className="text-[10px] font-black uppercase tracking-widest">Admin Console</span>
+                  </Link>
+                </DropdownMenuItem>
+            )}
+
+            {role === 'vendor' && !isVendorPortal && (
+                <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-emerald-500/5">
+                  <Link href="/vendor/dashboard" className="flex items-center gap-3">
+                    <Store className="h-4 w-4 text-emerald-600" />
+                    <span className="text-[10px] font-black uppercase tracking-widest">Partner Hub</span>
+                  </Link>
+                </DropdownMenuItem>
+            )}
+
+            <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-primary/5">
+              <Link href="/profile" className="flex items-center gap-3">
+                <UserIcon className="h-4 w-4 text-muted-foreground" />
+                <span className="text-[10px] font-black uppercase tracking-widest">Identity Node</span>
+              </Link>
+            </DropdownMenuItem>
+          </DropdownMenuGroup>
+
+          <DropdownMenuSeparator className="bg-border/50 mx-2" />
+
+          <DropdownMenuItem onClick={handleLogout} className="rounded-xl cursor-pointer p-3 text-destructive focus:text-destructive focus:bg-destructive/5 transition-colors">
+            <LogOut className="h-4 w-4 mr-3" />
+            <span className="text-[10px] font-black uppercase tracking-widest">Terminate Session</span>
           </DropdownMenuItem>
-        </DropdownMenuGroup>
-
-        <DropdownMenuSeparator className="bg-border/50 mx-2" />
-        
-        <DropdownMenuItem onClick={handleLogout} className="rounded-xl cursor-pointer p-3 text-destructive focus:text-destructive focus:bg-destructive/5 transition-colors">
-          <LogOut className="h-4 w-4 mr-3" />
-          <span className="text-[10px] font-black uppercase tracking-widest">Terminate Session</span>
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
+        </DropdownMenuContent>
+      </DropdownMenu>
   )
 }

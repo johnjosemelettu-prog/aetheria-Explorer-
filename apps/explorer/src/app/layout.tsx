@@ -12,7 +12,7 @@ import { AppSidebar } from '@/components/layout/AppSidebar'
 export const metadata: Metadata = {
   title: 'Aetheria: Your Smart Travel Companion',
   description:
-    'Aetheria - Generate personalized itineraries, explore destinations in VR, and navigate with AR.',
+      'Aetheria - Generate personalized itineraries, explore destinations in VR, and navigate with AR.',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
@@ -33,39 +33,41 @@ export const viewport: Viewport = {
 }
 
 export default function RootLayout({
-  children,
-}: Readonly<{
+                                     children,
+                                   }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth">
+      <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin=""
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin=""
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
-          rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+            rel="stylesheet"
         />
       </head>
       <body className={cn('font-body antialiased')} suppressHydrationWarning>
-        <ErrorBoundary>
-          <FirebaseClientProvider>
-            <ThemeProvider>
-              <I18nProvider>
+      <ErrorBoundary>
+        <FirebaseClientProvider>
+          <ThemeProvider>
+            <I18nProvider>
+              <div className="flex flex-col min-h-screen">
                 <SidebarProvider defaultOpen={false} className="relative">
                   <AppSidebar />
                   {children}
                 </SidebarProvider>
                 <Toaster />
-              </I18nProvider>
-            </ThemeProvider>
-          </FirebaseClientProvider>
-        </ErrorBoundary>
+              </div>
+            </I18nProvider>
+          </ThemeProvider>
+        </FirebaseClientProvider>
+      </ErrorBoundary>
       </body>
-    </html>
+      </html>
   )
 }
