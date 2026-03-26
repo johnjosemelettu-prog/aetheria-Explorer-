@@ -7,24 +7,24 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { format, differenceInDays } from 'date-fns'
-import { 
-  BedDouble, 
-  Calendar as CalendarIcon, 
-  Search, 
-  Star, 
-  CheckCircle2, 
-  Sparkles, 
-  Zap, 
-  ArrowUpRight, 
-  Loader2, 
-  User, 
-  FileText, 
-  Wallet, 
-  ShieldCheck, 
-  X, 
-  Bot, 
-  ShieldAlert, 
-  ArrowRight 
+import {
+  BedDouble,
+  Calendar as CalendarIcon,
+  Search,
+  Star,
+  CheckCircle2,
+  Sparkles,
+  Zap,
+  ArrowUpRight,
+  Loader2,
+  User,
+  FileText,
+  Wallet,
+  ShieldCheck,
+  X,
+  Bot,
+  ShieldAlert,
+  ArrowRight
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
@@ -59,7 +59,7 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
   const { t, language } = useTranslation()
   const { toast } = useToast()
   const { user, firestore } = useFirebase()
-  
+
   const [searchResults, setSearchResults] = useState<Hotel[] | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [selectedHotel, setSelectedHotel] = useState<Hotel | null>(null)
@@ -83,8 +83,8 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
 
   async function onSubmit(values: z.infer<typeof bookingSchema>) {
     if (!values.dates.from || !values.dates.to) {
-        toast({ variant: 'destructive', title: "Temporal Node Missing", description: "Select check-in and check-out dates." });
-        return;
+      toast({ variant: 'destructive', title: "Temporal Node Missing", description: "Select check-in and check-out dates." });
+      return;
     }
     setIsLoading(true)
     setSearchResults(null)
@@ -113,7 +113,7 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
 
   const handleBookingConfirmed = async () => {
     if (!user || !firestore || !selectedHotel) return;
-    
+
     const dates = form.getValues('dates');
     if (!dates.from || !dates.to) return;
 
@@ -157,10 +157,10 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
 
       const hotelBookingRef = doc(collection(firestore, 'userProfiles', user.uid, 'hotelRoomBookings'));
       setDocumentNonBlocking(hotelBookingRef, bookingData, { merge: true });
-      
+
       const walletRef = doc(firestore, 'userProfiles', user.uid, 'wallets', 'USD');
       setDocumentNonBlocking(walletRef, { balance: increment(-finalTotal), updatedAt: serverTimestamp() }, { merge: true });
-      
+
       const transactionRef = collection(firestore, 'userProfiles', user.uid, 'transactions');
       addDocumentNonBlocking(transactionRef, {
         type: 'debit',
@@ -170,7 +170,7 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
         description: `Stay at ${selectedHotel.name}${includeConcierge ? ' (Concierge Pack)' : ''}`,
         timestamp: serverTimestamp()
       });
-      
+
       const statusRef = doc(firestore, 'userProfiles', user.uid, 'loyalty', 'status');
       setDocumentNonBlocking(statusRef, { points: increment(pointsAwarded), updatedAt: serverTimestamp() }, { merge: true });
 
@@ -194,150 +194,159 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
 
   if (step === 'success' && selectedHotel) {
     return (
-      <Card className="mx-auto max-w-2xl border-none shadow-2xl rounded-[2.5rem] overflow-hidden animate-in zoom-in duration-500">
-        <div className="bg-emerald-600 p-10 text-white text-center relative overflow-hidden">
-          <div className="absolute top-0 right-0 p-10 opacity-10"><BedDouble className="h-40 w-40" /></div>
-          <div className="relative z-10">
-            <div className="mx-auto h-20 w-20 rounded-3xl bg-white/20 flex items-center justify-center mb-6 shadow-lg"><CheckCircle2 className="h-12 w-12 text-white" /></div>
-            <CardTitle className="text-4xl font-black font-headline tracking-tighter">Stay Secured!</CardTitle>
-            <CardDescription className="text-white/80 mt-2 text-lg font-medium">{selectedHotel.name} is ready.</CardDescription>
+        <Card className="mx-auto max-w-2xl border-none shadow-2xl rounded-[2rem] md:rounded-[2.5rem] overflow-hidden animate-in zoom-in duration-500">
+          <div className="bg-emerald-600 p-6 md:p-10 text-white text-center relative overflow-hidden">
+            <div className="absolute top-0 right-0 p-6 md:p-10 opacity-10"><BedDouble className="h-24 w-24 md:h-40 md:w-40" /></div>
+            <div className="relative z-10">
+              <div className="mx-auto h-16 w-16 md:h-20 md:w-20 rounded-2xl md:rounded-3xl bg-white/20 flex items-center justify-center mb-4 md:mb-6 shadow-lg"><CheckCircle2 className="h-10 w-10 md:h-12 md:w-12 text-white" /></div>
+              <CardTitle className="text-3xl md:text-4xl font-black font-headline tracking-tighter">Stay Secured!</CardTitle>
+              <CardDescription className="text-white/80 mt-2 text-base md:text-lg font-medium">{selectedHotel.name} is ready.</CardDescription>
+            </div>
           </div>
-        </div>
-        <CardFooter className="p-10 bg-white"><Button asChild className="w-full h-14 rounded-2xl font-black shadow-xl shadow-orange-200 bg-slate-900 text-white"><Link href="/trips">My Journeys</Link></Button></CardFooter>
-      </Card>
+          <CardFooter className="p-6 md:p-10 bg-white"><Button asChild className="w-full h-12 md:h-14 rounded-xl md:rounded-2xl font-black shadow-xl shadow-orange-200 bg-slate-900 text-white"><Link href="/trips">My Journeys</Link></Button></CardFooter>
+        </Card>
     );
   }
 
   return (
-    <div className="space-y-10">
-      {step === 'search' && (
-        <Card className="border-none shadow-xl rounded-[2.5rem] overflow-hidden">
-          <CardContent className="p-10">
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-1 items-end gap-6 md:grid-cols-4">
-                <FormField control={form.control} name="destination" render={({ field }) => (
-                  <FormItem className="md:col-span-2">
-                    <FormLabel className="font-bold text-slate-700">{t('hotels.destinationLabel')}</FormLabel>
-                    <FormControl><Input placeholder={t('hotels.destinationPlaceholder')} {...field} className="rounded-xl h-12" /></FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )} />
-                <FormField control={form.control} name="dates" render={({ field }) => (
-                  <FormItem className="flex flex-col">
-                    <FormLabel className="font-bold text-slate-700">{t('hotels.datesLabel')}</FormLabel>
-                    <Popover>
-                      <PopoverTrigger asChild><Button variant={'outline'} className="w-full justify-start text-left font-normal rounded-xl h-12 border-slate-200"><CalendarIcon className="mr-2 h-4 w-4" />{field.value?.from ? format(field.value.from, 'LLL dd') : 'Select'} - {field.value?.to ? format(field.value.to, 'LLL dd') : 'Select'}</Button></PopoverTrigger>
-                      <PopoverContent className="w-auto p-0" align="start">
-                        <Calendar 
-                          mode="range" 
-                          selected={{ from: field.value?.from, to: field.value?.to }} 
-                          onSelect={field.onChange} 
-                          numberOfMonths={2} 
-                          disabled={(date) => date < new Date(new Date().setHours(0, 0, 0, 0))} 
-                        />
-                      </PopoverContent>
-                    </Popover>
-                  </FormItem>
-                )} />
-                <Button type="submit" className="h-14 rounded-2xl font-black text-lg shadow-xl shadow-primary/20 bg-primary text-white" disabled={isLoading}>
-                  {isLoading ? <Loader2 className="animate-spin" /> : <><Search className="mr-2 h-5 w-5" /> {t('hotels.searchButton')}</>}
-                </Button>
-              </form>
-            </Form>
-          </CardContent>
-        </Card>
-      )}
+      <div className="space-y-6 md:space-y-10">
+        {step === 'search' && (
+            <Card className="border-none shadow-xl rounded-2xl md:rounded-[2.5rem] overflow-hidden">
+              <CardContent className="p-5 md:p-10">
+                <Form {...form}>
+                  <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-1 items-end gap-4 md:gap-6 md:grid-cols-4">
+                    <FormField control={form.control} name="destination" render={({ field }) => (
+                        <FormItem className="md:col-span-2">
+                          <FormLabel className="font-bold text-slate-700 text-sm md:text-base">{t('hotels.destinationLabel')}</FormLabel>
+                          <FormControl><Input placeholder={t('hotels.destinationPlaceholder')} {...field} className="rounded-xl h-12" /></FormControl>
+                          <FormMessage />
+                        </FormItem>
+                    )} />
+                    <FormField control={form.control} name="dates" render={({ field }) => (
+                        <FormItem className="flex flex-col">
+                          <FormLabel className="font-bold text-slate-700 text-sm md:text-base">{t('hotels.datesLabel')}</FormLabel>
+                          <Popover>
+                            <PopoverTrigger asChild><Button variant={'outline'} className="w-full justify-start text-left font-normal rounded-xl h-12 border-slate-200"><CalendarIcon className="mr-2 h-4 w-4" />{field.value?.from ? format(field.value.from, 'LLL dd') : 'Select'} - {field.value?.to ? format(field.value.to, 'LLL dd') : 'Select'}</Button></PopoverTrigger>
+                            <PopoverContent className="w-auto p-0" align="start">
+                              <Calendar
+                                  mode="range"
+                                  selected={{ from: field.value?.from, to: field.value?.to }}
+                                  onSelect={field.onChange}
+                                  numberOfMonths={1}
+                                  className="md:hidden"
+                                  disabled={(date) => date < new Date(new Date().setHours(0, 0, 0, 0))}
+                              />
+                              <Calendar
+                                  mode="range"
+                                  selected={{ from: field.value?.from, to: field.value?.to }}
+                                  onSelect={field.onChange}
+                                  numberOfMonths={2}
+                                  className="hidden md:block"
+                                  disabled={(date) => date < new Date(new Date().setHours(0, 0, 0, 0))}
+                              />
+                            </PopoverContent>
+                          </Popover>
+                        </FormItem>
+                    )} />
+                    <Button type="submit" className="h-12 md:h-14 rounded-xl md:rounded-2xl font-black text-base md:text-lg shadow-xl shadow-primary/20 bg-primary text-white" disabled={isLoading}>
+                      {isLoading ? <Loader2 className="animate-spin" /> : <><Search className="mr-2 h-5 w-5" /> {t('hotels.searchButton')}</>}
+                    </Button>
+                  </form>
+                </Form>
+              </CardContent>
+            </Card>
+        )}
 
-      {step === 'search' && searchResults && (
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-          {searchResults.map((hotel) => (
-            <Card key={hotel.id} className="overflow-hidden border-none shadow-xl rounded-[2rem] group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex flex-col bg-white">
-              <div className="relative h-56 w-full overflow-hidden">
-                {hotel.image && (
-                  <Image src={hotel.image.imageUrl} alt={hotel.name} fill className="object-cover transition-transform duration-700 group-hover:scale-110" data-ai-hint={hotel.image.imageHint} />
-                )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-4 left-4 flex items-center gap-1 bg-white/20 backdrop-blur-md rounded-full px-3 py-1 text-white text-[10px] font-black uppercase tracking-widest"><Star className="h-3 w-3 fill-accent text-accent" /> {hotel.rating} Rated</div>
+        {step === 'search' && searchResults && (
+            <div className="grid grid-cols-1 gap-6 md:gap-10 md:grid-cols-2 lg:grid-cols-3">
+              {searchResults.map((hotel) => (
+                  <Card key={hotel.id} className="overflow-hidden border-none shadow-xl rounded-2xl md:rounded-[2rem] group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex flex-col bg-white">
+                    <div className="relative h-48 md:h-56 w-full overflow-hidden">
+                      {hotel.image && (
+                          <Image src={hotel.image.imageUrl} alt={hotel.name} fill className="object-cover transition-transform duration-700 group-hover:scale-110" data-ai-hint={hotel.image.imageHint} />
+                      )}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                      <div className="absolute bottom-4 left-4 flex items-center gap-1 bg-white/20 backdrop-blur-md rounded-full px-3 py-1 text-white text-[10px] font-black uppercase tracking-widest"><Star className="h-3 w-3 fill-accent text-accent" /> {hotel.rating} Rated</div>
+                    </div>
+                    <CardHeader className="p-5 md:p-8 pb-3 md:pb-4"><CardTitle className="text-xl md:text-2xl font-black font-headline text-slate-900 leading-tight">{hotel.name}</CardTitle></CardHeader>
+                    <CardContent className="px-5 md:px-8 pb-3 md:pb-4 flex-grow"><div className="flex items-baseline gap-1"><span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">FROM</span><span className="text-2xl md:text-3xl font-black font-headline text-slate-900">${hotel.price}</span><span className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">/ NIGHT</span></div></CardContent>
+                    <CardFooter className="p-5 md:p-8 pt-0"><Button className="w-full h-11 md:h-12 rounded-xl font-black bg-slate-900 text-white hover:bg-emerald-600" onClick={() => handleSelectHotel(hotel)}>Select Stay</Button></CardFooter>
+                  </Card>
+              ))}
+            </div>
+        )}
+
+        {step === 'details' && selectedHotel && (
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-10 animate-in slide-in-from-bottom-4 duration-500">
+              <div className="lg:col-span-7 space-y-6 md:space-y-8">
+                <Card className="border-none shadow-xl rounded-2xl md:rounded-[2.5rem] bg-white overflow-hidden">
+                  <CardHeader className="bg-slate-900 text-white p-6 md:p-8">
+                    <CardTitle className="text-xl md:text-2xl font-black font-headline flex items-center gap-3">
+                      <User className="h-5 w-5 md:h-6 md:w-6 text-primary" /> Guest Details
+                    </CardTitle>
+                    <CardDescription className="text-slate-400 text-sm">Specify the lead guest and any requirements.</CardDescription>
+                  </CardHeader>
+                  <CardContent className="p-6 md:p-8 space-y-6">
+                    <div className="space-y-2">
+                      <Label className="font-bold text-slate-700 text-sm md:text-base">Lead Guest Name</Label>
+                      <Input placeholder="Full Legal Name" value={leadGuestName} onChange={(e) => setLeadGuestName(e.target.value)} className="h-12 rounded-xl border-slate-200" />
+                    </div>
+                    <div className="space-y-2">
+                      <Label className="font-bold text-slate-700 flex items-center gap-2 text-sm md:text-base">
+                        <FileText className="h-4 w-4" /> Special Requests (Optional)
+                      </Label>
+                      <Textarea placeholder="e.g. High floor, quiet room..." value={specialRequests} onChange={(e) => setSpecialRequests(e.target.value)} className="rounded-xl border-slate-200" rows={4} />
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-none shadow-xl rounded-2xl md:rounded-[2.5rem] bg-amber-50/50 border-2 border-dashed border-amber-200 overflow-hidden group hover:bg-amber-50 transition-all cursor-pointer" onClick={() => setIncludeConcierge(!includeConcierge)}>
+                  <CardContent className="p-5 md:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 md:gap-6">
+                    <div className="flex items-center gap-4 md:gap-6">
+                      <div className={cn("h-12 w-12 md:h-16 md:w-16 rounded-xl md:rounded-2xl flex items-center justify-center transition-all shrink-0", includeConcierge ? "bg-amber-500 text-white" : "bg-white text-amber-500 shadow-sm")}>
+                        <Bot className="h-6 w-6 md:h-8 md:w-8" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg md:text-xl font-black font-headline text-slate-900">Elite Concierge Pack</h3>
+                        <p className="text-xs md:text-sm text-slate-500 font-medium">Late Checkout + Priority Ruth AI + Breakfast Upgrade.</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between sm:justify-end gap-4 border-t sm:border-t-0 pt-3 sm:pt-0">
+                      <p className="text-xl md:text-2xl font-black text-amber-600">$15</p>
+                      <Checkbox checked={includeConcierge} onCheckedChange={(v) => setIncludeConcierge(!!v)} className="h-6 w-6 rounded-lg border-amber-300" />
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
-              <CardHeader className="p-8 pb-4"><CardTitle className="text-2xl font-black font-headline text-slate-900 leading-tight">{hotel.name}</CardTitle></CardHeader>
-              <CardContent className="px-8 pb-4 flex-grow"><div className="flex items-baseline gap-1"><span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">FROM</span><span className="text-3xl font-black font-headline text-slate-900">${hotel.price}</span><span className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">/ NIGHT</span></div></CardContent>
-              <CardFooter className="p-8 pt-0"><Button className="w-full h-12 rounded-xl font-black bg-slate-900 text-white hover:bg-emerald-600" onClick={() => handleSelectHotel(hotel)}>Select Stay</Button></CardFooter>
-            </Card>
-          ))}
-        </div>
-      )}
 
-      {step === 'details' && selectedHotel && (
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 animate-in slide-in-from-bottom-4 duration-500">
-          <div className="lg:col-span-7 space-y-8">
-            <Card className="border-none shadow-xl rounded-[2.5rem] bg-white overflow-hidden">
-              <CardHeader className="bg-slate-900 text-white p-8">
-                <CardTitle className="text-2xl font-black font-headline flex items-center gap-3">
-                  <User className="h-6 w-6 text-primary" /> Guest Details
-                </CardTitle>
-                <CardDescription className="text-slate-400">Specify the lead guest and any requirements.</CardDescription>
-              </CardHeader>
-              <CardContent className="p-8 space-y-6">
-                <div className="space-y-2">
-                  <Label className="font-bold text-slate-700">Lead Guest Name</Label>
-                  <Input placeholder="Full Legal Name" value={leadGuestName} onChange={(e) => setLeadGuestName(e.target.value)} className="h-12 rounded-xl border-slate-200" />
-                </div>
-                <div className="space-y-2">
-                  <Label className="font-bold text-slate-700 flex items-center gap-2">
-                    <FileText className="h-4 w-4" /> Special Requests (Optional)
-                  </Label>
-                  <Textarea placeholder="e.g. High floor, quiet room..." value={specialRequests} onChange={(e) => setSpecialRequests(e.target.value)} className="rounded-xl border-slate-200" rows={4} />
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-xl rounded-[2.5rem] bg-amber-50/50 border-2 border-dashed border-amber-200 overflow-hidden group hover:bg-amber-50 transition-all cursor-pointer" onClick={() => setIncludeConcierge(!includeConcierge)}>
-              <CardContent className="p-8 flex items-center justify-between gap-6">
-                <div className="flex items-center gap-6">
-                  <div className={cn("h-16 w-16 rounded-2xl flex items-center justify-center transition-all", includeConcierge ? "bg-amber-500 text-white" : "bg-white text-amber-500 shadow-sm")}>
-                    <Bot className="h-8 w-8" />
+              <aside className="lg:col-span-5 space-y-6 md:space-y-8">
+                <Card className="border-none shadow-2xl rounded-2xl md:rounded-[3rem] bg-white overflow-hidden sticky top-24">
+                  <div className="relative h-40 md:h-48 w-full">
+                    {selectedHotel.image && <Image src={selectedHotel.image.imageUrl} alt="Hotel" fill className="object-cover" />}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute bottom-4 left-6 text-white">
+                      <CardTitle className="text-xl md:text-2xl font-black font-headline">{selectedHotel.name}</CardTitle>
+                      <div className="flex items-center gap-1.5 text-[10px] md:text-xs font-bold uppercase tracking-widest text-emerald-400 mt-1">
+                        <Star className="h-3 w-3 md:h-3.5 md:w-3.5 fill-current" /> {selectedHotel.rating} Rated
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-black font-headline text-slate-900">Elite Concierge Pack</h3>
-                    <p className="text-sm text-slate-500 font-medium">Late Checkout + Priority Ruth AI + Breakfast Upgrade.</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <p className="text-2xl font-black text-amber-600">$15</p>
-                  <Checkbox checked={includeConcierge} onCheckedChange={(v) => setIncludeConcierge(!!v)} className="h-6 w-6 rounded-lg border-amber-300" />
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+                  <CardContent className="p-6 md:p-8 space-y-6">
+                    <Button className="w-full h-12 md:h-14 rounded-xl md:rounded-2xl font-black text-base md:text-lg bg-emerald-600 hover:bg-emerald-700 text-white" disabled={isBooking} onClick={handleBookingConfirmed}>
+                      {isBooking ? <Loader2 className="animate-spin" /> : "Confirm Stay"}
+                    </Button>
+                  </CardContent>
 
-          <aside className="lg:col-span-5 space-y-8">
-            <Card className="border-none shadow-2xl rounded-[3rem] bg-white overflow-hidden sticky top-24">
-              <div className="relative h-48 w-full">
-                {selectedHotel.image && <Image src={selectedHotel.image.imageUrl} alt="Hotel" fill className="object-cover" />}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-4 left-6 text-white">
-                  <CardTitle className="text-2xl font-black font-headline">{selectedHotel.name}</CardTitle>
-                  <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-emerald-400 mt-1">
-                    <Star className="h-3.5 w-3.5 fill-current" /> {selectedHotel.rating} Rated
-                  </div>
-                </div>
-              </div>
-              <CardContent className="p-8 space-y-6">
-                <Button className="w-full h-14 rounded-2xl font-black text-lg bg-emerald-600 hover:bg-emerald-700 text-white" disabled={isBooking} onClick={handleBookingConfirmed}>
-                  {isBooking ? <Loader2 className="animate-spin" /> : "Confirm Stay"}
-                </Button>
-              </CardContent>
-
-              <Alert className="border-none bg-blue-50 text-blue-900 rounded-3xl p-6">
-                <ShieldAlert className="h-5 w-5 text-blue-600" />
-                <AlertTitle className="font-black font-headline uppercase text-[10px]">Protection Check</AlertTitle>
-                <AlertDescription className="text-xs font-medium">Don't forget to synthesize a <strong>Shield Node</strong> for this stay.</AlertDescription>
-                <Button asChild variant="link" className="p-0 h-auto text-blue-600 font-bold text-xs mt-2"><Link href="/insurance">Get Insurance <ArrowRight className="h-3 w-3 ml-1" /></Link></Button>
-              </Alert>
-            </Card>
-          </aside>
-        </div>
-      )}
-    </div>
+                  <Alert className="border-none bg-blue-50 text-blue-900 rounded-2xl md:rounded-3xl p-4 md:p-6">
+                    <ShieldAlert className="h-5 w-5 text-blue-600" />
+                    <AlertTitle className="font-black font-headline uppercase text-[10px]">Protection Check</AlertTitle>
+                    <AlertDescription className="text-[10px] md:text-xs font-medium">Don't forget to synthesize a <strong>Shield Node</strong> for this stay.</AlertDescription>
+                    <Button asChild variant="link" className="p-0 h-auto text-blue-600 font-bold text-[10px] md:text-xs mt-2"><Link href="/insurance">Get Insurance <ArrowRight className="h-3 w-3 ml-1" /></Link></Button>
+                  </Alert>
+                </Card>
+              </aside>
+            </div>
+        )}
+      </div>
   )
 }
