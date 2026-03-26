@@ -3,6 +3,7 @@ import { z } from 'zod';
 /**
  * @fileOverview A Genkit flow for wardrobe logistics emails.
  * Refactored for environment-aware execution to support static exports.
+ * This flow is responsible for generating emails related to wardrobe logistics.
  */
 
 const WardrobeEmailInputSchema = z.object({
@@ -22,6 +23,7 @@ export type WardrobeEmailOutput = z.infer<typeof WardrobeEmailOutputSchema>;
 
 export async function synthesizeWardrobeEmail(input: WardrobeEmailInput): Promise<WardrobeEmailOutput> {
   if (typeof window !== 'undefined') {
+    // This is a client-side execution, so we return a mock response.
     return { subject: `Wardrobe ${input.type}`, body: "Logistics confirmed." };
   }
 
