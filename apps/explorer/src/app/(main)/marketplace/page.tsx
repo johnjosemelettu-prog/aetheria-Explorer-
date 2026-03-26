@@ -176,7 +176,9 @@ export default function VibeMarketplacePage() {
           </div>
           <Button asChild className="rounded-2xl h-12 sm:h-14 px-8 font-black bg-slate-900 text-white hover:bg-slate-800 shadow-xl w-full md:w-auto"> {/* Adjusted height and font size */}
             <Link href="/itinerary-generator">
-              <Plus className="mr-2 h-5 w-5" /> Sell Your Vibe
+              <span className="flex items-center">
+                <Plus className="mr-2 h-5 w-5" /> Sell Your Vibe
+              </span>
             </Link>
           </Button>
         </div>
@@ -260,10 +262,10 @@ export default function VibeMarketplacePage() {
                 {isPurchasing === vibe.id ? (
                   <Loader2 className="animate-spin h-6 w-6" />
                 ) : (
-                  <>
+                  <div className="flex items-center">
                     <ShoppingBag className="mr-2 h-5 w-5 group-hover/btn:scale-110 transition-transform" />
                     Acquire Vibe
-                  </>
+                  </div>
                 )}
               </Button>
             </CardFooter>
