@@ -17,7 +17,8 @@ import {
   ShieldCheck,
   Menu,
   X,
-  ArrowUpRight
+  ArrowUpRight,
+  Scissors
 } from "lucide-react"
 import { collection } from "firebase/firestore"
 
@@ -131,6 +132,22 @@ export function Header() {
                     <Link href="/sos">
                       <Button variant="destructive" size="sm" className="rounded-full px-3 sm:px-4 h-9 font-black uppercase tracking-widest text-[9px] shadow-lg shadow-red-500/20 animate-pulse">
                         <Siren className="sm:mr-1.5 h-3.5 w-3.5" /> <span className="hidden sm:inline">SOS</span>
+                      </Button>
+                    </Link>
+                    <Link href="/wallet">
+                      <Button variant="ghost" size="icon" className={cn(
+                        "rounded-full h-10 w-10 relative group",
+                        isHome || scrolled ? "text-white/60 hover:text-white" : "text-muted-foreground hover:text-foreground"
+                      )}>
+                        <Wallet className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                      </Button>
+                    </Link>
+                    <Link href="/digital-tailor">
+                      <Button variant="ghost" size="icon" className={cn(
+                        "rounded-full h-10 w-10 relative group",
+                        isHome || scrolled ? "text-white/60 hover:text-white" : "text-muted-foreground hover:text-foreground"
+                      )}>
+                        <Scissors className="h-5 w-5 group-hover:scale-110 transition-transform" />
                       </Button>
                     </Link>
                     <Link href="/cart">

@@ -186,20 +186,20 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
-              className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto relative z-30"
+              className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto relative z-30"
             >
               {user ? (
-                <Button asChild size="lg" className="h-24 px-16 rounded-full bg-white text-black hover:bg-slate-200 shadow-2xl font-black text-2xl group active:scale-95 transition-all w-full sm:w-auto uppercase italic">
+                <Button asChild size="lg" className="h-16 sm:h-24 px-8 sm:px-16 rounded-full bg-white text-black hover:bg-slate-200 shadow-2xl font-black text-lg sm:text-2xl group active:scale-95 transition-all w-full sm:w-auto uppercase italic">
                   <Link href="/dashboard" className="flex items-center gap-3">
-                    ENTER GRID <ArrowUpRight className="h-8 w-8 group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform" />
+                    ENTER GRID <ArrowUpRight className="h-6 w-6 sm:h-8 sm:w-8 group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform" />
                   </Link>
                 </Button>
               ) : (
                 <>
-                  <Button asChild size="lg" className="h-24 px-16 rounded-full bg-primary text-white hover:bg-primary/90 shadow-2xl animate-glow-pulse font-black text-2xl transition-all hover:scale-105 active:scale-95 w-full sm:w-auto uppercase italic">
+                  <Button asChild size="lg" className="h-16 sm:h-24 px-8 sm:px-16 rounded-full bg-primary text-white hover:bg-primary/90 shadow-2xl animate-glow-pulse font-black text-lg sm:text-2xl transition-all hover:scale-105 active:scale-95 w-full sm:w-auto uppercase italic">
                     <Link href="/signup">SIGN UP</Link>
                   </Button>
-                  <Button asChild size="lg" variant="outline" className="h-24 px-16 rounded-full border-white/60 bg-white/20 hover:bg-white/30 text-white font-black text-2xl backdrop-blur-3xl transition-all hover:scale-105 active:scale-95 w-full sm:w-auto uppercase italic shadow-lg">
+                  <Button asChild size="lg" variant="outline" className="h-16 sm:h-24 px-8 sm:px-16 rounded-full border-white/60 bg-white/20 hover:bg-white/30 text-white font-black text-lg sm:text-2xl backdrop-blur-3xl transition-all hover:scale-105 active:scale-95 w-full sm:w-auto uppercase italic shadow-lg">
                     <Link href="/login">LOGIN</Link>
                   </Button>
                 </>
@@ -368,11 +368,11 @@ export default function Home() {
                 Join 50,000+ digital nomads who have already synthesized their reality.
               </p>
               
-              <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <Button asChild size="lg" className="h-24 px-16 rounded-full bg-primary text-white hover:bg-primary/90 shadow-2xl animate-glow-pulse font-black text-2xl transition-all hover:scale-105 active:scale-95">
+              <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
+                <Button asChild size="lg" className="h-16 sm:h-24 px-8 sm:px-16 rounded-full bg-primary text-white hover:bg-primary/90 shadow-2xl animate-glow-pulse font-black text-lg sm:text-2xl transition-all hover:scale-105 active:scale-95">
                   <Link href="/signup">SIGN UP NOW</Link>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="h-24 px-16 rounded-full border-white/20 bg-white/10 hover:bg-white/20 text-white font-black text-2xl backdrop-blur-xl transition-all hover:scale-105 active:scale-95 shadow-lg">
+                <Button asChild size="lg" variant="outline" className="h-16 sm:h-24 px-8 sm:px-16 rounded-full border-white/20 bg-white/10 hover:bg-white/20 text-white font-black text-lg sm:text-2xl backdrop-blur-xl transition-all hover:scale-105 active:scale-95 shadow-lg">
                   <Link href="/login">LOGIN</Link>
                 </Button>
               </div>

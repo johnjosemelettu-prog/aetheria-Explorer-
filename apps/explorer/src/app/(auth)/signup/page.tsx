@@ -129,10 +129,24 @@ export default function SignupPage() {
       console.error(error)
       let description = t("signup.toast.genericError")
       if (error instanceof FirebaseError) {
-        if (error.code === "auth/email-already-in-use") {
-          description = t("signup.toast.emailInUse")
-        } else if (error.code === "auth/operation-not-allowed") {
-          description = t("signup.toast.operationNotAllowed")
+        switch (error.code) {
+          case "auth/email-already-in-use":
+            description = "This email address is already registered. Please sign in instead."
+            break
+          case "auth/invalid-email":
+            description = "The email address is invalid. Please check and try again."
+            break
+          case "auth/operation-not-allowed":
+            description = "Email/Password sign-up is currently disabled in the Firebase console."
+            break
+          case "auth/weak-password":
+            description = "The security key is too weak. Please use a stronger one."
+            break
+          case "auth/network-request-failed":
+            description = "Network connection failed. Please check your connection and try again."
+            break
+          default:
+            description = error.message || t("signup.toast.genericError")
         }
       }
       toast({

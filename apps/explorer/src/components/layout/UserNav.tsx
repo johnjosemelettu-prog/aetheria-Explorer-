@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useRouter, usePathname } from 'next/navigation'
 import { getAuth, signOut } from 'firebase/auth'
 import { doc } from 'firebase/firestore'
-import { LogOut, User as UserIcon, Shield, Store, CreditCard, Crown, LayoutDashboard, Backpack } from 'lucide-react'
+import { LogOut, User as UserIcon, Shield, Store, CreditCard, Crown, LayoutDashboard, Backpack, Calendar, ArrowUpCircle } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
 import {
@@ -117,6 +117,20 @@ export function UserNav() {
             <Link href="/dashboard" className="flex items-center gap-3">
               <LayoutDashboard className="h-4 w-4 text-primary" />
               <span className="text-[10px] font-black uppercase tracking-widest">Explorer Hub</span>
+            </Link>
+          </DropdownMenuItem>
+
+          <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-primary/5">
+            <Link href="/trips" className="flex items-center gap-3">
+              <Calendar className="h-4 w-4 text-primary" />
+              <span className="text-[10px] font-black uppercase tracking-widest">Manage Bookings</span>
+            </Link>
+          </DropdownMenuItem>
+
+          <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-primary/5">
+            <Link href="/subscription" className="flex items-center gap-3">
+              <ArrowUpCircle className="h-4 w-4 text-primary" />
+              <span className="text-[10px] font-black uppercase tracking-widest">Upgrade Subscription</span>
             </Link>
           </DropdownMenuItem>
 

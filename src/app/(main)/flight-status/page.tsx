@@ -269,6 +269,7 @@ export default function FlightStatusPage() {
       {/* Claim Synthesis Modal */}
       <Dialog open={!!claimResult} onOpenChange={(o) => !o && setClaimResult(null)}>
         <DialogContent className="rounded-[3rem] max-w-3xl overflow-hidden p-0 border-none shadow-2xl">
+          <DialogTitle className="sr-only">Claim Synthesis Result</DialogTitle>
           {claimResult && (
             <div className="flex flex-col">
               <CardHeader className="p-10 bg-slate-900 text-white relative">

@@ -1,14 +1,15 @@
+import { GoogleGenAI, Type } from '@google/genai';
 import { z } from 'zod';
 
 /**
  * @fileOverview A Genkit flow for finding nearby traveler matches.
- * Refactored for environment-aware execution to support static exports.
  */
 
 const FindTravelerMatchesInputSchema = z.object({
   vibe: z.string().describe('The user\'s selected "vibe".'),
   flight: z.string().describe('The user\'s flight number.'),
   terminal: z.string().describe('The user\'s current terminal.'),
+  language: z.string().optional().describe('The language for the output.'),
 });
 export type FindTravelerMatchesInput = z.infer<typeof FindTravelerMatchesInputSchema>;
 
@@ -31,15 +32,44 @@ const mockTravelers: Traveler[] = [
 ];
 
 export async function findTravelerMatches(input: FindTravelerMatchesInput): Promise<FindTravelerMatchesOutput> {
-  if (typeof window !== 'undefined') {
-    return mockTravelers;
-  }
+  const language = input.language || 'English';
 
   try {
-    const { ai } = await import('@/ai/genkit');
-    return mockTravelers;
+    const ai = new GoogleGenAI({ apiKey: process.env.NEXT_PUBLIC_GEMINI_API_KEY! });
+    const model = 'gemini-3-flash-preview';
+
+    const response = await ai.models.generateContent({
+      model,
+      contents: `You are a Social Connection Architect. Generate a list of 3-5 fictional travelers nearby in the terminal.
+      User Vibe: ${input.vibe}.
+      User Flight: ${input.flight}.
+      User Terminal: ${input.terminal}.
+      
+      IMPORTANT: All text in the output (names, vibes) MUST be in ${language}.`,
+      config: {
+        responseMimeType: 'application/json',
+        responseSchema: {
+          type: Type.ARRAY,
+          items: {
+            type: Type.OBJECT,
+            properties: {
+              id: { type: Type.STRING },
+              name: { type: Type.STRING },
+              vibe: { type: Type.STRING },
+              onSameFlight: { type: Type.BOOLEAN },
+              avatarUrl: { type: Type.STRING },
+            },
+            required: ['id', 'name', 'vibe', 'onSameFlight', 'avatarUrl'],
+          },
+        },
+      },
+    });
+
+    const text = response.text;
+    if (!text) throw new Error('No response text from Gemini');
+    return JSON.parse(text) as FindTravelerMatchesOutput;
   } catch (error) {
     console.error("Matchmaking node error:", error);
-    return [];
+    return mockTravelers;
   }
 }

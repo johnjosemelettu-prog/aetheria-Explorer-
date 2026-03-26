@@ -145,12 +145,23 @@ export default function LoginPage() {
       console.error(error)
       let description = t("login.toast.genericError")
       if (error instanceof FirebaseError) {
-        if (
-          error.code === "auth/user-not-found" ||
-          error.code === "auth/wrong-password" ||
-          error.code === "auth/invalid-credential"
-        ) {
-          description = t("login.toast.invalidCredentials")
+        switch (error.code) {
+          case "auth/user-not-found":
+          case "auth/wrong-password":
+          case "auth/invalid-credential":
+            description = "Invalid email address or security key. Please check your credentials or create a new account if you haven't already."
+            break
+          case "auth/user-disabled":
+            description = "This account has been disabled. Please contact support."
+            break
+          case "auth/too-many-requests":
+            description = "Too many failed attempts. Please try again later or reset your security key."
+            break
+          case "auth/network-request-failed":
+            description = "Network connection failed. Please check your connection and try again."
+            break
+          default:
+            description = error.message || t("login.toast.genericError")
         }
       }
       toast({

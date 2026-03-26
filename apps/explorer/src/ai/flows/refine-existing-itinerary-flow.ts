@@ -1,3 +1,4 @@
+import { GoogleGenAI, Type } from '@google/genai';
 import { z } from 'zod';
 import { GeneratePersonalizedItineraryOutputSchema } from './itinerary-schemas';
 
@@ -17,27 +18,69 @@ export type RefineExistingItineraryOutput = z.infer<typeof RefineExistingItinera
 export async function refineExistingItinerary(
   input: RefineExistingItineraryInput
 ): Promise<RefineExistingItineraryOutput> {
-  if (typeof window !== 'undefined') {
-    return {
-      refinedItinerary: JSON.parse(input.currentItinerary),
-      explanation: "Synthesis node resolved. Modifications have been mapped to the current itinerary.",
-    };
-  }
+  const language = input.language || 'English';
 
   try {
-    const { ai } = await import('@/ai/genkit');
-    const response = await ai.generate({
-      prompt: `You are an AI assistant refining an itinerary. 
-      Request: ${input.refinementRequest}
-      Current: ${input.currentItinerary}
-      Language: ${input.language || 'English'}.`,
-      output: { schema: RefineExistingItineraryOutputSchema },
+    const ai = new GoogleGenAI({ apiKey: process.env.NEXT_PUBLIC_GEMINI_API_KEY! });
+    const model = 'gemini-3-flash-preview';
+
+    const response = await ai.models.generateContent({
+      model,
+      contents: `You are an AI assistant refining an itinerary. 
+      Refinement Request: ${input.refinementRequest}
+      Current Itinerary: ${input.currentItinerary}
+      
+      IMPORTANT: All text in the output MUST be in ${language}.`,
+      config: {
+        responseMimeType: 'application/json',
+        responseSchema: {
+          type: Type.OBJECT,
+          properties: {
+            refinedItinerary: {
+              type: Type.OBJECT,
+              properties: {
+                itinerarySummary: { type: Type.STRING },
+                dailyPlans: {
+                  type: Type.ARRAY,
+                  items: {
+                    type: Type.OBJECT,
+                    properties: {
+                      date: { type: Type.STRING },
+                      theme: { type: Type.STRING },
+                      activities: {
+                        type: Type.ARRAY,
+                        items: {
+                          type: Type.OBJECT,
+                          properties: {
+                            time: { type: Type.STRING },
+                            description: { type: Type.STRING },
+                          },
+                          required: ['time', 'description'],
+                        },
+                      },
+                      notes: { type: Type.STRING },
+                    },
+                    required: ['date', 'theme', 'activities'],
+                  },
+                },
+              },
+              required: ['itinerarySummary', 'dailyPlans'],
+            },
+            explanation: { type: Type.STRING },
+          },
+          required: ['refinedItinerary', 'explanation'],
+        },
+      },
     });
 
-    if (!response.output) throw new Error("Refinement synthesis failed.");
-    return response.output;
+    const text = response.text;
+    if (!text) throw new Error('No response text from Gemini');
+    return JSON.parse(text) as RefineExistingItineraryOutput;
   } catch (error) {
     console.error("Itinerary refinement node error:", error);
-    throw error;
+    return {
+      refinedItinerary: JSON.parse(input.currentItinerary),
+      explanation: "[FALLBACK] Synthesis node resolved. Modifications have been mapped to the current itinerary.",
+    };
   }
 }

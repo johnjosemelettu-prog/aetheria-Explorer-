@@ -47,8 +47,8 @@ export default function ItineraryGeneratorPage() {
   const handleGenerate = async (data: ItineraryFormValues) => {
     if (!user || !firestore) {
       toast({
-        title: "Authorization Node Offline",
-        description: "Please sign in to synthesize an odyssey.",
+        title: t('itineraryGenerator.authError'),
+        description: t('itineraryGenerator.authErrorDesc'),
         variant: 'destructive',
       });
       return;
@@ -172,10 +172,10 @@ export default function ItineraryGeneratorPage() {
     <div className="container mx-auto px-4 py-12">
       <div className="mx-auto max-w-4xl text-center">
         <h1 className="font-headline text-4xl font-black tracking-tight md:text-6xl text-slate-900 leading-none uppercase italic">
-          Odyssey Architect
+          {t('itineraryGenerator.title')}
         </h1>
         <p className="mt-4 text-xl text-slate-500 font-medium">
-          Synthesize a multi-day journey based on your psychological vibe.
+          {t('itineraryGenerator.subtitle')}
         </p>
       </div>
 

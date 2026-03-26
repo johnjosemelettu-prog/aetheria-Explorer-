@@ -182,6 +182,7 @@ export default function ErrorLogsAdminPage() {
       {/* Log Detail Dialog */}
       <Dialog open={!!selectedLog} onOpenChange={(open) => !open && setSelectedLog(null)}>
         <DialogContent className="rounded-[3rem] max-w-3xl overflow-hidden p-0 border-none shadow-2xl">
+          <DialogTitle className="sr-only">Log Details</DialogTitle>
           {selectedLog && (
             <div className="flex flex-col h-[80vh]">
               <CardHeader className={cn(

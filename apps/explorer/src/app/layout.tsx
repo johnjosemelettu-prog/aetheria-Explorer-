@@ -53,17 +53,21 @@ export default function RootLayout({
       </head>
       <body className={cn('font-body antialiased')} suppressHydrationWarning>
         <ErrorBoundary>
-          <FirebaseClientProvider>
-            <ThemeProvider>
-              <I18nProvider>
-                <SidebarProvider defaultOpen={false} className="relative">
-                  <AppSidebar />
-                  {children}
-                </SidebarProvider>
-                <Toaster />
-              </I18nProvider>
-            </ThemeProvider>
-          </FirebaseClientProvider>
+          <>
+            <FirebaseClientProvider>
+              <ThemeProvider>
+                <I18nProvider>
+                  <div className="flex flex-col min-h-screen">
+                    <SidebarProvider defaultOpen={false} className="relative">
+                      <AppSidebar />
+                      {children}
+                    </SidebarProvider>
+                    <Toaster />
+                  </div>
+                </I18nProvider>
+              </ThemeProvider>
+            </FirebaseClientProvider>
+          </>
         </ErrorBoundary>
       </body>
     </html>

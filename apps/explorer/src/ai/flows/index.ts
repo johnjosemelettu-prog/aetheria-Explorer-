@@ -50,3 +50,8 @@ import './suggest-journal-prompt-flow';
 import './gear-purchase-email-flow';
 import './get-travel-news-flow';
 import './calculate-expense-split-flow';
+import './subscription-email-flow';
+import './explorer-quest-flow';
+import './language-lab-flow';
+import './generate-layover-itinerary-flow';
+import './parse-boarding-pass-flow';

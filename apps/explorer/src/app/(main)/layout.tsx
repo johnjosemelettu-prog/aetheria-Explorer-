@@ -10,6 +10,8 @@ const Header = dynamic(() => import('@/components/layout/Header').then(m => m.He
 const Footer = dynamic(() => import('@/components/layout/Footer').then(m => m.Footer), { ssr: false });
 const TravelBot = dynamic(() => import('@/components/layout/TravelBot').then(m => m.TravelBot), { ssr: false });
 
+import { SubscriptionGuard } from '@/components/layout/SubscriptionGuard';
+
 /**
  * MainLayout re-architected to include a persistent Explorer Sidebar.
  * Ensuring the content area is fully scrollable and mobile-safe.
@@ -25,9 +27,11 @@ export default function MainLayout({
         <AppSidebar />
         <SidebarInset className="flex flex-col bg-transparent relative">
           <Header />
-          <main className="flex-1 pt-28 lg:pt-32 px-4 sm:px-8 pb-24 overflow-y-auto overflow-x-hidden">
+          <main className="flex-1 pt-20 md:pt-28 lg:pt-32 px-3 sm:px-8 pb-24 overflow-y-auto overflow-x-hidden">
             <div className="container mx-auto max-w-7xl min-h-full">
-              {children}
+              <SubscriptionGuard>
+                {children}
+              </SubscriptionGuard>
             </div>
           </main>
           <TravelBot />

@@ -22,8 +22,8 @@ export default function MainLayout({
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
-      <main className="flex-1 pt-28 lg:pt-32">
-        <div className="container mx-auto px-4 mb-12 opacity-30">
+      <main className="flex-1 pt-20 md:pt-28 lg:pt-32">
+        <div className="container mx-auto px-2 md:px-4 mb-8 md:mb-12 opacity-30">
           <Separator className="bg-border/60" />
         </div>
         {children}

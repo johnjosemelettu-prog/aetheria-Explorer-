@@ -174,11 +174,11 @@ export function Header() {
   return (
     <header className={cn(
       "fixed top-0 z-[100] w-full transition-all duration-500 pt-safe",
-      scrolled ? "py-2" : "py-6"
+      scrolled ? "py-2" : "py-3 md:py-6"
     )}>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-2 md:px-4">
         <div className={cn(
-          "flex h-16 items-center px-6 rounded-full transition-all duration-500",
+          "flex h-14 md:h-16 items-center px-3 md:px-6 rounded-full transition-all duration-500",
           scrolled ? "glass shadow-2xl" : "bg-background/60 backdrop-blur-xl border border-border/50 shadow-sm"
         )}>
           {mounted ? (
@@ -187,24 +187,24 @@ export function Header() {
                 <div className="relative">
                   <div className="absolute inset-0 bg-primary/30 rounded-xl blur-lg opacity-0 group-hover:opacity-100 duration-500" />
                   <div className={cn(
-                    "relative h-11 w-11 rounded-2xl flex items-center justify-center transition-all group-hover:scale-110 group-hover:rotate-3 shadow-xl overflow-hidden",
+                    "relative h-9 w-9 md:h-11 md:w-11 rounded-xl md:rounded-2xl flex items-center justify-center transition-all group-hover:scale-110 group-hover:rotate-3 shadow-xl overflow-hidden",
                     isAdminPortal ? "bg-slate-900" : isVendorPortal ? "bg-emerald-600" : "bg-slate-950"
                   )}>
-                    <Globe className="absolute h-10 w-10 text-white/5 animate-spin-slow" />
-                    <Backpack className="h-6 w-6 text-white relative z-10 drop-shadow-[0_0_25px_rgba(255,255,255,0.5)]" />
-                    <div className="absolute -top-1 -right-1 h-5 w-5 bg-primary rounded-lg flex items-center justify-center border-2 border-slate-950 shadow-lg z-20">
-                      <Zap className="h-2.5 w-2.5 text-white fill-white animate-pulse" />
+                    <Globe className="absolute h-8 w-8 md:h-10 md:w-10 text-white/5 animate-spin-slow" />
+                    <Backpack className="h-5 w-5 md:h-6 md:w-6 text-white relative z-10 drop-shadow-[0_0_25px_rgba(255,255,255,0.5)]" />
+                    <div className="absolute -top-0.5 -right-0.5 h-4 w-4 md:h-5 md:w-5 bg-primary rounded-md md:rounded-lg flex items-center justify-center border-2 border-slate-950 shadow-lg z-20">
+                      <Zap className="h-2 w-2 md:h-2.5 md:w-2.5 text-white fill-white animate-pulse" />
                     </div>
-                    <div className="absolute -bottom-1 -left-1 h-5 w-5 bg-secondary rounded-full flex items-center justify-center border-2 border-slate-950 shadow-md z-20">
-                      <Users className="h-2.5 w-2.5 text-slate-950" strokeWidth={3} />
+                    <div className="absolute -bottom-0.5 -left-0.5 h-4 w-4 md:h-5 md:w-5 bg-secondary rounded-full flex items-center justify-center border-2 border-slate-950 shadow-md z-20">
+                      <Users className="h-2 w-2 md:h-2.5 md:w-2.5 text-slate-950" strokeWidth={3} />
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-start leading-none mr-4">
-                  <span className="font-headline text-lg font-black tracking-tighter uppercase leading-none text-foreground">
+                <div className="flex flex-col items-start leading-none mr-2 md:mr-4">
+                  <span className="font-headline text-base md:text-lg font-black tracking-tighter uppercase leading-none text-foreground">
                     AETHERIA<span className="text-accent italic">AI</span>
                   </span>
-                  <span className="text-[7px] font-black uppercase tracking-[0.3em] text-muted-foreground mt-0.5">Journey Synthesized</span>
+                  <span className="text-[6px] md:text-[7px] font-black uppercase tracking-[0.3em] text-muted-foreground mt-0.5">Journey Synthesized</span>
                 </div>
               </Link>
 

@@ -94,12 +94,12 @@ export default function LanguageLabPage() {
   return (
     <div className="container mx-auto px-4 py-12 max-w-5xl">
       <header className="mb-16 text-center space-y-4">
-        <Badge className="bg-primary/10 text-primary border-none font-bold uppercase tracking-widest py-1 px-3 text-[10px]">Linguistic Intelligence</Badge>
+        <Badge className="bg-primary/10 text-primary border-none font-bold uppercase tracking-widest py-1 px-3 text-[10px]">{t('languageLab.badge')}</Badge>
         <h1 className="font-headline text-4xl font-black tracking-tight md:text-6xl text-slate-900 leading-none">
-          Language Lab
+          {t('languageLab.title')}
         </h1>
         <p className="mt-4 text-xl text-slate-500 max-w-2xl mx-auto font-medium">
-          Master the local dialect with AI-synthesized survival kits and native pronunciation.
+          {t('languageLab.subtitle')}
         </p>
       </header>
 
@@ -110,12 +110,12 @@ export default function LanguageLabPage() {
             <Input 
               value={city} 
               onChange={e => setCity(e.target.value)}
-              placeholder="Enter your destination city..." 
+              placeholder={t('languageLab.cityPlaceholder')} 
               className="h-14 rounded-2xl pl-10 border-none shadow-xl bg-white font-bold"
             />
           </div>
           <Button type="submit" className="h-14 px-8 rounded-2xl font-black text-lg shadow-xl" disabled={isSynthesizing}>
-            {isSynthesizing ? <Loader2 className="animate-spin" /> : "Synthesize Kit"}
+            {isSynthesizing ? <Loader2 className="animate-spin" /> : t('languageLab.synthesizeBtn')}
           </Button>
         </form>
       </div>
@@ -132,7 +132,7 @@ export default function LanguageLabPage() {
         <div className="space-y-12 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <section className="space-y-6">
             <h2 className="text-2xl font-black font-headline text-slate-900 flex items-center gap-3">
-              <Languages className="text-primary h-6 w-6" /> Survival Phrases
+              <Languages className="text-primary h-6 w-6" /> {t('languageLab.survivalTitle')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {kit.survivalKit.map((item, i) => (
@@ -147,7 +147,7 @@ export default function LanguageLabPage() {
                         <Badge variant="outline" className="text-[8px] font-black uppercase border-slate-100 text-slate-400">{item.category}</Badge>
                       </div>
                       <p className="text-xs font-bold text-slate-400 italic">"{item.translation}"</p>
-                      <p className="text-[10px] text-primary font-black uppercase tracking-widest mt-1">Pronounce: {item.pronunciation}</p>
+                      <p className="text-[10px] text-primary font-black uppercase tracking-widest mt-1">{t('languageLab.pronounce', { pronunciation: item.pronunciation })}</p>
                     </div>
                     <Button 
                       variant="ghost" 
@@ -166,7 +166,7 @@ export default function LanguageLabPage() {
 
           <section className="space-y-6">
             <h2 className="text-2xl font-black font-headline text-slate-900 flex items-center gap-3">
-              <Sparkles className="text-accent h-6 w-6" /> Local Slang
+              <Sparkles className="text-accent h-6 w-6" /> {t('languageLab.slangTitle')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {kit.localSlang.map((slang, i) => (
@@ -181,7 +181,7 @@ export default function LanguageLabPage() {
                     className="mt-6 p-0 h-auto text-primary font-black flex items-center gap-2 hover:bg-transparent"
                     onClick={() => handleSpeak(slang.word, `s-${i}`)}
                   >
-                    Listen to Vibe <Play className="h-3 w-3 fill-current" />
+                    {t('languageLab.listenBtn')} <Play className="h-3 w-3 fill-current" />
                   </Button>
                 </Card>
               ))}
@@ -191,8 +191,8 @@ export default function LanguageLabPage() {
       ) : (
         <div className="h-full flex flex-col justify-center text-center opacity-20 grayscale py-20">
           <Languages className="h-32 w-32 mb-4 mx-auto" />
-          <p className="text-3xl font-black font-headline uppercase tracking-tighter">Linguistics Pending</p>
-          <p className="max-w-xs mx-auto text-sm font-bold mt-2">Enter your destination to synthesize a custom language kit for your trip.</p>
+          <p className="text-3xl font-black font-headline uppercase tracking-tighter">{t('languageLab.pendingTitle')}</p>
+          <p className="max-w-xs mx-auto text-sm font-bold mt-2">{t('languageLab.pendingDesc')}</p>
         </div>
       )}
     </div>

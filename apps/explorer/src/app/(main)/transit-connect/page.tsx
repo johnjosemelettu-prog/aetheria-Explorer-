@@ -103,6 +103,7 @@ export default function TransitConnectPage() {
         vibe,
         flight: boardingPassDetails?.flight || 'XX123',
         terminal: boardingPassDetails?.gate.charAt(0) || 'A',
+        language: currentLang,
       });
       setMatches(results);
     } catch (e) {

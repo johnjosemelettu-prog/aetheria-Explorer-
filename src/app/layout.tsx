@@ -50,9 +50,11 @@ export default function RootLayout({
         <FirebaseClientProvider>
           <ThemeProvider>
             <I18nProvider>
-              <PlatformIdentifier />
-              {children}
-              <Toaster />
+              <div className="flex flex-col min-h-screen">
+                <PlatformIdentifier />
+                {children}
+                <Toaster />
+              </div>
             </I18nProvider>
           </ThemeProvider>
         </FirebaseClientProvider>
