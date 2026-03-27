@@ -35,25 +35,20 @@ import { cn } from '@/lib/utils';
 import { JournalEntry } from './JournalCard';
 import { suggestJournalPrompt } from '@/ai/flows/suggest-journal-prompt-flow';
 
-const formSchema = z.object({
-  title: z.string().min(2, 'Title must be at least 2 characters.'),
-  content: z.string().min(10, 'Content must be at least 10 characters.'),
-  date: z.date(),
-  rating: z.number().min(1, 'Please provide a rating.'),
-  photoUrl: z.string().url('Please enter a valid URL.').optional().or(z.literal('')),
-});
-
-interface JournalFormProps {
-  entryToEdit?: WithId<JournalEntry>;
-  onSuccess: () => void;
-}
-
 export function JournalForm({ entryToEdit, onSuccess }: JournalFormProps) {
   const { user } = useUser();
   const firestore = useFirestore();
   const { toast } = useToast();
   const { t, language } = useTranslation();
   const [isAiLoading, setIsAiLoading] = useState(false);
+
+  const formSchema = z.object({
+    title: z.string().min(2, t('journal.form.validation.titleMin')),
+    content: z.string().min(10, t('journal.form.validation.contentMin')),
+    date: z.date(),
+    rating: z.number().min(1, t('journal.form.validation.ratingRequired')),
+    photoUrl: z.string().url(t('journal.form.validation.invalidUrl')).optional().or(z.literal('')),
+  });
 
   const currentLang = availableLanguages.find(l => l.code === language)?.englishName || 'English';
 
@@ -73,12 +68,12 @@ export function JournalForm({ entryToEdit, onSuccess }: JournalFormProps) {
     try {
       const result = await suggestJournalPrompt({ language: currentLang });
       form.setValue('content', result.prompt, { shouldDirty: true });
-      toast({ title: "Synthesis Complete", description: "AI reflection prompt active." });
+      toast({ title: t('journal.form.toast.synthesisComplete'), description: t('journal.form.toast.aiReflectionActive') });
     } catch (error) {
       toast({
         variant: 'destructive',
-        title: 'Prompt Error',
-        description: 'AI suggestion node offline.',
+        title: t('journal.form.toast.promptError'),
+        description: t('journal.form.toast.aiNodeOffline'),
       });
     } finally {
       setIsAiLoading(false);
@@ -120,9 +115,9 @@ export function JournalForm({ entryToEdit, onSuccess }: JournalFormProps) {
           name="title"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">Node Title</FormLabel>
+              <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">{t('journal.form.titleLabel')}</FormLabel>
               <FormControl>
-                <Input placeholder="e.g. Sunset over Nakagin" {...field} className="h-12 rounded-xl bg-slate-50 border-none font-bold" />
+                <Input placeholder={t('journal.form.titlePlaceholder')} {...field} className="h-12 rounded-xl bg-slate-50 border-none font-bold" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -135,7 +130,7 @@ export function JournalForm({ entryToEdit, onSuccess }: JournalFormProps) {
           render={({ field }) => (
             <FormItem>
               <div className="flex items-center justify-between mb-2">
-                <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">Memory Narrative</FormLabel>
+                <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">{t('journal.form.contentLabel')}</FormLabel>
                 <Button
                   type="button"
                   variant="ghost"
@@ -144,12 +139,12 @@ export function JournalForm({ entryToEdit, onSuccess }: JournalFormProps) {
                   disabled={isAiLoading}
                 >
                   {isAiLoading ? <Loader2 className="h-3 w-3 animate-spin mr-1" /> : <Wand2 className="h-3 w-3 mr-1 group-hover:scale-110 transition-transform" />}
-                  Invoke AI Reflection
+                  {t('journal.form.invokeAiButton')}
                 </Button>
               </div>
               <FormControl>
                 <Textarea
-                  placeholder="Detail your high-fidelity experience..."
+                  placeholder={t('journal.form.contentPlaceholder')}
                   rows={6}
                   {...field}
                   className="rounded-2xl p-6 bg-slate-50 border-none font-medium text-lg shadow-inner resize-none"
@@ -166,7 +161,7 @@ export function JournalForm({ entryToEdit, onSuccess }: JournalFormProps) {
             name="date"
             render={({ field }) => (
               <FormItem className="flex flex-col">
-                <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">Temporal Node</FormLabel>
+                <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">{t('journal.form.dateLabel')}</FormLabel>
                 <Popover>
                   <PopoverTrigger asChild>
                     <FormControl>
@@ -178,7 +173,7 @@ export function JournalForm({ entryToEdit, onSuccess }: JournalFormProps) {
                         )}
                       >
                         <CalendarIcon className="mr-2 h-4 w-4 text-primary" />
-                        {field.value ? format(field.value, 'PPP') : "Select date"}
+                        {field.value ? format(field.value, 'PPP') : t('journal.form.selectDate')}
                       </Button>
                     </FormControl>
                   </PopoverTrigger>
@@ -201,7 +196,7 @@ export function JournalForm({ entryToEdit, onSuccess }: JournalFormProps) {
             name="rating"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">Vibe Rating</FormLabel>
+                <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">{t('journal.form.ratingLabel')}</FormLabel>
                 <FormControl>
                   <div className="flex items-center gap-2 h-12">
                     {[1, 2, 3, 4, 5].map((star) => (
@@ -232,12 +227,12 @@ export function JournalForm({ entryToEdit, onSuccess }: JournalFormProps) {
           name="photoUrl"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">Visual Node (External URL)</FormLabel>
+              <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">{t('journal.form.photoUrlLabel')}</FormLabel>
               <FormControl>
-                <Input placeholder="https://unsplash.com/..." {...field} className="h-12 rounded-xl bg-slate-50 border-none font-bold" />
+                <Input placeholder={t('journal.form.photoUrlPlaceholder')} {...field} className="h-12 rounded-xl bg-slate-50 border-none font-bold" />
               </FormControl>
               <FormDescription className="text-[9px] font-medium text-slate-400 uppercase tracking-widest">
-                Attach a visual asset to anchor this memory.
+                {t('journal.form.photoUrlDescription')}
               </FormDescription>
               <FormMessage />
             </FormItem>
@@ -245,7 +240,7 @@ export function JournalForm({ entryToEdit, onSuccess }: JournalFormProps) {
         />
 
         <Button type="submit" className="w-full h-16 rounded-2xl font-black text-xl shadow-xl shadow-primary/20 active:scale-95 transition-all">
-          <Save className="mr-2 h-6 w-6" /> Authorize Memory
+          <Save className="mr-2 h-6 w-6" /> {t('journal.form.submitButton')}
         </Button>
       </form>
     </Form>

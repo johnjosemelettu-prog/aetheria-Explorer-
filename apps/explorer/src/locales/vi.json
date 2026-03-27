@@ -1,0 +1,483 @@
+{
+  "common": {
+    "save": "Lưu thay đổi",
+    "cancel": "Hủy",
+    "close": "Đóng",
+    "delete": "Xóa",
+    "edit": "Chỉnh sửa",
+    "loading": "Đang xử lý...",
+    "search": "Tìm kiếm trong bảng",
+    "filter": "Lọc các nút",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "continue": "Tiếp tục",
+    "confirm": "Phê duyệt",
+    "active": "Đang hoạt động",
+    "inactive": "Ngoại tuyến",
+    "verified": "Đã xác minh",
+    "unlocked": "Đã mở khóa",
+    "locked": "Đã khóa",
+    "authorized": "Đã được ủy quyền",
+    "error": "Lỗi",
+    "returnToDashboard": "Quay lại trung tâm chỉ huy"
+  },
+  "login": {
+    "title": "Đăng nhập",
+    "emailLabel": "Địa chỉ Email",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "Mã bảo mật",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "Đăng nhập",
+    "signingInButton": "Đang xác thực...",
+    "noAccount": "Mới tham gia mạng lưới?",
+    "signUpLink": "Tạo tài khoản",
+    "toast": {
+      "successTitle": "Chào mừng trở lại",
+      "successDescription": "Phiên làm việc Aetheria của bạn đã được kích hoạt",
+      "errorTitle": "Đăng nhập thất bại",
+      "genericError": "Không thể xác thực thông tin đăng nhập",
+      "invalidCredentials": "Email hoặc mã bảo mật không hợp lệ",
+      "operationNotAllowed": "Đăng nhập hiện đang bị hạn chế"
+    }
+  },
+  "signup": {
+    "title": "Tạo tài khoản",
+    "description": "Tham gia mạng lưới hành trình toàn cầu của Aetheria",
+    "emailLabel": "Địa chỉ Email",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "Mã bảo mật",
+    "createButton": "Khởi tạo tài khoản",
+    "creatingButton": "Đang tổng hợp hồ sơ...",
+    "haveAccount": "Đã là nhà thám hiểm?",
+    "signInLink": "Đăng nhập",
+    "toast": {
+      "successTitle": "Tài khoản đã được tạo",
+      "successDescription": "Chào mừng bạn đến với mạng lưới Aetheria",
+      "errorTitle": "Đăng ký thất bại",
+      "emailInUse": "Email này đã được đăng ký",
+      "operationNotAllowed": "Đăng ký hiện đang bị hạn chế",
+      "genericError": "Đã xảy ra lỗi trong quá trình tổng hợp"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Nút thông minh Aetheria",
+      "title": "Thế giới được mã hóa lại",
+      "subtitle": "Loại bỏ các rào cản hậu cần. Nâng tầm trải nghiệm du lịch. Trải nghiệm hệ sinh thái du lịch AI đa tác nhân đầu tiên.",
+      "scroll": "Cuộn để quét",
+      "cta": {
+        "start": "Bắt đầu hành trình",
+        "signin": "Truy cập nút"
+      }
+    },
+    "features": {
+      "chapter": "Giao thức Chương 01",
+      "title": "Ống kính thông minh",
+      "initNode": "Khởi tạo nút",
+      "itinerary": {
+        "badge": "Điều phối",
+        "title": "Lịch trình Aura",
+        "desc": "Tổng hợp các chuyến đi nhiều ngày dựa trên DNA tâm lý của bạn."
+      },
+      "postcard": {
+        "badge": "Studio",
+        "title": "Studio Bưu thiếp",
+        "desc": "Biến ảnh của bạn thành tác phẩm nghệ thuật độ phân giải cao do AI tạo ra."
+      },
+      "legends": {
+        "badge": "Thông tin chi tiết",
+        "title": "Truyền thuyết địa phương",
+        "desc": "Mở khóa những huyền thoại ẩn giấu tại tọa độ của bạn thông qua kể chuyện kích hoạt bằng GPS."
+      },
+      "packing": {
+        "badge": "Tiện ích",
+        "title": "Đại lý không quên đồ",
+        "desc": "Tổng hợp việc đóng gói chủ động phù hợp với thời tiết và các nút hành trình."
+      }
+    },
+    "workflow": {
+      "badge": "Giao thức vận hành",
+      "title": "Cách thức hoạt động",
+      "phase": "Giai đoạn 0{num}",
+      "step1": {
+        "title": "Xác định ý định",
+        "desc": "Chỉ định điểm đến và các thông số không khí tâm lý của bạn."
+      },
+      "step2": {
+        "title": "Tổng hợp hành trình",
+        "desc": "Mạng lưới thần kinh của Aetheria sẽ thiết kế một lộ trình tùy chỉnh cho bạn."
+      },
+      "step3": {
+        "title": "Thực hiện hành trình",
+        "desc": "Khám phá thế giới với thông tin thông minh thời gian thực và các nút an toàn."
+      }
+    },
+    "cta": {
+      "badge": "Tham gia mạng lưới",
+      "title": "Sẵn sàng mã hóa lại thế giới của bạn?",
+      "subtitle": "Tham gia mạng lưới các nhà thám hiểm hiện đại tận dụng trí tuệ vô hạn.",
+      "start": "Kết nối mạng lưới",
+      "feed": "Bản tin toàn cầu"
+    }
+  },
+  "header": {
+    "aiItinerary": "Lịch trình Aura",
+    "pathfinder": "Công cụ tìm đường",
+    "vibeMarketplace": "Chợ không khí",
+    "vibeShopping": "Cửa hàng may đo",
+    "bookingHub": "Trung tâm đặt chỗ",
+    "myTrips": "Chuyến đi của tôi",
+    "visionHub": "Trung tâm Vision AI",
+    "intelligenceCenter": "Trung tâm thông tin",
+    "arWayfinding": "Dẫn đường AR",
+    "localLegends": "Truyền thuyết địa phương",
+    "explorerQuests": "Nhiệm vụ thám hiểm",
+    "culturalPulse": "Nhịp đập văn hóa",
+    "tripOdyssey": "Hành trình Odyssey",
+    "postcardStudio": "Studio Bưu thiếp",
+    "heritageMirror": "Gương di sản",
+    "journal": "Nhật ký thám hiểm",
+    "visaArchitect": "Kiến trúc sư Visa",
+    "carbonSynthesis": "Theo dõi Carbon",
+    "esim": "eSIM toàn cầu",
+    "flightStatus": "Radar hậu cần",
+    "layoverOdyssey": "Odyssey quá cảnh",
+    "safety": "Trợ lý an toàn",
+    "hotels": "Lưu trú",
+    "flights": "Chuyến bay",
+    "insurance": "Bảo hiểm du lịch",
+    "trains": "Tàu hỏa",
+    "buses": "Xe buýt",
+    "cruises": "Du thuyền",
+    "cabs": "Taxi",
+    "dining": "Ẩm thực",
+    "profile": "Nút định danh",
+    "loyaltyHub": "Trung tâm khách hàng thân thiết",
+    "wallet": "Ví thông minh",
+    "rentals": "Thuê của tôi",
+    "scanAndPay": "Quét và thanh toán",
+    "subscription": "Thẻ thông hành",
+    "partners": "Đối tác",
+    "digitalBrochure": "Brochure Aetheria",
+    "appTrailer": "Trailer hệ thống",
+    "sos": "Trung tâm khẩn cấp SOS",
+    "events": "Sự kiện tại điểm đến",
+    "gearArchitect": "Kiến trúc sư thiết bị",
+    "jetLag": "Logic Jet Lag",
+    "digitalTailor": "Thợ may kỹ thuật số",
+    "translator": "Phòng thí nghiệm ngôn ngữ",
+    "corporate": "Chế độ doanh nghiệp",
+    "dashboard": "Bảng điều khiển",
+    "budgetSynthesis": "Tổng hợp ngân sách",
+    "moodSynthesis": "Tổng hợp tâm trạng",
+    "auraBeats": "Nhịp điệu Aura",
+    "equilibriumSync": "Đồng bộ cân bằng",
+    "flavorDna": "DNA hương vị",
+    "audioGuide": "Hướng dẫn âm thanh",
+    "menuExplorer": "Khám phá thực đơn",
+    "localInsider": "Thông tin nội bộ",
+    "cultureScout": "Trinh sát văn hóa",
+    "packingassistant": "Đại lý không quên đồ",
+    "categories": {
+      "orchestration": "Điều phối",
+      "intelligence": "Thông tin thông minh",
+      "studios": "Studio",
+      "utility": "Tiện ích"
+    },
+    "promo": {
+      "spotlights": "Đối tác nổi bật",
+      "verified": "Đối tác đã xác minh"
+    }
+  },
+  "explorerQuests": {
+    "title": "Nhiệm vụ thám hiểm",
+    "subtitle": "Biến việc khám phá thành phố của bạn thành một cuộc săn tìm kho báu đầy kịch tính.",
+    "initTitle": "Khởi tạo lưới nhiệm vụ",
+    "initDesc": "Chọn một thành phố mục tiêu để tổng hợp các nhiệm vụ khám phá tùy chỉnh.",
+    "cityPlaceholder": "ví dụ: Kyoto, Nhật Bản",
+    "generateBtn": "Tạo nhiệm vụ",
+    "newCityBtn": "Thành phố mới",
+    "progress": "Tiến độ: {completed} / {total}",
+    "xp": "{current} / {total} XP",
+    "hint": "Gợi ý: {hint}",
+    "xpSynthesized": "Đã tổng hợp {points} XP",
+    "resolvedTitle": "Thành phố đã được giải mã!",
+    "resolvedDesc": "Bạn đã giải mã thành công các bí mật của {city}.",
+    "returnBtn": "Quay lại trung tâm chỉ huy"
+  },
+  "languageLab": {
+    "badge": "Thông tin thông minh ngôn ngữ",
+    "title": "Phòng thí nghiệm ngôn ngữ",
+    "subtitle": "Làm chủ ngôn ngữ địa phương với bộ công cụ sinh tồn do AI tổng hợp và phát âm chuẩn bản xứ.",
+    "cityPlaceholder": "Chỉ định thành phố điểm đến của bạn...",
+    "synthesizeBtn": "Tổng hợp bộ công cụ",
+    "survivalTitle": "Cụm từ sinh tồn",
+    "pronounce": "Phát âm: {pronunciation}",
+    "slangTitle": "Tiếng lóng địa phương",
+    "listenBtn": "Nghe không khí",
+    "pendingTitle": "Đang chờ ngôn ngữ",
+    "pendingDesc": "Chỉ định điểm đến của bạn để tổng hợp bộ ngôn ngữ tùy chỉnh cho hành trình của bạn.",
+    "toast": {
+      "errorTitle": "Tổng hợp thất bại",
+      "errorDescription": "Mạng lưới ngôn ngữ đang ngoại tuyến.",
+      "audioErrorTitle": "Lỗi âm thanh",
+      "audioErrorDescription": "Không thể tổng hợp âm thanh."
+    }
+  },
+  "layoverOdyssey": {
+    "badge": "Thông tin thông minh quá cảnh",
+    "title": "Odyssey quá cảnh",
+    "subtitle": "Biến thời gian chờ đợi của bạn thành một hành trình nhỏ nhanh chóng.",
+    "initTitle": "Khởi tạo nút quá cảnh",
+    "initDesc": "Chỉ định tọa độ quá cảnh và thời gian để tổng hợp một lộ trình tùy chỉnh.",
+    "airportPlaceholder": "Sân bay / Thành phố (ví dụ: SIN, Singapore)",
+    "durationLabel": "Thời lượng (giờ)",
+    "synthesizeBtn": "Tổng hợp hành trình",
+    "resultTitle": "Odyssey quá cảnh của bạn",
+    "newBtn": "Hành trình mới",
+    "timelineTitle": "Dòng thời gian",
+    "logisticsTitle": "Nút hậu cần",
+    "transport": "Giao thông",
+    "budget": "Ngân sách",
+    "visa": "Lưu ý Visa",
+    "pendingTitle": "Đang chờ hành trình",
+    "pendingDesc": "Cung cấp chi tiết quá cảnh của bạn để tổng hợp một kế hoạch hành trình nhỏ tùy chỉnh.",
+    "missionParameters": "Thông số nhiệm vụ",
+    "currentTerminal": "Nhà ga hiện tại",
+    "layoverDuration": "Thời gian quá cảnh",
+    "synthesizeOdyssey": "Tổng hợp Odyssey",
+    "radarSilent": "Radar im lặng",
+    "enterCodeDesc": "Cung cấp mã sân bay để tổng hợp một Odyssey quá cảnh tùy chỉnh."
+  },
+  "transitConnect": {
+    "title": "Transit Connect",
+    "subtitle": "Tìm nhóm của bạn tại nhà ga. Kết nối với những hành khách đi cùng chuyến bay hoặc có cùng sở thích.",
+    "step1": {
+      "title": "Xác minh thẻ lên máy bay",
+      "description": "Quét thẻ lên máy bay của bạn để xác minh danh tính và nút chuyến bay của bạn.",
+      "scanningButton": "Đang quét...",
+      "scanButton": "Quét thẻ",
+      "cameraError": "Nút camera đang ngoại tuyến.",
+      "scanErrorTitle": "Quét thất bại",
+      "scanErrorDescription": "Không thể giải mã dữ liệu thẻ lên máy bay."
+    },
+    "verification": {
+      "title": "Đã xác minh danh tính",
+      "description": "Nút chuyến bay của bạn đã được xác minh thành công trên mạng lưới Aetheria.",
+      "passenger": "Hành khách",
+      "flight": "Chuyến bay",
+      "gate": "Cửa",
+      "seat": "Ghế",
+      "departs": "Khởi hành"
+    },
+    "step2": {
+      "title": "Chọn không khí của bạn",
+      "description": "Chọn cách bạn muốn tương tác với mạng lưới nhà ga.",
+      "goLiveButton": "Phát trực tiếp",
+      "vibes": {
+        "networking": "Kết nối mạng lưới",
+        "networkingDescription": "Kết nối với các chuyên gia trong chuyến bay của bạn.",
+        "coffee": "Uống cà phê",
+        "coffeeDescription": "Trò chuyện thân mật bên đồ uống.",
+        "shareLounge": "Chia sẻ phòng chờ",
+        "shareLoungeDescription": "Truy cập các nút cao cấp cùng người khác.",
+        "cardGame": "Chơi bài",
+        "cardGameDescription": "Giết thời gian với các trò chơi ngắn."
+      }
+    },
+    "step3": {
+      "title": "Mạng lưới nhà ga",
+      "description": "Các nút kết nối thời gian thực đang hoạt động gần bạn.",
+      "nearbyTab": "Gần đây",
+      "arViewTab": "Góc nhìn AR",
+      "sameFlight": "Cùng chuyến bay",
+      "chatButton": "Trò chuyện",
+      "arViewDescription": "Kích hoạt góc nhìn AR",
+      "toast": {
+        "chatTitle": "Bắt đầu trò chuyện",
+        "chatDescription": "Đang kết nối với nút của {name}..."
+      }
+    }
+  },
+  "footer": {
+    "terms": "Điều khoản dịch vụ",
+    "privacyProtocol": "Giao thức bảo mật",
+    "dataSecurity": "An ninh dữ liệu",
+    "legalHub": "Trung tâm pháp lý",
+    "globalConnect": "Kết nối toàn cầu",
+    "allRightsReserved": "© {year} Hệ thống trí tuệ nhân tạo Aetheria. Bảo lưu mọi quyền.",
+    "supportHub": "Trung tâm hỗ trợ",
+    "partnerNetwork": "Mạng lưới đối tác"
+  },
+  "profile": {
+    "saveSuccessTitle": "Đã đồng bộ hồ sơ",
+    "saveSuccessDescription": "Nút định danh của bạn đã được cập nhật.",
+    "saveButton": "Phê duyệt thay đổi",
+    "savingButton": "Đang đồng bộ...",
+    "tabs": {
+      "identity": "Nút định danh",
+      "travelDna": "DNA du lịch",
+      "settings": "Cài đặt hệ thống",
+      "security": "Nút an ninh"
+    },
+    "personalInfo": {
+      "firstName": "Tên",
+      "lastName": "Họ",
+      "gender": "Nút giới tính sinh học",
+      "genders": {
+        "male": "Nam",
+        "female": "Nữ",
+        "other": "Khác",
+        "preferNotToSay": "Không muốn tiết lộ"
+      }
+    },
+    "travelStyle": {
+      "relaxed": {
+        "label": "Thư giãn",
+        "description": "Tốc độ thấp, đắm chìm trong không gian cao."
+      },
+      "active": {
+        "label": "Năng động",
+        "description": "Tốc độ cao, ghé thăm nhiều nút mỗi ngày."
+      },
+      "adventurous": {
+        "label": "Phiêu lưu",
+        "description": "Ngoài lộ trình thông thường, yếu tố khám phá cao."
+      },
+      "packed": {
+        "label": "Dày đặc",
+        "description": "Hiệu quả tối đa, không có thời gian trống."
+      },
+      "familyFriendly": {
+        "label": "Thân thiện gia đình",
+        "description": "Tập trung an toàn cho nhiều hành khách."
+      }
+    },
+    "interests": {
+      "items": {
+        "history": "Lịch sử",
+        "food": "Ẩm thực",
+        "hiking": "Đi bộ đường dài",
+        "art": "Nghệ thuật",
+        "nightlife": "Đời sống về đêm",
+        "shopping": "Mua sắm",
+        "nature": "Thiên nhiên",
+        "wellness": "Sức khỏe"
+      }
+    }
+  },
+  "itineraryGenerator": {
+    "title": "Kiến trúc sư hành trình",
+    "subtitle": "Tổng hợp các chuyến đi nhiều ngày dựa trên DNA tâm lý của bạn.",
+    "authError": "Nút phê duyệt đang ngoại tuyến.",
+    "authErrorDesc": "Vui lòng đăng nhập để tổng hợp hành trình."
+  },
+  "subscription": {
+    "badge": "Giao thức tài chính",
+    "title": "Trung tâm đăng ký",
+    "subtitle": "Nâng cấp hành trình của bạn với thông tin thông minh cao cấp và các nút an ninh toàn cầu.",
+    "itineraryRequired": "Yêu cầu hành trình đang hoạt động",
+    "itineraryRequiredDesc": "Bạn phải có một hành trình đang hoạt động để sử dụng các cấp độ đăng ký.",
+    "createItineraryBtn": "Tạo hành trình",
+    "plans": {
+      "free": {
+        "name": "Miễn phí",
+        "description": "Hậu cần cơ bản cho khách du lịch thông thường.",
+        "price": "0 ₫",
+        "itinerariesValue": "1 hành trình đang hoạt động",
+        "immersiveValue": "Thông tin thông minh tiêu chuẩn",
+        "loyaltyValue": "Phần thưởng cơ bản"
+      },
+      "voyager": {
+        "name": "Voyager",
+        "description": "Công cụ nâng cao cho những nhà thám hiểm thường xuyên.",
+        "price": "250.000 ₫",
+        "itinerariesValue": "3 hành trình đang hoạt động",
+        "immersiveValue": "Thông tin thông minh nâng cao",
+        "packingValue": "Nút đóng gói AI",
+        "loyaltyValue": "Phần thưởng Bạc"
+      },
+      "pathfinder": {
+        "name": "Pathfinder",
+        "description": "Thông tin thông minh cấp độ thần kinh cho các chuyên gia du lịch.",
+        "price": "500.000 ₫",
+        "itinerariesValue": "Hành trình không giới hạn",
+        "immersiveValue": "Thông tin thông minh cấp độ thần kinh",
+        "insiderValue": "Truy cập truyền thuyết địa phương",
+        "loyaltyValue": "Phần thưởng Vàng"
+      },
+      "sovereign": {
+        "name": "Sovereign",
+        "description": "Truy cập không giới hạn với tổng hợp cấp độ di sản.",
+        "price": "1.250.000 ₫",
+        "itinerariesValue": "Hành trình không giới hạn",
+        "immersiveValue": "Thông tin thông minh không giới hạn",
+        "mirrorValue": "Nút gương di sản",
+        "fees": "Không phí dịch vụ"
+      },
+      "legend": {
+        "name": "Legend",
+        "description": "Nút thám hiểm tối thượng với quyền truy cập mạng lưới đầy đủ.",
+        "price": "2.500.000 ₫",
+        "itinerariesValue": "Hành trình không giới hạn",
+        "immersiveValue": "Thông tin thông minh không giới hạn",
+        "mirrorValue": "Nút gương di sản",
+        "insiderValue": "Truy cập truyền thuyết địa phương",
+        "fees": "Không phí dịch vụ"
+      }
+    },
+    "period": {
+      "monthly": "/ tháng"
+    },
+    "features": {
+      "itineraries": "Sức chứa hành trình",
+      "immersive": "Cấp độ thông tin",
+      "loyalty": "Cấp độ phần thưởng",
+      "packing": "Nút đóng gói",
+      "insider": "Truy cập truyền thuyết",
+      "mirror": "Nút di sản",
+      "fees": "Phí dịch vụ"
+    },
+    "upgrade": "Phê duyệt nâng cấp",
+    "processingBtn": "Đang xử lý...",
+    "currentPlan": "Nút đang hoạt động"
+  },
+  "dashboard": {
+    "welcomeBack": "Chào mừng trở lại, {name}",
+    "odysseyLevel": "Cấp độ Odyssey {level}",
+    "seasonPass": "Thẻ mùa giải",
+    "xpSynthesized": "Đã tổng hợp XP",
+    "progressionToLevel": "Tiến trình đến cấp {level}",
+    "vibeStreak": "Chuỗi không khí",
+    "tasksResolved": "Nhiệm vụ đã giải quyết",
+    "totalMedals": "Tổng số huy chương",
+    "premiumRequired": "Yêu cầu Premium",
+    "explorerStatus": "Trạng thái thám hiểm: {tier}",
+    "points": "Điểm",
+    "medals": "Huy chương",
+    "editProfile": "Chỉnh sửa hồ sơ",
+    "shortDesc": {
+      "itinerary": "Tổng hợp lịch trình cấp độ thần kinh",
+      "pathfinder": "Tối ưu hóa lộ trình thông minh",
+      "marketplace": "Trao đổi không khí toàn cầu",
+      "store": "Mua sắm thiết bị may đo",
+      "booking": "Quản lý hậu cần",
+      "wallet": "Nút tiền tệ thông minh",
+      "budget": "Tổng hợp tài chính",
+      "vision": "Nút nhận diện vật thể",
+      "guide": "Trung tâm thông tin toàn cầu",
+      "ar": "Dẫn đường nâng cao",
+      "legends": "Giải mã truyền thuyết",
+      "pulse": "Radar xu hướng văn hóa",
+      "audio": "Kể chuyện không gian",
+      "odyssey": "Tổng hợp hành trình điện ảnh",
+      "postcard": "Sáng tạo nghệ thuật AI",
+      "mirror": "Hình ảnh hóa di sản",
+      "journal": "Mã hóa ký ức"
+    },
+    "vibeRadar": {
+      "title": "Radar không khí",
+      "desc": "Đang quét không khí {vibe} tại {location}"
+    }
+  }
+}

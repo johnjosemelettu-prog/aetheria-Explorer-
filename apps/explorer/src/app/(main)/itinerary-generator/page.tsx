@@ -84,7 +84,7 @@ export default function ItineraryGeneratorPage() {
         userId: user.uid,
         ownerId: user.uid,
         members: [user.uid],
-        name: `${data.destination} Odyssey`,
+        name: `${data.destination} ${t('itineraryGenerator.odysseySuffix')}`,
         status: 'draft',
         isGeneratedByAI: true,
         subscriptionTier: 'free',
@@ -99,8 +99,8 @@ export default function ItineraryGeneratorPage() {
       setItineraryId(newItineraryRef.id);
 
       toast({
-        title: "Odyssey Synthesized!",
-        description: `Your journey node for ${data.destination} is now active.`,
+        title: t('itineraryGenerator.toast.generateSuccessTitle'),
+        description: t('itineraryGenerator.toast.generateSuccessDescription', { destination: data.destination }),
       });
 
     } catch (error) {

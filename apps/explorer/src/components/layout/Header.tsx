@@ -108,7 +108,7 @@ export function Header() {
                 )}
 
                 <Link href="/" className="flex items-center gap-3 ml-2 group">
-                  <BrandLogo size="sm" src="/logo.png" />
+                  <BrandLogo size="sm" />
                   <div className="hidden sm:flex flex-col items-start leading-none group-hover:translate-x-1 transition-transform">
                     <span className={cn(
                       "font-headline text-sm font-black tracking-tighter uppercase italic leading-none",

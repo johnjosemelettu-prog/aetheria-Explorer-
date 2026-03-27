@@ -48,14 +48,15 @@ interface JournalCardProps {
 export function JournalCard({ entry, onEdit }: JournalCardProps) {
   const firestore = useFirestore();
   const { toast } = useToast();
+  const { t } = useTranslation();
 
   const handleDelete = () => {
     if (!firestore) return;
     const entryRef = doc(firestore, `userProfiles/${entry.userId}/journalEntries`, entry.id);
     deleteDocumentNonBlocking(entryRef);
     toast({
-      title: 'Memory Purged',
-      description: `"${entry.title}" node has been cleared.`,
+      title: t('journal.card.memoryPurgedTitle'),
+      description: t('journal.card.memoryPurgedDesc', { title: entry.title }),
     });
   };
 
@@ -70,7 +71,7 @@ export function JournalCard({ entry, onEdit }: JournalCardProps) {
             className="object-cover transition-transform duration-1000 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-          <Badge className="absolute top-4 left-4 bg-white/90 text-slate-900 border-none font-black uppercase text-[8px] px-2 py-0.5">Memory Node</Badge>
+          <Badge className="absolute top-4 left-4 bg-white/90 text-slate-900 border-none font-black uppercase text-[8px] px-2 py-0.5">{t('journal.card.memoryNodeBadge')}</Badge>
         </div>
       ) : (
         <div className="h-56 w-full bg-slate-50 flex items-center justify-center relative overflow-hidden">
@@ -102,7 +103,7 @@ export function JournalCard({ entry, onEdit }: JournalCardProps) {
       <CardFooter className="p-8 pt-0 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-          <span className="text-[8px] font-black uppercase text-slate-400 tracking-widest">NODE VERIFIED</span>
+          <span className="text-[8px] font-black uppercase text-slate-400 tracking-widest">{t('journal.card.nodeVerified')}</span>
         </div>
         <div className="flex gap-2">
           <AlertDialog>
@@ -113,18 +114,18 @@ export function JournalCard({ entry, onEdit }: JournalCardProps) {
             </AlertDialogTrigger>
             <AlertDialogContent className="rounded-[2.5rem]">
               <AlertDialogHeader>
-                <AlertDialogTitle>Purge this memory?</AlertDialogTitle>
+                <AlertDialogTitle>{t('journal.card.purgeDialogTitle')}</AlertDialogTitle>
                 <AlertDialogDescription>
-                  This will permanently remove the memory from your explorer journal grid.
+                  {t('journal.card.purgeDialogDesc')}
                 </AlertDialogDescription>
               </AlertDialogHeader>
               <AlertDialogFooter>
-                <AlertDialogCancel className="rounded-xl">Abort</AlertDialogCancel>
+                <AlertDialogCancel className="rounded-xl">{t('journal.card.abortButton')}</AlertDialogCancel>
                 <AlertDialogAction
                   className="bg-destructive text-white hover:bg-destructive/90 rounded-xl font-bold"
                   onClick={handleDelete}
                 >
-                  Confirm Purge
+                  {t('journal.card.confirmPurgeButton')}
                 </AlertDialogAction>
               </AlertDialogFooter>
             </AlertDialogContent>

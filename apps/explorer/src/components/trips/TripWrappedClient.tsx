@@ -59,23 +59,23 @@ export function TripWrappedClient() {
   }, [trip, hasMounted, currentLang, tripId]);
 
   if (!hasMounted || isGenerating) return <div className="p-12"><Skeleton className="h-[600px] w-full rounded-[3rem]" /></div>;
-  if (!wrapped) return <div className="p-12 text-center">Synthesis failed.</div>;
+  if (!wrapped) return <div className="p-12 text-center">{t('trips.wrapped.synthesisFailed')}</div>;
 
   return (
     <div className="min-h-screen bg-slate-950 text-white p-12">
       <Card className="max-w-4xl mx-auto border-none shadow-2xl rounded-[3rem] bg-gradient-to-br from-primary to-indigo-900 text-white p-12 relative overflow-hidden">
         <div className="absolute top-0 right-0 p-12 opacity-10"><Trophy className="h-64 w-64" /></div>
         <div className="relative z-10 space-y-8 text-center">
-          <Badge className="bg-white/20 text-white border-none font-bold uppercase tracking-widest text-[10px] px-3">2026 Season Odyssey</Badge>
+          <Badge className="bg-white/20 text-white border-none font-bold uppercase tracking-widest text-[10px] px-3">{t('trips.wrapped.seasonOdyssey')}</Badge>
           <h1 className="text-6xl md:text-8xl font-black font-headline tracking-tighter leading-none italic uppercase">{wrapped.vibeTitle}</h1>
           <p className="text-2xl font-bold italic leading-relaxed opacity-80 max-w-2xl mx-auto">"{wrapped.vibeDescription}"</p>
           <div className="grid grid-cols-3 gap-8 pt-12 border-t border-white/10">
-            <div className="text-center"><p className="text-4xl font-black">{wrapped.stats.daysCount}</p><p className="text-[10px] font-black uppercase text-slate-400">Days</p></div>
-            <div className="text-center"><p className="text-4xl font-black">{wrapped.stats.carbonImpact}</p><p className="text-[10px] font-black uppercase text-slate-400">Carbon</p></div>
-            <div className="text-center"><p className="text-4xl font-black">{wrapped.stats.spendVibe}</p><p className="text-[10px] font-black uppercase text-slate-400">Spend</p></div>
+            <div className="text-center"><p className="text-4xl font-black">{wrapped.stats.daysCount}</p><p className="text-[10px] font-black uppercase text-slate-400">{t('trips.wrapped.days')}</p></div>
+            <div className="text-center"><p className="text-4xl font-black">{wrapped.stats.carbonImpact}</p><p className="text-[10px] font-black uppercase text-slate-400">{t('trips.wrapped.carbon')}</p></div>
+            <div className="text-center"><p className="text-4xl font-black">{wrapped.stats.spendVibe}</p><p className="text-[10px] font-black uppercase text-slate-400">{t('trips.wrapped.spend')}</p></div>
           </div>
           <Button asChild variant="outline" className="rounded-xl border-white/20 text-white hover:bg-white/10 font-bold h-12 px-8">
-            <Link href="/trips">Return to Command Center</Link>
+            <Link href="/trips">{t('trips.wrapped.returnToCommandCenter')}</Link>
           </Button>
         </div>
       </Card>

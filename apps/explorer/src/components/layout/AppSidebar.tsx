@@ -112,9 +112,9 @@ export function AppSidebar() {
           <BrandLogo size="sm" />
           <div className="flex flex-col items-start leading-none group-data-[collapsible=icon]:hidden">
             <span className="font-headline text-lg font-black tracking-tighter uppercase leading-none text-foreground">
-              AETHERIA<span className="text-primary italic">AI</span>
+              {t('sidebar.brand.name')}<span className="text-primary italic">AI</span>
             </span>
-            <span className="text-[7px] font-black uppercase tracking-[0.3em] text-muted-foreground mt-0.5 whitespace-nowrap">Journey Synthesized</span>
+            <span className="text-[7px] font-black uppercase tracking-[0.3em] text-muted-foreground mt-0.5 whitespace-nowrap">{t('sidebar.brand.tagline')}</span>
           </div>
         </Link>
       </SidebarHeader>
@@ -145,9 +145,9 @@ export function AppSidebar() {
         <div className="flex items-center gap-3 group-data-[collapsible=icon]:justify-center">
           <UserNav />
           <div className="flex flex-col items-start leading-none group-data-[collapsible=icon]:hidden">
-            <p className="text-[10px] font-black uppercase tracking-widest text-slate-900">Session Verified</p>
+            <p className="text-[10px] font-black uppercase tracking-widest text-slate-900">{t('sidebar.sessionVerified')}</p>
             <p className="text-[8px] font-bold text-emerald-500 uppercase tracking-widest mt-0.5 flex items-center gap-1">
-              <ShieldCheck className="h-2 w-2" /> Neural Link Active
+              <ShieldCheck className="h-2 w-2" /> {t('sidebar.neuralLinkActive')}
             </p>
           </div>
         </div>

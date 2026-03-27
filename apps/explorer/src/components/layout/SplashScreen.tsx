@@ -41,7 +41,7 @@ export function SplashScreen() {
       </div>
 
       <div className="flex flex-col items-center gap-12 animate-in fade-in zoom-in duration-1000">
-        <BrandLogo size="xl" src="/logo.png" />
+        <BrandLogo size="xl" />
         
         <div className="flex flex-col items-center text-center space-y-4">
           <span className="font-headline text-6xl font-black tracking-tighter text-white uppercase leading-none italic">

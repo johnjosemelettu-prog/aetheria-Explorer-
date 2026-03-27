@@ -43,7 +43,7 @@ export default function LocalInsiderView({ city, userProfile, language }: { city
         <CardContent className="p-6">
           <form onSubmit={handleSubmit} className="flex gap-2">
             <Input 
-              placeholder={`Ask our local insider about ${city}...`} 
+              placeholder={t('intelligence.localInsider.askPlaceholder', { city })} 
               value={query} 
               onChange={(e) => setQuery(e.target.value)} 
               disabled={isLoading} 
@@ -61,8 +61,8 @@ export default function LocalInsiderView({ city, userProfile, language }: { city
           {history.length === 0 && !isLoading && (
             <div className="text-center py-20 opacity-20 flex flex-col items-center">
               <MessageCircle className="h-16 w-16 mb-4" />
-              <p className="font-black font-headline text-xl uppercase tracking-tighter italic">Initialize Node</p>
-              <p className="text-sm font-medium">Start a conversation with the city soul.</p>
+              <p className="font-black font-headline text-xl uppercase tracking-tighter italic">{t('intelligence.localInsider.initializeNode')}</p>
+              <p className="text-sm font-medium">{t('intelligence.localInsider.startConversation')}</p>
             </div>
           )}
           {history.map((item, i) => (

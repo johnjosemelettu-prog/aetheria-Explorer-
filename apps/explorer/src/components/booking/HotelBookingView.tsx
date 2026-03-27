@@ -46,13 +46,13 @@ import { Textarea } from '@/components/ui/textarea'
 import { Checkbox } from '@/components/ui/checkbox'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 
-const bookingSchema = z.object({
-  destination: z.string().min(2, 'Please enter a destination.'),
+const bookingSchema = (t: any) => z.object({
+  destination: z.string().min(2, t('hotels.validation.destination')),
   dates: z.object({
     from: z.date().optional(),
     to: z.date().optional(),
   }),
-  guests: z.coerce.number().min(1, 'At least one guest is required.'),
+  guests: z.coerce.number().min(1, t('hotels.validation.guests')),
 })
 
 export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
@@ -72,8 +72,8 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
   const CONCIERGE_PRICE = 15;
   const currentLang = availableLanguages.find(l => l.code === language)?.englishName || 'English';
 
-  const form = useForm<z.infer<typeof bookingSchema>>({
-    resolver: zodResolver(bookingSchema),
+  const form = useForm<z.infer<ReturnType<typeof bookingSchema>>>({
+    resolver: zodResolver(bookingSchema(t)),
     defaultValues: {
       destination: '',
       dates: { from: new Date(), to: new Date(new Date().setDate(new Date().getDate() + 7)) },
@@ -81,9 +81,9 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
     },
   })
 
-  async function onSubmit(values: z.infer<typeof bookingSchema>) {
+  async function onSubmit(values: z.infer<ReturnType<typeof bookingSchema>>) {
     if (!values.dates.from || !values.dates.to) {
-        toast({ variant: 'destructive', title: "Temporal Node Missing", description: "Select check-in and check-out dates." });
+        toast({ variant: 'destructive', title: t('hotels.toast.datesMissing'), description: t('hotels.toast.datesMissingDesc') });
         return;
     }
     setIsLoading(true)
@@ -99,7 +99,7 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
       });
       setSearchResults(results);
     } catch (e) {
-      toast({ variant: 'destructive', title: "Search Failed", description: "Could not reach hotel nodes." });
+      toast({ variant: 'destructive', title: t('hotels.toast.searchFailed'), description: t('hotels.toast.searchFailedDesc') });
     } finally {
       setIsLoading(false)
     }
@@ -118,7 +118,7 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
     if (!dates.from || !dates.to) return;
 
     if (!leadGuestName.trim()) {
-      toast({ variant: 'destructive', title: 'Details Required', description: 'Please provide a lead guest name.' });
+      toast({ variant: 'destructive', title: t('hotels.toast.detailsRequired'), description: t('hotels.toast.detailsRequiredDesc') });
       return;
     }
 
@@ -127,7 +127,7 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
     const finalTotal = includeConcierge ? baseTotal + CONCIERGE_PRICE : baseTotal;
 
     if (!usdWallet || usdWallet.balance < finalTotal) {
-      toast({ variant: 'destructive', title: 'Insufficient Funds', description: 'Your Smart Wallet node requires more liquidity.' });
+      toast({ variant: 'destructive', title: t('hotels.toast.insufficientFunds'), description: t('hotels.toast.insufficientFundsDesc') });
       return;
     }
 
@@ -167,7 +167,7 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
         category: 'booking',
         amount: finalTotal,
         currency: 'USD',
-        description: `Stay at ${selectedHotel.name}${includeConcierge ? ' (Concierge Pack)' : ''}`,
+        description: t('hotels.toast.transactionDesc', { hotelName: selectedHotel.name }) + (includeConcierge ? ' (Elite Concierge Pack)' : ''),
         timestamp: serverTimestamp()
       });
       
@@ -186,7 +186,7 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
       setStep('success');
       setSearchResults(null);
     } catch (e) {
-      toast({ variant: 'destructive', title: 'Booking Error', description: 'Failed to confirm reservation.' });
+      toast({ variant: 'destructive', title: t('hotels.toast.errorTitle'), description: t('hotels.toast.errorDesc') });
     } finally {
       setIsBooking(false);
     }
@@ -199,11 +199,11 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
           <div className="absolute top-0 right-0 p-6 md:p-10 opacity-10"><BedDouble className="h-24 w-24 md:h-40 md:w-40" /></div>
           <div className="relative z-10">
             <div className="mx-auto h-16 w-16 md:h-20 md:w-20 rounded-2xl md:rounded-3xl bg-white/20 flex items-center justify-center mb-4 md:mb-6 shadow-lg"><CheckCircle2 className="h-10 w-10 md:h-12 md:w-12 text-white" /></div>
-            <CardTitle className="text-3xl md:text-4xl font-black font-headline tracking-tighter">Stay Secured!</CardTitle>
-            <CardDescription className="text-white/80 mt-2 text-base md:text-lg font-medium">{selectedHotel.name} is ready.</CardDescription>
+            <CardTitle className="text-3xl md:text-4xl font-black font-headline tracking-tighter">{t('hotels.success.title')}</CardTitle>
+            <CardDescription className="text-white/80 mt-2 text-base md:text-lg font-medium">{t('hotels.success.description', { hotelName: selectedHotel.name })}</CardDescription>
           </div>
         </div>
-        <CardFooter className="p-6 md:p-10 bg-white"><Button asChild className="w-full h-12 md:h-14 rounded-xl md:rounded-2xl font-black shadow-xl shadow-orange-200 bg-slate-900 text-white"><Link href="/trips">My Journeys</Link></Button></CardFooter>
+        <CardFooter className="p-6 md:p-10 bg-white"><Button asChild className="w-full h-12 md:h-14 rounded-xl md:rounded-2xl font-black shadow-xl shadow-orange-200 bg-slate-900 text-white"><Link href="/trips">{t('common.myTrips')}</Link></Button></CardFooter>
       </Card>
     );
   }
@@ -226,7 +226,7 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
                   <FormItem className="flex flex-col">
                     <FormLabel className="font-bold text-slate-700 text-sm md:text-base">{t('hotels.datesLabel')}</FormLabel>
                     <Popover>
-                      <PopoverTrigger asChild><Button variant={'outline'} className="w-full justify-start text-left font-normal rounded-xl h-12 border-slate-200"><CalendarIcon className="mr-2 h-4 w-4" />{field.value?.from ? format(field.value.from, 'LLL dd') : 'Select'} - {field.value?.to ? format(field.value.to, 'LLL dd') : 'Select'}</Button></PopoverTrigger>
+                      <PopoverTrigger asChild><Button variant={'outline'} className="w-full justify-start text-left font-normal rounded-xl h-12 border-slate-200"><CalendarIcon className="mr-2 h-4 w-4" />{field.value?.from ? format(field.value.from, 'LLL dd') : t('common.select')} - {field.value?.to ? format(field.value.to, 'LLL dd') : t('common.select')}</Button></PopoverTrigger>
                       <PopoverContent className="w-auto p-0" align="start">
                         <Calendar 
                           mode="range" 
@@ -258,19 +258,19 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
       )}
 
       {step === 'search' && searchResults && (
-        <div className="grid grid-cols-1 gap-6 md:gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
           {searchResults.map((hotel) => (
-            <Card key={hotel.id} className="overflow-hidden border-none shadow-xl rounded-2xl md:rounded-[2rem] group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex flex-col bg-white">
+            <Card key={hotel.id} className="overflow-hidden border-none shadow-xl rounded-[2rem] md:rounded-[2.5rem] group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex flex-col bg-white">
               <div className="relative h-48 md:h-56 w-full overflow-hidden">
                 {hotel.image && (
                   <Image src={hotel.image.imageUrl} alt={hotel.name} fill className="object-cover transition-transform duration-700 group-hover:scale-110" data-ai-hint={hotel.image.imageHint} />
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-4 left-4 flex items-center gap-1 bg-white/20 backdrop-blur-md rounded-full px-3 py-1 text-white text-[10px] font-black uppercase tracking-widest"><Star className="h-3 w-3 fill-accent text-accent" /> {hotel.rating} Rated</div>
+                <div className="absolute bottom-4 left-4 flex items-center gap-1 bg-white/20 backdrop-blur-md rounded-full px-2.5 md:px-3 py-1 md:py-1.5 text-white text-[9px] md:text-[10px] font-black border border-white/10 uppercase tracking-widest"><Star className="h-3 md:h-3.5 w-3 md:w-3.5 fill-accent text-accent" /> {hotel.rating} Rated</div>
               </div>
-              <CardHeader className="p-5 md:p-8 pb-3 md:pb-4"><CardTitle className="text-xl md:text-2xl font-black font-headline text-slate-900 leading-tight">{hotel.name}</CardTitle></CardHeader>
-              <CardContent className="px-5 md:px-8 pb-3 md:pb-4 flex-grow"><div className="flex items-baseline gap-1"><span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">FROM</span><span className="text-2xl md:text-3xl font-black font-headline text-slate-900">${hotel.price}</span><span className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">/ NIGHT</span></div></CardContent>
-              <CardFooter className="p-5 md:p-8 pt-0"><Button className="w-full h-11 md:h-12 rounded-xl font-black bg-slate-900 text-white hover:bg-emerald-600" onClick={() => handleSelectHotel(hotel)}>Select Stay</Button></CardFooter>
+              <CardHeader className="p-6 md:p-8 pb-3 md:pb-4"><CardTitle className="text-xl md:text-2xl font-black font-headline text-slate-900 leading-tight group-hover:text-primary transition-colors uppercase italic tracking-tighter">{hotel.name}</CardTitle></CardHeader>
+              <CardContent className="px-6 md:px-8 pb-4 md:pb-6 flex-grow"><div className="flex items-baseline gap-1.5"><span className="text-[9px] md:text-[10px] font-black text-slate-400 uppercase tracking-widest">{t('common.from')}</span><span className="text-2xl md:text-3xl font-black font-headline text-slate-900">${hotel.price}</span><span className="text-[9px] md:text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">{t('common.perNight')}</span></div></CardContent>
+              <CardFooter className="p-6 md:p-8 pt-0"><Button className="w-full h-12 md:h-14 rounded-xl md:rounded-2xl font-black text-base md:text-lg bg-slate-900 text-white hover:bg-emerald-600 shadow-xl shadow-slate-200 active:scale-95 transition-all" onClick={() => handleSelectHotel(hotel)}>{t('hotels.results.selectButton')}</Button></CardFooter>
             </Card>
           ))}
         </div>
@@ -282,20 +282,20 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
             <Card className="border-none shadow-xl rounded-2xl md:rounded-[2.5rem] bg-white overflow-hidden">
               <CardHeader className="bg-slate-900 text-white p-6 md:p-8">
                 <CardTitle className="text-xl md:text-2xl font-black font-headline flex items-center gap-3">
-                  <User className="h-5 w-5 md:h-6 md:w-6 text-primary" /> Guest Details
+                  <User className="h-5 w-5 md:h-6 md:w-6 text-primary" /> {t('hotels.details.title')}
                 </CardTitle>
-                <CardDescription className="text-slate-400 text-sm">Specify the lead guest and any requirements.</CardDescription>
+                <CardDescription className="text-slate-400 text-sm">{t('hotels.details.description')}</CardDescription>
               </CardHeader>
               <CardContent className="p-6 md:p-8 space-y-6">
                 <div className="space-y-2">
-                  <Label className="font-bold text-slate-700 text-sm md:text-base">Lead Guest Name</Label>
-                  <Input placeholder="Full Legal Name" value={leadGuestName} onChange={(e) => setLeadGuestName(e.target.value)} className="h-12 rounded-xl border-slate-200" />
+                  <Label className="font-bold text-slate-700 text-sm md:text-base">{t('hotels.details.guestNameLabel')}</Label>
+                  <Input placeholder={t('hotels.details.guestNamePlaceholder')} value={leadGuestName} onChange={(e) => setLeadGuestName(e.target.value)} className="h-12 rounded-xl border-slate-200" />
                 </div>
                 <div className="space-y-2">
                   <Label className="font-bold text-slate-700 flex items-center gap-2 text-sm md:text-base">
-                    <FileText className="h-4 w-4" /> Special Requests (Optional)
+                    <FileText className="h-4 w-4" /> {t('hotels.details.specialRequestsLabel')}
                   </Label>
-                  <Textarea placeholder="e.g. High floor, quiet room..." value={specialRequests} onChange={(e) => setSpecialRequests(e.target.value)} className="rounded-xl border-slate-200" rows={4} />
+                  <Textarea placeholder={t('hotels.details.specialRequestsPlaceholder')} value={specialRequests} onChange={(e) => setSpecialRequests(e.target.value)} className="rounded-xl border-slate-200" rows={4} />
                 </div>
               </CardContent>
             </Card>
@@ -307,12 +307,12 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
                     <Bot className="h-6 w-6 md:h-8 md:w-8" />
                   </div>
                   <div>
-                    <h3 className="text-lg md:text-xl font-black font-headline text-slate-900">Elite Concierge Pack</h3>
-                    <p className="text-xs md:text-sm text-slate-500 font-medium">Late Checkout + Priority Ruth AI + Breakfast Upgrade.</p>
+                    <h3 className="text-lg md:text-xl font-black font-headline text-slate-900">{t('hotels.details.conciergeTitle')}</h3>
+                    <p className="text-xs md:text-sm text-slate-500 font-medium">{t('hotels.details.conciergeDesc')}</p>
                   </div>
                 </div>
                 <div className="flex items-center justify-between sm:justify-end gap-4 border-t sm:border-t-0 pt-3 sm:pt-0">
-                  <p className="text-xl md:text-2xl font-black text-amber-600">$15</p>
+                  <p className="text-xl md:text-2xl font-black text-amber-600">${CONCIERGE_PRICE}</p>
                   <Checkbox checked={includeConcierge} onCheckedChange={(v) => setIncludeConcierge(!!v)} className="h-6 w-6 rounded-lg border-amber-300" />
                 </div>
               </CardContent>
@@ -333,15 +333,15 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
               </div>
               <CardContent className="p-6 md:p-8 space-y-6">
                 <Button className="w-full h-12 md:h-14 rounded-xl md:rounded-2xl font-black text-base md:text-lg bg-emerald-600 hover:bg-emerald-700 text-white" disabled={isBooking} onClick={handleBookingConfirmed}>
-                  {isBooking ? <Loader2 className="animate-spin" /> : "Confirm Stay"}
+                  {isBooking ? <Loader2 className="animate-spin" /> : t('hotels.details.confirmButton')}
                 </Button>
               </CardContent>
 
               <Alert className="border-none bg-blue-50 text-blue-900 rounded-2xl md:rounded-3xl p-4 md:p-6">
                 <ShieldAlert className="h-5 w-5 text-blue-600" />
-                <AlertTitle className="font-black font-headline uppercase text-[10px]">Protection Check</AlertTitle>
-                <AlertDescription className="text-[10px] md:text-xs font-medium">Don't forget to synthesize a <strong>Shield Node</strong> for this stay.</AlertDescription>
-                <Button asChild variant="link" className="p-0 h-auto text-blue-600 font-bold text-[10px] md:text-xs mt-2"><Link href="/insurance">Get Insurance <ArrowRight className="h-3 w-3 ml-1" /></Link></Button>
+                <AlertTitle className="font-black font-headline uppercase text-[10px]">{t('hotels.details.protectionTitle')}</AlertTitle>
+                <AlertDescription className="text-[10px] md:text-xs font-medium">{t('hotels.details.protectionDesc')}</AlertDescription>
+                <Button asChild variant="link" className="p-0 h-auto text-blue-600 font-bold text-[10px] md:text-xs mt-2"><Link href="/insurance">{t('hotels.details.insuranceLink')} <ArrowRight className="h-3 w-3 ml-1" /></Link></Button>
               </Alert>
             </Card>
           </aside>

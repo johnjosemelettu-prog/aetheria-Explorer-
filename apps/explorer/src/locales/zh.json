@@ -1,4 +1,483 @@
-
 {
-  "header": { "dashboard": "仪表板" }
+  "common": {
+    "save": "保存更改",
+    "cancel": "取消",
+    "close": "关闭",
+    "delete": "删除",
+    "edit": "编辑",
+    "loading": "处理中...",
+    "search": "搜索网格",
+    "filter": "过滤节点",
+    "back": "返回",
+    "next": "下一步",
+    "continue": "继续",
+    "confirm": "授权",
+    "active": "激活",
+    "inactive": "离线",
+    "verified": "已验证",
+    "unlocked": "已解锁",
+    "locked": "已锁定",
+    "authorized": "已授权",
+    "error": "错误",
+    "returnToDashboard": "返回指挥中心"
+  },
+  "login": {
+    "title": "登录",
+    "emailLabel": "电子邮件地址",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "安全密钥",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "登录",
+    "signingInButton": "验证身份中...",
+    "noAccount": "网络新成员？",
+    "signUpLink": "创建账户",
+    "toast": {
+      "successTitle": "欢迎回来",
+      "successDescription": "您的 Aetheria 会话现已激活。",
+      "errorTitle": "登录失败",
+      "genericError": "无法验证凭据。",
+      "invalidCredentials": "电子邮件或安全密钥无效。",
+      "operationNotAllowed": "登录目前受限。"
+    }
+  },
+  "signup": {
+    "title": "创建账户",
+    "description": "加入 Aetheria 全球旅行网络。",
+    "emailLabel": "电子邮件地址",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "安全密钥",
+    "createButton": "初始化账户",
+    "creatingButton": "合成个人资料中...",
+    "haveAccount": "已经是探索者？",
+    "signInLink": "登录",
+    "toast": {
+      "successTitle": "账户已创建",
+      "successDescription": "欢迎来到 Aetheria 网格。",
+      "errorTitle": "注册失败",
+      "emailInUse": "此电子邮件已注册。",
+      "operationNotAllowed": "注册目前受限。",
+      "genericError": "合成过程中出现问题。"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Aetheria 智能节点",
+      "title": "世界已重新编码。",
+      "subtitle": "消除物流烦恼。放大沉浸感。体验首个多智能体 AI 旅行生态系统。",
+      "scroll": "滚动以扫描",
+      "cta": {
+        "start": "初始化旅行",
+        "signin": "访问节点"
+      }
+    },
+    "features": {
+      "chapter": "协议 第 01 章",
+      "title": "智能透镜",
+      "initNode": "初始化节点",
+      "itinerary": {
+        "badge": "编排",
+        "title": "灵气行程",
+        "desc": "根据您的心理 DNA 合成多日奥德赛。"
+      },
+      "postcard": {
+        "badge": "工作室",
+        "title": "明信片工作室",
+        "desc": "将您的快照转化为 AI 生成的高保真艺术品。"
+      },
+      "legends": {
+        "badge": "情报",
+        "title": "当地传说",
+        "desc": "通过 GPS 触发的叙事解锁您所在坐标的隐藏民间传说。"
+      },
+      "packing": {
+        "badge": "实用工具",
+        "title": "无遗漏代理",
+        "desc": "根据气候和行程节点进行主动打包合成。"
+      }
+    },
+    "workflow": {
+      "badge": "操作协议",
+      "title": "工作原理",
+      "phase": "阶段 0{num}",
+      "step1": {
+        "title": "定义意图",
+        "desc": "提供您的目的地和心理氛围参数。"
+      },
+      "step2": {
+        "title": "合成奥德赛",
+        "desc": "Aetheria 的神经网格构建您的自定义轨迹。"
+      },
+      "step3": {
+        "title": "执行旅行",
+        "desc": "带着实时智能和安全节点开启世界之旅。"
+      }
+    },
+    "cta": {
+      "badge": "加入网络",
+      "title": "准备好重新编码您的世界了吗？",
+      "subtitle": "加入利用无限智能的现代探索者网络。",
+      "start": "连接网络",
+      "feed": "全球动态"
+    }
+  },
+  "header": {
+    "aiItinerary": "灵气行程",
+    "pathfinder": "寻路者",
+    "vibeMarketplace": "氛围市场",
+    "vibeShopping": "定制商店",
+    "bookingHub": "预订中心",
+    "myTrips": "我的旅行",
+    "visionHub": "视觉 AI 中心",
+    "intelligenceCenter": "情报中心",
+    "arWayfinding": "AR 导航",
+    "localLegends": "当地传说",
+    "explorerQuests": "探索者任务",
+    "culturalPulse": "文化脉动",
+    "tripOdyssey": "旅行奥德赛",
+    "postcardStudio": "明信片工作室",
+    "heritageMirror": "遗产之镜",
+    "journal": "探索者日志",
+    "visaArchitect": "签证建筑师",
+    "carbonSynthesis": "碳足迹追踪",
+    "esim": "全球 eSIM",
+    "flightStatus": "物流雷达",
+    "layoverOdyssey": "中转奥德赛",
+    "safety": "安全助手",
+    "hotels": "住宿",
+    "flights": "航空",
+    "insurance": "旅行保险",
+    "trains": "火车",
+    "buses": "巴士",
+    "cruises": "邮轮",
+    "cabs": "出租车",
+    "dining": "餐饮",
+    "profile": "身份节点",
+    "loyaltyHub": "忠诚度中心",
+    "wallet": "智能钱包",
+    "rentals": "我的租赁",
+    "scanAndPay": "扫码支付",
+    "subscription": "旅行通行证",
+    "partners": "合作伙伴",
+    "digitalBrochure": "Aetheria 手册",
+    "appTrailer": "系统预告片",
+    "sos": "SOS 紧急中心",
+    "events": "目的地活动",
+    "gearArchitect": "装备建筑师",
+    "jetLag": "时差逻辑",
+    "digitalTailor": "数字裁缝",
+    "translator": "语言实验室",
+    "corporate": "企业模式",
+    "dashboard": "仪表板",
+    "budgetSynthesis": "预算合成",
+    "moodSynthesis": "情绪合成",
+    "auraBeats": "灵气节拍",
+    "equilibriumSync": "平衡同步",
+    "flavorDna": "风味 DNA",
+    "audioGuide": "语音导览",
+    "menuExplorer": "菜单探索器",
+    "localInsider": "当地知情人",
+    "cultureScout": "文化侦察员",
+    "packingassistant": "无遗漏代理",
+    "categories": {
+      "orchestration": "编排",
+      "intelligence": "智能",
+      "studios": "工作室",
+      "utility": "实用工具"
+    },
+    "promo": {
+      "spotlights": "合作伙伴亮点",
+      "verified": "已验证合作伙伴"
+    }
+  },
+  "explorerQuests": {
+    "title": "探索者任务",
+    "subtitle": "将您的城市探索变成一场高风险的寻宝游戏。",
+    "initTitle": "初始化任务网格",
+    "initDesc": "选择目标城市以合成自定义探索任务。",
+    "cityPlaceholder": "例如：日本京都",
+    "generateBtn": "生成任务",
+    "newCityBtn": "新城市",
+    "progress": "进度：{completed} / {total}",
+    "xp": "{current} / {total} XP",
+    "hint": "提示：{hint}",
+    "xpSynthesized": "{points} XP 已合成",
+    "resolvedTitle": "城市已解决！",
+    "resolvedDesc": "您已成功解码 {city} 的秘密。",
+    "returnBtn": "返回指挥中心"
+  },
+  "languageLab": {
+    "badge": "语言智能",
+    "title": "语言实验室",
+    "subtitle": "通过 AI 合成的生存工具包和地道发音掌握当地方言。",
+    "cityPlaceholder": "输入您的目的地城市...",
+    "synthesizeBtn": "合成工具包",
+    "survivalTitle": "生存短语",
+    "pronounce": "发音：{pronunciation}",
+    "slangTitle": "当地俚语",
+    "listenBtn": "听取氛围",
+    "pendingTitle": "语言学待定",
+    "pendingDesc": "输入您的目的地以合成适合您旅行的自定义语言工具包。",
+    "toast": {
+      "errorTitle": "合成失败",
+      "errorDescription": "语言网格离线。",
+      "audioErrorTitle": "音频错误",
+      "audioErrorDescription": "无法合成语音。"
+    }
+  },
+  "layoverOdyssey": {
+    "badge": "中转智能",
+    "title": "中转奥德赛",
+    "subtitle": "将您的中转时间转化为高速微旅行。",
+    "initTitle": "初始化中转节点",
+    "initDesc": "提供您的中转坐标和时长以合成自定义轨迹。",
+    "airportPlaceholder": "机场 / 城市 (例如 SIN, 新加坡)",
+    "durationLabel": "时长 (小时)",
+    "synthesizeBtn": "合成奥德赛",
+    "resultTitle": "您的中转奥德赛",
+    "newBtn": "新奥德赛",
+    "timelineTitle": "时间线",
+    "logisticsTitle": "物流节点",
+    "transport": "交通",
+    "budget": "预算",
+    "visa": "签证说明",
+    "pendingTitle": "奥德赛待定",
+    "pendingDesc": "输入您的中转详情以合成自定义微行程。",
+    "missionParameters": "任务参数",
+    "currentTerminal": "当前航站楼",
+    "layoverDuration": "中转时长",
+    "synthesizeOdyssey": "合成奥德赛",
+    "radarSilent": "雷达静默",
+    "enterCodeDesc": "输入机场代码以合成自定义中转奥德赛。"
+  },
+  "transitConnect": {
+    "title": "中转连接",
+    "subtitle": "在航站楼寻找您的部落。连接与您同机或氛围相投的旅客。",
+    "step1": {
+      "title": "验证登机牌",
+      "description": "扫描您的登机牌以验证您的身份和航班节点。",
+      "scanningButton": "扫描中...",
+      "scanButton": "扫描登机牌",
+      "cameraError": "摄像头节点离线。",
+      "scanErrorTitle": "扫描失败",
+      "scanErrorDescription": "无法解码登机牌数据。"
+    },
+    "verification": {
+      "title": "身份已验证",
+      "description": "您的航班节点已在 Aetheria 网格上成功验证。",
+      "passenger": "乘客",
+      "flight": "航班",
+      "gate": "登机口",
+      "seat": "座位",
+      "departs": "起飞"
+    },
+    "step2": {
+      "title": "选择您的氛围",
+      "description": "选择您希望如何与航站楼网络互动。",
+      "goLiveButton": "开始直播",
+      "vibes": {
+        "networking": "社交",
+        "networkingDescription": "连接您航班上的专业人士。",
+        "coffee": "喝杯咖啡",
+        "coffeeDescription": "边喝饮料边闲聊。",
+        "shareLounge": "共享休息室",
+        "shareLoungeDescription": "与他人共同访问高级节点。",
+        "cardGame": "纸牌游戏",
+        "cardGameDescription": "通过快速游戏消磨时间。"
+      }
+    },
+    "step3": {
+      "title": "航站楼网络",
+      "description": "您附近活跃的实时连接节点。",
+      "nearbyTab": "附近",
+      "arViewTab": "AR 视图",
+      "sameFlight": "同班机",
+      "chatButton": "聊天",
+      "arViewDescription": "AR 视图已激活",
+      "toast": {
+        "chatTitle": "聊天已初始化",
+        "chatDescription": "正在连接到 {name} 的节点..."
+      }
+    }
+  },
+  "footer": {
+    "terms": "服务条款",
+    "privacyProtocol": "隐私协议",
+    "dataSecurity": "数据安全",
+    "legalHub": "法律中心",
+    "globalConnect": "全球连接",
+    "allRightsReserved": "© {year} Aetheria AI Intelligence Systems. 保留所有权利。",
+    "supportHub": "支持中心",
+    "partnerNetwork": "合作伙伴网络"
+  },
+  "profile": {
+    "saveSuccessTitle": "个人资料已同步",
+    "saveSuccessDescription": "您的身份节点已更新。",
+    "saveButton": "授权更改",
+    "savingButton": "同步中...",
+    "tabs": {
+      "identity": "身份节点",
+      "travelDna": "旅行 DNA",
+      "settings": "系统设置",
+      "security": "安全节点"
+    },
+    "personalInfo": {
+      "firstName": "名字",
+      "lastName": "姓氏",
+      "gender": "生物性别节点",
+      "genders": {
+        "male": "男",
+        "female": "女",
+        "other": "其他",
+        "preferNotToSay": "不愿透露"
+      }
+    },
+    "travelStyle": {
+      "relaxed": {
+        "label": "轻松",
+        "description": "低速，高沉浸感。"
+      },
+      "active": {
+        "label": "活跃",
+        "description": "高速，每日多个节点。"
+      },
+      "adventurous": {
+        "label": "冒险",
+        "description": "离网，高发现系数。"
+      },
+      "packed": {
+        "label": "紧凑",
+        "description": "最高效率，零停机时间。"
+      },
+      "familyFriendly": {
+        "label": "家庭友好",
+        "description": "多乘客安全焦点。"
+      }
+    },
+    "interests": {
+      "items": {
+        "history": "历史",
+        "food": "美食",
+        "hiking": "徒步",
+        "art": "艺术",
+        "nightlife": "夜生活",
+        "shopping": "购物",
+        "nature": "自然",
+        "wellness": "康养"
+      }
+    }
+  },
+  "itineraryGenerator": {
+    "title": "奥德赛建筑师",
+    "subtitle": "根据您的心理氛围合成多日旅行。",
+    "authError": "授权节点离线",
+    "authErrorDesc": "请登录以合成奥德赛。"
+  },
+  "subscription": {
+    "badge": "货币协议",
+    "title": "订阅中心",
+    "subtitle": "通过高级智能和全球安全节点升级您的奥德赛。",
+    "itineraryRequired": "需要激活奥德赛",
+    "itineraryRequiredDesc": "您必须有正在进行的旅行才能应用订阅层级。",
+    "createItineraryBtn": "创建奥德赛",
+    "plans": {
+      "free": {
+        "name": "免费",
+        "description": "为休闲旅行者提供基础物流。",
+        "price": "¥0",
+        "itinerariesValue": "1 个激活的奥德赛",
+        "immersiveValue": "标准智能",
+        "loyaltyValue": "基础奖励"
+      },
+      "voyager": {
+        "name": "航行者",
+        "description": "为频繁探索者提供的增强工具。",
+        "price": "¥68",
+        "itinerariesValue": "3 个激活的奥德赛",
+        "immersiveValue": "增强智能",
+        "packingValue": "AI 打包节点",
+        "loyaltyValue": "白银奖励"
+      },
+      "pathfinder": {
+        "name": "寻路者",
+        "description": "为专业游牧民提供的神经级智能。",
+        "price": "¥128",
+        "itinerariesValue": "无限奥德赛",
+        "immersiveValue": "神经智能",
+        "insiderValue": "当地传说访问权",
+        "loyaltyValue": "黄金奖励"
+      },
+      "sovereign": {
+        "name": "主权者",
+        "description": "通过遗产级合成获得无限访问权。",
+        "price": "¥328",
+        "itinerariesValue": "无限奥德赛",
+        "immersiveValue": "无限智能",
+        "mirrorValue": "遗产之镜节点",
+        "fees": "零服务费"
+      },
+      "legend": {
+        "name": "传奇",
+        "description": "拥有完整网络访问权限的终极探索者节点。",
+        "price": "¥648",
+        "itinerariesValue": "无限奥德赛",
+        "immersiveValue": "无限智能",
+        "mirrorValue": "遗产之镜节点",
+        "insiderValue": "当地传说访问权",
+        "fees": "零服务费"
+      }
+    },
+    "period": {
+      "monthly": "/ 月"
+    },
+    "features": {
+      "itineraries": "奥德赛容量",
+      "immersive": "智能水平",
+      "loyalty": "奖励层级",
+      "packing": "打包节点",
+      "insider": "传说访问权",
+      "mirror": "遗产节点",
+      "fees": "服务费"
+    },
+    "upgrade": "授权升级",
+    "processingBtn": "处理中...",
+    "currentPlan": "激活节点"
+  },
+  "dashboard": {
+    "welcomeBack": "欢迎回来，{name}",
+    "odysseyLevel": "奥德赛等级 {level}",
+    "seasonPass": "赛季通行证",
+    "xpSynthesized": "XP 已合成",
+    "progressionToLevel": "升级至等级 {level} 的进度",
+    "vibeStreak": "氛围连胜",
+    "tasksResolved": "任务已解决",
+    "totalMedals": "总奖牌数",
+    "premiumRequired": "需要高级版",
+    "explorerStatus": "探索者状态：{tier}",
+    "points": "积分",
+    "medals": "奖牌",
+    "editProfile": "编辑个人资料",
+    "shortDesc": {
+      "itinerary": "神经行程合成。",
+      "pathfinder": "智能路线优化。",
+      "marketplace": "全球氛围交换。",
+      "store": "定制装备采购。",
+      "booking": "物流编排。",
+      "wallet": "智能货币节点。",
+      "budget": "财务合成。",
+      "vision": "物体识别节点。",
+      "guide": "全球情报中心。",
+      "ar": "增强导航。",
+      "legends": "民间传说解码。",
+      "pulse": "文化趋势雷达。",
+      "audio": "空间叙事。",
+      "odyssey": "电影级旅行合成。",
+      "postcard": "AI 艺术生成。",
+      "mirror": "遗产可视化。",
+      "journal": "存储加密。"
+    },
+    "vibeRadar": {
+      "title": "氛围雷达",
+      "desc": "正在扫描 {location} 的 {vibe} 氛围。"
+    }
+  }
 }

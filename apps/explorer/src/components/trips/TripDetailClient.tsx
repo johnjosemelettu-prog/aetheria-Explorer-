@@ -34,13 +34,13 @@ export function TripDetailClient() {
   const { data: trip, isLoading } = useDoc(tripRef);
 
   if (!hasMounted || isLoading) return <div className="p-12"><Skeleton className="h-[600px] w-full rounded-[3rem]" /></div>;
-  if (!trip) return <div className="p-12 text-center">Trip node not found.</div>;
+  if (!trip) return <div className="p-12 text-center">{t('trips.detail.tripNotFound')}</div>;
 
   return (
     <div className="container mx-auto px-4 py-12 max-w-6xl space-y-10 animate-in fade-in duration-700">
       <header className="flex flex-col md:flex-row md:items-end justify-between gap-8">
         <div className="space-y-4">
-          <Badge className="bg-primary text-white border-none font-bold uppercase tracking-widest text-[9px] px-3">{trip.subscriptionTier?.toUpperCase() || 'STANDARD'} PASS</Badge>
+          <Badge className="bg-primary text-white border-none font-bold uppercase tracking-widest text-[9px] px-3">{trip.subscriptionTier?.toUpperCase() || 'STANDARD'} {t('trips.detail.passSuffix')}</Badge>
           <h1 className="text-4xl md:text-6xl font-black font-headline tracking-tighter uppercase italic">{trip.name}</h1>
           <div className="flex items-center gap-6 text-slate-400 font-bold uppercase tracking-widest text-xs">
             <span className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> {trip.destination}</span>
@@ -63,11 +63,11 @@ export function TripDetailClient() {
         </div>
         <aside className="lg:col-span-4 space-y-8">
           <Card className="border-none shadow-xl rounded-3xl p-8 bg-white">
-            <h3 className="font-headline font-black text-xl mb-4 text-slate-900">Protocol Node</h3>
+            <h3 className="font-headline font-black text-xl mb-4 text-slate-900">{t('trips.detail.protocolNode')}</h3>
             <div className="space-y-4">
               <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100">
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">Target Vibe</p>
-                <p className="font-bold text-slate-900 italic">"{trip.vibe || 'Standard Exploration'}"</p>
+                <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">{t('trips.detail.targetVibe')}</p>
+                <p className="font-bold text-slate-900 italic">"{trip.vibe || t('trips.detail.standardExploration')}"</p>
               </div>
             </div>
           </Card>

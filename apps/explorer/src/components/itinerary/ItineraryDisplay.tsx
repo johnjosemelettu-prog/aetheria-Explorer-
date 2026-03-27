@@ -84,8 +84,8 @@ export default function ItineraryDisplay({
 
   const handleBookActivity = (activityDescription: string) => {
     toast({
-      title: 'Booking Initiated',
-      description: `Reserving ${activityDescription}.`,
+      title: t('itineraryGenerator.toast.bookingInitiated'),
+      description: t('itineraryGenerator.toast.reserving', { activity: activityDescription }),
     })
   }
 
@@ -95,15 +95,15 @@ export default function ItineraryDisplay({
     try {
       const result = await suggestItineraryAdjustment({
         currentItinerary: JSON.stringify(itinerary),
-        context: "It has suddenly started raining, so outdoor activities are not ideal.",
+        context: t('itineraryGenerator.display.recalibrateContext'),
         language: currentLang,
       });
       setSuggestion(result);
     } catch (error) {
       console.error("Error suggesting adjustment:", error);
       toast({
-        title: 'Adjustment Failed',
-        description: 'Could not synthesize a new path.',
+        title: t('itineraryGenerator.toast.adjustmentFailed'),
+        description: t('itineraryGenerator.toast.adjustmentFailedDesc'),
         variant: 'destructive',
       });
     } finally {
@@ -121,8 +121,8 @@ export default function ItineraryDisplay({
     });
 
     toast({
-      title: 'Path Recalibrated',
-      description: 'Your itinerary has been synchronized with the new node.',
+      title: t('itineraryGenerator.toast.pathRecalibrated'),
+      description: t('itineraryGenerator.toast.pathRecalibratedDesc'),
     });
     setSuggestion(null);
   };
@@ -138,9 +138,9 @@ export default function ItineraryDisplay({
         <div className="text-center p-12 opacity-30 grayscale flex flex-col items-center gap-6">
           <Bot className="h-20 w-20 text-primary" />
           <div className="space-y-2">
-            <h3 className="text-3xl font-black font-headline uppercase tracking-tighter italic">Synthesis Pending</h3>
+            <h3 className="text-3xl font-black font-headline uppercase tracking-tighter italic">{t('itineraryGenerator.display.pendingTitle')}</h3>
             <p className="text-lg font-medium max-w-xs mx-auto">
-              Configure your odyssey parameters to begin.
+              {t('itineraryGenerator.display.pendingDesc')}
             </p>
           </div>
         </div>
@@ -163,13 +163,13 @@ export default function ItineraryDisplay({
                     <Zap className="h-8 w-8 text-white fill-white" />
                   </div>
                   <div className="space-y-1">
-                    <h4 className="text-2xl font-black font-headline tracking-tighter uppercase italic">Unlock Immersion</h4>
-                    <p className="text-sm text-slate-400 font-medium">Activate a Pass to unlock AR Wayfinding and Local Legends.</p>
+                    <h4 className="text-2xl font-black font-headline tracking-tighter uppercase italic">{t('itineraryGenerator.display.upgradeTitle')}</h4>
+                    <p className="text-sm text-slate-400 font-medium">{t('itineraryGenerator.display.upgradeDesc')}</p>
                   </div>
                 </div>
                 <Button asChild className="bg-white text-slate-900 hover:bg-slate-200 font-black h-14 px-8 rounded-2xl shadow-2xl transition-all active:scale-95">
                   <Link href="/subscription" className="flex items-center gap-2">
-                    Upgrade Trip <ArrowRight className="h-5 w-5" />
+                    {t('itineraryGenerator.display.upgradeBtn')} <ArrowRight className="h-5 w-5" />
                   </Link>
                 </Button>
               </div>
@@ -180,11 +180,11 @@ export default function ItineraryDisplay({
         <Card className="border-none shadow-2xl rounded-[3rem] overflow-hidden bg-white">
           <CardHeader className="p-10 pb-6">
             <div className="flex items-center justify-between mb-4">
-              <Badge className="bg-primary text-white border-none font-bold uppercase tracking-widest text-[10px] px-4 py-1">Synthesis Result</Badge>
+              <Badge className="bg-primary text-white border-none font-bold uppercase tracking-widest text-[10px] px-4 py-1">{t('itineraryGenerator.display.resultBadge')}</Badge>
               <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_15px_rgba(16,185,129,0.5)]" />
             </div>
             <CardTitle className="font-headline text-4xl font-black tracking-tight leading-tight italic uppercase text-slate-900">
-              Odyssey Path
+              {t('itineraryGenerator.display.pathTitle')}
             </CardTitle>
             <p className="text-lg text-slate-500 font-medium leading-relaxed mt-4 italic">"{itinerary.itinerarySummary}"</p>
           </CardHeader>
@@ -194,9 +194,9 @@ export default function ItineraryDisplay({
               <div className="relative z-10 flex gap-6 items-start">
                 <div className="h-14 w-14 rounded-2xl bg-blue-100 flex items-center justify-center text-blue-600 flex-shrink-0 shadow-sm"><Lightbulb className="h-8 w-8" /></div>
                 <div className="flex-1">
-                  <AlertTitle className="text-xl font-black font-headline tracking-tighter uppercase mb-2">Dynamic Recalibration</AlertTitle>
+                  <AlertTitle className="text-xl font-black font-headline tracking-tighter uppercase mb-2">{t('itineraryGenerator.display.recalibrateTitle')}</AlertTitle>
                   <AlertDescription className="text-blue-800/70 font-medium text-sm leading-relaxed mb-4">
-                    Let AI adjust your path based on real-time climate and vibe shifts.
+                    {t('itineraryGenerator.display.recalibrateDesc')}
                   </AlertDescription>
                   <Button 
                     variant="outline"
@@ -209,7 +209,7 @@ export default function ItineraryDisplay({
                     ) : (
                       <CloudRain className="mr-2 h-4 w-4" />
                     )}
-                    Suggest Adjustment
+                    {t('itineraryGenerator.display.recalibrateBtn')}
                   </Button>
                 </div>
               </div>
@@ -248,7 +248,7 @@ export default function ItineraryDisplay({
                               onClick={() => handleBookActivity(activity.description)}
                             >
                               <Ticket className="mr-2 h-4 w-4" />
-                              Reserve Node
+                              {t('itineraryGenerator.display.reserveBtn')}
                             </Button>
                           </div>
                         </div>
@@ -257,7 +257,7 @@ export default function ItineraryDisplay({
                         <div className="ml-22 p-6 rounded-[2rem] bg-primary/5 border border-primary/10 flex gap-4">
                           <StickyNote className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                           <div>
-                            <p className="text-[10px] font-black uppercase tracking-widest text-primary mb-1">Notes</p>
+                            <p className="text-[10px] font-black uppercase tracking-widest text-primary mb-1">{t('itineraryGenerator.display.notes')}</p>
                             <p className="text-sm font-medium text-slate-600 leading-relaxed italic">"{day.notes}"</p>
                           </div>
                         </div>
@@ -276,15 +276,15 @@ export default function ItineraryDisplay({
               <div className="space-y-2">
                 <h4 className="text-2xl font-black font-headline text-slate-900 flex items-center gap-3 italic uppercase tracking-tighter">
                   <Wand2 className="h-6 w-6 text-primary" />
-                  Adjust Trajectory
+                  {t('itineraryGenerator.display.adjustTitle')}
                 </h4>
                 <p className="text-slate-500 font-medium text-sm">
-                  Request specific modifications to your path.
+                  {t('itineraryGenerator.display.adjustDesc')}
                 </p>
               </div>
               <div className="space-y-4">
                 <Textarea
-                  placeholder="e.g. Add more local markets..."
+                  placeholder={t('itineraryGenerator.display.adjustPlaceholder')}
                   value={refinementRequest}
                   onChange={(e) => setRefinementRequest(e.target.value)}
                   disabled={isRefining}
@@ -296,7 +296,7 @@ export default function ItineraryDisplay({
                   className="w-full h-16 rounded-2xl font-black text-xl shadow-xl shadow-primary/20 active:scale-95 transition-all"
                 >
                   {isRefining ? <Loader2 className="animate-spin mr-2 h-6 w-6" /> : <Send className="mr-2 h-6 w-6" />}
-                  {isRefining ? 'Processing...' : 'Update Path'}
+                  {isRefining ? t('itineraryGenerator.display.processing') : t('itineraryGenerator.display.updateBtn')}
                 </Button>
               </div>
             </div>
@@ -308,14 +308,14 @@ export default function ItineraryDisplay({
         <AlertDialogContent className="rounded-[2.5rem] p-10 max-w-2xl border-none shadow-2xl">
           <AlertDialogHeader>
             <div className="h-16 w-16 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6 shadow-inner"><CloudRain className="h-8 w-8" /></div>
-            <AlertDialogTitle className="text-3xl font-black font-headline uppercase tracking-tighter italic">Recalibration Proposed</AlertDialogTitle>
+            <AlertDialogTitle className="text-3xl font-black font-headline uppercase tracking-tighter italic">{t('itineraryGenerator.display.proposedTitle')}</AlertDialogTitle>
             <AlertDialogDescription className="text-lg font-medium text-slate-500 leading-relaxed italic mt-4">
               "{suggestion?.reason}"
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter className="mt-10 gap-4">
-            <AlertDialogCancel className="rounded-xl h-14 px-8 font-bold border-2" onClick={() => setSuggestion(null)}>Reject</AlertDialogCancel>
-            <AlertDialogAction className="rounded-xl h-14 px-10 font-black text-lg shadow-xl shadow-primary/20 transition-all active:scale-95" onClick={handleAcceptSuggestion}>Authorize Path</AlertDialogAction>
+            <AlertDialogCancel className="rounded-xl h-14 px-8 font-bold border-2" onClick={() => setSuggestion(null)}>{t('itineraryGenerator.display.rejectBtn')}</AlertDialogCancel>
+            <AlertDialogAction className="rounded-xl h-14 px-10 font-black text-lg shadow-xl shadow-primary/20 transition-all active:scale-95" onClick={handleAcceptSuggestion}>{t('itineraryGenerator.display.authorizeBtn')}</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>

@@ -44,8 +44,8 @@ import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { useTranslation } from '@/lib/i18n'
 
-const formSchema = z.object({
-  destination: z.string().min(2, 'Please enter a destination.'),
+const formSchema = (t: any) => z.object({
+  destination: z.string().min(2, t('itineraryGenerator.validation.destination')),
   dates: z
     .object({
       from: z.date().optional(),
@@ -55,7 +55,7 @@ const formSchema = z.object({
   interests: z
     .array(z.string())
     .refine((value) => value.some((item) => item), {
-      message: 'You have to select at least one interest.',
+      message: t('itineraryGenerator.validation.interests'),
     }),
   budget: z.enum(['low', 'medium', 'high']),
   travelStyle: z.string(),
@@ -75,7 +75,7 @@ export default function ItineraryForm({
 }: ItineraryFormProps) {
   const { t } = useTranslation()
   const form = useForm<ItineraryFormValues>({
-    resolver: zodResolver(formSchema),
+    resolver: zodResolver(formSchema(t)),
     defaultValues: {
       destination: '',
       interests: ['food'],

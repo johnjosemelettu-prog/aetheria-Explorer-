@@ -192,15 +192,15 @@ export default function ProfilePage() {
     try {
       await sendPasswordResetEmail(auth, user.email);
       toast({
-        title: "Reset Node Dispatched",
-        description: "Check your network inbox for the password reset link.",
+        title: t("profile.toast.resetDispatched"),
+        description: t("profile.toast.resetDispatchedDesc"),
       });
     } catch (error) {
       console.error(error);
       toast({
         variant: "destructive",
-        title: "Node Interruption",
-        description: "Failed to dispatch reset link. Please verify your connection.",
+        title: t("profile.toast.nodeInterruption"),
+        description: t("profile.toast.nodeInterruptionDesc"),
       });
     } finally {
       setIsReseting(false);
@@ -228,8 +228,8 @@ export default function ProfilePage() {
     } catch (error) {
       toast({
         variant: "destructive",
-        title: "Error",
-        description: "Failed to synchronize profile node.",
+        title: t("common.error"),
+        description: t("profile.toast.syncFailed"),
       })
     } finally {
       setIsSaving(false)
@@ -294,9 +294,9 @@ export default function ProfilePage() {
                 {userProfile?.role || "Explorer"}
               </Badge>
               {userProfile?.role === "admin" && (
-                <Badge variant="outline" className="border-primary text-primary font-black uppercase tracking-widest text-[10px] py-1 px-3">
-                  <ShieldCheck className="h-3 w-3 mr-1" /> Verified
-                </Badge>
+              <Badge variant="outline" className="border-primary text-primary font-black uppercase tracking-widest text-[10px] py-1 px-3">
+                <ShieldCheck className="h-3 w-3 mr-1" /> {t("profile.role.verified")}
+              </Badge>
               )}
             </div>
             <p className="text-slate-500 font-medium flex items-center justify-center md:justify-start gap-2">
@@ -320,7 +320,7 @@ export default function ProfilePage() {
                     <Settings className="h-4 w-4" /> {t("profile.tabs.settings")}
                   </TabsTrigger>
                   <TabsTrigger value="security" className="w-full justify-start gap-3 px-4 py-3 rounded-2xl data-[state=active]:bg-primary data-[state=active]:text-white font-bold uppercase tracking-tighter text-[10px]">
-                    <Lock className="h-4 w-4" /> Security Node
+                    <Lock className="h-4 w-4" /> {t("profile.tabs.security")}
                   </TabsTrigger>
                 </TabsList>
 
@@ -330,10 +330,10 @@ export default function ProfilePage() {
                       <CardHeader className="bg-slate-900 text-white p-8">
                         <CardTitle className="text-2xl font-black font-headline uppercase tracking-tighter italic flex items-center gap-3">
                           <User className="h-6 w-6 text-primary" />
-                          Identity Synthesis
+                          {t("profile.personalInfo.title")}
                         </CardTitle>
                         <CardDescription className="text-slate-400 font-medium">
-                          Update your core traveler nodes.
+                          {t("profile.personalInfo.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="p-8 space-y-6">
@@ -371,11 +371,11 @@ export default function ProfilePage() {
                             name="nationality"
                             render={({ field }) => (
                               <FormItem>
-                                <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">Citizenship Node</FormLabel>
+                                <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">{t("profile.personalInfo.citizenship")}</FormLabel>
                                 <FormControl>
-                                  <Input placeholder="Country" {...field} className="rounded-xl border-slate-100 bg-slate-50 font-bold h-12" />
+                                  <Input placeholder={t("profile.personalInfo.citizenshipPlaceholder")} {...field} className="rounded-xl border-slate-100 bg-slate-50 font-bold h-12" />
                                 </FormControl>
-                                <FormDescription className="text-[9px] font-medium text-slate-400 uppercase tracking-widest">Required for cross-border logic.</FormDescription>
+                                <FormDescription className="text-[9px] font-medium text-slate-400 uppercase tracking-widest">{t("profile.personalInfo.citizenshipDesc")}</FormDescription>
                                 <FormMessage />
                               </FormItem>
                             )}
@@ -385,9 +385,9 @@ export default function ProfilePage() {
                             name="homeBase"
                             render={({ field }) => (
                               <FormItem>
-                                <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">Home Base Node</FormLabel>
+                                <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">{t("profile.personalInfo.homeBase")}</FormLabel>
                                 <FormControl>
-                                  <Input placeholder="City, Country" {...field} className="rounded-xl border-slate-100 bg-slate-50 font-bold h-12" />
+                                  <Input placeholder={t("profile.personalInfo.homeBasePlaceholder")} {...field} className="rounded-xl border-slate-100 bg-slate-50 font-bold h-12" />
                                 </FormControl>
                                 <FormMessage />
                               </FormItem>
@@ -399,11 +399,11 @@ export default function ProfilePage() {
                           name="email"
                           render={({ field }) => (
                             <FormItem>
-                              <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">Network Address</FormLabel>
+                              <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">{t("profile.personalInfo.networkAddress")}</FormLabel>
                               <FormControl>
-                                <Input placeholder="explorer@aetheria.ai" {...field} disabled className="rounded-xl border-slate-100 bg-slate-100 dark:bg-slate-800 h-12 opacity-60" />
+                                <Input placeholder={t("profile.personalInfo.networkAddressPlaceholder")} {...field} disabled className="rounded-xl border-slate-100 bg-slate-100 dark:bg-slate-800 h-12 opacity-60" />
                               </FormControl>
-                              <FormDescription className="text-[9px] font-medium text-slate-400 uppercase tracking-widest">Used for dispatching odyssey kits.</FormDescription>
+                              <FormDescription className="text-[9px] font-medium text-slate-400 uppercase tracking-widest">{t("profile.personalInfo.networkAddressDesc")}</FormDescription>
                               <FormMessage />
                             </FormItem>
                           )}
@@ -446,10 +446,10 @@ export default function ProfilePage() {
                         <CardHeader className="bg-primary text-white p-8">
                           <CardTitle className="text-2xl font-black font-headline uppercase tracking-tighter italic flex items-center gap-3">
                             <Compass className="h-6 w-6 text-white" />
-                            Synthesize your movement profile
+                            {t("profile.travelStyle.title")}
                           </CardTitle>
                           <CardDescription className="text-white/70 font-medium">
-                            Set your behavioral travel nodes.
+                            {t("profile.travelStyle.description")}
                           </CardDescription>
                         </CardHeader>
                         <CardContent className="p-8">
@@ -479,7 +479,7 @@ export default function ProfilePage() {
                                           <FormLabel className="font-black text-sm text-slate-900 dark:text-slate-100 cursor-pointer uppercase tracking-tighter italic">{t(`profile.travelStyle.${style.value}.label`)}</FormLabel>
                                           <p className="text-[10px] text-slate-500 font-medium leading-relaxed">{t(`profile.travelStyle.${style.value}.description`)}</p>
                                         </div>
-                                        {field.value === style.value && <Badge className="absolute top-4 right-4 bg-primary text-white text-[8px] uppercase font-black">Active</Badge>}
+                                        {field.value === style.value && <Badge className="absolute top-4 right-4 bg-primary text-white text-[8px] uppercase font-black">{t("common.active")}</Badge>}
                                       </FormItem>
                                     ))}
                                   </RadioGroup>
@@ -495,10 +495,10 @@ export default function ProfilePage() {
                         <CardHeader className="p-8 pb-4">
                           <CardTitle className="text-2xl font-black font-headline uppercase tracking-tighter italic flex items-center gap-3">
                             <Heart className="h-6 w-6 text-primary" />
-                            Interest Nodes
+                            {t("profile.interests.title")}
                           </CardTitle>
                           <CardDescription className="font-medium text-slate-500">
-                            Select thematic clusters for AI synthesis.
+                            {t("profile.interests.description")}
                           </CardDescription>
                         </CardHeader>
                         <CardContent className="p-8 pt-0">
@@ -559,7 +559,7 @@ export default function ProfilePage() {
                         <CardHeader className="bg-slate-900 text-white p-8">
                           <CardTitle className="text-2xl font-black font-headline uppercase tracking-tighter italic flex items-center gap-3">
                             <Settings className="h-6 w-6 text-primary" />
-                            System Parameters
+                            {t("profile.settings.title")}
                           </CardTitle>
                         </CardHeader>
                         <CardContent className="p-8 space-y-10">
@@ -568,11 +568,11 @@ export default function ProfilePage() {
                             name="preferredLanguage"
                             render={({ field }) => (
                               <FormItem>
-                                <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">Linguistic Node</FormLabel>
+                                <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">{t("profile.settings.language")}</FormLabel>
                                 <Select onValueChange={field.onChange} value={field.value}>
                                   <FormControl>
                                     <SelectTrigger className="rounded-xl border-slate-100 bg-slate-50 h-12 font-bold">
-                                      <SelectValue placeholder="English" />
+                                      <SelectValue placeholder={t("common.english")} />
                                     </SelectTrigger>
                                   </FormControl>
                                   <SelectContent className="rounded-2xl shadow-2xl border-none">
@@ -584,7 +584,7 @@ export default function ProfilePage() {
                                   </SelectContent>
                                 </Select>
                                 <FormDescription className="text-[9px] font-medium text-slate-400 uppercase tracking-widest">
-                                  Preferred language for AI synthesis.
+                                  {t("profile.settings.languageDesc")}
                                 </FormDescription>
                                 <FormMessage />
                               </FormItem>
@@ -592,7 +592,7 @@ export default function ProfilePage() {
                           />
 
                           <div className="space-y-4">
-                            <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">Visual Theme</FormLabel>
+                            <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">{t("profile.settings.theme")}</FormLabel>
                             <FormField
                               control={form.control}
                               name="theme"
@@ -617,13 +617,13 @@ export default function ProfilePage() {
                                             )}
                                           >
                                             <opt.icon className="h-6 w-6" />
-                                            <span className="text-[10px] font-black uppercase tracking-widest">{opt.value}</span>
+                                            <span className="text-[10px] font-black uppercase tracking-widest">{t(`profile.settings.themes.${opt.value}`)}</span>
                                           </Label>
                                         </FormItem>
                                       ))}
                                     </RadioGroup>
                                   </FormControl>
-                                  <FormDescription className="text-[9px] font-medium text-slate-400 uppercase tracking-widest">System-wide aesthetic mode.</FormDescription>
+                                  <FormDescription className="text-[9px] font-medium text-slate-400 uppercase tracking-widest">{t("profile.settings.themeDesc")}</FormDescription>
                                   <FormMessage />
                                 </FormItem>
                               )}
@@ -636,10 +636,10 @@ export default function ProfilePage() {
                         <CardHeader className="bg-emerald-50 dark:bg-emerald-950/30 p-8">
                           <CardTitle className="text-2xl font-black font-headline uppercase tracking-tighter italic flex items-center gap-3 text-emerald-900 dark:text-emerald-100">
                             <Wallet className="h-6 w-6 text-emerald-600" />
-                            Financial DNA
+                            {t("profile.financial.title")}
                           </CardTitle>
                           <CardDescription className="text-emerald-700/70 dark:text-emerald-400/70 font-medium">
-                            Set your default settlement currency.
+                            {t("profile.financial.description")}
                           </CardDescription>
                         </CardHeader>
                         <CardContent className="p-8 space-y-6">
@@ -648,7 +648,7 @@ export default function ProfilePage() {
                             name="defaultCurrency"
                             render={({ field }) => (
                               <FormItem>
-                                <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">Base Currency</FormLabel>
+                                <FormLabel className="text-[10px] font-black uppercase tracking-widest text-slate-400">{t("profile.financial.baseCurrency")}</FormLabel>
                                 <Select onValueChange={field.onChange} value={field.value}>
                                   <FormControl>
                                     <SelectTrigger className="rounded-xl border-slate-100 bg-slate-50 h-12 font-bold">
@@ -658,13 +658,13 @@ export default function ProfilePage() {
                                   <SelectContent className="rounded-2xl shadow-2xl border-none">
                                     {currencies.map((curr) => (
                                       <SelectItem key={curr.code} value={curr.code} className="rounded-xl font-bold">
-                                        {curr.code} - {curr.name}
+                                        {curr.code} - {t(`profile.financial.currencies.${curr.code}`)}
                                       </SelectItem>
                                     ))}
                                   </SelectContent>
                                 </Select>
                                 <FormDescription className="text-[9px] font-medium text-slate-400 uppercase tracking-widest">
-                                  Used for standard price synthesis.
+                                  {t("profile.financial.baseCurrencyDesc")}
                                 </FormDescription>
                                 <FormMessage />
                               </FormItem>
@@ -680,10 +680,10 @@ export default function ProfilePage() {
                       <CardHeader className="bg-slate-900 text-white p-8">
                         <CardTitle className="text-2xl font-black font-headline uppercase tracking-tighter italic flex items-center gap-3">
                           <Lock className="h-6 w-6 text-primary" />
-                          Security Node
+                          {t("profile.security.title")}
                         </CardTitle>
                         <CardDescription className="text-slate-400 font-medium">
-                          Manage your access keys and identity verification.
+                          {t("profile.security.description")}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="p-8 space-y-10">
@@ -693,8 +693,8 @@ export default function ProfilePage() {
                               <Mail className="h-8 w-8" />
                             </div>
                             <div>
-                              <h4 className="font-black text-slate-900 text-xl uppercase tracking-tighter italic">Network Key Reset</h4>
-                              <p className="text-sm font-medium text-slate-500 max-sm mt-1">Initialize a secure password reset link dispatched to your network address.</p>
+                              <h4 className="font-black text-slate-900 text-xl uppercase tracking-tighter italic">{t("profile.security.resetTitle")}</h4>
+                              <p className="text-sm font-medium text-slate-500 max-sm mt-1">{t("profile.security.resetDesc")}</p>
                             </div>
                           </div>
                           <Button 
@@ -703,14 +703,14 @@ export default function ProfilePage() {
                             disabled={isReseting}
                             className="h-14 px-8 rounded-2xl font-black text-lg shadow-xl shadow-primary/20 transition-transform active:scale-95 whitespace-nowrap"
                           >
-                            {isReseting ? <Loader2 className="animate-spin h-6 w-6" /> : <><Zap className="mr-2 h-5 w-5" /> Initialize Reset</>}
+                            {isReseting ? <Loader2 className="animate-spin h-6 w-6" /> : <><Zap className="mr-2 h-5 w-5" /> {t("profile.security.resetButton")}</>}
                           </Button>
                         </div>
 
                         <div className="p-6 rounded-3xl bg-blue-50 border border-blue-100 flex items-start gap-4">
                           <ShieldCheck className="h-6 w-6 text-blue-600 mt-0.5 flex-shrink-0" />
                           <p className="text-xs text-blue-800/70 font-medium leading-relaxed">
-                            <strong>Guardian Grid Alert:</strong> Aetheria uses high-fidelity identity nodes. Password reset links are valid for 60 minutes. If you encounter a logic lock, contact the support hub immediately.
+                            <strong>{t("profile.security.alertTitle")}:</strong> {t("profile.security.alertDesc")}
                           </p>
                         </div>
                       </CardContent>
@@ -725,7 +725,7 @@ export default function ProfilePage() {
                 {isSaving ? (
                   <><Loader2 className="mr-3 h-6 w-6 animate-spin" /> {t("common.loading")}</>
                 ) : (
-                  <><Save className="mr-3 h-6 w-6" /> Authorize Changes</>
+                  <><Save className="mr-3 h-6 w-6" /> {t("profile.authorizeChanges")}</>
                 )}
               </Button>
             </div>

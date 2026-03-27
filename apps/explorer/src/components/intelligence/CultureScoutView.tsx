@@ -6,8 +6,10 @@ import { Button } from '@/components/ui/button';
 import { getCultureAdvice, type CultureScoutOutput } from '@/ai/flows/culture-scout-flow';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { useTranslation } from '@/lib/i18n';
 
 export default function CultureScoutView({ city, language }: { city: string, language: string }) {
+  const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(false);
   const [advice, setAdvice] = useState<CultureScoutOutput | null>(null);
 
@@ -22,11 +24,11 @@ export default function CultureScoutView({ city, language }: { city: string, lan
         <Card className="border-none shadow-xl rounded-[2.5rem] text-center p-12 bg-white flex flex-col items-center gap-6">
           <div className="h-20 w-20 rounded-3xl bg-teal-50 flex items-center justify-center text-teal-600 shadow-inner"><Globe className="h-10 w-10" /></div>
           <div className="space-y-2">
-            <CardTitle className="text-2xl font-black font-headline uppercase tracking-tighter italic">Ready for Discovery?</CardTitle>
-            <CardDescription className="font-medium text-slate-500">Synthesize local social DNA for {city}.</CardDescription>
+            <CardTitle className="text-2xl font-black font-headline uppercase tracking-tighter italic">{t('intelligence.cultureScout.readyTitle')}</CardTitle>
+            <CardDescription className="font-medium text-slate-500">{t('intelligence.cultureScout.readyDescription', { city })}</CardDescription>
           </div>
           <Button onClick={fetchAdvice} disabled={isLoading} className="h-14 px-10 rounded-2xl font-black bg-teal-600 hover:bg-teal-700 shadow-xl shadow-teal-200">
-            {isLoading ? <Loader2 className="animate-spin mr-2" /> : <><Sparkles className="mr-2 h-5 w-5" /> Analyze Etiquette</>}
+            {isLoading ? <Loader2 className="animate-spin mr-2" /> : <><Sparkles className="mr-2 h-5 w-5" /> {t('intelligence.cultureScout.analyzeButton')}</>}
           </Button>
         </Card>
       ) : (
@@ -34,7 +36,7 @@ export default function CultureScoutView({ city, language }: { city: string, lan
           <Card className="border-none shadow-xl bg-teal-600 text-white rounded-[2rem] p-8 overflow-hidden relative">
             <div className="absolute top-0 right-0 p-8 opacity-10"><Landmark className="h-32 w-32" /></div>
             <h3 className="text-xs font-black uppercase tracking-widest text-teal-200 mb-4 flex items-center gap-2 relative z-10">
-              <Sparkles className="h-4 w-4" /> The {city} Atmosphere
+              <Sparkles className="h-4 w-4" /> {t('intelligence.cultureScout.atmosphereTitle', { city })}
             </h3>
             <p className="text-xl font-bold leading-relaxed relative z-10 italic">"{advice.overview}"</p>
           </Card>
@@ -42,7 +44,7 @@ export default function CultureScoutView({ city, language }: { city: string, lan
             <Card className="rounded-[2.5rem] border-none shadow-lg bg-emerald-50/50 p-2">
               <CardHeader>
                 <CardTitle className="text-emerald-600 flex items-center gap-2 font-black uppercase tracking-tighter text-sm italic">
-                  <CheckCircle className="h-4 w-4" /> Protocol: Essential Do's
+                  <CheckCircle className="h-4 w-4" /> {t('intelligence.cultureScout.dosTitle')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -59,7 +61,7 @@ export default function CultureScoutView({ city, language }: { city: string, lan
             <Card className="rounded-[2.5rem] border-none shadow-lg bg-red-50/50 p-2">
               <CardHeader>
                 <CardTitle className="text-red-600 flex items-center gap-2 font-black uppercase tracking-tighter text-sm italic">
-                  <XCircle className="h-4 w-4" /> Protocol: Essential Dont'ts
+                  <XCircle className="h-4 w-4" /> {t('intelligence.cultureScout.dontsTitle')}
                 </CardTitle>
               </CardHeader>
               <CardContent>

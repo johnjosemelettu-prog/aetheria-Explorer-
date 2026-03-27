@@ -6,8 +6,6 @@ import { I18nProvider } from '@/lib/i18n'
 import { ThemeProvider } from '@/components/layout/ThemeProvider'
 import { Toaster } from '@/components/ui/toaster'
 import { ErrorBoundary } from '@/components/common/ErrorBoundary'
-import { SidebarProvider } from '@/components/ui/sidebar'
-import { AppSidebar } from '@/components/layout/AppSidebar'
 
 export const metadata: Metadata = {
   title: 'Aetheria: Your Smart Travel Companion',
@@ -38,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="scroll-smooth" data-scroll-behavior="smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -53,21 +51,16 @@ export default function RootLayout({
       </head>
       <body className={cn('font-body antialiased')} suppressHydrationWarning>
         <ErrorBoundary>
-          <>
-            <FirebaseClientProvider>
-              <ThemeProvider>
-                <I18nProvider>
-                  <div className="flex flex-col min-h-screen">
-                    <SidebarProvider defaultOpen={false} className="relative">
-                      <AppSidebar />
-                      {children}
-                    </SidebarProvider>
-                    <Toaster />
-                  </div>
-                </I18nProvider>
-              </ThemeProvider>
-            </FirebaseClientProvider>
-          </>
+          <FirebaseClientProvider>
+            <ThemeProvider>
+              <I18nProvider>
+                <div className="flex flex-col min-h-screen">
+                  {children}
+                  <Toaster />
+                </div>
+              </I18nProvider>
+            </ThemeProvider>
+          </FirebaseClientProvider>
         </ErrorBoundary>
       </body>
     </html>

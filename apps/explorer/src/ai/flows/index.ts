@@ -55,3 +55,4 @@ import './explorer-quest-flow';
 import './language-lab-flow';
 import './generate-layover-itinerary-flow';
 import './parse-boarding-pass-flow';
+import './wardrobe-email-flow';
