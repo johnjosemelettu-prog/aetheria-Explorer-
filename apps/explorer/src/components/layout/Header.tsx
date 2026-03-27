@@ -108,7 +108,7 @@ export function Header() {
                     )}
 
                     <Link href="/" className="flex items-center gap-3 ml-2 group">
-                      <BrandLogo size="sm" src="/logo.png" />
+                      <BrandLogo size="sm" />
                       <div className="hidden sm:flex flex-col items-start leading-none group-hover:translate-x-1 transition-transform">
                     <span className={cn(
                         "font-headline text-sm font-black tracking-tighter uppercase italic leading-none",
@@ -119,7 +119,7 @@ export function Header() {
                         <span className={cn(
                             "text-[6px] font-black uppercase tracking-[0.3em] mt-0.5",
                             isHome || scrolled ? "text-white/40" : "text-muted-foreground"
-                        )}>{t('header.tagline')}</span>
+                        )}>Journey Synthesized</span>
                       </div>
                     </Link>
                   </div>
@@ -131,7 +131,7 @@ export function Header() {
                         <div className="flex items-center gap-2">
                           <Link href="/sos">
                             <Button variant="destructive" size="sm" className="rounded-full px-3 sm:px-4 h-9 font-black uppercase tracking-widest text-[9px] shadow-lg shadow-red-500/20 animate-pulse">
-                              <Siren className="sm:mr-1.5 h-3.5 w-3.5" /> <span className="hidden sm:inline">{t('header.sos')}</span>
+                              <Siren className="sm:mr-1.5 h-3.5 w-3.5" /> <span className="hidden sm:inline">SOS</span>
                             </Button>
                           </Link>
                           <Link href="/wallet">
@@ -172,7 +172,7 @@ export function Header() {
                         </Button>
                       </DropdownMenuTrigger>
                       <DropdownMenuContent align="end" className="w-56 bg-slate-950/90 backdrop-blur-2xl p-2 rounded-[2rem] shadow-2xl border border-white/10 animate-in fade-in zoom-in-95 duration-200">
-                        <DropdownMenuLabel className="px-4 py-2 text-[9px] font-black uppercase text-primary tracking-widest">{t('header.language')}</DropdownMenuLabel>
+                        <DropdownMenuLabel className="px-4 py-2 text-[9px] font-black uppercase text-primary tracking-widest">Linguistic Grid</DropdownMenuLabel>
                         <DropdownMenuSeparator className="bg-white/10 mx-2" />
                         {availableLanguages.map((lang) => (
                             <DropdownMenuItem
@@ -198,10 +198,10 @@ export function Header() {
                                   ? "text-white hover:bg-white/20 hover:scale-105"
                                   : "text-slate-900 hover:bg-slate-100 hover:scale-105"
                           )}>
-                            <Link href="/login">{t('header.login')}</Link>
+                            <Link href="/login">LOGIN</Link>
                           </Button>
                           <Button asChild className="rounded-full shadow-2xl animate-glow-pulse font-black uppercase tracking-widest text-[9px] h-10 px-6 bg-primary text-white hover:bg-primary/90 hover:scale-105 active:scale-95 transition-all">
-                            <Link href="/signup">{t('header.signUp')}</Link>
+                            <Link href="/signup">SIGN UP</Link>
                           </Button>
                         </div>
                     )}

@@ -258,19 +258,19 @@ export default function HotelBookingView({ usdWallet }: { usdWallet: any }) {
         )}
 
         {step === 'search' && searchResults && (
-            <div className="grid grid-cols-1 gap-6 md:gap-10 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
               {searchResults.map((hotel) => (
-                  <Card key={hotel.id} className="overflow-hidden border-none shadow-xl rounded-2xl md:rounded-[2rem] group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex flex-col bg-white">
+                  <Card key={hotel.id} className="overflow-hidden border-none shadow-xl rounded-[2rem] md:rounded-[2.5rem] group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex flex-col bg-white">
                     <div className="relative h-48 md:h-56 w-full overflow-hidden">
                       {hotel.image && (
                           <Image src={hotel.image.imageUrl} alt={hotel.name} fill className="object-cover transition-transform duration-700 group-hover:scale-110" data-ai-hint={hotel.image.imageHint} />
                       )}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                      <div className="absolute bottom-4 left-4 flex items-center gap-1 bg-white/20 backdrop-blur-md rounded-full px-3 py-1 text-white text-[10px] font-black uppercase tracking-widest"><Star className="h-3 w-3 fill-accent text-accent" /> {hotel.rating} Rated</div>
+                      <div className="absolute bottom-4 left-4 flex items-center gap-1 bg-white/20 backdrop-blur-md rounded-full px-2.5 md:px-3 py-1 md:py-1.5 text-white text-[9px] md:text-[10px] font-black border border-white/10 uppercase tracking-widest"><Star className="h-3 md:h-3.5 w-3 md:w-3.5 fill-accent text-accent" /> {hotel.rating} Rated</div>
                     </div>
-                    <CardHeader className="p-5 md:p-8 pb-3 md:pb-4"><CardTitle className="text-xl md:text-2xl font-black font-headline text-slate-900 leading-tight">{hotel.name}</CardTitle></CardHeader>
-                    <CardContent className="px-5 md:px-8 pb-3 md:pb-4 flex-grow"><div className="flex items-baseline gap-1"><span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">FROM</span><span className="text-2xl md:text-3xl font-black font-headline text-slate-900">${hotel.price}</span><span className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">/ NIGHT</span></div></CardContent>
-                    <CardFooter className="p-5 md:p-8 pt-0"><Button className="w-full h-11 md:h-12 rounded-xl font-black bg-slate-900 text-white hover:bg-emerald-600" onClick={() => handleSelectHotel(hotel)}>Select Stay</Button></CardFooter>
+                    <CardHeader className="p-6 md:p-8 pb-3 md:pb-4"><CardTitle className="text-xl md:text-2xl font-black font-headline text-slate-900 leading-tight group-hover:text-primary transition-colors uppercase italic tracking-tighter">{hotel.name}</CardTitle></CardHeader>
+                    <CardContent className="px-6 md:px-8 pb-4 md:pb-6 flex-grow"><div className="flex items-baseline gap-1.5"><span className="text-[9px] md:text-[10px] font-black text-slate-400 uppercase tracking-widest">FROM</span><span className="text-2xl md:text-3xl font-black font-headline text-slate-900">${hotel.price}</span><span className="text-[9px] md:text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">/ NIGHT</span></div></CardContent>
+                    <CardFooter className="p-6 md:p-8 pt-0"><Button className="w-full h-12 md:h-14 rounded-xl md:rounded-2xl font-black text-base md:text-lg bg-slate-900 text-white hover:bg-emerald-600 shadow-xl shadow-slate-200 active:scale-95 transition-all" onClick={() => handleSelectHotel(hotel)}>Select Stay</Button></CardFooter>
                   </Card>
               ))}
             </div>
