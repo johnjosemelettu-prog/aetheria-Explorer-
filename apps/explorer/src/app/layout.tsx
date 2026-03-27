@@ -6,8 +6,6 @@ import { I18nProvider } from '@/lib/i18n'
 import { ThemeProvider } from '@/components/layout/ThemeProvider'
 import { Toaster } from '@/components/ui/toaster'
 import { ErrorBoundary } from '@/components/common/ErrorBoundary'
-import { SidebarProvider } from '@/components/ui/sidebar'
-import { AppSidebar } from '@/components/layout/AppSidebar'
 
 export const metadata: Metadata = {
     title: 'Aetheria: Your Smart Travel Companion',
@@ -57,10 +55,7 @@ export default function RootLayout({
                 <ThemeProvider>
                     <I18nProvider>
                         <div className="flex flex-col min-h-screen">
-                            <SidebarProvider defaultOpen={false} className="relative">
-                                <AppSidebar />
-                                {children}
-                            </SidebarProvider>
+                            {children}
                             <Toaster />
                         </div>
                     </I18nProvider>
