@@ -1,4 +1,483 @@
-
 {
-  "header": { "dashboard": "لوحة القيادة" }
+  "common": {
+    "save": "حفظ التغييرات",
+    "cancel": "إلغاء",
+    "close": "إغلاق",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "loading": "جاري المعالجة...",
+    "search": "بحث في الجدول",
+    "filter": "تصفية العقد",
+    "back": "رجوع",
+    "next": "التالي",
+    "continue": "استمرار",
+    "confirm": "موافقة",
+    "active": "نشط",
+    "inactive": "غير متصل",
+    "verified": "تم التحقق",
+    "unlocked": "مفتوح",
+    "locked": "مغلق",
+    "authorized": "مصرح به",
+    "error": "خطأ",
+    "returnToDashboard": "العودة إلى مركز القيادة"
+  },
+  "login": {
+    "title": "تسجيل الدخول",
+    "emailLabel": "عنوان البريد الإلكتروني",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "رمز الأمان",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "تسجيل الدخول",
+    "signingInButton": "جاري التحقق...",
+    "noAccount": "جديد في الشبكة؟",
+    "signUpLink": "إنشاء حساب",
+    "toast": {
+      "successTitle": "مرحباً بعودتك",
+      "successDescription": "تم تفعيل جلسة Aetheria الخاصة بك",
+      "errorTitle": "فشل تسجيل الدخول",
+      "genericError": "تعذر التحقق من بيانات الاعتماد",
+      "invalidCredentials": "البريد الإلكتروني أو رمز الأمان غير صحيح",
+      "operationNotAllowed": "تسجيل الدخول مقيد حالياً"
+    }
+  },
+  "signup": {
+    "title": "إنشاء حساب",
+    "description": "انضم إلى شبكة الرحلات العالمية لـ Aetheria",
+    "emailLabel": "عنوان البريد الإلكتروني",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "رمز الأمان",
+    "createButton": "تهيئة الحساب",
+    "creatingButton": "جاري تركيب الملف الشخصي...",
+    "haveAccount": "هل أنت مستكشف بالفعل؟",
+    "signInLink": "تسجيل الدخول",
+    "toast": {
+      "successTitle": "تم إنشاء الحساب",
+      "successDescription": "مرحباً بك في شبكة Aetheria",
+      "errorTitle": "فشل التسجيل",
+      "emailInUse": "هذا البريد الإلكتروني مسجل بالفعل",
+      "operationNotAllowed": "التسجيل مقيد حالياً",
+      "genericError": "حدث خطأ أثناء عملية التركيب"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "عقدة Aetheria الذكية",
+      "title": "عالم أعيد ترميزه",
+      "subtitle": "أزل الحواجز اللوجستية. ضاعف تجربة السفر. جرب أول نظام بيئي للسفر بالذكاء الاصطناعي متعدد الوكلاء.",
+      "scroll": "مرر للمسح",
+      "cta": {
+        "start": "ابدأ الرحلة",
+        "signin": "الوصول إلى العقدة"
+      }
+    },
+    "features": {
+      "chapter": "البروتوكول الفصل 01",
+      "title": "العدسة الذكية",
+      "initNode": "تهيئة العقدة",
+      "itinerary": {
+        "badge": "التنسيق",
+        "title": "مسار Aura",
+        "desc": "تركيب رحلات متعددة الأيام بناءً على الحمض النووي النفسي الخاص بك."
+      },
+      "postcard": {
+        "badge": "الاستوديو",
+        "title": "استوديو البطاقات البريدية",
+        "desc": "حول صورك إلى أعمال فنية عالية الدقة تم إنشاؤها بواسطة الذكاء الاصطناعي."
+      },
+      "legends": {
+        "badge": "رؤى",
+        "title": "الأساطير المحلية",
+        "desc": "افتح الأساطير المخفية لإحداثياتك من خلال سرد القصص المفعل بنظام تحديد المواقع العالمي (GPS)."
+      },
+      "packing": {
+        "badge": "الأدوات",
+        "title": "وكيل عدم النسيان",
+        "desc": "تركيب استباقي لمستلزمات السفر مصمم خصيصاً للطقس وعقد الرحلة."
+      }
+    },
+    "workflow": {
+      "badge": "بروتوكول التشغيل",
+      "title": "كيف يعمل",
+      "phase": "المرحلة 0{num}",
+      "step1": {
+        "title": "تحديد النية",
+        "desc": "حدد وجهتك ومعايير الأجواء النفسية الخاصة بك."
+      },
+      "step2": {
+        "title": "تركيب المسار",
+        "desc": "ستقوم الشبكة العصبية لـ Aetheria بتصميم مسار مخصص لك."
+      },
+      "step3": {
+        "title": "تنفيذ الرحلة",
+        "desc": "انطلق إلى العالم بمعلومات ذكية في الوقت الفعلي وعقد أمان."
+      }
+    },
+    "cta": {
+      "badge": "انضم إلى الشبكة",
+      "title": "هل أنت مستعد لإعادة ترميز عالمك؟",
+      "subtitle": "انضم إلى شبكة المستكشفين المعاصرين الذين يستفيدون من الذكاء اللامحدود.",
+      "start": "اتصل بالشبكة",
+      "feed": "الخلاصة العالمية"
+    }
+  },
+  "header": {
+    "aiItinerary": "مسار Aura",
+    "pathfinder": "مستكشف المسارات",
+    "vibeMarketplace": "سوق الأجواء",
+    "vibeShopping": "المتجر المخصص",
+    "bookingHub": "مركز الحجز",
+    "myTrips": "رحلاتي",
+    "visionHub": "مركز رؤية الذكاء الاصطناعي",
+    "intelligenceCenter": "مركز المعلومات",
+    "arWayfinding": "تحديد المسار بالواقع المعزز",
+    "localLegends": "الأساطير المحلية",
+    "explorerQuests": "مهام المستكشف",
+    "culturalPulse": "النبض الثقافي",
+    "tripOdyssey": "رحلة الأوديسة",
+    "postcardStudio": "استوديو البطاقات البريدية",
+    "heritageMirror": "مرآة التراث",
+    "journal": "سجل المستكشف",
+    "visaArchitect": "مهندس التأشيرات",
+    "carbonSynthesis": "تتبع الكربون",
+    "esim": "eSIM عالمي",
+    "flightStatus": "رادار الخدمات اللوجستية",
+    "layoverOdyssey": "أوديسة التوقف",
+    "safety": "مساعد الأمان",
+    "hotels": "الإقامة",
+    "flights": "الطيران",
+    "insurance": "تأمين السفر",
+    "trains": "القطارات",
+    "buses": "الحافلات",
+    "cruises": "الرحلات البحرية",
+    "cabs": "سيارات الأجرة",
+    "dining": "المطاعم",
+    "profile": "عقدة الهوية",
+    "loyaltyHub": "مركز الولاء",
+    "wallet": "المحفظة الذكية",
+    "rentals": "إيجاراتي",
+    "scanAndPay": "امسح وادفع",
+    "subscription": "تصريح السفر",
+    "partners": "الشركاء",
+    "digitalBrochure": "كتيب Aetheria",
+    "appTrailer": "عرض النظام",
+    "sos": "مركز الطوارئ SOS",
+    "events": "فعاليات الوجهة",
+    "gearArchitect": "مهندس المعدات",
+    "jetLag": "منطق اضطراب الرحلات الجوية",
+    "digitalTailor": "الخياط الرقمي",
+    "translator": "مختبر اللغة",
+    "corporate": "وضع الشركات",
+    "dashboard": "لوحة القيادة",
+    "budgetSynthesis": "تركيب الميزانية",
+    "moodSynthesis": "تركيب الحالة المزاجية",
+    "auraBeats": "إيقاعات Aura",
+    "equilibriumSync": "مزامنة التوازن",
+    "flavorDna": "الحمض النووي للنكهة",
+    "audioGuide": "الدليل الصوتي",
+    "menuExplorer": "مستكشف القائمة",
+    "localInsider": "معلومات محلية",
+    "cultureScout": "كشاف الثقافة",
+    "packingassistant": "وكيل عدم النسيان",
+    "categories": {
+      "orchestration": "التنسيق",
+      "intelligence": "المعلومات الذكية",
+      "studios": "الاستوديوهات",
+      "utility": "الأدوات"
+    },
+    "promo": {
+      "spotlights": "شركاء مميزون",
+      "verified": "شركاء موثوقون"
+    }
+  },
+  "explorerQuests": {
+    "title": "مهام المستكشف",
+    "subtitle": "حول استكشاف مدينتك إلى رحلة بحث عن الكنوز مثيرة.",
+    "initTitle": "تهيئة شبكة المهام",
+    "initDesc": "اختر مدينة مستهدفة لتركيب مهام استكشاف مخصصة.",
+    "cityPlaceholder": "مثلاً: كيوتو، اليابان",
+    "generateBtn": "إنشاء المهام",
+    "newCityBtn": "مدينة جديدة",
+    "progress": "التقدم: {completed} / {total}",
+    "xp": "{current} / {total} XP",
+    "hint": "تلميح: {hint}",
+    "xpSynthesized": "تم تركيب {points} XP",
+    "resolvedTitle": "تم فك رموز المدينة!",
+    "resolvedDesc": "لقد نجحت في فك رموز أسرار {city}.",
+    "returnBtn": "العودة إلى مركز القيادة"
+  },
+  "languageLab": {
+    "badge": "ذكاء اللغة",
+    "title": "مختبر اللغة",
+    "subtitle": "أتقن اللغات المحلية مع مجموعة أدوات البقاء المركبة بالذكاء الاصطناعي والنطق الأصلي.",
+    "cityPlaceholder": "حدد مدينة وجهتك...",
+    "synthesizeBtn": "تركيب المجموعة",
+    "survivalTitle": "عبارات البقاء",
+    "pronounce": "النطق: {pronunciation}",
+    "slangTitle": "العامية المحلية",
+    "listenBtn": "استمع للأجواء",
+    "pendingTitle": "في انتظار اللغة",
+    "pendingDesc": "حدد وجهتك لتركيب حزمة لغة مخصصة لرحلتك.",
+    "toast": {
+      "errorTitle": "فشل التركيب",
+      "errorDescription": "شبكة اللغة غير متصلة حالياً.",
+      "audioErrorTitle": "خطأ في الصوت",
+      "audioErrorDescription": "تعذر تركيب الصوت."
+    }
+  },
+  "layoverOdyssey": {
+    "badge": "ذكاء التوقف",
+    "title": "أوديسة التوقف",
+    "subtitle": "حول وقت انتظارك إلى رحلة مصغرة سريعة.",
+    "initTitle": "تهيئة عقدة التوقف",
+    "initDesc": "حدد إحداثيات التوقف والمدة لتركيب مسار مخصص.",
+    "airportPlaceholder": "المطار / المدينة (مثلاً: SIN، سنغافورة)",
+    "durationLabel": "المدة (ساعات)",
+    "synthesizeBtn": "تركيب الرحلة",
+    "resultTitle": "أوديسة التوقف الخاصة بك",
+    "newBtn": "رحلة جديدة",
+    "timelineTitle": "الجدول الزمني",
+    "logisticsTitle": "عقدة الخدمات اللوجستية",
+    "transport": "النقل",
+    "budget": "الميزانية",
+    "visa": "ملاحظة التأشيرة",
+    "pendingTitle": "في انتظار الرحلة",
+    "pendingDesc": "قدم تفاصيل التوقف الخاصة بك لتركيب خطة رحلة مصغرة مخصصة.",
+    "missionParameters": "معايير المهمة",
+    "currentTerminal": "المبنى الحالي",
+    "layoverDuration": "مدة التوقف",
+    "synthesizeOdyssey": "تركيب الأوديسة",
+    "radarSilent": "الرادار صامت",
+    "enterCodeDesc": "أدخل رمز المطار لتركيب أوديسة توقف مخصصة."
+  },
+  "transitConnect": {
+    "title": "Transit Connect",
+    "subtitle": "ابحث عن مجموعتك في المبنى. تواصل مع المسافرين في نفس الرحلة أو ذوي الأجواء المماثلة.",
+    "step1": {
+      "title": "التحقق من بطاقة الصعود",
+      "description": "امسح بطاقة الصعود للتحقق من هويتك وعقدة رحلتك.",
+      "scanningButton": "جاري المسح...",
+      "scanButton": "مسح البطاقة",
+      "cameraError": "عقدة الكاميرا غير متصلة حالياً.",
+      "scanErrorTitle": "فشل المسح",
+      "scanErrorDescription": "تعذر فك رموز بيانات بطاقة الصعود."
+    },
+    "verification": {
+      "title": "تم التحقق من الهوية",
+      "description": "تم التحقق من عقدة رحلتك بنجاح على شبكة Aetheria.",
+      "passenger": "المسافر",
+      "flight": "الرحلة",
+      "gate": "البوابة",
+      "seat": "المقعد",
+      "departs": "المغادرة"
+    },
+    "step2": {
+      "title": "اختر أجواءك",
+      "description": "اختر كيف تريد التفاعل مع شبكة المبنى.",
+      "goLiveButton": "بث مباشر",
+      "vibes": {
+        "networking": "التواصل المهني",
+        "networkingDescription": "تواصل مع المحترفين في رحلتك.",
+        "coffee": "وقت القهوة",
+        "coffeeDescription": "دردشة غير رسمية مع مشروب.",
+        "shareLounge": "مشاركة الصالة",
+        "shareLoungeDescription": "الوصول إلى العقد المتميزة مع الآخرين.",
+        "cardGame": "لعبة ورق",
+        "cardGameDescription": "تمضية الوقت ببعض الألعاب القصيرة."
+      }
+    },
+    "step3": {
+      "title": "شبكة المبنى",
+      "description": "عقد الاتصال النشطة في الوقت الفعلي بالقرب منك",
+      "nearbyTab": "بالقرب منك",
+      "arViewTab": "عرض الواقع المعزز",
+      "sameFlight": "نفس الرحلة",
+      "chatButton": "دردشة",
+      "arViewDescription": "تفعيل عرض الواقع المعزز",
+      "toast": {
+        "chatTitle": "بدء الدردشة",
+        "chatDescription": "جاري الاتصال بعقدة {name}..."
+      }
+    }
+  },
+  "footer": {
+    "terms": "شروط الخدمة",
+    "privacyProtocol": "بروتوكول الخصوصية",
+    "dataSecurity": "أمن البيانات",
+    "legalHub": "المركز القانوني",
+    "globalConnect": "الاتصال العالمي",
+    "allRightsReserved": "© {year} أنظمة ذكاء Aetheria الاصطناعي. جميع الحقوق محفوظة.",
+    "supportHub": "مركز الدعم",
+    "partnerNetwork": "شبكة الشركاء"
+  },
+  "profile": {
+    "saveSuccessTitle": "تم مزامنة الملف الشخصي",
+    "saveSuccessDescription": "تم تحديث عقدة الهوية الخاصة بك.",
+    "saveButton": "موافقة على التغييرات",
+    "savingButton": "جاري المزامنة...",
+    "tabs": {
+      "identity": "عقدة الهوية",
+      "travelDna": "الحمض النووي للسفر",
+      "settings": "إعدادات النظام",
+      "security": "عقدة الأمان"
+    },
+    "personalInfo": {
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "gender": "عقدة الجنس البيولوجي",
+      "genders": {
+        "male": "ذكر",
+        "female": "أنثى",
+        "other": "آخر",
+        "preferNotToSay": "أفضل عدم التصريح"
+      }
+    },
+    "travelStyle": {
+      "relaxed": {
+        "label": "مسترخي",
+        "description": "سرعة منخفضة، انغماس عالٍ في الأجواء."
+      },
+      "active": {
+        "label": "نشط",
+        "description": "سرعة عالية، زيارة عدة عقد في اليوم."
+      },
+      "adventurous": {
+        "label": "مغامر",
+        "description": "خارج المسارات المعتادة، عامل اكتشاف عالٍ."
+      },
+      "packed": {
+        "label": "مزدحم",
+        "description": "كفاءة قصوى، لا وقت فراغ."
+      },
+      "familyFriendly": {
+        "label": "مناسب للعائلة",
+        "description": "تركيز على الأمان لعدة مسافرين."
+      }
+    },
+    "interests": {
+      "items": {
+        "history": "التاريخ",
+        "food": "الطعام",
+        "hiking": "التنزه",
+        "art": "الفن",
+        "nightlife": "الحياة الليلية",
+        "shopping": "التسوق",
+        "nature": "الطبيعة",
+        "wellness": "العافية"
+      }
+    }
+  },
+  "itineraryGenerator": {
+    "title": "مهندس المسارات",
+    "subtitle": "تركيب رحلات متعددة الأيام بناءً على الحمض النووي النفسي الخاص بك.",
+    "authError": "عقدة الموافقة غير متصلة حالياً.",
+    "authErrorDesc": "يرجى تسجيل الدخول لتركيب المسار."
+  },
+  "subscription": {
+    "badge": "البروتوكول المالي",
+    "title": "مركز الاشتراك",
+    "subtitle": "قم بترقية رحلتك بمعلومات ذكية متميزة وعقد أمان عالمية.",
+    "itineraryRequired": "مطلوب مسار نشط",
+    "itineraryRequiredDesc": "يجب أن يكون لديك مسار نشط لاستخدام مستويات الاشتراك.",
+    "createItineraryBtn": "إنشاء مسار",
+    "plans": {
+      "free": {
+        "name": "مجاني",
+        "description": "خدمات لوجستية أساسية للمسافرين العاديين.",
+        "price": "0 ر.س",
+        "itinerariesValue": "مسار نشط واحد",
+        "immersiveValue": "معلومات ذكية قياسية",
+        "loyaltyValue": "مكافآت أساسية"
+      },
+      "voyager": {
+        "name": "Voyager",
+        "description": "أدوات محسنة للمستكشفين المتكررين.",
+        "price": "45 ر.س",
+        "itinerariesValue": "3 مسارات نشطة",
+        "immersiveValue": "معلومات ذكية محسنة",
+        "packingValue": "عقدة التعبئة بالذكاء الاصطناعي",
+        "loyaltyValue": "مكافآت فضية"
+      },
+      "pathfinder": {
+        "name": "Pathfinder",
+        "description": "معلومات ذكية على المستوى العصبي لمحترفي السفر.",
+        "price": "90 ر.س",
+        "itinerariesValue": "مسارات غير محدودة",
+        "immersiveValue": "معلومات ذكية على المستوى العصبي",
+        "insiderValue": "الوصول للأساطير المحلية",
+        "loyaltyValue": "مكافآت ذهبية"
+      },
+      "sovereign": {
+        "name": "Sovereign",
+        "description": "وصول غير محدود مع تركيب على مستوى التراث.",
+        "price": "225 ر.س",
+        "itinerariesValue": "مسارات غير محدودة",
+        "immersiveValue": "معلومات ذكية غير محدودة",
+        "mirrorValue": "عقدة مرآة التراث",
+        "fees": "لا توجد رسوم خدمة"
+      },
+      "legend": {
+        "name": "Legend",
+        "description": "عقدة المستكشف القصوى مع وصول كامل للشبكة.",
+        "price": "450 ر.س",
+        "itinerariesValue": "مسارات غير محدودة",
+        "immersiveValue": "معلومات ذكية غير محدودة",
+        "mirrorValue": "عقدة مرآة التراث",
+        "insiderValue": "الوصول للأساطير المحلية",
+        "fees": "لا توجد رسوم خدمة"
+      }
+    },
+    "period": {
+      "monthly": "/ شهر"
+    },
+    "features": {
+      "itineraries": "سعة المسارات",
+      "immersive": "مستوى المعلومات",
+      "loyalty": "فئة المكافآت",
+      "packing": "عقدة التعبئة",
+      "insider": "الوصول للأساطير",
+      "mirror": "عقدة التراث",
+      "fees": "رسوم الخدمة"
+    },
+    "upgrade": "موافقة على الترقية",
+    "processingBtn": "جاري المعالجة...",
+    "currentPlan": "العقدة النشطة"
+  },
+  "dashboard": {
+    "welcomeBack": "مرحباً بعودتك، {name}",
+    "odysseyLevel": "مستوى الأوديسة {level}",
+    "seasonPass": "تصريح الموسم",
+    "xpSynthesized": "تم تركيب XP",
+    "progressionToLevel": "التقدم للمستوى {level}",
+    "vibeStreak": "سلسلة الأجواء",
+    "tasksResolved": "المهام المنجزة",
+    "totalMedals": "إجمالي الميداليات",
+    "premiumRequired": "مطلوب اشتراك بريميوم",
+    "explorerStatus": "حالة المستكشف: {tier}",
+    "points": "نقاط",
+    "medals": "ميداليات",
+    "editProfile": "تعديل الملف الشخصي",
+    "shortDesc": {
+      "itinerary": "تركيب مسار على المستوى العصبي",
+      "pathfinder": "تحسين المسار الذكي",
+      "marketplace": "تبادل الأجواء العالمي",
+      "store": "شراء معدات مخصصة",
+      "booking": "إدارة الخدمات اللوجستية",
+      "wallet": "عقدة العملة الذكية",
+      "budget": "التركيب المالي",
+      "vision": "عقدة التعرف على الأشياء",
+      "guide": "مركز المعلومات العالمي",
+      "ar": "تحديد المسار المحسن",
+      "legends": "فك رموز الأساطير",
+      "pulse": "رادار الاتجاهات الثقافية",
+      "audio": "سرد القصص المكاني",
+      "odyssey": "تركيب رحلة سينمائية",
+      "postcard": "إنشاء فن بالذكاء الاصطناعي",
+      "mirror": "تصور التراث",
+      "journal": "ترميز الذاكرة"
+    },
+    "vibeRadar": {
+      "title": "رادار الأجواء",
+      "desc": "جاري مسح أجواء {vibe} في {location}"
+    }
+  }
 }

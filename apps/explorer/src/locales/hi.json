@@ -1,4 +1,483 @@
-
 {
-  "header": { "dashboard": "डैशबोर्ड" }
+  "common": {
+    "save": "परिवर्तन सहेजें",
+    "cancel": "रद्द करें",
+    "close": "बंद करें",
+    "delete": "हटाएं",
+    "edit": "संपादित करें",
+    "loading": "प्रसंस्करण...",
+    "search": "ग्रिड खोजें",
+    "filter": "नोड्स फ़िल्टर करें",
+    "back": "वापस",
+    "next": "आगे बढ़ें",
+    "continue": "जारी रखें",
+    "confirm": "अधिकृत करें",
+    "active": "सक्रिय",
+    "inactive": "ऑफलाइन",
+    "verified": "सत्यापित",
+    "unlocked": "अनलॉक",
+    "locked": "लॉक",
+    "authorized": "अधिकृत",
+    "error": "त्रुटि",
+    "returnToDashboard": "कमांड सेंटर पर लौटें"
+  },
+  "login": {
+    "title": "साइन इन करें",
+    "emailLabel": "ईमेल पता",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "सुरक्षा कुंजी",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "साइन इन करें",
+    "signingInButton": "पहचान सत्यापित की जा रही है...",
+    "noAccount": "नेटवर्क पर नए हैं?",
+    "signUpLink": "खाता बनाएं",
+    "toast": {
+      "successTitle": "वापसी पर स्वागत है",
+      "successDescription": "आपका एथेरिया सत्र अब सक्रिय है।",
+      "errorTitle": "लॉगिन विफल",
+      "genericError": "क्रेडेंशियल सत्यापित करने में असमर्थ।",
+      "invalidCredentials": "अमान्य ईमेल पता या सुरक्षा कुंजी।",
+      "operationNotAllowed": "साइन-इन वर्तमान में प्रतिबंधित है।"
+    }
+  },
+  "signup": {
+    "title": "खाता बनाएं",
+    "description": "एथेरिया वैश्विक यात्रा नेटवर्क में शामिल हों।",
+    "emailLabel": "ईमेल पता",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "सुरक्षा कुंजी",
+    "createButton": "खाता प्रारंभ करें",
+    "creatingButton": "प्रोफ़ाइल संश्लेषित की जा रही है...",
+    "haveAccount": "पहले से ही एक एक्सप्लोरर हैं?",
+    "signInLink": "साइन इन करें",
+    "toast": {
+      "successTitle": "खाता बनाया गया",
+      "successDescription": "एथेरिया ग्रिड में आपका स्वागत है।",
+      "errorTitle": "साइनअप विफल",
+      "emailInUse": "यह ईमेल पहले से ही पंजीकृत है।",
+      "operationNotAllowed": "साइनअप वर्तमान में प्रतिबंधित है।",
+      "genericError": "संश्लेषण के दौरान कुछ गलत हो गया।"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "एथेरिया इंटेलिजेंस नोड",
+      "title": "दुनिया को फिर से कोड किया गया।",
+      "subtitle": "लॉजिस्टिक्स को खत्म करें। विसर्जन को बढ़ाएं। पहले मल्टी-एजेंट एआई यात्रा पारिस्थितिकी तंत्र का अनुभव करें।",
+      "scroll": "स्कैन करने के लिए स्क्रॉल करें",
+      "cta": {
+        "start": "यात्रा प्रारंभ करें",
+        "signin": "नोड एक्सेस करें"
+      }
+    },
+    "features": {
+      "chapter": "प्रोटोकॉल अध्याय 01",
+      "title": "इंटेलिजेंस लेंस",
+      "initNode": "नोड प्रारंभ करें",
+      "itinerary": {
+        "badge": "ऑर्केस्ट्रेशन",
+        "title": "ऑरा यात्रा कार्यक्रम",
+        "desc": "अपने मनोवैज्ञानिक डीएनए के आधार पर बहु-दिवसीय ओडिसी को संश्लेषित करें।"
+      },
+      "postcard": {
+        "badge": "स्टूडियो",
+        "title": "पोस्टकार्ड स्टूडियो",
+        "desc": "अपने स्नैपशॉट को एआई-जनरेटेड हाई-फिडेलिटी कला में बदलें।"
+      },
+      "legends": {
+        "badge": "इंटेलिजेंस",
+        "title": "स्थानीय किंवदंतियां",
+        "desc": "जीपीएस-ट्रिगर कथा के माध्यम से अपने निर्देशांकों के छिपे हुए लोककथाओं को अनलॉक करें।"
+      },
+      "packing": {
+        "badge": "उपयोगिता",
+        "title": "कुछ नहीं भूला एजेंट",
+        "desc": "जलवायु और यात्रा कार्यक्रम नोड्स के अनुरूप सक्रिय पैकिंग संश्लेषण।"
+      }
+    },
+    "workflow": {
+      "badge": "परिचालन प्रोटोकॉल",
+      "title": "यह कैसे काम करता है",
+      "phase": "चरण 0{num}",
+      "step1": {
+        "title": "इरादा परिभाषित करें",
+        "desc": "अपना गंतव्य और मनोवैज्ञानिक वाइब पैरामीटर प्रदान करें।"
+      },
+      "step2": {
+        "title": "ओडिसी को संश्लेषित करें",
+        "desc": "एथेरिया का तंत्रिका ग्रिड आपके कस्टम प्रक्षेपवक्र को आर्किटेक्ट करता है।"
+      },
+      "step3": {
+        "title": "यात्रा निष्पादित करें",
+        "desc": "वास्तविक समय की बुद्धिमत्ता और सुरक्षा नोड्स के साथ दुनिया में लॉन्च करें।"
+      }
+    },
+    "cta": {
+      "badge": "नेटवर्क में शामिल हों",
+      "title": "अपनी दुनिया को फिर से कोड करने के लिए तैयार हैं?",
+      "subtitle": "अनंत बुद्धिमत्ता का उपयोग करने वाले आधुनिक खोजकर्ताओं के नेटवर्क में शामिल हों।",
+      "start": "नेटवर्क से जुड़ें",
+      "feed": "वैश्विक फ़ीड"
+    }
+  },
+  "header": {
+    "aiItinerary": "ऑरा यात्रा कार्यक्रम",
+    "pathfinder": "पाथ फाइंडर",
+    "vibeMarketplace": "वाइब मार्केटप्लेस",
+    "vibeShopping": "बेस्पोक स्टोर",
+    "bookingHub": "बुकिंग हब",
+    "myTrips": "मेरी यात्राएं",
+    "visionHub": "विज़न एआई हब",
+    "intelligenceCenter": "इंटेल हब",
+    "arWayfinding": "एआर नेविगेशन",
+    "localLegends": "स्थानीय किंवदंतियां",
+    "explorerQuests": "एक्सप्लोरर क्वेस्ट",
+    "culturalPulse": "सांस्कृतिक पल्स",
+    "tripOdyssey": "ट्रिप ओडिसी",
+    "postcardStudio": "पोस्टकार्ड स्टूडियो",
+    "heritageMirror": "हेरिटेज मिरर",
+    "journal": "एक्सप्लोरर जर्नल",
+    "visaArchitect": "वीजा आर्किटेक्ट",
+    "carbonSynthesis": "कार्बन ट्रैकर",
+    "esim": "वैश्विक eSIM",
+    "flightStatus": "लॉजिस्टिक्स रडार",
+    "layoverOdyssey": "लेओवर ओडिसी",
+    "safety": "सुरक्षा सहायक",
+    "hotels": "ठहराव",
+    "flights": "विमानन",
+    "insurance": "यात्रा बीमा",
+    "trains": "ट्रेनें",
+    "buses": "बसें",
+    "cruises": "क्रूज",
+    "cabs": "कैब",
+    "dining": "पाक कला",
+    "profile": "पहचान नोड",
+    "loyaltyHub": "लॉयल्टी हब",
+    "wallet": "स्मार्ट वॉलेट",
+    "rentals": "मेरे किराये",
+    "scanAndPay": "स्कैन और भुगतान",
+    "subscription": "ट्रिप पास",
+    "partners": "साझेदार",
+    "digitalBrochure": "एथेरिया ब्रोशर",
+    "appTrailer": "सिस्टम ट्रेलर",
+    "sos": "एसओएस पैनिक हब",
+    "events": "गंतव्य कार्यक्रम",
+    "gearArchitect": "गियर आर्किटेक्ट",
+    "jetLag": "जेट लैग लॉजिक",
+    "digitalTailor": "डिजिटल टेलर",
+    "translator": "भाषाई लैब",
+    "corporate": "कॉर्पोरेट मोड",
+    "dashboard": "डैशबोर्ड",
+    "budgetSynthesis": "बजट संश्लेषण",
+    "moodSynthesis": "मूड संश्लेषण",
+    "auraBeats": "ऑरा बीट्स",
+    "equilibriumSync": "इक्विलिब्रियम सिंक",
+    "flavorDna": "फ्लेवर डीएनए",
+    "audioGuide": "ऑडियो गाइड",
+    "menuExplorer": "मेनू एक्सप्लोरर",
+    "localInsider": "स्थानीय इनसाइडर",
+    "cultureScout": "कल्चर स्काउट",
+    "packingassistant": "कुछ नहीं भूला एजेंट",
+    "categories": {
+      "orchestration": "ऑर्केस्ट्रेट",
+      "intelligence": "इंटेलिजेंस",
+      "studios": "स्टूडियो",
+      "utility": "उपयोगिता"
+    },
+    "promo": {
+      "spotlights": "पार्टनर स्पॉटलाइट",
+      "verified": "सत्यापित पार्टनर"
+    }
+  },
+  "explorerQuests": {
+    "title": "एक्सप्लोरर क्वेस्ट",
+    "subtitle": "अपने शहर की खोज को एक उच्च-दांव वाले मेहतर शिकार में बदल दें।",
+    "initTitle": "क्वेस्ट ग्रिड प्रारंभ करें",
+    "initDesc": "कस्टम अन्वेषण मिशनों को संश्लेषित करने के लिए एक लक्षित शहर चुनें।",
+    "cityPlaceholder": "जैसे क्योटो, जापान",
+    "generateBtn": "क्वेस्ट जेनरेट करें",
+    "newCityBtn": "नया शहर",
+    "progress": "प्रगति: {completed} / {total}",
+    "xp": "{current} / {total} XP",
+    "hint": "संकेत: {hint}",
+    "xpSynthesized": "{points} XP संश्लेषित",
+    "resolvedTitle": "शहर हल हो गया!",
+    "resolvedDesc": "आपने {city} के रहस्यों को सफलतापूर्वक डिकोड कर लिया है।",
+    "returnBtn": "कमांड हब पर लौटें"
+  },
+  "languageLab": {
+    "badge": "भाषाई बुद्धिमत्ता",
+    "title": "लैंग्वेज लैब",
+    "subtitle": "एआई-संश्लेषित उत्तरजीविता किट और देशी उच्चारण के साथ स्थानीय बोली में महारत हासिल करें।",
+    "cityPlaceholder": "अपना गंतव्य शहर दर्ज करें...",
+    "synthesizeBtn": "किट संश्लेषित करें",
+    "survivalTitle": "उत्तरजीविता वाक्यांश",
+    "pronounce": "उच्चारण: {pronunciation}",
+    "slangTitle": "स्थानीय कठबोली",
+    "listenBtn": "वाइब सुनें",
+    "pendingTitle": "भाषा विज्ञान लंबित",
+    "pendingDesc": "अपनी यात्रा के लिए एक कस्टम भाषा किट संश्लेषित करने के लिए अपना गंतव्य दर्ज करें।",
+    "toast": {
+      "errorTitle": "संश्लेषण विफल",
+      "errorDescription": "भाषाई ग्रिड ऑफलाइन है।",
+      "audioErrorTitle": "ऑडियो त्रुटि",
+      "audioErrorDescription": "आवाज संश्लेषित नहीं की जा सकी।"
+    }
+  },
+  "layoverOdyssey": {
+    "badge": "पारगमन बुद्धिमत्ता",
+    "title": "लेओवर ओडिसी",
+    "subtitle": "अपने पारगमन समय को उच्च-वेग वाली सूक्ष्म-यात्रा में बदलें।",
+    "initTitle": "लेओवर नोड प्रारंभ करें",
+    "initDesc": "कस्टम प्रक्षेपवक्र को संश्लेषित करने के लिए अपने पारगमन निर्देशांक और अवधि प्रदान करें।",
+    "airportPlaceholder": "हवाई अड्डा / शहर (जैसे SIN, सिंगापुर)",
+    "durationLabel": "अवधि (घंटे)",
+    "synthesizeBtn": "ओडिसी को संश्लेषित करें",
+    "resultTitle": "आपकी लेओवर ओडिसी",
+    "newBtn": "नई ओडिसी",
+    "timelineTitle": "समयरेखा",
+    "logisticsTitle": "लॉजिस्टिक्स नोड",
+    "transport": "परिवहन",
+    "budget": "बजट",
+    "visa": "वीजा नोट",
+    "pendingTitle": "ओडिसी लंबित",
+    "pendingDesc": "कस्टम सूक्ष्म-यात्रा कार्यक्रम को संश्लेषित करने के लिए अपना लेओवर विवरण दर्ज करें।",
+    "missionParameters": "मिशन पैरामीटर",
+    "currentTerminal": "वर्तमान टर्मिनल",
+    "layoverDuration": "लेओवर अवधि",
+    "synthesizeOdyssey": "ओडिसी को संश्लेषित करें",
+    "radarSilent": "रडार मौन",
+    "enterCodeDesc": "कस्टम लेओवर ओडिसी को संश्लेषित करने के लिए हवाई अड्डा कोड दर्ज करें।"
+  },
+  "transitConnect": {
+    "title": "ट्रांजिट कनेक्ट",
+    "subtitle": "टर्मिनल में अपनी जनजाति खोजें। उन यात्रियों से जुड़ें जो आपकी उड़ान या वाइब साझा करते हैं।",
+    "step1": {
+      "title": "बोर्डिंग पास सत्यापित करें",
+      "description": "अपनी पहचान और उड़ान नोड को सत्यापित करने के लिए अपना बोर्डिंग पास स्कैन करें।",
+      "scanningButton": "स्कैन किया जा रहा है...",
+      "scanButton": "पास स्कैन करें",
+      "cameraError": "कैमरा नोड ऑफलाइन।",
+      "scanErrorTitle": "स्कैन विफल",
+      "scanErrorDescription": "बोर्डिंग पास डेटा को डिकोड करने में असमर्थ।"
+    },
+    "verification": {
+      "title": "पहचान सत्यापित",
+      "description": "आपका उड़ान नोड एथेरिया ग्रिड पर सफलतापूर्वक सत्यापित किया गया है।",
+      "passenger": "यात्री",
+      "flight": "उड़ान",
+      "gate": "गेट",
+      "seat": "सीट",
+      "departs": "प्रस्थान"
+    },
+    "step2": {
+      "title": "अपना वाइब चुनें",
+      "description": "चुनें कि आप टर्मिनल नेटवर्क के साथ कैसे बातचीत करना चाहते हैं।",
+      "goLiveButton": "लाइव जाएं",
+      "vibes": {
+        "networking": "नेटवर्किंग",
+        "networkingDescription": "अपनी उड़ान के पेशेवरों से जुड़ें।",
+        "coffee": "कॉफी पिएं",
+        "coffeeDescription": "एक पेय पर आकस्मिक बातचीत।",
+        "shareLounge": "लाउंज साझा करें",
+        "shareLoungeDescription": "दूसरों के साथ प्रीमियम नोड्स तक पहुंचें।",
+        "cardGame": "कार्ड गेम",
+        "cardGameDescription": "एक त्वरित गेम के साथ समय बिताएं।"
+      }
+    },
+    "step3": {
+      "title": "टर्मिनल नेटवर्क",
+      "description": "आपके आसपास सक्रिय वास्तविक समय कनेक्शन नोड्स।",
+      "nearbyTab": "पास में",
+      "arViewTab": "एआर व्यू",
+      "sameFlight": "वही उड़ान",
+      "chatButton": "चैट",
+      "arViewDescription": "एआर व्यू सक्रिय",
+      "toast": {
+        "chatTitle": "चैट प्रारंभ",
+        "chatDescription": "{name} के नोड से जुड़ रहा है..."
+      }
+    }
+  },
+  "footer": {
+    "terms": "सेवा की शर्तें",
+    "privacyProtocol": "गोपनीयता प्रोटोकॉल",
+    "dataSecurity": "डेटा सुरक्षा",
+    "legalHub": "कानूनी हब",
+    "globalConnect": "ग्लोबल कनेक्ट",
+    "allRightsReserved": "© {year} एथेरिया एआई इंटेलिजेंस सिस्टम। सर्वाधिकार सुरक्षित।",
+    "supportHub": "सहायता हब",
+    "partnerNetwork": "पार्टनर नेटवर्क"
+  },
+  "profile": {
+    "saveSuccessTitle": "प्रोफ़ाइल सिंक्रनाइज़",
+    "saveSuccessDescription": "आपका पहचान नोड अपडेट कर दिया गया है।",
+    "saveButton": "परिवर्तन अधिकृत करें",
+    "savingButton": "सिंक्रनाइज़ किया जा रहा है...",
+    "tabs": {
+      "identity": "पहचान नोड",
+      "travelDna": "यात्रा डीएनए",
+      "settings": "सिस्टम सेटिंग्स",
+      "security": "सुरक्षा नोड"
+    },
+    "personalInfo": {
+      "firstName": "पहला नाम",
+      "lastName": "अंतिम नाम",
+      "gender": "जैविक लिंग नोड",
+      "genders": {
+        "male": "पुरुष",
+        "female": "महिला",
+        "other": "अन्य",
+        "preferNotToSay": "बताना नहीं चाहते"
+      }
+    },
+    "travelStyle": {
+      "relaxed": {
+        "label": "आरामदेह",
+        "description": "कम वेग, उच्च विसर्जन।"
+      },
+      "active": {
+        "label": "सक्रिय",
+        "description": "उच्च वेग, दैनिक कई नोड्स।"
+      },
+      "adventurous": {
+        "label": "साहसी",
+        "description": "ग्रिड से बाहर, उच्च खोज कारक।"
+      },
+      "packed": {
+        "label": "पैक",
+        "description": "अधिकतम दक्षता, शून्य डाउनटाइम।"
+      },
+      "familyFriendly": {
+        "label": "परिवार के अनुकूल",
+        "description": "बहु-यात्री सुरक्षा फोकस।"
+      }
+    },
+    "interests": {
+      "items": {
+        "history": "इतिहास",
+        "food": "पाक कला",
+        "hiking": "ट्रेकिंग",
+        "art": "कला",
+        "nightlife": "नाइटलाइफ़",
+        "shopping": "रिटेल",
+        "nature": "प्रकृति",
+        "wellness": "कल्याण"
+      }
+    }
+  },
+  "itineraryGenerator": {
+    "title": "ओडिसी आर्किटेक्ट",
+    "subtitle": "अपने मनोवैज्ञानिक वाइब के आधार पर बहु-दिवसीय यात्रा को संश्लेषित करें।",
+    "authError": "ऑथराइजेशन नोड ऑफलाइन",
+    "authErrorDesc": "ओडिसी को संश्लेषित करने के लिए कृपया साइन इन करें।"
+  },
+  "subscription": {
+    "badge": "मौद्रिक प्रोटोकॉल",
+    "title": "सदस्यता हब",
+    "subtitle": "प्रीमियम इंटेलिजेंस और वैश्विक सुरक्षा नोड्स के साथ अपनी ओडिसी को अपग्रेड करें।",
+    "itineraryRequired": "सक्रिय ओडिसी आवश्यक",
+    "itineraryRequiredDesc": "सदस्यता स्तर लागू करने के लिए आपके पास एक सक्रिय यात्रा होनी चाहिए।",
+    "createItineraryBtn": "ओडिसी बनाएं",
+    "plans": {
+      "free": {
+        "name": "नि: शुल्क",
+        "description": "आकस्मिक यात्रियों के लिए बुनियादी रसद।",
+        "price": "₹0",
+        "itinerariesValue": "1 सक्रिय ओडिसी",
+        "immersiveValue": "मानक बुद्धिमत्ता",
+        "loyaltyValue": "बुनियादी पुरस्कार"
+      },
+      "voyager": {
+        "name": "वॉयेजर",
+        "description": "बार-बार खोजकर्ताओं के लिए उन्नत उपकरण।",
+        "price": "₹750",
+        "itinerariesValue": "3 सक्रिय ओडिसी",
+        "immersiveValue": "उन्नत बुद्धिमत्ता",
+        "packingValue": "एआई पैकिंग नोड",
+        "loyaltyValue": "रजत पुरस्कार"
+      },
+      "pathfinder": {
+        "name": "पाथफाइंडर",
+        "description": "पेशेवर खानाबदोशों के लिए तंत्रिका-ग्रेड बुद्धिमत्ता।",
+        "price": "₹1600",
+        "itinerariesValue": "अनंत ओडिसी",
+        "immersiveValue": "तंत्रिका बुद्धिमत्ता",
+        "insiderValue": "स्थानीय किंवदंती पहुंच",
+        "loyaltyValue": "स्वर्ण पुरस्कार"
+      },
+      "sovereign": {
+        "name": "सॉवरेन",
+        "description": "विरासत-ग्रेड संश्लेषण के साथ अनंत पहुंच।",
+        "price": "₹4000",
+        "itinerariesValue": "अनंत ओडिसी",
+        "immersiveValue": "अनंत बुद्धिमत्ता",
+        "mirrorValue": "हेरिटेज मिरर नोड",
+        "fees": "शून्य सेवा शुल्क"
+      },
+      "legend": {
+        "name": "लीजेंड",
+        "description": "कुल नेटवर्क पहुंच के साथ अंतिम खोजकर्ता नोड।",
+        "price": "₹8000",
+        "itinerariesValue": "अनंत ओडिसी",
+        "immersiveValue": "अनंत बुद्धिमत्ता",
+        "mirrorValue": "हेरिटेज मिरर नोड",
+        "insiderValue": "स्थानीय किंवदंती पहुंच",
+        "fees": "शून्य सेवा शुल्क"
+      }
+    },
+    "period": {
+      "monthly": "/ माह"
+    },
+    "features": {
+      "itineraries": "ओडिसी क्षमता",
+      "immersive": "इंटेलिजेंस स्तर",
+      "loyalty": "पुरस्कार स्तर",
+      "packing": "पैकिंग नोड",
+      "insider": "लीजेंड एक्सेस",
+      "mirror": "हेरिटेज नोड",
+      "fees": "सेवा शुल्क"
+    },
+    "upgrade": "अपग्रेड अधिकृत करें",
+    "processingBtn": "प्रसंस्करण...",
+    "currentPlan": "सक्रिय नोड"
+  },
+  "dashboard": {
+    "welcomeBack": "वापसी पर स्वागत है, {name}",
+    "odysseyLevel": "ओडिसी स्तर {level}",
+    "seasonPass": "सीजन पास",
+    "xpSynthesized": "XP संश्लेषित",
+    "progressionToLevel": "स्तर {level} की ओर प्रगति",
+    "vibeStreak": "वाइब स्ट्रीक",
+    "tasksResolved": "कार्य हल किए गए",
+    "totalMedals": "कुल पदक",
+    "premiumRequired": "प्रीमियम आवश्यक",
+    "explorerStatus": "एक्सप्लोरर स्थिति: {tier}",
+    "points": "अंक",
+    "medals": "पदक",
+    "editProfile": "प्रोफ़ाइल संपादित करें",
+    "shortDesc": {
+      "itinerary": "तंत्रिका यात्रा कार्यक्रम संश्लेषण।",
+      "pathfinder": "स्मार्ट मार्ग अनुकूलन।",
+      "marketplace": "वैश्विक वाइब विनिमय।",
+      "store": "बेस्पोक गियर खरीद।",
+      "booking": "लॉजिस्टिक्स ऑर्केस्ट्रेशन।",
+      "wallet": "स्मार्ट मुद्रा नोड।",
+      "budget": "वित्तीय संश्लेषण।",
+      "vision": "वस्तु पहचान नोड।",
+      "guide": "वैश्विक इंटेल हब।",
+      "ar": "संवर्धित नेविगेशन।",
+      "legends": "लोककथा डिकोडिंग।",
+      "pulse": "सांस्कृतिक प्रवृत्ति रडार।",
+      "audio": "स्थानिक वर्णन।",
+      "odyssey": "सिनेमैटिक ट्रिप संश्लेषण।",
+      "postcard": "एआई कला निर्माण।",
+      "mirror": "विरासत दृश्य।",
+      "journal": "मेमोरी एन्क्रिप्शन।"
+    },
+    "vibeRadar": {
+      "title": "वाइब रडार",
+      "desc": "{location} पर {vibe} वाइब्स को स्कैन किया जा रहा है।"
+    }
+  }
 }

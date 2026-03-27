@@ -38,7 +38,7 @@ export default function RootLayout({
     children: React.ReactNode
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html lang="en" suppressHydrationWarning className="scroll-smooth" data-scroll-behavior="smooth">
         <head>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link
@@ -53,21 +53,19 @@ export default function RootLayout({
         </head>
         <body className={cn('font-body antialiased')} suppressHydrationWarning>
         <ErrorBoundary>
-            <div>
-                <FirebaseClientProvider>
-                    <ThemeProvider>
-                        <I18nProvider>
-                            <div className="flex flex-col min-h-screen">
-                                <SidebarProvider defaultOpen={false} className="relative">
-                                    <AppSidebar />
-                                    {children}
-                                </SidebarProvider>
-                                <Toaster />
-                            </div>
-                        </I18nProvider>
-                    </ThemeProvider>
-                </FirebaseClientProvider>
-            </div>
+            <FirebaseClientProvider>
+                <ThemeProvider>
+                    <I18nProvider>
+                        <div className="flex flex-col min-h-screen">
+                            <SidebarProvider defaultOpen={false} className="relative">
+                                <AppSidebar />
+                                {children}
+                            </SidebarProvider>
+                            <Toaster />
+                        </div>
+                    </I18nProvider>
+                </ThemeProvider>
+            </FirebaseClientProvider>
         </ErrorBoundary>
         </body>
         </html>

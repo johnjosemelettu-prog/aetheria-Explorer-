@@ -121,11 +121,6 @@
     }
   },
   "header": {
-    "tagline": "Journey Synthesized",
-    "sos": "SOS",
-    "language": "Linguistic Grid",
-    "login": "LOGIN",
-    "signUp": "SIGN UP",
     "aiItinerary": "Aura Itinerary",
     "pathfinder": "Path Finder",
     "vibeMarketplace": "Vibe Marketplace",
@@ -165,7 +160,7 @@
     "partners": "Partners",
     "digitalBrochure": "Aetheria Brochure",
     "appTrailer": "System Trailer",
-    "sosPanicHub": "SOS Panic Hub",
+    "sos": "SOS Panic Hub",
     "events": "Destination Events",
     "gearArchitect": "Gear Architect",
     "jetLag": "Loger Logic",
@@ -192,6 +187,116 @@
     "promo": {
       "spotlights": "Partner Spotlights",
       "verified": "Verified Partners"
+    }
+  },
+  "explorerQuests": {
+    "title": "Explorer Quests",
+    "subtitle": "Turn your city exploration into a high-stakes scavenger hunt.",
+    "initTitle": "Initialize Quest Grid",
+    "initDesc": "Select a target city to synthesize custom exploration missions.",
+    "cityPlaceholder": "e.g. Kyoto, Japan",
+    "generateBtn": "Generate Quest",
+    "newCityBtn": "New City",
+    "progress": "Progress: {completed} / {total}",
+    "xp": "{current} / {total} XP",
+    "hint": "Hint: {hint}",
+    "xpSynthesized": "{points} XP Synthesized",
+    "resolvedTitle": "City Resolved!",
+    "resolvedDesc": "You've successfully decoded the secrets of {city}.",
+    "returnBtn": "Return to Command Hub"
+  },
+  "languageLab": {
+    "badge": "Linguistic Intelligence",
+    "title": "Language Lab",
+    "subtitle": "Master the local dialect with AI-synthesized survival kits and native pronunciation.",
+    "cityPlaceholder": "Enter your destination city...",
+    "synthesizeBtn": "Synthesize Kit",
+    "survivalTitle": "Survival Phrases",
+    "pronounce": "Pronounce: {pronunciation}",
+    "slangTitle": "Local Slang",
+    "listenBtn": "Listen to Vibe",
+    "pendingTitle": "Linguistics Pending",
+    "pendingDesc": "Enter your destination to synthesize a custom language kit for your trip.",
+    "toast": {
+      "errorTitle": "Synthesis Failed",
+      "errorDescription": "The linguistic grid is offline.",
+      "audioErrorTitle": "Audio Error",
+      "audioErrorDescription": "Could not synthesize voice."
+    }
+  },
+  "layoverOdyssey": {
+    "badge": "Transit Intelligence",
+    "title": "Layover Odyssey",
+    "subtitle": "Transform your transit time into a high-velocity micro-journey.",
+    "initTitle": "Initialize Layover Node",
+    "initDesc": "Provide your transit coordinates and duration to synthesize a custom trajectory.",
+    "airportPlaceholder": "Airport / City (e.g. SIN, Singapore)",
+    "durationLabel": "Duration (Hours)",
+    "synthesizeBtn": "Synthesize Odyssey",
+    "resultTitle": "Your Layover Odyssey",
+    "newBtn": "New Odyssey",
+    "timelineTitle": "Timeline",
+    "logisticsTitle": "Logistics Node",
+    "transport": "Transport",
+    "budget": "Budget",
+    "visa": "Visa Note",
+    "pendingTitle": "Odyssey Pending",
+    "pendingDesc": "Enter your layover details to synthesize a custom micro-itinerary.",
+    "missionParameters": "Mission Parameters",
+    "currentTerminal": "Current Terminal",
+    "layoverDuration": "Layover Duration",
+    "synthesizeOdyssey": "Synthesize Odyssey",
+    "radarSilent": "Radar Silent",
+    "enterCodeDesc": "Enter an airport code to synthesize a custom layover odyssey."
+  },
+  "transitConnect": {
+    "title": "Transit Connect",
+    "subtitle": "Find your tribe in the terminal. Connect with travelers sharing your flight or vibe.",
+    "step1": {
+      "title": "Verify Boarding Pass",
+      "description": "Scan your boarding pass to verify your identity and flight node.",
+      "scanningButton": "Scanning...",
+      "scanButton": "Scan Pass",
+      "cameraError": "Camera node offline.",
+      "scanErrorTitle": "Scan Failed",
+      "scanErrorDescription": "Unable to decode boarding pass data."
+    },
+    "verification": {
+      "title": "Identity Verified",
+      "description": "Your flight node has been successfully verified on the Aetheria grid.",
+      "passenger": "Passenger",
+      "flight": "Flight",
+      "gate": "Gate",
+      "seat": "Seat",
+      "departs": "Departs"
+    },
+    "step2": {
+      "title": "Select Your Vibe",
+      "description": "Choose how you want to interact with the terminal network.",
+      "goLiveButton": "Go Live",
+      "vibes": {
+        "networking": "Networking",
+        "networkingDescription": "Connect with professionals on your flight.",
+        "coffee": "Grab a Coffee",
+        "coffeeDescription": "Casual conversation over a brew.",
+        "shareLounge": "Share Lounge",
+        "shareLoungeDescription": "Access premium nodes with others.",
+        "cardGame": "Card Game",
+        "cardGameDescription": "Kill time with a quick game."
+      }
+    },
+    "step3": {
+      "title": "Terminal Network",
+      "description": "Real-time connection nodes active in your vicinity.",
+      "nearbyTab": "Nearby",
+      "arViewTab": "AR View",
+      "sameFlight": "Same Flight",
+      "chatButton": "Chat",
+      "arViewDescription": "AR View Active",
+      "toast": {
+        "chatTitle": "Chat Initialized",
+        "chatDescription": "Connecting to {name}'s node..."
+      }
     }
   },
   "footer": {
@@ -249,6 +354,8 @@
       }
     },
     "interests": {
+      "title": "Interests",
+      "description": "Select your primary travel interests.",
       "items": {
         "history": "History",
         "food": "Culinary",
@@ -261,132 +368,142 @@
       }
     }
   },
-  "digitalTailor": {
-    "title": "Digital Tailor",
-    "description": "Zero-luggage wardrobe synthesis for the modern explorer.",
-    "tabs": {
-      "synthesize": "Synthesize",
-      "manage": "Manage"
-    },
-    "step": "Step",
-    "steps": {
-      "scan": {
-        "name": "Scan",
-        "description": "Body Topology"
+  "itineraryGenerator": {
+    "title": "Odyssey Architect",
+    "subtitle": "Synthesize a multi-day journey based on your psychological vibe.",
+    "authError": "Authorization Node Offline",
+    "authErrorDesc": "Please sign in to synthesize an odyssey.",
+    "form": {
+      "title": "Plan Your Odyssey",
+      "description": "Provide details for your personalized travel plan.",
+      "generateButton": "Generate Odyssey",
+      "destinationLabel": "Destination",
+      "destinationPlaceholder": "e.g. Paris, France",
+      "datesLabel": "Dates",
+      "pickDateRange": "Pick a date range",
+      "budgetLabel": "Budget",
+      "budgetPlaceholder": "Select your budget level",
+      "budgetLow": "Low",
+      "budgetMedium": "Medium",
+      "budgetHigh": "High",
+      "vibeLabel": "Travel Vibe",
+      "vibePlaceholder": "Describe your ideal travel experience",
+      "vibeDescription": "e.g. 'Relaxed and cultural' or 'Adventurous and off-the-beaten-path'"
+    }
+  },
+  "subscription": {
+    "badge": "Monetary Protocol",
+    "title": "Subscription Hub",
+    "subtitle": "Upgrade your odyssey with premium intelligence and global safety nodes.",
+    "itineraryRequired": "Active Odyssey Required",
+    "itineraryRequiredDesc": "You must have an active journey to apply a subscription tier.",
+    "createItineraryBtn": "Create Odyssey",
+    "plans": {
+      "free": {
+        "name": "Free",
+        "description": "Basic logistics for casual travelers.",
+        "price": "$0",
+        "itinerariesValue": "1 Active Odyssey",
+        "immersiveValue": "Standard Intelligence",
+        "loyaltyValue": "Basic Rewards"
       },
-      "vibe": {
-        "name": "Vibe",
-        "description": "Style DNA"
+      "voyager": {
+        "name": "Voyager",
+        "description": "Enhanced tools for frequent explorers.",
+        "price": "$9",
+        "itinerariesValue": "3 Active Odysseys",
+        "immersiveValue": "Enhanced Intelligence",
+        "packingValue": "AI Packing Node",
+        "loyaltyValue": "Silver Rewards"
       },
-      "trip": {
-        "name": "Trip",
-        "description": "Canvas Nodes"
+      "pathfinder": {
+        "name": "Pathfinder",
+        "description": "Neural-grade intelligence for professional nomads.",
+        "price": "$19",
+        "itinerariesValue": "Infinite Odysseys",
+        "immersiveValue": "Neural Intelligence",
+        "insiderValue": "Local Legend Access",
+        "loyaltyValue": "Gold Rewards"
       },
-      "mirror": {
-        "name": "Mirror",
-        "description": "Synthesis"
+      "sovereign": {
+        "name": "Sovereign",
+        "description": "Infinite access with heritage-grade synthesis.",
+        "price": "$49",
+        "itinerariesValue": "Infinite Odysseys",
+        "immersiveValue": "Infinite Intelligence",
+        "mirrorValue": "Heritage Mirror Node",
+        "fees": "Zero Service Fees"
       },
-      "deploy": {
-        "name": "Deploy",
-        "description": "Fulfillment"
+      "legend": {
+        "name": "Legend",
+        "description": "The ultimate explorer node with total network access.",
+        "price": "$99",
+        "itinerariesValue": "Infinite Odysseys",
+        "immersiveValue": "Infinite Intelligence",
+        "mirrorValue": "Heritage Mirror Node",
+        "insiderValue": "Local Legend Access",
+        "fees": "Zero Service Fees"
       }
     },
-    "fitPreferences": {
-      "title": "Fit Preference",
-      "slim": "Slim",
-      "regular": "Regular",
-      "relaxed": "Relaxed",
-      "oversized": "Oversized"
+    "period": {
+      "monthly": "/ MO"
     },
-    "sensitivities": {
-      "title": "Sensitivities",
-      "woolAllergy": "Wool Allergy",
-      "naturalFibers": "Natural Fibers",
-      "noTurtlenecks": "No Turtlenecks",
-      "syntheticFriendly": "Synthetic Friendly"
+    "features": {
+      "itineraries": "Odyssey Capacity",
+      "immersive": "Intelligence Level",
+      "loyalty": "Rewards Tier",
+      "packing": "Packing Node",
+      "insider": "Legend Access",
+      "mirror": "Heritage Node",
+      "fees": "Service Fees"
     },
-    "cameraError": {
-      "title": "Camera Error",
-      "description": "Check browser permissions."
+    "upgrade": "Authorize Upgrade",
+    "processingBtn": "Processing...",
+    "currentPlan": "Active Node"
+  },
+  "dashboard": {
+    "welcomeBack": "Welcome Back, {name}",
+    "odysseyLevel": "Odyssey Level {level}",
+    "seasonPass": "Season Pass",
+    "xpSynthesized": "XP Synthesized",
+    "progressionToLevel": "Progression to Level {level}",
+    "vibeStreak": "Vibe Streak",
+    "tasksResolved": "Tasks Resolved",
+    "totalMedals": "Total Medals",
+    "premiumRequired": "Premium Required",
+    "explorerStatus": "Explorer Status: {tier}",
+    "points": "Points",
+    "medals": "Medals",
+    "editProfile": "Edit Profile",
+    "shortDesc": {
+      "itinerary": "Neural itinerary synthesis.",
+      "pathfinder": "Smart route optimization.",
+      "marketplace": "Global vibe exchange.",
+      "store": "Bespoke gear procurement.",
+      "booking": "Logistics orchestration.",
+      "wallet": "Smart currency node.",
+      "budget": "Financial synthesis.",
+      "vision": "Object recognition node.",
+      "guide": "Global intel hub.",
+      "ar": "Augmented navigation.",
+      "legends": "Folklore decryption.",
+      "pulse": "Cultural trend radar.",
+      "audio": "Spatial narration.",
+      "odyssey": "Cinematic trip synthesis.",
+      "postcard": "AI art generation.",
+      "mirror": "Heritage visualization.",
+      "journal": "Memory encryption."
     },
-    "placeInFrame": "Place full body in frame for synthesis",
-    "styleSwipe": "Style Swipe",
-    "vibeResolved": "Vibe Resolved",
-    "styleDNARecorded": "Style DNA preferences recorded.",
-    "resetCalibration": "Reset Calibration",
-    "brandAffinity": "Brand Affinity",
-    "destinationNode": "Destination Node",
-    "whereLanding": "Where are you landing?",
-    "dates": "Dates",
-    "pickDateNode": "Pick a date node",
-    "weatherLogic": "Weather Logic",
-    "rainProb": "Rain Prob.",
-    "avgTemp": "Avg. Temp",
-    "luggageLevel": "Luggage Level",
-    "zeroLuggage": "Zero-Luggage",
-    "zeroLuggageDesc": "Full rental suite deployed at destination.",
-    "hybridNode": "Hybrid Node",
-    "hybridNodeDesc": "Supplementary rentals for specific events.",
-    "itineraryEvents": "Itinerary Events",
-    "noEventNodes": "No Event Nodes Added",
-    "newEventNode": "New Event Node",
-    "dressCode": "Dress Code",
-    "casual": "Casual",
-    "smartCasual": "Smart Casual",
-    "businessCasual": "Business Casual",
-    "cocktail": "Cocktail",
-    "blackTie": "Black Tie",
-    "activewear": "Activewear",
-    "synthesizingLooks": "Synthesizing Looks...",
-    "matchingDNA": "Matching your DNA with destination climate nodes.",
-    "synthesisFailure": "Synthesis Failure",
-    "synthesisError": "Synthesis Error",
-    "reInitializeSynthesis": "Re-Initialize Synthesis",
-    "architectRecommendation": "Architect Recommendation",
-    "outfitNode": "Outfit Node 0{num}",
-    "selectNode": "Select Node",
-    "orderSummary": "Order Summary",
-    "transactionType": "Transaction Type",
-    "rentPackage": "Rent Package",
-    "rentPackageDesc": "Pay for the duration of your odyssey.",
-    "purchaseAll": "Purchase All",
-    "purchaseAllDesc": "Permanent library addition.",
-    "netOrderAmount": "Net Order Amount",
-    "totalDue": "Total Due",
-    "smartWalletVerification": "Smart Wallet Verification",
-    "availableNodeBalance": "Available Node Balance",
-    "insufficientAssets": "Insufficient Assets",
-    "insufficientAssetsDesc": "Please top up your wallet node or exchange other currencies to authorize deployment.",
-    "logisticsProtocol": "Logistics Protocol",
-    "explorerName": "Explorer Name",
-    "destinationHub": "Destination Hub",
-    "directDeliveryDesc": "Direct-to-destination delivery ensures zero-luggage freedom.",
-    "authorizeAndPay": "Authorize & Pay",
-    "authorizationNotice": "By authorizing, you agree to the temporary withholding of security funds for rental nodes. Deposits are automatically returned upon item verification at the end of your odyssey.",
-    "deploymentInitiated": {
-      "title": "Deployment Initiated",
-      "description": "Your wardrobe is scheduled for destination delivery."
-    },
-    "manage": {
-      "title": "My Wardrobe Rentals",
-      "description": "Manage your zero-luggage inventory.",
-      "nodeActive": "Node Active",
-      "package": "Package",
-      "ordered": "Ordered",
-      "recently": "Recently",
-      "securityDeposit": "Security Deposit",
-      "processReturn": "Process Return",
-      "refundCompleted": "Refund Completed",
-      "contents": "Contents",
-      "noRentals": "No active rentals.",
-      "noRentalsDescription": "Initialize a node to begin collection."
-    },
-    "refundCompleted": {
-      "title": "Refund Completed",
-      "description": "Deposit returned to your Smart Wallet Hub."
-    },
-    "returnFailed": {
-      "title": "Return Failed"
+    "vibeRadar": {
+      "title": "Vibe Radar",
+      "desc": "Scanning {vibe} vibes at {location}."
     }
+  },
+  "trips": {
+    "travelStyle": "Travel Style"
+  },
+  "common": {
+    "verified": "Verified",
+    "error": "Error"
   }
 }

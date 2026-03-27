@@ -2,16 +2,16 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { 
-  ShoppingBag, 
-  Sparkles, 
-  TrendingUp, 
-  Star, 
-  Users, 
-  Search, 
-  Filter, 
-  Loader2, 
-  Zap, 
+import {
+  ShoppingBag,
+  Sparkles,
+  TrendingUp,
+  Star,
+  Users,
+  Search,
+  Filter,
+  Loader2,
+  Zap,
   ArrowRight,
   ShieldCheck,
   Globe,
@@ -69,8 +69,8 @@ export default function VibeMarketplacePage() {
   }, []);
 
   const walletsQuery = useMemoFirebase(
-    () => (user && firestore ? collection(firestore, 'userProfiles', user.uid, 'wallets') : null),
-    [user, firestore]
+      () => (user && firestore ? collection(firestore, 'userProfiles', user.uid, 'wallets') : null),
+      [user, firestore]
   );
   const { data: wallets } = useCollection(walletsQuery);
   const usdWallet = wallets?.find(w => w.currency === 'USD');
@@ -143,135 +143,133 @@ export default function VibeMarketplacePage() {
     }
   };
 
-  const filteredVibes = mockVibes.filter(v => 
-    (v.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-     v.destination.toLowerCase().includes(searchTerm.toLowerCase())) &&
-    (activeCategory === 'all' || v.tags.map(t => t.toLowerCase()).includes(activeCategory.toLowerCase()))
+  const filteredVibes = mockVibes.filter(v =>
+      (v.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          v.destination.toLowerCase().includes(searchTerm.toLowerCase())) &&
+      (activeCategory === 'all' || v.tags.map(t => t.toLowerCase()).includes(activeCategory.toLowerCase()))
   );
 
   if (!hasMounted) return null;
 
   return (
-    <div className="container mx-auto px-4 py-12 max-w-7xl">
-      <header className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8 animate-in fade-in duration-700">
-        <div className="space-y-4">
-          <Badge className="bg-primary/10 text-primary border-none font-bold uppercase tracking-widest py-1 px-3 text-xs sm:text-sm">P2P Economy Node</Badge> {/* Adjusted font size */}
-          <h1 className="font-headline text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-slate-900 leading-[0.85] italic uppercase"> {/* Adjusted font size */}
-            Vibe <br />
-            <span className="text-primary italic">Marketplace.</span>
-          </h1>
-          <p className="text-lg sm:text-xl text-slate-500 font-medium max-w-xl"> {/* Adjusted font size */}
-            Acquire proven odyssey templates from legendary explorers or monetize your own visual DNA.
-          </p>
-        </div>
-        <div className="flex flex-col items-end gap-4">
-          <div className="flex items-center gap-4 bg-white p-4 rounded-3xl shadow-xl border border-slate-100">
-            <div className="h-12 w-12 rounded-2xl bg-emerald-50 flex items-center justify-center text-emerald-600">
-              <Wallet className="h-6 w-6" />
-            </div>
-            <div>
-              <p className="text-xs font-black uppercase tracking-widest text-slate-400">Available USD</p>
-              <p className="text-2xl font-black text-slate-900 font-headline">${usdWallet?.balance.toFixed(2) || '0.00'}</p>
-            </div>
+      <div className="container mx-auto px-4 py-8 md:py-12 max-w-7xl">
+        <header className="mb-10 md:mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6 md:gap-8 animate-in fade-in duration-700">
+          <div className="space-y-3 md:space-y-4">
+            <Badge className="bg-primary/10 text-primary border-none font-bold uppercase tracking-widest py-1 px-3 text-[9px] md:text-[10px]">P2P Economy Node</Badge>
+            <h1 className="font-headline text-4xl sm:text-5xl font-black tracking-tighter md:text-8xl text-slate-900 leading-[0.9] md:leading-[0.85] italic uppercase">
+              Vibe <br className="hidden sm:block" />
+              <span className="text-primary italic">Marketplace.</span>
+            </h1>
+            <p className="text-lg md:text-xl text-slate-500 font-medium max-w-xl">
+              Acquire proven odyssey templates from legendary explorers or monetize your own visual DNA.
+            </p>
           </div>
-          <Button asChild className="rounded-2xl h-12 sm:h-14 px-8 font-black bg-slate-900 text-white hover:bg-slate-800 shadow-xl w-full md:w-auto"> {/* Adjusted height and font size */}
-            <Link href="/itinerary-generator">
-              <span className="flex items-center">
+          <div className="flex flex-col sm:flex-row md:flex-col items-stretch sm:items-center md:items-end gap-4">
+            <div className="flex items-center gap-4 bg-white p-3 md:p-4 rounded-2xl md:rounded-3xl shadow-xl border border-slate-100 flex-1 sm:flex-none">
+              <div className="h-10 w-10 md:h-12 md:w-12 rounded-xl md:rounded-2xl bg-emerald-50 flex items-center justify-center text-emerald-600 shrink-0">
+                <Wallet className="h-5 w-5 md:h-6 md:w-6" />
+              </div>
+              <div>
+                <p className="text-[9px] md:text-[10px] font-black uppercase tracking-widest text-slate-400">Available USD</p>
+                <p className="text-xl md:text-2xl font-black text-slate-900 font-headline">${usdWallet?.balance.toFixed(2) || '0.00'}</p>
+              </div>
+            </div>
+            <Button asChild className="rounded-xl md:rounded-2xl h-12 md:h-14 px-6 md:px-8 font-black bg-slate-900 text-white hover:bg-slate-800 shadow-xl w-full sm:w-auto">
+              <Link href="/itinerary-generator">
                 <Plus className="mr-2 h-5 w-5" /> Sell Your Vibe
-              </span>
-            </Link>
-          </Button>
-        </div>
-      </header>
-
-      <div className="flex flex-col md:flex-row items-center gap-6 mb-12">
-        <div className="relative flex-1 group">
-          <Search className="absolute left-5 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-300 group-hover:text-primary transition-colors" />
-          <Input 
-            placeholder="Search vibes, destinations, or authors..." 
-            className="h-12 sm:h-16 rounded-[1.5rem] pl-14 border-none shadow-lg bg-white text-base sm:text-lg font-medium focus:ring-4 ring-primary/10 transition-all"
-            value={searchTerm}
-            onChange={e => setSearchQuery(e.target.value)}
-          />
-        </div>
-        <div className="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 w-full md:w-auto">
-          {['all', 'Cyberpunk', 'Minimalist', 'Nature', 'Vintage', 'Nightlife'].map(cat => (
-            <Button 
-              key={cat}
-              variant={activeCategory === cat ? 'default' : 'outline'}
-              className={cn(
-                "rounded-full h-10 sm:h-12 px-6 font-black uppercase text-xs sm:text-sm tracking-widest transition-all",
-                activeCategory === cat ? "shadow-lg shadow-primary/20" : "border-2 border-slate-100 bg-white"
-              )}
-              onClick={() => setActiveCategory(cat)}
-            >
-              {cat}
+              </Link>
             </Button>
+          </div>
+        </header>
+
+        <div className="flex flex-col md:flex-row items-stretch md:items-center gap-4 md:gap-6 mb-8 md:mb-12">
+          <div className="relative flex-1 group">
+            <Search className="absolute left-4 md:left-5 top-1/2 -translate-y-1/2 h-5 w-5 md:h-6 md:w-6 text-slate-300 group-hover:text-primary transition-colors" />
+            <Input
+                placeholder="Search vibes, destinations, or authors..."
+                className="h-12 md:h-16 rounded-xl md:rounded-[1.5rem] pl-11 md:pl-14 border-none shadow-lg bg-white text-base md:text-lg font-medium focus:ring-4 ring-primary/10 transition-all"
+                value={searchTerm}
+                onChange={e => setSearchQuery(e.target.value)}
+            />
+          </div>
+          <div className="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 w-full md:w-auto no-scrollbar">
+            {['all', 'Cyberpunk', 'Minimalist', 'Nature', 'Vintage', 'Nightlife'].map(cat => (
+                <Button
+                    key={cat}
+                    variant={activeCategory === cat ? 'default' : 'outline'}
+                    className={cn(
+                        "rounded-full h-10 md:h-12 px-4 md:px-6 font-black uppercase text-[9px] md:text-[10px] tracking-widest transition-all whitespace-nowrap",
+                        activeCategory === cat ? "shadow-lg shadow-primary/20" : "border-2 border-slate-100 bg-white"
+                    )}
+                    onClick={() => setActiveCategory(cat)}
+                >
+                  {cat}
+                </Button>
+            ))}
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+          {filteredVibes.map((vibe) => (
+              <Card key={vibe.id} className="group border-none shadow-xl rounded-[2rem] md:rounded-[3rem] overflow-hidden bg-white flex flex-col hover:shadow-2xl transition-all duration-700 hover:-translate-y-2">
+                <div className="relative h-56 md:h-64 overflow-hidden">
+                  <Image src={vibe.image} alt={vibe.name} fill className="object-cover transition-transform duration-1000 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60" />
+                  <div className="absolute top-4 md:top-6 left-4 md:left-6 flex flex-wrap gap-1.5 md:gap-2">
+                    {vibe.tags.map(tag => (
+                        <Badge key={tag} className="bg-white/90 text-slate-900 border-none font-black text-[7px] md:text-[8px] px-2 md:px-3 py-0.5 md:py-1 uppercase tracking-tighter">{tag}</Badge>
+                    ))}
+                  </div>
+                  <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6 flex items-center gap-2 md:gap-3">
+                    <div className="flex items-center gap-1 bg-black/40 backdrop-blur-md rounded-full px-2.5 md:px-3 py-1 md:py-1.5 text-white text-[9px] md:text-[10px] font-black border border-white/10">
+                      <Star className="h-3 md:h-3.5 w-3 md:w-3.5 fill-accent text-accent" /> {vibe.rating}
+                    </div>
+                    <div className="flex items-center gap-1 bg-black/40 backdrop-blur-md rounded-full px-2.5 md:px-3 py-1 md:py-1.5 text-white text-[9px] md:text-[10px] font-black border border-white/10">
+                      <Users className="h-3 md:h-3.5 w-3 md:w-3.5" /> {vibe.sales.toLocaleString()}
+                    </div>
+                  </div>
+                </div>
+
+                <CardContent className="p-6 md:p-8 flex-grow space-y-4 md:space-y-6">
+                  <div className="space-y-1.5 md:space-y-2">
+                    <h3 className="text-xl md:text-2xl font-black font-headline text-slate-900 leading-tight group-hover:text-primary transition-colors uppercase italic tracking-tighter">
+                      {vibe.name}
+                    </h3>
+                    <p className="flex items-center gap-1.5 text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest">
+                      <MapPin className="h-3 md:h-3.5 w-3 md:w-3.5 text-primary" /> {vibe.destination}
+                    </p>
+                  </div>
+
+                  <div className="flex items-center justify-between pt-4 md:pt-6 border-t border-slate-50">
+                    <div className="flex items-center gap-2 md:gap-3">
+                      <div className="h-7 w-7 md:h-8 md:w-8 rounded-full bg-slate-100 flex items-center justify-center text-[9px] md:text-[10px] font-black text-slate-400">
+                        {vibe.author[0]}
+                      </div>
+                      <p className="text-[9px] md:text-[10px] font-black uppercase text-slate-400 tracking-widest">By {vibe.author}</p>
+                    </div>
+                    <p className="text-xl md:text-2xl font-black font-headline text-primary">$2.99</p>
+                  </div>
+                </CardContent>
+
+                <CardFooter className="p-6 md:p-8 pt-0">
+                  <Button
+                      onClick={() => handlePurchase(vibe)}
+                      disabled={isPurchasing === vibe.id}
+                      className="w-full h-12 md:h-14 rounded-xl md:rounded-2xl font-black text-base md:text-lg shadow-xl shadow-primary/20 active:scale-95 transition-all group/btn"
+                  >
+                    {isPurchasing === vibe.id ? (
+                        <Loader2 className="animate-spin h-5 w-5 md:h-6 md:w-6" />
+                    ) : (
+                        <>
+                          <ShoppingBag className="mr-2 h-4 w-4 md:h-5 md:w-5 group-hover/btn:scale-110 transition-transform" />
+                          Acquire Vibe
+                        </>
+                    )}
+                  </Button>
+                </CardFooter>
+              </Card>
           ))}
         </div>
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {filteredVibes.map((vibe) => (
-          <Card key={vibe.id} className="group border-none shadow-xl rounded-[3rem] overflow-hidden bg-white flex flex-col hover:shadow-2xl transition-all duration-700 hover:-translate-y-2">
-            <div className="relative h-64 overflow-hidden">
-              <Image src={vibe.image} alt={vibe.name} fill className="object-cover transition-transform duration-1000 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60" />
-              <div className="absolute top-6 left-6 flex flex-wrap gap-2">
-                {vibe.tags.map(tag => (
-                  <Badge key={tag} className="bg-white/90 text-slate-900 border-none font-black text-xs px-3 py-1 uppercase tracking-tighter">{tag}</Badge>
-                ))}
-              </div>
-              <div className="absolute bottom-6 left-6 flex items-center gap-3">
-                <div className="flex items-center gap-1.5 bg-black/40 backdrop-blur-md rounded-full px-3 py-1.5 text-white text-xs font-black border border-white/10">
-                  <Star className="h-3.5 w-3.5 fill-accent text-accent" /> {vibe.rating}
-                </div>
-                <div className="flex items-center gap-1.5 bg-black/40 backdrop-blur-md rounded-full px-3 py-1.5 text-white text-xs font-black border border-white/10">
-                  <Users className="h-3.5 w-3.5" /> {vibe.sales.toLocaleString()}
-                </div>
-              </div>
-            </div>
-            
-            <CardContent className="p-8 flex-grow space-y-6">
-              <div className="space-y-2">
-                <h3 className="text-xl sm:text-2xl font-black font-headline text-slate-900 leading-tight group-hover:text-primary transition-colors uppercase italic tracking-tighter"> {/* Adjusted font size */}
-                  {vibe.name}
-                </h3>
-                <p className="flex items-center gap-1.5 text-xs font-bold text-slate-400 uppercase tracking-widest">
-                  <MapPin className="h-3.5 w-3.5 text-primary" /> {vibe.destination}
-                </p>
-              </div>
-
-              <div className="flex items-center justify-between pt-6 border-t border-slate-50">
-                <div className="flex items-center gap-3">
-                  <div className="h-8 w-8 rounded-full bg-slate-100 flex items-center justify-center text-xs font-black text-slate-400">
-                    {vibe.author[0]}
-                  </div>
-                  <p className="text-xs font-black uppercase text-slate-400 tracking-widest">By {vibe.author}</p>
-                </div>
-                <p className="text-2xl font-black font-headline text-primary">$2.99</p>
-              </div>
-            </CardContent>
-
-            <CardFooter className="p-8 pt-0">
-              <Button 
-                onClick={() => handlePurchase(vibe)} 
-                disabled={isPurchasing === vibe.id}
-                className="w-full h-12 sm:h-14 rounded-2xl font-black text-base sm:text-lg shadow-xl shadow-primary/20 active:scale-95 transition-all group/btn"
-              >
-                {isPurchasing === vibe.id ? (
-                  <Loader2 className="animate-spin h-6 w-6" />
-                ) : (
-                  <div className="flex items-center">
-                    <ShoppingBag className="mr-2 h-5 w-5 group-hover/btn:scale-110 transition-transform" />
-                    Acquire Vibe
-                  </div>
-                )}
-              </Button>
-            </CardFooter>
-          </Card>
-        ))}
-      </div>
-    </div>
   );
 }

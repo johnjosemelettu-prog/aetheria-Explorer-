@@ -393,15 +393,30 @@ export default function FlightBookingView({ usdWallet }: { usdWallet: any }) {
                         <div className="flex flex-col md:flex-row items-stretch md:items-center">
                           <div className="p-5 md:p-8 flex-1 flex items-center gap-4 md:gap-8">
                             <div className="h-12 w-12 md:h-16 md:w-16 rounded-xl md:rounded-2xl bg-slate-50 flex items-center justify-center text-primary group-hover:bg-primary/10 transition-colors shrink-0"><Plane className="h-6 w-6 md:h-8 md:w-8" /></div>
-                            <div className="space-y-1"><p className="font-black text-lg md:text-xl text-slate-900">{flight.airline}</p><div className="flex items-center gap-2 md:gap-3 text-slate-400 font-bold uppercase tracking-widest text-[9px] md:text-[10px]"><span>{flight.from}</span><ArrowRight className="h-3 w-3 text-primary" /><span>{flight.to}</span></div></div>
+                            <div className="space-y-1">
+                              <p className="font-black text-lg md:text-xl text-slate-900 leading-tight group-hover:text-primary transition-colors uppercase italic tracking-tighter">{flight.airline}</p>
+                              <div className="flex items-center gap-2 md:gap-3 text-slate-400 font-bold uppercase tracking-widest text-[9px] md:text-[10px]">
+                                <span>{flight.from}</span>
+                                <ArrowRight className="h-3 w-3 text-primary" />
+                                <span>{flight.to}</span>
+                              </div>
+                            </div>
                           </div>
-                          <div className="px-5 md:px-8 py-3 md:py-0 border-y md:border-y-0 md:border-x border-slate-100 flex flex-row md:flex-col items-center justify-between md:justify-center min-w-[150px]">
-                            <p className="font-black text-slate-900 text-sm md:text-base">{flight.duration}</p>
-                            <Badge variant="secondary" className="bg-slate-100 text-slate-500 font-bold uppercase text-[8px] md:text-[9px]">{flight.stops === 0 ? 'Non-stop' : `${flight.stops} stop${flight.stops > 1 ? 's' : ''}`}</Badge>
+                          <div className="px-5 md:px-8 py-3 md:py-4 border-y md:border-y-0 md:border-x border-slate-100 flex flex-row md:flex-col items-center justify-between md:justify-center min-w-[150px] bg-slate-50/50">
+                            <div className="text-center">
+                              <p className="font-black text-slate-900 text-sm md:text-base">{flight.duration}</p>
+                              <Badge variant="secondary" className="bg-white text-slate-500 border border-slate-100 font-bold uppercase text-[8px] md:text-[9px] mt-1">{flight.stops === 0 ? 'Non-stop' : `${flight.stops} stop${flight.stops > 1 ? 's' : ''}`}</Badge>
+                            </div>
+                            <div className="flex flex-col items-end md:items-center gap-1 md:mt-2">
+                              <p className="text-[8px] md:text-[9px] font-black text-slate-400 uppercase tracking-widest">Economy</p>
+                            </div>
                           </div>
                           <div className="p-5 md:p-8 flex items-center justify-between md:justify-end gap-4 md:gap-8 w-full md:w-auto">
-                            <div className="text-left md:text-right"><p className="text-2xl md:text-3xl font-black font-headline text-slate-900">${flight.price}</p><p className="text-[9px] md:text-[10px] font-black text-slate-400 uppercase tracking-widest">Base Node Price</p></div>
-                            <Button className="rounded-xl h-11 md:h-12 px-6 md:px-8 font-black text-sm md:text-base" onClick={() => handleSelectFlight(flight)}>
+                            <div className="text-left md:text-right">
+                              <p className="text-2xl md:text-3xl font-black font-headline text-primary">${flight.price}</p>
+                              <p className="text-[9px] md:text-[10px] font-black text-slate-400 uppercase tracking-widest">Base Node Price</p>
+                            </div>
+                            <Button className="rounded-xl md:rounded-2xl h-11 md:h-14 px-6 md:px-10 font-black text-sm md:text-base bg-slate-900 text-white hover:bg-emerald-600 shadow-xl shadow-slate-200 active:scale-95 transition-all" onClick={() => handleSelectFlight(flight)}>
                               Book Now
                             </Button>
                           </div>

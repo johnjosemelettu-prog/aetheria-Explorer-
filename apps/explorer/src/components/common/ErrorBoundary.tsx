@@ -34,9 +34,6 @@ export class ErrorBoundary extends Component<Props, State> {
   };
 
   public render() {
-    // Log the children received by ErrorBoundary
-    console.log('ErrorBoundary received children:', this.props.children);
-
     if (this.state.hasError) {
       let errorMessage = 'An unexpected error occurred.';
       try {
@@ -69,7 +66,6 @@ export class ErrorBoundary extends Component<Props, State> {
       );
     }
 
-    // Directly return children without wrapping in a fragment
     return this.props.children;
   }
 }
