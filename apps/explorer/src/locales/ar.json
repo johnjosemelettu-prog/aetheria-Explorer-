@@ -19,7 +19,8 @@
     "locked": "مغلق",
     "authorized": "مصرح به",
     "error": "خطأ",
-    "returnToDashboard": "العودة إلى مركز القيادة"
+    "returnToDashboard": "العودة إلى مركز القيادة",
+    "apps": "Apps"
   },
   "login": {
     "title": "تسجيل الدخول",
@@ -37,8 +38,23 @@
       "errorTitle": "فشل تسجيل الدخول",
       "genericError": "تعذر التحقق من بيانات الاعتماد",
       "invalidCredentials": "البريد الإلكتروني أو رمز الأمان غير صحيح",
-      "operationNotAllowed": "تسجيل الدخول مقيد حالياً"
-    }
+      "operationNotAllowed": "تسجيل الدخول مقيد حالياً",
+      "systemNodeOfflineTitle": "System Node Offline",
+      "systemNodeOfflineDescription": "The authentication service is not yet initialized.",
+      "unsupportedFeatureTitle": "Unsupported Feature",
+      "unsupportedFeatureDescription": "Biometric login is only available on mobile devices.",
+      "biometricLoginFailedTitle": "Biometric Login Failed",
+      "biometricLoginFailedDescription": "Could not log in with biometric credentials."
+    },
+    "validation": {
+      "email": "Please enter a valid network address.",
+      "passwordMinLength": "Security key must be at least 6 characters."
+    },
+    "cardDescription": "Access your Odyssey Grid",
+    "authChannels": "Auth Channels",
+    "googleButton": "Google",
+    "appleButton": "Apple",
+    "biometricLoginButton": "Biometric Login"
   },
   "signup": {
     "title": "إنشاء حساب",
@@ -68,7 +84,14 @@
       "cta": {
         "start": "ابدأ الرحلة",
         "signin": "الوصول إلى العقدة"
-      }
+      },
+      "neuralNetworkOnline": "NEURAL NETWORK ONLINE",
+      "tagline1": "The first AI-native travel ecosystem for the digital nomad.",
+      "tagline2": "Synthesize your journey. Recode your reality.",
+      "enterGridButton": "ENTER GRID",
+      "signUpButton": "SIGN UP",
+      "loginButton": "LOGIN",
+      "scrollRecode": "Scroll to Recode"
     },
     "features": {
       "chapter": "البروتوكول الفصل 01",
@@ -93,7 +116,10 @@
         "badge": "الأدوات",
         "title": "وكيل عدم النسيان",
         "desc": "تركيب استباقي لمستلزمات السفر مصمم خصيصاً للطقس وعقد الرحلة."
-      }
+      },
+      "titlePart2": "MODULES.",
+      "quote": "We don't just plan trips. We synthesize experiences using multi-agent neural grids.",
+      "initializeButton": "Initialize"
     },
     "workflow": {
       "badge": "بروتوكول التشغيل",
@@ -110,14 +136,28 @@
       "step3": {
         "title": "تنفيذ الرحلة",
         "desc": "انطلق إلى العالم بمعلومات ذكية في الوقت الفعلي وعقد أمان."
-      }
+      },
+      "operationalFlowBadge": "Operational Flow",
+      "step1Title": "SCAN",
+      "step1Desc": "Input your neural preferences and travel constraints.",
+      "step2Title": "SYNTHESIZE",
+      "step2Desc": "Our multi-agent grid generates thousands of permutations.",
+      "step3Title": "EXECUTE",
+      "step3Desc": "Deploy your itinerary with real-time AR/VR support.",
+      "realtimeOptimizationBadge": "Real-time Optimization",
+      "realtimeOptimizationDesc": "Grid adjusted for weather patterns in Tokyo. Recalculating route..."
     },
     "cta": {
       "badge": "انضم إلى الشبكة",
       "title": "هل أنت مستعد لإعادة ترميز عالمك؟",
       "subtitle": "انضم إلى شبكة المستكشفين المعاصرين الذين يستفيدون من الذكاء اللامحدود.",
       "start": "اتصل بالشبكة",
-      "feed": "الخلاصة العالمية"
+      "feed": "الخلاصة العالمية",
+      "readyToRecodeTitle": "READY TO RECODE?",
+      "titlePart2": "RECODE?",
+      "readyToRecodeSubtitle": "Join 50,000+ digital nomads who have already synthesized their reality.",
+      "signUpNowButton": "SIGN UP NOW",
+      "loginButton": "LOGIN"
     }
   },
   "header": {
@@ -354,6 +394,8 @@
       }
     },
     "interests": {
+      "title": "الاهتمامات",
+      "description": "اختر اهتماماتك الرئيسية في السفر.",
       "items": {
         "history": "التاريخ",
         "food": "الطعام",
@@ -370,7 +412,24 @@
     "title": "مهندس المسارات",
     "subtitle": "تركيب رحلات متعددة الأيام بناءً على الحمض النووي النفسي الخاص بك.",
     "authError": "عقدة الموافقة غير متصلة حالياً.",
-    "authErrorDesc": "يرجى تسجيل الدخول لتركيب المسار."
+    "authErrorDesc": "يرجى تسجيل الدخول لتركيب المسار.",
+    "form": {
+      "title": "خطط لرحلتك",
+      "description": "قدم تفاصيل لخطتك الشخصية للسفر.",
+      "generateButton": "إنشاء خط سير الرحلة",
+      "destinationLabel": "الوجهة",
+      "destinationPlaceholder": "مثال: باريس، فرنسا",
+      "datesLabel": "التواريخ",
+      "pickDateRange": "اختر نطاقًا زمنيًا",
+      "budgetLabel": "الميزانية",
+      "budgetPlaceholder": "اختر مستوى ميزانيتك",
+      "budgetLow": "منخفضة",
+      "budgetMedium": "متوسطة",
+      "budgetHigh": "عالية",
+      "vibeLabel": "أجواء السفر",
+      "vibePlaceholder": "صف تجربتك المثالية في السفر",
+      "vibeDescription": "مثال: 'مريحة وثقافية' أو 'مغامرة وخارج المسار المطروق'"
+    }
   },
   "subscription": {
     "badge": "البروتوكول المالي",
@@ -479,5 +538,8 @@
       "title": "رادار الأجواء",
       "desc": "جاري مسح أجواء {vibe} في {location}"
     }
+  },
+  "trips": {
+    "travelStyle": "نمط السفر"
   }
 }

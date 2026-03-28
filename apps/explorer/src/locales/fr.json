@@ -38,8 +38,23 @@
       "errorTitle": "Échec de la Connexion",
       "genericError": "Impossible de vérifier les identifiants.",
       "invalidCredentials": "Adresse e-mail ou clé de sécurité invalide.",
-      "operationNotAllowed": "La connexion est actuellement restreinte."
-    }
+      "operationNotAllowed": "La connexion est actuellement restreinte.",
+      "systemNodeOfflineTitle": "System Node Offline",
+      "systemNodeOfflineDescription": "The authentication service is not yet initialized.",
+      "unsupportedFeatureTitle": "Unsupported Feature",
+      "unsupportedFeatureDescription": "Biometric login is only available on mobile devices.",
+      "biometricLoginFailedTitle": "Biometric Login Failed",
+      "biometricLoginFailedDescription": "Could not log in with biometric credentials."
+    },
+    "validation": {
+      "email": "Please enter a valid network address.",
+      "passwordMinLength": "Security key must be at least 6 characters."
+    },
+    "cardDescription": "Access your Odyssey Grid",
+    "authChannels": "Auth Channels",
+    "googleButton": "Google",
+    "appleButton": "Apple",
+    "biometricLoginButton": "Biometric Login"
   },
   "signup": {
     "title": "Créer un Compte",
@@ -69,7 +84,14 @@
       "cta": {
         "start": "Initialiser le Voyage",
         "signin": "Accéder au Nœud"
-      }
+      },
+      "neuralNetworkOnline": "NEURAL NETWORK ONLINE",
+      "tagline1": "The first AI-native travel ecosystem for the digital nomad.",
+      "tagline2": "Synthesize your journey. Recode your reality.",
+      "enterGridButton": "ENTER GRID",
+      "signUpButton": "SIGN UP",
+      "loginButton": "LOGIN",
+      "scrollRecode": "Scroll to Recode"
     },
     "features": {
       "chapter": "Protocole Chapitre 01",
@@ -94,7 +116,10 @@
         "badge": "Utilité",
         "title": "Agent Je n'ai rien oublié",
         "desc": "Synthèse proactive des bagages adaptée au climat et aux nœuds de l'itinéraire."
-      }
+      },
+      "titlePart2": "MODULES.",
+      "quote": "We don't just plan trips. We synthesize experiences using multi-agent neural grids.",
+      "initializeButton": "Initialize"
     },
     "workflow": {
       "badge": "Protocole Opérationnel",
@@ -111,14 +136,28 @@
       "step3": {
         "title": "Exécutez le Voyage",
         "desc": "Lancez-vous dans le monde avec une intelligence en temps réel et des nœuds de sécurité."
-      }
+      },
+      "operationalFlowBadge": "Operational Flow",
+      "step1Title": "SCAN",
+      "step1Desc": "Input your neural preferences and travel constraints.",
+      "step2Title": "SYNTHESIZE",
+      "step2Desc": "Our multi-agent grid generates thousands of permutations.",
+      "step3Title": "EXECUTE",
+      "step3Desc": "Deploy your itinerary with real-time AR/VR support.",
+      "realtimeOptimizationBadge": "Real-time Optimization",
+      "realtimeOptimizationDesc": "Grid adjusted for weather patterns in Tokyo. Recalculating route..."
     },
     "cta": {
       "badge": "Rejoignez le Réseau",
       "title": "PRÊT À RECODER VOTRE MONDE ?",
       "subtitle": "Rejoignez le réseau d'explorateurs modernes utilisant une intelligence infinie.",
       "start": "Rejoindre le Réseau",
-      "feed": "Flux Global"
+      "feed": "Flux Global",
+      "readyToRecodeTitle": "READY TO RECODE?",
+      "titlePart2": "RECODE?",
+      "readyToRecodeSubtitle": "Join 50,000+ digital nomads who have already synthesized their reality.",
+      "signUpNowButton": "SIGN UP NOW",
+      "loginButton": "LOGIN"
     }
   },
   "header": {
@@ -182,7 +221,7 @@
     "categories": {
       "orchestration": "Orchestrer",
       "intelligence": "Intelligence",
-      "studios": "Studios",
+      "studios": "Studio",
       "utility": "Utilitaires"
     },
     "promo": {

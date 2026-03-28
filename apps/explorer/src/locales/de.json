@@ -19,7 +19,8 @@
     "locked": "Gesperrt",
     "authorized": "Autorisiert",
     "error": "Fehler",
-    "returnToDashboard": "Zurück zum Kommandozentrum"
+    "returnToDashboard": "Zurück zum Kommandozentrum",
+    "apps": "Apps"
   },
   "login": {
     "title": "Anmelden",
@@ -37,8 +38,23 @@
       "errorTitle": "Anmeldung Fehlgeschlagen",
       "genericError": "Anmeldedaten konnten nicht verifiziert werden.",
       "invalidCredentials": "Ungültige E-Mail-Adresse oder Sicherheitsschlüssel.",
-      "operationNotAllowed": "Anmeldung ist derzeit eingeschränkt."
-    }
+      "operationNotAllowed": "Anmeldung ist derzeit eingeschränkt.",
+      "systemNodeOfflineTitle": "System Node Offline",
+      "systemNodeOfflineDescription": "The authentication service is not yet initialized.",
+      "unsupportedFeatureTitle": "Unsupported Feature",
+      "unsupportedFeatureDescription": "Biometric login is only available on mobile devices.",
+      "biometricLoginFailedTitle": "Biometric Login Failed",
+      "biometricLoginFailedDescription": "Could not log in with biometric credentials."
+    },
+    "validation": {
+      "email": "Please enter a valid network address.",
+      "passwordMinLength": "Security key must be at least 6 characters."
+    },
+    "cardDescription": "Access your Odyssey Grid",
+    "authChannels": "Auth Channels",
+    "googleButton": "Google",
+    "appleButton": "Apple",
+    "biometricLoginButton": "Biometric Login"
   },
   "signup": {
     "title": "Konto Erstellen",
@@ -68,7 +84,14 @@
       "cta": {
         "start": "Reise Initialisieren",
         "signin": "Knoten-Zugriff"
-      }
+      },
+      "neuralNetworkOnline": "NEURAL NETWORK ONLINE",
+      "tagline1": "The first AI-native travel ecosystem for the digital nomad.",
+      "tagline2": "Synthesize your journey. Recode your reality.",
+      "enterGridButton": "ENTER GRID",
+      "signUpButton": "SIGN UP",
+      "loginButton": "LOGIN",
+      "scrollRecode": "Scroll to Recode"
     },
     "features": {
       "chapter": "Protokoll Kapitel 01",
@@ -93,7 +116,10 @@
         "badge": "Nützlichkeit",
         "title": "Nichts-Vergessen-Agent",
         "desc": "Proaktive Pack-Synthese, zugeschnitten auf Klima- und Reiseplan-Knoten."
-      }
+      },
+      "titlePart2": "MODULES.",
+      "quote": "We don't just plan trips. We synthesize experiences using multi-agent neural grids.",
+      "initializeButton": "Initialize"
     },
     "workflow": {
       "badge": "Operatives Protokoll",
@@ -110,14 +136,28 @@
       "step3": {
         "title": "Reise Ausführen",
         "desc": "Starte in die Welt mit Echtzeit-Intelligenz und Sicherheitsknoten."
-      }
+      },
+      "operationalFlowBadge": "Operational Flow",
+      "step1Title": "SCAN",
+      "step1Desc": "Input your neural preferences and travel constraints.",
+      "step2Title": "SYNTHESIZE",
+      "step2Desc": "Our multi-agent grid generates thousands of permutations.",
+      "step3Title": "EXECUTE",
+      "step3Desc": "Deploy your itinerary with real-time AR/VR support.",
+      "realtimeOptimizationBadge": "Real-time Optimization",
+      "realtimeOptimizationDesc": "Grid adjusted for weather patterns in Tokyo. Recalculating route..."
     },
     "cta": {
       "badge": "Tritt dem Netzwerk bei",
       "title": "BEREIT, DEINE WELT NEU ZU CODIEREN?",
       "subtitle": "Tritt dem Netzwerk moderner Entdecker bei, die unendliche Intelligenz nutzen.",
       "start": "Netzwerk Beitreten",
-      "feed": "Globaler Feed"
+      "feed": "Globaler Feed",
+      "readyToRecodeTitle": "READY TO RECODE?",
+      "titlePart2": "RECODE?",
+      "readyToRecodeSubtitle": "Join 50,000+ digital nomads who have already synthesized their reality.",
+      "signUpNowButton": "SIGN UP NOW",
+      "loginButton": "LOGIN"
     }
   },
   "header": {
@@ -165,7 +205,7 @@
     "gearArchitect": "Ausrüstungs-Architekt",
     "jetLag": "Jetlag-Logik",
     "digitalTailor": "Digitaler Schneider",
-    "translator": "Sprachlabor",
+    "translator": "Linguistik-Labor",
     "corporate": "Unternehmensmodus",
     "dashboard": "Dashboard",
     "budgetSynthesis": "Budget-Synthese",
@@ -426,7 +466,7 @@
         "loyaltyValue": "Gold-Belohnungen"
       },
       "sovereign": {
-        "name": "Sovereign",
+        "name": "Souverän",
         "description": "Unbegrenzter Zugang mit Synthese auf Kulturerbe-Niveau.",
         "price": "49 €",
         "itinerariesValue": "Unendliche Odysseen",

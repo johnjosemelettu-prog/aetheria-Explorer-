@@ -39,7 +39,16 @@
       "genericError": "क्रेडेंशियल सत्यापित करने में असमर्थ।",
       "invalidCredentials": "अमान्य ईमेल पता या सुरक्षा कुंजी।",
       "operationNotAllowed": "साइन-इन वर्तमान में प्रतिबंधित है।"
-    }
+    },
+    "validation": {
+      "email": "Please enter a valid network address.",
+      "passwordMinLength": "Security key must be at least 6 characters."
+    },
+    "cardDescription": "Access your Odyssey Grid",
+    "authChannels": "Auth Channels",
+    "googleButton": "Google",
+    "appleButton": "Apple",
+    "biometricLoginButton": "Biometric Login"
   },
   "signup": {
     "title": "खाता बनाएं",
@@ -69,7 +78,14 @@
       "cta": {
         "start": "यात्रा प्रारंभ करें",
         "signin": "नोड एक्सेस करें"
-      }
+      },
+      "neuralNetworkOnline": "NEURAL NETWORK ONLINE",
+      "tagline1": "The first AI-native travel ecosystem for the digital nomad.",
+      "tagline2": "Synthesize your journey. Recode your reality.",
+      "enterGridButton": "ENTER GRID",
+      "signUpButton": "SIGN UP",
+      "loginButton": "LOGIN",
+      "scrollRecode": "Scroll to Recode"
     },
     "features": {
       "chapter": "प्रोटोकॉल अध्याय 01",
@@ -94,7 +110,10 @@
         "badge": "उपयोगिता",
         "title": "कुछ नहीं भूला एजेंट",
         "desc": "जलवायु और यात्रा कार्यक्रम नोड्स के अनुरूप सक्रिय पैकिंग संश्लेषण।"
-      }
+      },
+      "titlePart2": "MODULES.",
+      "quote": "We don't just plan trips. We synthesize experiences using multi-agent neural grids.",
+      "initializeButton": "Initialize"
     },
     "workflow": {
       "badge": "परिचालन प्रोटोकॉल",
@@ -111,14 +130,28 @@
       "step3": {
         "title": "यात्रा निष्पादित करें",
         "desc": "वास्तविक समय की बुद्धिमत्ता और सुरक्षा नोड्स के साथ दुनिया में लॉन्च करें।"
-      }
+      },
+      "operationalFlowBadge": "Operational Flow",
+      "step1Title": "SCAN",
+      "step1Desc": "Input your neural preferences and travel constraints.",
+      "step2Title": "SYNTHESIZE",
+      "step2Desc": "Our multi-agent grid generates thousands of permutations.",
+      "step3Title": "EXECUTE",
+      "step3Desc": "Deploy your itinerary with real-time AR/VR support.",
+      "realtimeOptimizationBadge": "Real-time Optimization",
+      "realtimeOptimizationDesc": "Grid adjusted for weather patterns in Tokyo. Recalculating route..."
     },
     "cta": {
       "badge": "नेटवर्क में शामिल हों",
       "title": "अपनी दुनिया को फिर से कोड करने के लिए तैयार हैं?",
       "subtitle": "अनंत बुद्धिमत्ता का उपयोग करने वाले आधुनिक खोजकर्ताओं के नेटवर्क में शामिल हों।",
       "start": "नेटवर्क से जुड़ें",
-      "feed": "वैश्विक फ़ीड"
+      "feed": "वैश्विक फ़ीड",
+      "readyToRecodeTitle": "READY TO RECODE?",
+      "titlePart2": "RECODE?",
+      "readyToRecodeSubtitle": "Join 50,000+ digital nomads who have already synthesized their reality.",
+      "signUpNowButton": "SIGN UP NOW",
+      "loginButton": "LOGIN"
     }
   },
   "header": {

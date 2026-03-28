@@ -150,7 +150,7 @@ export default function Home() {
                   transition={{ duration: 0.5 }}
               >
                 <Badge variant="outline" className="mb-2 px-6 py-2 border-white/10 text-white font-black tracking-[0.4em] uppercase bg-white/5 backdrop-blur-2xl rounded-full text-[10px]">
-                  <Cpu className="mr-2 h-3 w-3 text-primary animate-pulse" /> NEURAL NETWORK ONLINE
+                  <Cpu className="mr-2 h-3 w-3 text-primary animate-pulse" /> {t('home.hero.neuralNetworkOnline')}
                 </Badge>
               </motion.div>
 
@@ -177,8 +177,8 @@ export default function Home() {
                   transition={{ delay: 0.2, duration: 0.5 }}
                   className="max-w-3xl text-lg sm:text-2xl text-slate-300 mb-8 font-black tracking-tight leading-none uppercase italic"
               >
-                The first AI-native travel ecosystem for the digital nomad. <br className="hidden sm:block" />
-                <span className="text-white">Synthesize your journey. Recode your reality.</span>
+                {t('home.hero.tagline1')} <br className="hidden sm:block" />
+                <span className="text-white">{t('home.hero.tagline2')}</span>
               </motion.p>
 
               <motion.div
@@ -190,16 +190,16 @@ export default function Home() {
                 {user ? (
                     <Button asChild size="lg" className="h-16 sm:h-24 px-8 sm:px-16 rounded-full bg-white text-black hover:bg-slate-200 shadow-2xl font-black text-lg sm:text-2xl group active:scale-95 transition-all w-full sm:w-auto uppercase italic">
                       <Link href="/dashboard" className="flex items-center gap-3">
-                        ENTER GRID <ArrowUpRight className="h-6 w-6 sm:h-8 sm:w-8 group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform" />
+                        {t('home.hero.enterGridButton')} <ArrowUpRight className="h-6 w-6 sm:h-8 sm:w-8 group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform" />
                       </Link>
                     </Button>
                 ) : (
                     <>
                       <Button asChild size="lg" className="h-16 sm:h-24 px-8 sm:px-16 rounded-full bg-primary text-white hover:bg-primary/90 shadow-2xl animate-glow-pulse font-black text-lg sm:text-2xl transition-all hover:scale-105 active:scale-95 w-full sm:w-auto uppercase italic">
-                        <Link href="/signup">SIGN UP</Link>
+                        <Link href="/signup">{t('home.hero.signUpButton')}</Link>
                       </Button>
                       <Button asChild size="lg" variant="outline" className="h-16 sm:h-24 px-8 sm:px-16 rounded-full border-white/60 bg-white/20 hover:bg-white/30 text-white font-black text-lg sm:text-2xl backdrop-blur-3xl transition-all hover:scale-105 active:scale-95 w-full sm:w-auto uppercase italic shadow-lg">
-                        <Link href="/login">LOGIN</Link>
+                        <Link href="/login">{t('home.hero.loginButton')}</Link>
                       </Button>
                     </>
                 )}
@@ -210,7 +210,7 @@ export default function Home() {
                 style={{ opacity }}
                 className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4"
             >
-              <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white/40">Scroll to Recode</span>
+              <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white/40">{t('home.hero.scrollRecode')}</span>
               <motion.div
                   animate={{ y: [0, 10, 0] }}
                   transition={{ duration: 2, repeat: Infinity }}
@@ -224,14 +224,14 @@ export default function Home() {
             <div className="container mx-auto px-4">
               <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
                 <div className="max-w-3xl">
-                  <Badge className="bg-primary/10 text-primary border-none font-black px-4 py-1 uppercase tracking-[0.3em] mb-6 text-[10px] rounded-full">Protocol Chapter 01</Badge>
+                  <Badge className="bg-primary/10 text-primary border-none font-black px-4 py-1 uppercase tracking-[0.3em] mb-6 text-[10px] rounded-full">{t('home.features.chapter')}</Badge>
                   <h2 className="font-headline text-5xl md:text-7xl font-black text-white tracking-tighter leading-[0.75] uppercase italic">
-                    NEURAL <br />
-                    <span className="text-primary">MODULES.</span>
+                    {t('home.features.title')} <br />
+                    <span className="text-primary">{t('home.features.titlePart2')}</span>
                   </h2>
                 </div>
                 <p className="text-slate-400 text-xl max-w-sm font-black italic leading-none uppercase">
-                  "We don't just plan trips. We synthesize experiences using multi-agent neural grids."
+                  {t('home.features.quote')}
                 </p>
               </div>
 
@@ -257,7 +257,7 @@ export default function Home() {
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10" />
 
                       <div className="absolute inset-0 p-8 flex flex-col justify-between z-20">
-                        <div className={cn("h-12 w-12 rounded-2xl flex items-center justify-center text-white shadow-2xl", feature.color)}>
+                        <div className={cn("h-12 w-12 rounded-2xl bg-primary flex items-center justify-center text-white shadow-2xl", feature.color)}>
                           <feature.icon className="h-6 w-6" />
                         </div>
 
@@ -270,7 +270,7 @@ export default function Home() {
                             {t(feature.descKey)}
                           </p>
                           <Link href={feature.link} className="mt-4 flex items-center gap-2 text-primary font-black uppercase text-[10px] tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                            Initialize <ArrowUpRight className="h-4 w-4" />
+                            {t('home.features.initializeButton')} <ArrowUpRight className="h-4 w-4" />
                           </Link>
                         </div>
                       </div>
@@ -285,22 +285,22 @@ export default function Home() {
             <div className="container mx-auto px-4">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                 <div>
-                  <span className="text-[12px] font-black uppercase tracking-[0.5em] text-primary mb-8 block">Operational Flow</span>
+                  <span className="text-[12px] font-black uppercase tracking-[0.5em] text-primary mb-8 block">{t('home.workflow.operationalFlowBadge')}</span>
                   <h2 className="font-headline text-5xl md:text-7xl font-black tracking-tighter leading-[0.8] uppercase italic mb-12">
-                    HOW IT <br />
-                    <span className="text-primary">WORKS.</span>
+                    {t('home.workflow.title')} <br />
+                    <span className="text-primary">{t('home.workflow.titlePart2')}</span>
                   </h2>
                   <div className="space-y-8">
                     {[
-                      { id: "01", title: "SCAN", desc: "Input your neural preferences and travel constraints." },
-                      { id: "02", title: "SYNTHESIZE", desc: "Our multi-agent grid generates thousands of permutations." },
-                      { id: "03", title: "EXECUTE", desc: "Deploy your itinerary with real-time AR/VR support." }
+                      { id: "01", titleKey: "home.workflow.step1Title", descKey: "home.workflow.step1Desc" },
+                      { id: "02", titleKey: "home.workflow.step2Title", descKey: "home.workflow.step2Desc" },
+                      { id: "03", titleKey: "home.workflow.step3Title", descKey: "home.workflow.step3Desc" }
                     ].map((step, i) => (
                         <div key={i} className="flex gap-8 group">
                           <span className="font-headline text-4xl font-black text-primary/20 group-hover:text-primary transition-colors">{step.id}</span>
                           <div>
-                            <h3 className="text-2xl font-black uppercase italic mb-2">{step.title}</h3>
-                            <p className="text-slate-600 font-medium max-w-md">{step.desc}</p>
+                            <h3 className="text-2xl font-black uppercase italic mb-2">{t(step.titleKey)}</h3>
+                            <p className="text-slate-600 font-medium max-w-md">{t(step.descKey)}</p>
                           </div>
                         </div>
                     ))}
@@ -313,7 +313,7 @@ export default function Home() {
                         src="https://picsum.photos/seed/cyberpunk/1000/1000"
                         alt="Process"
                         fill
-                        className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
+                        className="object-cover transition-transform duration-1000 group-hover:scale-110 grayscale opacity-40 group-hover:opacity-100 group-hover:grayscale-0"
                     />
                     <div className="absolute inset-0 bg-primary/10 mix-blend-overlay" />
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -337,9 +337,9 @@ export default function Home() {
                       <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center">
                         <Zap className="h-5 w-5" />
                       </div>
-                      <span className="font-black uppercase text-[10px] tracking-widest">Real-time Optimization</span>
+                      <span className="font-black uppercase text-[10px] tracking-widest">{t('home.workflow.realtimeOptimizationBadge')}</span>
                     </div>
-                    <p className="text-slate-400 text-sm font-medium">"Grid adjusted for weather patterns in Tokyo. Recalculating route..."</p>
+                    <p className="text-slate-400 text-sm font-medium">{t('home.workflow.realtimeOptimizationDesc')}</p>
                   </motion.div>
                 </div>
               </div>
@@ -350,7 +350,7 @@ export default function Home() {
           <section className="relative py-32 overflow-hidden bg-slate-950 min-h-[60vh] flex items-center">
             <div className="absolute inset-0 opacity-20">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--color-primary)_0%,transparent_70%)]" />
-            </div>
+            </motion.div>
 
             <div className="container mx-auto px-4 relative z-10 text-center">
               <motion.div
@@ -360,19 +360,19 @@ export default function Home() {
                   className="max-w-4xl mx-auto"
               >
                 <h2 className="font-headline text-5xl md:text-7xl font-black text-white tracking-tighter leading-[0.8] uppercase italic mb-4">
-                  READY TO <br />
-                  <span className="text-primary">RECODE?</span>
+                  {t('home.cta.readyToRecodeTitle')} <br />
+                  <span className="text-primary">{t('home.cta.titlePart2')}</span>
                 </h2>
                 <p className="text-slate-400 text-xl mb-6 font-medium italic">
-                  Join 50,000+ digital nomads who have already synthesized their reality.
+                  {t('home.cta.readyToRecodeSubtitle')}
                 </p>
 
                 <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
                   <Button asChild size="lg" className="h-16 sm:h-24 px-8 sm:px-16 rounded-full bg-primary text-white hover:bg-primary/90 shadow-2xl animate-glow-pulse font-black text-lg sm:text-2xl transition-all hover:scale-105 active:scale-95">
-                    <Link href="/signup">SIGN UP NOW</Link>
+                    <Link href="/signup">{t('home.cta.signUpNowButton')}</Link>
                   </Button>
-                  <Button asChild size="lg" variant="outline" className="h-16 sm:h-24 px-8 sm:px-16 rounded-full border-white/20 bg-white/10 hover:bg-white/20 text-white font-black text-lg sm:text-2xl backdrop-blur-xl transition-all hover:scale-105 active:scale-95 shadow-lg">
-                    <Link href="/login">LOGIN</Link>
+                  <Button asChild size="lg" variant="outline" className="h-16 sm:h-24 px-8 sm:px-16 rounded-full border-white/60 bg-white/20 hover:bg-white/30 text-white font-black text-lg sm:text-2xl backdrop-blur-3xl transition-all hover:scale-105 active:scale-95 w-full sm:w-auto uppercase italic shadow-lg">
+                    <Link href="/login">{t('home.cta.loginButton')}</Link>
                   </Button>
                 </div>
               </motion.div>

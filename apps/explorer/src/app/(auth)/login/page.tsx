@@ -33,13 +33,6 @@ import { FirebaseError } from "firebase/app"
 import { useTranslation } from "@/lib/i18n"
 import { ShieldAlert, Eye, EyeOff, Fingerprint } from "lucide-react"
 
-const loginSchema = z.object({
-  email: z.string().email({ message: "Please enter a valid network address." }),
-  password: z
-    .string()
-    .min(6, { message: "Security key must be at least 6 characters." }),
-})
-
 export default function LoginPage() {
   const [isLoading, setIsLoading] = useState(false)
   const [showPassword, setShowPassword] = useState(false)
@@ -50,6 +43,13 @@ export default function LoginPage() {
   const { auth } = useFirebase()
   const { t } = useTranslation()
   const { handleOAuthSignIn, isOAuthLoading } = useOAuthSignIn()
+
+  const loginSchema = z.object({
+    email: z.string().email({ message: t("login.validation.email") }),
+    password: z
+      .string()
+      .min(6, { message: t("login.validation.passwordMinLength") }),
+  })
 
   const loginForm = useForm<z.infer<typeof loginSchema>>({
     resolver: zodResolver(loginSchema),
@@ -75,8 +75,8 @@ export default function LoginPage() {
     if (!auth) {
       toast({
         variant: "destructive",
-        title: "System Node Offline",
-        description: "The authentication service is not yet initialized.",
+        title: t("login.toast.systemNodeOfflineTitle"),
+        description: t("login.toast.systemNodeOfflineDescription"),
       })
       return
     }
@@ -84,8 +84,8 @@ export default function LoginPage() {
     if (!Capacitor.isNativePlatform()) {
       toast({
         variant: "destructive",
-        title: "Unsupported Feature",
-        description: "Biometric login is only available on mobile devices.",
+        title: t("login.toast.unsupportedFeatureTitle"),
+        description: t("login.toast.unsupportedFeatureDescription"),
       });
       return;
     }
@@ -108,8 +108,8 @@ export default function LoginPage() {
       console.error(error);
       toast({
         variant: "destructive",
-        title: "Biometric Login Failed",
-        description: "Could not log in with biometric credentials.",
+        title: t("login.toast.biometricLoginFailedTitle"),
+        description: t("login.toast.biometricLoginFailedDescription"),
       });
     } finally {
       setIsLoading(false);
@@ -120,8 +120,8 @@ export default function LoginPage() {
     if (!auth) {
       toast({
         variant: "destructive",
-        title: "System Node Offline",
-        description: "The authentication service is not yet initialized.",
+        title: t("login.toast.systemNodeOfflineTitle"),
+        description: t("login.toast.systemNodeOfflineDescription"),
       })
       return
     }
@@ -171,13 +171,13 @@ export default function LoginPage() {
     <div className="container flex min-h-screen items-center justify-center py-12">
       <Card className="w-full max-w-md border-none shadow-2xl rounded-[2.5rem] overflow-hidden bg-white">
         <CardHeader className="text-center bg-slate-950 text-white p-10">
-          <div className="mx-auto h-12 w-12 bg-primary rounded-xl flex items-center justify-center mb-4">
+          <div className="mx-auto h-12 w-12 bg-primary rounded-xl flex items-center justify-normal">
             <ShieldAlert className="text-white h-6 w-6" />
           </div>
           <CardTitle className="font-headline text-3xl font-black uppercase tracking-tighter italic">
             {t("login.title")}
           </CardTitle>
-          <CardDescription className="text-slate-400 font-medium">Access your Odyssey Grid</CardDescription>
+          <CardDescription className="text-slate-400 font-medium">{t("login.cardDescription")}</CardDescription>
         </CardHeader>
         <CardContent className="p-10">
           <Form {...loginForm}>
@@ -246,7 +246,7 @@ export default function LoginPage() {
             </div>
             <div className="relative flex justify-center text-[10px] uppercase">
               <span className="bg-white px-2 text-slate-300 font-black tracking-widest">
-                Auth Channels
+                {t("login.authChannels")}
               </span>
             </div>
           </div>
@@ -258,7 +258,7 @@ export default function LoginPage() {
               disabled={anyLoading}
               className="rounded-xl h-12 font-bold border-2"
             >
-              Google
+              {t("login.googleButton")}
             </Button>
             <Button
               variant="outline"
@@ -266,7 +266,7 @@ export default function LoginPage() {
               disabled={anyLoading}
               className="rounded-xl h-12 font-bold border-2"
             >
-              Apple
+              {t("login.appleButton")}
             </Button>
           </div>
           {isBiometricAvailable && (
@@ -278,7 +278,7 @@ export default function LoginPage() {
                 className="w-full rounded-xl h-12 font-bold border-2 flex items-center justify-center gap-2"
               >
                 <Fingerprint className="h-5 w-5" />
-                <span>Biometric Login</span>
+                <span>{t("login.biometricLoginButton")}</span>
               </Button>
             </div>
           )}

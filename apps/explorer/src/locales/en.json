@@ -19,7 +19,8 @@
     "locked": "Locked",
     "authorized": "Authorized",
     "error": "Error",
-    "returnToDashboard": "Return to Command Center"
+    "returnToDashboard": "Return to Command Center",
+    "apps": "Apps"
   },
   "login": {
     "title": "Sign In",
@@ -37,8 +38,23 @@
       "errorTitle": "Login Failed",
       "genericError": "Unable to verify credentials.",
       "invalidCredentials": "Invalid email address or security key.",
-      "operationNotAllowed": "Sign-in is currently restricted."
-    }
+      "operationNotAllowed": "Sign-in is currently restricted.",
+      "systemNodeOfflineTitle": "System Node Offline",
+      "systemNodeOfflineDescription": "The authentication service is not yet initialized.",
+      "unsupportedFeatureTitle": "Unsupported Feature",
+      "unsupportedFeatureDescription": "Biometric login is only available on mobile devices.",
+      "biometricLoginFailedTitle": "Biometric Login Failed",
+      "biometricLoginFailedDescription": "Could not log in with biometric credentials."
+    },
+    "validation": {
+      "email": "Please enter a valid network address.",
+      "passwordMinLength": "Security key must be at least 6 characters."
+    },
+    "cardDescription": "Access your Odyssey Grid",
+    "authChannels": "Auth Channels",
+    "googleButton": "Google",
+    "appleButton": "Apple",
+    "biometricLoginButton": "Biometric Login"
   },
   "signup": {
     "title": "Create Account",
@@ -68,7 +84,14 @@
       "cta": {
         "start": "Initialize Journey",
         "signin": "Access Node"
-      }
+      },
+      "neuralNetworkOnline": "NEURAL NETWORK ONLINE",
+      "tagline1": "The first AI-native travel ecosystem for the digital nomad.",
+      "tagline2": "Synthesize your journey. Recode your reality.",
+      "enterGridButton": "ENTER GRID",
+      "signUpButton": "SIGN UP",
+      "loginButton": "LOGIN",
+      "scrollRecode": "Scroll to Recode"
     },
     "features": {
       "chapter": "Protocol Chapter 01",
@@ -93,7 +116,10 @@
         "badge": "Utility",
         "title": "Forgot Nothing Agent",
         "desc": "Proactive packing synthesis tailored to climate and itinerary nodes."
-      }
+      },
+      "titlePart2": "MODULES.",
+      "quote": "We don't just plan trips. We synthesize experiences using multi-agent neural grids.",
+      "initializeButton": "Initialize"
     },
     "workflow": {
       "badge": "Operational Protocol",
@@ -110,14 +136,28 @@
       "step3": {
         "title": "Execute Journey",
         "desc": "Launch into the world with real-time intelligence and safety nodes."
-      }
+      },
+      "operationalFlowBadge": "Operational Flow",
+      "step1Title": "SCAN",
+      "step1Desc": "Input your neural preferences and travel constraints.",
+      "step2Title": "SYNTHESIZE",
+      "step2Desc": "Our multi-agent grid generates thousands of permutations.",
+      "step3Title": "EXECUTE",
+      "step3Desc": "Deploy your itinerary with real-time AR/VR support.",
+      "realtimeOptimizationBadge": "Real-time Optimization",
+      "realtimeOptimizationDesc": "Grid adjusted for weather patterns in Tokyo. Recalculating route..."
     },
     "cta": {
       "badge": "Join the Network",
       "title": "READY TO RECODE YOUR WORLD?",
       "subtitle": "Join the network of modern explorers using infinite intelligence.",
       "start": "Join Network",
-      "feed": "Global Feed"
+      "feed": "Global Feed",
+      "readyToRecodeTitle": "READY TO RECODE?",
+      "titlePart2": "RECODE?",
+      "readyToRecodeSubtitle": "Join 50,000+ digital nomads who have already synthesized their reality.",
+      "signUpNowButton": "SIGN UP NOW",
+      "loginButton": "LOGIN"
     }
   },
   "header": {
@@ -187,7 +227,12 @@
     "promo": {
       "spotlights": "Partner Spotlights",
       "verified": "Verified Partners"
-    }
+    },
+    "journeySynthesized": "Journey Synthesized",
+    "sosButton": "SOS",
+    "loginButton": "LOGIN",
+    "signUpButton": "SIGN UP",
+    "linguisticGrid": "Linguistic Grid"
   },
   "explorerQuests": {
     "title": "Explorer Quests",
@@ -307,7 +352,23 @@
     "globalConnect": "Global Connect",
     "allRightsReserved": "© {year} Aetheria AI Intelligence Systems. All rights reserved.",
     "supportHub": "Support Hub",
-    "partnerNetwork": "Partner Network"
+    "partnerNetwork": "Partner Network",
+    "journeySynthesized": "Journey Synthesized",
+    "tagline": "\"The future of travel isn't just about where you go, but how you synthesize the reality of your journey.\"",
+    "protocolsCategory": "Protocols",
+    "termsLink": "Terms",
+    "privacyLink": "Privacy",
+    "securityLink": "Security",
+    "networkCategory": "Network",
+    "legalLink": "Legal",
+    "brochureLink": "Brochure",
+    "partnersLink": "Partners",
+    "supportCategory": "Support",
+    "contactLink": "Hub",
+    "faqLink": "FAQ",
+    "allSystemsOperationalStatus": "All Systems Operational",
+    "aetheriaAi": "Aetheria AI",
+    "poweredBy": "Powered by Aetheria Neural Grid"
   },
   "profile": {
     "saveSuccessTitle": "Profile Synchronized",
@@ -501,9 +562,5 @@
   },
   "trips": {
     "travelStyle": "Travel Style"
-  },
-  "common": {
-    "verified": "Verified",
-    "error": "Error"
   }
 }

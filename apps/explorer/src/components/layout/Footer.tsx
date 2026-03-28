@@ -37,11 +37,11 @@ export function Footer() {
                     <span className="font-headline text-4xl font-black tracking-tighter uppercase italic text-white leading-none">
                       AETHERIA<span className="text-primary">AI</span>
                     </span>
-                                        <span className="text-[8px] font-black uppercase tracking-[0.4em] text-white/40 mt-1">Journey Synthesized</span>
+                                        <span className="text-[8px] font-black uppercase tracking-[0.4em] text-white/40">{t('footer.journeySynthesized')}</span>
                                     </div>
                                 </Link>
                                 <p className="text-slate-400 text-xl font-black italic leading-none uppercase mb-12">
-                                    "The future of travel isn't just about where you go, but how you synthesize the reality of your journey."
+                                    {t('footer.tagline')}
                                 </p>
                                 <div className="flex items-center gap-4">
                                     <Button variant="ghost" size="icon" className="h-14 w-14 rounded-2xl bg-white/5 hover:bg-primary hover:text-white transition-all border border-white/5 group">
@@ -58,28 +58,28 @@ export function Footer() {
 
                             <div className="grid grid-cols-2 sm:grid-cols-3 gap-12 lg:gap-24">
                                 <div className="space-y-6">
-                                    <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-primary">Protocols</h4>
+                                    <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-primary">{t('footer.protocolsCategory')}</h4>
                                     <ul className="space-y-4">
-                                        <li><Link href="/terms" className="text-slate-400 hover:text-white font-black uppercase text-[11px] tracking-widest transition-colors flex items-center gap-2 group">Terms <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
-                                        <li><Link href="/privacy" className="text-slate-400 hover:text-white font-black uppercase text-[11px] tracking-widest transition-colors flex items-center gap-2 group">Privacy <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
-                                        <li><Link href="/data-security" className="text-slate-400 hover:text-white font-black uppercase text-[11px] tracking-widest transition-colors flex items-center gap-2 group">Security <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+                                        <li><Link href="/terms" className="text-slate-400 hover:text-white font-black uppercase text-[11px] tracking-widest transition-colors flex items-center gap-2 group">{t('footer.termsLink')} <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+                                        <li><Link href="/privacy" className="text-slate-400 hover:text-white font-black uppercase text-[11px] tracking-widest transition-colors flex items-center gap-2 group">{t('footer.privacyLink')} <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+                                        <li><Link href="/data-security" className="text-slate-400 hover:text-white font-black uppercase text-[11px] tracking-widest transition-colors flex items-center gap-2 group">{t('footer.securityLink')} <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
                                     </ul>
                                 </div>
 
                                 <div className="space-y-6">
-                                    <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-primary">Network</h4>
+                                    <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-primary">{t('footer.networkCategory')}</h4>
                                     <ul className="space-y-4">
-                                        <li><Link href="/legal" className="text-slate-400 hover:text-white font-black uppercase text-[11px] tracking-widest transition-colors flex items-center gap-2 group">Legal <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
-                                        <li><Link href="/brochure" className="text-slate-400 hover:text-white font-black uppercase text-[11px] tracking-widest transition-colors flex items-center gap-2 group">Brochure <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
-                                        <li><Link href="/partners" className="text-slate-400 hover:text-white font-black uppercase text-[11px] tracking-widest transition-colors flex items-center gap-2 group">Partners <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+                                        <li><Link href="/legal" className="text-slate-400 hover:text-white font-black uppercase text-[11px] tracking-widest transition-colors flex items-center gap-2 group">{t('footer.legalLink')} <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+                                        <li><Link href="/brochure" className="text-slate-400 hover:text-white font-black uppercase text-[11px] tracking-widest transition-colors flex items-center gap-2 group">{t('footer.brochureLink')} <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+                                        <li><Link href="/partners" className="text-slate-400 hover:text-white font-black uppercase text-[11px] tracking-widest transition-colors flex items-center gap-2 group">{t('footer.partnersLink')} <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
                                     </ul>
                                 </div>
 
                                 <div className="space-y-6">
-                                    <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-primary">Support</h4>
+                                    <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-primary">{t('footer.supportCategory')}</h4>
                                     <ul className="space-y-4">
-                                        <li><Link href="/contact" className="text-slate-400 hover:text-white font-black uppercase text-[11px] tracking-widest transition-colors flex items-center gap-2 group">Hub <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
-                                        <li><Link href="/faq" className="text-slate-400 hover:text-white font-black uppercase text-[11px] tracking-widest transition-colors flex items-center gap-2 group">FAQ <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+                                        <li><Link href="/contact" className="text-slate-400 hover:text-white font-black uppercase text-[11px] tracking-widest transition-colors flex items-center gap-2 group">{t('footer.contactLink')} <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
+                                        <li><Link href="/faq" className="text-slate-400 hover:text-white font-black uppercase text-[11px] tracking-widest transition-colors flex items-center gap-2 group">{t('footer.faqLink')} <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" /></Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -89,13 +89,13 @@ export function Footer() {
                             <div className="flex items-center gap-4">
                                 <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
                                 <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">
-                                    All Systems Operational • {currentYear} Aetheria AI
+                                    {t('footer.allSystemsOperationalStatus')} • {currentYear} {t('footer.aetheriaAi')}
                                 </p>
                             </div>
 
                             <div className="flex items-center gap-3 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer group">
                                 <Zap className="h-5 w-5 text-primary group-hover:animate-pulse" />
-                                <span className="font-headline font-black text-sm tracking-tighter uppercase text-white italic">Powered by Aetheria Neural Grid</span>
+                                <span className="font-headline font-black text-sm tracking-tighter uppercase text-white italic">{t('footer.poweredBy')}</span>
                             </div>
                         </div>
                     </>
