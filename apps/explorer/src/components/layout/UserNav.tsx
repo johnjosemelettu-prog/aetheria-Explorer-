@@ -53,16 +53,16 @@ export function UserNav() {
     try {
       await signOut(auth)
       toast({
-        title: t('userNav.toast.logoutSuccessTitle' as any) || 'Session Terminated',
-        description: t('userNav.toast.logoutSuccessDescription' as any) || 'Your Aetheria node is now offline.',
+        title: t('userNav.toast.logoutSuccessTitle'),
+        description: t('userNav.toast.logoutSuccessDescription'),
       })
       router.push('/login')
     } catch (error) {
       console.error('Error signing out:', error)
       toast({
         variant: 'destructive',
-        title: 'Sign Out Error',
-        description: 'Failed to terminate the neural link.',
+        title: t('userNav.toast.signOutErrorTitle'),
+        description: t('userNav.toast.signOutErrorDescription'),
       })
     }
   }
@@ -116,21 +116,21 @@ export function UserNav() {
             <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-primary/5">
               <Link href="/dashboard" className="flex items-center gap-3">
                 <LayoutDashboard className="h-4 w-4 text-primary" />
-                <span className="text-[10px] font-black uppercase tracking-widest">Explorer Hub</span>
+                <span className="text-[10px] font-black uppercase tracking-widest">{t('userNav.explorerHub')}</span>
               </Link>
             </DropdownMenuItem>
 
             <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-primary/5">
               <Link href="/trips" className="flex items-center gap-3">
                 <Calendar className="h-4 w-4 text-primary" />
-                <span className="text-[10px] font-black uppercase tracking-widest">Manage Bookings</span>
+                <span className="text-[10px] font-black uppercase tracking-widest">{t('userNav.manageBookings')}</span>
               </Link>
             </DropdownMenuItem>
 
             <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-primary/5">
               <Link href="/subscription" className="flex items-center gap-3">
                 <ArrowUpCircle className="h-4 w-4 text-primary" />
-                <span className="text-[10px] font-black uppercase tracking-widest">Upgrade Subscription</span>
+                <span className="text-[10px] font-black uppercase tracking-widest">{t('userNav.upgradeSubscription')}</span>
               </Link>
             </DropdownMenuItem>
 
@@ -138,7 +138,7 @@ export function UserNav() {
                 <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-primary/5">
                   <Link href="/admin" className="flex items-center gap-3">
                     <Shield className="h-4 w-4 text-primary" />
-                    <span className="text-[10px] font-black uppercase tracking-widest">Admin Console</span>
+                    <span className="text-[10px] font-black uppercase tracking-widest">{t('userNav.adminConsole')}</span>
                   </Link>
                 </DropdownMenuItem>
             )}
@@ -147,7 +147,7 @@ export function UserNav() {
                 <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-emerald-500/5">
                   <Link href="/vendor/dashboard" className="flex items-center gap-3">
                     <Store className="h-4 w-4 text-emerald-600" />
-                    <span className="text-[10px] font-black uppercase tracking-widest">Partner Hub</span>
+                    <span className="text-[10px] font-black uppercase tracking-widest">{t('userNav.partnerHub')}</span>
                   </Link>
                 </DropdownMenuItem>
             )}
@@ -155,7 +155,7 @@ export function UserNav() {
             <DropdownMenuItem asChild className="rounded-xl cursor-pointer p-3 focus:bg-primary/5">
               <Link href="/profile" className="flex items-center gap-3">
                 <UserIcon className="h-4 w-4 text-muted-foreground" />
-                <span className="text-[10px] font-black uppercase tracking-widest">Identity Node</span>
+                <span className="text-[10px] font-black uppercase tracking-widest">{t('userNav.identityNode')}</span>
               </Link>
             </DropdownMenuItem>
           </DropdownMenuGroup>
@@ -164,7 +164,7 @@ export function UserNav() {
 
           <DropdownMenuItem onClick={handleLogout} className="rounded-xl cursor-pointer p-3 text-destructive focus:text-destructive focus:bg-destructive/5 transition-colors">
             <LogOut className="h-4 w-4 mr-3" />
-            <span className="text-[10px] font-black uppercase tracking-widest">Terminate Session</span>
+            <span className="text-[10px] font-black uppercase tracking-widest">{t('userNav.terminateSession')}</span>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
