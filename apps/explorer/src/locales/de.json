@@ -287,7 +287,7 @@
     },
     "step3": {
       "title": "Terminal-Netzwerk",
-      "description": "Echtzeit-Verbindungsknoten in deiner Nähe aktiv.",
+    "description": "Echtzeit-Verbindungsknoten in deiner Nähe aktiv.",
       "nearbyTab": "In der Nähe",
       "arViewTab": "AR-Ansicht",
       "sameFlight": "Gleicher Flug",
@@ -354,6 +354,8 @@
       }
     },
     "interests": {
+      "title": "Interests",
+      "description": "Select your primary travel interests.",
       "items": {
         "history": "Geschichte",
         "food": "Kulinarik",
@@ -370,7 +372,24 @@
     "title": "Odyssee-Architekt",
     "subtitle": "Synthetisiere eine mehrtägige Reise basierend auf deinem psychologischen Vibe.",
     "authError": "Autorisierungsknoten Offline",
-    "authErrorDesc": "Bitte melde dich an, um eine Odyssee zu synthetisieren."
+    "authErrorDesc": "Bitte melde dich an, um eine Odyssee zu synthetisieren.",
+    "form": {
+      "title": "Plan Your Odyssey",
+      "description": "Provide details for your personalized travel plan.",
+      "generateButton": "Generate Odyssey",
+      "destinationLabel": "Destination",
+      "destinationPlaceholder": "e.g. Paris, France",
+      "datesLabel": "Dates",
+      "pickDateRange": "Pick a date range",
+      "budgetLabel": "Budget",
+      "budgetPlaceholder": "Select your budget level",
+      "budgetLow": "Low",
+      "budgetMedium": "Medium",
+      "budgetHigh": "High",
+      "vibeLabel": "Travel Vibe",
+      "vibePlaceholder": "Describe your ideal travel experience",
+      "vibeDescription": "e.g. 'Relaxed and cultural' or 'Adventurous and off-the-beaten-path'"
+    }
   },
   "subscription": {
     "badge": "Währungsprotokoll",
@@ -479,5 +498,8 @@
       "title": "Vibe-Radar",
       "desc": "Scannen von {vibe} Vibes in {location}."
     }
+  },
+  "trips": {
+    "travelStyle": "Travel Style"
   }
 }

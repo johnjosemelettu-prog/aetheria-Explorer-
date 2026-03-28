@@ -19,7 +19,8 @@
     "locked": "Bloccato",
     "authorized": "Autorizzato",
     "error": "Errore",
-    "returnToDashboard": "Torna al Centro di Comando"
+    "returnToDashboard": "Torna al Centro di Comando",
+    "apps": "Apps"
   },
   "login": {
     "title": "Accedi",
@@ -354,6 +355,8 @@
       }
     },
     "interests": {
+      "title": "Interessi",
+      "description": "Seleziona i tuoi interessi di viaggio principali.",
       "items": {
         "history": "Storia",
         "food": "Culinaria",
@@ -370,7 +373,24 @@
     "title": "Architetto di Odissee",
     "subtitle": "Sintetizza un viaggio di più giorni basato sul tuo vibe psicologico.",
     "authError": "Nodo Autorizzazione Offline",
-    "authErrorDesc": "Accedi per sintetizzare un'odissea."
+    "authErrorDesc": "Accedi per sintetizzare un'odissea.",
+    "form": {
+      "title": "Pianifica la tua Odissea",
+      "description": "Fornisci i dettagli per il tuo piano di viaggio personalizzato.",
+      "generateButton": "Genera Odissea",
+      "destinationLabel": "Destinazione",
+      "destinationPlaceholder": "es. Parigi, Francia",
+      "datesLabel": "Date",
+      "pickDateRange": "Seleziona una fascia di date",
+      "budgetLabel": "Budget",
+      "budgetPlaceholder": "Seleziona il tuo livello di budget",
+      "budgetLow": "Basso",
+      "budgetMedium": "Medio",
+      "budgetHigh": "Alto",
+      "vibeLabel": "Vibe di Viaggio",
+      "vibePlaceholder": "Descrivi la tua esperienza di viaggio ideale",
+      "vibeDescription": "es. 'Rilassato e culturale' o 'Avventuroso e fuori dai sentieri battuti'"
+    }
   },
   "subscription": {
     "badge": "Protocollo Monetario",
@@ -479,5 +499,8 @@
       "title": "Radar dei Vibe",
       "desc": "Scansione vibe {vibe} a {location}."
     }
+  },
+  "trips": {
+    "travelStyle": "Stile di Viaggio"
   }
 }

@@ -19,7 +19,8 @@
     "locked": "Dikunci",
     "authorized": "Diberi Kuasa",
     "error": "Ralat",
-    "returnToDashboard": "Kembali ke Pusat Kawalan"
+    "returnToDashboard": "Kembali ke Pusat Kawalan",
+    "apps": "Apps"
   },
   "login": {
     "title": "Log Masuk",
@@ -354,6 +355,8 @@
       }
     },
     "interests": {
+      "title": "Minat",
+      "description": "Pilih minat perjalanan utama anda.",
       "items": {
         "history": "Sejarah",
         "food": "Makanan",
@@ -370,7 +373,24 @@
     "title": "Arkitek Odisea",
     "subtitle": "Sintesis perjalanan berbilang hari berdasarkan getaran psikologi anda.",
     "authError": "Nod Pengesahan Luar Talian",
-    "authErrorDesc": "Sila log masuk untuk mensintesis odisea."
+    "authErrorDesc": "Sila log masuk untuk mensintesis odisea.",
+    "form": {
+      "title": "Rancang Odisea Anda",
+      "description": "Berikan butiran untuk rancangan perjalanan peribadi anda.",
+      "generateButton": "Jana Odisea",
+      "destinationLabel": "Destinasi",
+      "destinationPlaceholder": "cth: Paris, Perancis",
+      "datesLabel": "Tarikh",
+      "pickDateRange": "Pilih julat tarikh",
+      "budgetLabel": "Bajet",
+      "budgetPlaceholder": "Pilih tahap bajet anda",
+      "budgetLow": "Rendah",
+      "budgetMedium": "Sederhana",
+      "budgetHigh": "Tinggi",
+      "vibeLabel": "Getaran Perjalanan",
+      "vibePlaceholder": "Terangkan pengalaman perjalanan ideal anda",
+      "vibeDescription": "cth: 'Santai dan budaya' atau 'Berani dan luar biasa'"
+    }
   },
   "subscription": {
     "badge": "Protokol Monetari",
@@ -479,5 +499,8 @@
       "title": "Radar Getaran",
       "desc": "Mengimbas getaran {vibe} di {location}."
     }
+  },
+  "trips": {
+    "travelStyle": "Gaya Perjalanan"
   }
 }

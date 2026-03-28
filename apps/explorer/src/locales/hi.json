@@ -19,7 +19,8 @@
     "locked": "लॉक",
     "authorized": "अधिकृत",
     "error": "त्रुटि",
-    "returnToDashboard": "कमांड सेंटर पर लौटें"
+    "returnToDashboard": "कमांड सेंटर पर लौटें",
+    "apps": "Apps"
   },
   "login": {
     "title": "साइन इन करें",
@@ -354,6 +355,8 @@
       }
     },
     "interests": {
+      "title": "रुचियां",
+      "description": "अपनी प्राथमिक यात्रा रुचियों का चयन करें।",
       "items": {
         "history": "इतिहास",
         "food": "पाक कला",
@@ -370,7 +373,24 @@
     "title": "ओडिसी आर्किटेक्ट",
     "subtitle": "अपने मनोवैज्ञानिक वाइब के आधार पर बहु-दिवसीय यात्रा को संश्लेषित करें।",
     "authError": "ऑथराइजेशन नोड ऑफलाइन",
-    "authErrorDesc": "ओडिसी को संश्लेषित करने के लिए कृपया साइन इन करें।"
+    "authErrorDesc": "ओडिसी को संश्लेषित करने के लिए कृपया साइन इन करें।",
+    "form": {
+      "title": "अपनी ओडिसी की योजना बनाएं",
+      "description": "अपनी व्यक्तिगत यात्रा योजना के लिए विवरण प्रदान करें।",
+      "generateButton": "ओडिसी उत्पन्न करें",
+      "destinationLabel": "गंतव्य",
+      "destinationPlaceholder": "जैसे पेरिस, फ्रांस",
+      "datesLabel": "दिनांक",
+      "pickDateRange": "एक तिथि सीमा चुनें",
+      "budgetLabel": "बजट",
+      "budgetPlaceholder": "अपना बजट स्तर चुनें",
+      "budgetLow": "कम",
+      "budgetMedium": "मध्यम",
+      "budgetHigh": "उच्च",
+      "vibeLabel": "यात्रा वाइब",
+      "vibePlaceholder": "अपने आदर्श यात्रा अनुभव का वर्णन करें",
+      "vibeDescription": "जैसे 'आरामदायक और सांस्कृतिक' या 'साहसिक और ऑफ-द-बीटन-पाथ'"
+    }
   },
   "subscription": {
     "badge": "मौद्रिक प्रोटोकॉल",
@@ -479,5 +499,8 @@
       "title": "वाइब रडार",
       "desc": "{location} पर {vibe} वाइब्स को स्कैन किया जा रहा है।"
     }
+  },
+  "trips": {
+    "travelStyle": "यात्रा शैली"
   }
 }
