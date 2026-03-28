@@ -19,7 +19,8 @@
     "locked": "Verrouillé",
     "authorized": "Autorisé",
     "error": "Erreur",
-    "returnToDashboard": "Retour au Centre de Commande"
+    "returnToDashboard": "Retour au Centre de Commande",
+    "apps": "Apps"
   },
   "login": {
     "title": "Se Connecter",
@@ -354,6 +355,8 @@
       }
     },
     "interests": {
+      "title": "Intérêts",
+      "description": "Sélectionnez vos intérêts de voyage principaux.",
       "items": {
         "history": "Histoire",
         "food": "Culinaire",
@@ -370,7 +373,24 @@
     "title": "Architecte d'Odyssée",
     "subtitle": "Synthétisez un voyage de plusieurs jours basé sur votre ambiance psychologique.",
     "authError": "Nœud d'Autorisation Hors Ligne",
-    "authErrorDesc": "Veuillez vous connecter pour synthétiser une odyssée."
+    "authErrorDesc": "Veuillez vous connecter pour synthétiser une odyssée.",
+    "form": {
+      "title": "Planifiez votre Odyssée",
+      "description": "Fournissez les détails de votre plan de voyage personnalisé.",
+      "generateButton": "Générer l'Odyssée",
+      "destinationLabel": "Destination",
+      "destinationPlaceholder": "ex. Paris, France",
+      "datesLabel": "Dates",
+      "pickDateRange": "Sélectionnez une plage de dates",
+      "budgetLabel": "Budget",
+      "budgetPlaceholder": "Sélectionnez votre niveau de budget",
+      "budgetLow": "Faible",
+      "budgetMedium": "Moyen",
+      "budgetHigh": "Élevé",
+      "vibeLabel": "Ambiance de Voyage",
+      "vibePlaceholder": "Décrivez votre expérience de voyage idéale",
+      "vibeDescription": "ex. 'Détendu et culturel' ou 'Aventureux et hors des sentiers battus'"
+    }
   },
   "subscription": {
     "badge": "Protocole Monétaire",
@@ -479,5 +499,8 @@
       "title": "Radar de Vibes",
       "desc": "Scan des vibes {vibe} à {location}."
     }
+  },
+  "trips": {
+    "travelStyle": "Style de Voyage"
   }
 }

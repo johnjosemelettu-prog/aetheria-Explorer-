@@ -19,7 +19,8 @@
     "locked": "Bloqueado",
     "authorized": "Autorizado",
     "error": "Error",
-    "returnToDashboard": "Volver al Centro de Mando"
+    "returnToDashboard": "Volver al Centro de Mando",
+    "apps": "Apps"
   },
   "login": {
     "title": "Iniciar Sesión",
@@ -354,6 +355,8 @@
       }
     },
     "interests": {
+      "title": "Intereses",
+      "description": "Selecciona tus intereses principales de viaje.",
       "items": {
         "history": "Historia",
         "food": "Culinario",
@@ -370,7 +373,24 @@
     "title": "Arquitecto de Odiseas",
     "subtitle": "Sintetiza un viaje de varios días basado en tu vibración psicológica.",
     "authError": "Nodo de Autorización Fuera de Línea",
-    "authErrorDesc": "Inicia sesión para sintetizar una odisea."
+    "authErrorDesc": "Inicia sesión para sintetizar una odisea.",
+    "form": {
+      "title": "Planifica tu Odisea",
+      "description": "Proporciona detalles para tu plan de viaje personalizado.",
+      "generateButton": "Generar Odisea",
+      "destinationLabel": "Destino",
+      "destinationPlaceholder": "ej. París, Francia",
+      "datesLabel": "Fechas",
+      "pickDateRange": "Selecciona un rango de fechas",
+      "budgetLabel": "Presupuesto",
+      "budgetPlaceholder": "Selecciona tu nivel de presupuesto",
+      "budgetLow": "Bajo",
+      "budgetMedium": "Medio",
+      "budgetHigh": "Alto",
+      "vibeLabel": "Vibración de Viaje",
+      "vibePlaceholder": "Describe tu experiencia de viaje ideal",
+      "vibeDescription": "ej. 'Relajado y cultural' o 'Aventurero y fuera de lo común'"
+    }
   },
   "subscription": {
     "badge": "Protocolo Monetario",
@@ -479,5 +499,8 @@
       "title": "Radar de Vibras",
       "desc": "Escaneando vibras {vibe} en {location}."
     }
+  },
+  "trips": {
+    "travelStyle": "Estilo de Viaje"
   }
 }

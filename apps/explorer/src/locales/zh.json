@@ -19,7 +19,8 @@
     "locked": "已锁定",
     "authorized": "已授权",
     "error": "错误",
-    "returnToDashboard": "返回指挥中心"
+    "returnToDashboard": "返回指挥中心",
+    "apps": "Apps"
   },
   "login": {
     "title": "登录",
@@ -354,6 +355,8 @@
       }
     },
     "interests": {
+      "title": "兴趣",
+      "description": "选择您的主要旅行兴趣。",
       "items": {
         "history": "历史",
         "food": "美食",
@@ -370,7 +373,24 @@
     "title": "奥德赛建筑师",
     "subtitle": "根据您的心理氛围合成多日旅行。",
     "authError": "授权节点离线",
-    "authErrorDesc": "请登录以合成奥德赛。"
+    "authErrorDesc": "请登录以合成奥德赛。",
+    "form": {
+      "title": "规划您的奥德赛",
+      "description": "提供您的个性化旅行计划的详细信息。",
+      "generateButton": "生成奥德赛",
+      "destinationLabel": "目的地",
+      "destinationPlaceholder": "例如：法国巴黎",
+      "datesLabel": "日期",
+      "pickDateRange": "选择日期范围",
+      "budgetLabel": "预算",
+      "budgetPlaceholder": "选择您的预算水平",
+      "budgetLow": "低",
+      "budgetMedium": "中",
+      "budgetHigh": "高",
+      "vibeLabel": "旅行氛围",
+      "vibePlaceholder": "描述您理想的旅行体验",
+      "vibeDescription": "例如：“轻松和文化”或“冒险和人迹罕至”"
+    }
   },
   "subscription": {
     "badge": "货币协议",
@@ -479,5 +499,8 @@
       "title": "氛围雷达",
       "desc": "正在扫描 {location} 的 {vibe} 氛围。"
     }
+  },
+  "trips": {
+    "travelStyle": "旅行风格"
   }
 }

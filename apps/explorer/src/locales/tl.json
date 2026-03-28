@@ -1,4 +1,484 @@
-
 {
-  "header": { "dashboard": "Dashboard" }
+  "common": {
+    "save": "I-save ang mga Pagbabago",
+    "cancel": "Kanselahin",
+    "close": "Isara",
+    "delete": "Tanggalin",
+    "edit": "I-edit",
+    "loading": "Pinoproseso...",
+    "search": "Maghanap sa Grid",
+    "filter": "I-filter ang mga Node",
+    "back": "Bumalik",
+    "next": "Susunod",
+    "continue": "Magpatuloy",
+    "confirm": "Pahintulutan",
+    "active": "Aktibo",
+    "inactive": "Offline",
+    "verified": "Na-verify",
+    "unlocked": "Na-unlock",
+    "locked": "Naka-lock",
+    "authorized": "Awtorisado",
+    "error": "Error",
+    "returnToDashboard": "Bumalik sa Command Center",
+    "apps": "Apps"
+  },
+  "login": {
+    "title": "Mag-sign In",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "Security Key",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "Mag-sign In",
+    "signingInButton": "Bine-verify ang Pagkakakilanlan...",
+    "noAccount": "Bago sa Network?",
+    "signUpLink": "Gumawa ng Account",
+    "toast": {
+      "successTitle": "Maligayang Pagbabalik",
+      "successDescription": "Aktibo na ang iyong Aetheria session.",
+      "errorTitle": "Nabigo ang Pag-log In",
+      "genericError": "Hindi ma-verify ang mga kredensyal.",
+      "invalidCredentials": "Hindi wastong email address o security key.",
+      "operationNotAllowed": "Kasalukuyang pinaghihigpitan ang pag-sign in."
+    }
+  },
+  "signup": {
+    "title": "Gumawa ng Account",
+    "description": "Sumali sa pandaigdigang network ng paglalakbay ng Aetheria.",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "Security Key",
+    "createButton": "Simulan ang Account",
+    "creatingButton": "Sinisintesis ang Profile...",
+    "haveAccount": "Explorer na?",
+    "signInLink": "Mag-sign In",
+    "toast": {
+      "successTitle": "Nagawa ang Account",
+      "successDescription": "Maligayang pagdating sa Aetheria grid.",
+      "errorTitle": "Nabigo ang Pag-sign Up",
+      "emailInUse": "Nakarehistro na ang email na ito.",
+      "operationNotAllowed": "Kasalukuyang pinaghihigpitan ang pag-sign up.",
+      "genericError": "May mali sa panahon ng synthesis."
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Aetheria Intelligence Node",
+      "title": "ANG MUNDO AY NA-RECODE.",
+      "subtitle": "Tanggalin ang logistik. Palakasin ang paglulubog. Damhin ang unang multi-agent AI travel ecosystem.",
+      "scroll": "Mag-scroll para I-scan",
+      "cta": {
+        "start": "Simulan ang Paglalakbay",
+        "signin": "I-access ang Node"
+      }
+    },
+    "features": {
+      "chapter": "Protocol Chapter 01",
+      "title": "Intelligence Lenses",
+      "initNode": "Simulan ang Node",
+      "itinerary": {
+        "badge": "Orchestration",
+        "title": "Aura Itinerary",
+        "desc": "Sintetisin ang isang multi-day odyssey batay sa iyong psychological DNA."
+      },
+      "postcard": {
+        "badge": "Studio",
+        "title": "Postcard Studio",
+        "desc": "Ibahin ang anyo ng iyong mga snapshot sa high-fidelity AI-generated art."
+      },
+      "legends": {
+        "badge": "Intelligence",
+        "title": "Local Legends",
+        "desc": "I-unlock ang nakatagong folklore ng iyong mga coordinate sa pamamagitan ng GPS-triggered narration."
+      },
+      "packing": {
+        "badge": "Utility",
+        "title": "Forgot Nothing Agent",
+        "desc": "Proactive packing synthesis na iniayon sa klima at itinerary nodes."
+      }
+    },
+    "workflow": {
+      "badge": "Operational Protocol",
+      "title": "Paano Ito Gumagana",
+      "phase": "Phase 0{num}",
+      "step1": {
+        "title": "Tukuyin ang Layunin",
+        "desc": "Ibigay ang iyong destinasyon at psychological vibe parameters."
+      },
+      "step2": {
+        "title": "Sintetisin ang Odyssey",
+        "desc": "Ang neural grid ng Aetheria ay nagdidisenyo ng iyong custom trajectory."
+      },
+      "step3": {
+        "title": "Isagawa ang Paglalakbay",
+        "desc": "Ilunsad sa mundo na may real-time intelligence at safety nodes."
+      }
+    },
+    "cta": {
+      "badge": "Sumali sa Network",
+      "title": "HANDA NA BANG I-RECODE ANG IYONG MUNDO?",
+      "subtitle": "Sumali sa network ng mga modernong explorer na gumagamit ng walang katapusang intelligence.",
+      "start": "Sumali sa Network",
+      "feed": "Global Feed"
+    }
+  },
+  "header": {
+    "aiItinerary": "Aura Itinerary",
+    "pathfinder": "Path Finder",
+    "vibeMarketplace": "Vibe Marketplace",
+    "vibeShopping": "Bespoke Store",
+    "bookingHub": "Booking Hub",
+    "myTrips": "Aking mga Paglalakbay",
+    "visionHub": "Vision AI Hub",
+    "intelligenceCenter": "Intel Hub",
+    "arWayfinding": "AR Navigation",
+    "localLegends": "Local Legends",
+    "explorerQuests": "Explorer Quests",
+    "culturalPulse": "Cultural Pulse",
+    "tripOdyssey": "Trip Odyssey",
+    "postcardStudio": "Postcard Studio",
+    "heritageMirror": "Heritage Mirror",
+    "journal": "Explorer Journal",
+    "visaArchitect": "Visa Architect",
+    "carbonSynthesis": "Carbon Tracker",
+    "esim": "Global eSIM",
+    "flightStatus": "Logistics Radar",
+    "layoverOdyssey": "Layover Odyssey",
+    "safety": "Safety Assistant",
+    "hotels": "Mga Tirahan",
+    "flights": "Aviation",
+    "insurance": "Travel Insurance",
+    "trains": "Mga Tren",
+    "buses": "Mga Bus",
+    "cruises": "Mga Cruise",
+    "cabs": "Mga Taxi",
+    "dining": "Dining",
+    "profile": "Identity Node",
+    "loyaltyHub": "Loyalty Hub",
+    "wallet": "Smart Wallet",
+    "rentals": "Aking mga Rentals",
+    "scanAndPay": "Scan & Pay",
+    "subscription": "Trip Passes",
+    "partners": "Mga Kasosyo",
+    "digitalBrochure": "Aetheria Brochure",
+    "appTrailer": "System Trailer",
+    "sos": "SOS Panic Hub",
+    "events": "Destination Events",
+    "gearArchitect": "Gear Architect",
+    "jetLag": "Jet Lag Logic",
+    "digitalTailor": "Digital Tailor",
+    "translator": "Linguistic Lab",
+    "corporate": "Corporate Mode",
+    "dashboard": "Dashboard",
+    "budgetSynthesis": "Budget Synthesis",
+    "moodSynthesis": "Mood Synthesis",
+    "auraBeats": "Aura Beats",
+    "equilibriumSync": "Equilibrium Sync",
+    "flavorDna": "Flavor DNA",
+    "audioGuide": "Audio Guide",
+    "menuExplorer": "Menu Explorer",
+    "localInsider": "Local Insider",
+    "cultureScout": "Culture Scout",
+    "packingassistant": "Forgot Nothing Agent",
+    "categories": {
+      "orchestration": "Orchestrate",
+      "intelligence": "Intelligence",
+      "studios": "Studios",
+      "utility": "Utilities"
+    },
+    "promo": {
+      "spotlights": "Partner Spotlights",
+      "verified": "Verified Partners"
+    }
+  },
+  "explorerQuests": {
+    "title": "Explorer Quests",
+    "subtitle": "Gawing high-stakes scavenger hunt ang iyong paggalugad sa lungsod.",
+    "initTitle": "Simulan ang Quest Grid",
+    "initDesc": "Pumili ng target na lungsod upang sintetisin ang mga custom na misyon ng paggalugad.",
+    "cityPlaceholder": "hal. Kyoto, Japan",
+    "generateBtn": "Bumuo ng Quest",
+    "newCityBtn": "Bagong Lungsod",
+    "progress": "Progress: {completed} / {total}",
+    "xp": "{current} / {total} XP",
+    "hint": "Pahiwatig: {hint}",
+    "xpSynthesized": "{points} XP Sintetisin",
+    "resolvedTitle": "Nalutas ang Lungsod!",
+    "resolvedDesc": "Matagumpay mong na-decode ang mga lihim ng {city}.",
+    "returnBtn": "Bumalik sa Command Hub"
+  },
+  "languageLab": {
+    "badge": "Linguistic Intelligence",
+    "title": "Language Lab",
+    "subtitle": "Masterin ang lokal na diyalekto gamit ang AI-synthesized survival kits at native pronunciation.",
+    "cityPlaceholder": "Ilagay ang iyong destinasyon na lungsod...",
+    "synthesizeBtn": "Sintetisin ang Kit",
+    "survivalTitle": "Survival Phrases",
+    "pronounce": "Bigkasin: {pronunciation}",
+    "slangTitle": "Local Slang",
+    "listenBtn": "Makinig sa Vibe",
+    "pendingTitle": "Linguistics Pending",
+    "pendingDesc": "Ilagay ang iyong destinasyon upang sintetisin ang isang custom na language kit para sa iyong biyahe.",
+    "toast": {
+      "errorTitle": "Nabigo ang Synthesis",
+      "errorDescription": "Offline ang linguistic grid.",
+      "audioErrorTitle": "Error sa Audio",
+      "audioErrorDescription": "Hindi masintetisin ang boses."
+    }
+  },
+  "layoverOdyssey": {
+    "badge": "Transit Intelligence",
+    "title": "Layover Odyssey",
+    "subtitle": "Ibahin ang anyo ng iyong oras ng transit sa isang high-velocity micro-journey.",
+    "initTitle": "Simulan ang Layover Node",
+    "initDesc": "Ibigay ang iyong transit coordinates at duration upang sintetisin ang isang custom trajectory.",
+    "airportPlaceholder": "Airport / City (hal. SIN, Singapore)",
+    "durationLabel": "Duration (Hours)",
+    "synthesizeBtn": "Sintetisin ang Odyssey",
+    "resultTitle": "Ang Iyong Layover Odyssey",
+    "newBtn": "Bagong Odyssey",
+    "timelineTitle": "Timeline",
+    "logisticsTitle": "Logistics Node",
+    "transport": "Transport",
+    "budget": "Budget",
+    "visa": "Visa Note",
+    "pendingTitle": "Odyssey Pending",
+    "pendingDesc": "Ilagay ang iyong mga detalye ng layover upang sintetisin ang isang custom micro-itinerary.",
+    "missionParameters": "Mission Parameters",
+    "currentTerminal": "Current Terminal",
+    "layoverDuration": "Layover Duration",
+    "synthesizeOdyssey": "Sintetisin ang Odyssey",
+    "radarSilent": "Radar Silent",
+    "enterCodeDesc": "Ilagay ang airport code upang sintetisin ang isang custom layover odyssey."
+  },
+  "transitConnect": {
+    "title": "Transit Connect",
+    "subtitle": "Hanapin ang iyong tribo sa terminal. Kumonekta sa mga manlalakbay na nagbabahagi ng iyong flight o vibe.",
+    "step1": {
+      "title": "I-verify ang Boarding Pass",
+      "description": "I-scan ang iyong boarding pass upang i-verify ang iyong pagkakakilanlan at flight node.",
+      "scanningButton": "Nag-i-scan...",
+      "scanButton": "I-scan ang Pass",
+      "cameraError": "Offline ang camera node.",
+      "scanErrorTitle": "Nabigo ang Scan",
+      "scanErrorDescription": "Hindi ma-decode ang data ng boarding pass."
+    },
+    "verification": {
+      "title": "Na-verify ang Pagkakakilanlan",
+      "description": "Matagumpay na na-verify ang iyong flight node sa Aetheria grid.",
+      "passenger": "Pasahero",
+      "flight": "Flight",
+      "gate": "Gate",
+      "seat": "Upuan",
+      "departs": "Umaalis"
+    },
+    "step2": {
+      "title": "Piliin ang Iyong Vibe",
+      "description": "Piliin kung paano mo gustong makipag-ugnayan sa terminal network.",
+      "goLiveButton": "Mag-live",
+      "vibes": {
+        "networking": "Networking",
+        "networkingDescription": "Kumonekta sa mga propesyonal sa iyong flight.",
+        "coffee": "Kumuha ng Kape",
+        "coffeeDescription": "Kaswal na pag-uusap habang umiinom.",
+        "shareLounge": "Ibahagi ang Lounge",
+        "shareLoungeDescription": "I-access ang mga premium node sa iba.",
+        "cardGame": "Card Game",
+        "cardGameDescription": "Magpalipas ng oras sa isang mabilis na laro."
+      }
+    },
+    "step3": {
+      "title": "Terminal Network",
+      "description": "Aktibo ang real-time connection nodes sa iyong paligid.",
+      "nearbyTab": "Malapit",
+      "arViewTab": "AR View",
+      "sameFlight": "Parehong Flight",
+      "chatButton": "Chat",
+      "arViewDescription": "Aktibo ang AR View",
+      "toast": {
+        "chatTitle": "Sinimulan ang Chat",
+        "chatDescription": "Kumokonekta sa node ni {name}..."
+      }
+    }
+  },
+  "footer": {
+    "terms": "Mga Tuntunin ng Serbisyo",
+    "privacyProtocol": "Protocol ng Privacy",
+    "dataSecurity": "Seguridad ng Data",
+    "legalHub": "Legal Hub",
+    "globalConnect": "Global Connect",
+    "allRightsReserved": "© {year} Aetheria AI Intelligence Systems. Lahat ng karapatan ay nakalaan.",
+    "supportHub": "Support Hub",
+    "partnerNetwork": "Partner Network"
+  },
+  "profile": {
+    "saveSuccessTitle": "Naka-synchronize ang Profile",
+    "saveSuccessDescription": "Na-update ang iyong identity node.",
+    "saveButton": "Pahintulutan ang mga Pagbabago",
+    "savingButton": "Sinisinkronisa...",
+    "tabs": {
+      "identity": "Identity Node",
+      "travelDna": "Travel DNA",
+      "settings": "Mga Setting ng System",
+      "security": "Security Node"
+    },
+    "personalInfo": {
+      "firstName": "Pangalan",
+      "lastName": "Apelyido",
+      "gender": "Biological Gender Node",
+      "genders": {
+        "male": "Lalaki",
+        "female": "Babae",
+        "other": "Iba pa",
+        "preferNotToSay": "Mas gusto kong hindi sabihin"
+      }
+    },
+    "travelStyle": {
+      "relaxed": {
+        "label": "Relaks",
+        "description": "Mababang bilis, mataas na paglulubog."
+      },
+      "active": {
+        "label": "Aktibo",
+        "description": "Mataas na bilis, multi-node araw-araw."
+      },
+      "adventurous": {
+        "label": "Mapanganib",
+        "description": "Off-grid, mataas na factor ng pagtuklas."
+      },
+      "packed": {
+        "label": "Puno",
+        "description": "Maximum na kahusayan, zero downtime."
+      },
+      "familyFriendly": {
+        "label": "Family Friendly",
+        "description": "Multi-passenger safety focus."
+      }
+    },
+    "interests": {
+      "items": {
+        "history": "Kasaysayan",
+        "food": "Pagkain",
+        "hiking": "Hiking",
+        "art": "Sining",
+        "nightlife": "Nightlife",
+        "shopping": "Pamimili",
+        "nature": "Kalikasan",
+        "wellness": "Wellness"
+      }
+    }
+  },
+  "itineraryGenerator": {
+    "title": "Odyssey Architect",
+    "subtitle": "Sintetisin ang isang multi-day journey batay sa iyong psychological vibe.",
+    "authError": "Offline ang Authorization Node",
+    "authErrorDesc": "Mangyaring mag-sign in upang sintetisin ang isang odyssey."
+  },
+  "subscription": {
+    "badge": "Monetary Protocol",
+    "title": "Subscription Hub",
+    "subtitle": "I-upgrade ang iyong odyssey gamit ang premium intelligence at global safety nodes.",
+    "itineraryRequired": "Kinakailangan ang Aktibong Odyssey",
+    "itineraryRequiredDesc": "Dapat mayroon kang aktibong paglalakbay upang mag-apply ng tier ng subscription.",
+    "createItineraryBtn": "Gumawa ng Odyssey",
+    "plans": {
+      "free": {
+        "name": "Libre",
+        "description": "Pangunahing logistik para sa mga kaswal na manlalakbay.",
+        "price": "$0",
+        "itinerariesValue": "1 Aktibong Odyssey",
+        "immersiveValue": "Standard Intelligence",
+        "loyaltyValue": "Basic Rewards"
+      },
+      "voyager": {
+        "name": "Voyager",
+        "description": "Pinahusay na mga tool para sa madalas na explorer.",
+        "price": "$9",
+        "itinerariesValue": "3 Aktibong Odysseys",
+        "immersiveValue": "Pinahusay na Intelligence",
+        "packingValue": "AI Packing Node",
+        "loyaltyValue": "Silver Rewards"
+      },
+      "pathfinder": {
+        "name": "Pathfinder",
+        "description": "Neural-grade intelligence para sa mga propesyonal na nomad.",
+        "price": "$19",
+        "itinerariesValue": "Walang katapusang Odysseys",
+        "immersiveValue": "Neural Intelligence",
+        "insiderValue": "Local Legend Access",
+        "loyaltyValue": "Gold Rewards"
+      },
+      "sovereign": {
+        "name": "Sovereign",
+        "description": "Walang katapusang access na may heritage-grade synthesis.",
+        "price": "$49",
+        "itinerariesValue": "Walang katapusang Odysseys",
+        "immersiveValue": "Walang katapusang Intelligence",
+        "mirrorValue": "Heritage Mirror Node",
+        "fees": "Zero Service Fees"
+      },
+      "legend": {
+        "name": "Legend",
+        "description": "Ang ultimate explorer node na may kabuuang network access.",
+        "price": "$99",
+        "itinerariesValue": "Walang katapusang Odysseys",
+        "immersiveValue": "Walang katapusang Intelligence",
+        "mirrorValue": "Heritage Mirror Node",
+        "insiderValue": "Local Legend Access",
+        "fees": "Zero Service Fees"
+      }
+    },
+    "period": {
+      "monthly": "/ BUWAN"
+    },
+    "features": {
+      "itineraries": "Odyssey Capacity",
+      "immersive": "Intelligence Level",
+      "loyalty": "Rewards Tier",
+      "packing": "Packing Node",
+      "insider": "Legend Access",
+      "mirror": "Heritage Node",
+      "fees": "Service Fees"
+    },
+    "upgrade": "Pahintulutan ang Upgrade",
+    "processingBtn": "Pinoproseso...",
+    "currentPlan": "Aktibong Node"
+  },
+  "dashboard": {
+    "welcomeBack": "Maligayang Pagbabalik, {name}",
+    "odysseyLevel": "Odyssey Level {level}",
+    "seasonPass": "Season Pass",
+    "xpSynthesized": "XP Sintetisin",
+    "progressionToLevel": "Progression to Level {level}",
+    "vibeStreak": "Vibe Streak",
+    "tasksResolved": "Mga Gawain na Nalutas",
+    "totalMedals": "Kabuuang Medals",
+    "premiumRequired": "Kinakailangan ang Premium",
+    "explorerStatus": "Explorer Status: {tier}",
+    "points": "Points",
+    "medals": "Medals",
+    "editProfile": "I-edit ang Profile",
+    "shortDesc": {
+      "itinerary": "Neural itinerary synthesis.",
+      "pathfinder": "Smart route optimization.",
+      "marketplace": "Global vibe exchange.",
+      "store": "Bespoke gear procurement.",
+      "booking": "Logistics orchestration.",
+      "wallet": "Smart currency node.",
+      "budget": "Financial synthesis.",
+      "vision": "Object recognition node.",
+      "guide": "Global intel hub.",
+      "ar": "Augmented navigation.",
+      "legends": "Folklore decryption.",
+      "pulse": "Cultural trend radar.",
+      "audio": "Spatial narration.",
+      "odyssey": "Cinematic trip synthesis.",
+      "postcard": "AI art generation.",
+      "mirror": "Heritage visualization.",
+      "journal": "Memory encryption."
+    },
+    "vibeRadar": {
+      "title": "Vibe Radar",
+      "desc": "Sinisimulan ang {vibe} vibes sa {location}."
+    }
+  }
 }
