@@ -121,6 +121,12 @@
     }
   },
   "header": {
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "linguisticGrid": "Lưới Ngôn Ngữ",
+    "login": "ĐĂNG NHẬP",
+    "signup": "ĐĂNG KÝ",
+    "sos": "SOS",
     "aiItinerary": "Lịch trình Aura",
     "pathfinder": "Công cụ tìm đường",
     "vibeMarketplace": "Chợ không khí",
@@ -178,6 +184,22 @@
     "localInsider": "Thông tin nội bộ",
     "cultureScout": "Trinh sát văn hóa",
     "packingassistant": "Đại lý không quên đồ",
+    "aria": {
+      "back": "Quay lại",
+      "wallet": "Ví",
+      "tailor": "Thợ may",
+      "cart": "Giỏ hàng",
+      "language": "Ngôn ngữ",
+      "menu": "Thực đơn"
+    },
+    "aria": {
+      "back": "Quay lại",
+      "wallet": "Ví",
+      "tailor": "Thợ may",
+      "cart": "Giỏ hàng",
+      "language": "Ngôn ngữ",
+      "menu": "Menu"
+    },
     "categories": {
       "orchestration": "Điều phối",
       "intelligence": "Thông tin thông minh",
@@ -300,14 +322,49 @@
     }
   },
   "footer": {
-    "terms": "Điều khoản dịch vụ",
-    "privacyProtocol": "Giao thức bảo mật",
-    "dataSecurity": "An ninh dữ liệu",
-    "legalHub": "Trung tâm pháp lý",
-    "globalConnect": "Kết nối toàn cầu",
-    "allRightsReserved": "© {year} Hệ thống trí tuệ nhân tạo Aetheria. Bảo lưu mọi quyền.",
-    "supportHub": "Trung tâm hỗ trợ",
-    "partnerNetwork": "Mạng lưới đối tác"
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "copyright": "Aetheria AI",
+    "quote": "Tương lai của du lịch không chỉ là về nơi bạn đến, mà là cách bạn tổng hợp thực tế chuyến đi của mình.",
+    "sections": {
+      "protocols": "Giao thức",
+      "network": "Mạng lưới",
+      "support": "Hỗ trợ",
+      "connect": "Kết nối"
+    },
+    "links": {
+      "itinerary": "Lịch trình Aura",
+      "pathfinder": "Công cụ tìm đường",
+      "marketplace": "Chợ không khí",
+      "vision": "Trung tâm tầm nhìn",
+      "intelligence": "Trung tâm thông tin",
+      "ar": "Dẫn đường AR",
+      "odyssey": "Hành trình Odyssey",
+      "postcard": "Studio Bưu thiếp",
+      "heritage": "Gương di sản",
+      "journal": "Nhật ký",
+      "help": "Trung tâm trợ giúp",
+      "safety": "Nút an toàn",
+      "status": "Trạng thái hệ thống",
+      "api": "Truy cập API",
+      "terms": "Điều khoản dịch vụ",
+      "privacy": "Bảo mật",
+      "security": "An ninh dữ liệu",
+      "legal": "Thông báo pháp lý",
+      "brochure": "Brochure",
+      "partners": "Đối tác",
+      "hub": "Trung tâm liên hệ",
+      "faq": "FAQ"
+    },
+    "status": {
+      "description": "Lưới Toàn Cầu Đang Hoạt Động",
+      "poweredBy": "Được cung cấp bởi Aetheria Core"
+    },
+    "aria": {
+      "x": "X (trước đây là Twitter)",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
   },
   "profile": {
     "saveSuccessTitle": "Đã đồng bộ hồ sơ",
@@ -366,11 +423,102 @@
       }
     }
   },
+  "onboarding": {
+    "steps": {
+      "header": {
+        "title": "Aura Hub Hoạt Động",
+        "content": "Kết nối thần kinh của bạn đã sẵn sàng. Biểu tượng này cho biết AI của Aetheria đang tích cực tổng hợp dữ liệu du lịch của bạn."
+      },
+      "season": {
+        "title": "Tiến Trình Mùa Giải",
+        "content": "Theo dõi XP của bạn và thăng cấp cho Odyssey của bạn. Hoàn thành các nhiệm vụ để mở khóa các tài sản kỹ thuật số độc quyền và đặc quyền du lịch."
+      },
+      "itinerary": {
+        "title": "Lịch Trình Aura",
+        "content": "Công cụ AI cốt lõi của chúng tôi. Tổng hợp một hành trình odyssey nhiều ngày được điều chỉnh theo DNA tâm lý và phong cách du lịch của bạn."
+      },
+      "vision": {
+        "title": "Vision AI Hub",
+        "content": "Sử dụng máy ảnh của bạn để quét các địa danh và hiện vật. AI của chúng tôi cung cấp khả năng tổng hợp lịch sử và văn hóa theo thời gian thực."
+      },
+      "postcard": {
+        "title": "Postcard Studio",
+        "content": "Biến những bức ảnh chụp nhanh hành trình của bạn thành tác phẩm nghệ thuật do AI tạo ra với độ trung thực cao. Chia sẻ tầm nhìn độc đáo của bạn với mạng lưới."
+      },
+      "vibe": {
+        "title": "Vibe Radar",
+        "content": "Tìm những người khám phá khác trong vùng lân cận của bạn có chữ ký thần kinh phù hợp. Kết nối và đồng bộ hóa hành trình của bạn."
+      }
+    },
+    "finish": "Hoàn tất",
+    "next": "Tiếp theo"
+  },
   "itineraryGenerator": {
-    "title": "Kiến trúc sư hành trình",
-    "subtitle": "Tổng hợp các chuyến đi nhiều ngày dựa trên DNA tâm lý của bạn.",
-    "authError": "Nút phê duyệt đang ngoại tuyến.",
-    "authErrorDesc": "Vui lòng đăng nhập để tổng hợp hành trình."
+    "toast": {
+      "bookingInitiated": "Đã bắt đầu đặt chỗ",
+      "reserving": "Đang đặt {{activity}}...",
+      "adjustmentFailed": "Điều chỉnh thất bại",
+      "adjustmentFailedDesc": "Không thể hiệu chỉnh lại hành trình.",
+      "pathRecalibrated": "Đã hiệu chỉnh lại đường đi",
+      "pathRecalibratedDesc": "Hành trình đã được cập nhật với các thay đổi được đề xuất.",
+      "generateSuccessTitle": "Đã tổng hợp hành trình",
+      "generateSuccessDescription": "Đường đi của bạn đến {{destination}} đã sẵn sàng.",
+      "generateErrorTitle": "Tổng hợp thất bại",
+      "generateErrorDescription": "Không thể tạo hành trình. Lỗi hệ thống.",
+      "refineSuccessTitle": "Đã tinh chỉnh đường đi",
+      "refineErrorTitle": "Tinh chỉnh thất bại",
+      "refineErrorDescription": "Không thể điều chỉnh đường đi."
+    },
+    "display": {
+      "pendingTitle": "Hành trình đang chờ xử lý",
+      "pendingDesc": "Phê duyệt một điểm đến để tạo hành trình có độ trung thực cao của bạn.",
+      "upgradeTitle": "Mở khóa toàn bộ quang phổ",
+      "upgradeDesc": "Nâng cấp lên Pro để tinh chỉnh AI không giới hạn và thông tin chuyên sâu có độ trung thực cao.",
+      "upgradeBtn": "Nâng cấp ngay",
+      "resultBadge": "Hành trình đã tạo",
+      "pathTitle": "Hành trình của bạn",
+      "recalibrateTitle": "Hiệu chỉnh lại động",
+      "recalibrateDesc": "Thời tiết đã thay đổi. Bạn có muốn hiệu chỉnh lại đường đi của mình cho các hoạt động trong nhà không?",
+      "recalibrateContext": "Trời bắt đầu mưa đột ngột, vì vậy các hoạt động ngoài trời không lý tưởng.",
+      "recalibrateBtn": "Hiệu chỉnh lại đường đi",
+      "reserveBtn": "Đặt chỗ",
+      "notes": "Ghi chú giao thức",
+      "adjustTitle": "Tinh chỉnh thủ công",
+      "adjustDesc": "Yêu cầu các điều chỉnh cụ thể cho đường đi đã tạo của bạn.",
+      "adjustPlaceholder": "vd: thêm nhiều điểm dừng đồ ăn đường phố, hoặc làm cho nó thư giãn hơn...",
+      "processing": "Đang xử lý...",
+      "updateBtn": "Cập nhật đường đi",
+      "proposedTitle": "Hiệu chỉnh lại được đề xuất",
+      "rejectBtn": "Từ chối",
+      "authorizeBtn": "Phê duyệt thay đổi"
+    },
+    "form": {
+      "title": "Tạo hành trình",
+      "description": "Tổng hợp một chuyến đi nhiều điểm dựa trên cảm xúc và các ràng buộc độc đáo của bạn.",
+      "destinationLabel": "Điểm đến mục tiêu",
+      "destinationPlaceholder": "vd: Tokyo, Nhật Bản",
+      "datesLabel": "Khoảng thời gian",
+      "pickDateRange": "Chọn khoảng ngày",
+      "budgetLabel": "Phân bổ nguồn lực",
+      "budgetPlaceholder": "Chọn ngân sách",
+      "budgetLow": "Tiết kiệm (Thấp)",
+      "budgetMedium": "Tiêu chuẩn (Trung bình)",
+      "budgetHigh": "Cao cấp (Cao)",
+      "vibeLabel": "Tổng hợp cảm xúc",
+      "vibePlaceholder": "Mô tả cảm giác của chuyến đi này...",
+      "vibeDescription": "AI sẽ sử dụng điều này để neo giữ bầu không khí của hành trình.",
+      "generatingButton": "Đang tổng hợp đường đi...",
+      "generateButton": "Phê duyệt hành trình"
+    },
+    "validation": {
+      "destination": "Điểm đến phải có ít nhất 2 ký tự.",
+      "interests": "Vui lòng chọn ít nhất một điểm quan tâm."
+    },
+    "title": "Trình tạo hành trình",
+    "subtitle": "Tổng hợp chuyến đi có độ trung thực cao tiếp theo của bạn với sự điều phối của AI.",
+    "authError": "Yêu cầu xác thực",
+    "authErrorDesc": "Vui lòng đăng nhập để phê duyệt tổng hợp hành trình.",
+    "odysseySuffix": "Hành trình"
   },
   "subscription": {
     "badge": "Giao thức tài chính",
@@ -441,6 +589,51 @@
     "upgrade": "Phê duyệt nâng cấp",
     "processingBtn": "Đang xử lý...",
     "currentPlan": "Nút đang hoạt động"
+  },
+  "footer": {
+    "brandName": "AETHERIA",
+    "brandTagline": "Hành trình được tổng hợp",
+    "copyright": "Aetheria AI",
+    "quote": "Chúng tôi không chỉ lập kế hoạch cho các chuyến đi. Chúng tôi tổng hợp các trải nghiệm bằng cách sử dụng lưới thần kinh đa tác nhân.",
+    "sections": {
+      "protocols": "Giao thức",
+      "network": "Mạng lưới",
+      "support": "Hỗ trợ"
+    },
+    "links": {
+      "terms": "Điều khoản dịch vụ",
+      "privacy": "Chính sách bảo mật",
+      "security": "An ninh dữ liệu",
+      "legal": "Thông báo pháp lý",
+      "brochure": "Tài liệu kỹ thuật số",
+      "partners": "Đối tác mạng lưới",
+      "hub": "Trung tâm liên hệ",
+      "faq": "Nút FAQ"
+    },
+    "status": {
+      "description": "Lưới thần kinh đang hoạt động",
+      "poweredBy": "ĐƯỢC CUNG CẤP BỞI AETHERIA CORE"
+    },
+    "aria": {
+      "x": "X (trước đây là Twitter)",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
+  },
+  "userNav": {
+    "explorerHub": "Trung tâm thám hiểm",
+    "manageBookings": "Quản lý đặt chỗ",
+    "upgradeSubscription": "Nâng cấp gói đăng ký",
+    "adminConsole": "Bảng điều khiển Admin",
+    "partnerHub": "Trung tâm đối tác",
+    "identityNode": "Nút định danh",
+    "terminateSession": "Chấm dứt phiên làm việc",
+    "toast": {
+      "logoutSuccessTitle": "Phiên làm việc đã kết thúc",
+      "logoutSuccessDescription": "Nút Aetheria của bạn hiện đang ngoại tuyến.",
+      "logoutErrorTitle": "Lỗi đăng xuất",
+      "logoutErrorDescription": "Không thể chấm dứt liên kết thần kinh."
+    }
   },
   "dashboard": {
     "welcomeBack": "Chào mừng trở lại, {name}",

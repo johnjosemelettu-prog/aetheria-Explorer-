@@ -1,5 +1,5 @@
 {
-  "name": "Aetheria Explorer",
-  "description": "Aetheria Explorer: The AI-native travel ecosystem for digital nomads. Synthesize your journey, recode your reality, and explore the neural grid of global heritage.",
-  "requestFramePermissions": ["camera", "microphone", "geolocation"]
+  "name": "Aetheria Landing Page",
+  "description": "A localized landing page for Aetheria.",
+  "requestFramePermissions": []
 }

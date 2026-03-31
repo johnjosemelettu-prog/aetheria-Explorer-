@@ -14,55 +14,58 @@ interface TourStep {
   position: 'top' | 'bottom' | 'left' | 'right' | 'center'
 }
 
-const TOUR_STEPS: TourStep[] = [
-  {
-    target: 'header-node',
-    title: 'Aura Hub Active',
-    content: 'Your neural connection is live. This badge indicates that Aetheria\'s AI is actively synthesizing your travel data.',
-    icon: Zap,
-    position: 'bottom'
-  },
-  {
-    target: 'season-pass',
-    title: 'Season Progression',
-    content: 'Track your XP and level up your Odyssey. Complete quests to unlock exclusive digital assets and travel perks.',
-    icon: Target,
-    position: 'top'
-  },
-  {
-    target: 'itinerary-node',
-    title: 'Aura Itinerary',
-    content: 'Our core AI engine. Synthesize a multi-day odyssey tailored to your psychological DNA and travel vibe.',
-    icon: Bot,
-    position: 'right'
-  },
-  {
-    target: 'vision-hub',
-    title: 'Vision AI Hub',
-    content: 'Use your camera to scan landmarks and artifacts. Our AI provides real-time historical and cultural synthesis.',
-    icon: Camera,
-    position: 'left'
-  },
-  {
-    target: 'postcard-studio',
-    title: 'Postcard Studio',
-    content: 'Transform your journey snapshots into high-fidelity AI-generated art. Share your unique vision with the network.',
-    icon: Wand2,
-    position: 'top'
-  },
-  {
-    target: 'vibe-radar',
-    title: 'Vibe Radar',
-    content: 'Find other explorers in your vicinity with matching neural signatures. Connect and synchronize your journeys.',
-    icon: Sparkles,
-    position: 'left'
-  }
-]
+import { useTranslation } from '@/lib/i18n'
 
 export function OnboardingTour() {
+  const { t } = useTranslation()
   const [currentStep, setCurrentStep] = useState(-1)
   const [isVisible, setIsVisible] = useState(false)
   const [targetRect, setTargetRect] = useState<DOMRect | null>(null)
+
+  const TOUR_STEPS: TourStep[] = [
+    {
+      target: 'header-node',
+      title: t('onboarding.steps.header.title'),
+      content: t('onboarding.steps.header.content'),
+      icon: Zap,
+      position: 'bottom'
+    },
+    {
+      target: 'season-pass',
+      title: t('onboarding.steps.season.title'),
+      content: t('onboarding.steps.season.content'),
+      icon: Target,
+      position: 'top'
+    },
+    {
+      target: 'itinerary-node',
+      title: t('onboarding.steps.itinerary.title'),
+      content: t('onboarding.steps.itinerary.content'),
+      icon: Bot,
+      position: 'right'
+    },
+    {
+      target: 'vision-hub',
+      title: t('onboarding.steps.vision.title'),
+      content: t('onboarding.steps.vision.content'),
+      icon: Camera,
+      position: 'left'
+    },
+    {
+      target: 'postcard-studio',
+      title: t('onboarding.steps.postcard.title'),
+      content: t('onboarding.steps.postcard.content'),
+      icon: Wand2,
+      position: 'top'
+    },
+    {
+      target: 'vibe-radar',
+      title: t('onboarding.steps.vibe.title'),
+      content: t('onboarding.steps.vibe.content'),
+      icon: Sparkles,
+      position: 'left'
+    }
+  ]
 
   useEffect(() => {
     const hasSeenTour = localStorage.getItem('aetheria_tour_seen')
@@ -209,7 +212,7 @@ export function OnboardingTour() {
                 className="rounded-full h-10 px-6 bg-primary text-white font-black uppercase tracking-widest text-[10px]"
                 onClick={handleNext}
               >
-                {currentStep === TOUR_STEPS.length - 1 ? 'Finish' : 'Next'}
+                {currentStep === TOUR_STEPS.length - 1 ? t('onboarding.finish') : t('onboarding.next')}
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
             </div>

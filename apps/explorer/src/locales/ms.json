@@ -121,6 +121,12 @@
     }
   },
   "header": {
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "linguisticGrid": "Grid Linguistik",
+    "login": "LOG MASUK",
+    "signup": "DAFTAR",
+    "sos": "SOS",
     "aiItinerary": "Itinerari Aura",
     "pathfinder": "Pencari Laluan",
     "vibeMarketplace": "Pasaran Getaran",
@@ -178,6 +184,14 @@
     "localInsider": "Maklumat Tempatan",
     "cultureScout": "Pengakap Budaya",
     "packingassistant": "Ejen Tak Lupa Apa-apa",
+    "aria": {
+      "back": "Kembali",
+      "wallet": "Dompet",
+      "tailor": "Tukang Jahit",
+      "cart": "Troli",
+      "language": "Bahasa",
+      "menu": "Menu"
+    },
     "categories": {
       "orchestration": "Orkestrasi",
       "intelligence": "Kepintaran",
@@ -300,14 +314,49 @@
     }
   },
   "footer": {
-    "terms": "Syarat Perkhidmatan",
-    "privacyProtocol": "Protokol Privasi",
-    "dataSecurity": "Keselamatan Data",
-    "legalHub": "Hab Undang-undang",
-    "globalConnect": "Sambungan Global",
-    "allRightsReserved": "© {year} Sistem Kepintaran Aetheria AI. Hak cipta terpelihara.",
-    "supportHub": "Hab Sokongan",
-    "partnerNetwork": "Rangkaian Rakan Kongsi"
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "copyright": "Aetheria AI",
+    "quote": "Masa depan perjalanan bukan sahaja tentang ke mana anda pergi, tetapi bagaimana anda mensintesis realiti perjalanan anda.",
+    "sections": {
+      "protocols": "Protokol",
+      "network": "Rangkaian",
+      "support": "Sokongan",
+      "connect": "Sambung"
+    },
+    "links": {
+      "itinerary": "Itinerari Aura",
+      "pathfinder": "Pencari Laluan",
+      "marketplace": "Pasaran Getaran",
+      "vision": "Pusat Visi",
+      "intelligence": "Pusat Kepintaran",
+      "ar": "Navigasi AR",
+      "odyssey": "Perjalanan Odisea",
+      "postcard": "Studio Poskad",
+      "heritage": "Cermin Warisan",
+      "journal": "Jurnal",
+      "help": "Pusat Bantuan",
+      "safety": "Nod Keselamatan",
+      "status": "Status Sistem",
+      "api": "Akses API",
+      "terms": "Syarat Perkhidmatan",
+      "privacy": "Privasi",
+      "security": "Keselamatan Data",
+      "legal": "Notis Undang-undang",
+      "brochure": "Risalah",
+      "partners": "Rakan Kongsi",
+      "hub": "Hab Hubungan",
+      "faq": "FAQ"
+    },
+    "status": {
+      "description": "Grid Global Beroperasi",
+      "poweredBy": "Dikuasakan oleh Aetheria Core"
+    },
+    "aria": {
+      "x": "X (dahulunya Twitter)",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
   },
   "profile": {
     "saveSuccessTitle": "Profil Disinkronkan",
@@ -366,11 +415,102 @@
       }
     }
   },
+  "onboarding": {
+    "steps": {
+      "header": {
+        "title": "Hab Aura Aktif",
+        "content": "Sambungan saraf anda sedang aktif. Lencana ini menunjukkan bahawa AI Aetheria sedang giat mensintesis data perjalanan anda."
+      },
+      "season": {
+        "title": "Kemajuan Musim",
+        "content": "Jejaki XP anda dan tingkatkan tahap Odyssey anda. Selesaikan misi untuk membuka kunci aset digital eksklusif dan faedah perjalanan."
+      },
+      "itinerary": {
+        "title": "Itinerari Aura",
+        "content": "Enjin AI teras kami. Sintesis odyssey berbilang hari yang disesuaikan dengan DNA psikologi dan suasana perjalanan anda."
+      },
+      "vision": {
+        "title": "Hab AI Visi",
+        "content": "Gunakan kamera anda untuk mengimbas mercu tanda dan artifak. AI kami menyediakan sintesis sejarah dan budaya masa nyata."
+      },
+      "postcard": {
+        "title": "Studio Poskad",
+        "content": "Ubah gambar perjalanan anda menjadi seni jana AI kesetiaan tinggi. Kongsi visi unik anda dengan rangkaian."
+      },
+      "vibe": {
+        "title": "Radar Vibe",
+        "content": "Cari pengembara lain di sekitar anda dengan tandatangan saraf yang sepadan. Sambung dan segerakkan perjalanan anda."
+      }
+    },
+    "finish": "Selesai",
+    "next": "Seterusnya"
+  },
   "itineraryGenerator": {
-    "title": "Arkitek Odisea",
-    "subtitle": "Sintesis perjalanan berbilang hari berdasarkan getaran psikologi anda.",
-    "authError": "Nod Pengesahan Luar Talian",
-    "authErrorDesc": "Sila log masuk untuk mensintesis odisea."
+    "toast": {
+      "bookingInitiated": "Tempahan Dimulakan",
+      "reserving": "Menempah {{activity}}...",
+      "adjustmentFailed": "Pelarasan Gagal",
+      "adjustmentFailedDesc": "Tidak dapat menentukur semula jadual perjalanan.",
+      "pathRecalibrated": "Laluan Ditentukur Semula",
+      "pathRecalibratedDesc": "Jadual perjalanan telah dikemas kini dengan perubahan yang dicadangkan.",
+      "generateSuccessTitle": "Odisea Disintesis",
+      "generateSuccessDescription": "Laluan anda ke {{destination}} sudah sedia.",
+      "generateErrorTitle": "Sintesis Gagal",
+      "generateErrorDescription": "Tidak dapat membuat jadual perjalanan. Ralat sistem.",
+      "refineSuccessTitle": "Laluan Diperhalusi",
+      "refineErrorTitle": "Penghalusan Gagal",
+      "refineErrorDescription": "Tidak dapat melaraskan laluan."
+    },
+    "display": {
+      "pendingTitle": "Jadual Perjalanan Belum Selesai",
+      "pendingDesc": "Benarkan destinasi untuk menjana jadual perjalanan kesetiaan tinggi anda.",
+      "upgradeTitle": "Buka Kunci Spektrum Penuh",
+      "upgradeDesc": "Naik taraf ke Pro untuk penghalusan AI tanpa had dan cerapan kesetiaan tinggi.",
+      "upgradeBtn": "Naik Taraf Sekarang",
+      "resultBadge": "Jadual Perjalanan Dijana",
+      "pathTitle": "Jadual Perjalanan Anda",
+      "recalibrateTitle": "Penentukur Semula Dinamik",
+      "recalibrateDesc": "Cuaca telah berubah. Adakah anda mahu menentukur semula laluan anda untuk aktiviti dalam talian?",
+      "recalibrateContext": "Hujan mula turun secara tiba-tiba, jadi aktiviti luar tidak sesuai.",
+      "recalibrateBtn": "Tentukur Semula Laluan",
+      "reserveBtn": "Tempah",
+      "notes": "Nota Protokol",
+      "adjustTitle": "Penghalusan Manual",
+      "adjustDesc": "Minta pelarasan khusus pada laluan yang dijana anda.",
+      "adjustPlaceholder": "cth: tambah lebih banyak hentian makanan jalanan, atau jadikan ia lebih santai...",
+      "processing": "Memproses...",
+      "updateBtn": "Kemas Kini Laluan",
+      "proposedTitle": "Penentukur Semula Dicadangkan",
+      "rejectBtn": "Tolak",
+      "authorizeBtn": "Benarkan Perubahan"
+    },
+    "form": {
+      "title": "Jana Odisea",
+      "description": "Sintesis perjalanan berbilang nod berdasarkan getaran dan kekangan unik anda.",
+      "destinationLabel": "Destinasi Sasaran",
+      "destinationPlaceholder": "cth: Tokyo, Jepun",
+      "datesLabel": "Julat Masa",
+      "pickDateRange": "Pilih julat tarikh",
+      "budgetLabel": "Peruntukan Sumber",
+      "budgetPlaceholder": "Pilih bajet",
+      "budgetLow": "Ekonomi (Rendah)",
+      "budgetMedium": "Standard (Sederhana)",
+      "budgetHigh": "Premium (Tinggi)",
+      "vibeLabel": "Sintesis Getaran",
+      "vibePlaceholder": "Terangkan perasaan perjalanan ini...",
+      "vibeDescription": "AI akan menggunakan ini untuk menetapkan suasana jadual perjalanan.",
+      "generatingButton": "Mensintesis Laluan...",
+      "generateButton": "Benarkan Odisea"
+    },
+    "validation": {
+      "destination": "Destinasi mesti mempunyai sekurang-kurangnya 2 aksara.",
+      "interests": "Sila pilih sekurang-kurangnya satu nod minat."
+    },
+    "title": "Penjana Jadual Perjalanan",
+    "subtitle": "Sintesis perjalanan kesetiaan tinggi anda yang seterusnya dengan orkestrasi AI.",
+    "authError": "Pengesahan Diperlukan",
+    "authErrorDesc": "Sila log masuk untuk membenarkan sintesis jadual perjalanan.",
+    "odysseySuffix": "Odisea"
   },
   "subscription": {
     "badge": "Protokol Monetari",

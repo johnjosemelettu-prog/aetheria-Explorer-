@@ -121,6 +121,12 @@
     }
   },
   "header": {
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "linguisticGrid": "Linguistisches Gitter",
+    "login": "ANMELDEN",
+    "signup": "REGISTRIEREN",
+    "sos": "SOS",
     "aiItinerary": "Aura-Reiseplan",
     "pathfinder": "Pfadfinder",
     "vibeMarketplace": "Vibe-Marktplatz",
@@ -178,6 +184,22 @@
     "localInsider": "Lokaler Insider",
     "cultureScout": "Kultur-Scout",
     "packingassistant": "Nichts-Vergessen-Agent",
+    "aria": {
+      "back": "Zurück",
+      "wallet": "Geldbörse",
+      "tailor": "Schneider",
+      "cart": "Warenkorb",
+      "language": "Sprache",
+      "menu": "Menü"
+    },
+    "aria": {
+      "back": "Zurückgehen",
+      "wallet": "Brieftasche",
+      "tailor": "Schneider",
+      "cart": "Warenkorb",
+      "language": "Sprache",
+      "menu": "Menü"
+    },
     "categories": {
       "orchestration": "Orchestrieren",
       "intelligence": "Intelligenz",
@@ -300,14 +322,49 @@
     }
   },
   "footer": {
-    "terms": "Nutzungsbedingungen",
-    "privacyProtocol": "Datenschutzprotokoll",
-    "dataSecurity": "Datensicherheit",
-    "legalHub": "Rechtliches Zentrum",
-    "globalConnect": "Global Connect",
-    "allRightsReserved": "© {year} Aetheria AI Intelligence Systems. Alle Rechte vorbehalten.",
-    "supportHub": "Support-Zentrum",
-    "partnerNetwork": "Partner-Netzwerk"
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "copyright": "Aetheria AI",
+    "quote": "Die Zukunft des Reisens besteht nicht nur darin, wohin man geht, sondern wie man die Realität seiner Reise synthetisiert.",
+    "sections": {
+      "protocols": "Protokolle",
+      "network": "Netzwerk",
+      "support": "Support",
+      "connect": "Verbinden"
+    },
+    "links": {
+      "itinerary": "Aura-Reiseplan",
+      "pathfinder": "Pfadfinder",
+      "marketplace": "Vibe-Marktplatz",
+      "vision": "Visionszentrum",
+      "intelligence": "Intelligenzzentrum",
+      "ar": "AR-Navigation",
+      "odyssey": "Reise-Odyssee",
+      "postcard": "Postkarten-Studio",
+      "heritage": "Kulturerbe-Spiegel",
+      "journal": "Journal",
+      "help": "Hilfezentrum",
+      "safety": "Sicherheitsknoten",
+      "status": "Systemstatus",
+      "api": "API-Zugriff",
+      "terms": "Nutzungsbedingungen",
+      "privacy": "Datenschutz",
+      "security": "Datensicherheit",
+      "legal": "Rechtliches",
+      "brochure": "Broschüre",
+      "partners": "Partner",
+      "hub": "Kontakt-Hub",
+      "faq": "FAQ"
+    },
+    "status": {
+      "description": "Globales Gitter Betriebsbereit",
+      "poweredBy": "Unterstützt von Aetheria Core"
+    },
+    "aria": {
+      "x": "X (ehemals Twitter)",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
   },
   "profile": {
     "saveSuccessTitle": "Profil Synchronisiert",
@@ -366,11 +423,102 @@
       }
     }
   },
+  "onboarding": {
+    "steps": {
+      "header": {
+        "title": "Aura Hub Aktiv",
+        "content": "Deine neuronale Verbindung ist live. Dieses Abzeichen zeigt an, dass die KI von Aetheria aktiv deine Reisedaten synthetisiert."
+      },
+      "season": {
+        "title": "Saison-Fortschritt",
+        "content": "Verfolge deine XP und steige in deiner Odyssee auf. Schließe Quests ab, um exklusive digitale Assets und Reisevorteile freizuschalten."
+      },
+      "itinerary": {
+        "title": "Aura-Reiseroute",
+        "content": "Unsere Kern-KI-Engine. Synthetisiere eine mehrtägige Odyssee, die auf deine psychologische DNA und deine Reise-Vibe zugeschnitten ist."
+      },
+      "vision": {
+        "title": "Vision KI-Hub",
+        "content": "Nutze deine Kamera, um Sehenswürdigkeiten und Artefakte zu scannen. Unsere KI bietet eine historische und kulturelle Synthese in Echtzeit."
+      },
+      "postcard": {
+        "title": "Postkarten-Studio",
+        "content": "Verwandle deine Reise-Schnappschüsse in hochauflösende, KI-generierte Kunst. Teile deine einzigartige Vision mit dem Netzwerk."
+      },
+      "vibe": {
+        "title": "Vibe-Radar",
+        "content": "Finde andere Entdecker in deiner Nähe mit passenden neuronalen Signaturen. Verbinde dich und synchronisiere eure Reisen."
+      }
+    },
+    "finish": "Abschließen",
+    "next": "Weiter"
+  },
   "itineraryGenerator": {
-    "title": "Odyssee-Architekt",
-    "subtitle": "Synthetisiere eine mehrtägige Reise basierend auf deinem psychologischen Vibe.",
-    "authError": "Autorisierungsknoten Offline",
-    "authErrorDesc": "Bitte melde dich an, um eine Odyssee zu synthetisieren."
+    "toast": {
+      "bookingInitiated": "Buchung Eingeleitet",
+      "reserving": "Reservierung von {{activity}}...",
+      "adjustmentFailed": "Anpassung Fehlgeschlagen",
+      "adjustmentFailedDesc": "Der Reiseplan konnte nicht neu kalibriert werden.",
+      "pathRecalibrated": "Pfad Neu Kalibriert",
+      "pathRecalibratedDesc": "Der Reiseplan wurde mit den vorgeschlagenen Änderungen aktualisiert.",
+      "generateSuccessTitle": "Odyssee Synthetisiert",
+      "generateSuccessDescription": "Dein Pfad nach {{destination}} ist bereit.",
+      "generateErrorTitle": "Synthese Fehlgeschlagen",
+      "generateErrorDescription": "Der Reiseplan konnte nicht erstellt werden. Systemfehler.",
+      "refineSuccessTitle": "Pfad Verfeinert",
+      "refineErrorTitle": "Verfeinerung Fehlgeschlagen",
+      "refineErrorDescription": "Der Pfad konnte nicht angepasst werden."
+    },
+    "display": {
+      "pendingTitle": "Reiseplan Ausstehend",
+      "pendingDesc": "Autorisiere ein Ziel, um deinen hochauflösenden Reiseplan zu erstellen.",
+      "upgradeTitle": "Vollen Umfang Freischalten",
+      "upgradeDesc": "Upgrade auf Pro für unbegrenzte KI-Verfeinerungen und hochauflösende Einblicke.",
+      "upgradeBtn": "Jetzt Upgraden",
+      "resultBadge": "Generierter Reiseplan",
+      "pathTitle": "Dein Reiseplan",
+      "recalibrateTitle": "Dynamische Neukalibrierung",
+      "recalibrateDesc": "Das Wetter hat sich geändert. Möchtest du deinen Pfad für Indoor-Aktivitäten neu kalibrieren?",
+      "recalibrateContext": "Es hat plötzlich angefangen zu regnen, daher sind Outdoor-Aktivitäten nicht ideal.",
+      "recalibrateBtn": "Pfad Neu Kalibrieren",
+      "reserveBtn": "Reservieren",
+      "notes": "Protokoll-Notizen",
+      "adjustTitle": "Manuelle Verfeinerung",
+      "adjustDesc": "Fordere spezifische Anpassungen an deinem generierten Pfad an.",
+      "adjustPlaceholder": "z.B.: Füge mehr Street-Food-Stopps hinzu oder mache es entspannter...",
+      "processing": "Verarbeitung...",
+      "updateBtn": "Pfad Aktualisieren",
+      "proposedTitle": "Vorgeschlagene Neukalibrierung",
+      "rejectBtn": "Ablehnen",
+      "authorizeBtn": "Änderungen Autorisieren"
+    },
+    "form": {
+      "title": "Odyssee Generieren",
+      "description": "Synthetisiere eine Multi-Knoten-Reise basierend auf deinem einzigartigen Vibe und deinen Einschränkungen.",
+      "destinationLabel": "Zielort",
+      "destinationPlaceholder": "z.B. Tokio, Japan",
+      "datesLabel": "Zeitraum",
+      "pickDateRange": "Zeitraum wählen",
+      "budgetLabel": "Ressourcenallokation",
+      "budgetPlaceholder": "Budget wählen",
+      "budgetLow": "Economy (Niedrig)",
+      "budgetMedium": "Standard (Mittel)",
+      "budgetHigh": "Premium (Hoch)",
+      "vibeLabel": "Vibe-Synthese",
+      "vibePlaceholder": "Beschreibe das Gefühl dieser Reise...",
+      "vibeDescription": "Die KI wird dies nutzen, um die Atmosphäre des Reiseplans zu verankern.",
+      "generatingButton": "Synthetisiere Pfad...",
+      "generateButton": "Odyssee Autorisieren"
+    },
+    "validation": {
+      "destination": "Das Ziel muss mindestens 2 Zeichen lang sein.",
+      "interests": "Bitte wähle mindestens einen Interessenknoten aus."
+    },
+    "title": "Reiseplan-Generator",
+    "subtitle": "Synthetisiere deine nächste hochauflösende Reise mit KI-Orchestrierung.",
+    "authError": "Authentifizierung Erforderlich",
+    "authErrorDesc": "Bitte melde dich an, um die Reiseplan-Synthese zu autorisieren.",
+    "odysseySuffix": "Odyssee"
   },
   "subscription": {
     "badge": "Währungsprotokoll",
@@ -441,6 +589,51 @@
     "upgrade": "Upgrade Autorisieren",
     "processingBtn": "Verarbeitung...",
     "currentPlan": "Aktiver Knoten"
+  },
+  "footer": {
+    "brandName": "AETHERIA",
+    "brandTagline": "Reise Synthetisiert",
+    "copyright": "Aetheria AI",
+    "quote": "Wir planen nicht nur Reisen. Wir synthetisieren Erlebnisse mit Hilfe von Multi-Agenten-Neuronalgittern.",
+    "sections": {
+      "protocols": "Protokolle",
+      "network": "Netzwerk",
+      "support": "Unterstützung"
+    },
+    "links": {
+      "terms": "Nutzungsbedingungen",
+      "privacy": "Datenschutzrichtlinie",
+      "security": "Datensicherheit",
+      "legal": "Rechtlicher Hinweis",
+      "brochure": "Digitale Broschüre",
+      "partners": "Netzwerkpartner",
+      "hub": "Kontaktzentrum",
+      "faq": "FAQ-Knoten"
+    },
+    "status": {
+      "description": "Neuronalgitter Aktiv",
+      "poweredBy": "POWERED BY AETHERIA CORE"
+    },
+    "aria": {
+      "x": "X (ehemals Twitter)",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
+  },
+  "userNav": {
+    "explorerHub": "Explorer-Hub",
+    "manageBookings": "Buchungen Verwalten",
+    "upgradeSubscription": "Abonnement Upgrade",
+    "adminConsole": "Admin-Konsole",
+    "partnerHub": "Partner-Hub",
+    "identityNode": "Identitätsknoten",
+    "terminateSession": "Sitzung Beenden",
+    "toast": {
+      "logoutSuccessTitle": "Sitzung Beendet",
+      "logoutSuccessDescription": "Dein Aetheria-Knoten ist jetzt offline.",
+      "logoutErrorTitle": "Abmeldefehler",
+      "logoutErrorDescription": "Die neuronale Verbindung konnte nicht beendet werden."
+    }
   },
   "dashboard": {
     "welcomeBack": "Willkommen Zurück, {name}",

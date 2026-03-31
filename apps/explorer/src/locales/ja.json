@@ -121,6 +121,12 @@
     }
   },
   "header": {
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "linguisticGrid": "言語グリッド",
+    "login": "ログイン",
+    "signup": "サインアップ",
+    "sos": "SOS",
     "aiItinerary": "オーラ・イトネラリー",
     "pathfinder": "パスファインダー",
     "vibeMarketplace": "バイブ・マーケットプレイス",
@@ -178,6 +184,22 @@
     "localInsider": "ローカルインサイダー",
     "cultureScout": "カルチャースカウト",
     "packingassistant": "忘れ物なしエージェント",
+    "aria": {
+      "back": "戻る",
+      "wallet": "ウォレット",
+      "tailor": "テイラー",
+      "cart": "カート",
+      "language": "言語",
+      "menu": "メニュー"
+    },
+    "aria": {
+      "back": "戻る",
+      "wallet": "ウォレット",
+      "tailor": "テイラー",
+      "cart": "カート",
+      "language": "言語",
+      "menu": "メニュー"
+    },
     "categories": {
       "orchestration": "オーケストレート",
       "intelligence": "インテリジェンス",
@@ -300,14 +322,49 @@
     }
   },
   "footer": {
-    "terms": "利用規約",
-    "privacyProtocol": "プライバシープロトコル",
-    "dataSecurity": "データセキュリティ",
-    "legalHub": "リーガルハブ",
-    "globalConnect": "グローバルコネクト",
-    "allRightsReserved": "© {year} Aetheria AI Intelligence Systems. All rights reserved.",
-    "supportHub": "サポートハブ",
-    "partnerNetwork": "パートナーネットワーク"
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "copyright": "Aetheria AI",
+    "quote": "旅の未来は、どこへ行くかだけでなく、旅の現実をどのように合成するかにあります。",
+    "sections": {
+      "protocols": "プロトコル",
+      "network": "ネットワーク",
+      "support": "サポート",
+      "connect": "接続"
+    },
+    "links": {
+      "itinerary": "オーラ・イトネラリー",
+      "pathfinder": "パスファインダー",
+      "marketplace": "バイブ・マーケット",
+      "vision": "ビジョン・センター",
+      "intelligence": "インテル・センター",
+      "ar": "ARナビゲーション",
+      "odyssey": "トリップ・オデッセイ",
+      "postcard": "ポストカードスタジオ",
+      "heritage": "ヘリテージ・ミラー",
+      "journal": "ジャーナル",
+      "help": "ヘルプセンター",
+      "safety": "安全ノード",
+      "status": "システムステータス",
+      "api": "APIアクセス",
+      "terms": "利用規約",
+      "privacy": "プライバシー",
+      "security": "データセキュリティ",
+      "legal": "法的通知",
+      "brochure": "パンフレット",
+      "partners": "パートナー",
+      "hub": "コンタクトハブ",
+      "faq": "FAQ"
+    },
+    "status": {
+      "description": "グローバルグリッド稼働中",
+      "poweredBy": "Powered by Aetheria Core"
+    },
+    "aria": {
+      "x": "X (旧Twitter)",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
   },
   "profile": {
     "saveSuccessTitle": "プロファイル同期完了",
@@ -366,11 +423,102 @@
       }
     }
   },
+  "onboarding": {
+    "steps": {
+      "header": {
+        "title": "Auraハブ有効",
+        "content": "ニューラル接続がライブです。このバッジは、AetheriaのAIが旅行データをアクティブに統合していることを示しています。"
+      },
+      "season": {
+        "title": "シーズン進行",
+        "content": "XPを追跡し、オデッセイをレベルアップさせましょう。クエストを完了して、限定デジタルアセットや旅行特典をアンロックしてください。"
+      },
+      "itinerary": {
+        "title": "Aura旅程",
+        "content": "当社のコアAIエンジン。あなたの心理的DNAと旅行のバイブスに合わせて、数日間のオデッセイを構築します。"
+      },
+      "vision": {
+        "title": "ビジョンAIハブ",
+        "content": "カメラを使用してランドマークや遺物をスキャンします。当社のAIは、リアルタイムの歴史的・文化的統合を提供します。"
+      },
+      "postcard": {
+        "title": "ポストカードスタジオ",
+        "content": "旅行のスナップショットを、高精細なAI生成アートに変換します。あなたのユニークなビジョンをネットワークで共有しましょう。"
+      },
+      "vibe": {
+        "title": "バイブスレーダー",
+        "content": "一致するニューラルシグネチャを持つ近くの他の探索者を見つけます。つながり、旅を同期させましょう。"
+      }
+    },
+    "finish": "終了",
+    "next": "次へ"
+  },
   "itineraryGenerator": {
-    "title": "オデッセイ・アーキテクト",
-    "subtitle": "心理的なバイブスに基づいた数日間の旅行を合成します。",
-    "authError": "承認ノードがオフラインです",
-    "authErrorDesc": "オデッセイを合成するにはサインインしてください。"
+    "toast": {
+      "bookingInitiated": "予約開始",
+      "reserving": "{{activity}} を予約中...",
+      "adjustmentFailed": "調整失敗",
+      "adjustmentFailedDesc": "旅程を再調整できませんでした。",
+      "pathRecalibrated": "ルート再調整完了",
+      "pathRecalibratedDesc": "提案された変更で旅程が更新されました。",
+      "generateSuccessTitle": "オデッセイ合成完了",
+      "generateSuccessDescription": "{{destination}} へのルートが準備できました。",
+      "generateErrorTitle": "合成失敗",
+      "generateErrorDescription": "旅程を作成できませんでした。システムエラー。",
+      "refineSuccessTitle": "ルートを洗練",
+      "refineErrorTitle": "洗練失敗",
+      "refineErrorDescription": "ルートを調整できませんでした。"
+    },
+    "display": {
+      "pendingTitle": "旅程待機中",
+      "pendingDesc": "目的地を承認して、高精度な旅程を生成してください。",
+      "upgradeTitle": "フルスペクトルをアンロック",
+      "upgradeDesc": "Proにアップグレードして、無制限のAI洗練と高精度なインサイトを手に入れましょう。",
+      "upgradeBtn": "今すぐアップグレード",
+      "resultBadge": "生成された旅程",
+      "pathTitle": "あなたの旅程",
+      "recalibrateTitle": "ダイナミック再調整",
+      "recalibrateDesc": "天候が変化しました。屋内アクティビティ用にルートを再調整しますか？",
+      "recalibrateContext": "突然雨が降り始めたため、屋外アクティビティは理想的ではありません。",
+      "recalibrateBtn": "ルートを再調整",
+      "reserveBtn": "予約",
+      "notes": "プロトコルノート",
+      "adjustTitle": "手動洗練",
+      "adjustDesc": "生成されたルートに特定の調整をリクエストします。",
+      "adjustPlaceholder": "例：屋台の立ち寄り場所を増やす、またはもっとリラックスした内容にする...",
+      "processing": "処理中...",
+      "updateBtn": "ルートを更新",
+      "proposedTitle": "提案された再調整",
+      "rejectBtn": "拒否",
+      "authorizeBtn": "変更を承認"
+    },
+    "form": {
+      "title": "オデッセイを生成",
+      "description": "あなたのユニークなバイブスと制約に基づいて、マルチノードの旅を合成します。",
+      "destinationLabel": "目的地",
+      "destinationPlaceholder": "例：東京、日本",
+      "datesLabel": "期間",
+      "pickDateRange": "日付範囲を選択",
+      "budgetLabel": "リソース配分",
+      "budgetPlaceholder": "予算を選択",
+      "budgetLow": "エコノミー（低）",
+      "budgetMedium": "標準（中）",
+      "budgetHigh": "プレミアム（高）",
+      "vibeLabel": "バイブス合成",
+      "vibePlaceholder": "この旅行の雰囲気を聞かせてください...",
+      "vibeDescription": "AIはこれを使用して旅程の雰囲気を固定します。",
+      "generatingButton": "ルートを合成中...",
+      "generateButton": "オデッセイを承認"
+    },
+    "validation": {
+      "destination": "目的地は2文字以上である必要があります。",
+      "interests": "少なくとも1つの興味ノードを選択してください。"
+    },
+    "title": "旅程ジェネレーター",
+    "subtitle": "AIオーケストレーションで次の高精度な旅を合成しましょう。",
+    "authError": "認証が必要です",
+    "authErrorDesc": "旅程の合成を承認するにはサインインしてください。",
+    "odysseySuffix": "オデッセイ"
   },
   "subscription": {
     "badge": "通貨プロトコル",
@@ -441,6 +589,51 @@
     "upgrade": "アップグレードを承認",
     "processingBtn": "処理中...",
     "currentPlan": "アクティブノード"
+  },
+  "footer": {
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "copyright": "Aetheria AI",
+    "quote": "私たちは単に旅行を計画するだけではありません。マルチエージェント・ニューラルグリッドを使用して体験を合成します。",
+    "sections": {
+      "protocols": "プロトコル",
+      "network": "ネットワーク",
+      "support": "サポート"
+    },
+    "links": {
+      "terms": "利用規約",
+      "privacy": "プライバシーポリシー",
+      "security": "データセキュリティ",
+      "legal": "法的通知",
+      "brochure": "デジタルパンフレット",
+      "partners": "ネットワークパートナー",
+      "hub": "コンタクトハブ",
+      "faq": "FAQノード"
+    },
+    "status": {
+      "description": "ニューラルグリッド・アクティブ",
+      "poweredBy": "POWERED BY AETHERIA CORE"
+    },
+    "aria": {
+      "x": "X (旧Twitter)",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
+  },
+  "userNav": {
+    "explorerHub": "エクスプローラーハブ",
+    "manageBookings": "予約管理",
+    "upgradeSubscription": "サブスクリプションをアップグレード",
+    "adminConsole": "管理コンソール",
+    "partnerHub": "パートナーハブ",
+    "identityNode": "アイデンティティノード",
+    "terminateSession": "セッションを終了",
+    "toast": {
+      "logoutSuccessTitle": "セッション終了",
+      "logoutSuccessDescription": "Aetheriaノードは現在オフラインです。",
+      "logoutErrorTitle": "ログアウトエラー",
+      "logoutErrorDescription": "ニューラルリンクの終了に失敗しました。"
+    }
   },
   "dashboard": {
     "welcomeBack": "おかえりなさい、{name}さん",

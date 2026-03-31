@@ -121,6 +121,12 @@
     }
   },
   "header": {
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "linguisticGrid": "语言网格",
+    "login": "登录",
+    "signup": "注册",
+    "sos": "SOS",
     "aiItinerary": "灵气行程",
     "pathfinder": "寻路者",
     "vibeMarketplace": "氛围市场",
@@ -178,6 +184,22 @@
     "localInsider": "当地知情人",
     "cultureScout": "文化侦察员",
     "packingassistant": "无遗漏代理",
+    "aria": {
+      "back": "返回",
+      "wallet": "钱包",
+      "tailor": "裁缝",
+      "cart": "购物车",
+      "language": "语言",
+      "menu": "菜单"
+    },
+    "aria": {
+      "back": "返回",
+      "wallet": "钱包",
+      "tailor": "定制",
+      "cart": "购物车",
+      "language": "语言",
+      "menu": "菜单"
+    },
     "categories": {
       "orchestration": "编排",
       "intelligence": "智能",
@@ -300,14 +322,49 @@
     }
   },
   "footer": {
-    "terms": "服务条款",
-    "privacyProtocol": "隐私协议",
-    "dataSecurity": "数据安全",
-    "legalHub": "法律中心",
-    "globalConnect": "全球连接",
-    "allRightsReserved": "© {year} Aetheria AI Intelligence Systems. 保留所有权利。",
-    "supportHub": "支持中心",
-    "partnerNetwork": "合作伙伴网络"
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "copyright": "Aetheria AI",
+    "quote": "旅行的未来不仅在于你去哪里，而在于你如何合成旅行的现实。",
+    "sections": {
+      "protocols": "协议",
+      "network": "网络",
+      "support": "支持",
+      "connect": "连接"
+    },
+    "links": {
+      "itinerary": "灵气行程",
+      "pathfinder": "寻路者",
+      "marketplace": "氛围市场",
+      "vision": "视觉中心",
+      "intelligence": "情报中心",
+      "ar": "AR 导航",
+      "odyssey": "旅行奥德赛",
+      "postcard": "明信片工作室",
+      "heritage": "遗产之镜",
+      "journal": "日志",
+      "help": "帮助中心",
+      "safety": "安全节点",
+      "status": "系统状态",
+      "api": "API 访问",
+      "terms": "服务条款",
+      "privacy": "隐私协议",
+      "security": "数据安全",
+      "legal": "法律中心",
+      "brochure": "手册",
+      "partners": "合作伙伴",
+      "hub": "联系中心",
+      "faq": "常见问题"
+    },
+    "status": {
+      "description": "全球网格运行正常",
+      "poweredBy": "由 Aetheria Core 提供支持"
+    },
+    "aria": {
+      "x": "X (原 Twitter)",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
   },
   "profile": {
     "saveSuccessTitle": "个人资料已同步",
@@ -366,11 +423,102 @@
       }
     }
   },
+  "onboarding": {
+    "steps": {
+      "header": {
+        "title": "Aura 中心已激活",
+        "content": "您的神经连接已上线。此徽章表示 Aetheria 的 AI 正在积极合成您的旅行数据。"
+      },
+      "season": {
+        "title": "赛季进度",
+        "content": "跟踪您的 XP 并提升您的奥德赛等级。完成任务以解锁独家数字资产和旅行特权。"
+      },
+      "itinerary": {
+        "title": "Aura 行程",
+        "content": "我们的核心 AI 引擎。根据您的心理 DNA 和旅行氛围，合成量身定制的多日奥德赛。"
+      },
+      "vision": {
+        "title": "视觉 AI 中心",
+        "content": "使用相机扫描地标和文物。我们的 AI 提供实时的历史和文化合成。"
+      },
+      "postcard": {
+        "title": "明信片工作室",
+        "content": "将您的旅途快照转化为高保真 AI 生成艺术。与网络分享您的独特愿景。"
+      },
+      "vibe": {
+        "title": "氛围雷达",
+        "content": "寻找附近具有匹配神经签名的其他探索者。连接并同步您的旅程。"
+      }
+    },
+    "finish": "完成",
+    "next": "下一步"
+  },
   "itineraryGenerator": {
-    "title": "奥德赛建筑师",
-    "subtitle": "根据您的心理氛围合成多日旅行。",
-    "authError": "授权节点离线",
-    "authErrorDesc": "请登录以合成奥德赛。"
+    "toast": {
+      "bookingInitiated": "预订已启动",
+      "reserving": "正在预订 {{activity}}...",
+      "adjustmentFailed": "调整失败",
+      "adjustmentFailedDesc": "无法重新校准行程。",
+      "pathRecalibrated": "路径已重新校准",
+      "pathRecalibratedDesc": "行程已根据建议的更改进行更新。",
+      "generateSuccessTitle": "奥德赛合成成功",
+      "generateSuccessDescription": "您前往 {{destination}} 的路径已准备就绪。",
+      "generateErrorTitle": "合成失败",
+      "generateErrorDescription": "无法创建行程。系统错误。",
+      "refineSuccessTitle": "路径已精炼",
+      "refineErrorTitle": "精炼失败",
+      "refineErrorDescription": "无法调整路径。"
+    },
+    "display": {
+      "pendingTitle": "行程待定",
+      "pendingDesc": "授权目的地以生成您的高保真行程。",
+      "upgradeTitle": "解锁全频谱",
+      "upgradeDesc": "升级到 Pro 以获得无限的 AI 精炼和高保真洞察。",
+      "upgradeBtn": "立即升级",
+      "resultBadge": "已生成的行程",
+      "pathTitle": "您的行程",
+      "recalibrateTitle": "动态重新校准",
+      "recalibrateDesc": "天气已变化。您想重新校准您的室内活动路径吗？",
+      "recalibrateContext": "突然开始下雨，因此户外活动不理想。",
+      "recalibrateBtn": "重新校准路径",
+      "reserveBtn": "预订",
+      "notes": "协议说明",
+      "adjustTitle": "手动精炼",
+      "adjustDesc": "请求对生成的路径进行特定调整。",
+      "adjustPlaceholder": "例如：增加更多街头美食停靠点，或让行程更轻松...",
+      "processing": "处理中...",
+      "updateBtn": "更新路径",
+      "proposedTitle": "建议的重新校准",
+      "rejectBtn": "拒绝",
+      "authorizeBtn": "授权更改"
+    },
+    "form": {
+      "title": "生成奥德赛",
+      "description": "根据您独特的氛围和约束合成多节点旅行。",
+      "destinationLabel": "目标目的地",
+      "destinationPlaceholder": "例如：日本东京",
+      "datesLabel": "时间范围",
+      "pickDateRange": "选择日期范围",
+      "budgetLabel": "资源分配",
+      "budgetPlaceholder": "选择预算",
+      "budgetLow": "经济（低）",
+      "budgetMedium": "标准（中）",
+      "budgetHigh": "高级（高）",
+      "vibeLabel": "氛围合成",
+      "vibePlaceholder": "描述这次旅行的感觉...",
+      "vibeDescription": "AI 将使用它来锚定行程的氛围。",
+      "generatingButton": "正在合成路径...",
+      "generateButton": "授权奥德赛"
+    },
+    "validation": {
+      "destination": "目的地必须至少包含 2 个字符。",
+      "interests": "请至少选择一个兴趣节点。"
+    },
+    "title": "行程生成器",
+    "subtitle": "通过 AI 编排合成您的下一次高保真旅行。",
+    "authError": "需要身份验证",
+    "authErrorDesc": "请登录以授权行程合成。",
+    "odysseySuffix": "奥德赛"
   },
   "subscription": {
     "badge": "货币协议",
@@ -441,6 +589,51 @@
     "upgrade": "授权升级",
     "processingBtn": "处理中...",
     "currentPlan": "激活节点"
+  },
+  "footer": {
+    "brandName": "AETHERIA",
+    "brandTagline": "旅程合成",
+    "copyright": "Aetheria AI",
+    "quote": "我们不只是计划旅行。我们使用多智能体神经网格合成体验。",
+    "sections": {
+      "protocols": "协议",
+      "network": "网络",
+      "support": "支持"
+    },
+    "links": {
+      "terms": "服务条款",
+      "privacy": "隐私政策",
+      "security": "数据安全",
+      "legal": "法律声明",
+      "brochure": "数字手册",
+      "partners": "网络合作伙伴",
+      "hub": "联系中心",
+      "faq": "常见问题节点"
+    },
+    "status": {
+      "description": "神经网格激活",
+      "poweredBy": "由 AETHERIA CORE 提供支持"
+    },
+    "aria": {
+      "x": "X (前 Twitter)",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
+  },
+  "userNav": {
+    "explorerHub": "探索者中心",
+    "manageBookings": "管理预订",
+    "upgradeSubscription": "升级订阅",
+    "adminConsole": "管理员控制台",
+    "partnerHub": "合作伙伴中心",
+    "identityNode": "身份节点",
+    "terminateSession": "终止会话",
+    "toast": {
+      "logoutSuccessTitle": "会话已终止",
+      "logoutSuccessDescription": "您的 Aetheria 节点现已离线。",
+      "logoutErrorTitle": "退出错误",
+      "logoutErrorDescription": "无法终止神经链接。"
+    }
   },
   "dashboard": {
     "welcomeBack": "欢迎回来，{name}",

@@ -1,4 +1,198 @@
 
 {
-  "header": { "dashboard": "Dashboard" }
+  "header": {
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "linguisticGrid": "Linguistic Grid",
+    "login": "LOGIN",
+    "signup": "SIGN UP",
+    "sos": "SOS",
+    "dashboard": "Dashboard",
+    "aiItinerary": "AI Itinerary",
+    "pathfinder": "Pathfinder",
+    "vibeMarketplace": "Vibe Marketplace",
+    "vibeShopping": "Vibe Shopping",
+    "bookingHub": "Booking Hub",
+    "wallet": "Wallet",
+    "budgetSynthesis": "Budget Synthesis",
+    "visionHub": "Vision Hub",
+    "intelligenceCenter": "Intelligence Center",
+    "arWayfinding": "AR Wayfinding",
+    "localLegends": "Local Legends",
+    "culturalPulse": "Cultural Pulse",
+    "audioGuide": "Audio Guide",
+    "tripOdyssey": "Trip Odyssey",
+    "postcardStudio": "Postcard Studio",
+    "heritageMirror": "Heritage Mirror",
+    "journal": "Journal",
+    "insurance": "Insurance",
+    "visaArchitect": "Visa Architect",
+    "flightStatus": "Flight Status",
+    "esim": "eSIM",
+    "carbonSynthesis": "Carbon Synthesis",
+    "packingassistant": "Packing Assistant",
+    "hotels": "Hotels",
+    "flights": "Flights",
+    "trains": "Trains",
+    "buses": "Buses",
+    "cruises": "Cruises",
+    "cabs": "Cabs",
+    "dining": "Dining",
+    "aria": {
+      "back": "Bumalik",
+      "wallet": "Wallet",
+      "tailor": "Tailor",
+      "cart": "Cart",
+      "language": "Wika",
+      "menu": "Menu"
+    },
+    "categories": {
+      "orchestration": "Orchestration",
+      "intelligence": "Intelligence",
+      "studios": "Studios",
+      "utility": "Utility"
+    }
+  },
+  "footer": {
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "copyright": "Aetheria AI",
+    "quote": "Hindi lang kami nagpaplano ng mga biyahe. Sini-synthesize namin ang mga karanasan gamit ang multi-agent neural grids.",
+    "sections": {
+      "protocols": "Mga Protocol",
+      "network": "Network",
+      "support": "Suporta"
+    },
+    "links": {
+      "terms": "Mga Tuntunin ng Serbisyo",
+      "privacy": "Patakaran sa Privacy",
+      "security": "Seguridad ng Data",
+      "legal": "Legal na Paunawa",
+      "brochure": "Digital na Brochure",
+      "partners": "Mga Kasosyo sa Network",
+      "hub": "Contact Hub",
+      "faq": "FAQ Node"
+    },
+    "status": {
+      "description": "Aktibo ang Neural Grid",
+      "poweredBy": "POWERED BY AETHERIA CORE"
+    },
+    "aria": {
+      "x": "X (dating Twitter)",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
+  },
+  "userNav": {
+    "explorerHub": "Explorer Hub",
+    "manageBookings": "Pamahalaan ang mga Booking",
+    "upgradeSubscription": "I-upgrade ang Subscription",
+    "adminConsole": "Admin Console",
+    "partnerHub": "Partner Hub",
+    "identityNode": "Identity Node",
+    "terminateSession": "Tapusin ang Session",
+    "toast": {
+      "logoutSuccessTitle": "Tapos na ang Session",
+      "logoutSuccessDescription": "Offline na ang iyong Aetheria node.",
+      "logoutErrorTitle": "Error sa Pag-sign Out",
+      "logoutErrorDescription": "Nabigong tapusin ang neural link."
+    }
+  },
+  "onboarding": {
+    "steps": {
+      "header": {
+        "title": "Aktibo ang Aura Hub",
+        "content": "Live na ang iyong neural connection. Ang badge na ito ay nagpapahiwatig na ang AI ng Aetheria ay aktibong nagsasama-sama ng iyong data sa paglalakbay."
+      },
+      "season": {
+        "title": "Progresyon ng Season",
+        "content": "Subaybayan ang iyong XP at i-level up ang iyong Odyssey. Kumpletuhin ang mga quest para i-unlock ang mga eksklusibong digital asset at mga perk sa paglalakbay."
+      },
+      "itinerary": {
+        "title": "Itinerary ng Aura",
+        "content": "Ang aming core AI engine. Mag-synthesize ng multi-day odyssey na iniangkop sa iyong psychological DNA at travel vibe."
+      },
+      "vision": {
+        "title": "Vision AI Hub",
+        "content": "Gamitin ang iyong camera para i-scan ang mga landmark at artifact. Nagbibigay ang aming AI ng real-time na historical at cultural synthesis."
+      },
+      "postcard": {
+        "title": "Postcard Studio",
+        "content": "Ibahin ang iyong mga snapshot ng paglalakbay sa high-fidelity na sining na binuo ng AI. Ibahagi ang iyong natatanging pananaw sa network."
+      },
+      "vibe": {
+        "title": "Vibe Radar",
+        "content": "Maghanap ng iba pang mga explorer sa iyong paligid na may magkatulad na neural signature. Kumonekta at i-synchronize ang inyong mga paglalakbay."
+      }
+    },
+    "finish": "Tapusin",
+    "next": "Susunod"
+  },
+  "itineraryGenerator": {
+    "toast": {
+      "bookingInitiated": "Sinimulan ang Pag-book",
+      "reserving": "Nagbu-book ng {{activity}}...",
+      "adjustmentFailed": "Nabigo ang Pagsasaayos",
+      "adjustmentFailedDesc": "Hindi ma-recalibrate ang itinerary.",
+      "pathRecalibrated": "Na-recalibrate ang Daan",
+      "pathRecalibratedDesc": "Na-update ang itinerary sa mga iminungkahing pagbabago.",
+      "generateSuccessTitle": "Na-synthesize ang Odyssey",
+      "generateSuccessDescription": "Handa na ang iyong daan patungong {{destination}}.",
+      "generateErrorTitle": "Nabigo ang Synthesis",
+      "generateErrorDescription": "Hindi makagawa ng itinerary. Error sa system.",
+      "refineSuccessTitle": "Pinahusay ang Daan",
+      "refineErrorTitle": "Nabigo ang Pagpapahusay",
+      "refineErrorDescription": "Hindi ma-adjust ang daan."
+    },
+    "display": {
+      "pendingTitle": "Nakabinbing Itinerary",
+      "pendingDesc": "Pahintulutan ang isang destinasyon upang i-generate ang iyong high-fidelity itinerary.",
+      "upgradeTitle": "I-unlock ang Buong Spectrum",
+      "upgradeDesc": "Mag-upgrade sa Pro para sa walang limitasyong AI refinements at high-fidelity insights.",
+      "upgradeBtn": "Mag-upgrade Ngayon",
+      "resultBadge": "Na-generate na Itinerary",
+      "pathTitle": "Ang Iyong Itinerary",
+      "recalibrateTitle": "Dynamic Recalibration",
+      "recalibrateDesc": "Nagbago ang panahon. Gusto mo bang i-recalibrate ang iyong daan para sa mga indoor activity?",
+      "recalibrateContext": "Biglang umulan, kaya hindi ideal ang mga outdoor activity.",
+      "recalibrateBtn": "I-recalibrate ang Daan",
+      "reserveBtn": "I-book",
+      "notes": "Mga Tala ng Protocol",
+      "adjustTitle": "Manual Refinement",
+      "adjustDesc": "Humiling ng mga partikular na pagsasaayos sa iyong na-generate na daan.",
+      "adjustPlaceholder": "hal: magdagdag ng higit pang street food stops, o gawin itong mas nakaka-relax...",
+      "processing": "Pinoproseso...",
+      "updateBtn": "I-update ang Daan",
+      "proposedTitle": "Iminungkahing Recalibration",
+      "rejectBtn": "Tanggihan",
+      "authorizeBtn": "Pahintulutan ang mga Pagbabago"
+    },
+    "form": {
+      "title": "I-generate ang Odyssey",
+      "description": "I-synthesize ang isang multi-node na biyahe batay sa iyong natatanging vibe at mga hadlang.",
+      "destinationLabel": "Target na Destinasyon",
+      "destinationPlaceholder": "hal: Tokyo, Japan",
+      "datesLabel": "Saklaw ng Oras",
+      "pickDateRange": "Pumili ng saklaw ng petsa",
+      "budgetLabel": "Paglalaan ng Resource",
+      "budgetPlaceholder": "Pumili ng budget",
+      "budgetLow": "Ekonomiya (Mababa)",
+      "budgetMedium": "Standard (Katamtaman)",
+      "budgetHigh": "Premium (Mataas)",
+      "vibeLabel": "Vibe Synthesis",
+      "vibePlaceholder": "Ilarawan ang pakiramdam ng biyaheng ito...",
+      "vibeDescription": "Gagamitin ito ng AI para i-anchor ang kapaligiran ng itinerary.",
+      "generatingButton": "Sini-synthesize ang Daan...",
+      "generateButton": "Pahintulutan ang Odyssey"
+    },
+    "validation": {
+      "destination": "Ang destinasyon ay dapat may hindi bababa sa 2 character.",
+      "interests": "Mangyaring pumili ng hindi bababa sa isang interest node."
+    },
+    "title": "Tagagawa ng Itinerary",
+    "subtitle": "I-synthesize ang iyong susunod na high-fidelity na biyahe gamit ang AI orchestration.",
+    "authError": "Kinakailangan ang Pagpapatunay",
+    "authErrorDesc": "Mangyaring mag-sign in upang pahintulutan ang itinerary synthesis.",
+    "odysseySuffix": "Odyssey"
+  }
 }

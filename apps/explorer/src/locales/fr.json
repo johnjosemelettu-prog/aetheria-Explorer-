@@ -121,6 +121,12 @@
     }
   },
   "header": {
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "linguisticGrid": "Grille Linguistique",
+    "login": "CONNEXION",
+    "signup": "S'INSCRIRE",
+    "sos": "SOS",
     "aiItinerary": "Itinéraire Aura",
     "pathfinder": "Chercheur de Chemin",
     "vibeMarketplace": "Marché des Vibes",
@@ -178,6 +184,22 @@
     "localInsider": "Infos Locales",
     "cultureScout": "Éclaireur Culturel",
     "packingassistant": "Agent Je n'ai rien oublié",
+    "aria": {
+      "back": "Retour",
+      "wallet": "Portefeuille",
+      "tailor": "Tailleur",
+      "cart": "Panier",
+      "language": "Langue",
+      "menu": "Menu"
+    },
+    "aria": {
+      "back": "Retourner",
+      "wallet": "Portefeuille",
+      "tailor": "Tailleur",
+      "cart": "Panier",
+      "language": "Langue",
+      "menu": "Menu"
+    },
     "categories": {
       "orchestration": "Orchestrer",
       "intelligence": "Intelligence",
@@ -300,14 +322,49 @@
     }
   },
   "footer": {
-    "terms": "Conditions d'Utilisation",
-    "privacyProtocol": "Protocole de Confidentialité",
-    "dataSecurity": "Sécurité des Données",
-    "legalHub": "Centre Juridique",
-    "globalConnect": "Connexion Mondiale",
-    "allRightsReserved": "© {year} Aetheria AI Intelligence Systems. Tous droits réservés.",
-    "supportHub": "Centre de Support",
-    "partnerNetwork": "Réseau de Partenaires"
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "copyright": "Aetheria AI",
+    "quote": "L'avenir du voyage ne dépend pas seulement de l'endroit où vous allez, mais de la façon dont vous synthétisez la réalité de votre voyage.",
+    "sections": {
+      "protocols": "Protocoles",
+      "network": "Réseau",
+      "support": "Support",
+      "connect": "Se Connecter"
+    },
+    "links": {
+      "itinerary": "Itinéraire Aura",
+      "pathfinder": "Buscador de Caminos",
+      "marketplace": "Marché Vibe",
+      "vision": "Centre de Vision",
+      "intelligence": "Centre d'Intelligence",
+      "ar": "Navigation AR",
+      "odyssey": "Odyssée de Voyage",
+      "postcard": "Studio de Cartes Postales",
+      "heritage": "Miroir du Patrimoine",
+      "journal": "Journal",
+      "help": "Centre d'Aide",
+      "safety": "Nœud de Sécurité",
+      "status": "État du Système",
+      "api": "Accès API",
+      "terms": "Conditions d'Utilisation",
+      "privacy": "Confidentialité",
+      "security": "Sécurité des Données",
+      "legal": "Mentions Légales",
+      "brochure": "Brochure",
+      "partners": "Partenaires",
+      "hub": "Hub de Contact",
+      "faq": "FAQ"
+    },
+    "status": {
+      "description": "Grille Globale Opérationnelle",
+      "poweredBy": "Propulsé par Aetheria Core"
+    },
+    "aria": {
+      "x": "X (anciennement Twitter)",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
   },
   "profile": {
     "saveSuccessTitle": "Profil Synchronisé",
@@ -366,11 +423,102 @@
       }
     }
   },
+  "onboarding": {
+    "steps": {
+      "header": {
+        "title": "Aura Hub Actif",
+        "content": "Votre connexion neurale est active. Ce badge indique que l'IA d'Aetheria synthétise activement vos données de voyage."
+      },
+      "season": {
+        "title": "Progression de la Saison",
+        "content": "Suivez votre XP et montez de niveau dans votre Odyssée. Terminez des quêtes pour débloquer des actifs numériques exclusifs et des avantages de voyage."
+      },
+      "itinerary": {
+        "title": "Itinéraire Aura",
+        "content": "Notre moteur d'IA central. Synthétisez une odyssée de plusieurs jours adaptée à votre ADN psychologique et à votre ambiance de voyage."
+      },
+      "vision": {
+        "title": "Vision AI Hub",
+        "content": "Utilisez votre caméra pour scanner des monuments et des artefacts. Notre IA fournit une synthèse historique et culturelle en temps réel."
+      },
+      "postcard": {
+        "title": "Studio de Cartes Postales",
+        "content": "Transformez vos clichés de voyage en art généré par IA haute fidélité. Partagez votre vision unique avec le réseau."
+      },
+      "vibe": {
+        "title": "Vibe Radar",
+        "content": "Trouvez d'autres explorateurs à proximité avec des signatures neurales correspondantes. Connectez-vous et synchronisez vos voyages."
+      }
+    },
+    "finish": "Terminer",
+    "next": "Suivant"
+  },
   "itineraryGenerator": {
-    "title": "Architecte d'Odyssée",
-    "subtitle": "Synthétisez un voyage de plusieurs jours basé sur votre ambiance psychologique.",
-    "authError": "Nœud d'Autorisation Hors Ligne",
-    "authErrorDesc": "Veuillez vous connecter pour synthétiser une odyssée."
+    "toast": {
+      "bookingInitiated": "Réservation Initiée",
+      "reserving": "Réservation de {{activity}}...",
+      "adjustmentFailed": "Échec de l'Ajustement",
+      "adjustmentFailedDesc": "Impossible de recalibrer l'itinéraire.",
+      "pathRecalibrated": "Trajet Recalibré",
+      "pathRecalibratedDesc": "L'itinéraire a été mis à jour avec les changements proposés.",
+      "generateSuccessTitle": "Odyssée Synthétisée",
+      "generateSuccessDescription": "Votre trajet vers {{destination}} est prêt.",
+      "generateErrorTitle": "Échec de la Synthèse",
+      "generateErrorDescription": "Impossible de créer l'itinéraire. Erreur système.",
+      "refineSuccessTitle": "Trajet Affiné",
+      "refineErrorTitle": "Échec de l'Affinage",
+      "refineErrorDescription": "Impossible d'ajuster le trajet."
+    },
+    "display": {
+      "pendingTitle": "Itinéraire en Attente",
+      "pendingDesc": "Autorisez une destination pour générer votre itinéraire haute fidélité.",
+      "upgradeTitle": "Débloquez le Spectre Complet",
+      "upgradeDesc": "Passez à Pro pour des affinages IA illimités et des insights haute fidélité.",
+      "upgradeBtn": "Mettre à Niveau Maintenant",
+      "resultBadge": "Itinéraire Généré",
+      "pathTitle": "Votre Itinéraire",
+      "recalibrateTitle": "Recalibrage Dynamique",
+      "recalibrateDesc": "La météo a changé. Souhaitez-vous recalibrer votre trajet pour des activités en intérieur ?",
+      "recalibrateContext": "Il a commencé à pleuvoir soudainement, les activités de plein air ne sont donc pas idéales.",
+      "recalibrateBtn": "Recalibrer le Trajet",
+      "reserveBtn": "Réserver",
+      "notes": "Notes du Protocole",
+      "adjustTitle": "Affinage Manuel",
+      "adjustDesc": "Demandez des ajustements spécifiques à votre trajet généré.",
+      "adjustPlaceholder": "ex : ajoutez plus d'arrêts de street food, ou rendez-le plus relaxant...",
+      "processing": "Traitement...",
+      "updateBtn": "Mettre à Jour le Trajet",
+      "proposedTitle": "Recalibrage Proposé",
+      "rejectBtn": "Rejeter",
+      "authorizeBtn": "Autoriser les Changements"
+    },
+    "form": {
+      "title": "Générer une Odyssée",
+      "description": "Synthétisez un voyage multi-nœuds basé sur votre ambiance unique et vos contraintes.",
+      "destinationLabel": "Destination Cible",
+      "destinationPlaceholder": "ex : Tokyo, Japon",
+      "datesLabel": "Plage Temporelle",
+      "pickDateRange": "Choisir une plage de dates",
+      "budgetLabel": "Allocation des Ressources",
+      "budgetPlaceholder": "Sélectionner le budget",
+      "budgetLow": "Économique (Bas)",
+      "budgetMedium": "Standard (Moyen)",
+      "budgetHigh": "Premium (Haut)",
+      "vibeLabel": "Synthèse d'Ambiance",
+      "vibePlaceholder": "Décrivez le sentiment de ce voyage...",
+      "vibeDescription": "L'IA utilisera cela pour ancrer l'atmosphère de l'itinéraire.",
+      "generatingButton": "Synthèse du Trajet...",
+      "generateButton": "Autoriser l'Odyssée"
+    },
+    "validation": {
+      "destination": "La destination doit comporter au moins 2 caractères.",
+      "interests": "Veuillez sélectionner au moins un nœud d'intérêt."
+    },
+    "title": "Générateur d'Itinéraire",
+    "subtitle": "Synthétisez votre prochain voyage haute fidélité avec l'orchestration IA.",
+    "authError": "Authentification Requise",
+    "authErrorDesc": "Veuillez vous connecter pour autoriser la synthèse d'itinéraire.",
+    "odysseySuffix": "Odyssée"
   },
   "subscription": {
     "badge": "Protocole Monétaire",
@@ -441,6 +589,51 @@
     "upgrade": "Autoriser la Mise à Niveau",
     "processingBtn": "Traitement...",
     "currentPlan": "Nœud Actif"
+  },
+  "footer": {
+    "brandName": "AETHERIA",
+    "brandTagline": "Voyage Synthétisé",
+    "copyright": "Aetheria AI",
+    "quote": "Nous ne nous contentons pas de planifier des voyages. Nous synthétisons des expériences à l'aide de grilles neuronales multi-agents.",
+    "sections": {
+      "protocols": "Protocoles",
+      "network": "Réseau",
+      "support": "Support"
+    },
+    "links": {
+      "terms": "Conditions d'utilisation",
+      "privacy": "Politique de confidentialité",
+      "security": "Sécurité des données",
+      "legal": "Mentions légales",
+      "brochure": "Brochure numérique",
+      "partners": "Partenaires du réseau",
+      "hub": "Centre de contact",
+      "faq": "Nœud FAQ"
+    },
+    "status": {
+      "description": "Grille neuronale active",
+      "poweredBy": "PROPULSÉ PAR AETHERIA CORE"
+    },
+    "aria": {
+      "x": "X (anciennement Twitter)",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
+  },
+  "userNav": {
+    "explorerHub": "Centre des explorateurs",
+    "manageBookings": "Gérer les réservations",
+    "upgradeSubscription": "Améliorer l'abonnement",
+    "adminConsole": "Console d'administration",
+    "partnerHub": "Centre des partenaires",
+    "identityNode": "Nœud d'identité",
+    "terminateSession": "Terminer la session",
+    "toast": {
+      "logoutSuccessTitle": "Session terminée",
+      "logoutSuccessDescription": "Votre nœud Aetheria est maintenant hors ligne.",
+      "logoutErrorTitle": "Erreur de déconnexion",
+      "logoutErrorDescription": "Échec de la fin du lien neuronal."
+    }
   },
   "dashboard": {
     "welcomeBack": "Bon Retour, {name}",
