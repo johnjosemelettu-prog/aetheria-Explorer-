@@ -1,3 +1,4 @@
+
 {
   "common": {
     "save": "حفظ التغييرات",
@@ -20,7 +21,8 @@
     "authorized": "مصرح به",
     "error": "خطأ",
     "returnToDashboard": "العودة إلى مركز القيادة",
-    "apps": "Apps"
+    "apps": "Apps",
+    "initialize": "Initialize"
   },
   "login": {
     "title": "تسجيل الدخول",
@@ -91,35 +93,41 @@
       "enterGridButton": "ENTER GRID",
       "signUpButton": "SIGN UP",
       "loginButton": "LOGIN",
-      "scrollRecode": "Scroll to Recode"
+      "scrollRecode": "Scroll to Recode",
+      "description1": "THE WORLD RECODED.",
+      "description2": "Eliminate logistics. Amplify immersion. Experience the first multi-agent AI travel ecosystem.",
+      "enterGrid": "ENTER GRID",
+      "signUp": "SIGN UP",
+      "login": "LOGIN"
     },
     "features": {
       "chapter": "البروتوكول الفصل 01",
       "title": "العدسة الذكية",
       "initNode": "تهيئة العقدة",
       "itinerary": {
-        "badge": "التنسيق",
+        "badge": "Orchestration",
         "title": "مسار Aura",
         "desc": "تركيب رحلات متعددة الأيام بناءً على الحمض النووي النفسي الخاص بك."
       },
       "postcard": {
-        "badge": "الاستوديو",
+        "badge": "Studio",
         "title": "استوديو البطاقات البريدية",
         "desc": "حول صورك إلى أعمال فنية عالية الدقة تم إنشاؤها بواسطة الذكاء الاصطناعي."
       },
       "legends": {
-        "badge": "رؤى",
+        "badge": "Intelligence",
         "title": "الأساطير المحلية",
         "desc": "افتح الأساطير المخفية لإحداثياتك من خلال سرد القصص المفعل بنظام تحديد المواقع العالمي (GPS)."
       },
       "packing": {
-        "badge": "الأدوات",
+        "badge": "Utility",
         "title": "وكيل عدم النسيان",
         "desc": "تركيب استباقي لمستلزمات السفر مصمم خصيصاً للطقس وعقد الرحلة."
       },
       "titlePart2": "MODULES.",
       "quote": "We don't just plan trips. We synthesize experiences using multi-agent neural grids.",
-      "initializeButton": "Initialize"
+      "initializeButton": "Initialize",
+      "badge": "NEURAL MODULES"
     },
     "workflow": {
       "badge": "بروتوكول التشغيل",
@@ -145,7 +153,11 @@
       "step3Title": "EXECUTE",
       "step3Desc": "Deploy your itinerary with real-time AR/VR support.",
       "realtimeOptimizationBadge": "Real-time Optimization",
-      "realtimeOptimizationDesc": "Grid adjusted for weather patterns in Tokyo. Recalculating route..."
+      "realtimeOptimizationDesc": "Grid adjusted for weather patterns in Tokyo. Recalculating route...",
+      "floating": {
+        "title": "Real-time Optimization",
+        "desc": "Grid adjusted for weather patterns in Tokyo. Recalculating route..."
+      }
     },
     "cta": {
       "badge": "انضم إلى الشبكة",
@@ -157,7 +169,9 @@
       "titlePart2": "RECODE?",
       "readyToRecodeSubtitle": "Join 50,000+ digital nomads who have already synthesized their reality.",
       "signUpNowButton": "SIGN UP NOW",
-      "loginButton": "LOGIN"
+      "loginButton": "LOGIN",
+      "description": "Join the network of modern explorers harnessing infinite intelligence.",
+      "signUpNow": "SIGN UP NOW"
     }
   },
   "header": {
@@ -536,8 +550,21 @@
     },
     "vibeRadar": {
       "title": "رادار الأجواء",
-      "desc": "جاري مسح أجواء {vibe} في {location}"
-    }
+      "desc": "جاري مسح أجواء {vibe} في {location}",
+      "match": "{vibe} MATCH",
+      "expand": "Expand Neural Network"
+    },
+    "explorerHubActive": "Explorer Hub Active",
+    "viewLegacyWrapped": "View Legacy Wrapped",
+    "productionTrailer": "Production Trailer",
+    "seasonPass.title": "Season Pass",
+    "seasonPass.subtitle": "Season 01: The Path Finder",
+    "progression": "{current} / {total} XP",
+    "vibeStreakValue": "{num} Odysseys",
+    "tasksResolvedValue": "{num} Quests",
+    "totalMedalsValue": "{num} Awards",
+    "missionInvite.title": "Odyssey Proposal Transmitted",
+    "missionInvite.description": "Waiting for {name} to authorize the Group Odyssey."
   },
   "trips": {
     "travelStyle": "نمط السفر"

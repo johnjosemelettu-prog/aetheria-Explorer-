@@ -1,3 +1,4 @@
+
 {
   "common": {
     "save": "Guardar Cambios",
@@ -20,7 +21,8 @@
     "authorized": "Autorizado",
     "error": "Error",
     "returnToDashboard": "Volver al Centro de Mando",
-    "apps": "Apps"
+    "apps": "Apps",
+    "initialize": "Initialize"
   },
   "login": {
     "title": "Iniciar Sesión",
@@ -91,35 +93,41 @@
       "enterGridButton": "ENTER GRID",
       "signUpButton": "SIGN UP",
       "loginButton": "LOGIN",
-      "scrollRecode": "Scroll to Recode"
+      "scrollRecode": "Scroll to Recode",
+      "description1": "THE WORLD RECODED.",
+      "description2": "Eliminate logistics. Amplify immersion. Experience the first multi-agent AI travel ecosystem.",
+      "enterGrid": "ENTER GRID",
+      "signUp": "SIGN UP",
+      "login": "LOGIN"
     },
     "features": {
       "chapter": "Protocolo Capítulo 01",
       "title": "Lentes de Inteligencia",
       "initNode": "Inicializar Nodo",
       "itinerary": {
-        "badge": "Orquestación",
+        "badge": "Orchestration",
         "title": "Itinerario Aura",
         "desc": "Sintetiza una odisea de varios días basada en tu ADN psicológico."
       },
       "postcard": {
-        "badge": "Estudio",
+        "badge": "Studio",
         "title": "Estudio de Postales",
         "desc": "Transforma tus fotos en arte de alta fidelidad generado por IA."
       },
       "legends": {
-        "badge": "Inteligencia",
+        "badge": "Intelligence",
         "title": "Leyendas Locales",
         "desc": "Desbloquea el folclore oculto de tus coordenadas mediante narración activada por GPS."
       },
       "packing": {
-        "badge": "Utilidad",
+        "badge": "Utility",
         "title": "Agente No Olvidé Nada",
         "desc": "Síntesis proactiva de equipaje adaptada al clima y los nodos del itinerario."
       },
       "titlePart2": "MODULES.",
       "quote": "We don't just plan trips. We synthesize experiences using multi-agent neural grids.",
-      "initializeButton": "Initialize"
+      "initializeButton": "Initialize",
+      "badge": "NEURAL MODULES"
     },
     "workflow": {
       "badge": "Protocolo Operativo",
@@ -145,7 +153,11 @@
       "step3Title": "EXECUTE",
       "step3Desc": "Deploy your itinerary with real-time AR/VR support.",
       "realtimeOptimizationBadge": "Real-time Optimization",
-      "realtimeOptimizationDesc": "Grid adjusted for weather patterns in Tokyo. Recalculating route..."
+      "realtimeOptimizationDesc": "Grid adjusted for weather patterns in Tokyo. Recalculating route...",
+      "floating": {
+        "title": "Real-time Optimization",
+        "desc": "Grid adjusted for weather patterns in Tokyo. Recalculating route..."
+      }
     },
     "cta": {
       "badge": "Únete a la Red",
@@ -157,7 +169,9 @@
       "titlePart2": "RECODE?",
       "readyToRecodeSubtitle": "Join 50,000+ digital nomads who have already synthesized their reality.",
       "signUpNowButton": "SIGN UP NOW",
-      "loginButton": "LOGIN"
+      "loginButton": "LOGIN",
+      "description": "Join the network of modern explorers harnessing infinite intelligence.",
+      "signUpNow": "SIGN UP NOW"
     }
   },
   "header": {

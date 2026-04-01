@@ -1,3 +1,4 @@
+
 {
   "common": {
     "save": "Änderungen Speichern",
@@ -20,7 +21,8 @@
     "authorized": "Autorisiert",
     "error": "Fehler",
     "returnToDashboard": "Zurück zum Kommandozentrum",
-    "apps": "Apps"
+    "apps": "Apps",
+    "initialize": "Initialize"
   },
   "login": {
     "title": "Anmelden",
@@ -91,14 +93,19 @@
       "enterGridButton": "ENTER GRID",
       "signUpButton": "SIGN UP",
       "loginButton": "LOGIN",
-      "scrollRecode": "Scroll to Recode"
+      "scrollRecode": "Scroll to Recode",
+      "description1": "THE WORLD RECODED.",
+      "description2": "Eliminate logistics. Amplify immersion. Experience the first multi-agent AI travel ecosystem.",
+      "enterGrid": "ENTER GRID",
+      "signUp": "SIGN UP",
+      "login": "LOGIN"
     },
     "features": {
       "chapter": "Protokoll Kapitel 01",
       "title": "Intelligenz-Linsen",
       "initNode": "Knoten Initialisieren",
       "itinerary": {
-        "badge": "Orchestrierung",
+        "badge": "Orchestration",
         "title": "Aura-Reiseplan",
         "desc": "Synthetisiere eine mehrtägige Odyssee basierend auf deiner psychologischen DNA."
       },
@@ -108,18 +115,19 @@
         "desc": "Verwandle deine Schnappschüsse in KI-generierte High-Fidelity-Kunst."
       },
       "legends": {
-        "badge": "Intelligenz",
+        "badge": "Intelligence",
         "title": "Lokale Legenden",
         "desc": "Entsperre die verborgene Folklore deiner Koordinaten über GPS-gesteuerte Erzählung."
       },
       "packing": {
-        "badge": "Nützlichkeit",
+        "badge": "Utility",
         "title": "Nichts-Vergessen-Agent",
         "desc": "Proaktive Pack-Synthese, zugeschnitten auf Klima- und Reiseplan-Knoten."
       },
       "titlePart2": "MODULES.",
       "quote": "We don't just plan trips. We synthesize experiences using multi-agent neural grids.",
-      "initializeButton": "Initialize"
+      "initializeButton": "Initialize",
+      "badge": "NEURAL MODULES"
     },
     "workflow": {
       "badge": "Operatives Protokoll",
@@ -145,7 +153,11 @@
       "step3Title": "EXECUTE",
       "step3Desc": "Deploy your itinerary with real-time AR/VR support.",
       "realtimeOptimizationBadge": "Real-time Optimization",
-      "realtimeOptimizationDesc": "Grid adjusted for weather patterns in Tokyo. Recalculating route..."
+      "realtimeOptimizationDesc": "Grid adjusted for weather patterns in Tokyo. Recalculating route...",
+      "floating": {
+        "title": "Real-time Optimization",
+        "desc": "Grid adjusted for weather patterns in Tokyo. Recalculating route..."
+      }
     },
     "cta": {
       "badge": "Tritt dem Netzwerk bei",
@@ -157,7 +169,9 @@
       "titlePart2": "RECODE?",
       "readyToRecodeSubtitle": "Join 50,000+ digital nomads who have already synthesized their reality.",
       "signUpNowButton": "SIGN UP NOW",
-      "loginButton": "LOGIN"
+      "loginButton": "LOGIN",
+      "description": "Join the network of modern explorers harnessing infinite intelligence.",
+      "signUpNow": "SIGN UP NOW"
     }
   },
   "header": {
@@ -536,8 +550,21 @@
     },
     "vibeRadar": {
       "title": "Vibe-Radar",
-      "desc": "Scannen von {vibe} Vibes in {location}."
-    }
+      "desc": "Scannen von {vibe} Vibes in {location}.",
+      "match": "{vibe} MATCH",
+      "expand": "Expand Neural Network"
+    },
+    "explorerHubActive": "Explorer Hub Active",
+    "viewLegacyWrapped": "View Legacy Wrapped",
+    "productionTrailer": "Production Trailer",
+    "seasonPass.title": "Season Pass",
+    "seasonPass.subtitle": "Season 01: The Path Finder",
+    "progression": "{current} / {total} XP",
+    "vibeStreakValue": "{num} Odysseys",
+    "tasksResolvedValue": "{num} Quests",
+    "totalMedalsValue": "{num} Awards",
+    "missionInvite.title": "Odyssey Proposal Transmitted",
+    "missionInvite.description": "Waiting for {name} to authorize the Group Odyssey."
   },
   "trips": {
     "travelStyle": "Travel Style"

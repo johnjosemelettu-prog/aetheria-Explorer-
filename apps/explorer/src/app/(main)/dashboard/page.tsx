@@ -149,8 +149,8 @@ export default function DashboardPage() {
 
   const handleMissionInvite = (name: string) => {
     toast({
-      title: "Odyssey Proposal Transmitted",
-      description: `Waiting for ${name} to authorize the Group Odyssey.`,
+      title: t('dashboard.missionInvite.title'),
+      description: t('dashboard.missionInvite.description', { name }),
     });
   };
 
@@ -170,7 +170,7 @@ export default function DashboardPage() {
           <OnboardingTour />
           <header className="mb-8 md:mb-16 flex flex-col md:flex-row md:items-center justify-between gap-6 md:gap-8 animate-in fade-in duration-700">
             <div className="space-y-3 md:space-y-4">
-              <Badge id="header-node" className="bg-primary/20 text-primary border-primary/30 font-black tracking-[0.2em] py-1 px-4 uppercase text-[9px] rounded-full w-fit">Explorer Hub Active</Badge>
+              <Badge id="header-node" className="bg-primary/20 text-primary border-primary/30 font-black tracking-[0.2em] py-1 px-4 uppercase text-[9px] rounded-full w-fit">{t('dashboard.explorerHubActive')}</Badge>
               <h1 className="font-headline text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-black tracking-tighter leading-none italic uppercase">
                 {t('dashboard.welcomeBack', { name: userProfile?.firstName || 'Explorer' })}
               </h1>
@@ -182,13 +182,13 @@ export default function DashboardPage() {
               {activeTrip && activeTrip.status === 'completed' && (
                   <Link href={`/wrapped/${activeTrip.id}`} className="w-full sm:w-auto">
                     <Button className="w-full h-12 md:h-14 px-6 md:px-8 rounded-xl md:rounded-2xl font-black bg-accent text-accent-foreground shadow-2xl glow-accent animate-pulse text-xs md:text-sm active:scale-95 transition-all">
-                      <Presentation className="mr-2 h-4 w-4 md:h-5 md:w-5" /> View Legacy Wrapped
+                      <Presentation className="mr-2 h-4 w-4 md:h-5 md:w-5" /> {t('dashboard.viewLegacyWrapped')}
                     </Button>
                   </Link>
               )}
               <Link href="/video-brochure" className="w-full sm:w-auto">
                 <Button variant="outline" className="w-full h-12 md:h-14 px-6 md:px-8 rounded-xl md:rounded-2xl font-black border-2 border-border glass text-foreground hover:bg-primary/5 shadow-xl transition-all text-xs md:text-sm active:scale-95">
-                  <Play className="mr-2 h-4 w-4 md:h-5 md:w-5 fill-current" /> Production Trailer
+                  <Play className="mr-2 h-4 w-4 md:h-5 md:w-5 fill-current" /> {t('dashboard.productionTrailer')}
                 </Button>
               </Link>
             </div>
@@ -210,8 +210,8 @@ export default function DashboardPage() {
                 <Card className="border-none shadow-2xl rounded-2xl md:rounded-[3rem] bg-card text-card-foreground overflow-hidden group border border-border">
                   <CardHeader className="bg-slate-900 dark:bg-slate-950 text-white p-5 md:p-10 flex flex-col md:flex-row md:items-center justify-between gap-6 md:gap-8 border-b border-white/5">
                     <div className="space-y-2">
-                      <Badge className="bg-primary text-white border-none font-black uppercase tracking-widest text-[8px] px-3 py-0.5">Season 01: The Path Finder</Badge>
-                      <CardTitle className="text-xl md:text-4xl font-black font-headline tracking-tighter italic uppercase">{t('dashboard.seasonPass')}</CardTitle>
+                      <Badge className="bg-primary text-white border-none font-black uppercase tracking-widest text-[8px] px-3 py-0.5">{t('dashboard.seasonPass.subtitle')}</Badge>
+                      <CardTitle className="text-xl md:text-4xl font-black font-headline tracking-tighter italic uppercase">{t('dashboard.seasonPass.title')}</CardTitle>
                     </div>
                     <div className="md:text-right">
                       <p className="text-[9px] font-black uppercase text-slate-500 tracking-widest mb-1">{t('dashboard.xpSynthesized')}</p>
@@ -222,7 +222,7 @@ export default function DashboardPage() {
                     <div className="space-y-4">
                       <div className="flex justify-between items-end">
                         <p className="text-[9px] font-black uppercase tracking-[0.2em] text-muted-foreground">{t('dashboard.progressionToLevel', { level: 13 })}</p>
-                        <p className="text-[10px] font-black text-foreground tracking-widest uppercase">850 / 1,000 XP</p>
+                        <p className="text-[10px] font-black text-foreground tracking-widest uppercase">{t('dashboard.progression', { current: 850, total: 1000 })}</p>
                       </div>
                       <Progress value={85} className="h-2 rounded-full bg-muted" />
                     </div>
@@ -231,21 +231,21 @@ export default function DashboardPage() {
                         <div className="h-10 w-10 rounded-xl bg-card flex items-center justify-center text-primary shadow-lg group-hover:scale-110 transition-transform"><Flame className="h-5 w-5" /></div>
                         <div>
                           <p className="text-[8px] font-black uppercase text-muted-foreground tracking-widest leading-none mb-1">{t('dashboard.vibeStreak')}</p>
-                          <p className="text-xs font-black tracking-tight uppercase italic">5 Odysseys</p>
+                          <p className="text-xs font-black tracking-tight uppercase italic">{t('dashboard.vibeStreakValue', { num: 5 })}</p>
                         </div>
                       </div>
                       <div className="p-5 md:p-6 rounded-2xl md:rounded-[2rem] bg-muted/50 border border-border flex items-center gap-4 group hover:bg-primary/5 transition-all active:scale-95">
                         <div className="h-10 w-10 rounded-xl bg-card flex items-center justify-center text-emerald-500 shadow-lg group-hover:scale-110 transition-transform"><CheckCircle2 className="h-5 w-5" /></div>
                         <div>
                           <p className="text-[8px] font-black uppercase text-muted-foreground tracking-widest leading-none mb-1">{t('dashboard.tasksResolved')}</p>
-                          <p className="text-xs font-black tracking-tight uppercase italic">42 Quests</p>
+                          <p className="text-xs font-black tracking-tight uppercase italic">{t('dashboard.tasksResolvedValue', { num: 42 })}</p>
                         </div>
                       </div>
                       <div className="p-5 md:p-6 rounded-2xl md:rounded-[2rem] bg-muted/50 border border-border flex items-center gap-4 group hover:bg-primary/5 transition-all active:scale-95">
                         <div className="h-10 w-10 rounded-xl bg-card flex items-center justify-center text-accent shadow-lg group-hover:scale-110 transition-transform"><Trophy className="h-5 w-5" /></div>
                         <div>
                           <p className="text-[8px] font-black uppercase text-muted-foreground tracking-widest leading-none mb-1">{t('dashboard.totalMedals')}</p>
-                          <p className="text-xs font-black tracking-tight uppercase italic">12 Awards</p>
+                          <p className="text-xs font-black tracking-tight uppercase italic">{t('dashboard.totalMedalsValue', { num: 12 })}</p>
                         </div>
                       </div>
                     </div>
@@ -358,7 +358,7 @@ export default function DashboardPage() {
                             </Avatar>
                             <div>
                               <p className="font-black text-[10px] md:text-xs text-foreground leading-none uppercase tracking-tighter">{viber.name}</p>
-                              <Badge variant="outline" className="text-[6px] md:text-[7px] font-black uppercase tracking-widest py-0 px-1.5 border-primary/20 text-primary mt-1">{viber.vibe} MATCH</Badge>
+                              <Badge variant="outline" className="text-[6px] md:text-[7px] font-black uppercase tracking-widest py-0 px-1.5 border-primary/20 text-primary mt-1">{t('dashboard.vibeRadar.match', { vibe: viber.vibe })}</Badge>
                             </div>
                           </div>
                           <Button
@@ -373,7 +373,7 @@ export default function DashboardPage() {
                     ))}
                   </div>
                   <Button asChild variant="outline" className="w-full mt-6 md:mt-8 rounded-xl md:rounded-2xl h-11 md:h-12 font-black border-2 border-border hover:bg-muted transition-all uppercase tracking-widest text-[9px]">
-                    <Link href="/transit-connect">Expand Neural Network</Link>
+                    <Link href="/transit-connect">{t('dashboard.vibeRadar.expand')}</Link>
                   </Button>
                 </div>
               </Card>
