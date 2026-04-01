@@ -477,6 +477,11 @@
     }
   },
   "landingPage": {
+    "header": {
+      "brand": "Aetheria",
+      "ai": "AI",
+      "logoAlt": "Aetheria Logo"
+    },
     "body": {
       "links": {
         "itinerary": "Itinerary",
@@ -550,11 +555,6 @@
         "description": "Sign up now and start planning your next adventure.",
         "signUpNow": "Sign Up Now"
       }
-    },
-    "header": {
-      "brand": "Aetheria",
-      "ai": "AI",
-      "logoAlt": "Aetheria Logo"
     },
     "footer": {
       "links": {
