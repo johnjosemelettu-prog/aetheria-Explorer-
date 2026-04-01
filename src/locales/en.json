@@ -19,7 +19,8 @@
     "locked": "Locked",
     "authorized": "Authorized",
     "error": "Error",
-    "returnToDashboard": "Return to Command Center"
+    "returnToDashboard": "Return to Command Center",
+    "initialize": "Initialize"
   },
   "login": {
     "title": "Sign In",
@@ -473,6 +474,116 @@
       "insider": "Local Node",
       "mirror": "Studio Node",
       "fees": "System Node"
+    }
+  },
+  "landingPage": {
+    "body": {
+      "links": {
+        "itinerary": "Itinerary",
+        "postcard": "Postcard",
+        "legends": "Legends",
+        "packing": "Packing",
+        "signup": "Sign Up",
+        "login": "Login",
+        "dashboard": "Dashboard"
+      },
+      "hero": {
+        "badge": "Aetheria",
+        "description1": "Your personal AI travel agent.",
+        "description2": "Plan your trips with ease.",
+        "signUp": "Sign Up Now",
+        "login": "Login",
+        "scroll": "Scroll Down",
+        "enterGrid": "Enter the Grid"
+      },
+      "features": {
+        "badge": "Features",
+        "title": "Discover what Aetheria can do",
+        "quote": "The world is a book and those who do not travel read only one page.",
+        "itinerary": {
+          "badge": "Itinerary",
+          "title": "AI-Powered Itinerary",
+          "desc": "Let our AI plan the perfect trip for you."
+        },
+        "postcard": {
+          "badge": "Postcard",
+          "title": "Create beautiful postcards",
+          "desc": "Share your memories with stunning postcards."
+        },
+        "legends": {
+          "badge": "Legends",
+          "title": "Discover local legends",
+          "desc": "Uncover hidden stories and folklore."
+        },
+        "packing": {
+          "badge": "Packing",
+          "title": "Smart packing assistant",
+          "desc": "Pack smarter, not harder."
+        }
+      },
+      "images": {
+        "featureAlt": "Feature Image",
+        "processAlt": "Process Image"
+      },
+      "workflow": {
+        "badge": "Workflow",
+        "title": "How it works",
+        "step1": {
+          "title": "Sign Up",
+          "desc": "Create an account to get started."
+        },
+        "step2": {
+          "title": "Plan your trip",
+          "desc": "Tell us your destination and preferences."
+        },
+        "step3": {
+          "title": "Enjoy your trip",
+          "desc": "Let Aetheria handle the rest."
+        },
+        "floating": {
+          "title": "Aetheria",
+          "desc": "Your personal AI travel agent."
+        }
+      },
+      "cta": {
+        "title": "Ready to get started?",
+        "description": "Sign up now and start planning your next adventure.",
+        "signUpNow": "Sign Up Now"
+      }
+    },
+    "header": {
+      "brand": "Aetheria",
+      "ai": "AI",
+      "logoAlt": "Aetheria Logo"
+    },
+    "footer": {
+      "links": {
+        "home": "Home",
+        "terms": "Terms",
+        "privacy": "Privacy",
+        "security": "Security",
+        "legal": "Legal",
+        "brochure": "Brochure",
+        "partners": "Partners",
+        "contact": "Contact",
+        "faq": "FAQ"
+      },
+      "journeySynthesized": "Journey Synthesized",
+      "tagline": "Your personal AI travel agent.",
+      "protocolsCategory": "Protocols",
+      "termsLink": "Terms",
+      "privacyLink": "Privacy",
+      "securityLink": "Security",
+      "networkCategory": "Network",
+      "legalLink": "Legal",
+      "brochureLink": "Brochure",
+      "partnersLink": "Partners",
+      "supportCategory": "Support",
+      "contactLink": "Contact",
+      "faqLink": "FAQ",
+      "allSystemsOperationalStatus": "All Systems Operational",
+      "aetheriaAi": "Aetheria AI",
+      "poweredBy": "Powered by Google"
     }
   }
 }
