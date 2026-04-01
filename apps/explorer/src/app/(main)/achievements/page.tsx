@@ -47,11 +47,11 @@ function AchievementCard({
           </div>
           {isUnlocked ? (
             <Badge className="bg-emerald-50 text-emerald-700 border-none font-black text-[8px] uppercase tracking-widest px-3">
-              <CheckCircle2 className="h-3 w-3 mr-1" /> UNLOCKED
+              <CheckCircle2 className="h-3 w-3 mr-1" /> {t('achievements.unlocked')}
             </Badge>
           ) : (
             <Badge variant="outline" className="border-slate-200 text-slate-300 font-black text-[8px] uppercase tracking-widest px-3">
-              <Lock className="h-3 w-3 mr-1" /> LOCKED
+              <Lock className="h-3 w-3 mr-1" /> {t('achievements.locked')}
             </Badge>
           )}
         </div>
@@ -59,7 +59,7 @@ function AchievementCard({
           {t(`achievements.items.${achievement.id}.name` as any) || achievement.id.replace(/-/g, ' ')}
         </CardTitle>
         <CardDescription className="mt-2 text-slate-500 font-medium leading-relaxed italic">
-          "{t(`achievements.items.${achievement.id}.description` as any) || 'Synthesis requirement pending.'}"
+          "{t(`achievements.items.${achievement.id}.description` as any) || t('achievements.synthesisRequirementPending')}"
         </CardDescription>
       </CardHeader>
     </Card>
@@ -86,12 +86,12 @@ export default function AchievementsPage() {
   return (
     <div className="container mx-auto px-4 py-12 max-w-6xl">
       <header className="text-center mb-16 space-y-4">
-        <Badge className="bg-primary/10 text-primary border-none font-bold uppercase tracking-widest py-1 px-3 text-[10px]">Legacy Protocol</Badge>
+        <Badge className="bg-primary/10 text-primary border-none font-bold uppercase tracking-widest py-1 px-3 text-[10px]">{t('achievements.legacyProtocol')}</Badge>
         <h1 className="font-headline text-4xl font-black tracking-tight md:text-6xl text-slate-900 leading-none uppercase italic">
-          Achievements
+          {t('achievements.title')}
         </h1>
         <p className="mt-4 text-xl text-slate-500 max-w-2xl mx-auto font-medium">
-          Earn high-fidelity medals by completing odyssey missions across the global grid.
+          {t('achievements.subtitle')}
         </p>
       </header>
 
@@ -108,11 +108,11 @@ export default function AchievementsPage() {
       <footer className="mt-24 pt-12 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between opacity-40 grayscale gap-8">
         <div className="flex items-center gap-3">
           <Trophy className="h-6 w-6 text-primary" />
-          <p className="text-xs font-black uppercase tracking-widest">Season 01: The Path Finder</p>
+          <p className="text-xs font-black uppercase tracking-widest">{t('achievements.season1')}</p>
         </div>
         <div className="flex items-center gap-2">
           <Sparkles className="h-4 w-4 text-primary" />
-          <p className="text-[10px] font-black uppercase tracking-widest">Rewards synthesized via Aetheria Grid</p>
+          <p className="text-[10px] font-black uppercase tracking-widest">{t('achievements.rewardsViaAetheria')}</p>
         </div>
       </footer>
     </div>

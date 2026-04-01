@@ -1,0 +1,566 @@
+{
+  "common": {
+    "save": "Lưu thay đổi",
+    "cancel": "Hủy bỏ",
+    "close": "Đóng",
+    "delete": "Xóa bỏ",
+    "edit": "Chỉnh sửa",
+    "loading": "Đang xử lý...",
+    "search": "Tìm kiếm trong lưới",
+    "filter": "Lọc các nút",
+    "back": "Trở lại",
+    "next": "Tiếp tục",
+    "continue": "Tiếp tục",
+    "confirm": "Ủy quyền",
+    "active": "Hoạt động",
+    "inactive": "Ngoại tuyến",
+    "verified": "Đã xác minh",
+    "unlocked": "Đã mở khóa",
+    "locked": "Đã khóa",
+    "authorized": "Đã ủy quyền",
+    "error": "Lỗi",
+    "returnToDashboard": "Quay lại trung tâm chỉ huy",
+    "apps": "Ứng dụng"
+  },
+  "login": {
+    "title": "Đăng nhập",
+    "emailLabel": "Địa chỉ email",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "Khóa bảo mật",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "Đăng nhập",
+    "signingInButton": "Đang xác minh danh tính...",
+    "noAccount": "Mới tham gia mạng?",
+    "signUpLink": "Tạo tài khoản",
+    "toast": {
+      "successTitle": "Chào mừng trở lại",
+      "successDescription": "Phiên Aetheria của bạn hiện đang hoạt động.",
+      "errorTitle": "Đăng nhập thất bại",
+      "genericError": "Không thể xác minh thông tin đăng nhập.",
+      "invalidCredentials": "Địa chỉ email hoặc khóa bảo mật không hợp lệ.",
+      "operationNotAllowed": "Đăng nhập hiện đang bị hạn chế.",
+      "systemNodeOfflineTitle": "Nút hệ thống ngoại tuyến",
+      "systemNodeOfflineDescription": "Dịch vụ xác thực chưa được khởi tạo.",
+      "unsupportedFeatureTitle": "Tính năng không được hỗ trợ",
+      "unsupportedFeatureDescription": "Đăng nhập sinh trắc học chỉ có sẵn trên thiết bị di động.",
+      "biometricLoginFailedTitle": "Đăng nhập sinh trắc học thất bại",
+      "biometricLoginFailedDescription": "Không thể đăng nhập bằng thông tin đăng nhập sinh trắc học."
+    },
+    "validation": {
+      "email": "Vui lòng nhập địa chỉ mạng hợp lệ.",
+      "passwordMinLength": "Khóa bảo mật phải có ít nhất 6 ký tự."
+    },
+    "cardDescription": "Truy cập lưới Odyssey của bạn",
+    "authChannels": "Kênh xác thực",
+    "googleButton": "Google",
+    "appleButton": "Apple",
+    "biometricLoginButton": "Đăng nhập sinh trắc học"
+  },
+  "signup": {
+    "title": "Tạo tài khoản",
+    "description": "Tham gia mạng lưới du lịch toàn cầu Aetheria.",
+    "emailLabel": "Địa chỉ email",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "Khóa bảo mật",
+    "createButton": "Khởi tạo tài khoản",
+    "creatingButton": "Đang tổng hợp hồ sơ...",
+    "haveAccount": "Đã là một nhà thám hiểm?",
+    "signInLink": "Đăng nhập",
+    "toast": {
+      "successTitle": "Tài khoản đã được tạo",
+      "successDescription": "Chào mừng bạn đến với lưới Aetheria.",
+      "errorTitle": "Đăng ký thất bại",
+      "emailInUse": "Email này đã được đăng ký.",
+      "operationNotAllowed": "Đăng ký hiện đang bị hạn chế.",
+      "genericError": "Đã xảy ra lỗi trong quá trình tổng hợp."
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Nút trí tuệ Aetheria",
+      "title": "THẾ GIỚI ĐƯỢC MÃ HÓA LẠI.",
+      "subtitle": "Loại bỏ hậu cần. Khuếch đại sự đắm chìm. Trải nghiệm hệ sinh thái du lịch AI đa tác nhân đầu tiên.",
+      "scroll": "Cuộn để quét",
+      "cta": {
+        "start": "Khởi tạo hành trình",
+        "signin": "Truy cập nút"
+      },
+      "neuralNetworkOnline": "MẠNG LƯỚI NEURAL TRỰC TUYẾN",
+      "tagline1": "Hệ sinh thái du lịch AI bản địa đầu tiên dành cho dân du mục kỹ thuật số.",
+      "tagline2": "Tổng hợp hành trình của bạn. Mã hóa lại thực tế của bạn.",
+      "enterGridButton": "VÀO LƯỚI",
+      "signUpButton": "ĐĂNG KÝ",
+      "loginButton": "ĐĂNG NHẬP",
+      "scrollRecode": "Cuộn để mã hóa lại"
+    },
+    "features": {
+      "chapter": "Giao thức Chương 01",
+      "title": "Thấu kính trí tuệ",
+      "initNode": "Khởi tạo nút",
+      "itinerary": {
+        "badge": "Điều phối",
+        "title": "Lịch trình Aura",
+        "desc": "Tổng hợp một cuộc phiêu lưu kéo dài nhiều ngày dựa trên DNA tâm lý của bạn."
+      },
+      "postcard": {
+        "badge": "Studio",
+        "title": "Studio bưu thiếp",
+        "desc": "Biến những bức ảnh chụp nhanh của bạn thành tác phẩm nghệ thuật có độ trung thực cao do AI tạo ra."
+      },
+      "legends": {
+        "badge": "Trí tuệ",
+        "title": "Huyền thoại địa phương",
+        "desc": "Mở khóa văn hóa dân gian ẩn giấu tại tọa độ của bạn thông qua lời kể được kích hoạt bằng GPS."
+      },
+      "packing": {
+        "badge": "Tiện ích",
+        "title": "Đại lý không quên gì cả",
+        "desc": "Tổng hợp đóng gói chủ động phù hợp với khí hậu và các nút hành trình."
+      },
+      "titlePart2": "CÁC MODULE.",
+      "quote": "Chúng tôi không chỉ lên kế hoạch cho các chuyến đi. Chúng tôi tổng hợp trải nghiệm bằng cách sử dụng lưới thần kinh đa tác nhân.",
+      "initializeButton": "Khởi tạo"
+    },
+    "workflow": {
+      "badge": "Giao thức hoạt động",
+      "title": "Cách thức hoạt động",
+      "phase": "Giai đoạn 0{num}",
+      "step1": {
+        "title": "Xác định ý định",
+        "desc": "Cung cấp điểm đến và các thông số về cảm xúc tâm lý của bạn."
+      },
+      "step2": {
+        "title": "Tổng hợp Odyssey",
+        "desc": "Lưới thần kinh của Aetheria kiến trúc quỹ đạo tùy chỉnh của bạn."
+      },
+      "step3": {
+        "title": "Thực hiện hành trình",
+        "desc": "Khởi động vào thế giới với trí thông minh thời gian thực và các nút an toàn."
+      },
+      "operationalFlowBadge": "Luồng hoạt động",
+      "step1Title": "QUÉT",
+      "step1Desc": "Nhập sở thích thần kinh và các ràng buộc du lịch của bạn.",
+      "step2Title": "TỔNG HỢP",
+      "step2Desc": "Lưới đa tác nhân của chúng tôi tạo ra hàng nghìn hoán vị.",
+      "step3Title": "THỰC HIỆN",
+      "step3Desc": "Triển khai hành trình của bạn với sự hỗ trợ AR/VR thời gian thực.",
+      "realtimeOptimizationBadge": "Tối ưu hóa thời gian thực",
+      "realtimeOptimizationDesc": "Lưới được điều chỉnh cho các kiểu thời tiết ở Tokyo. Đang tính toán lại tuyến đường..."
+    },
+    "cta": {
+      "badge": "Tham gia mạng lưới",
+      "title": "BẠN ĐÃ SẴN SÀNG ĐỂ MÃ HÓA LẠI THẾ GIỚI CỦA MÌNH CHƯA?",
+      "subtitle": "Tham gia mạng lưới các nhà thám hiểm hiện đại khai thác trí thông minh vô hạn.",
+      "start": "Tham gia mạng lưới",
+      "feed": "Nguồn cấp dữ liệu toàn cầu",
+      "readyToRecodeTitle": "BẠN ĐÃ SẴN SÀNG ĐỂ MÃ HÓA LẠI CHƯA?",
+      "titlePart2": "MÃ HÓA LẠI?",
+      "readyToRecodeSubtitle": "Tham gia cùng hơn 50.000 dân du mục kỹ thuật số đã tổng hợp thực tế của họ.",
+      "signUpNowButton": "ĐĂNG KÝ NGAY",
+      "loginButton": "ĐĂNG NHẬP"
+    }
+  },
+  "header": {
+    "aiItinerary": "Lịch trình Aura",
+    "pathfinder": "Người tìm đường",
+    "vibeMarketplace": "Chợ Vibe",
+    "vibeShopping": "Cửa hàng riêng",
+    "bookingHub": "Trung tâm đặt vé",
+    "myTrips": "Chuyến đi của tôi",
+    "visionHub": "Trung tâm Vision AI",
+    "intelligenceCenter": "Trung tâm tình báo",
+    "arWayfinding": "Dẫn đường AR",
+    "localLegends": "Huyền thoại địa phương",
+    "explorerQuests": "Nhiệm vụ của nhà thám hiểm",
+    "culturalPulse": "Nhịp đập văn hóa",
+    "tripOdyssey": "Chuyến đi Odyssey",
+    "postcardStudio": "Studio bưu thiếp",
+    "heritageMirror": "Gương di sản",
+    "journal": "Nhật ký của nhà thám hiểm",
+    "visaArchitect": "Kiến trúc sư thị thực",
+    "carbonSynthesis": "Theo dõi carbon",
+    "esim": "eSIM toàn cầu",
+    "flightStatus": "Radar hậu cần",
+    "layoverOdyssey": "Chuyến đi quá cảnh",
+    "safety": "Trợ lý an toàn",
+    "hotels": "Chỗ ở",
+    "flights": "Hàng không",
+    "insurance": "Bảo hiểm du lịch",
+    "trains": "Tàu hỏa",
+    "buses": "Xe buýt",
+    "cruises": "Du thuyền",
+    "cabs": "Taxi",
+    "dining": "Ẩm thực",
+    "profile": "Nút nhận dạng",
+    "loyaltyHub": "Trung tâm khách hàng thân thiết",
+    "wallet": "Ví thông minh",
+    "rentals": "Tài sản cho thuê của tôi",
+    "scanAndPay": "Quét & Thanh toán",
+    "subscription": "Vé du lịch",
+    "partners": "Đối tác",
+    "digitalBrochure": "Tài liệu quảng cáo Aetheria",
+    "appTrailer": "Giới thiệu hệ thống",
+    "sos": "Trung tâm hoảng loạn SOS",
+    "events": "Sự kiện tại điểm đến",
+    "gearArchitect": "Kiến trúc sư thiết bị",
+    "jetLag": "Logic lệch múi giờ",
+    "digitalTailor": "Thợ may kỹ thuật số",
+    "translator": "Phòng thí nghiệm ngôn ngữ",
+    "corporate": "Chế độ doanh nghiệp",
+    "dashboard": "Bảng điều khiển",
+    "budgetSynthesis": "Tổng hợp ngân sách",
+    "moodSynthesis": "Tổng hợp tâm trạng",
+    "auraBeats": "Nhịp điệu Aura",
+    "equilibriumSync": "Đồng bộ hóa cân bằng",
+    "flavorDna": "DNA hương vị",
+    "audioGuide": "Hướng dẫn âm thanh",
+    "menuExplorer": "Trình khám phá menu",
+    "localInsider": "Người trong cuộc địa phương",
+    "cultureScout": "Người tìm hiểu văn hóa",
+    "packingassistant": "Đại lý không quên gì cả",
+    "categories": {
+      "orchestration": "Điều phối",
+      "intelligence": "Trí tuệ",
+      "studios": "Studio",
+      "utility": "Tiện ích"
+    },
+    "promo": {
+      "spotlights": "Tiêu điểm của đối tác",
+      "verified": "Đối tác đã xác minh"
+    },
+    "journeySynthesized": "Hành trình đã được tổng hợp",
+    "sosButton": "SOS",
+    "loginButton": "Đăng nhập",
+    "signUpButton": "Đăng ký",
+    "linguisticGrid": "Lưới ngôn ngữ"
+  },
+  "explorerQuests": {
+    "title": "Nhiệm vụ của nhà thám hiểm",
+    "subtitle": "Biến cuộc khám phá thành phố của bạn thành một cuộc săn tìm kho báu có tiền cược cao.",
+    "initTitle": "Khởi tạo lưới nhiệm vụ",
+    "initDesc": "Chọn một thành phố mục tiêu để tổng hợp các nhiệm vụ khám phá tùy chỉnh.",
+    "cityPlaceholder": "ví dụ: Kyoto, Nhật Bản",
+    "generateBtn": "Tạo nhiệm vụ",
+    "newCityBtn": "Thành phố mới",
+    "progress": "Tiến độ: {completed}/{total}",
+    "xp": "{current}/{total} XP",
+    "hint": "Gợi ý: {hint}",
+    "xpSynthesized": "Đã tổng hợp {points} XP",
+    "resolvedTitle": "Thành phố đã được giải quyết!",
+    "resolvedDesc": "Bạn đã giải mã thành công bí mật của {city}.",
+    "returnBtn": "Quay lại trung tâm chỉ huy"
+  },
+  "languageLab": {
+    "badge": "Trí tuệ ngôn ngữ",
+    "title": "Phòng thí nghiệm ngôn ngữ",
+    "subtitle": "Nắm vững phương ngữ địa phương với bộ dụng cụ sinh tồn do AI tổng hợp và cách phát âm bản địa.",
+    "cityPlaceholder": "Nhập thành phố điểm đến của bạn...",
+    "synthesizeBtn": "Tổng hợp bộ dụng cụ",
+    "survivalTitle": "Cụm từ sinh tồn",
+    "pronounce": "Phát âm: {pronunciation}",
+    "slangTitle": "Tiếng lóng địa phương",
+    "listenBtn": "Nghe Vibe",
+    "pendingTitle": "Ngôn ngữ học đang chờ xử lý",
+    "pendingDesc": "Nhập điểm đến của bạn để tổng hợp một bộ ngôn ngữ tùy chỉnh cho chuyến đi của bạn.",
+    "toast": {
+      "errorTitle": "Tổng hợp thất bại",
+      "errorDescription": "Lưới ngôn ngữ đang ngoại tuyến.",
+      "audioErrorTitle": "Lỗi âm thanh",
+      "audioErrorDescription": "Không thể tổng hợp giọng nói."
+    }
+  },
+  "layoverOdyssey": {
+    "badge": "Trí tuệ quá cảnh",
+    "title": "Chuyến đi quá cảnh",
+    "subtitle": "Biến thời gian quá cảnh của bạn thành một chuyến đi vi mô tốc độ cao.",
+    "initTitle": "Khởi tạo nút quá cảnh",
+    "initDesc": "Cung cấp tọa độ và thời gian quá cảnh của bạn để tổng hợp một quỹ đạo tùy chỉnh.",
+    "airportPlaceholder": "Sân bay / Thành phố (ví dụ: SIN, Singapore)",
+    "durationLabel": "Thời lượng (Giờ)",
+    "synthesizeBtn": "Tổng hợp Odyssey",
+    "resultTitle": "Chuyến đi quá cảnh của bạn",
+    "newBtn": "Chuyến đi mới",
+    "timelineTitle": "Dòng thời gian",
+    "logisticsTitle": "Nút hậu cần",
+    "transport": "Vận chuyển",
+    "budget": "Ngân sách",
+    "visa": "Lưu ý về thị thực",
+    "pendingTitle": "Chuyến đi đang chờ xử lý",
+    "pendingDesc": "Nhập chi tiết quá cảnh của bạn để tổng hợp một hành trình vi mô tùy chỉnh.",
+    "missionParameters": "Thông số nhiệm vụ",
+    "currentTerminal": "Nhà ga hiện tại",
+    "layoverDuration": "Thời gian quá cảnh",
+    "synthesizeOdyssey": "Tổng hợp Odyssey",
+    "radarSilent": "Radar im lặng",
+    "enterCodeDesc": "Nhập mã sân bay để tổng hợp một chuyến đi quá cảnh tùy chỉnh."
+  },
+  "transitConnect": {
+    "title": "Kết nối quá cảnh",
+    "subtitle": "Tìm bộ tộc của bạn trong nhà ga. Kết nối với những du khách có cùng chuyến bay hoặc cảm xúc.",
+    "step1": {
+      "title": "Xác minh thẻ lên máy bay",
+      "description": "Quét thẻ lên máy bay của bạn để xác minh danh tính và nút chuyến bay của bạn.",
+      "scanningButton": "Đang quét...",
+      "scanButton": "Quét thẻ",
+      "cameraError": "Nút máy ảnh đang ngoại tuyến.",
+      "scanErrorTitle": "Quét thất bại",
+      "scanErrorDescription": "Không thể giải mã dữ liệu thẻ lên máy bay."
+    },
+    "verification": {
+      "title": "Danh tính đã được xác minh",
+      "description": "Nút chuyến bay của bạn đã được xác minh thành công trên lưới Aetheria.",
+      "passenger": "Hành khách",
+      "flight": "Chuyến bay",
+      "gate": "Cổng",
+      "seat": "Ghế",
+      "departs": "Khởi hành"
+    },
+    "step2": {
+      "title": "Chọn Vibe của bạn",
+      "description": "Chọn cách bạn muốn tương tác với mạng lưới nhà ga.",
+      "goLiveButton": "Phát trực tiếp",
+      "vibes": {
+        "networking": "Mạng lưới",
+        "networkingDescription": "Kết nối với các chuyên gia trên chuyến bay của bạn.",
+        "coffee": "Uống cà phê",
+        "coffeeDescription": "Trò chuyện thông thường qua một ly đồ uống.",
+        "shareLounge": "Chia sẻ phòng chờ",
+        "shareLoungeDescription": "Truy cập các nút cao cấp với những người khác.",
+        "cardGame": "Trò chơi bài",
+        "cardGameDescription": "Giết thời gian với một trò chơi nhanh."
+      }
+    },
+    "step3": {
+      "title": "Mạng lưới nhà ga",
+      "description": "Các nút kết nối thời gian thực đang hoạt động ở gần bạn.",
+      "nearbyTab": "Gần đó",
+      "arViewTab": "Chế độ xem AR",
+      "sameFlight": "Cùng chuyến bay",
+      "chatButton": "Trò chuyện",
+      "arViewDescription": "Chế độ xem AR đang hoạt động",
+      "toast": {
+        "chatTitle": "Trò chuyện đã được khởi tạo",
+        "chatDescription": "Đang kết nối với nút của {name}..."
+      }
+    }
+  },
+  "footer": {
+    "terms": "Điều khoản dịch vụ",
+    "privacyProtocol": "Giao thức bảo mật",
+    "dataSecurity": "Bảo mật dữ liệu",
+    "legalHub": "Trung tâm pháp lý",
+    "globalConnect": "Kết nối toàn cầu",
+    "allRightsReserved": "© {year} Aetheria AI Intelligence Systems. Mọi quyền được bảo lưu.",
+    "supportHub": "Trung tâm hỗ trợ",
+    "partnerNetwork": "Mạng lưới đối tác",
+    "journeySynthesized": "Hành trình đã được tổng hợp",
+    "tagline": "'Tương lai của du lịch không phải là nơi bạn đến, mà là cách bạn tổng hợp thực tế của cuộc hành trình.'",
+    "protocolsCategory": "Giao thức",
+    "termsLink": "Điều khoản",
+    "privacyLink": "Bảo mật",
+    "securityLink": "Bảo mật",
+    "networkCategory": "Mạng lưới",
+    "legalLink": "Pháp lý",
+    "brochureLink": "Tài liệu quảng cáo",
+    "partnersLink": "Đối tác",
+    "supportCategory": "Hỗ trợ",
+    "contactLink": "Trung tâm",
+    "faqLink": "Câu hỏi thường gặp",
+    "allSystemsOperationalStatus": "Tất cả các hệ thống đang hoạt động",
+    "aetheriaAi": "Aetheria AI",
+    "poweredBy": "Được cung cấp bởi Lưới thần kinh Aetheria"
+  },
+  "profile": {
+    "saveSuccessTitle": "Hồ sơ đã được đồng bộ hóa",
+    "saveSuccessDescription": "Nút nhận dạng của bạn đã được cập nhật.",
+    "saveButton": "Ủy quyền thay đổi",
+    "savingButton": "Đang đồng bộ hóa...",
+    "tabs": {
+      "identity": "Nút nhận dạng",
+      "travelDna": "DNA du lịch",
+      "settings": "Cài đặt hệ thống",
+      "security": "Nút bảo mật"
+    },
+    "personalInfo": {
+      "firstName": "Tên",
+      "lastName": "Họ",
+      "gender": "Nút giới tính sinh học",
+      "genders": {
+        "male": "Nam",
+        "female": "Nữ",
+        "other": "Khác",
+        "preferNotToSay": "Không muốn nói"
+      }
+    },
+    "travelStyle": {
+      "relaxed": {
+        "label": "Thư giãn",
+        "description": "Tốc độ chậm, đắm chìm sâu."
+      },
+      "active": {
+        "label": "Năng động",
+        "description": "Tốc độ cao, nhiều nút hàng ngày."
+      },
+      "adventurous": {
+        "label": "Mạo hiểm",
+        "description": "Ngoài lưới, yếu tố khám phá cao."
+      },
+      "packed": {
+        "label": "Đóng gói",
+        "description": "Hiệu quả tối đa, không có thời gian chết."
+      },
+      "familyFriendly": {
+        "label": "Thân thiện với gia đình",
+        "description": "Tập trung vào an toàn cho nhiều hành khách."
+      }
+    },
+    "interests": {
+      "title": "Sở thích",
+      "description": "Chọn sở thích du lịch chính của bạn.",
+      "items": {
+        "history": "Lịch sử",
+        "food": "Ẩm thực",
+        "hiking": "Đi bộ đường dài",
+        "art": "Nghệ thuật",
+        "nightlife": "Cuộc sống về đêm",
+        "shopping": "Mua sắm",
+        "nature": "Thiên nhiên",
+        "wellness": "Sức khỏe"
+      }
+    }
+  },
+  "itineraryGenerator": {
+    "title": "Kiến trúc sư Odyssey",
+    "subtitle": "Tổng hợp một chuyến đi kéo dài nhiều ngày dựa trên cảm xúc tâm lý của bạn.",
+    "authError": "Nút ủy quyền ngoại tuyến",
+    "authErrorDesc": "Vui lòng đăng nhập để tổng hợp một cuộc phiêu lưu.",
+    "form": {
+      "title": "Lên kế hoạch cho chuyến đi của bạn",
+      "description": "Cung cấp chi tiết cho kế hoạch du lịch được cá nhân hóa của bạn.",
+      "generateButton": "Tạo Odyssey",
+      "destinationLabel": "Điểm đến",
+      "destinationPlaceholder": "ví dụ: Paris, Pháp",
+      "datesLabel": "Ngày",
+      "pickDateRange": "Chọn phạm vi ngày",
+      "budgetLabel": "Ngân sách",
+      "budgetPlaceholder": "Chọn mức ngân sách của bạn",
+      "budgetLow": "Thấp",
+      "budgetMedium": "Trung bình",
+      "budgetHigh": "Cao",
+      "vibeLabel": "Cảm xúc du lịch",
+      "vibePlaceholder": "Mô tả trải nghiệm du lịch lý tưởng của bạn",
+      "vibeDescription": "ví dụ: 'Thư giãn và văn hóa' hoặc 'Mạo hiểm và khác biệt'"
+    }
+  },
+  "subscription": {
+    "badge": "Giao thức tiền tệ",
+    "title": "Trung tâm đăng ký",
+    "subtitle": "Nâng cấp cuộc phiêu lưu của bạn với trí tuệ cao cấp và các nút an toàn toàn cầu.",
+    "itineraryRequired": "Yêu cầu có Odyssey đang hoạt động",
+    "itineraryRequiredDesc": "Bạn phải có một chuyến đi đang hoạt động để áp dụng cấp đăng ký.",
+    "createItineraryBtn": "Tạo Odyssey",
+    "plans": {
+      "free": {
+        "name": "Miễn phí",
+        "description": "Hậu cần cơ bản cho du khách không thường xuyên.",
+        "price": "0 đồng",
+        "itinerariesValue": "1 Odyssey đang hoạt động",
+        "immersiveValue": "Trí tuệ tiêu chuẩn",
+        "loyaltyValue": "Phần thưởng cơ bản"
+      },
+      "voyager": {
+        "name": "Voyager",
+        "description": "Các công cụ nâng cao dành cho những nhà thám hiểm thường xuyên.",
+        "price": "210.000 đồng",
+        "itinerariesValue": "3 Odyssey đang hoạt động",
+        "immersiveValue": "Trí tuệ nâng cao",
+        "packingValue": "Nút đóng gói AI",
+        "loyaltyValue": "Phần thưởng bạc"
+      },
+      "pathfinder": {
+        "name": "Pathfinder",
+        "description": "Trí tuệ cấp độ thần kinh dành cho dân du mục chuyên nghiệp.",
+        "price": "450.000 đồng",
+        "itinerariesValue": "Odyssey vô hạn",
+        "immersiveValue": "Trí tuệ thần kinh",
+        "insiderValue": "Truy cập huyền thoại địa phương",
+        "loyaltyValue": "Phần thưởng vàng"
+      },
+      "sovereign": {
+        "name": "Sovereign",
+        "description": "Truy cập vô hạn với tổng hợp cấp độ di sản.",
+        "price": "1.150.000 đồng",
+        "itinerariesValue": "Odyssey vô hạn",
+        "immersiveValue": "Trí tuệ vô hạn",
+        "mirrorValue": "Nút gương di sản",
+        "fees": "Không phí dịch vụ"
+      },
+      "legend": {
+        "name": "Legend",
+        "description": "Nút nhà thám hiểm cuối cùng với toàn quyền truy cập mạng.",
+        "price": "2.300.000 đồng",
+        "itinerariesValue": "Odyssey vô hạn",
+        "immersiveValue": "Trí tuệ vô hạn",
+        "mirrorValue": "Nút gương di sản",
+        "insiderValue": "Truy cập huyền thoại địa phương",
+        "fees": "Không phí dịch vụ"
+      }
+    },
+    "period": {
+      "monthly": "/ THÁNG"
+    },
+    "features": {
+      "itineraries": "Dung lượng Odyssey",
+      "immersive": "Cấp độ trí tuệ",
+      "loyalty": "Cấp phần thưởng",
+      "packing": "Nút đóng gói",
+      "insider": "Truy cập huyền thoại",
+      "mirror": "Nút di sản",
+      "fees": "Phí dịch vụ"
+    },
+    "upgrade": "Ủy quyền nâng cấp",
+    "processingBtn": "Đang xử lý...",
+    "currentPlan": "Nút đang hoạt động"
+  },
+  "dashboard": {
+    "welcomeBack": "Chào mừng trở lại, {name}",
+    "odysseyLevel": "Cấp độ Odyssey {level}",
+    "seasonPass": "Vé mùa",
+    "xpSynthesized": "XP đã được tổng hợp",
+    "progressionToLevel": "Tiến tới cấp độ {level}",
+    "vibeStreak": "Chuỗi cảm xúc",
+    "tasksResolved": "Nhiệm vụ đã giải quyết",
+    "totalMedals": "Tổng số huy chương",
+    "premiumRequired": "Yêu cầu Premium",
+    "explorerStatus": "Trạng thái nhà thám hiểm: {tier}",
+    "points": "Điểm",
+    "medals": "Huy chương",
+    "editProfile": "Chỉnh sửa hồ sơ",
+    "shortDesc": {
+      "itinerary": "Tổng hợp hành trình thần kinh.",
+      "pathfinder": "Tối ưu hóa tuyến đường thông minh.",
+      "marketplace": "Trao đổi cảm xúc toàn cầu.",
+      "store": "Mua sắm thiết bị riêng.",
+      "booking": "Điều phối hậu cần.",
+      "wallet": "Nút tiền tệ thông minh.",
+      "budget": "Tổng hợp tài chính.",
+      "vision": "Nút nhận dạng đối tượng.",
+      "guide": "Trung tâm thông tin toàn cầu.",
+      "ar": "Dẫn đường tăng cường.",
+      "legends": "Giải mã văn hóa dân gian.",
+      "pulse": "Radar xu hướng văn hóa.",
+      "audio": "Tường thuật không gian.",
+      "odyssey": "Tổng hợp chuyến đi điện ảnh.",
+      "postcard": "Tạo nghệ thuật AI.",
+      "mirror": "Trực quan hóa di sản.",
+      "journal": "Mã hóa bộ nhớ."
+    },
+    "vibeRadar": {
+      "title": "Radar cảm xúc",
+      "desc": "Đang quét cảm xúc {vibe} tại {location}."
+    }
+  },
+  "trips": {
+    "travelStyle": "Phong cách du lịch"
+  }
+}

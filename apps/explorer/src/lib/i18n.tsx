@@ -25,6 +25,9 @@ import pt from '../locales/pt.json'
 import ru from '../locales/ru.json'
 import tl from '../locales/tl.json'
 import th from '../locales/th.json'
+import ja from '../locales/ja.json'
+import ko from '../locales/ko.json'
+import vi from '../locales/vi.json'
 import { useUser, useFirestore } from '@/firebase'
 import { doc, getDoc, setDoc } from 'firebase/firestore'
 
@@ -43,7 +46,7 @@ const getTranslationValue = (
 }
 
 const translations: Record<string, any> = {
-  en, es, de, it, hi, ar, ms, ta, ml, fr, zh, pt, ru, tl, th,
+  en, es, de, it, hi, ar, ms, ta, ml, fr, zh, pt, ru, tl, th, ja, ko, vi
 }
 
 export type Language = keyof typeof translations
@@ -56,6 +59,8 @@ export const availableLanguages: { code: Language; name: string; englishName: st
   { code: 'de', name: 'Deutsch', englishName: 'German' },
   { code: 'hi', name: 'हिन्दी', englishName: 'Hindi' },
   { code: 'it', name: 'Italiano', englishName: 'Italian' },
+  { code: 'ja', name: '日本語', englishName: 'Japanese' },
+  { code: 'ko', name: '한국어', englishName: 'Korean' },
   { code: 'ms', name: 'Bahasa Melayu', englishName: 'Malay'},
   { code: 'ml', name: 'മലയാളം', englishName: 'Malayalam' },
   { code: 'pt', name: 'Português', englishName: 'Portuguese' },
@@ -64,7 +69,8 @@ export const availableLanguages: { code: Language; name: string; englishName: st
   { code: 'tl', name: 'Tagalog', englishName: 'Tagalog' },
   { code: 'ta', name: 'தமிழ்', englishName: 'Tamil' },
   { code: 'th', name: 'ไทย', englishName: 'Thai' },
-];
+  { code: 'vi', name: 'Tiếng Việt', englishName: 'Vietnamese' },
+].sort((a, b) => a.englishName.localeCompare(b.englishName));
 
 interface I18nContextType {
   language: Language

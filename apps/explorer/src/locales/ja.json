@@ -1,0 +1,566 @@
+{
+  "common": {
+    "save": "変更を保存",
+    "cancel": "キャンセル",
+    "close": "閉じる",
+    "delete": "削除",
+    "edit": "編集",
+    "loading": "処理中...",
+    "search": "グリッドを検索",
+    "filter": "ノードをフィルタリング",
+    "back": "戻る",
+    "next": "進む",
+    "continue": "続ける",
+    "confirm": "承認",
+    "active": "アクティブ",
+    "inactive": "オフライン",
+    "verified": "検証済み",
+    "unlocked": "ロック解除",
+    "locked": "ロック",
+    "authorized": "承認済み",
+    "error": "エラー",
+    "returnToDashboard": "コマンドセンターに戻る",
+    "apps": "アプリ"
+  },
+  "login": {
+    "title": "サインイン",
+    "emailLabel": "メールアドレス",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "セキュリティキー",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "サインイン",
+    "signingInButton": "本人確認中...",
+    "noAccount": "ネットワークは初めてですか？",
+    "signUpLink": "アカウントを作成",
+    "toast": {
+      "successTitle": "おかえりなさい",
+      "successDescription": "Aetheriaセッションがアクティブになりました。",
+      "errorTitle": "ログインに失敗しました",
+      "genericError": "認証情報を確認できませんでした。",
+      "invalidCredentials": "メールアドレスまたはセキュリティキーが無効です。",
+      "operationNotAllowed": "サインインは現在制限されています。",
+      "systemNodeOfflineTitle": "システムノードがオフラインです",
+      "systemNodeOfflineDescription": "認証サービスはまだ初期化されていません。",
+      "unsupportedFeatureTitle": "サポートされていない機能",
+      "unsupportedFeatureDescription": "生体認証ログインはモバイルデバイスでのみ利用可能です。",
+      "biometricLoginFailedTitle": "生体認証ログインに失敗しました",
+      "biometricLoginFailedDescription": "生体認証情報でログインできませんでした。"
+    },
+    "validation": {
+      "email": "有効なネットワークアドレスを入力してください。",
+      "passwordMinLength": "セキュリティキーは6文字以上である必要があります。"
+    },
+    "cardDescription": "オデッセイグリッドにアクセス",
+    "authChannels": "認証チャネル",
+    "googleButton": "Google",
+    "appleButton": "Apple",
+    "biometricLoginButton": "生体認証ログイン"
+  },
+  "signup": {
+    "title": "アカウントを作成",
+    "description": "Aetheriaグローバル旅行ネットワークに参加しましょう。",
+    "emailLabel": "メールアドレス",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "セキュリティキー",
+    "createButton": "アカウントを初期化",
+    "creatingButton": "プロファイルを合成中...",
+    "haveAccount": "すでにエクスプローラーですか？",
+    "signInLink": "サインイン",
+    "toast": {
+      "successTitle": "アカウントが作成されました",
+      "successDescription": "Aetheriaグリッドへようこそ。",
+      "errorTitle": "サインアップに失敗しました",
+      "emailInUse": "このメールはすでに登録されています。",
+      "operationNotAllowed": "サインアップは現在制限されています。",
+      "genericError": "合成中に問題が発生しました。"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Aetheriaインテリジェンスノード",
+      "title": "世界を再コーディングする",
+      "subtitle": "ロジスティクスを排除し、没入感を増幅させます。初のマルチエージェントAI旅行エコシステムを体験してください。",
+      "scroll": "スキャンするにはスクロール",
+      "cta": {
+        "start": "旅を初期化",
+        "signin": "ノードにアクセス"
+      },
+      "neuralNetworkOnline": "ニューラルネットワークオンライン",
+      "tagline1": "デジタルノマドのための初のAIネイティブ旅行エコシステム。",
+      "tagline2": "あなたの旅を合成し、現実を再コーディングします。",
+      "enterGridButton": "グリッドに入る",
+      "signUpButton": "サインアップ",
+      "loginButton": "ログイン",
+      "scrollRecode": "再コーディングするにはスクロール"
+    },
+    "features": {
+      "chapter": "プロトコル第01章",
+      "title": "インテリジェンスレンズ",
+      "initNode": "ノードを初期化",
+      "itinerary": {
+        "badge": "オーケストレーション",
+        "title": "オーラ旅程",
+        "desc": "あなたの心理的DNAに基づいて数日間のオデッセイを合成します。"
+      },
+      "postcard": {
+        "badge": "スタジオ",
+        "title": "ポストカードスタジオ",
+        "desc": "スナップショットをAI生成の高忠実度アートに変換します。"
+      },
+      "legends": {
+        "badge": "インテリジェンス",
+        "title": "地元の伝説",
+        "desc": "GPSトリガーナレーションを介して座標の隠された民間伝承を解き放ちます。"
+      },
+      "packing": {
+        "badge": "ユーティリティ",
+        "title": "何も忘れなかったエージェント",
+        "desc": "気候と旅程ノードに合わせたプロアクティブなパッキング合成。"
+      },
+      "titlePart2": "モジュール",
+      "quote": "私たちは旅行を計画するだけではありません。マルチエージェントニューラルグリッドを使用して体験を合成します。",
+      "initializeButton": "初期化"
+    },
+    "workflow": {
+      "badge": "運用プロトコル",
+      "title": "仕組み",
+      "phase": "フェーズ0{num}",
+      "step1": {
+        "title": "意図を定義する",
+        "desc": "目的地と心理的な雰囲気のパラメータを提供します。"
+      },
+      "step2": {
+        "title": "オデッセイを合成する",
+        "desc": "Aetheriaのニューラルグリッドがカスタムの軌道を構築します。"
+      },
+      "step3": {
+        "title": "旅を実行する",
+        "desc": "リアルタイムインテリジェンスと安全ノードで世界に飛び出しましょう。"
+      },
+      "operationalFlowBadge": "運用フロー",
+      "step1Title": "スキャン",
+      "step1Desc": "ニューラル設定と旅行の制約を入力します。",
+      "step2Title": "合成",
+      "step2Desc": "当社のマルチエージェントグリッドは何千もの順列を生成します。",
+      "step3Title": "実行",
+      "step3Desc": "リアルタイムAR/VRサポートで旅程を展開します。",
+      "realtimeOptimizationBadge": "リアルタイム最適化",
+      "realtimeOptimizationDesc": "東京の気象パターンに合わせてグリッドを調整しました。ルートを再計算しています..."
+    },
+    "cta": {
+      "badge": "ネットワークに参加",
+      "title": "あなたの世界を再コーディングする準備はできましたか？",
+      "subtitle": "無限のインテリジェンスを使用する現代の探検家のネットワークに参加してください。",
+      "start": "ネットワークに参加",
+      "feed": "グローバルフィード",
+      "readyToRecodeTitle": "再コーディングする準備はできましたか？",
+      "titlePart2": "再コーディング？",
+      "readyToRecodeSubtitle": "すでに現実を合成した50,000人以上のデジタルノマドに参加してください。",
+      "signUpNowButton": "今すぐサインアップ",
+      "loginButton": "ログイン"
+    }
+  },
+  "header": {
+    "aiItinerary": "オーラ旅程",
+    "pathfinder": "パスファインダー",
+    "vibeMarketplace": "Vibeマーケットプレイス",
+    "vibeShopping": "オーダーメイドストア",
+    "bookingHub": "予約ハブ",
+    "myTrips": "私の旅",
+    "visionHub": "ビジョンAIハブ",
+    "intelligenceCenter": "インテルハブ",
+    "arWayfinding": "ARナビゲーション",
+    "localLegends": "地元の伝説",
+    "explorerQuests": "エクスプローラークエスト",
+    "culturalPulse": "カルチュラルパルス",
+    "tripOdyssey": "トリップオデッセイ",
+    "postcardStudio": "ポストカードスタジオ",
+    "heritageMirror": "ヘリテージミラー",
+    "journal": "エクスプローラージャーナル",
+    "visaArchitect": "ビザアーキテクト",
+    "carbonSynthesis": "カーボントラッカー",
+    "esim": "グローバルeSIM",
+    "flightStatus": "ロジスティクスレーダー",
+    "layoverOdyssey": "乗り継ぎオデッセイ",
+    "safety": "安全アシスタント",
+    "hotels": "滞在",
+    "flights": "航空",
+    "insurance": "旅行保険",
+    "trains": "電車",
+    "buses": "バス",
+    "cruises": "クルーズ",
+    "cabs": "タクシー",
+    "dining": "料理",
+    "profile": "アイデンティティノード",
+    "loyaltyHub": "ロイヤルティハブ",
+    "wallet": "スマートウォレット",
+    "rentals": "私のレンタル",
+    "scanAndPay": "スキャン＆ペイ",
+    "subscription": "トリップパス",
+    "partners": "パートナー",
+    "digitalBrochure": "Aetheriaパンフレット",
+    "appTrailer": "システムトレーラー",
+    "sos": "SOSパニックハブ",
+    "events": "デスティネーションイベント",
+    "gearArchitect": "ギアアーキテクト",
+    "jetLag": "時差ぼけロジック",
+    "digitalTailor": "デジタルテーラー",
+    "translator": "言語ラボ",
+    "corporate": "企業モード",
+    "dashboard": "ダッシュボード",
+    "budgetSynthesis": "予算合成",
+    "moodSynthesis": "気分合成",
+    "auraBeats": "オーラビート",
+    "equilibriumSync": "平衡同期",
+    "flavorDna": "フレーバーDNA",
+    "audioGuide": "音声ガイド",
+    "menuExplorer": "メニューエクスプローラー",
+    "localInsider": "ローカルインサイダー",
+    "cultureScout": "カルチャースカウト",
+    "packingassistant": "何も忘れなかったエージェント",
+    "categories": {
+      "orchestration": "オーケストレート",
+      "intelligence": "インテリジェンス",
+      "studios": "スタジオ",
+      "utility": "ユーティリティ"
+    },
+    "promo": {
+      "spotlights": "パートナースポットライト",
+      "verified": "検証済みパートナー"
+    },
+    "journeySynthesized": "旅が合成されました",
+    "sosButton": "SOS",
+    "loginButton": "ログイン",
+    "signUpButton": "サインアップ",
+    "linguisticGrid": "言語グリッド"
+  },
+  "explorerQuests": {
+    "title": "エクスプローラークエスト",
+    "subtitle": "都市探検をハイステークなスカベンジャーハントに変えましょう。",
+    "initTitle": "クエストグリッドを初期化",
+    "initDesc": "カスタム探検ミッションを合成するためにターゲット都市を選択します。",
+    "cityPlaceholder": "例：京都、日本",
+    "generateBtn": "クエストを生成",
+    "newCityBtn": "新しい都市",
+    "progress": "進捗：{completed}/{total}",
+    "xp": "{current}/{total} XP",
+    "hint": "ヒント：{hint}",
+    "xpSynthesized": "{points} XPが合成されました",
+    "resolvedTitle": "都市が解決しました！",
+    "resolvedDesc": "{city}の秘密を正常に解読しました。",
+    "returnBtn": "コマンドハブに戻る"
+  },
+  "languageLab": {
+    "badge": "言語インテリジェンス",
+    "title": "言語ラボ",
+    "subtitle": "AI合成のサバイバルキットとネイティブの発音で地元の方言をマスターしましょう。",
+    "cityPlaceholder": "目的地の都市を入力...",
+    "synthesizeBtn": "キットを合成",
+    "survivalTitle": "サバイバルフレーズ",
+    "pronounce": "発音：{pronunciation}",
+    "slangTitle": "地元のスラング",
+    "listenBtn": "Vibeを聞く",
+    "pendingTitle": "言語学保留中",
+    "pendingDesc": "旅行用のカスタム言語キットを合成するために目的地を入力します。",
+    "toast": {
+      "errorTitle": "合成に失敗しました",
+      "errorDescription": "言語グリッドがオフラインです。",
+      "audioErrorTitle": "音声エラー",
+      "audioErrorDescription": "音声を合成できませんでした。"
+    }
+  },
+  "layoverOdyssey": {
+    "badge": "トランジットインテリジェンス",
+    "title": "乗り継ぎオデッセイ",
+    "subtitle": "乗り換え時間を高速のマイクロジャーニーに変えましょう。",
+    "initTitle": "乗り継ぎノードを初期化",
+    "initDesc": "カスタム軌道を合成するために、乗り継ぎ座標と期間を提供します。",
+    "airportPlaceholder": "空港/都市（例：SIN、シンガポール）",
+    "durationLabel": "期間（時間）",
+    "synthesizeBtn": "オデッセイを合成",
+    "resultTitle": "あなたの乗り継ぎオデッセイ",
+    "newBtn": "新しいオデッセイ",
+    "timelineTitle": "タイムライン",
+    "logisticsTitle": "ロジスティクスノード",
+    "transport": "交通機関",
+    "budget": "予算",
+    "visa": "ビザノート",
+    "pendingTitle": "オデッセイ保留中",
+    "pendingDesc": "カスタムマイクロ旅程を合成するために乗り継ぎの詳細を入力します。",
+    "missionParameters": "ミッションパラメータ",
+    "currentTerminal": "現在のターミナル",
+    "layoverDuration": "乗り継ぎ期間",
+    "synthesizeOdyssey": "オデッセイを合成",
+    "radarSilent": "レーダーサイレント",
+    "enterCodeDesc": "カスタム乗り継ぎオデッセイを合成するために空港コードを入力します。"
+  },
+  "transitConnect": {
+    "title": "トランジットコネクト",
+    "subtitle": "ターミナルであなたの部族を見つけましょう。フライトや雰囲気を共有する旅行者とつながりましょう。",
+    "step1": {
+      "title": "搭乗券を確認",
+      "description": "搭乗券をスキャンして、本人確認とフライトノードを確認します。",
+      "scanningButton": "スキャン中...",
+      "scanButton": "パスをスキャン",
+      "cameraError": "カメラノードがオフラインです。",
+      "scanErrorTitle": "スキャンに失敗しました",
+      "scanErrorDescription": "搭乗券データをデコードできませんでした。"
+    },
+    "verification": {
+      "title": "本人確認済み",
+      "description": "フライトノードはAetheriaグリッドで正常に検証されました。",
+      "passenger": "乗客",
+      "flight": "フライト",
+      "gate": "ゲート",
+      "seat": "座席",
+      "departs": "出発"
+    },
+    "step2": {
+      "title": "あなたの雰囲気を選択",
+      "description": "ターミナルネットワークとどのように対話したいかを選択します。",
+      "goLiveButton": "ライブ配信",
+      "vibes": {
+        "networking": "ネットワーキング",
+        "networkingDescription": "フライトの専門家とつながります。",
+        "coffee": "コーヒーを飲む",
+        "coffeeDescription": "飲み物を飲みながらカジュアルな会話。",
+        "shareLounge": "ラウンジを共有",
+        "shareLoungeDescription": "他の人とプレミアムノードにアクセスします。",
+        "cardGame": "カードゲーム",
+        "cardGameDescription": "クイックゲームで時間をつぶします。"
+      }
+    },
+    "step3": {
+      "title": "ターミナルネットワーク",
+      "description": "お近くでアクティブなリアルタイム接続ノード。",
+      "nearbyTab": "近く",
+      "arViewTab": "ARビュー",
+      "sameFlight": "同じフライト",
+      "chatButton": "チャット",
+      "arViewDescription": "ARビューがアクティブ",
+      "toast": {
+        "chatTitle": "チャットが初期化されました",
+        "chatDescription": "{name}のノードに接続しています..."
+      }
+    }
+  },
+  "footer": {
+    "terms": "利用規約",
+    "privacyProtocol": "プライバシープロトコル",
+    "dataSecurity": "データセキュリティ",
+    "legalHub": "リーガルハブ",
+    "globalConnect": "グローバルコネクト",
+    "allRightsReserved": "© {year} Aetheria AI Intelligence Systems. All rights reserved.",
+    "supportHub": "サポートハブ",
+    "partnerNetwork": "パートナーネットワーク",
+    "journeySynthesized": "旅が合成されました",
+    "tagline": "「旅行の未来は、どこに行くかだけでなく、旅の現実をどのように合成するかです。」",
+    "protocolsCategory": "プロトコル",
+    "termsLink": "規約",
+    "privacyLink": "プライバシー",
+    "securityLink": "セキュリティ",
+    "networkCategory": "ネットワーク",
+    "legalLink": "リーガル",
+    "brochureLink": "パンフレット",
+    "partnersLink": "パートナー",
+    "supportCategory": "サポート",
+    "contactLink": "ハブ",
+    "faqLink": "よくある質問",
+    "allSystemsOperationalStatus": "すべてのシステムが稼働中",
+    "aetheriaAi": "Aetheria AI",
+    "poweredBy": "Aetheriaニューラルグリッド搭載"
+  },
+  "profile": {
+    "saveSuccessTitle": "プロファイルが同期されました",
+    "saveSuccessDescription": "アイデンティティノードが更新されました。",
+    "saveButton": "変更を承認",
+    "savingButton": "同期中...",
+    "tabs": {
+      "identity": "アイデンティティノード",
+      "travelDna": "旅行DNA",
+      "settings": "システム設定",
+      "security": "セキュリティノード"
+    },
+    "personalInfo": {
+      "firstName": "名",
+      "lastName": "姓",
+      "gender": "生物学的性別ノード",
+      "genders": {
+        "male": "男性",
+        "female": "女性",
+        "other": "その他",
+        "preferNotToSay": "言いたくない"
+      }
+    },
+    "travelStyle": {
+      "relaxed": {
+        "label": "リラックス",
+        "description": "低速、高没入感。"
+      },
+      "active": {
+        "label": "アクティブ",
+        "description": "高速、毎日複数のノード。"
+      },
+      "adventurous": {
+        "label": "冒険的",
+        "description": "オフグリッド、高い発見要素。"
+      },
+      "packed": {
+        "label": "満員",
+        "description": "最大の効率、ダウンタイムなし。"
+      },
+      "familyFriendly": {
+        "label": "ファミリーフレンドリー",
+        "description": "複数乗客の安全に焦点。"
+      }
+    },
+    "interests": {
+      "title": "興味",
+      "description": "主な旅行の興味を選択してください。",
+      "items": {
+        "history": "歴史",
+        "food": "料理",
+        "hiking": "トレッキング",
+        "art": "アート",
+        "nightlife": "ナイトライフ",
+        "shopping": "ショッピング",
+        "nature": "自然",
+        "wellness": "ウェルネス"
+      }
+    }
+  },
+  "itineraryGenerator": {
+    "title": "オデッセイアーキテクト",
+    "subtitle": "あなたの心理的な雰囲気に基づいて数日間の旅を合成します。",
+    "authError": "承認ノードがオフラインです",
+    "authErrorDesc": "オデッセイを合成するにはサインインしてください。",
+    "form": {
+      "title": "オデッセイを計画する",
+      "description": "パーソナライズされた旅行プランの詳細を提供します。",
+      "generateButton": "オデッセイを生成",
+      "destinationLabel": "目的地",
+      "destinationPlaceholder": "例：フランス、パリ",
+      "datesLabel": "日付",
+      "pickDateRange": "日付範囲を選択",
+      "budgetLabel": "予算",
+      "budgetPlaceholder": "予算レベルを選択",
+      "budgetLow": "低",
+      "budgetMedium": "中",
+      "budgetHigh": "高",
+      "vibeLabel": "旅行の雰囲気",
+      "vibePlaceholder": "理想的な旅行体験を説明してください",
+      "vibeDescription": "例：「リラックスして文化的」または「冒険的で人里離れた」"
+    }
+  },
+  "subscription": {
+    "badge": "通貨プロトコル",
+    "title": "サブスクリプションハブ",
+    "subtitle": "プレミアムインテリジェンスとグローバルセーフティノードでオデッセイをアップグレードしてください。",
+    "itineraryRequired": "アクティブなオデッセイが必要です",
+    "itineraryRequiredDesc": "サブスクリプション層を適用するには、アクティブな旅が必要です。",
+    "createItineraryBtn": "オデッセイを作成",
+    "plans": {
+      "free": {
+        "name": "無料",
+        "description": "カジュアルな旅行者のための基本的なロジスティクス。",
+        "price": "¥0",
+        "itinerariesValue": "1つのアクティブなオデッセイ",
+        "immersiveValue": "標準インテリジェンス",
+        "loyaltyValue": "基本報酬"
+      },
+      "voyager": {
+        "name": "ボイジャー",
+        "description": "頻繁な探検家のための強化されたツール。",
+        "price": "¥1,300",
+        "itinerariesValue": "3つのアクティブなオデッセイ",
+        "immersiveValue": "強化されたインテリジェンス",
+        "packingValue": "AIパッキングノード",
+        "loyaltyValue": "シルバーリワード"
+      },
+      "pathfinder": {
+        "name": "パスファインダー",
+        "description": "プロの遊牧民のためのニューラルグレードのインテリジェンス。",
+        "price": "¥2,700",
+        "itinerariesValue": "無限のオデッセイ",
+        "immersiveValue": "ニューラルインテリジェンス",
+        "insiderValue": "ローカルレジェンドアクセス",
+        "loyaltyValue": "ゴールドリワード"
+      },
+      "sovereign": {
+        "name": "ソブリン",
+        "description": "遺産グレードの合成による無限のアクセス。",
+        "price": "¥6,900",
+        "itinerariesValue": "無限のオデッセイ",
+        "immersiveValue": "無限のインテリジェンス",
+        "mirrorValue": "ヘリテージミラーノード",
+        "fees": "サービス料ゼロ"
+      },
+      "legend": {
+        "name": "レジェンド",
+        "description": "完全なネットワークアクセスを備えた究極のエクスプローラーノード。",
+        "price": "¥13,800",
+        "itinerariesValue": "無限のオデッセイ",
+        "immersiveValue": "無限のインテリジェンス",
+        "mirrorValue": "ヘリテージミラーノード",
+        "insiderValue": "ローカルレジェンドアクセス",
+        "fees": "サービス料ゼロ"
+      }
+    },
+    "period": {
+      "monthly": "/月"
+    },
+    "features": {
+      "itineraries": "オデッセイ容量",
+      "immersive": "インテリジェンスレベル",
+      "loyalty": "報酬ティア",
+      "packing": "パッキングノード",
+      "insider": "レジェンドアクセス",
+      "mirror": "ヘリテージノード",
+      "fees": "サービス料"
+    },
+    "upgrade": "アップグレードを承認",
+    "processingBtn": "処理中...",
+    "currentPlan": "アクティブノード"
+  },
+  "dashboard": {
+    "welcomeBack": "おかえりなさい、{name}",
+    "odysseyLevel": "オデッセイレベル{level}",
+    "seasonPass": "シーズンパス",
+    "xpSynthesized": "XPが合成されました",
+    "progressionToLevel": "レベル{level}への進行",
+    "vibeStreak": "Vibeストリーク",
+    "tasksResolved": "解決されたタスク",
+    "totalMedals": "合計メダル",
+    "premiumRequired": "プレミアムが必要です",
+    "explorerStatus": "エクスプローラーステータス：{tier}",
+    "points": "ポイント",
+    "medals": "メダル",
+    "editProfile": "プロファイルを編集",
+    "shortDesc": {
+      "itinerary": "ニューラル旅程合成。",
+      "pathfinder": "スマートなルート最適化。",
+      "marketplace": "グローバルな雰囲気の交換。",
+      "store": "オーダーメイドのギア調達。",
+      "booking": "ロジスティクスオーケストレーション。",
+      "wallet": "スマート通貨ノード。",
+      "budget": "財務合成。",
+      "vision": "物体認識ノード。",
+      "guide": "グローバルインテルハブ。",
+      "ar": "拡張ナビゲーション。",
+      "legends": "民間伝承の解読。",
+      "pulse": "文化的トレンドレーダー。",
+      "audio": "空間ナレーション。",
+      "odyssey": "映画のような旅行合成。",
+      "postcard": "AIアート生成。",
+      "mirror": "遺産の視覚化。",
+      "journal": "メモリ暗号化。"
+    },
+    "vibeRadar": {
+      "title": "Vibeレーダー",
+      "desc": "{location}で{vibe}の雰囲気をスキャンしています。"
+    }
+  },
+  "trips": {
+    "travelStyle": "旅行スタイル"
+  }
+}

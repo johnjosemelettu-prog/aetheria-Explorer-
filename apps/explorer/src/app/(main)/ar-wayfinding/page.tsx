@@ -67,7 +67,7 @@ export default function ARWayfindingPage() {
   // Watch Position
   useEffect(() => {
     if (typeof window === 'undefined' || !navigator.geolocation) {
-      setLocationError("Geolocation is not supported by your browser.")
+      setLocationError(t('arWayfinding.geolocationNotSupported'))
       setIsLocating(false)
       return
     }
@@ -81,13 +81,13 @@ export default function ARWayfindingPage() {
         setIsLocating(false)
       },
       (error) => {
-        setLocationError("Location access denied. Please enable GPS for AR Wayfinding.")
+        setLocationError(t('arWayfinding.locationAccessDenied'))
         setIsLocating(false)
       },
       { enableHighAccuracy: true, timeout: 15000, maximumAge: 0 }
     )
     return () => navigator.geolocation.clearWatch(watchId)
-  }, [])
+  }, [t])
 
   // Reverse Geocoding via Nominatim (OSM)
   useEffect(() => {
@@ -99,14 +99,14 @@ export default function ARWayfindingPage() {
             { headers: { 'User-Agent': 'AetheriaTravelApp/1.0' } }
           )
           const data = await response.json()
-          setLocationName(data.address?.city || data.address?.town || data.address?.village || "Global Hub")
+          setLocationName(data.address?.city || data.address?.town || data.address?.village || t('arWayfinding.globalHub'))
         } catch (e) {
-          console.warn("Geocoding node failed.", e)
+          console.warn(t('arWayfinding.geocodingFailed'), e)
         }
       }
       fetchAddress()
     }
-  }, [location, locationName])
+  }, [location, locationName, t])
 
   // POI Discovery via Overpass API (OSM)
   useEffect(() => {
@@ -133,9 +133,9 @@ export default function ARWayfindingPage() {
             .map((el: any) => ({
               id: el.id.toString(),
               name: el.tags.name,
-              category: el.tags.amenity || el.tags.tourism || el.tags.shop || 'Establishment',
+              category: el.tags.amenity || el.tags.tourism || el.tags.shop || t('arWayfinding.establishment'),
               icon: el.tags.amenity || el.tags.tourism || el.tags.shop || 'tourism',
-              distance: "Nearby",
+              distance: t('arWayfinding.nearby'),
               lat: el.lat,
               lon: el.lon,
             }))
@@ -143,7 +143,7 @@ export default function ARWayfindingPage() {
         }
       } catch (e) {
         console.error("Overpass Search Error:", e)
-        toast({ variant: 'destructive', title: "Signal Loss", description: "Could not fetch local nodes." })
+        toast({ variant: 'destructive', title: t('arWayfinding.signalLoss'), description: t('arWayfinding.fetchNodesError') })
       } finally {
         setIsSearching(false)
       }
@@ -151,7 +151,7 @@ export default function ARWayfindingPage() {
 
     const timer = setTimeout(handleSearch, 1000)
     return () => clearTimeout(timer)
-  }, [searchQuery, location, toast])
+  }, [searchQuery, location, toast, t])
 
   const handleSelectPoi = (poi: POINode) => {
     setSelectedPoi(poi)
@@ -186,10 +186,10 @@ export default function ARWayfindingPage() {
         <div className="absolute inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
           <Card className="max-w-md border-none rounded-[2.5rem] bg-white p-10 text-center">
             <ShieldAlert className="h-16 w-16 text-primary mx-auto mb-6" />
-            <h2 className="text-2xl font-black font-headline uppercase tracking-tighter text-slate-900 mb-4 italic">Signal Loss</h2>
+            <h2 className="text-2xl font-black font-headline uppercase tracking-tighter text-slate-900 mb-4 italic">{t('arWayfinding.signalLoss')}</h2>
             <p className="text-slate-500 font-medium leading-relaxed mb-8">{locationError}</p>
             <Button asChild className="w-full h-14 rounded-2xl font-black">
-              <Link href="/dashboard">Return to Command Center</Link>
+              <Link href="/dashboard">{t('arWayfinding.returnToCommandCenter')}</Link>
             </Button>
           </Card>
         </div>
@@ -198,7 +198,7 @@ export default function ARWayfindingPage() {
       {isLocating && (
         <div className="absolute top-4 left-1/2 z-30 -translate-x-1/2">
           <Badge className="bg-primary/20 backdrop-blur-xl text-primary border-primary/30 px-4 py-2 font-black uppercase tracking-widest text-[10px]">
-            <Loader2 className="mr-2 h-3.5 w-3.5 animate-spin" /> SYNCHRONIZING GPS...
+            <Loader2 className="mr-2 h-3.5 w-3.5 animate-spin" /> {t('arWayfinding.synchronizingGps')}
           </Badge>
         </div>
       )}
@@ -220,8 +220,8 @@ export default function ARWayfindingPage() {
           <Card className="rounded-[2.5rem] border-none bg-slate-900/80 p-8 backdrop-blur-2xl text-white shadow-2xl animate-in slide-in-from-bottom-8 duration-500">
             <div className="flex items-center justify-between gap-8">
               <div className="space-y-1">
-                <Badge className="bg-primary text-white border-none font-bold uppercase text-[8px] mb-2">Navigation Locked</Badge>
-                <p className="text-[10px] font-black uppercase text-slate-500 tracking-widest">Routing to destination node</p>
+                <Badge className="bg-primary text-white border-none font-bold uppercase text-[8px] mb-2">{t('arWayfinding.navigationLocked')}</Badge>
+                <p className="text-[10px] font-black uppercase text-slate-500 tracking-widest">{t('arWayfinding.routingToNode')}</p>
                 <p className="text-3xl font-black font-headline text-white italic">{selectedPoi.name}</p>
               </div>
               <Button onClick={() => setIsNavigating(false)} variant="destructive" className="h-14 w-14 rounded-2xl">
@@ -237,7 +237,7 @@ export default function ARWayfindingPage() {
               <div className="relative group">
                 <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-white/40 group-focus-within:text-primary transition-colors" />
                 <Input
-                  placeholder="Scan for local nodes (e.g. cafe, museum)..."
+                  placeholder={t('arWayfinding.scanPlaceholder')}
                   className="h-14 w-full rounded-2xl bg-white/5 border-none pl-12 pr-12 text-white font-bold text-lg placeholder:text-white/20"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
@@ -251,7 +251,7 @@ export default function ARWayfindingPage() {
                 <div className="flex items-center justify-center gap-3 py-2">
                   <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_10px_rgba(16,185,129,0.8)]" />
                   <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white/60">
-                    Aura Sync: {locationName}
+                    {t('arWayfinding.auraSync', { locationName })}
                   </span>
                 </div>
               )}
@@ -276,6 +276,7 @@ function ARMarker({
   isSelected: boolean
   onClick: () => void
 }) {
+  const { t } = useTranslation();
   return (
     <button
       onClick={onClick}

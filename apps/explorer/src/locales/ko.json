@@ -1,0 +1,566 @@
+{
+  "common": {
+    "save": "변경 사항 저장",
+    "cancel": "취소",
+    "close": "닫기",
+    "delete": "삭제",
+    "edit": "편집",
+    "loading": "처리 중...",
+    "search": "그리드 검색",
+    "filter": "노드 필터링",
+    "back": "뒤로",
+    "next": "진행",
+    "continue": "계속",
+    "confirm": "승인",
+    "active": "활성",
+    "inactive": "오프라인",
+    "verified": "확인됨",
+    "unlocked": "잠금 해제됨",
+    "locked": "잠김",
+    "authorized": "승인됨",
+    "error": "오류",
+    "returnToDashboard": "명령 센터로 돌아가기",
+    "apps": "앱"
+  },
+  "login": {
+    "title": "로그인",
+    "emailLabel": "이메일 주소",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "보안 키",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "로그인",
+    "signingInButton": "신원 확인 중...",
+    "noAccount": "네트워크에 처음이신가요?",
+    "signUpLink": "계정 만들기",
+    "toast": {
+      "successTitle": "다시 오신 것을 환영합니다",
+      "successDescription": "Aetheria 세션이 이제 활성화되었습니다.",
+      "errorTitle": "로그인 실패",
+      "genericError": "자격 증명을 확인할 수 없습니다.",
+      "invalidCredentials": "잘못된 이메일 주소 또는 보안 키입니다.",
+      "operationNotAllowed": "로그인이 현재 제한되어 있습니다.",
+      "systemNodeOfflineTitle": "시스템 노드 오프라인",
+      "systemNodeOfflineDescription": "인증 서비스가 아직 초기화되지 않았습니다.",
+      "unsupportedFeatureTitle": "지원되지 않는 기능",
+      "unsupportedFeatureDescription": "생체 인식 로그인은 모바일 기기에서만 사용할 수 있습니다.",
+      "biometricLoginFailedTitle": "생체 인식 로그인 실패",
+      "biometricLoginFailedDescription": "생체 인식 자격 증명으로 로그인할 수 없습니다."
+    },
+    "validation": {
+      "email": "유효한 네트워크 주소를 입력하세요.",
+      "passwordMinLength": "보안 키는 6자 이상이어야 합니다."
+    },
+    "cardDescription": "Odyssey 그리드에 액세스",
+    "authChannels": "인증 채널",
+    "googleButton": "Google",
+    "appleButton": "Apple",
+    "biometricLoginButton": "생체 인식 로그인"
+  },
+  "signup": {
+    "title": "계정 만들기",
+    "description": "Aetheria 글로벌 여행 네트워크에 가입하세요.",
+    "emailLabel": "이메일 주소",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "보안 키",
+    "createButton": "계정 초기화",
+    "creatingButton": "프로필 합성 중...",
+    "haveAccount": "이미 탐험가이신가요?",
+    "signInLink": "로그인",
+    "toast": {
+      "successTitle": "계정이 생성되었습니다",
+      "successDescription": "Aetheria 그리드에 오신 것을 환영합니다.",
+      "errorTitle": "가입 실패",
+      "emailInUse": "이 이메일은 이미 등록되어 있습니다.",
+      "operationNotAllowed": "가입이 현재 제한되어 있습니다.",
+      "genericError": "합성 중에 문제가 발생했습니다."
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Aetheria 인텔리전스 노드",
+      "title": "세계를 재구성하다.",
+      "subtitle": "물류를 없애고 몰입감을 증폭시키세요. 최초의 다중 에이전트 AI 여행 생태계를 경험하세요.",
+      "scroll": "스캔하려면 스크롤",
+      "cta": {
+        "start": "여정 초기화",
+        "signin": "노드 액세스"
+      },
+      "neuralNetworkOnline": "신경망 온라인",
+      "tagline1": "디지털 노마드를 위한 최초의 AI 네이티브 여행 생태계.",
+      "tagline2": "여정을 종합하고 현실을 재구성하세요.",
+      "enterGridButton": "그리드 입장",
+      "signUpButton": "가입하기",
+      "loginButton": "로그인",
+      "scrollRecode": "재구성하려면 스크롤"
+    },
+    "features": {
+      "chapter": "프로토콜 챕터 01",
+      "title": "인텔리전스 렌즈",
+      "initNode": "노드 초기화",
+      "itinerary": {
+        "badge": "오케스트레이션",
+        "title": "Aura 여정",
+        "desc": "심리적 DNA를 기반으로 한 여러 날의 오디세이를 종합하세요."
+      },
+      "postcard": {
+        "badge": "스튜디오",
+        "title": "엽서 스튜디오",
+        "desc": "스냅샷을 AI가 생성한 고화질 아트로 변환하세요."
+      },
+      "legends": {
+        "badge": "인텔리전스",
+        "title": "지역 전설",
+        "desc": "GPS 트리거 내레이션을 통해 좌표의 숨겨진 민속을 잠금 해제하세요."
+      },
+      "packing": {
+        "badge": "유틸리티",
+        "title": "잊지 않기 에이전트",
+        "desc": "기후 및 여정 노드에 맞춘 사전 예방적 패킹 종합."
+      },
+      "titlePart2": "모듈.",
+      "quote": "우리는 단지 여행을 계획하는 것이 아닙니다. 다중 에이전트 신경망을 사용하여 경험을 종합합니다.",
+      "initializeButton": "초기화"
+    },
+    "workflow": {
+      "badge": "운영 프로토콜",
+      "title": "작동 방식",
+      "phase": "단계 0{num}",
+      "step1": {
+        "title": "의도 정의",
+        "desc": "목적지와 심리적 분위기 매개변수를 제공하세요."
+      },
+      "step2": {
+        "title": "오디세이 종합",
+        "desc": "Aetheria의 신경망이 맞춤형 궤적을 설계합니다."
+      },
+      "step3": {
+        "title": "여정 실행",
+        "desc": "실시간 인텔리전스와 안전 노드로 세상으로 나아가세요."
+      },
+      "operationalFlowBadge": "운영 흐름",
+      "step1Title": "스캔",
+      "step1Desc": "신경 선호도 및 여행 제약 조건을 입력하세요.",
+      "step2Title": "종합",
+      "step2Desc": "당사의 다중 에이전트 그리드는 수천 개의 순열을 생성합니다.",
+      "step3Title": "실행",
+      "step3Desc": "실시간 AR/VR 지원으로 여정을 배포하세요.",
+      "realtimeOptimizationBadge": "실시간 최적화",
+      "realtimeOptimizationDesc": "도쿄의 날씨 패턴에 맞게 그리드를 조정했습니다. 경로를 다시 계산하는 중..."
+    },
+    "cta": {
+      "badge": "네트워크 가입",
+      "title": "세상을 재구성할 준비가 되셨나요?",
+      "subtitle": "무한한 인텔리전스를 사용하는 현대 탐험가 네트워크에 가입하세요.",
+      "start": "네트워크 가입",
+      "feed": "글로벌 피드",
+      "readyToRecodeTitle": "재구성할 준비가 되셨나요?",
+      "titlePart2": "재구성?",
+      "readyToRecodeSubtitle": "이미 현실을 종합한 50,000명 이상의 디지털 노마드에 합류하세요.",
+      "signUpNowButton": "지금 가입하기",
+      "loginButton": "로그인"
+    }
+  },
+  "header": {
+    "aiItinerary": "Aura 여정",
+    "pathfinder": "경로 찾기",
+    "vibeMarketplace": "분위기 마켓플레이스",
+    "vibeShopping": "맞춤형 상점",
+    "bookingHub": "예약 허브",
+    "myTrips": "나의 여정",
+    "visionHub": "비전 AI 허브",
+    "intelligenceCenter": "인텔 허브",
+    "arWayfinding": "AR 길 찾기",
+    "localLegends": "지역 전설",
+    "explorerQuests": "탐험가 퀘스트",
+    "culturalPulse": "문화적 맥박",
+    "tripOdyssey": "여행 오디세이",
+    "postcardStudio": "엽서 스튜디오",
+    "heritageMirror": "유산 거울",
+    "journal": "탐험가 저널",
+    "visaArchitect": "비자 설계자",
+    "carbonSynthesis": "탄소 추적기",
+    "esim": "글로벌 eSIM",
+    "flightStatus": "물류 레이더",
+    "layoverOdyssey": "경유 오디세이",
+    "safety": "안전 도우미",
+    "hotels": "숙소",
+    "flights": "항공",
+    "insurance": "여행자 보험",
+    "trains": "기차",
+    "buses": "버스",
+    "cruises": "크루즈",
+    "cabs": "택시",
+    "dining": "요리",
+    "profile": "신원 노드",
+    "loyaltyHub": "로열티 허브",
+    "wallet": "스마트 월렛",
+    "rentals": "나의 렌탈",
+    "scanAndPay": "스캔 및 결제",
+    "subscription": "여행 패스",
+    "partners": "파트너",
+    "digitalBrochure": "Aetheria 브로셔",
+    "appTrailer": "시스템 트레일러",
+    "sos": "SOS 패닉 허브",
+    "events": "목적지 이벤트",
+    "gearArchitect": "장비 설계자",
+    "jetLag": "시차 적응 논리",
+    "digitalTailor": "디지털 재단사",
+    "translator": "언어 연구소",
+    "corporate": "기업 모드",
+    "dashboard": "대시보드",
+    "budgetSynthesis": "예산 종합",
+    "moodSynthesis": "기분 종합",
+    "auraBeats": "Aura 비트",
+    "equilibriumSync": "평형 동기화",
+    "flavorDna": "맛 DNA",
+    "audioGuide": "오디오 가이드",
+    "menuExplorer": "메뉴 탐색기",
+    "localInsider": "현지 정보통",
+    "cultureScout": "문화 스카우트",
+    "packingassistant": "잊지 않기 에이전트",
+    "categories": {
+      "orchestration": "오케스트레이션",
+      "intelligence": "인텔리전스",
+      "studios": "스튜디오",
+      "utility": "유틸리티"
+    },
+    "promo": {
+      "spotlights": "파트너 스포트라이트",
+      "verified": "확인된 파트너"
+    },
+    "journeySynthesized": "여정이 종합되었습니다",
+    "sosButton": "SOS",
+    "loginButton": "로그인",
+    "signUpButton": "가입하기",
+    "linguisticGrid": "언어 그리드"
+  },
+  "explorerQuests": {
+    "title": "탐험가 퀘스트",
+    "subtitle": "도시 탐험을 고위험 보물 찾기로 바꾸세요.",
+    "initTitle": "퀘스트 그리드 초기화",
+    "initDesc": "맞춤형 탐험 임무를 종합하려면 대상 도시를 선택하세요.",
+    "cityPlaceholder": "예: 일본 교토",
+    "generateBtn": "퀘스트 생성",
+    "newCityBtn": "새로운 도시",
+    "progress": "진행률: {completed}/{total}",
+    "xp": "{current}/{total} XP",
+    "hint": "힌트: {hint}",
+    "xpSynthesized": "{points} XP 종합됨",
+    "resolvedTitle": "도시 해결!",
+    "resolvedDesc": "{city}의 비밀을 성공적으로 해독했습니다.",
+    "returnBtn": "명령 허브로 돌아가기"
+  },
+  "languageLab": {
+    "badge": "언어 지능",
+    "title": "언어 연구소",
+    "subtitle": "AI가 종합한 생존 키트와 원어민 발음으로 현지 방언을 마스터하세요.",
+    "cityPlaceholder": "목적지 도시를 입력하세요...",
+    "synthesizeBtn": "키트 종합",
+    "survivalTitle": "생존 문구",
+    "pronounce": "발음: {pronunciation}",
+    "slangTitle": "현지 속어",
+    "listenBtn": "분위기 듣기",
+    "pendingTitle": "언어학 보류 중",
+    "pendingDesc": "여행을 위한 맞춤형 언어 키트를 종합하려면 목적지를 입력하세요.",
+    "toast": {
+      "errorTitle": "종합 실패",
+      "errorDescription": "언어 그리드가 오프라인 상태입니다.",
+      "audioErrorTitle": "오디오 오류",
+      "audioErrorDescription": "음성을 종합할 수 없습니다."
+    }
+  },
+  "layoverOdyssey": {
+    "badge": "환승 인텔리전스",
+    "title": "경유 오디세이",
+    "subtitle": "환승 시간을 고속 마이크로 여정으로 바꾸세요.",
+    "initTitle": "경유 노드 초기화",
+    "initDesc": "맞춤형 궤적을 종합하려면 환승 좌표와 기간을 제공하세요.",
+    "airportPlaceholder": "공항/도시(예: SIN, 싱가포르)",
+    "durationLabel": "기간(시간)",
+    "synthesizeBtn": "오디세이 종합",
+    "resultTitle": "나의 경유 오디세이",
+    "newBtn": "새로운 오디세이",
+    "timelineTitle": "타임라인",
+    "logisticsTitle": "물류 노드",
+    "transport": "교통편",
+    "budget": "예산",
+    "visa": "비자 참고 사항",
+    "pendingTitle": "오디세이 보류 중",
+    "pendingDesc": "맞춤형 마이크로 여정을 종합하려면 경유 세부 정보를 입력하세요.",
+    "missionParameters": "임무 매개변수",
+    "currentTerminal": "현재 터미널",
+    "layoverDuration": "경유 기간",
+    "synthesizeOdyssey": "오디세이 종합",
+    "radarSilent": "레이더 무음",
+    "enterCodeDesc": "맞춤형 경유 오디세이를 종합하려면 공항 코드를 입력하세요."
+  },
+  "transitConnect": {
+    "title": "환승 연결",
+    "subtitle": "터미널에서 부족을 찾으세요. 비행이나 분위기를 공유하는 여행자와 연결하세요.",
+    "step1": {
+      "title": "탑승권 확인",
+      "description": "신원과 비행 노드를 확인하려면 탑승권을 스캔하세요.",
+      "scanningButton": "스캔 중...",
+      "scanButton": "패스 스캔",
+      "cameraError": "카메라 노드 오프라인.",
+      "scanErrorTitle": "스캔 실패",
+      "scanErrorDescription": "탑승권 데이터를 디코딩할 수 없습니다."
+    },
+    "verification": {
+      "title": "신원 확인됨",
+      "description": "비행 노드가 Aetheria 그리드에서 성공적으로 확인되었습니다.",
+      "passenger": "승객",
+      "flight": "항공편",
+      "gate": "게이트",
+      "seat": "좌석",
+      "departs": "출발"
+    },
+    "step2": {
+      "title": "분위기 선택",
+      "description": "터미널 네트워크와 상호 작용할 방법을 선택하세요.",
+      "goLiveButton": "라이브 시작",
+      "vibes": {
+        "networking": "네트워킹",
+        "networkingDescription": "비행 중에 전문가와 연결하세요.",
+        "coffee": "커피 한 잔",
+        "coffeeDescription": "음료를 마시며 편안한 대화.",
+        "shareLounge": "라운지 공유",
+        "shareLoungeDescription": "다른 사람들과 프리미엄 노드에 액세스하세요.",
+        "cardGame": "카드 게임",
+        "cardGameDescription": "빠른 게임으로 시간을 보내세요."
+      }
+    },
+    "step3": {
+      "title": "터미널 네트워크",
+      "description": "주변에서 활성화된 실시간 연결 노드.",
+      "nearbyTab": "주변",
+      "arViewTab": "AR 보기",
+      "sameFlight": "같은 비행",
+      "chatButton": "채팅",
+      "arViewDescription": "AR 보기 활성",
+      "toast": {
+        "chatTitle": "채팅 초기화됨",
+        "chatDescription": "{name}의 노드에 연결 중..."
+      }
+    }
+  },
+  "footer": {
+    "terms": "서비스 약관",
+    "privacyProtocol": "개인정보 보호 프로토콜",
+    "dataSecurity": "데이터 보안",
+    "legalHub": "법률 허브",
+    "globalConnect": "글로벌 연결",
+    "allRightsReserved": "© {year} Aetheria AI Intelligence Systems. All rights reserved.",
+    "supportHub": "지원 허브",
+    "partnerNetwork": "파트너 네트워크",
+    "journeySynthesized": "여정이 종합되었습니다",
+    "tagline": "'여행의 미래는 어디로 가느냐가 아니라 여정의 현실을 어떻게 종합하느냐에 달려 있습니다.'",
+    "protocolsCategory": "프로토콜",
+    "termsLink": "약관",
+    "privacyLink": "개인정보 보호",
+    "securityLink": "보안",
+    "networkCategory": "네트워크",
+    "legalLink": "법률",
+    "brochureLink": "브로셔",
+    "partnersLink": "파트너",
+    "supportCategory": "지원",
+    "contactLink": "허브",
+    "faqLink": "자주 묻는 질문",
+    "allSystemsOperationalStatus": "모든 시스템 작동 중",
+    "aetheriaAi": "Aetheria AI",
+    "poweredBy": "Aetheria 신경망 제공"
+  },
+  "profile": {
+    "saveSuccessTitle": "프로필 동기화됨",
+    "saveSuccessDescription": "신원 노드가 업데이트되었습니다.",
+    "saveButton": "변경 사항 승인",
+    "savingButton": "동기화 중...",
+    "tabs": {
+      "identity": "신원 노드",
+      "travelDna": "여행 DNA",
+      "settings": "시스템 설정",
+      "security": "보안 노드"
+    },
+    "personalInfo": {
+      "firstName": "이름",
+      "lastName": "성",
+      "gender": "생물학적 성별 노드",
+      "genders": {
+        "male": "남성",
+        "female": "여성",
+        "other": "기타",
+        "preferNotToSay": "말하고 싶지 않음"
+      }
+    },
+    "travelStyle": {
+      "relaxed": {
+        "label": "편안함",
+        "description": "느린 속도, 높은 몰입도."
+      },
+      "active": {
+        "label": "활동적",
+        "description": "빠른 속도, 매일 여러 노드."
+      },
+      "adventurous": {
+        "label": "모험적",
+        "description": "오프 그리드, 높은 발견 요소."
+      },
+      "packed": {
+        "label": "꽉 참",
+        "description": "최대 효율, 다운타임 없음."
+      },
+      "familyFriendly": {
+        "label": "가족 친화적",
+        "description": "다중 승객 안전에 중점."
+      }
+    },
+    "interests": {
+      "title": "관심사",
+      "description": "주요 여행 관심사를 선택하세요.",
+      "items": {
+        "history": "역사",
+        "food": "요리",
+        "hiking": "트레킹",
+        "art": "예술",
+        "nightlife": "야간 유흥",
+        "shopping": "쇼핑",
+        "nature": "자연",
+        "wellness": "웰빙"
+      }
+    }
+  },
+  "itineraryGenerator": {
+    "title": "오디세이 설계자",
+    "subtitle": "심리적 분위기를 기반으로 한 여러 날의 여정을 종합하세요.",
+    "authError": "인증 노드 오프라인",
+    "authErrorDesc": "오디세이를 종합하려면 로그인하세요.",
+    "form": {
+      "title": "오디세이 계획하기",
+      "description": "개인화된 여행 계획에 대한 세부 정보를 제공하세요.",
+      "generateButton": "오디세이 생성",
+      "destinationLabel": "목적지",
+      "destinationPlaceholder": "예: 프랑스 파리",
+      "datesLabel": "날짜",
+      "pickDateRange": "날짜 범위 선택",
+      "budgetLabel": "예산",
+      "budgetPlaceholder": "예산 수준 선택",
+      "budgetLow": "낮음",
+      "budgetMedium": "중간",
+      "budgetHigh": "높음",
+      "vibeLabel": "여행 분위기",
+      "vibePlaceholder": "이상적인 여행 경험을 설명하세요",
+      "vibeDescription": "예: '편안하고 문화적인' 또는 '모험적이고 잘 알려지지 않은'"
+    }
+  },
+  "subscription": {
+    "badge": "통화 프로토콜",
+    "title": "구독 허브",
+    "subtitle": "프리미엄 인텔리전스와 글로벌 안전 노드로 오디세이를 업그레이드하세요.",
+    "itineraryRequired": "활성 오디세이 필요",
+    "itineraryRequiredDesc": "구독 등급을 적용하려면 활성 여정이 있어야 합니다.",
+    "createItineraryBtn": "오디세이 만들기",
+    "plans": {
+      "free": {
+        "name": "무료",
+        "description": "캐주얼 여행자를 위한 기본 물류.",
+        "price": "₩0",
+        "itinerariesValue": "활성 오디세이 1개",
+        "immersiveValue": "표준 인텔리전스",
+        "loyaltyValue": "기본 보상"
+      },
+      "voyager": {
+        "name": "항해사",
+        "description": "자주 찾는 탐험가를 위한 향상된 도구.",
+        "price": "₩12,000",
+        "itinerariesValue": "활성 오디세이 3개",
+        "immersiveValue": "향상된 인텔리전스",
+        "packingValue": "AI 패킹 노드",
+        "loyaltyValue": "실버 보상"
+      },
+      "pathfinder": {
+        "name": "경로 찾기",
+        "description": "전문 노마드를 위한 신경 등급 인텔리전스.",
+        "price": "₩25,000",
+        "itinerariesValue": "무한 오디세이",
+        "immersiveValue": "신경 인텔리전스",
+        "insiderValue": "지역 전설 액세스",
+        "loyaltyValue": "골드 보상"
+      },
+      "sovereign": {
+        "name": "주권자",
+        "description": "유산 등급 종합으로 무한 액세스.",
+        "price": "₩65,000",
+        "itinerariesValue": "무한 오디세이",
+        "immersiveValue": "무한 인텔리전스",
+        "mirrorValue": "유산 거울 노드",
+        "fees": "서비스 수수료 없음"
+      },
+      "legend": {
+        "name": "전설",
+        "description": "전체 네트워크 액세스 권한이 있는 궁극의 탐험가 노드.",
+        "price": "₩130,000",
+        "itinerariesValue": "무한 오디세이",
+        "immersiveValue": "무한 인텔리전스",
+        "mirrorValue": "유산 거울 노드",
+        "insiderValue": "지역 전설 액세스",
+        "fees": "서비스 수수료 없음"
+      }
+    },
+    "period": {
+      "monthly": "/월"
+    },
+    "features": {
+      "itineraries": "오디세이 용량",
+      "immersive": "인텔리전스 수준",
+      "loyalty": "보상 등급",
+      "packing": "패킹 노드",
+      "insider": "전설 액세스",
+      "mirror": "유산 노드",
+      "fees": "서비스 수수료"
+    },
+    "upgrade": "업그레이드 승인",
+    "processingBtn": "처리 중...",
+    "currentPlan": "활성 노드"
+  },
+  "dashboard": {
+    "welcomeBack": "다시 오신 것을 환영합니다, {name}",
+    "odysseyLevel": "오디세이 레벨 {level}",
+    "seasonPass": "시즌 패스",
+    "xpSynthesized": "XP 종합됨",
+    "progressionToLevel": "레벨 {level}로 진행",
+    "vibeStreak": "분위기 연속",
+    "tasksResolved": "해결된 작업",
+    "totalMedals": "총 메달",
+    "premiumRequired": "프리미엄 필요",
+    "explorerStatus": "탐험가 상태: {tier}",
+    "points": "포인트",
+    "medals": "메달",
+    "editProfile": "프로필 편집",
+    "shortDesc": {
+      "itinerary": "신경 여정 종합.",
+      "pathfinder": "스마트 경로 최적화.",
+      "marketplace": "글로벌 분위기 교환.",
+      "store": "맞춤형 장비 조달.",
+      "booking": "물류 오케스트레이션.",
+      "wallet": "스마트 통화 노드.",
+      "budget": "재무 종합.",
+      "vision": "객체 인식 노드.",
+      "guide": "글로벌 인텔 허브.",
+      "ar": "증강 탐색.",
+      "legends": "민속 해독.",
+      "pulse": "문화 트렌드 레이더.",
+      "audio": "공간 내레이션.",
+      "odyssey": "영화 같은 여행 종합.",
+      "postcard": "AI 아트 생성.",
+      "mirror": "유산 시각화.",
+      "journal": "메모리 암호화."
+    },
+    "vibeRadar": {
+      "title": "분위기 레이더",
+      "desc": "{location}에서 {vibe} 분위기를 스캔하는 중."
+    }
+  },
+  "trips": {
+    "travelStyle": "여행 스타일"
+  }
+}
