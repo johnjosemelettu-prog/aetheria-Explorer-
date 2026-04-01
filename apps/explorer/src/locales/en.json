@@ -1,3 +1,4 @@
+
 {
   "common": {
     "save": "Save Changes",
@@ -106,7 +107,7 @@
       },
       "step2": {
         "title": "Synthesize Odyssey",
-        "desc": "Aetheria\'s neural grid architects your custom trajectory."
+        "desc": "Aetheria's neural grid architects your custom trajectory."
       },
       "step3": {
         "title": "Execute Journey",
@@ -203,7 +204,7 @@
     "hint": "Hint: {hint}",
     "xpSynthesized": "{points} XP Synthesized",
     "resolvedTitle": "City Resolved!",
-    "resolvedDesc": "You\'ve successfully decoded the secrets of {city}.",
+    "resolvedDesc": "You've successfully decoded the secrets of {city}.",
     "returnBtn": "Return to Command Hub"
   },
   "languageLab": {
@@ -296,7 +297,7 @@
       "arViewDescription": "AR View Active",
       "toast": {
         "chatTitle": "Chat Initialized",
-        "chatDescription": "Connecting to {name}\'s node..."
+        "chatDescription": "Connecting to {name}'s node..."
       }
     }
   },
@@ -497,8 +498,21 @@
     },
     "vibeRadar": {
       "title": "Vibe Radar",
-      "desc": "Scanning for {vibe} vibes in {location}."
-    }
+      "desc": "Scanning for {vibe} vibes in {location}.",
+      "match": "{vibe} MATCH",
+      "expand": "Expand Neural Network"
+    },
+    "explorerHubActive": "Explorer Hub Active",
+    "viewLegacyWrapped": "View Legacy Wrapped",
+    "productionTrailer": "Production Trailer",
+    "seasonPass.title": "Season Pass",
+    "seasonPass.subtitle": "Season 01: The Path Finder",
+    "progression": "{current} / {total} XP",
+    "vibeStreakValue": "{num} Odysseys",
+    "tasksResolvedValue": "{num} Quests",
+    "totalMedalsValue": "{num} Awards",
+    "missionInvite.title": "Odyssey Proposal Transmitted",
+    "missionInvite.description": "Waiting for {name} to authorize the Group Odyssey."
   },
   "trips": {
     "travelStyle": "Travel Style"
