@@ -118,7 +118,7 @@
         "desc": "Synthèse proactive des bagages adaptée au climat et aux nœuds de l'itinéraire."
       },
       "titlePart2": "MODULES.",
-      "quote": "We don't just plan trips. We synthesize experiences using multi-agent neural grids.",
+      "quote": "We dont just plan trips. We synthesize experiences using multi-agent neural grids.",
       "initializeButton": "Initialize"
     },
     "workflow": {
@@ -410,9 +410,19 @@
   },
   "itineraryGenerator": {
     "title": "Architecte d'Odyssée",
-    "subtitle": "Synthétisez un voyage de plusieurs jours basé sur votre ambiance psychologique.",
-    "authError": "Nœud d'Autorisation Hors Ligne",
-    "authErrorDesc": "Veuillez vous connecter pour synthétiser une odyssée.",
+    "description": "Synthétisez un voyage de plusieurs jours basé sur votre ambiance psychologique.",
+    "toast": {
+      "authErrorTitle": "Nœud d'Autorisation Hors Ligne",
+      "authErrorDescription": "Veuillez vous connecter pour synthétiser une odyssée.",
+      "generateSuccessTitle": "Odyssée Synthétisée !",
+      "generateSuccessDescription": "Votre nœud de voyage pour {destination} est maintenant actif.",
+      "generateErrorTitle": "Échec de la Synthèse",
+      "generateErrorDescription": "Impossible de générer l'itinéraire. Veuillez réessayer.",
+      "refineSuccessTitle": "Odyssée Affinée",
+      "refineErrorTitle": "Échec de l'Affinage",
+      "refineErrorDescription": "Impossible d'affiner l'itinéraire. Veuillez réessayer."
+    },
+    "odysseySuffix": "Odyssée",
     "form": {
       "title": "Planifiez votre Odyssée",
       "description": "Fournissez les détails de votre plan de voyage personnalisé.",

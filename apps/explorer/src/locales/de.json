@@ -422,27 +422,37 @@
       }
     }
   },
-  "itineraryGenerator": {
+"itineraryGenerator": {
     "title": "Odyssee-Architekt",
-    "subtitle": "Synthetisiere eine mehrtägige Reise basierend auf deinem psychologischen Vibe.",
-    "authError": "Autorisierungsknoten Offline",
-    "authErrorDesc": "Bitte melde dich an, um eine Odyssee zu synthetisieren.",
+    "description": "Synthetisieren Sie eine mehrtägige Reise basierend auf Ihrer psychologischen Stimmung.",
+    "toast": {
+      "authErrorTitle": "Autorisierungsknoten offline",
+      "authErrorDescription": "Bitte melden Sie sich an, um eine Odyssee zu synthetisieren.",
+      "generateSuccessTitle": "Odyssee synthetisiert!",
+      "generateSuccessDescription": "Ihr Reiseknoten für {destination} ist jetzt aktiv.",
+      "generateErrorTitle": "Synthese fehlgeschlagen",
+      "generateErrorDescription": "Reiseroute konnte nicht generiert werden. Bitte versuchen Sie es erneut.",
+      "refineSuccessTitle": "Odyssee verfeinert",
+      "refineErrorTitle": "Verfeinerung fehlgeschlagen",
+      "refineErrorDescription": "Reiseroute konnte nicht verfeinert werden. Bitte versuchen Sie es erneut."
+    },
+    "odysseySuffix": "Odyssee",
     "form": {
-      "title": "Plan Your Odyssey",
-      "description": "Provide details for your personalized travel plan.",
-      "generateButton": "Generate Odyssey",
-      "destinationLabel": "Destination",
-      "destinationPlaceholder": "e.g. Paris, France",
-      "datesLabel": "Dates",
-      "pickDateRange": "Pick a date range",
+      "title": "Planen Sie Ihre Odyssee",
+      "description": "Geben Sie die Details für Ihren personalisierten Reiseplan an.",
+      "generateButton": "Odyssee generieren",
+      "destinationLabel": "Reiseziel",
+      "destinationPlaceholder": "z.B. Paris, Frankreich",
+      "datesLabel": "Daten",
+      "pickDateRange": "Wählen Sie einen Datumsbereich aus",
       "budgetLabel": "Budget",
-      "budgetPlaceholder": "Select your budget level",
-      "budgetLow": "Low",
-      "budgetMedium": "Medium",
-      "budgetHigh": "High",
-      "vibeLabel": "Travel Vibe",
-      "vibePlaceholder": "Describe your ideal travel experience",
-      "vibeDescription": "e.g. 'Relaxed and cultural' or 'Adventurous and off-the-beaten-path'"
+      "budgetPlaceholder": "Wählen Sie Ihr Budgetniveau aus",
+      "budgetLow": "Niedrig",
+      "budgetMedium": "Mittel",
+      "budgetHigh": "Hoch",
+      "vibeLabel": "Reisestimmung",
+      "vibePlaceholder": "Beschreiben Sie Ihr ideales Reiseerlebnis",
+      "vibeDescription": "z.B. 'Entspannt und kulturell' oder 'Abenteuerlich und abseits der ausgetretenen Pfade'"
     }
   },
   "subscription": {
