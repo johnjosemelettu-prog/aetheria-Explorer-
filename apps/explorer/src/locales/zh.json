@@ -502,5 +502,31 @@
   },
   "trips": {
     "travelStyle": "旅行风格"
+  },
+  "achievements": {
+    "unlocked": "已解锁",
+    "locked": "已锁定",
+    "synthesisRequirementPending": "合成要求待定。",
+    "legacyProtocol": "旧版协议",
+    "title": "成就",
+    "subtitle": "通过在全球网格中完成奥德赛任务来获得高保真奖章。",
+    "season1": "第 01 季：寻路者",
+    "rewardsViaAetheria": "通过 Aetheria 网格合成的奖励"
+  },
+  "arWayfinding": {
+    "geolocationNotSupported": "您的浏览器不支持地理定位。",
+    "locationAccessDenied": "位置访问被拒绝。请为 AR 寻路启用 GPS。",
+    "globalHub": "全球中心",
+    "geocodingFailed": "地理编码节点失败。",
+    "establishment": "设施",
+    "nearby": "附近",
+    "signalLoss": "信号丢失",
+    "fetchNodesError": "无法获取本地节点。",
+    "returnToCommandCenter": "返回指挥中心",
+    "synchronizingGps": "正在同步 GPS...",
+    "navigationLocked": "导航已锁定",
+    "routingToNode": "正在路由到目标节点",
+    "scanPlaceholder": "扫描本地节点（例如咖啡馆、博物馆）...",
+    "auraSync": "光环同步：{locationName}"
   }
 }

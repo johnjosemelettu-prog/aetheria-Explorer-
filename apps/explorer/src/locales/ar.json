@@ -541,5 +541,31 @@
   },
   "trips": {
     "travelStyle": "نمط السفر"
+  },
+  "achievements": {
+    "unlocked": "مفتوح",
+    "locked": "مغلق",
+    "synthesisRequirementPending": "متطلبات التركيب معلقة.",
+    "legacyProtocol": "بروتوكول قديم",
+    "title": "الإنجازات",
+    "subtitle": "اربح ميداليات عالية الدقة من خلال إكمال مهام الأوديسة عبر الشبكة العالمية.",
+    "season1": "الموسم 01: مكتشف المسار",
+    "rewardsViaAetheria": "تم تركيب المكافآت عبر شبكة Aetheria"
+  },
+  "arWayfinding": {
+    "geolocationNotSupported": "تحديد الموقع الجغرافي غير مدعوم من قبل متصفحك.",
+    "locationAccessDenied": "تم رفض الوصول إلى الموقع. يرجى تمكين GPS لتحديد الطريق بالواقع المعزز.",
+    "globalHub": "المركز العالمي",
+    "geocodingFailed": "فشل عقدة الترميز الجغرافي.",
+    "establishment": "مؤسسة",
+    "nearby": "قريب",
+    "signalLoss": "فقدان الإشارة",
+    "fetchNodesError": "تعذر جلب العقد المحلية.",
+    "returnToCommandCenter": "العودة إلى مركز القيادة",
+    "synchronizingGps": "تتم مزامنة GPS...",
+    "navigationLocked": "الملاحة مقفلة",
+    "routingToNode": "التوجيه إلى العقدة الوجهة",
+    "scanPlaceholder": "ابحث عن العقد المحلية (مثل مقهى، متحف)...",
+    "auraSync": "مزامنة Aura: {locationName}"
   }
 }

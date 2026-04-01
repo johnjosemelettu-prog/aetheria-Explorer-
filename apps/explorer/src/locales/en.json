@@ -8,8 +8,8 @@
     "loading": "Processing...",
     "search": "Search Grid",
     "filter": "Filter Nodes",
-    "back": "Return",
-    "next": "Proceed",
+    "back": "Back",
+    "next": "Next",
     "continue": "Continue",
     "confirm": "Authorize",
     "active": "Active",
@@ -36,25 +36,10 @@
       "successTitle": "Welcome Back",
       "successDescription": "Your Aetheria session is now active.",
       "errorTitle": "Login Failed",
-      "genericError": "Unable to verify credentials.",
-      "invalidCredentials": "Invalid email address or security key.",
-      "operationNotAllowed": "Sign-in is currently restricted.",
-      "systemNodeOfflineTitle": "System Node Offline",
-      "systemNodeOfflineDescription": "The authentication service is not yet initialized.",
-      "unsupportedFeatureTitle": "Unsupported Feature",
-      "unsupportedFeatureDescription": "Biometric login is only available on mobile devices.",
-      "biometricLoginFailedTitle": "Biometric Login Failed",
-      "biometricLoginFailedDescription": "Could not log in with biometric credentials."
-    },
-    "validation": {
-      "email": "Please enter a valid network address.",
-      "passwordMinLength": "Security key must be at least 6 characters."
-    },
-    "cardDescription": "Access your Odyssey Grid",
-    "authChannels": "Auth Channels",
-    "googleButton": "Google",
-    "appleButton": "Apple",
-    "biometricLoginButton": "Biometric Login"
+      "genericError": "Could not verify credentials.",
+      "invalidCredentials": "Invalid email or security key.",
+      "operationNotAllowed": "Sign-in is currently restricted."
+    }
   },
   "signup": {
     "title": "Create Account",
@@ -71,7 +56,7 @@
       "successDescription": "Welcome to the Aetheria grid.",
       "errorTitle": "Signup Failed",
       "emailInUse": "This email is already registered.",
-      "operationNotAllowed": "Signup is currently restricted.",
+      "operationNotAllowed": "Sign-up is currently restricted.",
       "genericError": "Something went wrong during synthesis."
     }
   },
@@ -84,14 +69,7 @@
       "cta": {
         "start": "Initialize Journey",
         "signin": "Access Node"
-      },
-      "neuralNetworkOnline": "NEURAL NETWORK ONLINE",
-      "tagline1": "The first AI-native travel ecosystem for the digital nomad.",
-      "tagline2": "Synthesize your journey. Recode your reality.",
-      "enterGridButton": "ENTER GRID",
-      "signUpButton": "SIGN UP",
-      "loginButton": "LOGIN",
-      "scrollRecode": "Scroll to Recode"
+      }
     },
     "features": {
       "chapter": "Protocol Chapter 01",
@@ -105,25 +83,22 @@
       "postcard": {
         "badge": "Studio",
         "title": "Postcard Studio",
-        "desc": "Transform your snapshots into high-fidelity AI-generated art."
+        "desc": "Transform your snapshots into AI-generated high-fidelity art."
       },
       "legends": {
         "badge": "Intelligence",
         "title": "Local Legends",
-        "desc": "Unlock the hidden folklore of your coordinates via GPS-triggered narration."
+        "desc": "Unlock the hidden folklore of your coordinates through GPS-triggered narration."
       },
       "packing": {
         "badge": "Utility",
-        "title": "Forgot Nothing Agent",
+        "title": "Never-Forget Agent",
         "desc": "Proactive packing synthesis tailored to climate and itinerary nodes."
-      },
-      "titlePart2": "MODULES.",
-      "quote": "We don't just plan trips. We synthesize experiences using multi-agent neural grids.",
-      "initializeButton": "Initialize"
+      }
     },
     "workflow": {
       "badge": "Operational Protocol",
-      "title": "How it Works",
+      "title": "How It Works",
       "phase": "Phase 0{num}",
       "step1": {
         "title": "Define Intent",
@@ -131,45 +106,31 @@
       },
       "step2": {
         "title": "Synthesize Odyssey",
-        "desc": "Aetheria's neural grid architects your custom trajectory."
+        "desc": "Aetheria\'s neural grid architects your custom trajectory."
       },
       "step3": {
         "title": "Execute Journey",
         "desc": "Launch into the world with real-time intelligence and safety nodes."
-      },
-      "operationalFlowBadge": "Operational Flow",
-      "step1Title": "SCAN",
-      "step1Desc": "Input your neural preferences and travel constraints.",
-      "step2Title": "SYNTHESIZE",
-      "step2Desc": "Our multi-agent grid generates thousands of permutations.",
-      "step3Title": "EXECUTE",
-      "step3Desc": "Deploy your itinerary with real-time AR/VR support.",
-      "realtimeOptimizationBadge": "Real-time Optimization",
-      "realtimeOptimizationDesc": "Grid adjusted for weather patterns in Tokyo. Recalculating route..."
+      }
     },
     "cta": {
       "badge": "Join the Network",
       "title": "READY TO RECODE YOUR WORLD?",
-      "subtitle": "Join the network of modern explorers using infinite intelligence.",
-      "start": "Join Network",
-      "feed": "Global Feed",
-      "readyToRecodeTitle": "READY TO RECODE?",
-      "titlePart2": "RECODE?",
-      "readyToRecodeSubtitle": "Join 50,000+ digital nomads who have already synthesized their reality.",
-      "signUpNowButton": "SIGN UP NOW",
-      "loginButton": "LOGIN"
+      "subtitle": "Join the network of modern explorers harnessing infinite intelligence.",
+      "start": "Connect to Network",
+      "feed": "Global Feed"
     }
   },
   "header": {
     "aiItinerary": "Aura Itinerary",
-    "pathfinder": "Path Finder",
+    "pathfinder": "Pathfinder",
     "vibeMarketplace": "Vibe Marketplace",
     "vibeShopping": "Bespoke Store",
     "bookingHub": "Booking Hub",
-    "myTrips": "My Journeys",
+    "myTrips": "My Trips",
     "visionHub": "Vision AI Hub",
-    "intelligenceCenter": "Intel Hub",
-    "arWayfinding": "AR Navigation",
+    "intelligenceCenter": "Intelligence Hub",
+    "arWayfinding": "AR Wayfinding",
     "localLegends": "Local Legends",
     "explorerQuests": "Explorer Quests",
     "culturalPulse": "Cultural Pulse",
@@ -190,7 +151,7 @@
     "buses": "Buses",
     "cruises": "Cruises",
     "cabs": "Cabs",
-    "dining": "Culinary",
+    "dining": "Dining",
     "profile": "Identity Node",
     "loyaltyHub": "Loyalty Hub",
     "wallet": "Smart Wallet",
@@ -203,7 +164,7 @@
     "sos": "SOS Panic Hub",
     "events": "Destination Events",
     "gearArchitect": "Gear Architect",
-    "jetLag": "Loger Logic",
+    "jetLag": "Jet Lag Logic",
     "digitalTailor": "Digital Tailor",
     "translator": "Linguistic Lab",
     "corporate": "Corporate Mode",
@@ -217,26 +178,21 @@
     "menuExplorer": "Menu Explorer",
     "localInsider": "Local Insider",
     "cultureScout": "Culture Scout",
-    "packingassistant": "Forgot Nothing Agent",
+    "packingassistant": "Never-Forget Agent",
     "categories": {
       "orchestration": "Orchestrate",
       "intelligence": "Intelligence",
       "studios": "Studios",
-      "utility": "Utilities"
+      "utility": "Utility"
     },
     "promo": {
       "spotlights": "Partner Spotlights",
       "verified": "Verified Partners"
-    },
-    "journeySynthesized": "Journey Synthesized",
-    "sosButton": "SOS",
-    "loginButton": "LOGIN",
-    "signUpButton": "SIGN UP",
-    "linguisticGrid": "Linguistic Grid"
+    }
   },
   "explorerQuests": {
     "title": "Explorer Quests",
-    "subtitle": "Turn your city exploration into a high-stakes scavenger hunt.",
+    "subtitle": "Turn your city exploration into a high-stakes treasure hunt.",
     "initTitle": "Initialize Quest Grid",
     "initDesc": "Select a target city to synthesize custom exploration missions.",
     "cityPlaceholder": "e.g. Kyoto, Japan",
@@ -247,7 +203,7 @@
     "hint": "Hint: {hint}",
     "xpSynthesized": "{points} XP Synthesized",
     "resolvedTitle": "City Resolved!",
-    "resolvedDesc": "You've successfully decoded the secrets of {city}.",
+    "resolvedDesc": "You\'ve successfully decoded the secrets of {city}.",
     "returnBtn": "Return to Command Hub"
   },
   "languageLab": {
@@ -272,7 +228,7 @@
   "layoverOdyssey": {
     "badge": "Transit Intelligence",
     "title": "Layover Odyssey",
-    "subtitle": "Transform your transit time into a high-velocity micro-journey.",
+    "subtitle": "Transform your transit time into a high-speed micro-journey.",
     "initTitle": "Initialize Layover Node",
     "initDesc": "Provide your transit coordinates and duration to synthesize a custom trajectory.",
     "airportPlaceholder": "Airport / City (e.g. SIN, Singapore)",
@@ -296,15 +252,15 @@
   },
   "transitConnect": {
     "title": "Transit Connect",
-    "subtitle": "Find your tribe in the terminal. Connect with travelers sharing your flight or vibe.",
+    "subtitle": "Find your tribe in the terminal. Connect with travelers who share your flight or vibe.",
     "step1": {
       "title": "Verify Boarding Pass",
       "description": "Scan your boarding pass to verify your identity and flight node.",
       "scanningButton": "Scanning...",
       "scanButton": "Scan Pass",
-      "cameraError": "Camera node offline.",
+      "cameraError": "Camera node is offline.",
       "scanErrorTitle": "Scan Failed",
-      "scanErrorDescription": "Unable to decode boarding pass data."
+      "scanErrorDescription": "Could not decode boarding pass data."
     },
     "verification": {
       "title": "Identity Verified",
@@ -323,8 +279,8 @@
         "networking": "Networking",
         "networkingDescription": "Connect with professionals on your flight.",
         "coffee": "Grab a Coffee",
-        "coffeeDescription": "Casual conversation over a brew.",
-        "shareLounge": "Share Lounge",
+        "coffeeDescription": "Casual conversation over a beverage.",
+        "shareLounge": "Share a Lounge",
         "shareLoungeDescription": "Access premium nodes with others.",
         "cardGame": "Card Game",
         "cardGameDescription": "Kill time with a quick game."
@@ -332,7 +288,7 @@
     },
     "step3": {
       "title": "Terminal Network",
-      "description": "Real-time connection nodes active in your vicinity.",
+      "description": "Active real-time connection nodes in your vicinity.",
       "nearbyTab": "Nearby",
       "arViewTab": "AR View",
       "sameFlight": "Same Flight",
@@ -340,7 +296,7 @@
       "arViewDescription": "AR View Active",
       "toast": {
         "chatTitle": "Chat Initialized",
-        "chatDescription": "Connecting to {name}'s node..."
+        "chatDescription": "Connecting to {name}\'s node..."
       }
     }
   },
@@ -352,29 +308,13 @@
     "globalConnect": "Global Connect",
     "allRightsReserved": "© {year} Aetheria AI Intelligence Systems. All rights reserved.",
     "supportHub": "Support Hub",
-    "partnerNetwork": "Partner Network",
-    "journeySynthesized": "Journey Synthesized",
-    "tagline": "\"The future of travel isn't just about where you go, but how you synthesize the reality of your journey.\"",
-    "protocolsCategory": "Protocols",
-    "termsLink": "Terms",
-    "privacyLink": "Privacy",
-    "securityLink": "Security",
-    "networkCategory": "Network",
-    "legalLink": "Legal",
-    "brochureLink": "Brochure",
-    "partnersLink": "Partners",
-    "supportCategory": "Support",
-    "contactLink": "Hub",
-    "faqLink": "FAQ",
-    "allSystemsOperationalStatus": "All Systems Operational",
-    "aetheriaAi": "Aetheria AI",
-    "poweredBy": "Powered by Aetheria Neural Grid"
+    "partnerNetwork": "Partner Network"
   },
   "profile": {
-    "saveSuccessTitle": "Profile Synchronized",
+    "saveSuccessTitle": "Profile Synced",
     "saveSuccessDescription": "Your identity node has been updated.",
     "saveButton": "Authorize Changes",
-    "savingButton": "Synchronizing...",
+    "savingButton": "Syncing...",
     "tabs": {
       "identity": "Identity Node",
       "travelDna": "Travel DNA",
@@ -395,11 +335,11 @@
     "travelStyle": {
       "relaxed": {
         "label": "Relaxed",
-        "description": "Low velocity, high immersion."
+        "description": "Low speed, high immersion."
       },
       "active": {
         "label": "Active",
-        "description": "High velocity, multi-node daily."
+        "description": "High speed, multiple daily nodes."
       },
       "adventurous": {
         "label": "Adventurous",
@@ -410,7 +350,7 @@
         "description": "Maximum efficiency, zero downtime."
       },
       "familyFriendly": {
-        "label": "Family Friendly",
+        "label": "Family-Friendly",
         "description": "Multi-passenger safety focus."
       }
     },
@@ -419,11 +359,11 @@
       "description": "Select your primary travel interests.",
       "items": {
         "history": "History",
-        "food": "Culinary",
-        "hiking": "Trekking",
-        "art": "Arts",
+        "food": "Food",
+        "hiking": "Hiking",
+        "art": "Art",
         "nightlife": "Nightlife",
-        "shopping": "Retail",
+        "shopping": "Shopping",
         "nature": "Nature",
         "wellness": "Wellness"
       }
@@ -436,12 +376,12 @@
     "authErrorDesc": "Please sign in to synthesize an odyssey.",
     "form": {
       "title": "Plan Your Odyssey",
-      "description": "Provide details for your personalized travel plan.",
+      "description": "Provide the details for your personalized travel plan.",
       "generateButton": "Generate Odyssey",
       "destinationLabel": "Destination",
       "destinationPlaceholder": "e.g. Paris, France",
       "datesLabel": "Dates",
-      "pickDateRange": "Pick a date range",
+      "pickDateRange": "Select a date range",
       "budgetLabel": "Budget",
       "budgetPlaceholder": "Select your budget level",
       "budgetLow": "Low",
@@ -462,7 +402,7 @@
     "plans": {
       "free": {
         "name": "Free",
-        "description": "Basic logistics for casual travelers.",
+        "description": "Basic logistics for the casual traveler.",
         "price": "$0",
         "itinerariesValue": "1 Active Odyssey",
         "immersiveValue": "Standard Intelligence",
@@ -470,7 +410,7 @@
       },
       "voyager": {
         "name": "Voyager",
-        "description": "Enhanced tools for frequent explorers.",
+        "description": "Enhanced tools for the frequent explorer.",
         "price": "$9",
         "itinerariesValue": "3 Active Odysseys",
         "immersiveValue": "Enhanced Intelligence",
@@ -479,42 +419,42 @@
       },
       "pathfinder": {
         "name": "Pathfinder",
-        "description": "Neural-grade intelligence for professional nomads.",
+        "description": "Neural-grade intelligence for the professional nomad.",
         "price": "$19",
-        "itinerariesValue": "Infinite Odysseys",
+        "itinerariesValue": "Unlimited Odysseys",
         "immersiveValue": "Neural Intelligence",
-        "insiderValue": "Local Legend Access",
+        "insiderValue": "Local Legends Access",
         "loyaltyValue": "Gold Rewards"
       },
       "sovereign": {
         "name": "Sovereign",
         "description": "Infinite access with heritage-grade synthesis.",
         "price": "$49",
-        "itinerariesValue": "Infinite Odysseys",
+        "itinerariesValue": "Unlimited Odysseys",
         "immersiveValue": "Infinite Intelligence",
         "mirrorValue": "Heritage Mirror Node",
         "fees": "Zero Service Fees"
       },
       "legend": {
         "name": "Legend",
-        "description": "The ultimate explorer node with total network access.",
+        "description": "The ultimate explorer node with full network access.",
         "price": "$99",
-        "itinerariesValue": "Infinite Odysseys",
+        "itinerariesValue": "Unlimited Odysseys",
         "immersiveValue": "Infinite Intelligence",
         "mirrorValue": "Heritage Mirror Node",
-        "insiderValue": "Local Legend Access",
+        "insiderValue": "Local Legends Access",
         "fees": "Zero Service Fees"
       }
     },
     "period": {
-      "monthly": "/ MO"
+      "monthly": "/ MONTH"
     },
     "features": {
       "itineraries": "Odyssey Capacity",
       "immersive": "Intelligence Level",
       "loyalty": "Rewards Tier",
       "packing": "Packing Node",
-      "insider": "Legend Access",
+      "insider": "Legends Access",
       "mirror": "Heritage Node",
       "fees": "Service Fees"
     },
@@ -538,7 +478,7 @@
     "editProfile": "Edit Profile",
     "shortDesc": {
       "itinerary": "Neural itinerary synthesis.",
-      "pathfinder": "Smart route optimization.",
+      "pathfinder": "Intelligent route optimization.",
       "marketplace": "Global vibe exchange.",
       "store": "Bespoke gear procurement.",
       "booking": "Logistics orchestration.",
@@ -547,7 +487,7 @@
       "vision": "Object recognition node.",
       "guide": "Global intel hub.",
       "ar": "Augmented navigation.",
-      "legends": "Folklore decryption.",
+      "legends": "Folklore decoding.",
       "pulse": "Cultural trend radar.",
       "audio": "Spatial narration.",
       "odyssey": "Cinematic trip synthesis.",
@@ -557,10 +497,36 @@
     },
     "vibeRadar": {
       "title": "Vibe Radar",
-      "desc": "Scanning {vibe} vibes at {location}."
+      "desc": "Scanning for {vibe} vibes in {location}."
     }
   },
   "trips": {
     "travelStyle": "Travel Style"
+  },
+  "achievements": {
+    "unlocked": "UNLOCKED",
+    "locked": "LOCKED",
+    "synthesisRequirementPending": "Synthesis requirement pending.",
+    "legacyProtocol": "Legacy Protocol",
+    "title": "Achievements",
+    "subtitle": "Earn high-fidelity medals by completing odyssey missions across the global grid.",
+    "season1": "Season 01: The Path Finder",
+    "rewardsViaAetheria": "Rewards synthesized via Aetheria Grid"
+  },
+  "arWayfinding": {
+    "geolocationNotSupported": "Geolocation is not supported by your browser.",
+    "locationAccessDenied": "Location access denied. Please enable GPS for AR Wayfinding.",
+    "globalHub": "Global Hub",
+    "geocodingFailed": "Geocoding node failed.",
+    "establishment": "Establishment",
+    "nearby": "Nearby",
+    "signalLoss": "Signal Loss",
+    "fetchNodesError": "Could not fetch local nodes.",
+    "returnToCommandCenter": "Return to Command Center",
+    "synchronizingGps": "SYNCHRONIZING GPS...",
+    "navigationLocked": "Navigation Locked",
+    "routingToNode": "Routing to destination node",
+    "scanPlaceholder": "Scan for local nodes (e.g. cafe, museum)...",
+    "auraSync": "Aura Sync: {locationName}"
   }
 }
