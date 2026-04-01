@@ -112,7 +112,7 @@
         "desc": "जलवायु और यात्रा कार्यक्रम नोड्स के अनुरूप सक्रिय पैकिंग संश्लेषण।"
       },
       "titlePart2": "MODULES.",
-      "quote": "We don't just plan trips. We synthesize experiences using multi-agent neural grids.",
+      "quote": "We dont just plan trips. We synthesize experiences using multi-agent neural grids.",
       "initializeButton": "Initialize"
     },
     "workflow": {
@@ -404,9 +404,19 @@
   },
   "itineraryGenerator": {
     "title": "ओडिसी आर्किटेक्ट",
-    "subtitle": "अपने मनोवैज्ञानिक वाइब के आधार पर बहु-दिवसीय यात्रा को संश्लेषित करें।",
-    "authError": "ऑथराइजेशन नोड ऑफलाइन",
-    "authErrorDesc": "ओडिसी को संश्लेषित करने के लिए कृपया साइन इन करें।",
+    "description": "अपने मनोवैज्ञानिक वाइब के आधार पर बहु-दिवसीय यात्रा को संश्लेषित करें।",
+    "toast": {
+      "authErrorTitle": "ऑथराइजेशन नोड ऑफलाइन",
+      "authErrorDescription": "ओडिसी को संश्लेषित करने के लिए कृपया साइन इन करें।",
+      "generateSuccessTitle": "ओडिसी संश्लेषित!",
+      "generateSuccessDescription": "{destination} के लिए आपका यात्रा नोड अब सक्रिय है।",
+      "generateErrorTitle": "संश्लेषण विफल",
+      "generateErrorDescription": "यात्रा कार्यक्रम उत्पन्न नहीं किया जा सका। कृपया पुनः प्रयास करें।",
+      "refineSuccessTitle": "ओडिसी परिष्कृत",
+      "refineErrorTitle": "शोधन विफल",
+      "refineErrorDescription": "यात्रा कार्यक्रम को परिष्कृत नहीं किया जा सका। कृपया पुनः प्रयास करें।"
+    },
+    "odysseySuffix": "ओडिसी",
     "form": {
       "title": "अपनी ओडिसी की योजना बनाएं",
       "description": "अपनी व्यक्तिगत यात्रा योजना के लिए विवरण प्रदान करें।",

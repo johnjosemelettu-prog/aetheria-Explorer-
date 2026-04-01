@@ -38,7 +38,7 @@
       "errorTitle": "Accesso Fallito",
       "genericError": "Impossibile verificare le credenziali.",
       "invalidCredentials": "Indirizzo email o chiave di sicurezza non validi.",
-      "operationNotAllowed": "L'accesso è attualmente limitato.",
+      "operationNotAllowed": "Laccesso è attualmente limitato.",
       "systemNodeOfflineTitle": "System Node Offline",
       "systemNodeOfflineDescription": "The authentication service is not yet initialized.",
       "unsupportedFeatureTitle": "Unsupported Feature",
@@ -118,7 +118,7 @@
         "desc": "Sintesi proattiva dei bagagli adattata al clima e ai nodi dell'itinerario."
       },
       "titlePart2": "MODULES.",
-      "quote": "We don't just plan trips. We synthesize experiences using multi-agent neural grids.",
+      "quote": "We dont just plan trips. We synthesize experiences using multi-agent neural grids.",
       "initializeButton": "Initialize"
     },
     "workflow": {
@@ -410,9 +410,19 @@
   },
   "itineraryGenerator": {
     "title": "Architetto di Odissee",
-    "subtitle": "Sintetizza un viaggio di più giorni basato sul tuo vibe psicologico.",
-    "authError": "Nodo Autorizzazione Offline",
-    "authErrorDesc": "Accedi per sintetizzare un'odissea.",
+    "description": "Sintetizza un viaggio di più giorni basato sul tuo vibe psicologico.",
+    "toast": {
+      "authErrorTitle": "Nodo Autorizzazione Offline",
+      "authErrorDescription": "Accedi per sintetizzare un'odissea.",
+      "generateSuccessTitle": "Odissea Sintetizzata!",
+      "generateSuccessDescription": "Il tuo nodo di viaggio per {destination} è ora attivo.",
+      "generateErrorTitle": "Sintesi Fallita",
+      "generateErrorDescription": "Impossibile generare l'itinerario. Per favore, riprova.",
+      "refineSuccessTitle": "Odissea Affinata",
+      "refineErrorTitle": "Affinamento Fallito",
+      "refineErrorDescription": "Impossibile affinare l'itinerario. Per favore, riprova."
+    },
+    "odysseySuffix": "Odissea",
     "form": {
       "title": "Pianifica la tua Odissea",
       "description": "Fornisci i dettagli per il tuo piano di viaggio personalizzato.",

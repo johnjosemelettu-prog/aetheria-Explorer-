@@ -371,9 +371,19 @@
   },
   "itineraryGenerator": {
     "title": "Arquitecto de Odiseas",
-    "subtitle": "Sintetiza un viaje de varios días basado en tu vibra psicológica.",
-    "authError": "Nodo de Autorización Fuera de Línea",
-    "authErrorDesc": "Inicia sesión para sintetizar una odisea.",
+    "description": "Sintetiza un viaje de varios días basado en tu vibra psicológica.",
+    "toast": {
+      "authErrorTitle": "Nodo de Autorización Fuera de Línea",
+      "authErrorDescription": "Inicia sesión para sintetizar una odisea.",
+      "generateSuccessTitle": "¡Odisea Sintetizada!",
+      "generateSuccessDescription": "Tu nodo de viaje para {destination} ya está activo.",
+      "generateErrorTitle": "Síntesis Fallida",
+      "generateErrorDescription": "No se pudo generar el itinerario. Por favor, inténtalo de nuevo.",
+      "refineSuccessTitle": "Odisea Refinada",
+      "refineErrorTitle": "Refinamiento Fallido",
+      "refineErrorDescription": "No se pudo refinar el itinerario. Por favor, inténtalo de nuevo."
+    },
+    "odysseySuffix": "Odisea",
     "form": {
       "title": "Planifica Tu Odisea",
       "description": "Proporciona los detalles para tu plan de viaje personalizado.",

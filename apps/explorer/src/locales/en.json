@@ -370,11 +370,21 @@
       }
     }
   },
-  "itineraryGenerator": {
+    "itineraryGenerator": {
     "title": "Odyssey Architect",
-    "subtitle": "Synthesize a multi-day journey based on your psychological vibe.",
-    "authError": "Authorization Node Offline",
-    "authErrorDesc": "Please sign in to synthesize an odyssey.",
+    "description": "Synthesize a multi-day journey based on your psychological vibe.",
+    "toast": {
+      "authErrorTitle": "Authorization Node Offline",
+      "authErrorDescription": "Please sign in to synthesize an odyssey.",
+      "generateSuccessTitle": "Odyssey Synthesized!",
+      "generateSuccessDescription": "Your journey node for {destination} is now active.",
+      "generateErrorTitle": "Synthesis Failed",
+      "generateErrorDescription": "Could not generate itinerary. Please try again.",
+      "refineSuccessTitle": "Odyssey Refined",
+      "refineErrorTitle": "Refinement Failed",
+      "refineErrorDescription": "Could not refine itinerary. Please try again."
+    },
+    "odysseySuffix": "Odyssey",
     "form": {
       "title": "Plan Your Odyssey",
       "description": "Provide the details for your personalized travel plan.",

@@ -422,27 +422,37 @@
       }
     }
   },
-  "itineraryGenerator": {
-    "title": "مهندس المسارات",
-    "subtitle": "تركيب رحلات متعددة الأيام بناءً على الحمض النووي النفسي الخاص بك.",
-    "authError": "عقدة الموافقة غير متصلة حالياً.",
-    "authErrorDesc": "يرجى تسجيل الدخول لتركيب المسار.",
+"itineraryGenerator": {
+    "title": "منشئ الرحلات",
+    "description": "أنشئ رحلة متعددة الأيام بناءً على شعورك النفسي.",
+    "toast": {
+      "authErrorTitle": "عقدة التفويض غير متصلة",
+      "authErrorDescription": "يرجى تسجيل الدخول لإنشاء رحلة.",
+      "generateSuccessTitle": "تم إنشاء الرحلة بنجاح!",
+      "generateSuccessDescription": "عقدة رحلتك لـ {destination} نشطة الآن.",
+      "generateErrorTitle": "فشل الإنشاء",
+      "generateErrorDescription": "تعذر إنشاء خط سير الرحلة. يرجى المحاولة مرة أخرى.",
+      "refineSuccessTitle": "تم تحسين الرحلة",
+      "refineErrorTitle": "فشل التحسين",
+      "refineErrorDescription": "تعذر تحسين خط سير الرحلة. يرجى المحاولة مرة أخرى."
+    },
+    "odysseySuffix": "رحلة",
     "form": {
       "title": "خطط لرحلتك",
-      "description": "قدم تفاصيل لخطتك الشخصية للسفر.",
-      "generateButton": "إنشاء خط سير الرحلة",
+      "description": "قدم تفاصيل خطة سفرك المخصصة.",
+      "generateButton": "أنشئ رحلة",
       "destinationLabel": "الوجهة",
       "destinationPlaceholder": "مثال: باريس، فرنسا",
       "datesLabel": "التواريخ",
-      "pickDateRange": "اختر نطاقًا زمنيًا",
+      "pickDateRange": "حدد نطاق تاريخ",
       "budgetLabel": "الميزانية",
-      "budgetPlaceholder": "اختر مستوى ميزانيتك",
+      "budgetPlaceholder": "حدد مستوى ميزانيتك",
       "budgetLow": "منخفضة",
       "budgetMedium": "متوسطة",
       "budgetHigh": "عالية",
-      "vibeLabel": "أجواء السفر",
-      "vibePlaceholder": "صف تجربتك المثالية في السفر",
-      "vibeDescription": "مثال: 'مريحة وثقافية' أو 'مغامرة وخارج المسار المطروق'"
+      "vibeLabel": "شعور السفر",
+      "vibePlaceholder": "صف تجربة سفرك المثالية",
+      "vibeDescription": "مثال: 'مريحة وثقافية' أو 'مغامرة وغير مألوفة'"
     }
   },
   "subscription": {
