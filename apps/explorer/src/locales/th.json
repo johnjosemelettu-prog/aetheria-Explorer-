@@ -464,6 +464,7 @@
   },
   "dashboard": {
     "welcomeBack": "ยินดีต้อนรับกลับมา คุณ {name}",
+    "explorer": "นักสำรวจ",
     "odysseyLevel": "ระดับการเดินทาง {level}",
     "seasonPass": "บัตรผ่านฤดูกาล",
     "xpSynthesized": "สังเคราะห์ XP แล้ว",
@@ -497,8 +498,29 @@
     },
     "vibeRadar": {
       "title": "เรดาร์บรรยากาศ",
-      "desc": "กำลังสแกนบรรยากาศ {vibe} ใน {location}"
-    }
+      "desc": "กำลังสแกนบรรยากาศ {vibe} ใน {location}",
+      "match": "{vibe} ตรงกัน",
+      "expand": "ขยายโครงข่ายประสาทเทียม"
+    },
+    "nearbyVibers": {
+      "leo": "ลีโอ",
+      "mina": "มีนา",
+      "jack": "แจ็ค",
+      "adventure": "ผจญภัย",
+      "streetArt": "ศิลปะบนท้องถนน",
+      "foodie": "นักชิม"
+    },
+    "explorerHubActive": "ศูนย์กลางนักสำรวจทำงานอยู่",
+    "viewLegacyWrapped": "ดู Legacy Wrapped",
+    "productionTrailer": "ตัวอย่างการผลิต",
+    "seasonPass.title": "บัตรผ่านฤดูกาล",
+    "seasonPass.subtitle": "ฤดูกาลที่ 01: ผู้ค้นหาเส้นทาง",
+    "progression": "{current} / {total} XP",
+    "vibeStreakValue": "{num} การเดินทาง",
+    "tasksResolvedValue": "{num} ภารกิจ",
+    "totalMedalsValue": "{num} รางวัล",
+    "missionInvite.title": "ส่งข้อเสนอการเดินทางแล้ว",
+    "missionInvite.description": "กำลังรอ {name} เพื่ออนุมัติ Group Odyssey"
   },
   "trips": {
     "travelStyle": "รูปแบบการเดินทาง"

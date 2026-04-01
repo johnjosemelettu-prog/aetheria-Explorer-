@@ -464,6 +464,7 @@
   },
   "dashboard": {
     "welcomeBack": "மீண்டும் வருக, {name}",
+    "explorer": "எக்ஸ்ப்ளோரர்",
     "odysseyLevel": "ஒடிஸி நிலை {level}",
     "seasonPass": "சீசன் பாஸ்",
     "xpSynthesized": "XP உருவாக்கப்பட்டது",
@@ -497,8 +498,29 @@
     },
     "vibeRadar": {
       "title": "வைப் ரேடார்",
-      "desc": "{location}-ல் {vibe} வைப்களை ஸ்கேன் செய்கிறது."
-    }
+      "desc": "{location}-ல் {vibe} வைப்களை ஸ்கேன் செய்கிறது.",
+      "match": "{vibe} பொருத்தம்",
+      "expand": "நியூரல் நெட்வொர்க்கை விரிவாக்கு"
+    },
+    "nearbyVibers": {
+      "leo": "லியோ",
+      "mina": "மினா",
+      "jack": "ஜாக்",
+      "adventure": "சாகசம்",
+      "streetArt": "தெருக் கலை",
+      "foodie": "உணவுப் பிரியர்"
+    },
+    "explorerHubActive": "எக்ஸ்ப்ளோரர் ஹப் செயலில் உள்ளது",
+    "viewLegacyWrapped": "மரபுவழி தொகுப்பைக் காண்க",
+    "productionTrailer": "தயாரிப்பு டிரெய்லர்",
+    "seasonPass.title": "சீசன் பாஸ்",
+    "seasonPass.subtitle": "சீசன் 01: பாத் ஃபைண்டர்",
+    "progression": "{current} / {total} XP",
+    "vibeStreakValue": "{num} ஒடிசிகள்",
+    "tasksResolvedValue": "{num} குவெஸ்ட்கள்",
+    "totalMedalsValue": "{num} விருதுகள்",
+    "missionInvite.title": "ஒடிஸி முன்மொழிவு அனுப்பப்பட்டது",
+    "missionInvite.description": "குழு ஒடிஸிக்கு {name} அங்கீகாரம் வழங்கக் காத்திருக்கிறது."
   },
   "trips": {
     "travelStyle": "பயண நடை"

@@ -159,9 +159,9 @@ export default function DashboardPage() {
   if (isLoading) return <div className="p-4 md:p-12 bg-background min-h-screen pt-safe"><Skeleton className="h-screen w-full rounded-2xl md:rounded-[3rem]" /></div>
 
   const nearbyVibers = [
-    { name: 'Leo', vibe: 'Adventure', avatar: 'https://i.pravatar.cc/150?u=leo' },
-    { name: 'Mina', vibe: 'Street Art', avatar: 'https://i.pravatar.cc/150?u=mina' },
-    { name: 'Jack', vibe: 'Foodie', avatar: 'https://i.pravatar.cc/150?u=jack' }
+    { name: t('dashboard.nearbyVibers.leo'), vibe: t('dashboard.nearbyVibers.adventure'), avatar: 'https://i.pravatar.cc/150?u=leo' },
+    { name: t('dashboard.nearbyVibers.mina'), vibe: t('dashboard.nearbyVibers.streetArt'), avatar: 'https://i.pravatar.cc/150?u=mina' },
+    { name: t('dashboard.nearbyVibers.jack'), vibe: t('dashboard.nearbyVibers.foodie'), avatar: 'https://i.pravatar.cc/150?u=jack' }
   ];
 
   return (
@@ -172,7 +172,7 @@ export default function DashboardPage() {
             <div className="space-y-3 md:space-y-4">
               <Badge id="header-node" className="bg-primary/20 text-primary border-primary/30 font-black tracking-[0.2em] py-1 px-4 uppercase text-[9px] rounded-full w-fit">{t('dashboard.explorerHubActive')}</Badge>
               <h1 className="font-headline text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-black tracking-tighter leading-none italic uppercase">
-                {t('dashboard.welcomeBack', { name: userProfile?.firstName || 'Explorer' })}
+                {t('dashboard.welcomeBack', { name: userProfile?.firstName || t('dashboard.explorer') })}
               </h1>
               <p className="text-[10px] md:text-sm text-muted-foreground font-black uppercase tracking-[0.3em] flex items-center gap-3">
                 <Dna className="h-4 w-4 text-primary" /> {t('dashboard.odysseyLevel', { level: 12 })}

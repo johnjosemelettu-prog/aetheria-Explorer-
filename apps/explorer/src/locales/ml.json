@@ -464,6 +464,7 @@
   },
   "dashboard": {
     "welcomeBack": "വീണ്ടും സ്വാഗതം, {name}",
+    "explorer": "എക്സ്പ്ലോറർ",
     "odysseyLevel": "ഒഡീസി ലെവൽ {level}",
     "seasonPass": "സീസൺ പാസ്",
     "xpSynthesized": "XP ലഭിച്ചു",
@@ -497,8 +498,29 @@
     },
     "vibeRadar": {
       "title": "വൈബ് റഡാർ",
-      "desc": "{location}-ലെ {vibe} വൈബുകൾ സ്കാൻ ചെയ്യുന്നു."
-    }
+      "desc": "{location}-ലെ {vibe} വൈബുകൾ സ്കാൻ ചെയ്യുന്നു.",
+      "match": "{vibe} യോജിക്കുന്നു",
+      "expand": "ന്യൂറൽ നെറ്റ്‌വർക്ക് വികസിപ്പിക്കുക"
+    },
+    "nearbyVibers": {
+      "leo": "ലിയോ",
+      "mina": "മീന",
+      "jack": "ജാക്ക്",
+      "adventure": "സാഹസികം",
+      "streetArt": "സ്ട്രീറ്റ് ആർട്ട്",
+      "foodie": "ഭക്ഷണം"
+    },
+    "explorerHubActive": "എക്സ്പ്ലോറർ ഹബ് സജീവം",
+    "viewLegacyWrapped": "ലെഗസി റാപ്പ്ഡ് കാണുക",
+    "productionTrailer": "പ്രൊഡക്ഷൻ ട്രെയിലർ",
+    "seasonPass.title": "സീസൺ പാസ്",
+    "seasonPass.subtitle": "സീസൺ 01: ദി പാത്ത് ഫൈൻഡർ",
+    "progression": "{current} / {total} XP",
+    "vibeStreakValue": "{num} ഒഡീകൾ",
+    "tasksResolvedValue": "{num} ക്വസ്റ്റുകൾ",
+    "totalMedalsValue": "{num} അവാർഡുകൾ",
+    "missionInvite.title": "ഒഡീസി നിർദ്ദേശം അയച്ചു",
+    "missionInvite.description": "ഗ്രൂപ്പ് ഒഡീസി അംഗീകരിക്കാൻ {name}-നായി കാത്തിരിക്കുന്നു."
   },
   "trips": {
     "travelStyle": "യാത്രാ ശൈലി"

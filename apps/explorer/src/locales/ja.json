@@ -524,6 +524,7 @@
   },
   "dashboard": {
     "welcomeBack": "おかえりなさい、{name}",
+    "explorer": "エクスプローラー",
     "odysseyLevel": "オデッセイレベル{level}",
     "seasonPass": "シーズンパス",
     "xpSynthesized": "XPが合成されました",
@@ -557,8 +558,29 @@
     },
     "vibeRadar": {
       "title": "Vibeレーダー",
-      "desc": "{location}で{vibe}の雰囲気をスキャンしています。"
-    }
+      "desc": "{location}で{vibe}の雰囲気をスキャンしています。",
+      "match": "{vibe}マッチ",
+      "expand": "ニューラルネットワークを拡張"
+    },
+    "nearbyVibers": {
+      "leo": "レオ",
+      "mina": "ミナ",
+      "jack": "ジャック",
+      "adventure": "冒険",
+      "streetArt": "ストリートアート",
+      "foodie": "食通"
+    },
+    "explorerHubActive": "エクスプローラーハブがアクティブです",
+    "viewLegacyWrapped": "レガシーラップを表示",
+    "productionTrailer": "制作トレーラー",
+    "seasonPass.title": "シーズンパス",
+    "seasonPass.subtitle": "シーズン01：パスファインダー",
+    "progression": "{current}/{total} XP",
+    "vibeStreakValue": "{num}オデッセイ",
+    "tasksResolvedValue": "{num}クエスト",
+    "totalMedalsValue": "{num}アワード",
+    "missionInvite.title": "オデッセイ提案が送信されました",
+    "missionInvite.description": "{name}がグループオデッセイを承認するのを待っています。"
   },
   "trips": {
     "travelStyle": "旅行スタイル"

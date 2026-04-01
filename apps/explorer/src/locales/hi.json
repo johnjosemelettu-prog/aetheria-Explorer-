@@ -497,6 +497,7 @@
   },
   "dashboard": {
     "welcomeBack": "वापसी पर स्वागत है, {name}",
+    "explorer": "एक्सप्लोरर",
     "odysseyLevel": "ओडिसी स्तर {level}",
     "seasonPass": "सीजन पास",
     "xpSynthesized": "XP संश्लेषित",
@@ -530,8 +531,29 @@
     },
     "vibeRadar": {
       "title": "वाइब रडार",
-      "desc": "{location} पर {vibe} वाइब्स को स्कैन किया जा रहा है।"
-    }
+      "desc": "{location} पर {vibe} वाइब्स को स्कैन किया जा रहा है।",
+      "match": "{vibe} मैच",
+      "expand": "तंत्रिका नेटवर्क का विस्तार करें"
+    },
+    "nearbyVibers": {
+      "leo": "लियो",
+      "mina": "मीना",
+      "jack": "जैक",
+      "adventure": "साहसिक",
+      "streetArt": "स्ट्रीट आर्ट",
+      "foodie": "खाने का शौकीन"
+    },
+    "explorerHubActive": "एक्सप्लोरर हब सक्रिय",
+    "viewLegacyWrapped": "लिगेसी रैप्ड देखें",
+    "productionTrailer": "प्रोडक्शन ट्रेलर",
+    "seasonPass.title": "सीजन पास",
+    "seasonPass.subtitle": "सीजन 01: द पाथ फाइंडर",
+    "progression": "{current} / {total} XP",
+    "vibeStreakValue": "{num} ओडिसी",
+    "tasksResolvedValue": "{num} क्वेस्ट",
+    "totalMedalsValue": "{num} पुरस्कार",
+    "missionInvite.title": "ओडिसी प्रस्ताव प्रेषित",
+    "missionInvite.description": "समूह ओडिसी को अधिकृत करने के लिए {name} की प्रतीक्षा की जा रही है।"
   },
   "trips": {
     "travelStyle": "यात्रा शैली"

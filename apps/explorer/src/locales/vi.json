@@ -524,6 +524,7 @@
   },
   "dashboard": {
     "welcomeBack": "Chào mừng trở lại, {name}",
+    "explorer": "Nhà thám hiểm",
     "odysseyLevel": "Cấp độ Odyssey {level}",
     "seasonPass": "Vé mùa",
     "xpSynthesized": "XP đã được tổng hợp",
@@ -557,8 +558,29 @@
     },
     "vibeRadar": {
       "title": "Radar cảm xúc",
-      "desc": "Đang quét cảm xúc {vibe} tại {location}."
-    }
+      "desc": "Đang quét cảm xúc {vibe} tại {location}.",
+      "match": "{vibe} TRÙNG KHỚP",
+      "expand": "Mở rộng mạng lưới thần kinh"
+    },
+    "nearbyVibers": {
+      "leo": "Leo",
+      "mina": "Mina",
+      "jack": "Jack",
+      "adventure": "Phiêu lưu",
+      "streetArt": "Nghệ thuật đường phố",
+      "foodie": "Người sành ăn"
+    },
+    "explorerHubActive": "Trung tâm nhà thám hiểm đang hoạt động",
+    "viewLegacyWrapped": "Xem lại hành trình di sản",
+    "productionTrailer": "Giới thiệu sản xuất",
+    "seasonPass.title": "Vé mùa",
+    "seasonPass.subtitle": "Mùa 01: Người tìm đường",
+    "progression": "{current} / {total} XP",
+    "vibeStreakValue": "{num} chuyến đi",
+    "tasksResolvedValue": "{num} nhiệm vụ",
+    "totalMedalsValue": "{num} giải thưởng",
+    "missionInvite.title": "Đề xuất chuyến đi đã được truyền đi",
+    "missionInvite.description": "Đang chờ {name} ủy quyền cho chuyến đi nhóm."
   },
   "trips": {
     "travelStyle": "Phong cách du lịch"

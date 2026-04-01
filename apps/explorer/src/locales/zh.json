@@ -464,6 +464,7 @@
   },
   "dashboard": {
     "welcomeBack": "欢迎回来，{name}",
+    "explorer": "探索者",
     "odysseyLevel": "奥德赛等级 {level}",
     "seasonPass": "赛季通行证",
     "xpSynthesized": "XP 已合成",
@@ -497,8 +498,29 @@
     },
     "vibeRadar": {
       "title": "氛围雷达",
-      "desc": "正在扫描 {location} 的 {vibe} 氛围。"
-    }
+      "desc": "正在扫描 {location} 的 {vibe} 氛围。",
+      "match": "{vibe} 匹配",
+      "expand": "扩展神经网络"
+    },
+    "nearbyVibers": {
+      "leo": "Leo",
+      "mina": "Mina",
+      "jack": "Jack",
+      "adventure": "探险",
+      "streetArt": "街头艺术",
+      "foodie": "美食家"
+    },
+    "explorerHubActive": "探索者中心已激活",
+    "viewLegacyWrapped": "查看遗产回顾",
+    "productionTrailer": "制作预告片",
+    "seasonPass.title": "赛季通行证",
+    "seasonPass.subtitle": "第 01 季：寻路者",
+    "progression": "{current} / {total} XP",
+    "vibeStreakValue": "{num} 次奥德赛",
+    "tasksResolvedValue": "{num} 次任务",
+    "totalMedalsValue": "{num} 个奖项",
+    "missionInvite.title": "奥德赛提案已发送",
+    "missionInvite.description": "正在等待 {name} 授权团队奥德赛。"
   },
   "trips": {
     "travelStyle": "旅行风格"
