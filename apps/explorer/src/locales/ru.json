@@ -464,6 +464,7 @@
   },
   "dashboard": {
     "welcomeBack": "С возвращением, {name}",
+    "explorer": "Исследователь",
     "odysseyLevel": "Уровень одиссеи {level}",
     "seasonPass": "Сезонный пропуск",
     "xpSynthesized": "XP синтезировано",
@@ -497,8 +498,29 @@
     },
     "vibeRadar": {
       "title": "Радар атмосфер",
-      "desc": "Сканирование атмосфер {vibe} в {location}."
-    }
+      "desc": "Сканирование атмосфер {vibe} в {location}.",
+      "match": "{vibe} СОВПАДЕНИЕ",
+      "expand": "Расширить нейронную сеть"
+    },
+    "nearbyVibers": {
+      "leo": "Лео",
+      "mina": "Мина",
+      "jack": "Джек",
+      "adventure": "Приключение",
+      "streetArt": "Стрит-арт",
+      "foodie": "Гурман"
+    },
+    "explorerHubActive": "Центр исследователей активен",
+    "viewLegacyWrapped": "Просмотреть устаревшую обертку",
+    "productionTrailer": "Производственный трейлер",
+    "seasonPass.title": "Сезонный пропуск",
+    "seasonPass.subtitle": "Сезон 01: Следопыт",
+    "progression": "{current} / {total} XP",
+    "vibeStreakValue": "{num} одиссей",
+    "tasksResolvedValue": "{num} квестов",
+    "totalMedalsValue": "{num} наград",
+    "missionInvite.title": "Предложение одиссеи передано",
+    "missionInvite.description": "Ожидание авторизации групповой одиссеи от {name}."
   },
   "trips": {
     "travelStyle": "Стиль путешествия"

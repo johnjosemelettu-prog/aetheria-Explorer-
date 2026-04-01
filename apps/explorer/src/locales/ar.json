@@ -517,6 +517,7 @@
   },
   "dashboard": {
     "welcomeBack": "مرحباً بعودتك، {name}",
+    "explorer": "مستكشف",
     "odysseyLevel": "مستوى الأوديسة {level}",
     "seasonPass": "تصريح الموسم",
     "xpSynthesized": "تم تركيب XP",
@@ -551,20 +552,28 @@
     "vibeRadar": {
       "title": "رادار الأجواء",
       "desc": "جاري مسح أجواء {vibe} في {location}",
-      "match": "{vibe} MATCH",
-      "expand": "Expand Neural Network"
+      "match": "تطابق {vibe}",
+      "expand": "توسيع الشبكة العصبية"
     },
-    "explorerHubActive": "Explorer Hub Active",
-    "viewLegacyWrapped": "View Legacy Wrapped",
-    "productionTrailer": "Production Trailer",
-    "seasonPass.title": "Season Pass",
-    "seasonPass.subtitle": "Season 01: The Path Finder",
+    "nearbyVibers": {
+      "leo": "ليو",
+      "mina": "مينا",
+      "jack": "جاك",
+      "adventure": "مغامرة",
+      "streetArt": "فن الشارع",
+      "foodie": "ذواق"
+    },
+    "explorerHubActive": "مركز المستكشف نشط",
+    "viewLegacyWrapped": "عرض الإرث المغلف",
+    "productionTrailer": "مقطع دعائي للإنتاج",
+    "seasonPass.title": "تصريح الموسم",
+    "seasonPass.subtitle": "الموسم 01: مكتشف المسار",
     "progression": "{current} / {total} XP",
-    "vibeStreakValue": "{num} Odysseys",
-    "tasksResolvedValue": "{num} Quests",
-    "totalMedalsValue": "{num} Awards",
-    "missionInvite.title": "Odyssey Proposal Transmitted",
-    "missionInvite.description": "Waiting for {name} to authorize the Group Odyssey."
+    "vibeStreakValue": "{num} رحلات",
+    "tasksResolvedValue": "{num} مهام",
+    "totalMedalsValue": "{num} جوائز",
+    "missionInvite.title": "تم إرسال اقتراح الأوديسة",
+    "missionInvite.description": "في انتظار {name} للموافقة على أوديسة المجموعة"
   },
   "trips": {
     "travelStyle": "نمط السفر"
@@ -583,7 +592,7 @@
     "geolocationNotSupported": "تحديد الموقع الجغرافي غير مدعوم من قبل متصفحك.",
     "locationAccessDenied": "تم رفض الوصول إلى الموقع. يرجى تمكين GPS لتحديد الطريق بالواقع المعزز.",
     "globalHub": "المركز العالمي",
-    "geocodingFailed": "فشل عقدة الترميز الجغرافي.",
+    "geocodingFailed": "فشل عقدة الترميز الجغراfi.",
     "establishment": "مؤسسة",
     "nearby": "قريب",
     "signalLoss": "فقدان الإشارة",

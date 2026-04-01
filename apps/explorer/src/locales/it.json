@@ -503,6 +503,7 @@
   },
   "dashboard": {
     "welcomeBack": "Bentornato, {name}",
+    "explorer": "Esploratore",
     "odysseyLevel": "Livello Odissea {level}",
     "seasonPass": "Pass Stagionale",
     "xpSynthesized": "XP Sintetizzati",
@@ -536,8 +537,29 @@
     },
     "vibeRadar": {
       "title": "Radar dei Vibe",
-      "desc": "Scansione vibe {vibe} a {location}."
-    }
+      "desc": "Scansione vibe {vibe} a {location}.",
+      "match": "MATCH {vibe}",
+      "expand": "Espandi Rete Neurale"
+    },
+    "nearbyVibers": {
+      "leo": "Leo",
+      "mina": "Mina",
+      "jack": "Jack",
+      "adventure": "Avventura",
+      "streetArt": "Arte di Strada",
+      "foodie": "Buongustaio"
+    },
+    "explorerHubActive": "Hub Esploratore Attivo",
+    "viewLegacyWrapped": "Visualizza Eredità Impacchettata",
+    "productionTrailer": "Trailer di Produzione",
+    "seasonPass.title": "Pass Stagionale",
+    "seasonPass.subtitle": "Stagione 01: Il Cercatore di Percorsi",
+    "progression": "{current} / {total} XP",
+    "vibeStreakValue": "{num} Odissee",
+    "tasksResolvedValue": "{num} Missioni",
+    "totalMedalsValue": "{num} Premi",
+    "missionInvite.title": "Proposta di Odissea Trasmessa",
+    "missionInvite.description": "In attesa che {name} autorizzi l'Odissea di Gruppo."
   },
   "trips": {
     "travelStyle": "Stile di Viaggio"

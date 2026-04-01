@@ -464,6 +464,7 @@
   },
   "dashboard": {
     "welcomeBack": "Selamat Kembali, {name}",
+    "explorer": "Penjelajah",
     "odysseyLevel": "Tahap Odisea {level}",
     "seasonPass": "Pas Musim",
     "xpSynthesized": "XP Disintesis",
@@ -497,8 +498,29 @@
     },
     "vibeRadar": {
       "title": "Radar Getaran",
-      "desc": "Mengimbas getaran {vibe} di {location}."
-    }
+      "desc": "Mengimbas getaran {vibe} di {location}.",
+      "match": "PADANAN {vibe}",
+      "expand": "Kembangkan Rangkaian Neural"
+    },
+    "nearbyVibers": {
+      "leo": "Leo",
+      "mina": "Mina",
+      "jack": "Jack",
+      "adventure": "Pengembaraan",
+      "streetArt": "Seni Jalanan",
+      "foodie": "Peminat Makanan"
+    },
+    "explorerHubActive": "Hab Penjelajah Aktif",
+    "viewLegacyWrapped": "Lihat Warisan Terbungkus",
+    "productionTrailer": "Treler Pengeluaran",
+    "seasonPass.title": "Pas Musim",
+    "seasonPass.subtitle": "Musim 01: Pencari Laluan",
+    "progression": "{current} / {total} XP",
+    "vibeStreakValue": "{num} Odisea",
+    "tasksResolvedValue": "{num} Misi",
+    "totalMedalsValue": "{num} Anugerah",
+    "missionInvite.title": "Cadangan Odisea Dihantar",
+    "missionInvite.description": "Menunggu {name} untuk mengesahkan Odisea Kumpulan."
   },
   "trips": {
     "travelStyle": "Gaya Perjalanan"

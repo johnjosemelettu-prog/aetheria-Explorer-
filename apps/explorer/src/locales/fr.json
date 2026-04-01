@@ -503,6 +503,7 @@
   },
   "dashboard": {
     "welcomeBack": "Bon Retour, {name}",
+    "explorer": "Explorateur",
     "odysseyLevel": "Niveau d'Odyssée {level}",
     "seasonPass": "Pass Saison",
     "xpSynthesized": "XP Synthétisés",
@@ -536,8 +537,29 @@
     },
     "vibeRadar": {
       "title": "Radar de Vibes",
-      "desc": "Scan des vibes {vibe} à {location}."
-    }
+      "desc": "Scan des vibes {vibe} à {location}.",
+      "match": "CORRESPONDANCE {vibe}",
+      "expand": "Étendre le Réseau Neuronal"
+    },
+    "nearbyVibers": {
+      "leo": "Léo",
+      "mina": "Mina",
+      "jack": "Jack",
+      "adventure": "Aventure",
+      "streetArt": "Art de Rue",
+      "foodie": "Gourmet"
+    },
+    "explorerHubActive": "Hub Explorateur Actif",
+    "viewLegacyWrapped": "Voir l'Héritage Emballé",
+    "productionTrailer": "Bande-annonce de Production",
+    "seasonPass.title": "Pass Saison",
+    "seasonPass.subtitle": "Saison 01 : Le Chercheur de Chemin",
+    "progression": "{current} / {total} XP",
+    "vibeStreakValue": "{num} Odyssées",
+    "tasksResolvedValue": "{num} Quêtes",
+    "totalMedalsValue": "{num} Récompenses",
+    "missionInvite.title": "Proposition d'Odyssée Transmise",
+    "missionInvite.description": "En attente de l'autorisation de {name} pour l'Odyssée de Groupe."
   },
   "trips": {
     "travelStyle": "Style de Voyage"

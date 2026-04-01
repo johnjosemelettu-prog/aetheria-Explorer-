@@ -524,6 +524,7 @@
   },
   "dashboard": {
     "welcomeBack": "다시 오신 것을 환영합니다, {name}",
+    "explorer": "탐험가",
     "odysseyLevel": "오디세이 레벨 {level}",
     "seasonPass": "시즌 패스",
     "xpSynthesized": "XP 종합됨",
@@ -557,8 +558,29 @@
     },
     "vibeRadar": {
       "title": "분위기 레이더",
-      "desc": "{location}에서 {vibe} 분위기를 스캔하는 중."
-    }
+      "desc": "{location}에서 {vibe} 분위기를 스캔하는 중.",
+      "match": "{vibe} 매치",
+      "expand": "신경망 확장"
+    },
+    "nearbyVibers": {
+      "leo": "레오",
+      "mina": "미나",
+      "jack": "잭",
+      "adventure": "모험",
+      "streetArt": "거리 예술",
+      "foodie": "식도락가"
+    },
+    "explorerHubActive": "탐험가 허브 활성",
+    "viewLegacyWrapped": "레거시 래핑 보기",
+    "productionTrailer": "프로덕션 트레일러",
+    "seasonPass.title": "시즌 패스",
+    "seasonPass.subtitle": "시즌 01: 경로 찾기",
+    "progression": "{current}/{total} XP",
+    "vibeStreakValue": "{num} 오디세이",
+    "tasksResolvedValue": "{num} 퀘스트",
+    "totalMedalsValue": "{num} 어워드",
+    "missionInvite.title": "오디세이 제안 전송됨",
+    "missionInvite.description": "그룹 오디세이를 승인하기 위해 {name}을(를) 기다리는 중."
   },
   "trips": {
     "travelStyle": "여행 스타일"

@@ -517,6 +517,7 @@
   },
   "dashboard": {
     "welcomeBack": "Willkommen Zurück, {name}",
+    "explorer": "Entdecker",
     "odysseyLevel": "Odyssee-Level {level}",
     "seasonPass": "Saisonpass",
     "xpSynthesized": "XP Synthetisiert",
@@ -551,22 +552,30 @@
     "vibeRadar": {
       "title": "Vibe-Radar",
       "desc": "Scannen von {vibe} Vibes in {location}.",
-      "match": "{vibe} MATCH",
-      "expand": "Expand Neural Network"
+      "match": "{vibe} ÜBEREINSTIMMUNG",
+      "expand": "Neuronales Netzwerk Erweitern"
     },
-    "explorerHubActive": "Explorer Hub Active",
-    "viewLegacyWrapped": "View Legacy Wrapped",
-    "productionTrailer": "Production Trailer",
-    "seasonPass.title": "Season Pass",
-    "seasonPass.subtitle": "Season 01: The Path Finder",
+    "nearbyVibers": {
+      "leo": "Leo",
+      "mina": "Mina",
+      "jack": "Jack",
+      "adventure": "Abenteuer",
+      "streetArt": "Straßenkunst",
+      "foodie": "Feinschmecker"
+    },
+    "explorerHubActive": "Explorer Hub Aktiv",
+    "viewLegacyWrapped": "Legacy-Wrapped Anzeigen",
+    "productionTrailer": "Produktionstrailer",
+    "seasonPass.title": "Saisonpass",
+    "seasonPass.subtitle": "Saison 01: Der Pfadfinder",
     "progression": "{current} / {total} XP",
-    "vibeStreakValue": "{num} Odysseys",
+    "vibeStreakValue": "{num} Odysseen",
     "tasksResolvedValue": "{num} Quests",
-    "totalMedalsValue": "{num} Awards",
-    "missionInvite.title": "Odyssey Proposal Transmitted",
-    "missionInvite.description": "Waiting for {name} to authorize the Group Odyssey."
+    "totalMedalsValue": "{num} Auszeichnungen",
+    "missionInvite.title": "Odyssee-Vorschlag Übertragen",
+    "missionInvite.description": "Warte auf die Autorisierung der Gruppen-Odyssee durch {name}."
   },
   "trips": {
-    "travelStyle": "Travel Style"
+    "travelStyle": "Reisestil"
   }
 }

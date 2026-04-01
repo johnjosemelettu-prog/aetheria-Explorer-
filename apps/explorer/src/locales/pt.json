@@ -464,6 +464,7 @@
   },
   "dashboard": {
     "welcomeBack": "Bem-vindo de Volta, {name}",
+    "explorer": "Explorador",
     "odysseyLevel": "Nível de Odisseia {level}",
     "seasonPass": "Passe de Temporada",
     "xpSynthesized": "XP Sintetizados",
@@ -497,8 +498,29 @@
     },
     "vibeRadar": {
       "title": "Radar de Vibes",
-      "desc": "Digitalizando vibes {vibe} em {location}."
-    }
+      "desc": "Digitalizando vibes {vibe} em {location}.",
+      "match": "COMBINAÇÃO {vibe}",
+      "expand": "Expandir Rede Neural"
+    },
+    "nearbyVibers": {
+      "leo": "Leo",
+      "mina": "Mina",
+      "jack": "Jack",
+      "adventure": "Aventura",
+      "streetArt": "Arte de Rua",
+      "foodie": "Foodie"
+    },
+    "explorerHubActive": "Hub de Explorador Ativo",
+    "viewLegacyWrapped": "Ver Legado Embrulhado",
+    "productionTrailer": "Trailer de Produção",
+    "seasonPass.title": "Passe de Temporada",
+    "seasonPass.subtitle": "Temporada 01: O Desbravador",
+    "progression": "{current} / {total} XP",
+    "vibeStreakValue": "{num} Odisseias",
+    "tasksResolvedValue": "{num} Missões",
+    "totalMedalsValue": "{num} Prémios",
+    "missionInvite.title": "Proposta de Odisseia Transmitida",
+    "missionInvite.description": "Aguardando autorização de {name} para a Odisseia em Grupo."
   },
   "trips": {
     "travelStyle": "Estilo de Viagem"

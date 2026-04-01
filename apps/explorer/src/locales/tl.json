@@ -445,6 +445,7 @@
   },
   "dashboard": {
     "welcomeBack": "Maligayang Pagbabalik, {name}",
+    "explorer": "Explorer",
     "odysseyLevel": "Odyssey Level {level}",
     "seasonPass": "Season Pass",
     "xpSynthesized": "XP Sintetisin",
@@ -478,7 +479,28 @@
     },
     "vibeRadar": {
       "title": "Vibe Radar",
-      "desc": "Sinisimulan ang {vibe} vibes sa {location}."
-    }
+      "desc": "Sinisimulan ang {vibe} vibes sa {location}.",
+      "match": "{vibe} MATCH",
+      "expand": "Palawakin ang Neural Network"
+    },
+    "nearbyVibers": {
+      "leo": "Leo",
+      "mina": "Mina",
+      "jack": "Jack",
+      "adventure": "Pakikipagsapalaran",
+      "streetArt": "Sining sa Kalye",
+      "foodie": "Foodie"
+    },
+    "explorerHubActive": "Aktibo ang Explorer Hub",
+    "viewLegacyWrapped": "Tingnan ang Legacy Wrapped",
+    "productionTrailer": "Production Trailer",
+    "seasonPass.title": "Season Pass",
+    "seasonPass.subtitle": "Season 01: The Path Finder",
+    "progression": "{current} / {total} XP",
+    "vibeStreakValue": "{num} Odysseys",
+    "tasksResolvedValue": "{num} Quests",
+    "totalMedalsValue": "{num} Awards",
+    "missionInvite.title": "Ipinadala ang Proposisyon ng Odyssey",
+    "missionInvite.description": "Naghihintay kay {name} na pahintulutan ang Group Odyssey."
   }
 }

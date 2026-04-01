@@ -465,6 +465,7 @@
   },
   "dashboard": {
     "welcomeBack": "Welcome Back, {name}",
+    "explorer": "Explorer",
     "odysseyLevel": "Odyssey Level {level}",
     "seasonPass": "Season Pass",
     "xpSynthesized": "XP Synthesized",
@@ -501,6 +502,14 @@
       "desc": "Scanning for {vibe} vibes in {location}.",
       "match": "{vibe} MATCH",
       "expand": "Expand Neural Network"
+    },
+    "nearbyVibers": {
+      "leo": "Leo",
+      "mina": "Mina",
+      "jack": "Jack",
+      "adventure": "Adventure",
+      "streetArt": "Street Art",
+      "foodie": "Foodie"
     },
     "explorerHubActive": "Explorer Hub Active",
     "viewLegacyWrapped": "View Legacy Wrapped",
