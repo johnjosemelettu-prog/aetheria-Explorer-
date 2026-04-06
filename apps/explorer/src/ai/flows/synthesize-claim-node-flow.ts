@@ -35,7 +35,7 @@ export async function synthesizeClaimNode(input: ClaimInput): Promise<ClaimOutpu
   try {
     const { ai } = await import('@/ai/genkit');
     const response = await ai.generate({
-      prompt: `Synthesize a compensation claim for flight ${input.flightNumber}.`,
+      prompt: `Synthesize a compensation claim for flight ${input.flightNumber}. Output Language: ${input.language || 'English'}.`,
       output: { schema: ClaimOutputSchema },
     });
 

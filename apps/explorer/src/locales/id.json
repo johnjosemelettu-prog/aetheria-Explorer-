@@ -1,0 +1,251 @@
+{
+  "landingPage": {
+    "header": {
+      "brand": "AETHERIA",
+      "ai": "AI",
+      "journeySynthesized": "Perjalanan Disintesis",
+      "links": {
+        "home": "Beranda",
+        "features": "Fitur",
+        "workflow": "Alur Kerja",
+        "cta": "Mulai"
+      },
+      "logo": "Logo Aetheria"
+    },
+    "footer": {
+      "tagline": "Mensintesis perjalanan Anda melalui eter digital.",
+      "copyright": "© 2026 Aetheria AI. Seluruh hak cipta dilindungi undang-undang.",
+      "links": {
+        "privacy": "Kebijakan Privasi",
+        "terms": "Ketentuan Layanan",
+        "contact": "Hubungi Kami"
+      },
+      "sections": {
+        "company": "Perusahaan",
+        "connect": "Hubungkan"
+      }
+    },
+    "body": {
+      "hero": {
+        "title": "Perjalanan Anda, Disintesis",
+        "subtitle": "Manfaatkan kekuatan AI untuk menjelajahi lanskap digital yang belum pernah ada sebelumnya.",
+        "cta": "Mulai Perjalanan Anda"
+      },
+      "features": {
+        "title": "Fitur Canggih",
+        "description": "Temukan apa yang membuat Aetheria unik.",
+        "items": [
+          {
+            "title": "Wawasan Berbasis AI",
+            "description": "Dapatkan wawasan mendalam tentang data Anda dengan model AI canggih kami."
+          },
+          {
+            "title": "Alur Kerja yang Mulus",
+            "description": "Integrasikan Aetheria ke dalam alur kerja Anda yang sudah ada dengan mudah."
+          },
+          {
+            "title": "Kolaborasi Real-Time",
+            "description": "Bekerja dengan tim Anda secara real-time pada proyek apa pun."
+          }
+        ]
+      },
+      "workflow": {
+        "title": "Cara Kerjanya",
+        "description": "Proses 3 langkah sederhana untuk memulai.",
+        "steps": [
+          {
+            "title": "Hubungkan Data Anda",
+            "description": "Hubungkan sumber data Anda ke Aetheria dengan aman."
+          },
+          {
+            "title": "Analisis dan Sintesis",
+            "description": "Biarkan AI kami menganalisis dan mensintesis data Anda menjadi wawasan yang dapat ditindaklanjuti."
+          },
+          {
+            "title": "Jelajahi dan Temukan",
+            "description": "Jelajahi data yang disintesis dan temukan peluang baru."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Siap untuk Memulai Perjalanan Anda?",
+        "subtitle": "Bergabunglah dengan ribuan pengguna yang sudah menggunakan Aetheria untuk mengubah pekerjaan mereka.",
+        "button": "Mulai Gratis"
+      }
+    }
+  },
+  "header": {
+    "categories": {
+      "orchestration": "Orkestrasi",
+      "intelligence": "Intelijen",
+      "studios": "Studio",
+      "utility": "Utilitas"
+    },
+    "dashboard": "Dasbor",
+    "aiItinerary": "Itinerari AI",
+    "pathfinder": "Pathfinder",
+    "vibeMarketplace": "Pasar Vibe",
+    "vibeShopping": "Belanja Vibe",
+    "bookingHub": "Pusat Pemesanan",
+    "wallet": "Dompet",
+    "budgetSynthesis": "Sintesis Anggaran",
+    "visionHub": "Pusat Visi",
+    "intelligenceCenter": "Pusat Intelijen",
+    "arWayfinding": "Navigasi AR",
+    "localLegends": "Legenda Lokal",
+    "culturalPulse": "Denyut Budaya",
+    "audioGuide": "Panduan Audio",
+    "tripOdyssey": "Perjalanan Odissei",
+    "postcardStudio": "Studio Kartu Pos",
+    "heritageMirror": "Cermin Warisan",
+    "journal": "Jurnal",
+    "sos": "SOS",
+    "insurance": "Asuransi",
+    "visaArchitect": "Arsitek Visa",
+    "flightStatus": "Status Penerbangan",
+    "esim": "eSIM",
+    "carbonSynthesis": "Sintesis Karbon",
+    "packingassistant": "Asisten Pengepakan"
+  },
+  "sidebar": {
+    "brand": {
+      "name": "AETHERIA",
+      "tagline": "Perjalanan Disintesis"
+    },
+    "sessionVerified": "Sesi Terverifikasi",
+    "neuralLinkActive": "Tautan Neural Aktif"
+  },
+  "userNav": {
+    "explorerHub": "Pusat Penjelajah",
+    "manageBookings": "Kelola Pemesanan",
+    "upgradeSubscription": "Tingkatkan Langganan",
+    "adminConsole": "Konsol Admin",
+    "partnerHub": "Pusat Mitra",
+    "identityNode": "Node Identitas",
+    "terminateSession": "Akhiri Sesi",
+    "toast": {
+      "logoutSuccessTitle": "Sesi Diakhiri",
+      "logoutSuccessDescription": "Tautan neural Anda telah terputus dengan aman.",
+      "logoutErrorTitle": "Pengakhiran Gagal",
+      "logoutErrorDescription": "Terjadi kesalahan saat memutuskan sesi Anda."
+    }
+  },
+  "dashboard": {
+    "welcomeBack": "Selamat Datang Kembali, {{name}}",
+    "odysseyLevel": "Level Odissei {{level}}",
+    "explorerHubActive": "Pusat Penjelajah Aktif",
+    "viewLegacyWrapped": "Lihat Kilas Balik",
+    "productionTrailer": "Trailer Produksi",
+    "seasonPass": "Tiket Musiman",
+    "xpSynthesized": "XP Disintesis",
+    "progressionToLevel": "Kemajuan ke Level {{level}}",
+    "vibeStreak": "Runtutan Vibe",
+    "tasksResolved": "Tugas Diselesaikan",
+    "totalMedals": "Total Medali",
+    "premiumRequired": "Diperlukan Tiket Premium",
+    "explorerStatus": "Status Penjelajah: {{tier}}",
+    "points": "Poin",
+    "medals": "Medali",
+    "editProfile": "Edit Profil",
+    "match": "COCOK",
+    "toast": {
+      "missionInviteTitle": "Proposal Odissei Dikirim",
+      "missionInviteDescription": "Menunggu otorisasi dari {{name}} untuk Odissei Grup."
+    },
+    "xpProgress": "{{current}} / {{total}} XP",
+    "odysseyCount": "{{count}} Odissei",
+    "questCount": "{{count}} Misi",
+    "awardCount": "{{count}} Penghargaan",
+    "vibeRadar": {
+      "title": "Radar Vibe",
+      "desc": "Mendeteksi kecocokan {{vibe}} di sektor Anda saat ini: {{location}}"
+    },
+    "expandNeuralNetwork": "Perluas Jaringan Neural",
+    "shortDesc": {
+      "itinerary": "Rencana perjalanan disintesis AI",
+      "pathfinder": "Optimasi jalur neural",
+      "marketplace": "Pengalaman yang dikurasi Vibe",
+      "store": "Akuisisi aset digital",
+      "booking": "Pusat pemesanan kuantum",
+      "wallet": "Penyimpanan kredit terenkripsi",
+      "budget": "Mesin sintesis keuangan",
+      "vision": "Pengenalan objek AR",
+      "guide": "Basis pengetahuan global",
+      "ar": "Hamparan navigasi spasial",
+      "legends": "Pengambilan data historis",
+      "pulse": "Aliran budaya real-time",
+      "audio": "Lanskap suara yang imersif",
+      "odyssey": "Teaser perjalanan sinematik",
+      "postcard": "Node visual buatan AI",
+      "mirror": "Refleksi data warisan",
+      "journal": "Log odissei pribadi"
+    }
+  },
+  "login": {
+    "title": "Login Aetheria",
+    "emailLabel": "Alamat Jaringan",
+    "emailPlaceholder": "nama@domain.com",
+    "passwordLabel": "Kunci Keamanan",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "Otorisasi Sesi",
+    "signingInButton": "Mengotorisasi...",
+    "noAccount": "Baru di Aetheria?",
+    "signUpLink": "Buat Node Identitas",
+    "accessOdysseyGrid": "Akses Kisi Odissei Anda",
+    "authChannels": "Saluran Autentikasi",
+    "google": "Google",
+    "apple": "Apple",
+    "biometricLogin": "Login Biometrik",
+    "systemNodeOffline": "Node Sistem Offline",
+    "authServiceInitializing": "Layanan autentikasi belum diinisialisasi.",
+    "unsupportedFeature": "Fitur Tidak Didukung",
+    "biometricOnlyMobile": "Login biometrik hanya tersedia di perangkat seluler.",
+    "biometricLoginFailed": "Login Biometrik Gagal",
+    "biometricLoginError": "Tidak dapat login dengan kredensial biometrik.",
+    "invalidCredentials": "Alamat email atau kunci keamanan tidak valid. Harap periksa kredensial Anda atau buat akun baru jika belum punya.",
+    "accountDisabled": "Akun ini telah dinonaktifkan. Harap hubungi dukungan.",
+    "tooManyRequests": "Terlalu banyak upaya yang gagal. Harap coba lagi nanti atau atur ulang kunci keamanan Anda.",
+    "networkError": "Koneksi jaringan gagal. Harap periksa koneksi Anda dan coba lagi.",
+    "toast": {
+      "successTitle": "Sesi Diotorisasi",
+      "successDescription": "Tautan neural Anda sekarang aktif.",
+      "errorTitle": "Otorisasi Gagal",
+      "genericError": "Terjadi kesalahan tak terduga selama otorisasi sesi.",
+      "operationNotAllowed": "Metode autentikasi ini saat ini dinonaktifkan."
+    }
+  },
+  "signup": {
+    "title": "Bergabung dengan Odissei",
+    "description": "Buat akun Aetheria Anda",
+    "firstNameLabel": "Nama Depan",
+    "lastNameLabel": "Nama Belakang",
+    "firstNamePlaceholder": "budi",
+    "lastNamePlaceholder": "santoso",
+    "emailLabel": "Alamat Jaringan",
+    "emailPlaceholder": "nama@domain.com",
+    "passwordLabel": "Kunci Keamanan",
+    "passwordPlaceholder": "••••••••",
+    "createButton": "Inisialisasi Profil",
+    "creatingButton": "Menyinkronkan...",
+    "haveAccount": "Sudah menjadi bagian dari jaringan?",
+    "signInLink": "Masuk",
+    "networkJoin": "Gabung Jaringan",
+    "welcomeKit": {
+      "title": "Kit Selamat Datang Dikirim!",
+      "description": "Periksa kotak masuk Anda untuk sambutan pribadi dari Aetheria AI."
+    },
+    "toast": {
+      "successTitle": "Profil Diinisialisasi",
+      "successDescription": "Selamat datang di Jaringan Aetheria.",
+      "errorTitle": "Inisialisasi Gagal",
+      "genericError": "Tidak dapat membuat akun. Harap coba lagi."
+    },
+    "errors": {
+      "emailInUse": "Alamat email ini sudah terdaftar. Harap masuk saja.",
+      "invalidEmail": "Alamat email tidak valid. Harap periksa dan coba lagi.",
+      "operationNotAllowed": "Pendaftaran Email/Kata Sandi saat ini dinonaktifkan.",
+      "weakPassword": "Kunci keamanan terlalu lemah. Harap gunakan yang lebih kuat.",
+      "networkError": "Koneksi jaringan gagal. Harap periksa koneksi Anda dan coba lagi."
+    }
+  }
+}

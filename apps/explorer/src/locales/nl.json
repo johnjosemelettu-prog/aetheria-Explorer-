@@ -1,0 +1,251 @@
+{
+  "landingPage": {
+    "header": {
+      "brand": "AETHERIA",
+      "ai": "AI",
+      "journeySynthesized": "Reis Gesynthetiseerd",
+      "links": {
+        "home": "Home",
+        "features": "Functies",
+        "workflow": "Workflow",
+        "cta": "Aan de slag"
+      },
+      "logo": "Aetheria Logo"
+    },
+    "footer": {
+      "tagline": "Uw reis synthetiseren door de digitale ether.",
+      "copyright": "© 2026 Aetheria AI. Alle rechten voorbehouden.",
+      "links": {
+        "privacy": "Privacybeleid",
+        "terms": "Servicevoorwaarden",
+        "contact": "Neem contact op"
+      },
+      "sections": {
+        "company": "Bedrijf",
+        "connect": "Verbinden"
+      }
+    },
+    "body": {
+      "hero": {
+        "title": "Uw reis, gesynthetiseerd",
+        "subtitle": "Benut de kracht van AI om het digitale landschap te verkennen als nooit tevoren.",
+        "cta": "Begin uw reis"
+      },
+      "features": {
+        "title": "Krachtige functies",
+        "description": "Ontdek wat Aetheria uniek maakt.",
+        "items": [
+          {
+            "title": "AI-gestuurde inzichten",
+            "description": "Krijg diepgaande inzichten in uw gegevens met onze geavanceerde AI-modellen."
+          },
+          {
+            "title": "Naadloze workflow",
+            "description": "Integreer Aetheria moeiteloos in uw bestaande workflow."
+          },
+          {
+            "title": "Real-time samenwerking",
+            "description": "Werk in real-time met uw team aan elk project."
+          }
+        ]
+      },
+      "workflow": {
+        "title": "Hoe het werkt",
+        "description": "Een eenvoudig proces in 3 stappen om u op weg te helpen.",
+        "steps": [
+          {
+            "title": "Verbind uw gegevens",
+            "description": "Verbind uw gegevensbronnen veilig met Aetheria."
+          },
+          {
+            "title": "Analyseren en synthetiseren",
+            "description": "Laat onze AI uw gegevens analyseren en synthetiseren tot bruikbare inzichten."
+          },
+          {
+            "title": "Verkennen en ontdekken",
+            "description": "Verken uw gesynthetiseerde gegevens en ontdek nieuwe mogelijkheden."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Klaar om uw reis te beginnen?",
+        "subtitle": "Sluit u aan bij duizenden gebruikers die Aetheria al gebruiken om hun werk te transformeren.",
+        "button": "Gratis aan de slag"
+      }
+    }
+  },
+  "header": {
+    "categories": {
+      "orchestration": "Orkestratie",
+      "intelligence": "Intelligentie",
+      "studios": "Studio's",
+      "utility": "Hulpprogramma"
+    },
+    "dashboard": "Dashboard",
+    "aiItinerary": "AI-reisplan",
+    "pathfinder": "Pathfinder",
+    "vibeMarketplace": "Vibe-marktplaats",
+    "vibeShopping": "Vibe-winkelen",
+    "bookingHub": "Boekingscentrum",
+    "wallet": "Portemonnee",
+    "budgetSynthesis": "Budget-synthese",
+    "visionHub": "Vision-hub",
+    "intelligenceCenter": "Intelligentiecentrum",
+    "arWayfinding": "AR-navigatie",
+    "localLegends": "Lokale legendes",
+    "culturalPulse": "Culturele hartslag",
+    "audioGuide": "Audiogids",
+    "tripOdyssey": "Reis-odyssee",
+    "postcardStudio": "Ansichtkaartstudio",
+    "heritageMirror": "Erfgoedspiegel",
+    "journal": "Journaal",
+    "sos": "SOS",
+    "insurance": "Verzekering",
+    "visaArchitect": "Visumarchitect",
+    "flightStatus": "Vluchtstatus",
+    "esim": "eSIM",
+    "carbonSynthesis": "Koolstofsynthese",
+    "packingassistant": "Inpakassistent"
+  },
+  "sidebar": {
+    "brand": {
+      "name": "AETHERIA",
+      "tagline": "Reis Gesynthetiseerd"
+    },
+    "sessionVerified": "Sessie geverifieerd",
+    "neuralLinkActive": "Neural Link actief"
+  },
+  "userNav": {
+    "explorerHub": "Explorer-hub",
+    "manageBookings": "Boekingen beheren",
+    "upgradeSubscription": "Abonnement upgraden",
+    "adminConsole": "Beheerdersconsole",
+    "partnerHub": "Partner-hub",
+    "identityNode": "Identiteitsknooppunt",
+    "terminateSession": "Sessie beëindigen",
+    "toast": {
+      "logoutSuccessTitle": "Sessie beëindigd",
+      "logoutSuccessDescription": "Uw neurale link is veilig verbroken.",
+      "logoutErrorTitle": "Beëindiging mislukt",
+      "logoutErrorDescription": "Er is een fout opgetreden bij het verbreken van uw sessie."
+    }
+  },
+  "dashboard": {
+    "welcomeBack": "Welkom terug, {{name}}",
+    "odysseyLevel": "Odyssee-niveau {{level}}",
+    "explorerHubActive": "Explorer-hub actief",
+    "viewLegacyWrapped": "Bekijk jaaroverzicht",
+    "productionTrailer": "Productietrailer",
+    "seasonPass": "Seizoenspas",
+    "xpSynthesized": "XP Gesynthetiseerd",
+    "progressionToLevel": "Voortgang naar niveau {{level}}",
+    "vibeStreak": "Vibe-reeks",
+    "tasksResolved": "Taken opgelost",
+    "totalMedals": "Totaal aantal medailles",
+    "premiumRequired": "Premium-pas vereist",
+    "explorerStatus": "Explorer-status: {{tier}}",
+    "points": "Punten",
+    "medals": "Medailles",
+    "editProfile": "Profiel bewerken",
+    "match": "MATCH",
+    "toast": {
+      "missionInviteTitle": "Odyssee-voorstel verzonden",
+      "missionInviteDescription": "Wachten op autorisatie van {{name}} voor de groepsodyssee."
+    },
+    "xpProgress": "{{current}} / {{total}} XP",
+    "odysseyCount": "{{count}} Odysseeën",
+    "questCount": "{{count}} Quests",
+    "awardCount": "{{count}} Awards",
+    "vibeRadar": {
+      "title": "Vibe-radar",
+      "desc": "Detecteren van {{vibe}}-overeenkomsten in uw huidige sector: {{location}}"
+    },
+    "expandNeuralNetwork": "Neuraal netwerk uitbreiden",
+    "shortDesc": {
+      "itinerary": "AI-gesynthetiseerde reisplannen",
+      "pathfinder": "Optimale neurale route",
+      "marketplace": "Vibe-gecureerde ervaringen",
+      "store": "Digitale activa verwerven",
+      "booking": "Quantum-boekingscentrum",
+      "wallet": "Gecodeerde tegoedopslag",
+      "budget": "Financiële synthese-engine",
+      "vision": "AR-objectherkenning",
+      "guide": "Wereldwijde kennisbank",
+      "ar": "Ruimtelijke navigatie-overlay",
+      "legends": "Historische gegevens ophalen",
+      "pulse": "Real-time culturele stroom",
+      "audio": "Meeslepende soundscapes",
+      "odyssey": "Cinematische reisteaser",
+      "postcard": "AI-gegenereerde visuele knooppunten",
+      "mirror": "Erfgoedgegevensreflectie",
+      "journal": "Persoonlijk odyssee-logboek"
+    }
+  },
+  "login": {
+    "title": "Aetheria Login",
+    "emailLabel": "Netwerkadres",
+    "emailPlaceholder": "naam@domein.com",
+    "passwordLabel": "Beveiligingssleutel",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "Sessie autoriseren",
+    "signingInButton": "Autoriseren...",
+    "noAccount": "Nieuw bij Aetheria?",
+    "signUpLink": "Identiteitsknooppunt maken",
+    "accessOdysseyGrid": "Toegang tot uw Odyssee-raster",
+    "authChannels": "Authenticatiekanalen",
+    "google": "Google",
+    "apple": "Apple",
+    "biometricLogin": "Biometrische login",
+    "systemNodeOffline": "Systeemknooppunt offline",
+    "authServiceInitializing": "De authenticatieservice is nog niet geïnitialiseerd.",
+    "unsupportedFeature": "Niet-ondersteunde functie",
+    "biometricOnlyMobile": "Biometrische login is alleen beschikbaar op mobiele apparaten.",
+    "biometricLoginFailed": "Biometrische login mislukt",
+    "biometricLoginError": "Kon niet inloggen met biometrische gegevens.",
+    "invalidCredentials": "Ongeldig e-mailadres of beveiligingssleutel. Controleer uw gegevens of maak een nieuw account aan als u dat nog niet heeft gedaan.",
+    "accountDisabled": "Dit account is uitgeschakeld. Neem contact op met de klantenservice.",
+    "tooManyRequests": "Te veel mislukte pogingen. Probeer het later opnieuw of stel uw beveiligingssleutel opnieuw in.",
+    "networkError": "Netwerkverbinding mislukt. Controleer uw verbinding en probeer het opnieuw.",
+    "toast": {
+      "successTitle": "Sessie geautoriseerd",
+      "successDescription": "Uw neurale link is nu actief.",
+      "errorTitle": "Autorisatie mislukt",
+      "genericError": "Er is een onverwachte fout opgetreden tijdens de sessie-autorisatie.",
+      "operationNotAllowed": "Deze authenticatiemethode is momenteel uitgeschakeld."
+    }
+  },
+  "signup": {
+    "title": "Deelnemen aan de Odyssee",
+    "description": "Maak uw Aetheria-account aan",
+    "firstNameLabel": "Voornaam",
+    "lastNameLabel": "Achternaam",
+    "firstNamePlaceholder": "jan",
+    "lastNamePlaceholder": "jansen",
+    "emailLabel": "Netwerkadres",
+    "emailPlaceholder": "naam@domein.com",
+    "passwordLabel": "Beveiligingssleutel",
+    "passwordPlaceholder": "••••••••",
+    "createButton": "Profiel initialiseren",
+    "creatingButton": "Synchroniseren...",
+    "haveAccount": "Al deel van het netwerk?",
+    "signInLink": "Inloggen",
+    "networkJoin": "Netwerkdeelname",
+    "welcomeKit": {
+      "title": "Welkomstpakket verzonden!",
+      "description": "Check uw inbox voor een persoonlijk welkom van Aetheria AI."
+    },
+    "toast": {
+      "successTitle": "Profiel geïnitialiseerd",
+      "successDescription": "Welkom bij het Aetheria-netwerk.",
+      "errorTitle": "Initialisatie mislukt",
+      "genericError": "Kon account niet aanmaken. Probeer het opnieuw."
+    },
+    "errors": {
+      "emailInUse": "Dit e-mailadres is al geregistreerd. Log in in de plaats.",
+      "invalidEmail": "Het e-mailadres is ongeldig. Controleer het en probeer het opnieuw.",
+      "operationNotAllowed": "Aanmelden met e-mail/wachtwoord is momenteel uitgeschakeld.",
+      "weakPassword": "De beveiligingssleutel is te zwak. Gebruik een sterkere sleutel.",
+      "networkError": "Netwerkverbinding mislukt. Controleer uw verbinding en probeer het opnieuw."
+    }
+  }
+}

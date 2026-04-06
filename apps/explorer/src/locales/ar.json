@@ -2,11 +2,11 @@
   "landingPage": {
     "header": {
       "brand": "أثيريا",
-      "ai": "الذكاء الاصطناعي",
+      "ai": "ذكاء اصطناعي",
       "journeySynthesized": "رحلة مركبة",
       "links": {
         "home": "الرئيسية",
-        "features": "الميزات",
+        "features": "المميزات",
         "workflow": "سير العمل",
         "cta": "ابدأ الآن"
       },
@@ -19,16 +19,20 @@
         "privacy": "سياسة الخصوصية",
         "terms": "شروط الخدمة",
         "contact": "اتصل بنا"
+      },
+      "sections": {
+        "company": "الشركة",
+        "connect": "تواصل"
       }
     },
     "body": {
       "hero": {
         "title": "رحلتك، مركبة",
-        "subtitle": "استفد من قوة الذاء الاصطناعي لاستكشاف المشهد الرقمي كما لم يحدث من قبل.",
+        "subtitle": "استغل قوة الذكاء الاصطناعي لاستكشاف المشهد الرقمي كما لم يحدث من قبل.",
         "cta": "ابدأ رحلتك"
       },
       "features": {
-        "title": "ميزات قوية",
+        "title": "مميزات قوية",
         "description": "اكتشف ما يجعل أثيريا فريدة من نوعها.",
         "items": [
           {
@@ -41,7 +45,7 @@
           },
           {
             "title": "تعاون في الوقت الفعلي",
-            "description": "اعمل مع فريقك في الوقت الفعلي في أي مشروع."
+            "description": "اعمل مع فريقك في الوقت الفعلي على أي مشروع."
           }
         ]
       },
@@ -50,15 +54,15 @@
         "description": "عملية بسيطة من 3 خطوات لتبدأ.",
         "steps": [
           {
-            "title": "اربط بياناتك",
+            "title": "ربط بياناتك",
             "description": "اربط مصادر بياناتك بأمان مع أثيريا."
           },
           {
-            "title": "حلل وركب",
+            "title": "التحليل والتركيب",
             "description": "دع ذكاءنا الاصطناعي يحلل ويركب بياناتك في رؤى قابلة للتنفيذ."
           },
           {
-            "title": "استكشف واكتشف",
+            "title": "الاستكشاف والاكتشاف",
             "description": "استكشف بياناتك المركبة واكتشف فرصًا جديدة."
           }
         ]
@@ -68,6 +72,180 @@
         "subtitle": "انضم إلى آلاف المستخدمين الذين يستخدمون أثيريا بالفعل لتحويل عملهم.",
         "button": "ابدأ مجانًا"
       }
+    }
+  },
+  "header": {
+    "categories": {
+      "orchestration": "تنسيق",
+      "intelligence": "ذكاء",
+      "studios": "استوديوهات",
+      "utility": "أدوات"
+    },
+    "dashboard": "لوحة القيادة",
+    "aiItinerary": "مسار الذكاء الاصطناعي",
+    "pathfinder": "مستكشف المسار",
+    "vibeMarketplace": "سوق الفايب",
+    "vibeShopping": "تسوق الفايب",
+    "bookingHub": "مركز الحجز",
+    "wallet": "المحفظة",
+    "budgetSynthesis": "تركيب الميزانية",
+    "visionHub": "مركز الرؤية",
+    "intelligenceCenter": "مركز الذكاء",
+    "arWayfinding": "توجيه الواقع المعزز",
+    "localLegends": "أساطير محلية",
+    "culturalPulse": "نبض ثقافي",
+    "audioGuide": "دليل صوتي",
+    "tripOdyssey": "أوديسة الرحلة",
+    "postcardStudio": "استوديو البطاقات البريدية",
+    "heritageMirror": "مرآة التراث",
+    "journal": "اليوميات",
+    "sos": "استغاثة",
+    "insurance": "تأمين",
+    "visaArchitect": "مهندس التأشيرات",
+    "flightStatus": "حالة الرحلة",
+    "esim": "شريحة إلكترونية",
+    "carbonSynthesis": "تركيب الكربون",
+    "packingassistant": "مساعد التعبئة"
+  },
+  "sidebar": {
+    "brand": {
+      "name": "أثيريا",
+      "tagline": "رحلة مركبة"
+    },
+    "sessionVerified": "تم التحقق من الجلسة",
+    "neuralLinkActive": "الارتباط العصبي نشط"
+  },
+  "userNav": {
+    "explorerHub": "مركز المستكشف",
+    "manageBookings": "إدارة الحجوزات",
+    "upgradeSubscription": "ترقية الاشتراك",
+    "adminConsole": "لوحة التحكم",
+    "partnerHub": "مركز الشركاء",
+    "identityNode": "عقدة الهوية",
+    "terminateSession": "إنهاء الجلسة",
+    "toast": {
+      "logoutSuccessTitle": "تم إنهاء الجلسة",
+      "logoutSuccessDescription": "تم فصل ارتباطك العصبي بأمان.",
+      "logoutErrorTitle": "فشل الإنهاء",
+      "logoutErrorDescription": "حدث خطأ أثناء فصل جلستك."
+    }
+  },
+  "dashboard": {
+    "welcomeBack": "مرحباً بعودتك، {{name}}",
+    "odysseyLevel": "مستوى الأوديسة {{level}}",
+    "explorerHubActive": "مركز المستكشف نشط",
+    "viewLegacyWrapped": "عرض ملخص الإرث",
+    "productionTrailer": "عرض الإنتاج",
+    "seasonPass": "تذكرة الموسم",
+    "xpSynthesized": "نقاط الخبرة المركبة",
+    "progressionToLevel": "التقدم إلى المستوى {{level}}",
+    "vibeStreak": "سلسلة الفايب",
+    "tasksResolved": "المهام المنجزة",
+    "totalMedals": "إجمالي الميداليات",
+    "premiumRequired": "تذكرة بريميوم مطلوبة",
+    "explorerStatus": "حالة المستكشف: {{tier}}",
+    "points": "نقاط",
+    "medals": "ميداليات",
+    "editProfile": "تعديل الملف الشخصي",
+    "match": "تطابق",
+    "toast": {
+      "missionInviteTitle": "تم إرسال مقترح الأوديسة",
+      "missionInviteDescription": "في انتظار {{name}} للموافقة على الأوديسة الجماعية."
+    },
+    "xpProgress": "{{current}} / {{total}} نقاط خبرة",
+    "odysseyCount": "{{count}} أوديسة",
+    "questCount": "{{count}} مهام",
+    "awardCount": "{{count}} جوائز",
+    "vibeRadar": {
+      "title": "رادار الفايب",
+      "desc": "اكتشاف تطابقات {{vibe}} في قطاعك الحالي: {{location}}"
+    },
+    "expandNeuralNetwork": "توسيع الشبكة العصبية",
+    "shortDesc": {
+      "itinerary": "خطط سفر مركبة بالذكاء الاصطناعي",
+      "pathfinder": "تحسين المسار العصبي",
+      "marketplace": "تجارب منسقة حسب الفايب",
+      "store": "اقتناء الأصول الرقمية",
+      "booking": "مركز الحجز الكمي",
+      "wallet": "تخزين الائتمان المشفر",
+      "budget": "محرك تركيب الميزانية",
+      "vision": "التعرف على الأشياء بالواقع المعزز",
+      "guide": "قاعدة معرفية عالمية",
+      "ar": "تراكب التوجيه المكاني",
+      "legends": "استرجاع البيانات التاريخية",
+      "pulse": "التدفق الثقافي في الوقت الفعلي",
+      "audio": "مناظر صوتية غامرة",
+      "odyssey": "عرض تشويقي للرحلة السينمائية",
+      "postcard": "عقد بصرية منشأة بالذكاء الاصطناعي",
+      "mirror": "انعكاس بيانات التراث",
+      "journal": "سجل الأوديسة الشخصي"
+    }
+  },
+  "login": {
+    "title": "تسجيل دخول أثيريا",
+    "emailLabel": "عنوان الشبكة",
+    "emailPlaceholder": "name@domain.com",
+    "passwordLabel": "مفتاح الأمان",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "تفويض الجلسة",
+    "signingInButton": "جاري التفويض...",
+    "noAccount": "جديد في أثيريا؟",
+    "signUpLink": "إنشاء عقدة هوية",
+    "accessOdysseyGrid": "الوصول إلى شبكة الأوديسة الخاصة بك",
+    "authChannels": "قنوات المصادقة",
+    "google": "جوجل",
+    "apple": "آبل",
+    "biometricLogin": "تسجيل الدخول بالمؤشرات الحيوية",
+    "systemNodeOffline": "عقدة النظام غير متصلة",
+    "authServiceInitializing": "خدمة المصادقة لم يتم تهيئتها بعد.",
+    "unsupportedFeature": "ميزة غير مدعومة",
+    "biometricOnlyMobile": "تسجيل الدخول بالمؤشرات الحيوية متاح فقط على الأجهزة المحمولة.",
+    "biometricLoginFailed": "فشل تسجيل الدخول بالمؤشرات الحيوية",
+    "biometricLoginError": "تعذر تسجيل الدخول باستخدام المؤشرات الحيوية.",
+    "invalidCredentials": "عنوان بريد إلكتروني أو مفتاح أمان غير صالح. يرجى التحقق من بياناتك أو إنشاء حساب جديد إذا لم تكن قد قمت بذلك بالفعل.",
+    "accountDisabled": "تم تعطيل هذا الحساب. يرجى الاتصال بالدعم.",
+    "tooManyRequests": "محاولات فاشلة كثيرة جداً. يرجى المحاولة مرة أخرى لاحقاً أو إعادة تعيين مفتاح الأمان الخاص بك.",
+    "networkError": "فشل اتصال الشبكة. يرجى التحقق من اتصالك والمحاولة مرة أخرى.",
+    "toast": {
+      "successTitle": "تم تفويض الجلسة",
+      "successDescription": "ارتباطك العصبي نشط الآن.",
+      "errorTitle": "فشل التفويض",
+      "genericError": "حدث خطأ غير متوقع أثناء تفويض الجلسة.",
+      "operationNotAllowed": "طريقة المصادقة هذه معطلة حالياً."
+    }
+  },
+  "signup": {
+    "title": "انضم إلى الأوديسة",
+    "description": "أنشئ حساب أثيريا الخاص بك",
+    "firstNameLabel": "الاسم الأول",
+    "lastNameLabel": "اسم العائلة",
+    "firstNamePlaceholder": "جون",
+    "lastNamePlaceholder": "جوزيه",
+    "emailLabel": "عنوان الشبكة",
+    "emailPlaceholder": "name@domain.com",
+    "passwordLabel": "مفتاح الأمان",
+    "passwordPlaceholder": "••••••••",
+    "createButton": "تهيئة الملف الشخصي",
+    "creatingButton": "جاري المزامنة...",
+    "haveAccount": "هل أنت جزء من الشبكة بالفعل؟",
+    "signInLink": "تسجيل الدخول",
+    "networkJoin": "انضمام للشبكة",
+    "welcomeKit": {
+      "title": "تم إرسال حزمة الترحيب!",
+      "description": "تحقق من بريدك الوارد للحصول على ترحيب مخصص من ذكاء أثيريا الاصطناعي."
+    },
+    "toast": {
+      "successTitle": "تم تهيئة الملف الشخصي",
+      "successDescription": "مرحباً بك في شبكة أثيريا.",
+      "errorTitle": "فشل التهيئة",
+      "genericError": "تعذر إنشاء الحساب. يرجى المحاولة مرة أخرى."
+    },
+    "errors": {
+      "emailInUse": "عنوان البريد الإلكتروني هذا مسجل بالفعل. يرجى تسجيل الدخول بدلاً من ذلك.",
+      "invalidEmail": "عنوان البريد الإلكتروني غير صالح. يرجى التحقق والمحاولة مرة أخرى.",
+      "operationNotAllowed": "التسجيل بالبريد الإلكتروني/كلمة المرور معطل حالياً.",
+      "weakPassword": "مفتاح الأمان ضعيف جداً. يرجى استخدام مفتاح أقوى.",
+      "networkError": "فشل اتصال الشبكة. يرجى التحقق من اتصالك والمحاولة مرة أخرى."
     }
   }
 }

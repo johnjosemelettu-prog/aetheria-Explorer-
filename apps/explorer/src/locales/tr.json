@@ -1,0 +1,251 @@
+{
+  "landingPage": {
+    "header": {
+      "brand": "AETHERIA",
+      "ai": "AI",
+      "journeySynthesized": "Sentezlenmiş Yolculuk",
+      "links": {
+        "home": "Ana Sayfa",
+        "features": "Özellikler",
+        "workflow": "İş Akışı",
+        "cta": "Başla"
+      },
+      "logo": "Aetheria Logosu"
+    },
+    "footer": {
+      "tagline": "Dijital eter üzerinden yolculuğunuzu sentezliyoruz.",
+      "copyright": "© 2026 Aetheria AI. Tüm hakları saklıdır.",
+      "links": {
+        "privacy": "Gizlilik Politikası",
+        "terms": "Hizmet Şartları",
+        "contact": "Bize Ulaşın"
+      },
+      "sections": {
+        "company": "Şirket",
+        "connect": "Bağlan"
+      }
+    },
+    "body": {
+      "hero": {
+        "title": "Yolculuğunuz, Sentezlendi",
+        "subtitle": "Dijital manzarayı daha önce hiç olmadığı gibi keşfetmek için AI'nın gücünden yararlanın.",
+        "cta": "Yolculuğunuza Başlayın"
+      },
+      "features": {
+        "title": "Güçlü Özellikler",
+        "description": "Aetheria'yı benzersiz kılan şeyleri keşfedin.",
+        "items": [
+          {
+            "title": "AI Destekli İçgörüler",
+            "description": "Gelişmiş AI modellerimizle verileriniz hakkında derin içgörüler elde edin."
+          },
+          {
+            "title": "Kusursuz İş Akışı",
+            "description": "Aetheria'yı mevcut iş akışınıza kolaylıkla entegre edin."
+          },
+          {
+            "title": "Gerçek Zamanlı İşbirliği",
+            "description": "Herhangi bir projede ekibinizle gerçek zamanlı olarak çalışın."
+          }
+        ]
+      },
+      "workflow": {
+        "title": "Nasıl Çalışır",
+        "description": "Başlamanız için basit bir 3 adımlı süreç.",
+        "steps": [
+          {
+            "title": "Verilerinizi Bağlayın",
+            "description": "Veri kaynaklarınızı Aetheria'ya güvenli bir şekilde bağlayın."
+          },
+          {
+            "title": "Analiz Edin ve Sentezleyin",
+            "description": "AI'mızın verilerinizi analiz etmesine ve uygulanabilir içgörülere sentezlemesine izin verin."
+          },
+          {
+            "title": "Keşfedin ve Bulun",
+            "description": "Sentezlenmiş verilerinizi keşfedin ve yeni fırsatlar bulun."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Yolculuğunuza Başlamaya Hazır mısınız?",
+        "subtitle": "İşlerini dönüştürmek için zaten Aetheria kullanan binlerce kullanıcıya katılın.",
+        "button": "Ücretsiz Başlayın"
+      }
+    }
+  },
+  "header": {
+    "categories": {
+      "orchestration": "Orkestrasyon",
+      "intelligence": "Zeka",
+      "studios": "Stüdyolar",
+      "utility": "Yardımcı Program"
+    },
+    "dashboard": "Panel",
+    "aiItinerary": "AI Seyahat Planı",
+    "pathfinder": "Yol Bulucu",
+    "vibeMarketplace": "Vibe Pazaryeri",
+    "vibeShopping": "Vibe Alışveriş",
+    "bookingHub": "Rezervasyon Merkezi",
+    "wallet": "Cüzdan",
+    "budgetSynthesis": "Bütçe Sentezi",
+    "visionHub": "Vizyon Merkezi",
+    "intelligenceCenter": "Zeka Merkezi",
+    "arWayfinding": "AR Yol Bulma",
+    "localLegends": "Yerel Efsaneler",
+    "culturalPulse": "Kültürel Nabız",
+    "audioGuide": "Sesli Rehber",
+    "tripOdyssey": "Seyahat Odisesi",
+    "postcardStudio": "Kartpostal Stüdyosu",
+    "heritageMirror": "Miras Aynası",
+    "journal": "Günlük",
+    "sos": "SOS",
+    "insurance": "Sigorta",
+    "visaArchitect": "Vize Mimarı",
+    "flightStatus": "Uçuş Durumu",
+    "esim": "eSIM",
+    "carbonSynthesis": "Karbon Sentezi",
+    "packingassistant": "Paketleme Asistanı"
+  },
+  "sidebar": {
+    "brand": {
+      "name": "AETHERIA",
+      "tagline": "Sentezlenmiş Yolculuk"
+    },
+    "sessionVerified": "Oturum Doğrulandı",
+    "neuralLinkActive": "Nöral Bağlantı Aktif"
+  },
+  "userNav": {
+    "explorerHub": "Kaşif Merkezi",
+    "manageBookings": "Rezervasyonları Yönet",
+    "upgradeSubscription": "Aboneliği Yükselt",
+    "adminConsole": "Yönetim Konsolu",
+    "partnerHub": "Ortaklık Merkezi",
+    "identityNode": "Kimlik Düğümü",
+    "terminateSession": "Oturumu Kapat",
+    "toast": {
+      "logoutSuccessTitle": "Oturum Kapatıldı",
+      "logoutSuccessDescription": "Nöral bağlantınız güvenli bir şekilde kesildi.",
+      "logoutErrorTitle": "Kapatma Başarısız",
+      "logoutErrorDescription": "Oturumunuz kapatılırken bir hata oluştu."
+    }
+  },
+  "dashboard": {
+    "welcomeBack": "Tekrar Hoş Geldin, {{name}}",
+    "odysseyLevel": "Odise Seviyesi {{level}}",
+    "explorerHubActive": "Kaşif Merkezi Aktif",
+    "viewLegacyWrapped": "Geçmiş Özeti Görüntüle",
+    "productionTrailer": "Yapım Fragmanı",
+    "seasonPass": "Sezon Bileti",
+    "xpSynthesized": "XP Sentezlendi",
+    "progressionToLevel": "Seviye {{level}} İlerlemesi",
+    "vibeStreak": "Vibe Serisi",
+    "tasksResolved": "Çözülen Görevler",
+    "totalMedals": "Toplam Madalya",
+    "premiumRequired": "Premium Bilet Gerekli",
+    "explorerStatus": "Kaşif Durumu: {{tier}}",
+    "points": "Puan",
+    "medals": "Madalya",
+    "editProfile": "Profili Düzenle",
+    "match": "EŞLEŞME",
+    "toast": {
+      "missionInviteTitle": "Odise Teklifi İletildi",
+      "missionInviteDescription": "Grup Odisesi için {{name}} tarafından yetkilendirme bekleniyor."
+    },
+    "xpProgress": "{{current}} / {{total}} XP",
+    "odysseyCount": "{{count}} Odise",
+    "questCount": "{{count}} Görev",
+    "awardCount": "{{count}} Ödül",
+    "vibeRadar": {
+      "title": "Vibe Radarı",
+      "desc": "Mevcut sektörünüzde {{vibe}} eşleşmeleri tespit ediliyor: {{location}}"
+    },
+    "expandNeuralNetwork": "Nöral Ağı Genişlet",
+    "shortDesc": {
+      "itinerary": "AI tarafından sentezlenmiş seyahat planları",
+      "pathfinder": "Nöral yol optimizasyonu",
+      "marketplace": "Vibe tarafından küratörlüğü yapılmış deneyimler",
+      "store": "Dijital varlık edinimi",
+      "booking": "Kuantum rezervasyon merkezi",
+      "wallet": "Şifrelenmiş kredi depolama",
+      "budget": "Finansal sentez motoru",
+      "vision": "AR nesne tanıma",
+      "guide": "Küresel bilgi tabanı",
+      "ar": "Mekansal yol bulma katmanı",
+      "legends": "Tarihsel veri alımı",
+      "pulse": "Gerçek zamanlı kültürel akış",
+      "audio": "Sürükleyici ses manzaraları",
+      "odyssey": "Sinematik yolculuk tanıtımı",
+      "postcard": "AI tarafından oluşturulan görsel düğümler",
+      "mirror": "Miras verisi yansıması",
+      "journal": "Kişisel odise günlüğü"
+    }
+  },
+  "login": {
+    "title": "Aetheria Girişi",
+    "emailLabel": "Ağ Adresi",
+    "emailPlaceholder": "ad@alanadi.com",
+    "passwordLabel": "Güvenlik Anahtarı",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "Oturumu Yetkilendir",
+    "signingInButton": "Yetkilendiriliyor...",
+    "noAccount": "Aetheria'da yeni misiniz?",
+    "signUpLink": "Kimlik Düğümü Oluştur",
+    "accessOdysseyGrid": "Odise Izgaranıza erişin",
+    "authChannels": "Kimlik Doğrulama Kanalları",
+    "google": "Google",
+    "apple": "Apple",
+    "biometricLogin": "Biyometrik Giriş",
+    "systemNodeOffline": "Sistem Düğümü Çevrimdışı",
+    "authServiceInitializing": "Kimlik doğrulama hizmeti henüz başlatılmadı.",
+    "unsupportedFeature": "Desteklenmeyen Özellik",
+    "biometricOnlyMobile": "Biyometrik giriş yalnızca mobil cihazlarda kullanılabilir.",
+    "biometricLoginFailed": "Biyometrik Giriş Başarısız",
+    "biometricLoginError": "Biyometrik kimlik bilgileriyle giriş yapılamadı.",
+    "invalidCredentials": "Geçersiz e-posta adresi veya güvenlik anahtarı. Lütfen bilgilerinizi kontrol edin veya henüz yapmadıysanız yeni bir hesap oluşturun.",
+    "accountDisabled": "Bu hesap devre dışı bırakıldı. Lütfen destekle iletişime geçin.",
+    "tooManyRequests": "Çok fazla başarısız deneme. Lütfen daha sonra tekrar deneyin veya güvenlik anahtarınızı sıfırlayın.",
+    "networkError": "Ağ bağlantısı başarısız oldu. Lütfen bağlantınızı kontrol edin ve tekrar deneyin.",
+    "toast": {
+      "successTitle": "Oturum Yetkilendirildi",
+      "successDescription": "Nöral bağlantınız artık aktif.",
+      "errorTitle": "Yetkilendirme Başarısız",
+      "genericError": "Oturum yetkilendirmesi sırasında beklenmedik bir hata oluştu.",
+      "operationNotAllowed": "Bu kimlik doğrulama yöntemi şu anda devre dışı."
+    }
+  },
+  "signup": {
+    "title": "Odise'ye Katıl",
+    "description": "Aetheria hesabınızı oluşturun",
+    "firstNameLabel": "Ad",
+    "lastNameLabel": "Soyad",
+    "firstNamePlaceholder": "ahmet",
+    "lastNamePlaceholder": "yılmaz",
+    "emailLabel": "Ağ Adresi",
+    "emailPlaceholder": "ad@alanadi.com",
+    "passwordLabel": "Güvenlik Anahtarı",
+    "passwordPlaceholder": "••••••••",
+    "createButton": "Profili Başlat",
+    "creatingButton": "Senkronize ediliyor...",
+    "haveAccount": "Zaten ağın bir parçası mısınız?",
+    "signInLink": "Giriş Yap",
+    "networkJoin": "Ağa Katılım",
+    "welcomeKit": {
+      "title": "Hoş Geldin Paketi Gönderildi!",
+      "description": "Aetheria AI'dan kişiselleştirilmiş bir karşılama için gelen kutunuzu kontrol edin."
+    },
+    "toast": {
+      "successTitle": "Profil Başlatıldı",
+      "successDescription": "Aetheria Ağına hoş geldiniz.",
+      "errorTitle": "Başlatma Başarısız",
+      "genericError": "Hesap oluşturulamadı. Lütfen tekrar deneyin."
+    },
+    "errors": {
+      "emailInUse": "Bu e-posta adresi zaten kayıtlı. Lütfen bunun yerine giriş yapın.",
+      "invalidEmail": "E-posta adresi geçersiz. Lütfen kontrol edin ve tekrar deneyin.",
+      "operationNotAllowed": "E-posta/Şifre kaydı şu anda devre dışı.",
+      "weakPassword": "Güvenlik anahtarı çok zayıf. Lütfen daha güçlü bir anahtar kullanın.",
+      "networkError": "Ağ bağlantısı başarısız oldu. Lütfen bağlantınızı kontrol edin ve tekrar deneyin."
+    }
+  }
+}

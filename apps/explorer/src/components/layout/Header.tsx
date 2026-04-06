@@ -4,7 +4,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'motion/react';
 import { BrandLogo } from './BrandLogo';
-import i18n from '../../lib/i18n';
+import i18n from '../../lib/i18next-config';
 
 export const Header: React.FC = () => {
   const { t } = useTranslation();
@@ -38,14 +38,29 @@ export const Header: React.FC = () => {
           </nav>
           <div className="flex items-center space-x-4">
             <select
-              onChange={(e) => i18n.changeLanguage(e.target.value)}
-              value={i18n.language}
+              onChange={(e) => i18n?.changeLanguage(e.target.value)}
+              value={i18n?.language || 'en'}
               className="text-sm border border-gray-300 rounded-md px-2 py-1 bg-white"
             >
               <option value="en">English</option>
               <option value="ar">العربية</option>
               <option value="es">Español</option>
               <option value="hi">हिन्दी</option>
+              <option value="ja">日本語</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+              <option value="it">Italiano</option>
+              <option value="ko">한국어</option>
+              <option value="pt">Português</option>
+              <option value="ru">Русский</option>
+              <option value="zh">中文</option>
+              <option value="tr">Türkçe</option>
+              <option value="vi">Tiếng Việt</option>
+              <option value="th">ไทย</option>
+              <option value="nl">Nederlands</option>
+              <option value="pl">Polski</option>
+              <option value="id">Bahasa Indonesia</option>
+              <option value="ms">Bahasa Melayu</option>
             </select>
             <motion.button
               whileHover={{ scale: 1.05 }}

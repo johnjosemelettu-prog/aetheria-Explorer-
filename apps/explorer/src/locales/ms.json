@@ -1,623 +1,251 @@
 {
-  "common": {
-    "save": "Simpan Perubahan",
-    "cancel": "Batal",
-    "close": "Tutup",
-    "delete": "Padam",
-    "edit": "Edit",
-    "loading": "Memproses...",
-    "search": "Cari Grid",
-    "filter": "Tapis Nod",
-    "back": "Kembali",
-    "next": "Seterusnya",
-    "continue": "Teruskan",
-    "confirm": "Sahkan",
-    "active": "Aktif",
-    "inactive": "Luar Talian",
-    "verified": "Disahkan",
-    "unlocked": "Dibuka",
-    "locked": "Dikunci",
-    "authorized": "Diberi Kuasa",
-    "error": "Ralat",
-    "returnToDashboard": "Kembali ke Pusat Kawalan"
-  },
-  "login": {
-    "title": "Log Masuk",
-    "emailLabel": "Alamat Emel",
-    "emailPlaceholder": "explorer@aetheria.ai",
-    "passwordLabel": "Kunci Keselamatan",
-    "passwordPlaceholder": "••••••••",
-    "signInButton": "Log Masuk",
-    "signingInButton": "Mengesahkan Identiti...",
-    "noAccount": "Baru dalam Rangkaian?",
-    "signUpLink": "Cipta Akaun",
-    "toast": {
-      "successTitle": "Selamat Kembali",
-      "successDescription": "Sesi Aetheria anda kini aktif.",
-      "errorTitle": "Log Masuk Gagal",
-      "genericError": "Gagal mengesahkan kelayakan.",
-      "invalidCredentials": "Emel atau kunci keselamatan tidak sah.",
-      "operationNotAllowed": "Log masuk dihadkan buat masa ini."
-    }
-  },
-  "signup": {
-    "title": "Cipta Akaun",
-    "description": "Sertai rangkaian perjalanan global Aetheria.",
-    "emailLabel": "Alamat Emel",
-    "emailPlaceholder": "explorer@aetheria.ai",
-    "passwordLabel": "Kunci Keselamatan",
-    "createButton": "Mulakan Akaun",
-    "creatingButton": "Mensintesis Profil...",
-    "haveAccount": "Sudah menjadi Penjelajah?",
-    "signInLink": "Log Masuk",
-    "toast": {
-      "successTitle": "Akaun Dicipta",
-      "successDescription": "Selamat datang ke grid Aetheria.",
-      "errorTitle": "Pendaftaran Gagal",
-      "emailInUse": "Emel ini sudah didaftarkan.",
-      "operationNotAllowed": "Pendaftaran dihadkan buat masa ini.",
-      "genericError": "Sesuatu yang salah berlaku semasa sintesis."
-    }
-  },
-  "home": {
-    "hero": {
-      "badge": "Nod Kepintaran Aetheria",
-      "title": "DUNIA DIKOD SEMULA.",
-      "subtitle": "Hapuskan logistik. Tingkatkan pengalaman. Alami ekosistem perjalanan AI berbilang ejen yang pertama.",
-      "scroll": "Skrol untuk Imbas",
+  "landingPage": {
+    "header": {
+      "brand": "AETHERIA",
+      "ai": "AI",
+      "journeySynthesized": "Perjalanan Disintesis",
+      "links": {
+        "home": "Laman Utama",
+        "features": "Ciri-ciri",
+        "workflow": "Aliran Kerja",
+        "cta": "Bermula"
+      },
+      "logo": "Logo Aetheria"
+    },
+    "footer": {
+      "tagline": "Mensintesis perjalanan anda melalui eter digital.",
+      "copyright": "© 2026 Aetheria AI. Hak cipta terpelihara.",
+      "links": {
+        "privacy": "Dasar Privasi",
+        "terms": "Syarat Perkhidmatan",
+        "contact": "Hubungi Kami"
+      },
+      "sections": {
+        "company": "Syarikat",
+        "connect": "Sambung"
+      }
+    },
+    "body": {
+      "hero": {
+        "title": "Perjalanan Anda, Disintesis",
+        "subtitle": "Manfaatkan kuasa AI untuk meneroka landskap digital seperti tidak pernah berlaku sebelum ini.",
+        "cta": "Mulakan Perjalanan Anda"
+      },
+      "features": {
+        "title": "Ciri-ciri Hebat",
+        "description": "Temui apa yang menjadikan Aetheria unik.",
+        "items": [
+          {
+            "title": "Wawasan Berasaskan AI",
+            "description": "Dapatkan wawasan mendalam tentang data anda dengan model AI canggih kami."
+          },
+          {
+            "title": "Aliran Kerja Lancar",
+            "description": "Integrasikan Aetheria ke dalam aliran kerja sedia ada anda dengan mudah."
+          },
+          {
+            "title": "Kolaborasi Masa Nyata",
+            "description": "Bekerja dengan pasukan anda dalam masa nyata pada sebarang projek."
+          }
+        ]
+      },
+      "workflow": {
+        "title": "Bagaimana Ia Berfungsi",
+        "description": "Proses 3 langkah mudah untuk bermula.",
+        "steps": [
+          {
+            "title": "Sambungkan Data Anda",
+            "description": "Sambungkan sumber data anda ke Aetheria dengan selamat."
+          },
+          {
+            "title": "Analisis dan Sintesis",
+            "description": "Biarkan AI kami menganalisis dan mensintesis data anda menjadi wawasan yang boleh ditindaklanjuti."
+          },
+          {
+            "title": "Teroka dan Temui",
+            "description": "Teroka data yang disintesis dan temui peluang baharu."
+          }
+        ]
+      },
       "cta": {
-        "start": "Mulakan Perjalanan",
-        "signin": "Akses Nod"
+        "title": "Bersedia untuk Memulakan Perjalanan Anda?",
+        "subtitle": "Sertai beribu-ribu pengguna yang sudah menggunakan Aetheria untuk mengubah kerja mereka.",
+        "button": "Mula Secara Percuma"
       }
-    },
-    "features": {
-      "chapter": "Protokol Bab 01",
-      "title": "Lensa Kepintaran",
-      "initNode": "Mulakan Nod",
-      "itinerary": {
-        "badge": "Orkestrasi",
-        "title": "Itinerari Aura",
-        "desc": "Sintesis perjalanan berbilang hari berdasarkan DNA psikologi anda."
-      },
-      "postcard": {
-        "badge": "Studio",
-        "title": "Studio Poskad",
-        "desc": "Tukar gambar anda kepada seni kesetiaan tinggi yang dijana AI."
-      },
-      "legends": {
-        "badge": "Kepintaran",
-        "title": "Legenda Tempatan",
-        "desc": "Buka kunci cerita rakyat tersembunyi melalui naratif yang dicetuskan oleh GPS."
-      },
-      "packing": {
-        "badge": "Utiliti",
-        "title": "Ejen Tak Lupa Apa-apa",
-        "desc": "Sintesis pembungkusan proaktif yang disesuaikan dengan iklim dan nod itinerari."
-      }
-    },
-    "workflow": {
-      "badge": "Protokol Operasi",
-      "title": "Bagaimana Ia Berfungsi",
-      "phase": "Fasa 0{num}",
-      "step1": {
-        "title": "Tentukan Niat",
-        "desc": "Berikan destinasi dan parameter getaran psikologi anda."
-      },
-      "step2": {
-        "title": "Sintesis Perjalanan",
-        "desc": "Grid neural Aetheria merancang trajektori tersuai anda."
-      },
-      "step3": {
-        "title": "Laksanakan Perjalanan",
-        "desc": "Lancarkan ke dunia dengan kepintaran masa nyata dan nod keselamatan."
-      }
-    },
-    "cta": {
-      "badge": "Sertai Rangkaian",
-      "title": "SEDIA UNTUK MENGKOD SEMULA DUNIA ANDA?",
-      "subtitle": "Sertai rangkaian penjelajah moden yang memanfaatkan kepintaran tanpa had.",
-      "start": "Sambung ke Rangkaian",
-      "feed": "Suapan Global"
     }
   },
   "header": {
-    "brandName": "AETHERIA",
-    "brandTagline": "Journey Synthesized",
-    "linguisticGrid": "Grid Linguistik",
-    "login": "LOG MASUK",
-    "signup": "DAFTAR",
-    "sos": "SOS",
-    "aiItinerary": "Itinerari Aura",
-    "pathfinder": "Pencari Laluan",
-    "vibeMarketplace": "Pasaran Getaran",
-    "vibeShopping": "Kedai Tersuai",
-    "bookingHub": "Hab Tempahan",
-    "myTrips": "Perjalanan Saya",
-    "visionHub": "Hab Visi AI",
-    "intelligenceCenter": "Hab Kepintaran",
-    "arWayfinding": "Navigasi AR",
-    "localLegends": "Legenda Tempatan",
-    "explorerQuests": "Misi Penjelajah",
-    "culturalPulse": "Nadi Budaya",
-    "tripOdyssey": "Perjalanan Odisea",
-    "postcardStudio": "Studio Poskad",
-    "heritageMirror": "Cermin Warisan",
-    "journal": "Jurnal Penjelajah",
-    "visaArchitect": "Arkitek Visa",
-    "carbonSynthesis": "Penjejak Karbon",
-    "esim": "eSIM Global",
-    "flightStatus": "Radar Logistik",
-    "layoverOdyssey": "Odisea Persinggahan",
-    "safety": "Pembantu Keselamatan",
-    "hotels": "Penginapan",
-    "flights": "Penerbangan",
-    "insurance": "Insurans Perjalanan",
-    "trains": "Kereta Api",
-    "buses": "Bas",
-    "cruises": "Pelayaran",
-    "cabs": "Teksi",
-    "dining": "Makanan",
-    "profile": "Nod Identiti",
-    "loyaltyHub": "Hab Kesetiaan",
-    "wallet": "Dompet Pintar",
-    "rentals": "Sewa Saya",
-    "scanAndPay": "Imbas & Bayar",
-    "subscription": "Pas Perjalanan",
-    "partners": "Rakan Kongsi",
-    "digitalBrochure": "Risalah Aetheria",
-    "appTrailer": "Treler Sistem",
-    "sos": "Hab Kecemasan SOS",
-    "events": "Acara Destinasi",
-    "gearArchitect": "Arkitek Peralatan",
-    "jetLag": "Logik Jet Lag",
-    "digitalTailor": "Tukang Jahit Digital",
-    "translator": "Makmal Linguistik",
-    "corporate": "Mod Korporat",
-    "dashboard": "Papan Pemuka",
-    "budgetSynthesis": "Sintesis Bajet",
-    "moodSynthesis": "Sintesis Mood",
-    "auraBeats": "Rentak Aura",
-    "equilibriumSync": "Siri Keseimbangan",
-    "flavorDna": "DNA Perisa",
-    "audioGuide": "Panduan Audio",
-    "menuExplorer": "Penjelajah Menu",
-    "localInsider": "Maklumat Tempatan",
-    "cultureScout": "Pengakap Budaya",
-    "packingassistant": "Ejen Tak Lupa Apa-apa",
-    "aria": {
-      "back": "Kembali",
-      "wallet": "Dompet",
-      "tailor": "Tukang Jahit",
-      "cart": "Troli",
-      "language": "Bahasa",
-      "menu": "Menu"
-    },
     "categories": {
       "orchestration": "Orkestrasi",
       "intelligence": "Kepintaran",
       "studios": "Studio",
       "utility": "Utiliti"
     },
-    "promo": {
-      "spotlights": "Sorotan Rakan Kongsi",
-      "verified": "Rakan Kongsi Disahkan"
-    }
+    "dashboard": "Papan Pemuka",
+    "aiItinerary": "Itinerari AI",
+    "pathfinder": "Pathfinder",
+    "vibeMarketplace": "Pasaran Vibe",
+    "vibeShopping": "Membeli-belah Vibe",
+    "bookingHub": "Hab Tempahan",
+    "wallet": "Dompet",
+    "budgetSynthesis": "Sintesis Bajet",
+    "visionHub": "Hab Visi",
+    "intelligenceCenter": "Pusat Kepintaran",
+    "arWayfinding": "Navigasi AR",
+    "localLegends": "Legenda Tempatan",
+    "culturalPulse": "Nadi Budaya",
+    "audioGuide": "Panduan Audio",
+    "tripOdyssey": "Perjalanan Odissei",
+    "postcardStudio": "Studio Poskad",
+    "heritageMirror": "Cermin Warisan",
+    "journal": "Jurnal",
+    "sos": "SOS",
+    "insurance": "Insurans",
+    "visaArchitect": "Arkitek Visa",
+    "flightStatus": "Status Penerbangan",
+    "esim": "eSIM",
+    "carbonSynthesis": "Sintesis Karbon",
+    "packingassistant": "Pembantu Pembungkusan"
   },
-  "explorerQuests": {
-    "title": "Misi Penjelajah",
-    "subtitle": "Tukar penjelajahan bandar anda kepada pemburuan harta karun yang mencabar.",
-    "initTitle": "Mulakan Grid Misi",
-    "initDesc": "Pilih bandar sasaran untuk mensintesis misi penjelajahan tersuai.",
-    "cityPlaceholder": "cth: Kyoto, Jepun",
-    "generateBtn": "Jana Misi",
-    "newCityBtn": "Bandar Baru",
-    "progress": "Kemajuan: {completed} / {total}",
-    "xp": "{current} / {total} XP",
-    "hint": "Petunjuk: {hint}",
-    "xpSynthesized": "{points} XP Disintesis",
-    "resolvedTitle": "Bandar Selesai!",
-    "resolvedDesc": "Anda telah berjaya menyahkod rahsia {city}.",
-    "returnBtn": "Kembali ke Pusat Kawalan"
+  "sidebar": {
+    "brand": {
+      "name": "AETHERIA",
+      "tagline": "Perjalanan Disintesis"
+    },
+    "sessionVerified": "Sesi Disahkan",
+    "neuralLinkActive": "Pautan Neural Aktif"
   },
-  "languageLab": {
-    "badge": "Kepintaran Linguistik",
-    "title": "Makmal Bahasa",
-    "subtitle": "Kuasai dialek tempatan dengan kit kelangsungan hidup yang disintesis AI dan sebutan asli.",
-    "cityPlaceholder": "Masukkan bandar destinasi anda...",
-    "synthesizeBtn": "Sintesis Kit",
-    "survivalTitle": "Frasa Kelangsungan Hidup",
-    "pronounce": "Sebutan: {pronunciation}",
-    "slangTitle": "Slanga Tempatan",
-    "listenBtn": "Dengar Getaran",
-    "pendingTitle": "Linguistik Tertunda",
-    "pendingDesc": "Masukkan destinasi anda untuk mensintesis kit bahasa tersuai untuk perjalanan anda.",
+  "userNav": {
+    "explorerHub": "Hab Penjelajah",
+    "manageBookings": "Urus Tempahan",
+    "upgradeSubscription": "Naik Taraf Langganan",
+    "adminConsole": "Konsol Admin",
+    "partnerHub": "Hab Rakan Kongsi",
+    "identityNode": "Nod Identiti",
+    "terminateSession": "Tamatkan Sesi",
     "toast": {
-      "errorTitle": "Sintesis Gagal",
-      "errorDescription": "Grid linguistik berada di luar talian.",
-      "audioErrorTitle": "Ralat Audio",
-      "audioErrorDescription": "Gagal mensintesis suara."
+      "logoutSuccessTitle": "Sesi Ditamatkan",
+      "logoutSuccessDescription": "Pautan neural anda telah diputuskan dengan selamat.",
+      "logoutErrorTitle": "Penamatan Gagal",
+      "logoutErrorDescription": "Terdapat ralat semasa memutuskan sesi anda."
     }
-  },
-  "layoverOdyssey": {
-    "badge": "Kepintaran Transit",
-    "title": "Odisea Persinggahan",
-    "subtitle": "Tukar masa transit anda kepada perjalanan mikro berkelajuan tinggi.",
-    "initTitle": "Mulakan Nod Persinggahan",
-    "initDesc": "Berikan koordinat transit dan tempoh anda untuk mensintesis trajektori tersuai.",
-    "airportPlaceholder": "Lapangan Terbang / Bandar (cth: SIN, Singapura)",
-    "durationLabel": "Tempoh (Jam)",
-    "synthesizeBtn": "Sintesis Odisea",
-    "resultTitle": "Odisea Persinggahan Anda",
-    "newBtn": "Odisea Baru",
-    "timelineTitle": "Garis Masa",
-    "logisticsTitle": "Nod Logistik",
-    "transport": "Pengangkutan",
-    "budget": "Bajet",
-    "visa": "Nota Visa",
-    "pendingTitle": "Odisea Tertunda",
-    "pendingDesc": "Masukkan butiran persinggahan anda untuk mensintesis itinerari mikro tersuai.",
-    "missionParameters": "Parameter Misi",
-    "currentTerminal": "Terminal Semasa",
-    "layoverDuration": "Tempoh Persinggahan",
-    "synthesizeOdyssey": "Sintesis Odisea",
-    "radarSilent": "Radar Senyap",
-    "enterCodeDesc": "Masukkan kod lapangan terbang untuk mensintesis odisea persinggahan tersuai."
-  },
-  "transitConnect": {
-    "title": "Transit Connect",
-    "subtitle": "Cari komuniti anda di terminal. Berhubung dengan pengembara yang berkongsi penerbangan atau getaran yang sama.",
-    "step1": {
-      "title": "Sahkan Pas Masuk",
-      "description": "Imbas pas masuk anda untuk mengesahkan identiti dan nod penerbangan anda.",
-      "scanningButton": "Mengimbas...",
-      "scanButton": "Imbas Pas",
-      "cameraError": "Nod kamera di luar talian.",
-      "scanErrorTitle": "Imbasan Gagal",
-      "scanErrorDescription": "Gagal menyahkod data pas masuk."
-    },
-    "verification": {
-      "title": "Identiti Disahkan",
-      "description": "Nod penerbangan anda telah berjaya disahkan pada grid Aetheria.",
-      "passenger": "Penumpang",
-      "flight": "Penerbangan",
-      "gate": "Pintu",
-      "seat": "Tempat Duduk",
-      "departs": "Berlepas"
-    },
-    "step2": {
-      "title": "Pilih Getaran Anda",
-      "description": "Pilih cara anda mahu berinteraksi dengan rangkaian terminal.",
-      "goLiveButton": "Siaran Langsung",
-      "vibes": {
-        "networking": "Rangkaian",
-        "networkingDescription": "Berhubung dengan profesional dalam penerbangan anda.",
-        "coffee": "Minum Kopi",
-        "coffeeDescription": "Perbualan santai sambil minum.",
-        "shareLounge": "Kongsi Ruang Rehat",
-        "shareLoungeDescription": "Akses nod premium bersama orang lain.",
-        "cardGame": "Permainan Kad",
-        "cardGameDescription": "Luangkan masa dengan permainan pantas."
-      }
-    },
-    "step3": {
-      "title": "Rangkaian Terminal",
-      "description": "Nod sambungan masa nyata yang aktif berhampiran anda.",
-      "nearbyTab": "Berdekatan",
-      "arViewTab": "Pandangan AR",
-      "sameFlight": "Penerbangan Sama",
-      "chatButton": "Sembang",
-      "arViewDescription": "Pandangan AR Aktif",
-      "toast": {
-        "chatTitle": "Sembang Dimulakan",
-        "chatDescription": "Menyambung ke nod {name}..."
-      }
-    }
-  },
-  "footer": {
-    "brandName": "AETHERIA",
-    "brandTagline": "Journey Synthesized",
-    "copyright": "Aetheria AI",
-    "quote": "Masa depan perjalanan bukan sahaja tentang ke mana anda pergi, tetapi bagaimana anda mensintesis realiti perjalanan anda.",
-    "sections": {
-      "protocols": "Protokol",
-      "network": "Rangkaian",
-      "support": "Sokongan",
-      "connect": "Sambung"
-    },
-    "links": {
-      "itinerary": "Itinerari Aura",
-      "pathfinder": "Pencari Laluan",
-      "marketplace": "Pasaran Getaran",
-      "vision": "Pusat Visi",
-      "intelligence": "Pusat Kepintaran",
-      "ar": "Navigasi AR",
-      "odyssey": "Perjalanan Odisea",
-      "postcard": "Studio Poskad",
-      "heritage": "Cermin Warisan",
-      "journal": "Jurnal",
-      "help": "Pusat Bantuan",
-      "safety": "Nod Keselamatan",
-      "status": "Status Sistem",
-      "api": "Akses API",
-      "terms": "Syarat Perkhidmatan",
-      "privacy": "Privasi",
-      "security": "Keselamatan Data",
-      "legal": "Notis Undang-undang",
-      "brochure": "Risalah",
-      "partners": "Rakan Kongsi",
-      "hub": "Hab Hubungan",
-      "faq": "FAQ"
-    },
-    "status": {
-      "description": "Grid Global Beroperasi",
-      "poweredBy": "Dikuasakan oleh Aetheria Core"
-    },
-    "aria": {
-      "x": "X (dahulunya Twitter)",
-      "instagram": "Instagram",
-      "youtube": "YouTube"
-    }
-  },
-  "profile": {
-    "saveSuccessTitle": "Profil Disinkronkan",
-    "saveSuccessDescription": "Nod identiti anda telah dikemas kini.",
-    "saveButton": "Sahkan Perubahan",
-    "savingButton": "Menyinkronkan...",
-    "tabs": {
-      "identity": "Nod Identiti",
-      "travelDna": "DNA Perjalanan",
-      "settings": "Tetapan Sistem",
-      "security": "Nod Keselamatan"
-    },
-    "personalInfo": {
-      "firstName": "Nama Pertama",
-      "lastName": "Nama Akhir",
-      "gender": "Nod Jantina Biologi",
-      "genders": {
-        "male": "Lelaki",
-        "female": "Perempuan",
-        "other": "Lain-lain",
-        "preferNotToSay": "Pilih untuk tidak memberitahu"
-      }
-    },
-    "travelStyle": {
-      "relaxed": {
-        "label": "Santai",
-        "description": "Kelajuan rendah, rendaman tinggi."
-      },
-      "active": {
-        "label": "Aktif",
-        "description": "Kelajuan tinggi, pelbagai nod harian."
-      },
-      "adventurous": {
-        "label": "Berani",
-        "description": "Luar grid, faktor penemuan tinggi."
-      },
-      "packed": {
-        "label": "Padat",
-        "description": "Kecekapan maksimum, tiada masa henti."
-      },
-      "familyFriendly": {
-        "label": "Mesra Keluarga",
-        "description": "Fokus keselamatan berbilang penumpang."
-      }
-    },
-    "interests": {
-      "items": {
-        "history": "Sejarah",
-        "food": "Makanan",
-        "hiking": "Mendaki",
-        "art": "Seni",
-        "nightlife": "Kehidupan Malam",
-        "shopping": "Membeli-belah",
-        "nature": "Alam Semulajadi",
-        "wellness": "Kesejahteraan"
-      }
-    }
-  },
-  "onboarding": {
-    "steps": {
-      "header": {
-        "title": "Hab Aura Aktif",
-        "content": "Sambungan saraf anda sedang aktif. Lencana ini menunjukkan bahawa AI Aetheria sedang giat mensintesis data perjalanan anda."
-      },
-      "season": {
-        "title": "Kemajuan Musim",
-        "content": "Jejaki XP anda dan tingkatkan tahap Odyssey anda. Selesaikan misi untuk membuka kunci aset digital eksklusif dan faedah perjalanan."
-      },
-      "itinerary": {
-        "title": "Itinerari Aura",
-        "content": "Enjin AI teras kami. Sintesis odyssey berbilang hari yang disesuaikan dengan DNA psikologi dan suasana perjalanan anda."
-      },
-      "vision": {
-        "title": "Hab AI Visi",
-        "content": "Gunakan kamera anda untuk mengimbas mercu tanda dan artifak. AI kami menyediakan sintesis sejarah dan budaya masa nyata."
-      },
-      "postcard": {
-        "title": "Studio Poskad",
-        "content": "Ubah gambar perjalanan anda menjadi seni jana AI kesetiaan tinggi. Kongsi visi unik anda dengan rangkaian."
-      },
-      "vibe": {
-        "title": "Radar Vibe",
-        "content": "Cari pengembara lain di sekitar anda dengan tandatangan saraf yang sepadan. Sambung dan segerakkan perjalanan anda."
-      }
-    },
-    "finish": "Selesai",
-    "next": "Seterusnya"
-  },
-  "itineraryGenerator": {
-    "toast": {
-      "bookingInitiated": "Tempahan Dimulakan",
-      "reserving": "Menempah {{activity}}...",
-      "adjustmentFailed": "Pelarasan Gagal",
-      "adjustmentFailedDesc": "Tidak dapat menentukur semula jadual perjalanan.",
-      "pathRecalibrated": "Laluan Ditentukur Semula",
-      "pathRecalibratedDesc": "Jadual perjalanan telah dikemas kini dengan perubahan yang dicadangkan.",
-      "generateSuccessTitle": "Odisea Disintesis",
-      "generateSuccessDescription": "Laluan anda ke {{destination}} sudah sedia.",
-      "generateErrorTitle": "Sintesis Gagal",
-      "generateErrorDescription": "Tidak dapat membuat jadual perjalanan. Ralat sistem.",
-      "refineSuccessTitle": "Laluan Diperhalusi",
-      "refineErrorTitle": "Penghalusan Gagal",
-      "refineErrorDescription": "Tidak dapat melaraskan laluan."
-    },
-    "display": {
-      "pendingTitle": "Jadual Perjalanan Belum Selesai",
-      "pendingDesc": "Benarkan destinasi untuk menjana jadual perjalanan kesetiaan tinggi anda.",
-      "upgradeTitle": "Buka Kunci Spektrum Penuh",
-      "upgradeDesc": "Naik taraf ke Pro untuk penghalusan AI tanpa had dan cerapan kesetiaan tinggi.",
-      "upgradeBtn": "Naik Taraf Sekarang",
-      "resultBadge": "Jadual Perjalanan Dijana",
-      "pathTitle": "Jadual Perjalanan Anda",
-      "recalibrateTitle": "Penentukur Semula Dinamik",
-      "recalibrateDesc": "Cuaca telah berubah. Adakah anda mahu menentukur semula laluan anda untuk aktiviti dalam talian?",
-      "recalibrateContext": "Hujan mula turun secara tiba-tiba, jadi aktiviti luar tidak sesuai.",
-      "recalibrateBtn": "Tentukur Semula Laluan",
-      "reserveBtn": "Tempah",
-      "notes": "Nota Protokol",
-      "adjustTitle": "Penghalusan Manual",
-      "adjustDesc": "Minta pelarasan khusus pada laluan yang dijana anda.",
-      "adjustPlaceholder": "cth: tambah lebih banyak hentian makanan jalanan, atau jadikan ia lebih santai...",
-      "processing": "Memproses...",
-      "updateBtn": "Kemas Kini Laluan",
-      "proposedTitle": "Penentukur Semula Dicadangkan",
-      "rejectBtn": "Tolak",
-      "authorizeBtn": "Benarkan Perubahan"
-    },
-    "form": {
-      "title": "Jana Odisea",
-      "description": "Sintesis perjalanan berbilang nod berdasarkan getaran dan kekangan unik anda.",
-      "destinationLabel": "Destinasi Sasaran",
-      "destinationPlaceholder": "cth: Tokyo, Jepun",
-      "datesLabel": "Julat Masa",
-      "pickDateRange": "Pilih julat tarikh",
-      "budgetLabel": "Peruntukan Sumber",
-      "budgetPlaceholder": "Pilih bajet",
-      "budgetLow": "Ekonomi (Rendah)",
-      "budgetMedium": "Standard (Sederhana)",
-      "budgetHigh": "Premium (Tinggi)",
-      "vibeLabel": "Sintesis Getaran",
-      "vibePlaceholder": "Terangkan perasaan perjalanan ini...",
-      "vibeDescription": "AI akan menggunakan ini untuk menetapkan suasana jadual perjalanan.",
-      "generatingButton": "Mensintesis Laluan...",
-      "generateButton": "Benarkan Odisea"
-    },
-    "validation": {
-      "destination": "Destinasi mesti mempunyai sekurang-kurangnya 2 aksara.",
-      "interests": "Sila pilih sekurang-kurangnya satu nod minat."
-    },
-    "title": "Penjana Jadual Perjalanan",
-    "subtitle": "Sintesis perjalanan kesetiaan tinggi anda yang seterusnya dengan orkestrasi AI.",
-    "authError": "Pengesahan Diperlukan",
-    "authErrorDesc": "Sila log masuk untuk membenarkan sintesis jadual perjalanan.",
-    "odysseySuffix": "Odisea"
-  },
-  "subscription": {
-    "badge": "Protokol Monetari",
-    "title": "Hab Langganan",
-    "subtitle": "Tingkatkan odisea anda dengan kepintaran premium dan nod keselamatan global.",
-    "itineraryRequired": "Odisea Aktif Diperlukan",
-    "itineraryRequiredDesc": "Anda mesti mempunyai perjalanan aktif untuk memohon tahap langganan.",
-    "createItineraryBtn": "Cipta Odisea",
-    "plans": {
-      "free": {
-        "name": "Percuma",
-        "description": "Logistik asas untuk pengembara kasual.",
-        "price": "RM0",
-        "itinerariesValue": "1 Odisea Aktif",
-        "immersiveValue": "Kepintaran Standard",
-        "loyaltyValue": "Ganjaran Asas"
-      },
-      "voyager": {
-        "name": "Voyager",
-        "description": "Alatan dipertingkatkan untuk penjelajah tegar.",
-        "price": "RM45",
-        "itinerariesValue": "3 Odisea Aktif",
-        "immersiveValue": "Kepintaran Dipertingkatkan",
-        "packingValue": "Nod Pembungkusan AI",
-        "loyaltyValue": "Ganjaran Perak"
-      },
-      "pathfinder": {
-        "name": "Pathfinder",
-        "description": "Kepintaran gred neural untuk nomad profesional.",
-        "price": "RM95",
-        "itinerariesValue": "Odisea Tanpa Had",
-        "immersiveValue": "Kepintaran Neural",
-        "insiderValue": "Akses Legenda Tempatan",
-        "loyaltyValue": "Ganjaran Emas"
-      },
-      "sovereign": {
-        "name": "Sovereign",
-        "description": "Akses tanpa had dengan sintesis gred warisan.",
-        "price": "RM245",
-        "itinerariesValue": "Odisea Tanpa Had",
-        "immersiveValue": "Kepintaran Tanpa Had",
-        "mirrorValue": "Nod Cermin Warisan",
-        "fees": "Sifar Yuran Perkhidmatan"
-      },
-      "legend": {
-        "name": "Legend",
-        "description": "Nod penjelajah muktamad dengan akses rangkaian penuh.",
-        "price": "RM495",
-        "itinerariesValue": "Odisea Tanpa Had",
-        "immersiveValue": "Kepintaran Tanpa Had",
-        "mirrorValue": "Nod Cermin Warisan",
-        "insiderValue": "Akses Legenda Tempatan",
-        "fees": "Sifar Yuran Perkhidmatan"
-      }
-    },
-    "period": {
-      "monthly": "/ BULAN"
-    },
-    "features": {
-      "itineraries": "Kapasiti Odisea",
-      "immersive": "Tahap Kepintaran",
-      "loyalty": "Tahap Ganjaran",
-      "packing": "Nod Pembungkusan",
-      "insider": "Akses Legenda",
-      "mirror": "Nod Warisan",
-      "fees": "Yuran Perkhidmatan"
-    },
-    "upgrade": "Sahkan Peningkatan",
-    "processingBtn": "Memproses...",
-    "currentPlan": "Nod Aktif"
   },
   "dashboard": {
-    "welcomeBack": "Selamat Kembali, {name}",
-    "odysseyLevel": "Tahap Odisea {level}",
-    "seasonPass": "Pas Musim",
+    "welcomeBack": "Selamat Kembali, {{name}}",
+    "odysseyLevel": "Tahap Odissei {{level}}",
+    "explorerHubActive": "Hab Penjelajah Aktif",
+    "viewLegacyWrapped": "Lihat Sorotan Lepas",
+    "productionTrailer": "Trailer Produksi",
+    "seasonPass": "Pas Musiman",
     "xpSynthesized": "XP Disintesis",
-    "progressionToLevel": "Kemajuan ke Tahap {level}",
-    "vibeStreak": "Siri Getaran",
-    "tasksResolved": "Tugas Selesai",
+    "progressionToLevel": "Kemajuan ke Tahap {{level}}",
+    "vibeStreak": "Rantaian Vibe",
+    "tasksResolved": "Tugasan Diselesaikan",
     "totalMedals": "Jumlah Pingat",
-    "premiumRequired": "Premium Diperlukan",
-    "explorerStatus": "Status Penjelajah: {tier}",
+    "premiumRequired": "Pas Premium Diperlukan",
+    "explorerStatus": "Status Penjelajah: {{tier}}",
     "points": "Mata",
     "medals": "Pingat",
     "editProfile": "Edit Profil",
-    "shortDesc": {
-      "itinerary": "Sintesis itinerari neural.",
-      "pathfinder": "Pengoptimuman laluan pintar.",
-      "marketplace": "Pertukaran getaran global.",
-      "store": "Pembelian peralatan tersuai.",
-      "booking": "Orkestrasi logistik.",
-      "wallet": "Nod mata wang pintar.",
-      "budget": "Sintesis kewangan.",
-      "vision": "Nod pengecaman objek.",
-      "guide": "Hab maklumat global.",
-      "ar": "Navigasi dipertingkatkan.",
-      "legends": "Penyahkodan cerita rakyat.",
-      "pulse": "Radar trend budaya.",
-      "audio": "Narasi ruang.",
-      "odyssey": "Sintesis perjalanan sinematik.",
-      "postcard": "Penjanaan seni AI.",
-      "mirror": "Visualisasi warisan.",
-      "journal": "Penyulitan memori."
+    "match": "PADAN",
+    "toast": {
+      "missionInviteTitle": "Cadangan Odissei Dihantar",
+      "missionInviteDescription": "Menunggu kebenaran daripada {{name}} untuk Odissei Kumpulan."
     },
+    "xpProgress": "{{current}} / {{total}} XP",
+    "odysseyCount": "{{count}} Odissei",
+    "questCount": "{{count}} Tugasan",
+    "awardCount": "{{count}} Anugerah",
     "vibeRadar": {
-      "title": "Radar Getaran",
-      "desc": "Mengimbas getaran {vibe} di {location}."
+      "title": "Radar Vibe",
+      "desc": "Mengesan padanan {{vibe}} di sektor semasa anda: {{location}}"
+    },
+    "expandNeuralNetwork": "Luaskan Rangkaian Neural",
+    "shortDesc": {
+      "itinerary": "Pelan perjalanan disintesis AI",
+      "pathfinder": "Pengoptimuman laluan neural",
+      "marketplace": "Pengalaman dikurasi Vibe",
+      "store": "Pemerolehan aset digital",
+      "booking": "Hab tempahan kuantum",
+      "wallet": "Penyimpanan kredit disulitkan",
+      "budget": "Enjin sintesis kewangan",
+      "vision": "Pengecaman objek AR",
+      "guide": "Pangkalan pengetahuan global",
+      "ar": "Lapisan navigasi ruang",
+      "legends": "Pengambilan data sejarah",
+      "pulse": "Aliran budaya masa nyata",
+      "audio": "Landskap bunyi imersif",
+      "odyssey": "Teaser perjalanan sinematik",
+      "postcard": "Nod visual buatan AI",
+      "mirror": "Refleksi data warisan",
+      "journal": "Log odissei peribadi"
+    }
+  },
+  "login": {
+    "title": "Log Masuk Aetheria",
+    "emailLabel": "Alamat Rangkaian",
+    "emailPlaceholder": "nama@domain.com",
+    "passwordLabel": "Kunci Keselamatan",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "Sahkan Sesi",
+    "signingInButton": "Mengesahkan...",
+    "noAccount": "Baru di Aetheria?",
+    "signUpLink": "Cipta Nod Identiti",
+    "accessOdysseyGrid": "Akses Grid Odissei anda",
+    "authChannels": "Saluran Pengesahan",
+    "google": "Google",
+    "apple": "Apple",
+    "biometricLogin": "Log Masuk Biometrik",
+    "systemNodeOffline": "Nod Sistem Luar Talian",
+    "authServiceInitializing": "Perkhidmatan pengesahan belum dimulakan.",
+    "unsupportedFeature": "Ciri Tidak Disokong",
+    "biometricOnlyMobile": "Log masuk biometrik hanya tersedia pada peranti mudah alih.",
+    "biometricLoginFailed": "Log Masuk Biometrik Gagal",
+    "biometricLoginError": "Tidak dapat log masuk dengan kelayakan biometrik.",
+    "invalidCredentials": "Alamat e-mel atau kunci keselamatan tidak sah. Sila semak kelayakan anda atau cipta akaun baharu jika anda belum mempunyainya.",
+    "accountDisabled": "Akaun ini telah dilumpuhkan. Sila hubungi sokongan.",
+    "tooManyRequests": "Terlalu banyak percubaan gagal. Sila cuba sebentar lagi atau tetapkan semula kunci keselamatan anda.",
+    "networkError": "Sambungan rangkaian gagal. Sila semak sambungan anda dan cuba lagi.",
+    "toast": {
+      "successTitle": "Sesi Disahkan",
+      "successDescription": "Pautan neural anda kini aktif.",
+      "errorTitle": "Pengesahan Gagal",
+      "genericError": "Ralat tidak dijangka berlaku semasa pengesahan sesi.",
+      "operationNotAllowed": "Kaedah pengesahan ini dilumpuhkan buat masa ini."
+    }
+  },
+  "signup": {
+    "title": "Sertai Odissei",
+    "description": "Cipta akaun Aetheria anda",
+    "firstNameLabel": "Nama Pertama",
+    "lastNameLabel": "Nama Keluarga",
+    "firstNamePlaceholder": "ali",
+    "lastNamePlaceholder": "abu",
+    "emailLabel": "Alamat Rangkaian",
+    "emailPlaceholder": "nama@domain.com",
+    "passwordLabel": "Kunci Keselamatan",
+    "passwordPlaceholder": "••••••••",
+    "createButton": "Mulakan Profil",
+    "creatingButton": "Menyegerak...",
+    "haveAccount": "Sudah menjadi sebahagian daripada rangkaian?",
+    "signInLink": "Log Masuk",
+    "networkJoin": "Penyertaan Rangkaian",
+    "welcomeKit": {
+      "title": "Kit Selamat Datang Dihantar!",
+      "description": "Semak peti masuk anda untuk sambutan peribadi daripada Aetheria AI."
+    },
+    "toast": {
+      "successTitle": "Profil Dimulakan",
+      "successDescription": "Selamat datang ke Rangkaian Aetheria.",
+      "errorTitle": "Permulaan Gagal",
+      "genericError": "Tidak dapat mencipta akaun. Sila cuba lagi."
+    },
+    "errors": {
+      "emailInUse": "Alamat e-mel ini sudah didaftarkan. Sila log masuk sebaliknya.",
+      "invalidEmail": "Alamat e-mel tidak sah. Sila semak dan cuba lagi.",
+      "operationNotAllowed": "Pendaftaran E-mel/Kata Laluan dilumpuhkan buat masa ini.",
+      "weakPassword": "Kunci keselamatan terlalu lemah. Sila gunakan yang lebih kuat.",
+      "networkError": "Sambungan rangkaian gagal. Sila semak sambungan anda dan cuba lagi."
     }
   }
 }

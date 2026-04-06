@@ -60,7 +60,7 @@ export async function generateSafetyData(input: GenerateSafetyDataInput): Promis
   try {
     const { ai } = await import('@/ai/genkit');
     const response = await ai.generate({
-      prompt: `Synthesize a safety guide for coordinates (${input.latitude}, ${input.longitude}). Nationality: ${input.userNationality}.`,
+      prompt: `Synthesize a safety guide for coordinates (${input.latitude}, ${input.longitude}). Nationality: ${input.userNationality}. Output Language: ${input.language || 'English'}.`,
       output: { schema: GenerateSafetyDataOutputSchema },
     });
 

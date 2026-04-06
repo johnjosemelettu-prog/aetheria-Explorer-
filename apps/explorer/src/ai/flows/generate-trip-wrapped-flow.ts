@@ -44,7 +44,7 @@ export async function generateTripWrapped(input: TripWrappedInput): Promise<Trip
   try {
     const { ai } = await import('@/ai/genkit');
     const response = await ai.generate({
-      prompt: `Synthesize a 'Trip Wrapped' for ${input.tripName}.`,
+      prompt: `Synthesize a 'Trip Wrapped' for ${input.tripName}. Output Language: ${input.language || 'English'}.`,
       output: { schema: TripWrappedOutputSchema },
     });
 

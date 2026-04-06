@@ -1,4 +1,27 @@
 {
+  "common": {
+    "save": "Commit Changes",
+    "cancel": "Abort",
+    "close": "Terminate",
+    "delete": "De-initialize",
+    "edit": "Modify Node",
+    "loading": "Synthesizing...",
+    "search": "Scan Grid",
+    "filter": "Filter Nodes",
+    "back": "Return",
+    "next": "Proceed",
+    "continue": "Maintain Link",
+    "confirm": "Authorize",
+    "active": "Online",
+    "inactive": "Offline",
+    "verified": "Authenticated",
+    "unlocked": "Access Granted",
+    "locked": "Restricted",
+    "authorized": "Cleared",
+    "error": "System Breach",
+    "returnToDashboard": "Return to Command Center",
+    "initialize": "Initialize Node"
+  },
   "landingPage": {
     "header": {
       "brand": "AETHERIA",
@@ -19,17 +42,57 @@
         "privacy": "Privacy Policy",
         "terms": "Terms of Service",
         "contact": "Contact Us"
+      },
+      "sections": {
+        "company": "Company",
+        "connect": "Connect"
       }
     },
     "body": {
       "hero": {
+        "badge": "Aetheria Intelligence Node",
         "title": "Your Journey, Synthesized",
         "subtitle": "Harness the power of AI to explore the digital landscape like never before.",
-        "cta": "Start Your Journey"
+        "description1": "Eliminate logistics. Amplify experiences.",
+        "description2": "Experience the world’s first multi-agent AI travel synthesis.",
+        "cta": "Start Your Journey",
+        "signUp": "Establish Identity",
+        "login": "Access Node",
+        "scroll": "Scroll to Scan"
+      },
+      "links": {
+        "itinerary": "Aura Itinerary",
+        "postcard": "Postcard Studio",
+        "legends": "Local Legends",
+        "packing": "Packing Assistant",
+        "signup": "Establish Identity",
+        "login": "Login"
       },
       "features": {
+        "badge": "Protocol Chapter 01",
         "title": "Powerful Features",
         "description": "Discover what makes Aetheria unique.",
+        "quote": "The future of travel is not where you go, but how you synthesize the reality of your journey.",
+        "itinerary": {
+          "badge": "Orchestration",
+          "title": "Aura Itinerary",
+          "desc": "Synthesize a multi-day Odyssey based on your psychological DNA."
+        },
+        "postcard": {
+          "badge": "Studio",
+          "title": "Postcard Studio",
+          "desc": "Transform your captures into AI-synthesized art forms."
+        },
+        "legends": {
+          "badge": "Intelligence",
+          "title": "Local Legends",
+          "desc": "Uncover the Grid's hidden narratives through GPS-linked intel."
+        },
+        "packing": {
+          "badge": "Utility",
+          "title": "Packing Assistant",
+          "desc": "Synthesize gear requirements based on climate and Odyssey parameters."
+        },
         "items": [
           {
             "title": "AI-Powered Insights",
@@ -40,34 +103,655 @@
             "description": "Integrate Aetheria into your existing workflow with ease."
           },
           {
-            "title": "Real-Time Collaboration",
+            "title": "Real-time Collaboration",
             "description": "Work with your team in real-time on any project."
           }
         ]
       },
       "workflow": {
+        "badge": "Operational Protocol",
         "title": "How it Works",
-        "description": "A simple 3-step process to get you started.",
+        "description": "A simple 3-step process to get started.",
+        "step1": {
+          "title": "Define Objective",
+          "desc": "Input your destination node and interest parameters."
+        },
+        "step2": {
+          "title": "Design Odyssey",
+          "desc": "The Aetheria Neural Grid constructs a bespoke path for your journey."
+        },
+        "step3": {
+          "title": "Initiate Odyssey",
+          "desc": "Traverse the world with real-time intel and security protocols."
+        },
         "steps": [
           {
             "title": "Connect Your Data",
             "description": "Securely connect your data sources to Aetheria."
           },
           {
-            "title": "Analyze and Synthesize",
+            "title": "Analyze & Synthesize",
             "description": "Let our AI analyze and synthesize your data into actionable insights."
           },
           {
-            "title": "Explore and Discover",
+            "title": "Explore & Discover",
             "description": "Explore your synthesized data and discover new opportunities."
           }
-        ]
+        ],
+        "floating": {
+          "title": "Dynamic Recalibration",
+          "desc": "Real-time adjustments based on environmental telemetry."
+        }
       },
       "cta": {
         "title": "Ready to Start Your Journey?",
         "subtitle": "Join thousands of users who are already using Aetheria to transform their work.",
-        "button": "Get Started for Free"
+        "description": "Join a network of modern explorers utilizing infinite intelligence.",
+        "button": "Get Started for Free",
+        "signUpNow": "Link to Grid"
+      },
+      "images": {
+        "featureAlt": "Aetheria Feature Visualization",
+        "processAlt": "Aetheria Process Workflow"
       }
+    }
+  },
+  "login": {
+    "title": "Access Node",
+    "emailLabel": "Neural Identity",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "Security Key",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "Initialize Session",
+    "signingInButton": "Verifying Identity...",
+    "noAccount": "Not on the Grid?",
+    "signUpLink": "Establish Identity",
+    "toast": {
+      "successTitle": "Connection Restored",
+      "successDescription": "Your Aetheria session is now active on the Grid.",
+      "errorTitle": "Initialization Failed",
+      "genericError": "Unable to verify credentials.",
+      "invalidCredentials": "Invalid Identity or Security Key.",
+      "operationNotAllowed": "Node access is currently restricted."
+    }
+  },
+  "signup": {
+    "title": "Establish Identity",
+    "description": "Join the Aetheria global travel synthesis network.",
+    "emailLabel": "Neural Identity",
+    "emailPlaceholder": "explorer@aetheria.ai",
+    "passwordLabel": "Security Key",
+    "createButton": "Initialize Account",
+    "creatingButton": "Constructing Profile...",
+    "haveAccount": "Existing Node?",
+    "signInLink": "Access Session",
+    "toast": {
+      "successTitle": "Identity Established",
+      "successDescription": "Welcome to the Aetheria Grid.",
+      "errorTitle": "Synthesis Failed",
+      "emailInUse": "This Identity is already registered on the Grid.",
+      "operationNotAllowed": "Registration is currently restricted.",
+      "genericError": "An error occurred during Identity construction."
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Aetheria Intelligence Node",
+      "title": "The World, Reimagined.",
+      "subtitle": "Eliminate logistics. Amplify experiences. Experience the world’s first multi-agent AI travel synthesis.",
+      "scroll": "Scroll to Scan",
+      "cta": {
+        "start": "Commence Odyssey",
+        "signin": "Access Node"
+      }
+    },
+    "features": {
+      "chapter": "Protocol Chapter 01",
+      "title": "Intelligence Lenses",
+      "initNode": "Initialize Node",
+      "itinerary": {
+        "badge": "Orchestration",
+        "title": "Aura Itinerary",
+        "desc": "Synthesize a multi-day Odyssey based on your psychological DNA."
+      },
+      "postcard": {
+        "badge": "Studio",
+        "title": "Postcard Studio",
+        "desc": "Transform your captures into AI-synthesized art forms."
+      },
+      "legends": {
+        "badge": "Intelligence",
+        "title": "Local Legends",
+        "desc": "Uncover the Grid's hidden narratives through GPS-linked intel."
+      },
+      "packing": {
+        "badge": "Utility",
+        "title": "Packing Assistant",
+        "desc": "Synthesize gear requirements based on climate and Odyssey parameters."
+      }
+    },
+    "workflow": {
+      "badge": "Operational Protocol",
+      "title": "System Logic",
+      "phase": "Phase {{num}}",
+      "step1": {
+        "title": "Define Objective",
+        "desc": "Input your destination node and interest parameters."
+      },
+      "step2": {
+        "title": "Design Odyssey",
+        "desc": "The Aetheria Neural Grid constructs a bespoke path for your journey."
+      },
+      "step3": {
+        "title": "Initiate Odyssey",
+        "desc": "Traverse the world with real-time intel and security protocols."
+      }
+    },
+    "cta": {
+      "badge": "Join the Network",
+      "title": "Ready to Reconstruct the World?",
+      "subtitle": "Join a network of modern explorers utilizing infinite intelligence.",
+      "start": "Link to Grid",
+      "feed": "Global Feed"
+    }
+  },
+  "header": {
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "linguisticGrid": "Linguistic Grid",
+    "login": "Login",
+    "signup": "Establish Identity",
+    "sos": "SOS Panic Hub",
+    "aiItinerary": "Aura Itinerary",
+    "pathfinder": "Pathfinder",
+    "vibeMarketplace": "Vibe Marketplace",
+    "vibeShopping": "Bespoke Store",
+    "bookingHub": "Logistics Hub",
+    "myTrips": "My Odysseys",
+    "visionHub": "Vision AI Hub",
+    "intelligenceCenter": "Intelligence Hub",
+    "arWayfinding": "AR Navigation",
+    "localLegends": "Local Legends",
+    "explorerQuests": "Explorer Quests",
+    "culturalPulse": "Cultural Pulse",
+    "tripOdyssey": "Trip Odyssey",
+    "postcardStudio": "Postcard Studio",
+    "heritageMirror": "Heritage Mirror",
+    "journal": "Explorer Journal",
+    "visaArchitect": "Visa Architect",
+    "carbonSynthesis": "Carbon Tracker",
+    "esim": "Global eSIM",
+    "flightStatus": "Logistics Radar",
+    "layoverOdyssey": "Layover Odyssey",
+    "safety": "Security Assistant",
+    "hotels": "Habitation",
+    "flights": "Aero-Logistics",
+    "insurance": "Safety Protocol",
+    "trains": "Rail Synthesis",
+    "buses": "Surface Transit",
+    "cruises": "Aquatic Odyssey",
+    "cabs": "Ground Transport",
+    "dining": "Flavor Nodes",
+    "profile": "Identity Node",
+    "loyaltyHub": "Loyalty Hub",
+    "wallet": "Smart Wallet",
+    "rentals": "Asset Leases",
+    "scanAndPay": "Scan & Transact",
+    "subscription": "Odyssey Passes",
+    "partners": "Partner Nodes",
+    "digitalBrochure": "Aetheria Protocol",
+    "appTrailer": "System Trailer",
+    "events": "Destination Events",
+    "gearArchitect": "Gear Architect",
+    "jetLag": "Circadian Logic",
+    "digitalTailor": "Digital Tailor",
+    "translator": "Linguistic Lab",
+    "corporate": "Enterprise Mode",
+    "dashboard": "Command Center",
+    "budgetSynthesis": "Budget Synthesis",
+    "moodSynthesis": "Mood Synthesis",
+    "auraBeats": "Aura Beats",
+    "equilibriumSync": "Equilibrium Sync",
+    "flavorDna": "Flavor DNA",
+    "audioGuide": "Spatial Audio",
+    "menuExplorer": "Menu Decoder",
+    "localInsider": "Local Intel",
+    "cultureScout": "Culture Scout",
+    "packingassistant": "Utility Node",
+    "aria": {
+      "back": "Return",
+      "wallet": "Wallet Node",
+      "tailor": "Tailor Node",
+      "cart": "Payload",
+      "language": "Language Grid",
+      "menu": "Mainframe"
+    },
+    "categories": {
+      "orchestration": "Orchestrate",
+      "intelligence": "Intelligence",
+      "studios": "Studios",
+      "utility": "Utility"
+    },
+    "promo": {
+      "spotlights": "Partner Spotlights",
+      "verified": "Verified Nodes"
+    }
+  },
+  "explorerQuests": {
+    "title": "Explorer Quests",
+    "subtitle": "Transform your urban exploration into a cryptic odyssey.",
+    "initTitle": "Initialize Quest Grid",
+    "initDesc": "Select a terminal for specialized expedition missions.",
+    "cityPlaceholder": "e.g., Kyoto, Japan",
+    "generateBtn": "Construct Quest",
+    "newCityBtn": "New Terminal",
+    "progress": "Sync: {{completed}} / {{total}}",
+    "xp": "{{current}} / {{total}} XP",
+    "hint": "Intel: {{hint}}",
+    "xpSynthesized": "{{points}} XP Synthesized",
+    "resolvedTitle": "Terminal Resolved!",
+    "resolvedDesc": "You have successfully decrypted the secrets of {{city}}.",
+    "returnBtn": "Return to Command Hub"
+  },
+  "languageLab": {
+    "badge": "Linguistic Intelligence",
+    "title": "Language Lab",
+    "subtitle": "Master dialects using AI-synthesized survival kits and articulation guides.",
+    "cityPlaceholder": "Input Destination Node...",
+    "synthesizeBtn": "Synthesize Kit",
+    "survivalTitle": "Core Protocols",
+    "pronounce": "Articulation: {{pronunciation}}",
+    "slangTitle": "Local Idioms",
+    "listenBtn": "Monitor Audio",
+    "pendingTitle": "Linguistic Processing",
+    "pendingDesc": "Provide a destination to synthesize a linguistic kit for your Odyssey.",
+    "toast": {
+      "errorTitle": "Synthesis Failed",
+      "errorDescription": "Linguistic Grid is offline.",
+      "audioErrorTitle": "Audio Error",
+      "audioErrorDescription": "Could not synthesize vocal patterns."
+    }
+  },
+  "layoverOdyssey": {
+    "badge": "Transit Intelligence",
+    "title": "Layover Odyssey",
+    "subtitle": "Synthesize your transit time into a mini-expedition.",
+    "initTitle": "Initialize Layover Node",
+    "initDesc": "Input transit telemetry for a brief itinerary.",
+    "airportPlaceholder": "Airport/Node Code (e.g., SIN)",
+    "durationLabel": "Window (Hours)",
+    "synthesizeBtn": "Construct Odyssey",
+    "resultTitle": "Your Layover Odyssey",
+    "newBtn": "New Expedition",
+    "timelineTitle": "Temporal Sequence",
+    "logisticsTitle": "Logistics Node",
+    "transport": "Transit",
+    "budget": "Allocation",
+    "visa": "Permit Intel",
+    "pendingTitle": "Odyssey Not Found",
+    "pendingDesc": "Provide layover parameters to construct an expedition.",
+    "missionParameters": "Mission Parameters",
+    "currentTerminal": "Current Terminal Node",
+    "layoverDuration": "Layover Window",
+    "synthesizeOdyssey": "Synthesize Odyssey",
+    "radarSilent": "Radar Silent",
+    "enterCodeDesc": "Input node code to construct a Layover Odyssey."
+  },
+  "transitConnect": {
+    "title": "Transit Connect",
+    "subtitle": "Identify peers in the terminal. Link with explorers on the same flight or with shared interests.",
+    "step1": {
+      "title": "Verify Boarding Pass",
+      "description": "Scan your pass to verify identity and flight telemetry.",
+      "scanningButton": "Scanning Telemetry...",
+      "scanButton": "Scan Pass",
+      "cameraError": "Camera Node Offline.",
+      "scanErrorTitle": "Scan Aborted",
+      "scanErrorDescription": "Failed to decrypt boarding pass data."
+    },
+    "verification": {
+      "title": "Verification Complete",
+      "description": "Flight data successfully synced to the Aetheria Grid.",
+      "passenger": "Explorer",
+      "flight": "Aero-Code",
+      "gate": "Terminal Gate",
+      "seat": "Node Position",
+      "departs": "Commencement"
+    },
+    "step2": {
+      "title": "Select Sync Mode",
+      "description": "Choose how you wish to link with others.",
+      "goLiveButton": "Go Live on Grid",
+      "vibes": {
+        "networking": "Networking",
+        "networkingDescription": "Link with professionals on your flight.",
+        "coffee": "Coffee Synthesis",
+        "coffeeDescription": "Casual conversation over a beverage.",
+        "shareLounge": "Share Lounge",
+        "shareLoungeDescription": "Co-utilize premium resources.",
+        "cardGame": "Strategic Gaming",
+        "cardGameDescription": "Spend time through tactical play."
+      }
+    },
+    "step3": {
+      "title": "Terminal Network",
+      "description": "Active connections in your proximity.",
+      "nearbyTab": "Proximity",
+      "arViewTab": "AR Vision",
+      "sameFlight": "Matching Aero-Code",
+      "chatButton": "Establish Link",
+      "arViewDescription": "AR Vision Active",
+      "toast": {
+        "chatTitle": "Link Established",
+        "chatDescription": "Connecting to {{name}}'s node..."
+      }
+    }
+  },
+  "footer": {
+    "brandName": "AETHERIA",
+    "brandTagline": "Journey Synthesized",
+    "copyright": "Aetheria AI",
+    "quote": "The future of travel is not where you go, but how you synthesize the reality of your journey.",
+    "sections": {
+      "protocols": "Protocols",
+      "network": "Network",
+      "support": "Support",
+      "connect": "Connect"
+    },
+    "links": {
+      "itinerary": "Aura Itinerary",
+      "pathfinder": "Pathfinder",
+      "marketplace": "Vibe Market",
+      "vision": "Vision Center",
+      "intelligence": "Intelligence Center",
+      "ar": "AR Navigation",
+      "odyssey": "Trip Odyssey",
+      "postcard": "Postcard Studio",
+      "heritage": "Heritage Mirror",
+      "journal": "Explorer Journal",
+      "help": "Support Hub",
+      "safety": "Security Node",
+      "status": "System Status",
+      "api": "API Access",
+      "terms": "Terms of Use",
+      "privacy": "Privacy Protocol",
+      "security": "Data Security",
+      "legal": "Legal Notices",
+      "brochure": "Protocol Brochure",
+      "partners": "Partner Nodes",
+      "hub": "Contact Hub",
+      "faq": "FAQ"
+    },
+    "status": {
+      "description": "Global Grid Operational",
+      "poweredBy": "Powered by Aetheria Core"
+    },
+    "aria": {
+      "x": "X (formerly Twitter)",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
+  },
+  "profile": {
+    "saveSuccessTitle": "Identity Node Updated",
+    "saveSuccessDescription": "Your explorer profile has been resynced.",
+    "saveButton": "Authorize Changes",
+    "savingButton": "Updating Grid...",
+    "tabs": {
+      "identity": "Identity Node",
+      "travelDna": "Travel DNA",
+      "settings": "System Settings",
+      "security": "Security Node"
+    },
+    "personalInfo": {
+      "firstName": "Given Name",
+      "lastName": "Surname",
+      "gender": "Gender Identity",
+      "genders": {
+        "male": "Male",
+        "female": "Female",
+        "other": "Non-Binary",
+        "preferNotToSay": "Undisclosed"
+      }
+    },
+    "travelStyle": {
+      "relaxed": {
+        "label": "Leisure Synthesis",
+        "description": "Slow-paced exploration."
+      },
+      "active": {
+        "label": "Kinetic",
+        "description": "High-energy movement."
+      },
+      "adventurous": {
+        "label": "Discovery Mode",
+        "description": "Uncovering new frontiers."
+      },
+      "packed": {
+        "label": "Max Efficiency",
+        "description": "Maximum node coverage."
+      },
+      "familyFriendly": {
+        "label": "Collective Security",
+        "description": "Safety-prioritized group travel."
+      }
+    },
+    "interests": {
+      "items": {
+        "history": "History",
+        "food": "Gastronomy",
+        "hiking": "Trekking",
+        "art": "Art",
+        "nightlife": "Nightlife",
+        "shopping": "Commerce",
+        "nature": "Ecology",
+        "wellness": "Wellness"
+      }
+    }
+  },
+  "onboarding": {
+    "steps": {
+      "header": {
+        "title": "Aura Hub Active",
+        "content": "Your neural link is live. This badge indicates Aetheria AI is actively synthesizing your travel telemetry."
+      },
+      "season": {
+        "title": "Season Progression",
+        "content": "Track your XP and level up your Odyssey. Complete quests to unlock exclusive digital assets and travel perks."
+      },
+      "itinerary": {
+        "title": "Aura Itinerary",
+        "content": "Our core AI engine. Synthesize a multi-day Odyssey tailored to your psychological DNA and travel vibe."
+      },
+      "vision": {
+        "title": "Vision AI Hub",
+        "content": "Use your camera to scan landmarks and artifacts. Our AI provides real-time historical and cultural synthesis."
+      },
+      "postcard": {
+        "title": "Postcard Studio",
+        "content": "Convert your travel snapshots into high-fidelity AI-generated art. Share your unique perspective with the network."
+      },
+      "vibe": {
+        "title": "Vibe Radar",
+        "content": "Detect other explorers in your vicinity with matching neural signatures. Connect and synchronize your journeys."
+      }
+    },
+    "finish": "Complete Initializing",
+    "next": "Proceed"
+  },
+  "itineraryGenerator": {
+    "toast": {
+      "bookingInitiated": "Logistics Initiated",
+      "reserving": "Reserving {{activity}}...",
+      "adjustmentFailed": "Adjustment Failed",
+      "adjustmentFailedDesc": "Could not recalibrate path.",
+      "pathRecalibrated": "Path Recalibrated",
+      "pathRecalibratedDesc": "Odyssey updated with suggested modifications.",
+      "generateSuccessTitle": "Odyssey Ready",
+      "generateSuccessDescription": "Your path to {{destination}} is fully synthesized.",
+      "generateErrorTitle": "Synthesis Failed",
+      "generateErrorDescription": "Could not construct itinerary. System error.",
+      "refineSuccessTitle": "Path Refined",
+      "refineErrorTitle": "Refinement Failed",
+      "refineErrorDescription": "Could not adjust path parameters."
+    },
+    "display": {
+      "pendingTitle": "Awaiting Synthesis",
+      "pendingDesc": "Authorize a destination to construct your high-fidelity Odyssey.",
+      "upgradeTitle": "Unlock Full Spectrum",
+      "upgradeDesc": "Upgrade to Pro for unlimited AI refinements and high-fidelity intel.",
+      "upgradeBtn": "Upgrade Node Now",
+      "resultBadge": "Synthesized Odyssey",
+      "pathTitle": "Your Odyssey Path",
+      "recalibrateTitle": "Dynamic Recalibration",
+      "recalibrateDesc": "Weather patterns have shifted. Recalibrate your path for indoor activities?",
+      "recalibrateContext": "Outdoor activities are non-optimal due to sudden precipitation.",
+      "recalibrateBtn": "Recalibrate Path",
+      "reserveBtn": "Reserve Node",
+      "notes": "Protocol Notes",
+      "adjustTitle": "Manual Refinement",
+      "adjustDesc": "Request specific recalibrations for your synthesized path.",
+      "adjustPlaceholder": "e.g., Include more street food nodes, or decrease kinetic intensity...",
+      "processing": "Processing Synthesis...",
+      "updateBtn": "Update Path",
+      "proposedTitle": "Proposed Recalibration",
+      "rejectBtn": "Discard",
+      "authorizeBtn": "Authorize Changes"
+    },
+    "form": {
+      "title": "Construct Odyssey",
+      "description": "Build a multi-node journey based on your unique parameters and constraints.",
+      "destinationLabel": "Destination Node",
+      "destinationPlaceholder": "e.g., Tokyo, Japan",
+      "datesLabel": "Temporal Range",
+      "pickDateRange": "Select Dates",
+      "budgetLabel": "Resource Allocation",
+      "budgetPlaceholder": "Select Budget",
+      "budgetLow": "Economy (Minimal)",
+      "budgetMedium": "Standard (Balanced)",
+      "budgetHigh": "Premium (High)",
+      "vibeLabel": "Vibe Synthesis",
+      "vibePlaceholder": "Describe the atmosphere of this journey...",
+      "vibeDescription": "AI will use this to set the ambient profile of your Odyssey.",
+      "generatingButton": "Synthesizing Path...",
+      "generateButton": "Authorize Odyssey"
+    },
+    "validation": {
+      "destination": "Destination must be at least 2 characters.",
+      "interests": "Please select at least one interest node."
+    },
+    "title": "Itinerary Synthesizer",
+    "subtitle": "Construct your next high-fidelity journey with AI orchestration.",
+    "authError": "Authorization Required",
+    "authErrorDesc": "Please sign in to authorize Odyssey construction.",
+    "odysseySuffix": "Odyssey"
+  },
+  "subscription": {
+    "badge": "Monetary Protocol",
+    "title": "Subscription Center",
+    "subtitle": "Enhance your Odyssey with premium services and global security protocols.",
+    "itineraryRequired": "Active Odyssey Required",
+    "itineraryRequiredDesc": "You must have an active Odyssey to select a subscription protocol.",
+    "createItineraryBtn": "Initialize Odyssey",
+    "plans": {
+      "free": {
+        "name": "Standard",
+        "description": "Basic travel utilities.",
+        "price": "₹0",
+        "itinerariesValue": "1 Active Odyssey",
+        "immersiveValue": "Standard Intel",
+        "loyaltyValue": "Basic Rewards"
+      },
+      "voyager": {
+        "name": "Voyager",
+        "description": "For enhanced exploration.",
+        "price": "₹750",
+        "itinerariesValue": "3 Active Odysseys",
+        "immersiveValue": "Enhanced Intel",
+        "packingValue": "AI Packing Node",
+        "loyaltyValue": "Silver Rewards"
+      },
+      "pathfinder": {
+        "name": "Pathfinder",
+        "description": "For professional explorers.",
+        "price": "₹1600",
+        "itinerariesValue": "Infinite Odysseys",
+        "immersiveValue": "Neural Intelligence",
+        "insiderValue": "Local Legends",
+        "loyaltyValue": "Gold Rewards"
+      },
+      "sovereign": {
+        "name": "Sovereign",
+        "description": "Infinite access and elite orchestration.",
+        "price": "₹4000",
+        "itinerariesValue": "Infinite Odysseys",
+        "immersiveValue": "Infinite Intel",
+        "mirrorValue": "Heritage Mirror Node",
+        "fees": "Zero Surcharges"
+      },
+      "legend": {
+        "name": "Legend",
+        "description": "The ultimate travel synthesis.",
+        "price": "₹8000",
+        "itinerariesValue": "Infinite Odysseys",
+        "immersiveValue": "Infinite Intel",
+        "mirrorValue": "Heritage Mirror Node",
+        "insiderValue": "Local Legends",
+        "fees": "Zero Surcharges"
+      }
+    },
+    "period": {
+      "monthly": "/ mo"
+    },
+    "features": {
+      "itineraries": "Odyssey Capacity",
+      "immersive": "Intelligence Grade",
+      "loyalty": "Reward Tier",
+      "packing": "Packing Node",
+      "insider": "Local Intel",
+      "mirror": "Heritage Node",
+      "fees": "Service Surcharge"
+    },
+    "upgrade": "Upgrade Node",
+    "processingBtn": "Processing...",
+    "currentPlan": "Active Protocol"
+  },
+  "dashboard": {
+    "welcomeBack": "Welcome back, {{name}}",
+    "odysseyLevel": "Odyssey Level {{level}}",
+    "seasonPass": "Season Pass",
+    "xpSynthesized": "XP Synthesized",
+    "progressionToLevel": "Progress to Level {{level}}",
+    "vibeStreak": "Vibe Streak",
+    "tasksResolved": "Tasks Resolved",
+    "totalMedals": "Total Medals",
+    "premiumRequired": "Premium Protocol Required",
+    "explorerStatus": "Explorer Tier: {{tier}}",
+    "points": "Points",
+    "medals": "Medals",
+    "editProfile": "Modify Identity Node",
+    "shortDesc": {
+      "itinerary": "Neural Odyssey synthesis.",
+      "pathfinder": "Smart route optimization.",
+      "marketplace": "Global Vibe Exchange.",
+      "store": "Gear procurement.",
+      "booking": "Logistics orchestration.",
+      "wallet": "Smart currency node.",
+      "budget": "Financial synthesis.",
+      "vision": "Object recognition node.",
+      "guide": "Global Intel Hub.",
+      "ar": "Augmented navigation.",
+      "legends": "Deciphering history.",
+      "pulse": "Cultural trend radar.",
+      "audio": "Spatial narration.",
+      "odyssey": "Cinematic trip synthesis.",
+      "postcard": "AI art generation.",
+      "mirror": "Heritage visualization.",
+      "journal": "Memory encryption."
+    },
+    "vibeRadar": {
+      "title": "Vibe Radar",
+      "desc": "Scanning {{vibe}} signatures in {{location}}."
     }
   }
 }

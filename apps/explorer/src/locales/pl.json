@@ -1,0 +1,251 @@
+{
+  "landingPage": {
+    "header": {
+      "brand": "AETHERIA",
+      "ai": "AI",
+      "journeySynthesized": "Zsyntetyzowana Podróż",
+      "links": {
+        "home": "Strona główna",
+        "features": "Funkcje",
+        "workflow": "Przebieg pracy",
+        "cta": "Rozpocznij"
+      },
+      "logo": "Logo Aetheria"
+    },
+    "footer": {
+      "tagline": "Syntetyzujemy Twoją podróż przez cyfrowy eter.",
+      "copyright": "© 2026 Aetheria AI. Wszelkie prawa zastrzeżone.",
+      "links": {
+        "privacy": "Polityka prywatności",
+        "terms": "Warunki korzystania",
+        "contact": "Skontaktuj się z nami"
+      },
+      "sections": {
+        "company": "Firma",
+        "connect": "Połącz się"
+      }
+    },
+    "body": {
+      "hero": {
+        "title": "Twoja podróż, zsyntetyzowana",
+        "subtitle": "Wykorzystaj moc AI, aby odkrywać cyfrowy krajobraz jak nigdy dotąd.",
+        "cta": "Rozpocznij swoją podróż"
+      },
+      "features": {
+        "title": "Potężne funkcje",
+        "description": "Odkryj, co czyni Aetheria wyjątkową.",
+        "items": [
+          {
+            "title": "Wnioski oparte na AI",
+            "description": "Zyskaj głęboki wgląd w swoje dane dzięki naszym zaawansowanym modelom AI."
+          },
+          {
+            "title": "Płynny przebieg pracy",
+            "description": "Z łatwością zintegruj Aetheria ze swoim istniejącym procesem pracy."
+          },
+          {
+            "title": "Współpraca w czasie rzeczywistym",
+            "description": "Pracuj ze swoim zespołem w czasie rzeczywistym nad dowolnym projektem."
+          }
+        ]
+      },
+      "workflow": {
+        "title": "Jak to działa",
+        "description": "Prosty proces w 3 krokach, aby zacząć.",
+        "steps": [
+          {
+            "title": "Połącz swoje dane",
+            "description": "Bezpiecznie połącz swoje źródła danych z Aetheria."
+          },
+          {
+            "title": "Analizuj i syntetyzuj",
+            "description": "Pozwól naszej AI przeanalizować i zsyntetyzować Twoje dane w przydatne wnioski."
+          },
+          {
+            "title": "Eksploruj i odkrywaj",
+            "description": "Eksploruj zsyntetyzowane dane i odkrywaj nowe możliwości."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Gotowy na rozpoczęcie podróży?",
+        "subtitle": "Dołącz do tysięcy użytkowników, którzy już używają Aetheria do transformacji swojej pracy.",
+        "button": "Rozpocznij za darmo"
+      }
+    }
+  },
+  "header": {
+    "categories": {
+      "orchestration": "Orkiestracja",
+      "intelligence": "Inteligencja",
+      "studios": "Studia",
+      "utility": "Narzędzia"
+    },
+    "dashboard": "Panel",
+    "aiItinerary": "Plan podróży AI",
+    "pathfinder": "Pathfinder",
+    "vibeMarketplace": "Rynek Vibe",
+    "vibeShopping": "Zakupy Vibe",
+    "bookingHub": "Centrum rezerwacji",
+    "wallet": "Portfel",
+    "budgetSynthesis": "Synteza budżetu",
+    "visionHub": "Centrum wizji",
+    "intelligenceCenter": "Centrum inteligencji",
+    "arWayfinding": "Nawigacja AR",
+    "localLegends": "Lokalne legendy",
+    "culturalPulse": "Puls kulturowy",
+    "audioGuide": "Przewodnik audio",
+    "tripOdyssey": "Odyseja podróży",
+    "postcardStudio": "Studio pocztówek",
+    "heritageMirror": "Lustro dziedzictwa",
+    "journal": "Dziennik",
+    "sos": "SOS",
+    "insurance": "Ubezpieczenie",
+    "visaArchitect": "Architekt wizowy",
+    "flightStatus": "Status lotu",
+    "esim": "eSIM",
+    "carbonSynthesis": "Synteza węglowa",
+    "packingassistant": "Asystent pakowania"
+  },
+  "sidebar": {
+    "brand": {
+      "name": "AETHERIA",
+      "tagline": "Zsyntetyzowana Podróż"
+    },
+    "sessionVerified": "Sesja zweryfikowana",
+    "neuralLinkActive": "Łącze neuronowe aktywne"
+  },
+  "userNav": {
+    "explorerHub": "Centrum odkrywcy",
+    "manageBookings": "Zarządzaj rezerwacjami",
+    "upgradeSubscription": "Ulepsz subskrypcję",
+    "adminConsole": "Konsola administratora",
+    "partnerHub": "Centrum partnerskie",
+    "identityNode": "Węzeł tożsamości",
+    "terminateSession": "Zakończ sesję",
+    "toast": {
+      "logoutSuccessTitle": "Sesja zakończona",
+      "logoutSuccessDescription": "Twoje łącze neuronowe zostało bezpiecznie rozłączone.",
+      "logoutErrorTitle": "Błąd zakończenia",
+      "logoutErrorDescription": "Wystąpił błąd podczas rozłączania sesji."
+    }
+  },
+  "dashboard": {
+    "welcomeBack": "Witaj ponownie, {{name}}",
+    "odysseyLevel": "Poziom Odysei {{level}}",
+    "explorerHubActive": "Centrum odkrywcy aktywne",
+    "viewLegacyWrapped": "Zobacz podsumowanie",
+    "productionTrailer": "Zwiastun produkcji",
+    "seasonPass": "Przepustka sezonowa",
+    "xpSynthesized": "Zsyntetyzowane XP",
+    "progressionToLevel": "Postęp do poziomu {{level}}",
+    "vibeStreak": "Seria Vibe",
+    "tasksResolved": "Rozwiązane zadania",
+    "totalMedals": "Suma medali",
+    "premiumRequired": "Wymagana przepustka Premium",
+    "explorerStatus": "Status odkrywcy: {{tier}}",
+    "points": "Punkty",
+    "medals": "Medale",
+    "editProfile": "Edytuj profil",
+    "match": "MECZ",
+    "toast": {
+      "missionInviteTitle": "Propozycja Odysei przesłana",
+      "missionInviteDescription": "Oczekiwanie na autoryzację Odysei grupowej przez {{name}}."
+    },
+    "xpProgress": "{{current}} / {{total}} XP",
+    "odysseyCount": "{{count}} Odysei",
+    "questCount": "{{count}} Misji",
+    "awardCount": "{{count}} Nagród",
+    "vibeRadar": {
+      "title": "Radar Vibe",
+      "desc": "Wykrywanie dopasowań {{vibe}} w Twoim obecnym sektorze: {{location}}"
+    },
+    "expandNeuralNetwork": "Rozszerz sieć neuronową",
+    "shortDesc": {
+      "itinerary": "Plany podróży zsyntetyzowane przez AI",
+      "pathfinder": "Optymalizacja ścieżki neuronowej",
+      "marketplace": "Doświadczenia wyselekcjonowane przez Vibe",
+      "store": "Pozyskiwanie aktywów cyfrowych",
+      "booking": "Kwantowe centrum rezerwacji",
+      "wallet": "Zaszyfrowany magazyn środków",
+      "budget": "Silnik syntezy finansowej",
+      "vision": "Rozpoznawanie obiektów AR",
+      "guide": "Globalna baza wiedzy",
+      "ar": "Nakładka nawigacji przestrzennej",
+      "legends": "Pobieranie danych historycznych",
+      "pulse": "Strumień kulturowy w czasie rzeczywistym",
+      "audio": "Immersyjne krajobrazy dźwiękowe",
+      "odyssey": "Kinowy zwiastun podróży",
+      "postcard": "Węzły wizualne generowane przez AI",
+      "mirror": "Odbicie danych dziedzictwa",
+      "journal": "Osobisty dziennik odysei"
+    }
+  },
+  "login": {
+    "title": "Logowanie Aetheria",
+    "emailLabel": "Adres sieciowy",
+    "emailPlaceholder": "name@domain.com",
+    "passwordLabel": "Klucz bezpieczeństwa",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "Autoryzuj sesję",
+    "signingInButton": "Autoryzacja...",
+    "noAccount": "Nowy w Aetheria?",
+    "signUpLink": "Utwórz węzeł tożsamości",
+    "accessOdysseyGrid": "Dostęp do Twojej siatki Odysei",
+    "authChannels": "Kanały autoryzacji",
+    "google": "Google",
+    "apple": "Apple",
+    "biometricLogin": "Logowanie biometryczne",
+    "systemNodeOffline": "Węzeł systemowy offline",
+    "authServiceInitializing": "Usługa autoryzacji nie została jeszcze zainicjowana.",
+    "unsupportedFeature": "Nieobsługiwana funkcja",
+    "biometricOnlyMobile": "Logowanie biometryczne jest dostępne tylko na urządzeniach mobilnych.",
+    "biometricLoginFailed": "Błąd logowania biometrycznego",
+    "biometricLoginError": "Nie można zalogować się przy użyciu danych biometrycznych.",
+    "invalidCredentials": "Nieprawidłowy adres e-mail lub klucz bezpieczeństwa. Sprawdź swoje dane lub utwórz nowe konto, jeśli jeszcze go nie masz.",
+    "accountDisabled": "To konto zostało wyłączone. Skontaktuj się z pomocą techniczną.",
+    "tooManyRequests": "Zbyt wiele nieudanych prób. Spróbuj ponownie później lub zresetuj klucz bezpieczeństwa.",
+    "networkError": "Błąd połączenia sieciowego. Sprawdź połączenie i spróbuj ponownie.",
+    "toast": {
+      "successTitle": "Sesja autoryzowana",
+      "successDescription": "Twoje łącze neuronowe jest teraz aktywne.",
+      "errorTitle": "Błąd autoryzacji",
+      "genericError": "Wystąpił nieoczekiwany błąd podczas autoryzacji sesji.",
+      "operationNotAllowed": "Ta metoda autoryzacji jest obecnie wyłączona."
+    }
+  },
+  "signup": {
+    "title": "Dołącz do Odysei",
+    "description": "Utwórz konto Aetheria",
+    "firstNameLabel": "Imię",
+    "lastNameLabel": "Nazwisko",
+    "firstNamePlaceholder": "jan",
+    "lastNamePlaceholder": "kowalski",
+    "emailLabel": "Adres sieciowy",
+    "emailPlaceholder": "name@domain.com",
+    "passwordLabel": "Klucz bezpieczeństwa",
+    "passwordPlaceholder": "••••••••",
+    "createButton": "Inicjalizuj profil",
+    "creatingButton": "Synchronizacja...",
+    "haveAccount": "Jesteś już częścią sieci?",
+    "signInLink": "Zaloguj się",
+    "networkJoin": "Dołączenie do sieci",
+    "welcomeKit": {
+      "title": "Zestaw powitalny wysłany!",
+      "description": "Sprawdź swoją skrzynkę odbiorczą, aby otrzymać spersonalizowane powitanie od Aetheria AI."
+    },
+    "toast": {
+      "successTitle": "Profil zainicjalizowany",
+      "successDescription": "Witaj w sieci Aetheria.",
+      "errorTitle": "Błąd inicjalizacji",
+      "genericError": "Nie można utworzyć konta. Spróbuj ponownie."
+    },
+    "errors": {
+      "emailInUse": "Ten adres e-mail jest już zarejestrowany. Zaloguj się zamiast tego.",
+      "invalidEmail": "Adres e-mail jest nieprawidłowy. Sprawdź i spróbuj ponownie.",
+      "operationNotAllowed": "Rejestracja e-mail/hasło jest obecnie wyłączona.",
+      "weakPassword": "Klucz bezpieczeństwa jest zbyt słaby. Użyj silniejszego.",
+      "networkError": "Błąd połączenia sieciowego. Sprawdź połączenie i spróbuj ponownie."
+    }
+  }
+}

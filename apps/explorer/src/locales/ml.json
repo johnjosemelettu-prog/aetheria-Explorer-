@@ -98,7 +98,7 @@
     "workflow": {
       "badge": "പ്രവർത്തന പ്രോട്ടോക്കോൾ",
       "title": "ഇത് എങ്ങനെ പ്രവർത്തിക്കുന്നു",
-      "phase": "ഘട്ടം 0{num}",
+      "phase": "ഘട്ടം 0{{{num}}}",
       "step1": {
         "title": "ലക്ഷ്യം നിശ്ചയിക്കുക",
         "desc": "നിങ്ങളുടെ ലക്ഷ്യസ്ഥാനവും താൽപ്പര്യങ്ങളും നൽകുക."
@@ -211,12 +211,12 @@
     "cityPlaceholder": "ഉദാ: ക്യോട്ടോ, ജപ്പാൻ",
     "generateBtn": "ക്വസ്റ്റ് സൃഷ്ടിക്കുക",
     "newCityBtn": "പുതിയ നഗരം",
-    "progress": "പുരോഗതി: {completed} / {total}",
-    "xp": "{current} / {total} XP",
-    "hint": "സൂചന: {hint}",
-    "xpSynthesized": "{points} XP ലഭിച്ചു",
+    "progress": "പുരോഗതി: {{{completed}}} / {{{total}}}",
+    "xp": "{{{current}}} / {{{total}}} XP",
+    "hint": "സൂചന: {{{hint}}}",
+    "xpSynthesized": "{{{points}}} XP ലഭിച്ചു",
     "resolvedTitle": "നഗരം പൂർത്തിയാക്കി!",
-    "resolvedDesc": "{city}-ലെ രഹസ്യങ്ങൾ നിങ്ങൾ വിജയകരമായി കണ്ടെത്തി.",
+    "resolvedDesc": "{{{city}}}-ലെ രഹസ്യങ്ങൾ നിങ്ങൾ വിജയകരമായി കണ്ടെത്തി.",
     "returnBtn": "കമാൻഡ് ഹബ്ബിലേക്ക് മടങ്ങുക"
   },
   "languageLab": {
@@ -226,7 +226,7 @@
     "cityPlaceholder": "ലക്ഷ്യസ്ഥാനം നൽകുക...",
     "synthesizeBtn": "കിറ്റ് നിർമ്മിക്കുക",
     "survivalTitle": "അത്യാവശ്യ വാക്യങ്ങൾ",
-    "pronounce": "ഉച്ചാരണം: {pronunciation}",
+    "pronounce": "ഉച്ചാരണം: {{{pronunciation}}}",
     "slangTitle": "പ്രാദേശിക പ്രയോഗങ്ങൾ",
     "listenBtn": "ശ്രദ്ധിക്കുക",
     "pendingTitle": "ഭാഷാ പഠനം",
@@ -309,7 +309,7 @@
       "arViewDescription": "AR വ്യൂ സജീവമാണ്",
       "toast": {
         "chatTitle": "ചാറ്റ് ആരംഭിച്ചു",
-        "chatDescription": "{name}-ന്റെ നോഡുമായി ബന്ധപ്പെടുന്നു..."
+        "chatDescription": "{{{name}}}-ന്റെ നോഡുമായി ബന്ധപ്പെടുന്നു..."
       }
     }
   },
@@ -448,13 +448,13 @@
   "itineraryGenerator": {
     "toast": {
       "bookingInitiated": "ബുക്കിംഗ് ആരംഭിച്ചു",
-      "reserving": "{{activity}} റിസർവ് ചെയ്യുന്നു...",
+      "reserving": "{{{{activity}}}} റിസർവ് ചെയ്യുന്നു...",
       "adjustmentFailed": "ക്രമീകരണം പരാജയപ്പെട്ടു",
       "adjustmentFailedDesc": "യാത്രാപദ്ധതി പുനഃക്രമീകരിക്കാൻ കഴിഞ്ഞില്ല.",
       "pathRecalibrated": "പാത പുനഃക്രമീകരിച്ചു",
       "pathRecalibratedDesc": "നിർദ്ദേശിച്ച മാറ്റങ്ങളോടെ യാത്രാപദ്ധതി അപ്‌ഡേറ്റ് ചെയ്തു.",
       "generateSuccessTitle": "യാത്ര തയ്യാറായി",
-      "generateSuccessDescription": "{{destination}}-ലേക്കുള്ള നിങ്ങളുടെ പാത തയ്യാറാണ്.",
+      "generateSuccessDescription": "{{{{destination}}}}-ലേക്കുള്ള നിങ്ങളുടെ പാത തയ്യാറാണ്.",
       "generateErrorTitle": "നിർമ്മാണം പരാജയപ്പെട്ടു",
       "generateErrorDescription": "യാത്രാപദ്ധതി സൃഷ്ടിക്കാൻ കഴിഞ്ഞില്ല. സിസ്റ്റം പിശക്.",
       "refineSuccessTitle": "പാത പരിഷ്കരിച്ചു",
@@ -583,16 +583,16 @@
     "currentPlan": "നിലവിലെ പ്ലാൻ"
   },
   "dashboard": {
-    "welcomeBack": "വീണ്ടും സ്വാഗതം, {name}",
-    "odysseyLevel": "ഒഡീസി ലെവൽ {level}",
+    "welcomeBack": "വീണ്ടും സ്വാഗതം, {{{name}}}",
+    "odysseyLevel": "ഒഡീസി ലെവൽ {{{level}}}",
     "seasonPass": "സീസൺ പാസ്",
     "xpSynthesized": "XP ലഭിച്ചു",
-    "progressionToLevel": "ലെവൽ {level}-ലേക്കുള്ള പുരോഗതി",
+    "progressionToLevel": "ലെവൽ {{{level}}}-ലേക്കുള്ള പുരോഗതി",
     "vibeStreak": "വൈബ് സ്ട്രീക്ക്",
     "tasksResolved": "ടാസ്ക്കുകൾ പൂർത്തിയാക്കി",
     "totalMedals": "ആകെ മെഡലുകൾ",
     "premiumRequired": "പ്രീമിയം ആവശ്യമാണ്",
-    "explorerStatus": "എക്സ്പ്ലോറർ പദവി: {tier}",
+    "explorerStatus": "എക്സ്പ്ലോറർ പദവി: {{{tier}}}",
     "points": "പോയിന്റുകൾ",
     "medals": "മെഡലുകൾ",
     "editProfile": "പ്രൊഫൈൽ തിരുത്തുക",
@@ -617,7 +617,7 @@
     },
     "vibeRadar": {
       "title": "വൈബ് റഡാർ",
-      "desc": "{location}-ലെ {vibe} വൈബുകൾ സ്കാൻ ചെയ്യുന്നു."
+      "desc": "{{{location}}}-ലെ {{{vibe}}} വൈബുകൾ സ്കാൻ ചെയ്യുന്നു."
     }
   }
 }

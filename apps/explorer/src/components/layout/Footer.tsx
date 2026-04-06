@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
             </p>
           </div>
           <div className="flex flex-col space-y-4">
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider">Company</h3>
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wider">{t('landingPage.footer.sections.company')}</h3>
             <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
               {t('landingPage.footer.links.privacy')}
             </a>
@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
             </a>
           </div>
           <div className="flex flex-col space-y-4">
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider">Connect</h3>
+            <h3 className="text-sm font-semibold text-white uppercase tracking-wider">{t('landingPage.footer.sections.connect')}</h3>
             <div className="flex space-x-4">
               {/* Social icons would go here */}
             </div>

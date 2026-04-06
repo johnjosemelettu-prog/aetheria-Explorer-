@@ -36,23 +36,23 @@ import { Eye, EyeOff } from "lucide-react"
 // Using relative import to ensure resolution in static export environment
 import { synthesizeWelcomeEmail } from "../../../ai/flows/welcome-email-flow"
 
-const signupSchema = z.object({
-  firstName: z.string().min(1, "First name is required."),
-  lastName: z.string().min(1, "Last name is required."),
-  email: z.string().email({ message: "Please enter a valid network address." }),
-  password: z
-    .string()
-    .min(6, { message: "Security key must be at least 6 characters." }),
-})
-
 export default function SignupPage() {
+  const { t, language } = useTranslation()
+  const signupSchema = z.object({
+    firstName: z.string().min(1, t("signup.firstNameLabel") + " is required."),
+    lastName: z.string().min(1, t("signup.lastNameLabel") + " is required."),
+    email: z.string().email({ message: t("login.invalidCredentials") }),
+    password: z
+      .string()
+      .min(6, { message: t("login.tooManyRequests") }),
+  })
+
   const [isLoading, setIsLoading] = useState(false)
   const [showPassword, setShowPassword] = useState(false)
   const [hasMounted, setHasMounted] = useState(false)
   const router = useRouter()
   const { toast } = useToast()
   const { auth, firestore } = useFirebase()
-  const { t, language } = useTranslation()
   const { handleOAuthSignIn, isOAuthLoading } = useOAuthSignIn()
 
   useEffect(() => {
@@ -75,8 +75,8 @@ export default function SignupPage() {
     if (!auth || !firestore) {
       toast({
         variant: "destructive",
-        title: "System Node Offline",
-        description: "Authentication nodes are not yet initialized.",
+        title: t("login.systemNodeOffline"),
+        description: t("login.authServiceInitializing"),
       })
       return
     }
@@ -113,8 +113,8 @@ export default function SignupPage() {
           language: currentLang
         });
         toast({
-          title: "Welcome Kit Sent!",
-          description: "Check your inbox for a personalized welcome from Aetheria AI.",
+          title: t("signup.welcomeKit.title"),
+          description: t("signup.welcomeKit.description"),
         })
       } catch (emailErr) {
         console.warn("Welcome email synthesis failed, continuing signup.", emailErr);
@@ -131,19 +131,19 @@ export default function SignupPage() {
       if (error instanceof FirebaseError) {
         switch (error.code) {
           case "auth/email-already-in-use":
-            description = "This email address is already registered. Please sign in instead."
+            description = t("signup.errors.emailInUse")
             break
           case "auth/invalid-email":
-            description = "The email address is invalid. Please check and try again."
+            description = t("signup.errors.invalidEmail")
             break
           case "auth/operation-not-allowed":
-            description = "Email/Password sign-up is currently disabled in the Firebase console."
+            description = t("signup.errors.operationNotAllowed")
             break
           case "auth/weak-password":
-            description = "The security key is too weak. Please use a stronger one."
+            description = t("signup.errors.weakPassword")
             break
           case "auth/network-request-failed":
-            description = "Network connection failed. Please check your connection and try again."
+            description = t("signup.errors.networkError")
             break
           default:
             description = error.message || t("signup.toast.genericError")
@@ -190,9 +190,9 @@ export default function SignupPage() {
                   name="firstName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>First Name</FormLabel>
+                      <FormLabel>{t("signup.firstNameLabel")}</FormLabel>
                       <FormControl>
-                        <Input placeholder="john" {...field} className="rounded-xl" />
+                        <Input placeholder={t("signup.firstNamePlaceholder")} {...field} className="rounded-xl" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -203,9 +203,9 @@ export default function SignupPage() {
                   name="lastName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Last Name</FormLabel>
+                      <FormLabel>{t("signup.lastNameLabel")}</FormLabel>
                       <FormControl>
-                        <Input placeholder="jose" {...field} className="rounded-xl" />
+                        <Input placeholder={t("signup.lastNamePlaceholder")} {...field} className="rounded-xl" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -273,7 +273,7 @@ export default function SignupPage() {
             </div>
             <div className="relative flex justify-center text-xs uppercase">
               <span className="bg-white px-2 text-muted-foreground font-black tracking-widest">
-                Network Join
+                {t("signup.networkJoin")}
               </span>
             </div>
           </div>
@@ -285,7 +285,7 @@ export default function SignupPage() {
               disabled={anyLoading}
               className="rounded-xl h-12 font-bold border-2"
             >
-              Google
+              {t("login.google")}
             </Button>
             <Button
               variant="outline"
@@ -293,7 +293,7 @@ export default function SignupPage() {
               disabled={anyLoading}
               className="rounded-xl h-12 font-bold border-2"
             >
-              Apple
+              {t("login.apple")}
             </Button>
           </div>
 

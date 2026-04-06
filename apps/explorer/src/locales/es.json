@@ -1,4 +1,27 @@
 {
+  "common": {
+    "save": "Confirmar cambios",
+    "cancel": "Abortar",
+    "close": "Terminar",
+    "delete": "Desinicializar",
+    "edit": "Modificar nodo",
+    "loading": "Sintetizando...",
+    "search": "Escanear cuadrícula",
+    "filter": "Filtrar nodos",
+    "back": "Volver",
+    "next": "Proceder",
+    "continue": "Mantener enlace",
+    "confirm": "Autorizar",
+    "active": "En línea",
+    "inactive": "Fuera de línea",
+    "verified": "Autenticado",
+    "unlocked": "Acceso concedido",
+    "locked": "Restringido",
+    "authorized": "Despejado",
+    "error": "Brecha del sistema",
+    "returnToDashboard": "Volver al centro de mando",
+    "initialize": "Inicializar nodo"
+  },
   "landingPage": {
     "header": {
       "brand": "AETHERIA",
@@ -7,40 +30,44 @@
       "links": {
         "home": "Inicio",
         "features": "Características",
-        "workflow": "Flujo de Trabajo",
+        "workflow": "Flujo de trabajo",
         "cta": "Empezar"
       },
-      "logo": "Logo de Aetheria"
+      "logo": "Logotipo de Aetheria"
     },
     "footer": {
       "tagline": "Sintetizando tu viaje a través del éter digital.",
       "copyright": "© 2026 Aetheria AI. Todos los derechos reservados.",
       "links": {
-        "privacy": "Política de Privacidad",
-        "terms": "Términos de Servicio",
+        "privacy": "Política de privacidad",
+        "terms": "Términos de servicio",
         "contact": "Contáctanos"
+      },
+      "sections": {
+        "company": "Empresa",
+        "connect": "Conectar"
       }
     },
     "body": {
       "hero": {
-        "title": "Tu Viaje, Sintetizado",
+        "title": "Tu viaje, sintetizado",
         "subtitle": "Aprovecha el poder de la IA para explorar el paisaje digital como nunca antes.",
         "cta": "Comienza tu viaje"
       },
       "features": {
-        "title": "Características Potentes",
-        "description": "Descubre qué hace que Aetheria sea única.",
+        "title": "Funciones potentes",
+        "description": "Descubre lo que hace que Aetheria sea única.",
         "items": [
           {
-            "title": "Perspectivas Impulsadas por IA",
-            "description": "Obtén perspectivas profundas de tus datos con nuestros modelos avanzados de IA."
+            "title": "Información impulsada por IA",
+            "description": "Obtén información profunda sobre tus datos con nuestros modelos avanzados de IA."
           },
           {
-            "title": "Flujo de Trabajo Fluido",
+            "title": "Flujo de trabajo fluido",
             "description": "Integra Aetheria en tu flujo de trabajo existente con facilidad."
           },
           {
-            "title": "Colaboración en Tiempo Real",
+            "title": "Colaboración en tiempo real",
             "description": "Trabaja con tu equipo en tiempo real en cualquier proyecto."
           }
         ]
@@ -54,11 +81,11 @@
             "description": "Conecta de forma segura tus fuentes de datos a Aetheria."
           },
           {
-            "title": "Analiza y Sintetiza",
-            "description": "Deja que nuestra IA analice y sintetice tus datos en perspectivas accionables."
+            "title": "Analiza y sintetiza",
+            "description": "Deja que nuestra IA analice y sintetice tus datos en información procesable."
           },
           {
-            "title": "Explora y Descubre",
+            "title": "Explora y descubre",
             "description": "Explora tus datos sintetizados y descubre nuevas oportunidades."
           }
         ]
@@ -68,6 +95,180 @@
         "subtitle": "Únete a miles de usuarios que ya están usando Aetheria para transformar su trabajo.",
         "button": "Empieza gratis"
       }
+    }
+  },
+  "header": {
+    "categories": {
+      "orchestration": "Orquestación",
+      "intelligence": "Inteligencia",
+      "studios": "Estudios",
+      "utility": "Utilidad"
+    },
+    "dashboard": "Tablero",
+    "aiItinerary": "Itinerario IA",
+    "pathfinder": "Pathfinder",
+    "vibeMarketplace": "Mercado de Vibe",
+    "vibeShopping": "Compras de Vibe",
+    "bookingHub": "Centro de Reservas",
+    "wallet": "Billetera",
+    "budgetSynthesis": "Síntesis de Presupuesto",
+    "visionHub": "Centro de Visión",
+    "intelligenceCenter": "Centro de Inteligencia",
+    "arWayfinding": "Orientación AR",
+    "localLegends": "Leyendas Locales",
+    "culturalPulse": "Pulso Cultural",
+    "audioGuide": "Audioguía",
+    "tripOdyssey": "Odisea del Viaje",
+    "postcardStudio": "Estudio de Postales",
+    "heritageMirror": "Espejo del Patrimonio",
+    "journal": "Diario",
+    "sos": "SOS",
+    "insurance": "Seguro",
+    "visaArchitect": "Arquitecto de Visas",
+    "flightStatus": "Estado del Vuelo",
+    "esim": "eSIM",
+    "carbonSynthesis": "Síntesis de Carbono",
+    "packingassistant": "Asistente de Empaque"
+  },
+  "sidebar": {
+    "brand": {
+      "name": "AETHERIA",
+      "tagline": "Viaje Sintetizado"
+    },
+    "sessionVerified": "Sesión Verificada",
+    "neuralLinkActive": "Enlace Neural Activo"
+  },
+  "userNav": {
+    "explorerHub": "Centro de Exploradores",
+    "manageBookings": "Gestionar Reservas",
+    "upgradeSubscription": "Mejorar Suscripción",
+    "adminConsole": "Consola de Administración",
+    "partnerHub": "Centro de Socios",
+    "identityNode": "Nodo de Identidad",
+    "terminateSession": "Terminar Sesión",
+    "toast": {
+      "logoutSuccessTitle": "Sesión Terminada",
+      "logoutSuccessDescription": "Tu enlace neural se ha desconectado de forma segura.",
+      "logoutErrorTitle": "Fallo al Terminar",
+      "logoutErrorDescription": "Hubo un error al desconectar tu sesión."
+    }
+  },
+  "dashboard": {
+    "welcomeBack": "Bienvenido de nuevo, {{name}}",
+    "odysseyLevel": "Nivel de Odisea {{level}}",
+    "explorerHubActive": "Centro de Exploradores Activo",
+    "viewLegacyWrapped": "Ver Resumen de Legado",
+    "productionTrailer": "Tráiler de Producción",
+    "seasonPass": "Pase de Temporada",
+    "xpSynthesized": "XP Sintetizada",
+    "progressionToLevel": "Progresión al Nivel {{level}}",
+    "vibeStreak": "Racha de Vibe",
+    "tasksResolved": "Tareas Resueltas",
+    "totalMedals": "Total de Medallas",
+    "premiumRequired": "Se requiere Pase Premium",
+    "explorerStatus": "Estado de Explorador: {{tier}}",
+    "points": "Puntos",
+    "medals": "Medallas",
+    "editProfile": "Editar Perfil",
+    "match": "EMPAREJAR",
+    "toast": {
+      "missionInviteTitle": "Propuesta de Odisea Transmitida",
+      "missionInviteDescription": "Esperando a que {{name}} autorice la Odisea Grupal."
+    },
+    "xpProgress": "{{current}} / {{total}} XP",
+    "odysseyCount": "{{count}} Odiseas",
+    "questCount": "{{count}} Misiones",
+    "awardCount": "{{count}} Premios",
+    "vibeRadar": {
+      "title": "Radar de Vibe",
+      "desc": "Detectando coincidencias de {{vibe}} en tu sector actual: {{location}}"
+    },
+    "expandNeuralNetwork": "Expandir Red Neural",
+    "shortDesc": {
+      "itinerary": "Planes de viaje sintetizados por IA",
+      "pathfinder": "Optimización de rutas neurales",
+      "marketplace": "Experiencias curadas por Vibe",
+      "store": "Adquisición de activos digitales",
+      "booking": "Centro de reservas cuánticas",
+      "wallet": "Almacenamiento de crédito encriptado",
+      "budget": "Motor de síntesis financiera",
+      "vision": "Reconocimiento de objetos AR",
+      "guide": "Base de conocimientos global",
+      "ar": "Superposición de orientación espacial",
+      "legends": "Recuperación de datos históricos",
+      "pulse": "Flujo cultural en tiempo real",
+      "audio": "Paisajes sonoros inmersivos",
+      "odyssey": "Teaser de viaje cinematográfico",
+      "postcard": "Nodos visuales generados por IA",
+      "mirror": "Reflexión de datos de patrimonio",
+      "journal": "Registro personal de odisea"
+    }
+  },
+  "login": {
+    "title": "Inicio de Sesión Aetheria",
+    "emailLabel": "Dirección de Red",
+    "emailPlaceholder": "nombre@dominio.com",
+    "passwordLabel": "Clave de Seguridad",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "Autorizar Sesión",
+    "signingInButton": "Autorizando...",
+    "noAccount": "¿Nuevo en Aetheria?",
+    "signUpLink": "Crear Nodo de Identidad",
+    "accessOdysseyGrid": "Accede a tu Cuadrícula de Odisea",
+    "authChannels": "Canales de Autenticación",
+    "google": "Google",
+    "apple": "Apple",
+    "biometricLogin": "Inicio de Sesión Biométrico",
+    "systemNodeOffline": "Nodo del Sistema Fuera de Línea",
+    "authServiceInitializing": "El servicio de autenticación aún no se ha inicializado.",
+    "unsupportedFeature": "Función no compatible",
+    "biometricOnlyMobile": "El inicio de sesión biométrico solo está disponible en dispositivos móviles.",
+    "biometricLoginFailed": "Fallo en el Inicio de Sesión Biométrico",
+    "biometricLoginError": "No se pudo iniciar sesión con credenciales biométricas.",
+    "invalidCredentials": "Dirección de correo electrónico o clave de seguridad no válidas. Por favor, comprueba tus credenciales o crea una cuenta nueva si aún no lo has hecho.",
+    "accountDisabled": "Esta cuenta ha sido deshabilitada. Por favor, contacta con soporte.",
+    "tooManyRequests": "Demasiados intentos fallidos. Por favor, inténtalo de nuevo más tarde o restablece tu clave de seguridad.",
+    "networkError": "Fallo en la conexión de red. Por favor, comprueba tu conexión e inténtalo de nuevo.",
+    "toast": {
+      "successTitle": "Sesión Autorizada",
+      "successDescription": "Tu enlace neural ya está activo.",
+      "errorTitle": "Autorización Fallida",
+      "genericError": "Ocurrió un error inesperado durante la autorización de la sesión.",
+      "operationNotAllowed": "Este método de autenticación está actualmente deshabilitado."
+    }
+  },
+  "signup": {
+    "title": "Únete a la Odisea",
+    "description": "Crea tu cuenta de Aetheria",
+    "firstNameLabel": "Nombre",
+    "lastNameLabel": "Apellido",
+    "firstNamePlaceholder": "juan",
+    "lastNamePlaceholder": "jose",
+    "emailLabel": "Dirección de Red",
+    "emailPlaceholder": "nombre@dominio.com",
+    "passwordLabel": "Clave de Seguridad",
+    "passwordPlaceholder": "••••••••",
+    "createButton": "Inicializar Perfil",
+    "creatingButton": "Sincronizando...",
+    "haveAccount": "¿Ya eres parte de la red?",
+    "signInLink": "Iniciar Sesión",
+    "networkJoin": "Unirse a la Red",
+    "welcomeKit": {
+      "title": "¡Kit de Bienvenida Enviado!",
+      "description": "Revisa tu bandeja de entrada para recibir una bienvenida personalizada de Aetheria IA."
+    },
+    "toast": {
+      "successTitle": "Perfil Inicializado",
+      "successDescription": "Bienvenido a la Red Aetheria.",
+      "errorTitle": "Fallo en la Inicialización",
+      "genericError": "No se pudo crear la cuenta. Por favor, inténtalo de nuevo."
+    },
+    "errors": {
+      "emailInUse": "Esta dirección de correo electrónico ya está registrada. Por favor, inicia sesión en su lugar.",
+      "invalidEmail": "La dirección de correo electrónico no es válida. Por favor, compruébala e inténtalo de nuevo.",
+      "operationNotAllowed": "El registro con correo electrónico/contraseña está actualmente deshabilitado.",
+      "weakPassword": "La clave de seguridad es demasiado débil. Por favor, usa una más fuerte.",
+      "networkError": "Fallo en la conexión de red. Por favor, comprueba tu conexión e inténtalo de nuevo."
     }
   }
 }
