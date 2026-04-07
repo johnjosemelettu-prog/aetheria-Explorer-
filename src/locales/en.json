@@ -187,7 +187,8 @@
     "promo": {
       "spotlights": "Partner Spotlights",
       "verified": "Verified Partners"
-    }
+    },
+    "brand": "Aetheria"
   },
   "footer": {
     "terms": "Terms of Service",
@@ -197,7 +198,34 @@
     "globalConnect": "Global Connect",
     "allRightsReserved": "© {year} Aetheria AI Intelligence Systems. All rights reserved.",
     "supportHub": "Support Hub",
-    "partnerNetwork": "Partner Network"
+    "partnerNetwork": "Partner Network",
+    "links": {
+      "home": "Home",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "security": "Security",
+      "legal": "Legal",
+      "brochure": "Brochure",
+      "partners": "Partners",
+      "contact": "Contact",
+      "faq": "FAQ"
+    },
+    "journeySynthesized": "Journey Synthesized",
+    "tagline": "Your personal AI travel agent.",
+    "protocolsCategory": "Protocols",
+    "termsLink": "Terms",
+    "privacyLink": "Privacy",
+    "securityLink": "Security",
+    "networkCategory": "Network",
+    "legalLink": "Legal",
+    "brochureLink": "Brochure",
+    "partnersLink": "Partners",
+    "supportCategory": "Support",
+    "contactLink": "Contact",
+    "faqLink": "FAQ",
+    "allSystemsOperationalStatus": "All Systems Operational",
+    "aetheriaAi": "Aetheria AI",
+    "poweredBy": "Powered by Google"
   },
   "profile": {
     "saveSuccessTitle": "Profile Synchronized",
@@ -477,11 +505,6 @@
     }
   },
   "landingPage": {
-    "header": {
-      "brand": "Aetheria",
-      "ai": "AI",
-      "logoAlt": "Aetheria Logo"
-    },
     "body": {
       "links": {
         "itinerary": "Itinerary",
@@ -555,35 +578,6 @@
         "description": "Sign up now and start planning your next adventure.",
         "signUpNow": "Sign Up Now"
       }
-    },
-    "footer": {
-      "links": {
-        "home": "Home",
-        "terms": "Terms",
-        "privacy": "Privacy",
-        "security": "Security",
-        "legal": "Legal",
-        "brochure": "Brochure",
-        "partners": "Partners",
-        "contact": "Contact",
-        "faq": "FAQ"
-      },
-      "journeySynthesized": "Journey Synthesized",
-      "tagline": "Your personal AI travel agent.",
-      "protocolsCategory": "Protocols",
-      "termsLink": "Terms",
-      "privacyLink": "Privacy",
-      "securityLink": "Security",
-      "networkCategory": "Network",
-      "legalLink": "Legal",
-      "brochureLink": "Brochure",
-      "partnersLink": "Partners",
-      "supportCategory": "Support",
-      "contactLink": "Contact",
-      "faqLink": "FAQ",
-      "allSystemsOperationalStatus": "All Systems Operational",
-      "aetheriaAi": "Aetheria AI",
-      "poweredBy": "Powered by Google"
     }
   }
 }

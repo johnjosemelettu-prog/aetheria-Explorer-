@@ -20,9 +20,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  turbopack: {
-    root: '/Users/apple/dev/aetheria-Explorer-',
-  },
   // Removed experimental.appDir as it's no longer a valid experimental key
   typescript: {
     ignoreBuildErrors: true,

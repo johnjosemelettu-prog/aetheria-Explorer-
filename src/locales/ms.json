@@ -1,107 +1,216 @@
-
 {
   "header": {
-    "aiItinerary": "Jadual Aura",
-    "pathfinder": "Pencari Aura",
+    "aiItinerary": "Itinerari Aura",
+    "pathfinder": "Aura Path-Finder",
     "vibeMarketplace": "Pasaran Vibe",
-    "bookingHub": "Hub Penempahan",
-    "myTrips": "Odise Saya",
-    "visionHub": "Vision Hub",
+    "bookingHub": "Hab Tempahan",
+    "myTrips": "Odisi Saya",
+    "visionHub": "Hab Wawasan",
     "intelligenceCenter": "Pusat Risikan",
     "arWayfinding": "Pandu Arah AR",
-    "localLegends": "IA Legenda Tempatan",
-    "explorerQuests": "Tugasan Penjelajah",
-    "culturalPulse": "Denyutan Budaya",
-    "tripOdyssey": "IA Trip Odyssey",
+    "localLegends": "Lagenda Tempatan AI",
+    "explorerQuests": "Misi Peneroka",
+    "culturalPulse": "Nadi Budaya",
+    "tripOdyssey": "Odisi Perjalanan AI",
     "postcardStudio": "Studio Poskad",
     "heritageMirror": "Cermin Warisan",
-    "foodRoulette": "Rolet Perisa",
-    "journal": "Jurnal Penjelajah",
+    "foodRoulette": "Roulette Rasa",
+    "journal": "Jurnal Peneroka",
     "visaArchitect": "Arkitek Visa",
     "carbonSynthesis": "Sintesis Karbon",
     "esim": "Aura Mobile",
     "flightStatus": "Radar Logistik",
-    "layoverOdyssey": "Odise Persinggahan",
+    "layoverOdyssey": "Odisi Persinggahan",
     "safety": "Pembantu Keselamatan",
     "hotels": "Penginapan",
     "dining": "Kulinari",
     "profile": "Nod Profil",
-    "loyalty": "Ganjaran",
-    "wallet": "Hub Dompet",
+    "loyalty": "Ganjaran Kesetiaan",
+    "wallet": "Hab Dompet Pintar",
     "rentals": "Urus Sewaan",
     "scanAndPay": "Imbas & Bayar",
-    "login": "Mulakan Sesi",
+    "login": "Mula Sesi",
     "signup": "Sertai Rangkaian",
     "admin": "Admin",
     "vendor": "Rakan Kongsi",
-    "dashboard": "Pusat Kawalan",
+    "dashboard": "Pusat Arahan",
     "flights": "Penerbangan",
     "cruises": "Maritim",
     "cabs": "Pengangkutan",
-    "trains": "Nod Kereta Api",
+    "trains": "Nod Rel",
     "buses": "Nod Bas",
-    "plan": "Orkestra",
+    "plan": "Orkestrasi",
     "explore": "Risikan",
     "utility": "Utiliti",
-    "creative": "Aura Studios",
+    "creative": "Studio Aura",
     "achievements": "Pingat",
     "news": "Berita Global",
     "audioGuide": "Panduan Audio",
-    "menuExplorer": "Penjelajah Menu",
-    "localInsider": "Maklumat Dalaman",
+    "menuExplorer": "Peneroka Menu",
+    "localInsider": "Orang Dalam Tempatan",
     "cultureScout": "Pengakap Budaya",
-    "subscription": "Pas Odise",
-    "partners": "Rangkaian Rakan",
-    "digitalBrochure": "Brosur Teknikal",
-    "appTrailer": "Trailer Produksi",
-    "sos": "Hub SOS",
+    "subscription": "Pas Odisi",
+    "partners": "Rangkaian Rakan Kongsi",
+    "digitalBrochure": "Brosur Teknologi",
+    "appTrailer": "Treler Produksi",
+    "sos": "Hab SOS",
     "events": "Acara Destinasi",
-    "gearArchitect": "Arkitek Gear",
+    "gearArchitect": "Arkitek Peralatan",
     "jetLag": "Logik Jet Lag",
-    "digitalTailor": "Tailor Digital",
+    "digitalTailor": "Tukang Jahit Digital",
     "categories": {
-      "orchestration": "Orkestra Odise",
-      "intelligence": "Lensa Risikan",
-      "studios": "Aura Studios",
-      "utility": "Utiliti Penjelajah"
+      "orchestration": "Orkestrasi Odisi",
+      "intelligence": "Kanta Risikan",
+      "studios": "Studio Aura",
+      "utility": "Utiliti Peneroka"
     },
     "promo": {
-      "spotlights": "Sorotan Rakan Kongsi",
-      "verified": "Rakan Kongsi Disahkan"
+      "spotlights": "Sorotan rakan kongsi",
+      "verified": "Rakan kongsi yang disahkan"
     }
   },
   "dashboard": {
     "welcomeBack": "Selamat kembali, {name}!",
-    "odysseyLevel": "Tahap Odise {level}",
+    "odysseyLevel": "Tahap Odisi {level}",
     "shortDesc": {
-      "itinerary": "Odise Aura yang diatur oleh AI.",
-      "pathfinder": "Sintesis daripada sauh visual.",
-      "marketplace": "Templat jadual perjalanan tular.",
-      "booking": "Tempah melalui Aura Hub.",
-      "wallet": "Mata wang global dan pembayaran Aura.",
-      "budget": "Ramalan kewangan untuk pertukaran pintar.",
-      "trips": "Urus perpustakaan odise anda.",
-      "vision": "Menyahkod menu and persekitaran.",
-      "guide": "Risikan tempatan mengikut konteks.",
+      "itinerary": "Odisi Aura yang dirancang oleh AI.",
+      "pathfinder": "Sintesis daripada penanda visual.",
+      "marketplace": "Templat itinerari viral.",
+      "booking": "Tempah keperluan melalui Aura Hub.",
+      "wallet": "Mata wang global dan bayaran Aura.",
+      "budget": "Oracle kewangan untuk pertukaran pintar.",
+      "trips": "Urus pustaka odisi anda.",
+      "vision": "Nyahkod menu dan persekitaran.",
+      "guide": "Risikan tempatan yang peka konteks.",
       "ar": "Lapisan navigasi peringkat jalan.",
-      "legends": "Folklore tempatan melalui GPS.",
-      "quests": "Pemburuan harta karun bandar.",
+      "legends": "Cerita rakyat tempatan yang dicetuskan oleh GPS.",
+      "quests": "Pemburuan harta karun bandar yang digamifikasi.",
       "pulse": "Vibe masa nyata dan DNA auditori.",
       "audio": "Panduan peribadi di telinga anda.",
-      "odyssey": "Teaser perjalanan sinematik 8 saat.",
-      "postcard": "Tukar foto kepada seni Aura.",
+      "odyssey": "Treler perjalanan sinematik 8 saat.",
+      "postcard": "Ubah gambar menjadi seni Aura.",
       "mirror": "Lihat diri anda dalam pakaian tradisional.",
-      "roulette": "Pemilih snek yang mencabar.",
-      "journal": "Dokumen warisan penjelajah.",
+      "roulette": "Pemilih snek pengembaraan.",
+      "journal": "Dokumentasikan legasi peneroka.",
       "achievements": "Dapatkan pingat untuk perjalanan.",
-      "status": "Papan langsung udara, rel, dan laut.",
-      "esim": "Ketersambungan global segera.",
+      "status": "Papan langsung udara, rel dan laut.",
+      "esim": "Sambungan global segera.",
       "carbon": "Jejaki jejak molekul.",
       "layover": "Misi terminal berkelajuan tinggi.",
-      "tailor": "Sewa almari pakaian tanpa bagasi.",
+      "tailor": "Sewaan almari pakaian tanpa bagasi.",
       "safety": "Risikan kecemasan setempat.",
-      "visa": "Semakan pematuhan rentas sempadan.",
+      "visa": "Pemeriksaan pematuhan rentas sempadan.",
       "sos": "Tindak balas kecemasan segera."
+    }
+  },
+  "landingPage": {
+    "header": {
+      "brand": "Aetheria",
+      "ai": "AI",
+      "logoAlt": "Logo Aetheria"
+    },
+    "body": {
+      "links": {
+        "itinerary": "Itinerari",
+        "postcard": "Poskad",
+        "legends": "Lagenda",
+        "packing": "Mengemas",
+        "signup": "Daftar",
+        "login": "Log Masuk",
+        "dashboard": "Papan Pemuka"
+      },
+      "hero": {
+        "badge": "Aetheria",
+        "description1": "Ejen pelancongan AI peribadi anda.",
+        "description2": "Rancang perjalanan anda dengan mudah.",
+        "signUp": "Daftar Sekarang",
+        "login": "Log Masuk",
+        "scroll": "Tatal ke Bawah",
+        "enterGrid": "Masuk ke Grid"
+      },
+      "features": {
+        "badge": "Ciri-ciri",
+        "title": "Temui apa yang Aetheria boleh lakukan",
+        "quote": "Dunia ini sebuah buku dan mereka yang tidak mengembara hanya membaca satu muka surat.",
+        "itinerary": {
+          "badge": "Itinerari",
+          "title": "Itinerari Dikuasakan AI",
+          "desc": "Biar AI kami merancang perjalanan yang sempurna untuk anda."
+        },
+        "postcard": {
+          "badge": "Poskad",
+          "title": "Cipta poskad yang indah",
+          "desc": "Kongsi kenangan anda dengan poskad yang menakjubkan."
+        },
+        "legends": {
+          "badge": "Lagenda",
+          "title": "Temui lagenda tempatan",
+          "desc": "Terokai cerita dan cerita rakyat yang tersembunyi."
+        },
+        "packing": {
+          "badge": "Mengemas",
+          "title": "Pembantu mengemas pintar",
+          "desc": "Kemas dengan lebih bijak, bukan lebih sukar."
+        }
+      },
+      "images": {
+        "featureAlt": "Imej Ciri",
+        "processAlt": "Imej Proses"
+      },
+      "workflow": {
+        "badge": "Aliran Kerja",
+        "title": "Bagaimana ia berfungsi",
+        "step1": {
+          "title": "Daftar",
+          "desc": "Buat akaun untuk bermula."
+        },
+        "step2": {
+          "title": "Rancang perjalanan anda",
+          "desc": "Beritahu kami destinasi dan pilihan anda."
+        },
+        "step3": {
+          "title": "Nikmati perjalanan anda",
+          "desc": "Biar Aetheria menguruskan yang lain."
+        },
+        "floating": {
+          "title": "Aetheria",
+          "desc": "Ejen pelancongan AI peribadi anda."
+        }
+      },
+      "cta": {
+        "title": "Bersedia untuk bermula?",
+        "description": "Daftar sekarang dan mula merancang pengembaraan anda yang seterusnya.",
+        "signUpNow": "Daftar Sekarang"
+      }
+    },
+    "footer": {
+      "links": {
+        "home": "Utama",
+        "terms": "Syarat",
+        "privacy": "Privasi",
+        "security": "Keselamatan",
+        "legal": "Undang-undang",
+        "brochure": "Brosur",
+        "partners": "Rakan Kongsi",
+        "contact": "Hubungi",
+        "faq": "Soalan Lazim"
+      },
+      "journeySynthesized": "Perjalanan Disintesis",
+      "tagline": "Ejen pelancongan AI peribadi anda.",
+      "protocolsCategory": "Protokol",
+      "termsLink": "Syarat",
+      "privacyLink": "Privasi",
+      "securityLink": "Keselamatan",
+      "networkCategory": "Rangkaian",
+      "legalLink": "Undang-undang",
+      "brochureLink": "Brosur",
+      "partnersLink": "Rakan Kongsi",
+      "supportCategory": "Sokongan",
+      "contactLink": "Hubungi",
+      "faqLink": "Soalan Lazim",
+      "allSystemsOperationalStatus": "Semua Sistem Beroperasi",
+      "aetheriaAi": "Aetheria AI",
+      "poweredBy": "Dikuasakan oleh Google"
     }
   }
 }

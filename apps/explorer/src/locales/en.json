@@ -21,7 +21,8 @@
     "authorized": "Authorized",
     "error": "Error",
     "returnToDashboard": "Return to Command Center",
-    "apps": "Apps"
+    "apps": "Apps",
+    "initialize": "Initialize"
   },
   "login": {
     "title": "Sign In",
@@ -40,6 +41,10 @@
       "genericError": "Could not verify credentials.",
       "invalidCredentials": "Invalid email or security key.",
       "operationNotAllowed": "Sign-in is currently restricted."
+    },
+    "validation": {
+      "email": "Invalid email format.",
+      "passwordMinLength": "Security key must be at least 8 characters."
     }
   },
   "signup": {
@@ -70,7 +75,11 @@
       "cta": {
         "start": "Initialize Journey",
         "signin": "Access Node"
-      }
+      },
+      "description1": "Your journey begins here.",
+      "description2": "Explore the world with Aetheria.",
+      "signUp": "Sign Up",
+      "login": "Login"
     },
     "features": {
       "chapter": "Protocol Chapter 01",
@@ -95,7 +104,9 @@
         "badge": "Utility",
         "title": "Never-Forget Agent",
         "desc": "Proactive packing synthesis tailored to climate and itinerary nodes."
-      }
+      },
+      "badge": "Features",
+      "quote": "The world is a book and those who do not travel read only one page."
     },
     "workflow": {
       "badge": "Operational Protocol",
@@ -112,6 +123,10 @@
       "step3": {
         "title": "Execute Journey",
         "desc": "Launch into the world with real-time intelligence and safety nodes."
+      },
+      "floating": {
+        "title": "Floating",
+        "desc": "Floating description"
       }
     },
     "cta": {
@@ -119,7 +134,9 @@
       "title": "READY TO RECODE YOUR WORLD?",
       "subtitle": "Join the network of modern explorers harnessing infinite intelligence.",
       "start": "Connect to Network",
-      "feed": "Global Feed"
+      "feed": "Global Feed",
+      "description": "Call to action description",
+      "signUpNow": "Sign Up Now"
     }
   },
   "header": {
