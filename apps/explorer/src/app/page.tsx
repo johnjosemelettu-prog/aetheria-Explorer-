@@ -1,3 +1,4 @@
+
 "use client"
 
 import Link from 'next/link'
@@ -12,7 +13,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col bg-slate-950 text-white selection:bg-primary selection:text-white overflow-x-hidden relative min-h-screen justify-center">
-      <div className="noise" />
+      <div className="noise pointer-events-none" />
 
       <main className="flex-1 flex items-center">
         <div className="relative z-20 container mx-auto px-4 flex flex-col items-center text-center">
