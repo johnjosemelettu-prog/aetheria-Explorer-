@@ -2,7 +2,7 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   /* Required for Capacitor mobile deployment */
-  output: 'export',
+  // output: 'export',
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -32,6 +32,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  allowedDevOrigins: ['3000-firebase-aetheria-explorer-1775035905541.cluster-aic6jbiihrhmyrqafasatvzbwe.cloudworkstations.dev'],
 };
 
 export default nextConfig;
